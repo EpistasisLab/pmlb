@@ -1,2 +1,0 @@
-# GAMETES_Heterogeneity_20atts_1600_Het_0
-
