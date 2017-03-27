@@ -102,6 +102,7 @@ def generate_description(dataset_name, local_cache_dir=None):
         endpoint=determine_endpoint_type(df.ix[:, df.columns == 'class'])
         mse=imbalance_metrics(df['class'].tolist())
         #proceed with writing
+        readme_file.write('# %s\n' % dataset_name)
         readme_file.write('Dataset name: %s\n' % dataset_name)
         readme_file.write('#instances: %s\n' % str(len(df.axes[0])))
         readme_file.write("#features: %s\n" % str(len(df.axes[1])-1))
@@ -116,3 +117,41 @@ def generate_description(dataset_name, local_cache_dir=None):
     finally:
         readme_file.close()
 
+
+
+def generate_readmes(local_cache_dir=None):
+    """Generates a summary report for all dataset in PMLB
+
+    :param local_cache_dir: str (required)
+        The directory on your local machine to store the data files.
+    """
+    for dataset in dataset_names:
+        print "Dataset:", dataset
+        generate_description(dataset,local_cache_dir)
+
+def generate_pmlb_summary(local_cache_dir=None):
+    """Generates a summary report for all dataset in PMLB
+
+    :param local_cache_dir: str (required)
+        The directory on your local machine to store the data files.
+    """
+    report_filename = open(os.path.join(local_cache_dir, 'report.csv'), 'wt')
+    assert (local_cache_dir!=None)
+    try:
+        writer = csv.writer(report_filename, delimiter='\t')
+        writer.writerow(['Dataset','#instances','#features','#binary_features','#integer_features','#float_features',\
+                     'Endpoint_type','#classes','Imbalance_metric'])
+
+        for dataset in dataset_names:
+            df=fetch_data(dataset)
+            print "Dataset:", dataset
+            assert 'class' in df.columns, "no class column"
+            #removing class column
+            print "SIZE: "+ str(len(df.axes[0]))+ " x " + str(len(df.axes[1])-1)
+            feat=count_features_type(df.ix[:, df.columns != 'class'])
+            endpoint=determine_endpoint_type(df.ix[:, df.columns == 'class'])
+            mse=imbalance_metrics(df['class'].tolist())
+            #writer.writerow([file,str(len(df.axes[0])),str(len(df.axes[1])-1),feat[0],feat[1],feat[2],endpoint,mse[0],mse[1],mse[2]])
+            writer.writerow([dataset,str(len(df.axes[0])),str(len(df.axes[1])-1),feat[0],feat[1],feat[2],endpoint,int(mse[0]),mse[1]])
+    finally:
+        f.close()
