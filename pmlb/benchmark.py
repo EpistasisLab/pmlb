@@ -102,16 +102,16 @@ def generate_description(dataset_name, local_cache_dir=None):
         endpoint=determine_endpoint_type(df.ix[:, df.columns == 'class'])
         mse=imbalance_metrics(df['class'].tolist())
         #proceed with writing
-        readme_file.write('# %s\n' % dataset_name)
-        readme_file.write('Dataset name: %s\n' % dataset_name)
-        readme_file.write('#instances: %s\n' % str(len(df.axes[0])))
-        readme_file.write("#features: %s\n" % str(len(df.axes[1])-1))
-        readme_file.write("  #binary_features: %s\n" % feat[0])
-        readme_file.write("  #integer_features: %s\n" % feat[1])
-        readme_file.write("  #float_features: %s\n" % feat[2])
-        readme_file.write("Endpoint type: %s\n" % endpoint)
-        readme_file.write("#Classes: %s\n" % int(mse[0]))
-        readme_file.write("Imbalance metric: %s\n" % mse[1])
+        readme_file.write('# %s\n\n' % dataset_name)
+        readme_file.write('#instances: %s\n\n' % str(len(df.axes[0])))
+        readme_file.write("#features: %s\n\n" % str(len(df.axes[1])-1))
+        readme_file.write("  #binary_features: %s\n\n" % feat[0])
+        readme_file.write("  #integer_features: %s\n\n" % feat[1])
+        readme_file.write("  #float_features: %s\n\n" % feat[2])
+        readme_file.write("Endpoint type: %s\n\n" % endpoint)
+        readme_file.write("#Classes: %s\n\n" % int(mse[0]))
+        readme_file.write("Imbalance metric: %s\n\n" % mse[1])
+
     except IOError as err:
         print(err)
     finally:
