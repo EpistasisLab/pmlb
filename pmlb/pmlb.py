@@ -23,7 +23,7 @@ import pandas as pd
 import os
 from .dataset_lists import classification_dataset_names, regression_dataset_names
 dataset_names = classification_dataset_names + regression_dataset_names
-
+GITHUB_UTL='https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
 def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     """Download a data set from the PMLB, (optionally) store it locally, and return the data set.
 
@@ -48,17 +48,19 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     """
     if dataset_name in classification_dataset_names:
         target_col = 'class'
+        suffix = '.csv.gz'
     elif dataset_name in regression_dataset_names:
         target_col = 'target'
+        suffix = '.tsv.gz'
     else:
         raise ValueError('Data set not found in PMLB.')
 
-    dataset_url = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets/{DATASET_NAME}/{DATASET_NAME}.csv.gz'.format(DATASET_NAME=dataset_name)
+    dataset_url = '{GITHUB_UTL}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(GITHUB_UTL=GITHUB_UTL, DATASET_NAME=dataset_name, SUFFIX=suffix)
 
     if local_cache_dir is None:
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
     else:
-        dataset_path = os.path.join(local_cache_dir, dataset_name) + '.csv.gz'
+        dataset_path = os.path.join(local_cache_dir, dataset_name) + suffix
 
         # Use the local cache if the file already exists there
         if os.path.exists(dataset_path):
