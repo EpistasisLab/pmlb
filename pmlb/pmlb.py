@@ -57,7 +57,7 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     else:
         raise ValueError('Data set not found in PMLB.')
 
-    dataset_url = '{GITHUB_UTL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(GITHUB_UTL=GITHUB_UTL, DATA_TYPE=data_type, DATASET_NAME=dataset_name, SUFFIX=suffix)
+    dataset_url = '{GITHUB_URL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(GITHUB_URL=GITHUB_URL, DATA_TYPE=data_type, DATASET_NAME=dataset_name, SUFFIX=suffix)
 
     if local_cache_dir is None:
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
