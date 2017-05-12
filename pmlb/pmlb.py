@@ -24,8 +24,7 @@ import os
 from .dataset_lists import classification_dataset_names, regression_dataset_names
 
 dataset_names = classification_dataset_names + regression_dataset_names
-
-GITHUB_URL='https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
+GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
 
 def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     """Download a data set from the PMLB, (optionally) store it locally, and return the data set.
