@@ -1,2 +1,0 @@
-# ann-thyroid
-

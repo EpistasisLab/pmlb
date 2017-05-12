@@ -10,7 +10,7 @@ All data sets are stored in a common format:
 
 * First row is the column names
 * Each following row corresponds to one row of the data
-* The target column is named `class`
+* The target column is named `target`
 * All columns are tab (`\t`) separated
 * All files are compressed with `gzip` to conserve space
 

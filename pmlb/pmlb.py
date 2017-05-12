@@ -46,16 +46,15 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
         if return_X_y == True: A tuple of NumPy arrays containing (features, labels)
 
     """
+    suffix = '.tsv.gz'
     if dataset_name in classification_dataset_names:
-        target_col = 'class'
-        suffix = '.csv.gz'
+        data_type = 'classification'
     elif dataset_name in regression_dataset_names:
-        target_col = 'target'
-        suffix = '.tsv.gz'
+        data_type = 'regression'
     else:
         raise ValueError('Data set not found in PMLB.')
 
-    dataset_url = '{GITHUB_UTL}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(GITHUB_UTL=GITHUB_UTL, DATASET_NAME=dataset_name, SUFFIX=suffix)
+    dataset_url = '{GITHUB_UTL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(GITHUB_UTL=GITHUB_UTL, DATA_TYPE=data_type, DATASET_NAME=dataset_name, SUFFIX=suffix)
 
     if local_cache_dir is None:
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
@@ -70,8 +69,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
             dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
             dataset.to_csv(dataset_path, sep='\t', compression='gzip', index=False)
     if return_X_y:
-        X = dataset.drop(target_col, axis=1).values
-        y = dataset[target_col].values
+        X = dataset.drop('target', axis=1).values
+        y = dataset['target'].values
         return (X, y)
     else:
         return dataset
