@@ -21,12 +21,20 @@ Imbalance metric: 0.03070060823264104
 ## Feature Types
 
  Wifes_age:continous
+
 Wifes_education:discrete
+
 Husbands_education:discrete
+
 Number_of_children_ever_born:continous
+
 Wifes_religion:binary
+
 Wifes_now_working?:binary
+
 Husbands_occupation:discrete
+
 Standard-of-living_index:discrete
+
 Media_exposure:binary
 

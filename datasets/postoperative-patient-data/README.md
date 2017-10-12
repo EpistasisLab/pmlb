@@ -21,11 +21,18 @@ Imbalance metric: 0.20661157024793392
 ## Feature Types
 
  L-CORE:discrete
+
 L-SURF:discrete
+
 L-O2:binary
+
 L-BP:discrete
+
 SURF-STBL:binary
+
 CORE-STBL:discrete
+
 BP-STBL:discrete
+
 COMFORT:discrete
 

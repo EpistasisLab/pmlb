@@ -21,13 +21,22 @@ Imbalance metric: 0.34451795841209826
 ## Feature Types
 
  Year:discrete
+
 Pitcher:discrete
+
 League:binary
+
 Type:binary
+
 Wins:continous
+
 Win_pct:continous
+
 Saves:continous
+
 ERA:continous
+
 Strikeouts:continous
+
 Innings_pitched:continous
 

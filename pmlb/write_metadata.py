@@ -103,7 +103,7 @@ def generate_description(dataset_name, local_cache_dir=None):
         readme_file.write("Endpoint type: %s\n\n" % endpoint)
         readme_file.write("#Classes: %s\n\n" % int(mse[0]))
         readme_file.write("Imbalance metric: %s\n\n" % mse[1])
-        readme_file.write('## Feature Types\n\n %s\n\n' % '\n'.join([f + ':' + t for f,t in
+        readme_file.write('## Feature Types\n\n %s\n\n' % '\n\n'.join([f + ':' + t for f,t in
                                                               zip(fnames,types)]))
 
     except IOError as err:

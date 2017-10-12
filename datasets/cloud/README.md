@@ -21,10 +21,16 @@ Imbalance metric: 0.005029721079103795
 ## Feature Types
 
  PERIOD:continous
+
 SEEDED:binary
+
 TE:continous
+
 TW:continous
+
 NC:continous
+
 SC:continous
+
 NWC:continous
 

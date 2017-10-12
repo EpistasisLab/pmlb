@@ -21,6 +21,8 @@ Imbalance metric: 0.2214532871972319
 ## Feature Types
 
  Age_of_patient_at_time_of_operation:continous
+
 Patients_year_of_operation:discrete
+
 Number_of_positive_axillary_nodes_detected:continous
 

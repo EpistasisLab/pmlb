@@ -21,13 +21,22 @@ Imbalance metric: 0.3693734348624093
 ## Feature Types
 
  S1:discrete
+
 C1:discrete
+
 S2:discrete
+
 C2:discrete
+
 S3:discrete
+
 C3:discrete
+
 S4:discrete
+
 C4:discrete
+
 S5:discrete
+
 C5:discrete
 

@@ -21,16 +21,28 @@ Imbalance metric: 0.07779166088203991
 ## Feature Types
 
  age:continous
+
 sex:binary
+
 cp:discrete
+
 trestbps:discrete
+
 chol:discrete
+
 fbs:discrete
+
 restecg:discrete
+
 thalach:discrete
+
 exang:discrete
+
 oldpeak:continous
+
 slope:discrete
+
 ca:binary
+
 thal:discrete
 

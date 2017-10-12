@@ -21,12 +21,20 @@ Imbalance metric: 0.09446974382039316
 ## Feature Types
 
  Sbp:discrete
+
 Tobacco:continous
+
 Ldl:continous
+
 Adiposity:continous
+
 Famhist:binary
+
 Typea:discrete
+
 Obesity:continous
+
 Alcohol:continous
+
 Age:discrete
 

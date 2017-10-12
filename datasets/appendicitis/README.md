@@ -21,10 +21,16 @@ Imbalance metric: 0.3645425418298327
 ## Feature Types
 
  At1:continous
+
 At2:continous
+
 At3:continous
+
 At4:continous
+
 At5:continous
+
 At6:continous
+
 At7:continous
 

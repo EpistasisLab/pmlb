@@ -21,9 +21,14 @@ Imbalance metric: 0.015625
 ## Feature Types
 
  A0:binary
+
 A1:binary
+
 B0:binary
+
 B1:binary
+
 Irrelevant:binary
+
 Correlated:binary
 

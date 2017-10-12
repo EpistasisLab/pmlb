@@ -21,6 +21,8 @@ Imbalance metric: 0.038182058396089326
 ## Feature Types
 
  TIME:continous
+
 DURATION:continous
+
 LOG(1+DURATION):continous
 

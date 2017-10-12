@@ -21,9 +21,14 @@ Imbalance metric: 0.025414828817475334
 ## Feature Types
 
  mean-corpuscular-vol:continous
+
 alkaline-phosphotase:continous
+
 alamine-aminotransferase:continous
+
 aspartate-aminotransferase:continous
+
 gamma-glutamyl-transpeptidase:continous
+
 num-half-pint-equivalents:continous
 

@@ -21,13 +21,22 @@ Imbalance metric: 0.08805478985538495
 ## Feature Types
 
  FLength:continous
+
 FWidth:continous
+
 FSize:continous
+
 FConc:continous
+
 FConc1:continous
+
 FAsym:continous
+
 FM3Long:continous
+
 FM3Trans:continous
+
 FAlpha:continous
+
 FDist:continous
 

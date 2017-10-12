@@ -21,10 +21,16 @@ Imbalance metric: 0.10896482712828137
 ## Feature Types
 
  mcg:continous
+
 gvh:continous
+
 lip:continous
+
 chg:continous
+
 aac:continous
+
 alm1:continous
+
 alm2:continous
 

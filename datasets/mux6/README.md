@@ -21,9 +21,14 @@ Imbalance metric: 0.0
 ## Feature Types
 
  Address bit 1:binary
+
 Address bit 2:binary
+
 Bit 0:binary
+
 Bit 1:binary
+
 Bit 2:binary
+
 Bit 3:binary
 

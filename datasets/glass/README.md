@@ -21,12 +21,20 @@ Imbalance metric: 0.10618679357525282
 ## Feature Types
 
  RI:continous
+
 Na:continous
+
 Mg:continous
+
 Al:continous
+
 Si:continous
+
 K:continous
+
 Ca:continous
+
 Ba:continous
+
 Fe:continous
 

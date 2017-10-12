@@ -21,13 +21,22 @@ Imbalance metric: 0.09637516091862275
 ## Feature Types
 
  Sample code number:continous
+
 Clump Thickness:continous
+
 Uniformity of Cell Size:continous
+
 Uniformity of Cell Shape:continous
+
 Marginal Adhesion:continous
+
 Single Epithelial Cell Size:continous
+
 Bare Nuclei:discrete
+
 Bland Chromatin:continous
+
 Normal Nucleoli:continous
+
 Mitoses:continous
 
