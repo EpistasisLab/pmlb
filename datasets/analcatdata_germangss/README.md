@@ -21,8 +21,12 @@ Imbalance metric: 0.0
 ## Feature Types
 
  Age:discrete
+
 Time_of_survey:binary
+
 Schooling:discrete
+
 Region:binary
+
 Count:continous
 

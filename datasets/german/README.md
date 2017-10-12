@@ -21,23 +21,42 @@ Imbalance metric: 0.15999999999999998
 ## Feature Types
 
  Status:discrete
+
 Duration:continous
+
 Credit-history:discrete
+
 Purpose:discrete
+
 Credit:continous
+
 Savings-account:discrete
+
 Employment:discrete
+
 Installment-rate:continous
+
 Personal-status:discrete
+
 Debtors:discrete
+
 Residence-time:continous
+
 Property:discrete
+
 Age:continous
+
 Installments:discrete
+
 Housing:discrete
+
 Existing-credits:continous
+
 Job:discrete
+
 Liable-people:continous
+
 Telephone:binary
+
 Foreign:binary
 

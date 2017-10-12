@@ -21,9 +21,14 @@ Imbalance metric: 0.21159999999999995
 ## Feature Types
 
  Age:continous
+
 Income.per.dependent:continous
+
 Monthly.credit.card.exp:continous
+
 Own.home:binary
+
 Self.employed:binary
+
 Derogatory.reports:discrete
 

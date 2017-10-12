@@ -21,7 +21,10 @@ Imbalance metric: 0.0
 ## Feature Types
 
  sepal-length:continous
+
 sepal-width:continous
+
 petal-length:continous
+
 petal-width:continous
 

@@ -21,9 +21,14 @@ Imbalance metric: 0.0
 ## Feature Types
 
  Company:discrete
+
 WC/TA:continous
+
 RE/TA:continous
+
 EBIT/TA:continous
+
 S/TA:continous
+
 BVE/BVL:continous
 

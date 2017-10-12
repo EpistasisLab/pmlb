@@ -21,6 +21,8 @@ Imbalance metric: 0.011757874872985923
 ## Feature Types
 
  Ventilation:binary
+
 Duration:continous
+
 Exposure:discrete
 

@@ -21,7 +21,10 @@ Imbalance metric: 0.043867187499999995
 ## Feature Types
 
  Hobby:continous
+
 Age:continous
+
 Education:continous
+
 Marital status:continous
 

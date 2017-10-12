@@ -21,7 +21,10 @@ Imbalance metric: 0.7328397612488521
 ## Feature Types
 
  Length.of.service:continous
+
 CAP:continous
+
 PA.normalized:continous
+
 Minority:binary
 

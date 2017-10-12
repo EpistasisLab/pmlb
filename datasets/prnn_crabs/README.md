@@ -21,10 +21,16 @@ Imbalance metric: 0.0
 ## Feature Types
 
  sex:binary
+
 index:continous
+
 FL:continous
+
 RW:continous
+
 CL:continous
+
 CW:continous
+
 BD:continous
 

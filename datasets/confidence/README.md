@@ -21,6 +21,8 @@ Imbalance metric: 0.0
 ## Feature Types
 
  P:continous
+
 N:continous
+
 O:continous
 

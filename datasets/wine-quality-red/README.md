@@ -21,14 +21,24 @@ Imbalance metric: 0.22880411889701233
 ## Feature Types
 
  fixed acidity:continous
+
 volatile acidity:continous
+
 citric acid:continous
+
 residual sugar:continous
+
 chlorides:continous
+
 free sulfur dioxide:continous
+
 total sulfur dioxide:continous
+
 density:continous
+
 pH:continous
+
 sulphates:continous
+
 alcohol:continous
 

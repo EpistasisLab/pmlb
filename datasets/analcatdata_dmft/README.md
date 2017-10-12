@@ -21,7 +21,10 @@ Imbalance metric: 0.0013428651042412818
 ## Feature Types
 
  DMFT.Begin:discrete
+
 DMFT.End:discrete
+
 Gender:binary
+
 Ethnic:discrete
 

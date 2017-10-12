@@ -21,9 +21,14 @@ Imbalance metric: 0.0
 ## Feature Types
 
  att1:continous
+
 att2:continous
+
 att3:continous
+
 att4:continous
+
 att5:continous
+
 att6:continous
 

@@ -21,11 +21,18 @@ Imbalance metric: 0.09008993664001576
 ## Feature Types
 
  parents:discrete
+
 has_nurs:discrete
+
 form:discrete
+
 children:discrete
+
 housing:discrete
+
 finance:binary
+
 social:discrete
+
 health:discrete
 

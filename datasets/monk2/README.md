@@ -21,9 +21,14 @@ Imbalance metric: 0.09889507504132047
 ## Feature Types
 
  attribute#1:discrete
+
 attribute#2:discrete
+
 attribute#3:binary
+
 attribute#4:discrete
+
 attribute#5:discrete
+
 attribute#6:binary
 

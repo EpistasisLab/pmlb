@@ -21,9 +21,14 @@ Imbalance metric: 0.0
 ## Feature Types
 
  Head shape:discrete
+
 Body shape:discrete
+
 Is smiling:binary
+
 Holding:discrete
+
 Jacket color:discrete
+
 Has tie:binary
 

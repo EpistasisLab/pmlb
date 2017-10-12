@@ -21,6 +21,8 @@ Imbalance metric: 0.12526646741258618
 ## Feature Types
 
  Class:continous
+
 Age:continous
+
 Sex:continous
 

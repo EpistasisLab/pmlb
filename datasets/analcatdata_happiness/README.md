@@ -21,6 +21,8 @@ Imbalance metric: 0.0
 ## Feature Types
 
  Years_of_schooling:discrete
+
 Siblings:discrete
+
 Count:continous
 

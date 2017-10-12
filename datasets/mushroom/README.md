@@ -21,25 +21,46 @@ Imbalance metric: 0.0012918910021209882
 ## Feature Types
 
  cap-shape:discrete
+
 cap-surface:discrete
+
 cap-color:discrete
+
 bruises?:binary
+
 odor:discrete
+
 gill-attachment:binary
+
 gill-spacing:binary
+
 gill-size:binary
+
 gill-color:discrete
+
 stalk-shape:binary
+
 stalk-root:discrete
+
 stalk-surface-above-ring:discrete
+
 stalk-surface-below-ring:discrete
+
 stalk-color-above-ring:discrete
+
 stalk-color-below-ring:discrete
+
 veil-type:binary
+
 veil-color:discrete
+
 ring-number:discrete
+
 ring-type:discrete
+
 spore-print-color:discrete
+
 population:discrete
+
 habitat:discrete
 

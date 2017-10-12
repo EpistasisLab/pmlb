@@ -21,10 +21,16 @@ Imbalance metric: 0.19400603426679297
 ## Feature Types
 
  sex:binary
+
 cp:discrete
+
 fbs:binary
+
 restecg:discrete
+
 exang:binary
+
 slope:discrete
+
 thal:discrete
 

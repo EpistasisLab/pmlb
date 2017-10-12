@@ -21,10 +21,16 @@ Imbalance metric: 0.1919968242399
 ## Feature Types
 
  MPG:continous
+
 cylinders:continous
+
 cubicInches:continous
+
 horsepower:continous
+
 weightLbs:continous
+
 time-to-sixty:continous
+
 year:continous
 

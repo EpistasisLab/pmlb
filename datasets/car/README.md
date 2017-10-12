@@ -21,9 +21,14 @@ Imbalance metric: 0.39028831590077734
 ## Feature Types
 
  buying:discrete
+
 maint:discrete
+
 doors:discrete
+
 persons:discrete
+
 lug_boot:discrete
+
 safety:discrete
 

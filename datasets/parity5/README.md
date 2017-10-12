@@ -21,8 +21,12 @@ Imbalance metric: 0.0
 ## Feature Types
 
  Bit 1:binary
+
 Bit 2:binary
+
 Bit 3:binary
+
 Bit 4:binary
+
 Bit 5:binary
 

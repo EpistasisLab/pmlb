@@ -21,8 +21,12 @@ Imbalance metric: 0.01254400000000001
 ## Feature Types
 
  Sex:binary
+
 DVRT:continous
+
 Educational_level:discrete
+
 Prestige_score:discrete
+
 Type_school:discrete
 

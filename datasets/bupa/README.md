@@ -21,9 +21,14 @@ Imbalance metric: 0.025414828817475334
 ## Feature Types
 
  Mcv:continous
+
 Alkphos:continous
+
 Sgpt:continous
+
 Sgot:continous
+
 Gammagt:continous
+
 Drinks:continous
 

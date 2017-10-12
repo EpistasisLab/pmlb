@@ -21,13 +21,22 @@ Imbalance metric: 0.43367043426531815
 ## Feature Types
 
  class code:discrete
+
 largest spot code:discrete
+
 spot dist code:discrete
+
 Activity:binary
+
 Evolution:continous
+
 Previous 24 hour code:continous
+
 Historically-complex:binary
+
 become complex:binary
+
 Area:binary
+
 Area of the largest spot:binary
 

@@ -21,7 +21,10 @@ Imbalance metric: 0.0
 ## Feature Types
 
  Age:discrete
+
 Race:discrete
+
 AIDS:continous
+
 Total:continous
 

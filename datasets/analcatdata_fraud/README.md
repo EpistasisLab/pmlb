@@ -21,14 +21,24 @@ Imbalance metric: 0.14512471655328796
 ## Feature Types
 
  AC1:binary
+
 AC9:binary
+
 AC16:binary
+
 CL7:binary
+
 CL11:binary
+
 IJ2:binary
+
 IJ3:binary
+
 IJ4:binary
+
 IJ6:binary
+
 IJ12:binary
+
 Total:discrete
 
