@@ -43,3 +43,32 @@ from pmlb import dataset_names
 
 print(dataset_names)
 ```
+
+## Citing PMLB
+
+If you use PMLB in a scientific publication, please consider citing the following paper:
+
+Randal S. Olson, William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore (2017). [PMLB: a large benchmark suite for machine learning evaluation and comparison](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4). *BioData Mining* **10**, page 36.
+
+BibTeX entry:
+
+```bibtex
+@article{Olson2017PMLB,
+    author="Olson, Randal S. and La Cava, William and Orzechowski, Patryk and Urbanowicz, Ryan J. and Moore, Jason H.",
+    title="PMLB: a large benchmark suite for machine learning evaluation and comparison",
+    journal="BioData Mining",
+    year="2017",
+    month="Dec",
+    day="11",
+    volume="10",
+    number="1",
+    pages="36",
+    issn="1756-0381",
+    doi="10.1186/s13040-017-0154-4",
+    url="https://doi.org/10.1186/s13040-017-0154-4"
+}
+```
+
+## Support for PMLB
+
+PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant R01 AI117694. We are incredibly grateful for the support of the NIH and the University of Pennsylvania during the development of this project.
