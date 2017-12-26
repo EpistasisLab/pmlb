@@ -171,7 +171,7 @@ def generate_pmlb_summary(local_cache_dir=None):
             #writer.writerow([file,str(len(df.axes[0])),str(len(df.axes[1])-1),feat[0],feat[1],feat[2],endpoint,mse[0],mse[1],mse[2]])
             writer.writerow([dataset,str(len(df.axes[0])),str(len(df.axes[1])-1),feat[0],feat[1],feat[2],endpoint,int(mse[0]),mse[1]])
     finally:
-        f.close()
+        report_filename.close()
 
 if __name__ =='__main__':
     local_dir = '../'
@@ -179,5 +179,3 @@ if __name__ =='__main__':
     for d in dataset_names:
         print(d,'...')
         generate_description(d,local_cache_dir=local_dir)
-
-
