@@ -1,0 +1,121 @@
+did	MajorityClassSize	MaxNominalAttDistinctValues	MinorityClassSize	NumberOfClasses	NumberOfFeatures	NumberOfInstances	NumberOfInstancesWithMissingValues	NumberOfMissingValues	NumberOfNumericFeatures	NumberOfSymbolicFeatures	name	status
+1027	-1		-1	-1	5	488	0	0	5	0	ESL	active
+1028	-1		-1	-1	11	1000	0	0	11	0	SWD	active
+1029	-1		-1	-1	5	1000	0	0	5	0	LEV	active
+1030	-1		-1	-1	5	1000	0	0	5	0	ERA	active
+1089	-1		-1	-1	14	47	0	0	14	0	USCrime	active
+1096	-1		-1	-1	6	50	0	0	5	1	FacultySalaries	active
+1191	-1		-1	-1	19	1000000	0	0	11	8	BNG_pbc	active
+1193	-1		-1	-1	10	31104	0	0	3	7	BNG_lowbwt	active
+1196	-1		-1	-1	12	1000000	0	0	2	10	BNG_pharynx	active
+1199	-1		-1	-1	10	17496	0	0	7	3	BNG_echoMonths	active
+1201	-1		-1	-1	10	116640	0	0	2	8	BNG_breastTumor	active
+1203	-1		-1	-1	11	177147	0	0	11	0	BNG_pwLinear	active
+1595	-1		-1	-1	11	1025010	0	0	11	0	poker	active
+192	-1	-1.0	-1	-1	4	52	0	0	4	0	vineyard	active
+195	-1	7.0	-1	-1	16	159	0	0	15	1	auto_price	active
+197	-1	-1.0	-1	-1	22	8192	0	0	22	0	cpu_act	active
+201	-1	-1.0	-1	-1	49	15000	0	0	49	0	pol	active
+207	-1	-1.0	-1	-1	16	159	0	0	16	0	autoPrice	active
+210	-1	4.0	-1	-1	7	108	0	0	5	2	cloud	active
+215	-1		-1	-1	11	40768	0	0	11	0	2dplanes	active
+218	-1	-1.0	-1	-1	9	22784	0	0	9	0	house_8L	active
+225	-1		-1	-1	9	8192	0	0	9	0	puma8NH	active
+227	-1	-1.0	-1	-1	13	8192	0	0	13	0	cpu_small	active
+228	-1	12.0	-1	-1	3	55	0	0	2	1	elusage	active
+229	-1		-1	-1	11	200	0	0	11	0	pwLinear	active
+230	-1	-1.0	-1	-1	7	209	0	0	7	0	machine_cpu	active
+294	-1	-1.0	-1	-1	37	6435	0	0	37	0	satellite_image	active
+344	-1		-1	-1	11	40768	0	0	8	3	mv	active
+4544	-1		-1	-1	118	1059	0	0	118	0	GeographicalOriginalofMusic	active
+485	-1		-1	-1	5	48	0	0	1	4	analcatdata_vehicle	active
+503	-1	-1.0	-1	-1	15	6574	0	0	15	0	wind	active
+505	-1	-1.0	-1	-1	125	240	0	0	125	0	tecator	active
+519	-1		-1	-1	3	380	0	0	3	0	vinnie	active
+522	-1	-1.0	-1	-1	8	500	0	0	8	0	pm10	active
+523	-1		-1	-1	4	100	0	0	2	2	analcatdata_neavote	active
+527	-1		-1	-1	16	67	0	0	15	1	analcatdata_election2000	active
+529	-1		-1	-1	6	3848	0	0	6	0	pollen	active
+537	-1		-1	-1	9	20640	0	0	9	0	houses	active
+542	-1		-1	-1	16	60	0	0	16	0	pollution	active
+547	-1		-1	-1	8	500	0	0	8	0	no2	active
+556	-1		-1	-1	4	475	0	0	2	2	analcatdata_apnea2	active
+557	-1		-1	-1	4	475	0	0	2	2	analcatdata_apnea1	active
+560	-1		-1	-1	15	252	0	0	15	0	bodyfat	active
+561	-1		-1	-1	8	209	0	0	7	1	cpu	active
+562	-1		-1	-1	13	8192	0	0	13	0	cpu_small	active
+564	-1		-1	-1	11	40768	0	0	11	0	fried	active
+573	-1		-1	-1	22	8192	0	0	22	0	cpu_act	active
+574	-1		-1	-1	17	22784	0	0	17	0	house_16H	active
+579	-1		-1	-1	6	250	0	0	6	0	fri_c0_250_5	active
+581	-1		-1	-1	26	500	0	0	26	0	fri_c3_500_25	active
+582	-1		-1	-1	26	500	0	0	26	0	fri_c1_500_25	active
+583	-1		-1	-1	51	1000	0	0	51	0	fri_c1_1000_50	active
+584	-1		-1	-1	26	500	0	0	26	0	fri_c4_500_25	active
+586	-1		-1	-1	26	1000	0	0	26	0	fri_c3_1000_25	active
+588	-1		-1	-1	101	1000	0	0	101	0	fri_c4_1000_100	active
+589	-1		-1	-1	26	1000	0	0	26	0	fri_c2_1000_25	active
+590	-1		-1	-1	51	1000	0	0	51	0	fri_c0_1000_50	active
+591	-1		-1	-1	11	100	0	0	11	0	fri_c1_100_10	active
+592	-1		-1	-1	26	1000	0	0	26	0	fri_c4_1000_25	active
+593	-1		-1	-1	11	1000	0	0	11	0	fri_c1_1000_10	active
+594	-1		-1	-1	6	100	0	0	6	0	fri_c2_100_5	active
+595	-1		-1	-1	11	1000	0	0	11	0	fri_c0_1000_10	active
+596	-1		-1	-1	6	250	0	0	6	0	fri_c2_250_5	active
+597	-1		-1	-1	6	500	0	0	6	0	fri_c2_500_5	active
+598	-1		-1	-1	26	1000	0	0	26	0	fri_c0_1000_25	active
+599	-1		-1	-1	6	1000	0	0	6	0	fri_c2_1000_5	active
+601	-1		-1	-1	6	250	0	0	6	0	fri_c1_250_5	active
+602	-1		-1	-1	11	250	0	0	11	0	fri_c3_250_10	active
+603	-1		-1	-1	51	250	0	0	51	0	fri_c0_250_50	active
+604	-1		-1	-1	11	500	0	0	11	0	fri_c4_500_10	active
+605	-1		-1	-1	26	250	0	0	26	0	fri_c2_250_25	active
+606	-1		-1	-1	11	1000	0	0	11	0	fri_c2_1000_10	active
+607	-1		-1	-1	51	1000	0	0	51	0	fri_c4_1000_50	active
+608	-1		-1	-1	11	1000	0	0	11	0	fri_c3_1000_10	active
+609	-1		-1	-1	6	1000	0	0	6	0	fri_c0_1000_5	active
+611	-1		-1	-1	6	100	0	0	6	0	fri_c3_100_5	active
+612	-1		-1	-1	6	1000	0	0	6	0	fri_c1_1000_5	active
+613	-1		-1	-1	6	250	0	0	6	0	fri_c3_250_5	active
+615	-1		-1	-1	11	250	0	0	11	0	fri_c4_250_10	active
+616	-1		-1	-1	51	500	0	0	51	0	fri_c4_500_50	active
+617	-1		-1	-1	6	500	0	0	6	0	fri_c3_500_5	active
+618	-1		-1	-1	51	1000	0	0	51	0	fri_c3_1000_50	active
+620	-1		-1	-1	26	1000	0	0	26	0	fri_c1_1000_25	active
+621	-1		-1	-1	11	100	0	0	11	0	fri_c0_100_10	active
+622	-1		-1	-1	51	1000	0	0	51	0	fri_c2_1000_50	active
+623	-1		-1	-1	11	1000	0	0	11	0	fri_c4_1000_10	active
+624	-1		-1	-1	6	100	0	0	6	0	fri_c0_100_5	active
+626	-1		-1	-1	51	500	0	0	51	0	fri_c2_500_50	active
+627	-1		-1	-1	11	500	0	0	11	0	fri_c2_500_10	active
+628	-1		-1	-1	6	1000	0	0	6	0	fri_c3_1000_5	active
+631	-1		-1	-1	6	500	0	0	6	0	fri_c1_500_5	active
+633	-1		-1	-1	26	500	0	0	26	0	fri_c0_500_25	active
+634	-1		-1	-1	11	100	0	0	11	0	fri_c2_100_10	active
+635	-1		-1	-1	11	250	0	0	11	0	fri_c0_250_10	active
+637	-1		-1	-1	51	500	0	0	51	0	fri_c1_500_50	active
+641	-1		-1	-1	11	500	0	0	11	0	fri_c1_500_10	active
+643	-1		-1	-1	26	500	0	0	26	0	fri_c2_500_25	active
+644	-1		-1	-1	26	250	0	0	26	0	fri_c4_250_25	active
+645	-1		-1	-1	51	500	0	0	51	0	fri_c3_500_50	active
+646	-1		-1	-1	11	500	0	0	11	0	fri_c3_500_10	active
+647	-1		-1	-1	11	250	0	0	11	0	fri_c1_250_10	active
+648	-1		-1	-1	51	250	0	0	51	0	fri_c1_250_50	active
+649	-1		-1	-1	6	500	0	0	6	0	fri_c0_500_5	active
+650	-1		-1	-1	51	500	0	0	51	0	fri_c0_500_50	active
+651	-1		-1	-1	26	100	0	0	26	0	fri_c0_100_25	active
+653	-1		-1	-1	26	250	0	0	26	0	fri_c0_250_25	active
+654	-1		-1	-1	11	500	0	0	11	0	fri_c0_500_10	active
+656	-1		-1	-1	6	100	0	0	6	0	fri_c1_100_5	active
+657	-1		-1	-1	11	250	0	0	11	0	fri_c2_250_10	active
+658	-1		-1	-1	26	250	0	0	26	0	fri_c3_250_25	active
+659	-1		-1	-1	8	47	0	0	8	0	sleuth_ex1714	active
+663	-1		-1	-1	3	120	0	0	3	0	rabe_266	active
+665	-1		-1	-1	7	147	0	0	3	4	sleuth_case2002	active
+666	-1		-1	-1	11	508	0	0	11	0	rmftsa_ladata	active
+678	-1		-1	-1	4	111	0	0	4	0	visualizing_environmental	active
+687	-1		-1	-1	6	62	0	0	6	0	sleuth_ex1605	active
+690	-1		-1	-1	5	323	0	0	5	0	visualizing_galaxy	active
+695	-1		-1	-1	13	235	0	0	13	0	chatfield_4	active
+706	-1		-1	-1	7	93	0	0	5	2	sleuth_case1202	active
+712	-1		-1	-1	3	222	0	0	3	0	chscase_geyser1	active
