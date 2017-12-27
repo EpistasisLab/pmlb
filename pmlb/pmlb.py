@@ -25,175 +25,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import pandas as pd
 import os
+from .dataset_lists import classification_dataset_names, regression_dataset_names
 
-dataset_names = [
-    'GAMETES_Epistasis_2-Way_1000atts_0.4H_EDM-1_EDM-1_1',
-    'GAMETES_Epistasis_2-Way_20atts_0.1H_EDM-1_1',
-    'GAMETES_Epistasis_2-Way_20atts_0.4H_EDM-1_1',
-    'GAMETES_Epistasis_3-Way_20atts_0.2H_EDM-1_1',
-    'GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM-2_001',
-    'GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM-2_001',
-    'Hill_Valley_with_noise',
-    'Hill_Valley_without_noise',
-    'adult',
-    'agaricus-lepiota',
-    'allbp',
-    'allhyper',
-    'allhypo',
-    'allrep',
-    'analcatdata_aids',
-    'analcatdata_asbestos',
-    'analcatdata_authorship',
-    'analcatdata_bankruptcy',
-    'analcatdata_boxing1',
-    'analcatdata_boxing2',
-    'analcatdata_creditscore',
-    'analcatdata_cyyoung8092',
-    'analcatdata_cyyoung9302',
-    'analcatdata_dmft',
-    'analcatdata_fraud',
-    'analcatdata_germangss',
-    'analcatdata_happiness',
-    'analcatdata_japansolvent',
-    'analcatdata_lawsuit',
-    'ann-thyroid',
-    'appendicitis',
-    'australian',
-    'auto',
-    'backache',
-    'balance-scale',
-    'banana',
-    'biomed',
-    'breast',
-    'breast-cancer',
-    'breast-cancer-wisconsin',
-    'breast-w',
-    'buggyCrx',
-    'bupa',
-    'calendarDOW',
-    'car',
-    'car-evaluation',
-    'cars',
-    'cars1',
-    'chess',
-    'churn',
-    'clean1',
-    'clean2',
-    'cleve',
-    'cleveland',
-    'cleveland-nominal',
-    'cloud',
-    'cmc',
-    'coil2000',
-    'colic',
-    'collins',
-    'confidence',
-    'connect-4',
-    'contraceptive',
-    'corral',
-    'credit-a',
-    'credit-g',
-    'crx',
-    'dermatology',
-    'diabetes',
-    'dis',
-    'dna',
-    'ecoli',
-    'fars',
-    'flags',
-    'flare',
-    'german',
-    'glass',
-    'glass2',
-    'haberman',
-    'hayes-roth',
-    'heart-c',
-    'heart-h',
-    'heart-statlog',
-    'hepatitis',
-    'horse-colic',
-    'house-votes-84',
-    'hungarian',
-    'hypothyroid',
-    'ionosphere',
-    'iris',
-    'irish',
-    'kddcup',
-    'kr-vs-kp',
-    'krkopt',
-    'labor',
-    'led24',
-    'led7',
-    'letter',
-    'liver-disorder',
-    'lupus',
-    'lymphography',
-    'magic',
-    'mfeat-factors',
-    'mfeat-fourier',
-    'mfeat-karhunen',
-    'mfeat-morphological',
-    'mfeat-pixel',
-    'mfeat-zernike',
-    'mnist',
-    'mofn-3-7-10',
-    'molecular-biology_promoters',
-    'monk1',
-    'monk2',
-    'monk3',
-    'movement_libras',
-    'mushroom',
-    'mux6',
-    'new-thyroid',
-    'nursery',
-    'optdigits',
-    'page-blocks',
-    'parity5',
-    'parity5+5',
-    'pendigits',
-    'phoneme',
-    'pima',
-    'poker',
-    'postoperative-patient-data',
-    'prnn_crabs',
-    'prnn_fglass',
-    'prnn_synth',
-    'profb',
-    'promoters',
-    'ring',
-    'saheart',
-    'satimage',
-    'schizo',
-    'segmentation',
-    'shuttle',
-    'sleep',
-    'solar-flare_1',
-    'solar-flare_2',
-    'sonar',
-    'soybean',
-    'spambase',
-    'spect',
-    'spectf',
-    'splice',
-    'tae',
-    'texture',
-    'threeOf9',
-    'tic-tac-toe',
-    'titanic',
-    'tokyo1',
-    'twonorm',
-    'vehicle',
-    'vote',
-    'vowel',
-    'waveform-21',
-    'waveform-40',
-    'wdbc',
-    'wine-quality-red',
-    'wine-quality-white',
-    'wine-recognition',
-    'xd6',
-    'yeast'
-]
+dataset_names = classification_dataset_names + regression_dataset_names
+GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
+suffix = '.tsv.gz'
 
 def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     """Download a data set from the PMLB, (optionally) store it locally, and return the data set.
@@ -217,15 +53,23 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
         if return_X_y == True: A tuple of NumPy arrays containing (features, labels)
 
     """
-    if dataset_name not in dataset_names:
+    if dataset_name in classification_dataset_names:
+        data_type = 'classification'
+    elif dataset_name in regression_dataset_names:
+        data_type = 'regression'
+    else:
         raise ValueError('Data set not found in PMLB.')
 
-    dataset_url = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets/{DATASET_NAME}/{DATASET_NAME}.csv.gz'.format(DATASET_NAME=dataset_name)
+    dataset_url = '{GITHUB_URL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(GITHUB_URL=GITHUB_URL,
+                                DATA_TYPE=data_type,
+                                DATASET_NAME=dataset_name,
+                                SUFFIX=suffix
+                                )
 
     if local_cache_dir is None:
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
     else:
-        dataset_path = os.path.join(local_cache_dir, dataset_name) + '.csv.gz'
+        dataset_path = os.path.join(local_cache_dir, dataset_name) + suffix
 
         # Use the local cache if the file already exists there
         if os.path.exists(dataset_path):
@@ -236,8 +80,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
             dataset.to_csv(dataset_path, sep='\t', compression='gzip', index=False)
 
     if return_X_y:
-        X = dataset.drop('class', axis=1).values
-        y = dataset['class'].values
+        X = dataset.drop('target', axis=1).values
+        y = dataset['target'].values
         return (X, y)
     else:
         return dataset
