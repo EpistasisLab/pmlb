@@ -58,9 +58,10 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     elif dataset_name in regression_dataset_names:
         data_type = 'regression'
     else:
-        raise ValueError('Data set not found in PMLB.')
+        raise ValueError('Dataset not found in PMLB.')
 
-    dataset_url = '{GITHUB_URL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(GITHUB_URL=GITHUB_URL,
+    dataset_url = '{GITHUB_URL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(
+                                GITHUB_URL=GITHUB_URL,
                                 DATA_TYPE=data_type,
                                 DATASET_NAME=dataset_name,
                                 SUFFIX=suffix
