@@ -1,8 +1,8 @@
 # Penn Machine Learning Benchmarks
 
-This repository contains the code and data for a large, curated set of benchmarks for evaluating supervised machine learning algorithms. These data sets cover a broad range of applications, and include binary and multi-class problems, as well as combinations of categorical, ordinal, and continuous features. There are no missing values in these data sets.
+This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms. These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features. There are no missing values in these data sets.
 
-Check the `datasets` directory for information about the individual data sets.
+Check the `datasets` directory for information about the individual data sets. All binary and multiclass classification datasets are in the `classification` sub-directory, and all regression datasets are in the `regression` sub-directory.
 
 ## Data set format
 
@@ -36,12 +36,33 @@ The `fetch_data` function has two additional parameters:
 * `return_X_y` (True/False): Whether to return the data in scikit-learn format, with the features and labels stored in separate NumPy arrays.
 * `local_cache_dir` (string): The directory on your local machine to store the data files so you don't have to fetch them over the web again. By default, the wrapper does not use a local cache directory.
 
+For example:
+
+```python
+from pmlb import fetch_data
+
+# Returns NumPy arrays
+adult_X, adult_y = fetch_data('adult', return_X_y=True, local_cache_dir='./')
+print(adult_X)
+print(adult_y)
+```
+
 You can also list all of the available data sets as follows:
 
 ```python
 from pmlb import dataset_names
 
 print(dataset_names)
+```
+
+Or if you only want a list of available classification or regression datasets:
+
+```python
+from pmlb import classification_dataset_names, regression_dataset_names
+
+print(classification_dataset_names)
+print('')
+print(regression_dataset_names)
 ```
 
 ## Citing PMLB
