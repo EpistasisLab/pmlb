@@ -7,9 +7,10 @@ from pmlb.write_metadata import imbalance_metrics, count_features_type
 
 def compute_class_summary(target):
     class_counts = target.value_counts()
-    majority_size, minority_size = class_counts.min(), class_counts.max()
+    majority_size, minority_size = class_counts.max(), class_counts.min()
     num_classes, imbalance = imbalance_metrics(target.tolist())
     return majority_size, minority_size, num_classes, imbalance
+
 
 def compute_missingness_summary(df):
     instances_without_missing = df.dropna(axis=0).shape[0]
