@@ -6,4 +6,4 @@ Each subdirectory corresponds to a separate data set, and will have a README fil
 
 # High-level summary of data sets
 
-[in progress]
+These regression benchmarks are selected from [OpenML](https://www.openml.org). The `did` column in the [meta-features table](/datasets/regression/Regression_datasets_pmlb.tsv) presents the dataset ID in OpenML.
