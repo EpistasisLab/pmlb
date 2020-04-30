@@ -78,7 +78,9 @@ We need help doing this for each dataset!
 
 New datasets should follow these guidelines:
 
- - Samples/Observations of the dataset should be in rows, and features/variables in columns, with a header file. 
+ - Each sample/observation forms a row of the dataset.
+ - Each feature/variable forms a column of the dataset.
+ - Column headers are feature/variable names.
  - The data should be tab-delimited and in `.tsv.gz` format. 
  - The dataset should be in the correct folder; i.e., for a classification dataset, `penn-ml-benchmarks/datasets/classification/your_dataset/'
  - The dependent variable, i.e., outcome/target, should be labelled `target'. 
