@@ -1,4 +1,4 @@
-dataset: wine-quality-red
+dataset: wine_quality_red
 description: >
   The dataset is related to the red variant of the Portuguese "Vinho Verde" wine.
   For more details, consult: http://www.vinhoverde.pt/en/ or the reference (Cortez et al., 2009).
@@ -6,28 +6,28 @@ description: >
   The inputs include objective tests (e.g. pH values) and the output is sensory data (median of at least 3 evaluations made by wine experts).
 source: http://archive.ics.uci.edu/ml/datasets/Wine+Quality
 publication: >
-  P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis. 
+  P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
   Modeling wine preferences by data mining from physicochemical properties.
   In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236.
   doi:10.1016/j.dss.2009.05.016
 task: classification
 features: # list of features in the dataset
-  - name: fixed.acidity
+  - name: fixed_acidity
     type: continuous
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., 'Control = 0', 'Case' = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-  - name: volatile.acidity
+  - name: volatile_acidity
     type: continuous
-  - name: citric.acid
+  - name: citric_acid
     type: continuous
-  - name: residual.sugar
+  - name: residual_sugar
     type: continuous
   - name: chlorides
     type: continuous
-  - name: free.sulfur.dioxide
+  - name: free_sulfur_dioxide
     type: continuous
-  - name: total.sulfur.dioxide
+  - name: total_sulfur_dioxide
     type: continuous
   - name: density
     type: continuous
