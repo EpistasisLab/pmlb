@@ -1,2 +1,0 @@
-# wine-recognition
-

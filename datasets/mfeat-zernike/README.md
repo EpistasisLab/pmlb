@@ -1,2 +1,0 @@
-# mfeat-zernike
-
