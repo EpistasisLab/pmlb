@@ -1,2 +1,0 @@
-# horse-colic
-
