@@ -80,10 +80,11 @@ New datasets should follow these guidelines:
 
  - Each sample/observation forms a row of the dataset.
  - Each feature/variable forms a column of the dataset.
- - Column headers are feature/variable names.
+ - The dependent variable, i.e., outcome/target, should be labelled `'target'`.
+ - Column headers are feature/variable names and `'target'`.
+ - Any `'sample_id'` or `'row_id'` column should be *excluded*.
  - The data should be tab-delimited and in `.tsv.gz` format.
- - The dataset should be in the correct folder; i.e., for a classification dataset, `penn-ml-benchmarks/datasets/classification/your_dataset/'
- - The dependent variable, i.e., outcome/target, should be labelled `target'.
+ - The dataset should be in the correct folder; i.e., for a classification dataset, `penn-ml-benchmarks/datasets/classification/your_dataset/`
  - A metadata.yaml file must be provided with all required fields filled in. Please follow the template guidelines.
  - The dataset should not exceed 50 MB.  
 
