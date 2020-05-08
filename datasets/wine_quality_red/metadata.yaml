@@ -11,6 +11,11 @@ publication: >
   In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236.
   doi:10.1016/j.dss.2009.05.016
 task: classification
+target:
+  type: ordinal
+  description: >
+    Wine quality score based on sensory data, median of at least 3 evaluations made by wine experts.
+  code: ranges from 0 (very bad) to 10 (very excellent)
 features: # list of features in the dataset
   - name: fixed_acidity
     type: continuous
@@ -37,8 +42,3 @@ features: # list of features in the dataset
     type: continuous
   - name: alcohol
     type: continuous
-target:
-  type: ordinal
-  description: >
-    Wine quality score based on sensory data, median of at least 3 evaluations made by wine experts.
-  code: ranges from 0 (very bad) to 10 (very excellent)
