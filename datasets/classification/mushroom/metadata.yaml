@@ -1,0 +1,58 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: mushroom
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: cap-shape
+      type: discrete
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: cap-surface
+      type: discrete
+    - name: cap-color
+      type: discrete
+    - name: bruises?
+      type: binary
+    - name: odor
+      type: discrete
+    - name: gill-attachment
+      type: binary
+    - name: gill-spacing
+      type: binary
+    - name: gill-size
+      type: binary
+    - name: gill-color
+      type: discrete
+    - name: stalk-shape
+      type: binary
+    - name: stalk-root
+      type: discrete
+    - name: stalk-surface-above-ring
+      type: discrete
+    - name: stalk-surface-below-ring
+      type: discrete
+    - name: stalk-color-above-ring
+      type: discrete
+    - name: stalk-color-below-ring
+      type: discrete
+    - name: veil-type
+      type: discrete
+    - name: veil-color
+      type: discrete
+    - name: ring-number
+      type: discrete
+    - name: ring-type
+      type: discrete
+    - name: spore-print-color
+      type: discrete
+    - name: population
+      type: discrete
+    - name: habitat
+      type: discrete

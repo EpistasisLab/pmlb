@@ -1,0 +1,40 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: sleep
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: discrete
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: V0
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: V1
+      type: continuous
+    - name: V2
+      type: continuous
+    - name: V3
+      type: continuous
+    - name: V4
+      type: continuous
+    - name: V5
+      type: continuous
+    - name: V6
+      type: continuous
+    - name: V7
+      type: continuous
+    - name: V8
+      type: continuous
+    - name: V9
+      type: continuous
+    - name: V10
+      type: continuous
+    - name: V11
+      type: continuous
+    - name: V12
+      type: continuous

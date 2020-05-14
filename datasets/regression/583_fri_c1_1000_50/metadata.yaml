@@ -1,0 +1,114 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 583_fri_c1_1000_50
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+    type: continuous
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: oz1
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: oz2
+      type: continuous
+    - name: oz3
+      type: continuous
+    - name: oz4
+      type: continuous
+    - name: oz5
+      type: continuous
+    - name: oz6
+      type: continuous
+    - name: oz7
+      type: continuous
+    - name: oz8
+      type: continuous
+    - name: oz9
+      type: continuous
+    - name: oz10
+      type: continuous
+    - name: oz11
+      type: continuous
+    - name: oz12
+      type: continuous
+    - name: oz13
+      type: continuous
+    - name: oz14
+      type: continuous
+    - name: oz15
+      type: continuous
+    - name: oz16
+      type: continuous
+    - name: oz17
+      type: continuous
+    - name: oz18
+      type: continuous
+    - name: oz19
+      type: continuous
+    - name: oz20
+      type: continuous
+    - name: oz21
+      type: continuous
+    - name: oz22
+      type: continuous
+    - name: oz23
+      type: continuous
+    - name: oz24
+      type: continuous
+    - name: oz25
+      type: continuous
+    - name: oz26
+      type: continuous
+    - name: oz27
+      type: continuous
+    - name: oz28
+      type: continuous
+    - name: oz29
+      type: continuous
+    - name: oz30
+      type: continuous
+    - name: oz31
+      type: continuous
+    - name: oz32
+      type: continuous
+    - name: oz33
+      type: continuous
+    - name: oz34
+      type: continuous
+    - name: oz35
+      type: continuous
+    - name: oz36
+      type: continuous
+    - name: oz37
+      type: continuous
+    - name: oz38
+      type: continuous
+    - name: oz39
+      type: continuous
+    - name: oz40
+      type: continuous
+    - name: oz41
+      type: continuous
+    - name: oz42
+      type: continuous
+    - name: oz43
+      type: continuous
+    - name: oz44
+      type: continuous
+    - name: oz45
+      type: continuous
+    - name: oz46
+      type: continuous
+    - name: oz47
+      type: continuous
+    - name: oz48
+      type: continuous
+    - name: oz49
+      type: continuous
+    - name: oz50
+      type: continuous

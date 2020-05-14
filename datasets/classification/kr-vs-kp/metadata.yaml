@@ -1,0 +1,86 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: kr-vs-kp
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: c1
+      type: binary
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: c2
+      type: binary
+    - name: c3
+      type: binary
+    - name: c4
+      type: binary
+    - name: c5
+      type: binary
+    - name: c6
+      type: binary
+    - name: c7
+      type: binary
+    - name: c8
+      type: binary
+    - name: c9
+      type: binary
+    - name: c10
+      type: binary
+    - name: c11
+      type: binary
+    - name: c12
+      type: binary
+    - name: c13
+      type: binary
+    - name: c14
+      type: binary
+    - name: c15
+      type: discrete
+    - name: c16
+      type: binary
+    - name: c17
+      type: binary
+    - name: c18
+      type: binary
+    - name: c19
+      type: binary
+    - name: c20
+      type: binary
+    - name: c21
+      type: binary
+    - name: c22
+      type: binary
+    - name: c23
+      type: binary
+    - name: c24
+      type: binary
+    - name: c25
+      type: binary
+    - name: c26
+      type: binary
+    - name: c27
+      type: binary
+    - name: c28
+      type: binary
+    - name: c29
+      type: binary
+    - name: c30
+      type: binary
+    - name: c31
+      type: binary
+    - name: c32
+      type: binary
+    - name: c33
+      type: binary
+    - name: c34
+      type: binary
+    - name: c35
+      type: binary
+    - name: c36
+      type: binary

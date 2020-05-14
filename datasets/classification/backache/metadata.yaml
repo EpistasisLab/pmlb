@@ -1,0 +1,78 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: backache
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: id
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: col_2
+      type: discrete
+    - name: col_3
+      type: discrete
+    - name: col_4
+      type: continuous
+    - name: col_5
+      type: continuous
+    - name: col_6
+      type: continuous
+    - name: col_7
+      type: continuous
+    - name: col_8
+      type: continuous
+    - name: col_9
+      type: discrete
+    - name: col_10
+      type: discrete
+    - name: col_11
+      type: binary
+    - name: col_12
+      type: binary
+    - name: col_13
+      type: binary
+    - name: col_14
+      type: binary
+    - name: col_15
+      type: binary
+    - name: col_16
+      type: binary
+    - name: col_17
+      type: binary
+    - name: col_18
+      type: binary
+    - name: col_19
+      type: binary
+    - name: col_20
+      type: binary
+    - name: col_21
+      type: binary
+    - name: col_22
+      type: binary
+    - name: col_23
+      type: binary
+    - name: col_24
+      type: binary
+    - name: col_25
+      type: binary
+    - name: col_26
+      type: binary
+    - name: col_27
+      type: binary
+    - name: col_28
+      type: binary
+    - name: col_29
+      type: binary
+    - name: col_30
+      type: binary
+    - name: col_31
+      type: binary
+    - name: col_32
+      type: binary

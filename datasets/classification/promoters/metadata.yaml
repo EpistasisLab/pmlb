@@ -1,0 +1,130 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: promoters
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: name
+      type: discrete
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: A3
+      type: discrete
+    - name: A4
+      type: discrete
+    - name: A5
+      type: discrete
+    - name: A6
+      type: discrete
+    - name: A7
+      type: discrete
+    - name: A8
+      type: discrete
+    - name: A9
+      type: discrete
+    - name: A10
+      type: discrete
+    - name: A11
+      type: discrete
+    - name: A12
+      type: discrete
+    - name: A13
+      type: discrete
+    - name: A14
+      type: discrete
+    - name: A15
+      type: discrete
+    - name: A16
+      type: discrete
+    - name: A17
+      type: discrete
+    - name: A18
+      type: discrete
+    - name: A19
+      type: discrete
+    - name: A20
+      type: discrete
+    - name: A21
+      type: discrete
+    - name: A22
+      type: discrete
+    - name: A23
+      type: discrete
+    - name: A24
+      type: discrete
+    - name: A25
+      type: discrete
+    - name: A26
+      type: discrete
+    - name: A27
+      type: discrete
+    - name: A28
+      type: discrete
+    - name: A29
+      type: discrete
+    - name: A30
+      type: discrete
+    - name: A31
+      type: discrete
+    - name: A32
+      type: discrete
+    - name: A33
+      type: discrete
+    - name: A34
+      type: discrete
+    - name: A35
+      type: discrete
+    - name: A36
+      type: discrete
+    - name: A37
+      type: discrete
+    - name: A38
+      type: discrete
+    - name: A39
+      type: discrete
+    - name: A40
+      type: discrete
+    - name: A41
+      type: discrete
+    - name: A42
+      type: discrete
+    - name: A43
+      type: discrete
+    - name: A44
+      type: discrete
+    - name: A45
+      type: discrete
+    - name: A46
+      type: discrete
+    - name: A47
+      type: discrete
+    - name: A48
+      type: discrete
+    - name: A49
+      type: discrete
+    - name: A50
+      type: discrete
+    - name: A51
+      type: discrete
+    - name: A52
+      type: discrete
+    - name: A53
+      type: discrete
+    - name: A54
+      type: discrete
+    - name: A55
+      type: discrete
+    - name: A56
+      type: discrete
+    - name: A57
+      type: discrete
+    - name: A58
+      type: discrete
+    - name: A59
+      type: discrete

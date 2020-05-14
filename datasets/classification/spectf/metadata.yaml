@@ -1,0 +1,102 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: spectf
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: F1R
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: F1S
+      type: continuous
+    - name: F2R
+      type: continuous
+    - name: F2S
+      type: continuous
+    - name: F3R
+      type: continuous
+    - name: F3S
+      type: continuous
+    - name: F4R
+      type: continuous
+    - name: F4S
+      type: continuous
+    - name: F5R
+      type: continuous
+    - name: F5S
+      type: continuous
+    - name: F6R
+      type: continuous
+    - name: F6S
+      type: continuous
+    - name: F7R
+      type: continuous
+    - name: F7S
+      type: continuous
+    - name: F8R
+      type: continuous
+    - name: F8S
+      type: continuous
+    - name: F9R
+      type: continuous
+    - name: F9S
+      type: continuous
+    - name: F10R
+      type: continuous
+    - name: F10S
+      type: continuous
+    - name: F11R
+      type: continuous
+    - name: F11S
+      type: continuous
+    - name: F12R
+      type: continuous
+    - name: F12S
+      type: continuous
+    - name: F13R
+      type: continuous
+    - name: F13S
+      type: continuous
+    - name: F14R
+      type: continuous
+    - name: F14S
+      type: continuous
+    - name: F15R
+      type: continuous
+    - name: F15S
+      type: continuous
+    - name: F16R
+      type: continuous
+    - name: F16S
+      type: continuous
+    - name: F17R
+      type: continuous
+    - name: F17S
+      type: continuous
+    - name: F18R
+      type: continuous
+    - name: F18S
+      type: continuous
+    - name: F19R
+      type: continuous
+    - name: F19S
+      type: continuous
+    - name: F20R
+      type: continuous
+    - name: F20S
+      type: continuous
+    - name: F21R
+      type: continuous
+    - name: F21S
+      type: continuous
+    - name: F22R
+      type: continuous
+    - name: F22S
+      type: continuous

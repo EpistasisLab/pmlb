@@ -1,0 +1,44 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 542_pollution
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+    type: continuous
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: PREC
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: JANT
+      type: continuous
+    - name: JULT
+      type: continuous
+    - name: OVR65
+      type: continuous
+    - name: POPN
+      type: continuous
+    - name: EDUC
+      type: continuous
+    - name: HOUS
+      type: continuous
+    - name: DENS
+      type: continuous
+    - name: NONW
+      type: continuous
+    - name: WWDRK
+      type: continuous
+    - name: POOR
+      type: continuous
+    - name: HC
+      type: continuous
+    - name: NOX
+      type: continuous
+    - name: SO2
+      type: continuous
+    - name: HUMID
+      type: continuous

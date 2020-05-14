@@ -1,0 +1,64 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: hypothyroid
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: age
+      type: discrete
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: sex
+      type: discrete
+    - name: on_thyroxine
+      type: binary
+    - name: query_on_thyroxine
+      type: binary
+    - name: on_antithyroid_medication
+      type: binary
+    - name: thyroid_surgery
+      type: binary
+    - name: query_hypothyroid
+      type: binary
+    - name: query_hyperthyroid
+      type: binary
+    - name: pregnant
+      type: binary
+    - name: sick
+      type: binary
+    - name: tumor
+      type: binary
+    - name: lithium
+      type: binary
+    - name: goitre
+      type: binary
+    - name: TSH_measured
+      type: binary
+    - name: TSH
+      type: discrete
+    - name: T3_measured
+      type: binary
+    - name: T3
+      type: discrete
+    - name: TT4_measured
+      type: binary
+    - name: TT4
+      type: discrete
+    - name: T4U_measured
+      type: binary
+    - name: T4U
+      type: discrete
+    - name: FTI_measured
+      type: binary
+    - name: FTI
+      type: discrete
+    - name: TBG_measured
+      type: binary
+    - name: TBG
+      type: discrete

@@ -1,0 +1,102 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: tokyo1
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: cpu_avg_user
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: cpu_avg_sys
+      type: continuous
+    - name: cpu_avg_busy
+      type: continuous
+    - name: cpu_avg_wait
+      type: continuous
+    - name: cpu_avg_idle
+      type: continuous
+    - name: cpu_avg_waste
+      type: continuous
+    - name: cpu_max_user
+      type: continuous
+    - name: cpu_max_sys
+      type: continuous
+    - name: cpu_max_busy
+      type: continuous
+    - name: cpu_max_wait
+      type: continuous
+    - name: cpu_max_idle
+      type: continuous
+    - name: cpu_max_waste
+      type: continuous
+    - name: cpu_frac_busy
+      type: continuous
+    - name: io_iget
+      type: continuous
+    - name: io_bread
+      type: continuous
+    - name: io_bwrite
+      type: continuous
+    - name: io_lread
+      type: continuous
+    - name: io_lwrite
+      type: continuous
+    - name: io_phread
+      type: continuous
+    - name: io_phwrite
+      type: continuous
+    - name: io_wcancel
+      type: continuous
+    - name: io_namei
+      type: continuous
+    - name: io_dirblk
+      type: continuous
+    - name: disk_avg_active
+      type: continuous
+    - name: disk_max_active
+      type: continuous
+    - name: disk_frac_active
+      type: continuous
+    - name: disk_avg_read
+      type: continuous
+    - name: disk_avg_write
+      type: continuous
+    - name: disk_avg_total
+      type: continuous
+    - name: disk_max_read
+      type: continuous
+    - name: disk_max_write
+      type: continuous
+    - name: disk_max_total
+      type: continuous
+    - name: disk_frac_busy
+      type: continuous
+    - name: net_avg_read
+      type: continuous
+    - name: net_avg_write
+      type: continuous
+    - name: net_avg_total
+      type: continuous
+    - name: net_max_read
+      type: continuous
+    - name: net_max_write
+      type: continuous
+    - name: net_max_total
+      type: continuous
+    - name: net_frac_busy
+      type: continuous
+    - name: mem_swap
+      type: continuous
+    - name: mem_fault
+      type: continuous
+    - name: mem_tlbflush
+      type: continuous
+    - name: syscall_total
+      type: continuous

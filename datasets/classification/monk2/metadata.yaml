@@ -1,0 +1,26 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: monk2
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: attribute#1
+      type: discrete
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: attribute#2
+      type: discrete
+    - name: attribute#3
+      type: binary
+    - name: attribute#4
+      type: discrete
+    - name: attribute#5
+      type: discrete
+    - name: attribute#6
+      type: binary

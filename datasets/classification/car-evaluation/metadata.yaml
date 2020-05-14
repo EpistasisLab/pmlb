@@ -1,0 +1,56 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: car-evaluation
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: discrete
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: buying_price_vhigh
+      type: binary
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: buying_price_high
+      type: binary
+    - name: buying_price_med
+      type: binary
+    - name: buying_price_low
+      type: binary
+    - name: maintenance_price_vhigh
+      type: binary
+    - name: maintenance_price_high
+      type: binary
+    - name: maintenance_price_med
+      type: binary
+    - name: maintenance_price_low
+      type: binary
+    - name: doors_2
+      type: binary
+    - name: doors_3
+      type: binary
+    - name: doors_4
+      type: binary
+    - name: doors_5more
+      type: binary
+    - name: persons_2
+      type: binary
+    - name: persons_4
+      type: binary
+    - name: persons_more
+      type: binary
+    - name: luggage_boot_size_small
+      type: binary
+    - name: luggage_boot_size_med
+      type: binary
+    - name: luggage_boot_size_big
+      type: binary
+    - name: safety_low
+      type: binary
+    - name: safety_med
+      type: binary
+    - name: safety_high
+      type: binary

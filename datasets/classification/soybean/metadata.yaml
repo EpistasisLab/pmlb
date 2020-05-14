@@ -1,0 +1,84 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: soybean
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: discrete
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: date
+      type: discrete
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: plant-stand
+      type: discrete
+    - name: precip
+      type: discrete
+    - name: temp
+      type: discrete
+    - name: hail
+      type: discrete
+    - name: crop-hist
+      type: discrete
+    - name: area-damaged
+      type: discrete
+    - name: severity
+      type: discrete
+    - name: seed-tmt
+      type: discrete
+    - name: germination
+      type: discrete
+    - name: plant-growth
+      type: discrete
+    - name: leaves
+      type: binary
+    - name: leafspots-halo
+      type: discrete
+    - name: leafspots-marg
+      type: discrete
+    - name: leafspot-size
+      type: discrete
+    - name: leaf-shread
+      type: discrete
+    - name: leaf-malf
+      type: discrete
+    - name: leaf-mild
+      type: discrete
+    - name: stem
+      type: discrete
+    - name: lodging
+      type: discrete
+    - name: stem-cankers
+      type: discrete
+    - name: canker-lesion
+      type: discrete
+    - name: fruiting-bodies
+      type: discrete
+    - name: external-decay
+      type: discrete
+    - name: mycelium
+      type: discrete
+    - name: int-discolor
+      type: discrete
+    - name: sclerotia
+      type: discrete
+    - name: fruit-pods
+      type: discrete
+    - name: fruit-spots
+      type: discrete
+    - name: seed
+      type: discrete
+    - name: mold-growth
+      type: discrete
+    - name: seed-discolor
+      type: discrete
+    - name: seed-size
+      type: discrete
+    - name: shriveling
+      type: discrete
+    - name: roots
+      type: discrete
