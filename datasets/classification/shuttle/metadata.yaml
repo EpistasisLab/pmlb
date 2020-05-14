@@ -1,0 +1,32 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: shuttle
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: discrete
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: A1
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: A2
+      type: continuous
+    - name: A3
+      type: continuous
+    - name: A4
+      type: continuous
+    - name: A5
+      type: continuous
+    - name: A6
+      type: continuous
+    - name: A7
+      type: continuous
+    - name: A8
+      type: continuous
+    - name: A9
+      type: continuous

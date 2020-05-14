@@ -1,0 +1,262 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 505_tecator
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+    type: continuous
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: absorbance_1
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: absorbance_2
+      type: continuous
+    - name: absorbance_3
+      type: continuous
+    - name: absorbance_4
+      type: continuous
+    - name: absorbance_5
+      type: continuous
+    - name: absorbance_6
+      type: continuous
+    - name: absorbance_7
+      type: continuous
+    - name: absorbance_8
+      type: continuous
+    - name: absorbance_9
+      type: continuous
+    - name: absorbance_10
+      type: continuous
+    - name: absorbance_11
+      type: continuous
+    - name: absorbance_12
+      type: continuous
+    - name: absorbance_13
+      type: continuous
+    - name: absorbance_14
+      type: continuous
+    - name: absorbance_15
+      type: continuous
+    - name: absorbance_16
+      type: continuous
+    - name: absorbance_17
+      type: continuous
+    - name: absorbance_18
+      type: continuous
+    - name: absorbance_19
+      type: continuous
+    - name: absorbance_20
+      type: continuous
+    - name: absorbance_21
+      type: continuous
+    - name: absorbance_22
+      type: continuous
+    - name: absorbance_23
+      type: continuous
+    - name: absorbance_24
+      type: continuous
+    - name: absorbance_25
+      type: continuous
+    - name: absorbance_26
+      type: continuous
+    - name: absorbance_27
+      type: continuous
+    - name: absorbance_28
+      type: continuous
+    - name: absorbance_29
+      type: continuous
+    - name: absorbance_30
+      type: continuous
+    - name: absorbance_31
+      type: continuous
+    - name: absorbance_32
+      type: continuous
+    - name: absorbance_33
+      type: continuous
+    - name: absorbance_34
+      type: continuous
+    - name: absorbance_35
+      type: continuous
+    - name: absorbance_36
+      type: continuous
+    - name: absorbance_37
+      type: continuous
+    - name: absorbance_38
+      type: continuous
+    - name: absorbance_39
+      type: continuous
+    - name: absorbance_40
+      type: continuous
+    - name: absorbance_41
+      type: continuous
+    - name: absorbance_42
+      type: continuous
+    - name: absorbance_43
+      type: continuous
+    - name: absorbance_44
+      type: continuous
+    - name: absorbance_45
+      type: continuous
+    - name: absorbance_46
+      type: continuous
+    - name: absorbance_47
+      type: continuous
+    - name: absorbance_48
+      type: continuous
+    - name: absorbance_49
+      type: continuous
+    - name: absorbance_50
+      type: continuous
+    - name: absorbance_51
+      type: continuous
+    - name: absorbance_52
+      type: continuous
+    - name: absorbance_53
+      type: continuous
+    - name: absorbance_54
+      type: continuous
+    - name: absorbance_55
+      type: continuous
+    - name: absorbance_56
+      type: continuous
+    - name: absorbance_57
+      type: continuous
+    - name: absorbance_58
+      type: continuous
+    - name: absorbance_59
+      type: continuous
+    - name: absorbance_60
+      type: continuous
+    - name: absorbance_61
+      type: continuous
+    - name: absorbance_62
+      type: continuous
+    - name: absorbance_63
+      type: continuous
+    - name: absorbance_64
+      type: continuous
+    - name: absorbance_65
+      type: continuous
+    - name: absorbance_66
+      type: continuous
+    - name: absorbance_67
+      type: continuous
+    - name: absorbance_68
+      type: continuous
+    - name: absorbance_69
+      type: continuous
+    - name: absorbance_70
+      type: continuous
+    - name: absorbance_71
+      type: continuous
+    - name: absorbance_72
+      type: continuous
+    - name: absorbance_73
+      type: continuous
+    - name: absorbance_74
+      type: continuous
+    - name: absorbance_75
+      type: continuous
+    - name: absorbance_76
+      type: continuous
+    - name: absorbance_77
+      type: continuous
+    - name: absorbance_78
+      type: continuous
+    - name: absorbance_79
+      type: continuous
+    - name: absorbance_80
+      type: continuous
+    - name: absorbance_81
+      type: continuous
+    - name: absorbance_82
+      type: continuous
+    - name: absorbance_83
+      type: continuous
+    - name: absorbance_84
+      type: continuous
+    - name: absorbance_85
+      type: continuous
+    - name: absorbance_86
+      type: continuous
+    - name: absorbance_87
+      type: continuous
+    - name: absorbance_88
+      type: continuous
+    - name: absorbance_89
+      type: continuous
+    - name: absorbance_90
+      type: continuous
+    - name: absorbance_91
+      type: continuous
+    - name: absorbance_92
+      type: continuous
+    - name: absorbance_93
+      type: continuous
+    - name: absorbance_94
+      type: continuous
+    - name: absorbance_95
+      type: continuous
+    - name: absorbance_96
+      type: continuous
+    - name: absorbance_97
+      type: continuous
+    - name: absorbance_98
+      type: continuous
+    - name: absorbance_99
+      type: continuous
+    - name: absorbance_100
+      type: continuous
+    - name: principal_component_1
+      type: continuous
+    - name: principal_component_2
+      type: continuous
+    - name: principal_component_3
+      type: continuous
+    - name: principal_component_4
+      type: continuous
+    - name: principal_component_5
+      type: continuous
+    - name: principal_component_6
+      type: continuous
+    - name: principal_component_7
+      type: continuous
+    - name: principal_component_8
+      type: continuous
+    - name: principal_component_9
+      type: continuous
+    - name: principal_component_10
+      type: continuous
+    - name: principal_component_11
+      type: continuous
+    - name: principal_component_12
+      type: continuous
+    - name: principal_component_13
+      type: continuous
+    - name: principal_component_14
+      type: continuous
+    - name: principal_component_15
+      type: continuous
+    - name: principal_component_16
+      type: continuous
+    - name: principal_component_17
+      type: continuous
+    - name: principal_component_18
+      type: continuous
+    - name: principal_component_19
+      type: continuous
+    - name: principal_component_20
+      type: continuous
+    - name: principal_component_21
+      type: continuous
+    - name: principal_component_22
+      type: continuous
+    - name: moisture
+      type: continuous
+    - name: protein
+      type: continuous

@@ -1,0 +1,72 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: allhypo
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: discrete
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: age
+      type: discrete
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: sex
+      type: discrete
+    - name: on thyroxine
+      type: binary
+    - name: query on thyroxine
+      type: binary
+    - name: on antithyroid medication
+      type: binary
+    - name: sick
+      type: binary
+    - name: pregnant
+      type: binary
+    - name: thyroid surgery
+      type: binary
+    - name: I131 treatment
+      type: binary
+    - name: query hypothyroid
+      type: binary
+    - name: query hyperthyroid
+      type: binary
+    - name: lithium
+      type: binary
+    - name: goitre
+      type: binary
+    - name: tumor
+      type: binary
+    - name: hypopituitary
+      type: binary
+    - name: psych
+      type: binary
+    - name: TSH measured
+      type: binary
+    - name: TSH
+      type: discrete
+    - name: T3 measured
+      type: binary
+    - name: T3
+      type: discrete
+    - name: TT4 measured
+      type: binary
+    - name: TT4
+      type: discrete
+    - name: T4U measured
+      type: binary
+    - name: T4U
+      type: discrete
+    - name: FTI measured
+      type: binary
+    - name: FTI
+      type: discrete
+    - name: TBG measured
+      type: discrete
+    - name: TBG
+      type: discrete
+    - name: referral source
+      type: discrete

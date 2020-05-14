@@ -1,0 +1,184 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: coil2000
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: binary
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: MOSTYPE
+      type: discrete
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: MAANTHUI
+      type: discrete
+    - name: MGEMOMV
+      type: discrete
+    - name: MGEMLEEF
+      type: discrete
+    - name: MOSHOOFD
+      type: discrete
+    - name: MGODRK
+      type: discrete
+    - name: MGODPR
+      type: discrete
+    - name: MGODOV
+      type: discrete
+    - name: MGODGE
+      type: discrete
+    - name: MRELGE
+      type: discrete
+    - name: MRELSA
+      type: discrete
+    - name: MRELOV
+      type: discrete
+    - name: MFALLEEN
+      type: discrete
+    - name: MFGEKIND
+      type: discrete
+    - name: MFWEKIND
+      type: discrete
+    - name: MOPLHOOG
+      type: discrete
+    - name: MOPLMIDD
+      type: discrete
+    - name: MOPLLAAG
+      type: discrete
+    - name: MBERHOOG
+      type: discrete
+    - name: MBERZELF
+      type: discrete
+    - name: MBERBOER
+      type: discrete
+    - name: MBERMIDD
+      type: discrete
+    - name: MBERARBG
+      type: discrete
+    - name: MBERARBO
+      type: discrete
+    - name: MSKA
+      type: discrete
+    - name: MSKB1
+      type: discrete
+    - name: MSKB2
+      type: discrete
+    - name: MSKC
+      type: discrete
+    - name: MSKD
+      type: discrete
+    - name: MHHUUR
+      type: discrete
+    - name: MHKOOP
+      type: discrete
+    - name: MAUT1
+      type: discrete
+    - name: MAUT2
+      type: discrete
+    - name: MAUT0
+      type: discrete
+    - name: MZFONDS
+      type: discrete
+    - name: MZPART
+      type: discrete
+    - name: MINKM30
+      type: discrete
+    - name: MINK3045
+      type: discrete
+    - name: MINK4575
+      type: discrete
+    - name: MINK7512
+      type: discrete
+    - name: MINK123M
+      type: discrete
+    - name: MINKGEM
+      type: discrete
+    - name: MKOOPKLA
+      type: discrete
+    - name: PWAPART
+      type: discrete
+    - name: PWABEDR
+      type: discrete
+    - name: PWALAND
+      type: discrete
+    - name: PPERSAUT
+      type: discrete
+    - name: PBESAUT
+      type: discrete
+    - name: PMOTSCO
+      type: discrete
+    - name: PVRAAUT
+      type: discrete
+    - name: PAANHANG
+      type: discrete
+    - name: PTRACTOR
+      type: discrete
+    - name: PWERKT
+      type: discrete
+    - name: PBROM
+      type: discrete
+    - name: PLEVEN
+      type: discrete
+    - name: PPERSONG
+      type: discrete
+    - name: PGEZONG
+      type: discrete
+    - name: PWAOREG
+      type: discrete
+    - name: PBRAND
+      type: discrete
+    - name: PZEILPL
+      type: discrete
+    - name: PPLEZIER
+      type: discrete
+    - name: PFIETS
+      type: binary
+    - name: PINBOED
+      type: discrete
+    - name: PBYSTAND
+      type: discrete
+    - name: AWAPART
+      type: discrete
+    - name: AWABEDR
+      type: discrete
+    - name: AWALAND
+      type: binary
+    - name: APERSAUT
+      type: discrete
+    - name: ABESAUT
+      type: discrete
+    - name: AMOTSCO
+      type: discrete
+    - name: AVRAAUT
+      type: discrete
+    - name: AAANHANG
+      type: discrete
+    - name: ATRACTOR
+      type: discrete
+    - name: AWERKT
+      type: discrete
+    - name: ABROM
+      type: discrete
+    - name: ALEVEN
+      type: discrete
+    - name: APERSONG
+      type: binary
+    - name: AGEZONG
+      type: binary
+    - name: AWAOREG
+      type: discrete
+    - name: ABRAND
+      type: discrete
+    - name: AZEILPL
+      type: binary
+    - name: APLEZIER
+      type: discrete
+    - name: AFIETS
+      type: discrete
+    - name: AINBOED
+      type: discrete
+    - name: ABYSTAND
+      type: discrete

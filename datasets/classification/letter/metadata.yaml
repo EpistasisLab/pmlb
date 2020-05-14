@@ -1,0 +1,46 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: letter
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: discrete
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: x-box
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: y-box
+      type: continuous
+    - name: width
+      type: continuous
+    - name: high
+      type: continuous
+    - name: onpix
+      type: continuous
+    - name: x-bar
+      type: continuous
+    - name: y-bar
+      type: continuous
+    - name: x2bar
+      type: continuous
+    - name: y2bar
+      type: continuous
+    - name: xybar
+      type: continuous
+    - name: x2ybr
+      type: continuous
+    - name: xy2br
+      type: continuous
+    - name: x-ege
+      type: continuous
+    - name: xegvy
+      type: continuous
+    - name: y-ege
+      type: continuous
+    - name: yegvx
+      type: continuous

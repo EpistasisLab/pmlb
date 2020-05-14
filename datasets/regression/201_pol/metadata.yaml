@@ -1,0 +1,110 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 201_pol
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+    type: continuous
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: f1
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: f2
+      type: continuous
+    - name: f3
+      type: continuous
+    - name: f4
+      type: continuous
+    - name: f5
+      type: continuous
+    - name: f6
+      type: continuous
+    - name: f7
+      type: continuous
+    - name: f8
+      type: continuous
+    - name: f9
+      type: continuous
+    - name: f10
+      type: continuous
+    - name: f11
+      type: continuous
+    - name: f12
+      type: continuous
+    - name: f13
+      type: continuous
+    - name: f14
+      type: continuous
+    - name: f15
+      type: continuous
+    - name: f16
+      type: continuous
+    - name: f17
+      type: continuous
+    - name: f18
+      type: continuous
+    - name: f19
+      type: continuous
+    - name: f20
+      type: continuous
+    - name: f21
+      type: continuous
+    - name: f22
+      type: continuous
+    - name: f23
+      type: continuous
+    - name: f24
+      type: continuous
+    - name: f25
+      type: continuous
+    - name: f26
+      type: continuous
+    - name: f27
+      type: continuous
+    - name: f28
+      type: continuous
+    - name: f29
+      type: continuous
+    - name: f30
+      type: continuous
+    - name: f31
+      type: continuous
+    - name: f32
+      type: continuous
+    - name: f33
+      type: continuous
+    - name: f34
+      type: continuous
+    - name: f35
+      type: continuous
+    - name: f36
+      type: continuous
+    - name: f37
+      type: continuous
+    - name: f38
+      type: continuous
+    - name: f39
+      type: continuous
+    - name: f40
+      type: continuous
+    - name: f41
+      type: continuous
+    - name: f42
+      type: continuous
+    - name: f43
+      type: continuous
+    - name: f44
+      type: continuous
+    - name: f45
+      type: continuous
+    - name: f46
+      type: continuous
+    - name: f47
+      type: continuous
+    - name: f48
+      type: continuous

@@ -1,0 +1,36 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: wine-quality-white
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+    type: discrete
+    description: None yet. See our contributing guide to help us add one.
+    code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+    - name: fixed acidity
+      type: continuous
+      description: null # optional but recommended, what the feature measures/indicates, unit
+      code: null # optional, coding information, e.g., Control = 0, Case = 1
+      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    - name: volatile acidity
+      type: continuous
+    - name: citric acid
+      type: continuous
+    - name: residual sugar
+      type: continuous
+    - name: chlorides
+      type: continuous
+    - name: free sulfur dioxide
+      type: continuous
+    - name: total sulfur dioxide
+      type: continuous
+    - name: density
+      type: continuous
+    - name: pH
+      type: continuous
+    - name: sulphates
+      type: continuous
+    - name: alcohol
+      type: continuous
