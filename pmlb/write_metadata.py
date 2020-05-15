@@ -130,26 +130,26 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
         # required, classification or regression
         metadata_file.write('task: {}\n'.format(task))
         metadata_file.write('target:\n')
-        metadata_file.write('    type: {}\n'.format(endpoint)) 
+        metadata_file.write('  type: {}\n'.format(endpoint)) 
         # required, describe the endpoint/outcome (and unit if exists)
-        metadata_file.write('    description: {}\n'.format(none_yet)) 
+        metadata_file.write('  description: {}\n'.format(none_yet)) 
         # optional but recommended, coding information, 
         # e.g., 'Control' = 0, 'Case' = 1
-        metadata_file.write('    code: {}\n'.format(none_yet)) 
+        metadata_file.write('  code: {}\n'.format(none_yet)) 
         metadata_file.write('features: # list of features in the dataset\n')
         first = True
         for feature,feature_type in zip(fnames, types):
             if feature in protected_feature_names:
                 feature = '"'+feature+'"'
-            metadata_file.write('    - name: {}\n'.format(feature)) 
-            metadata_file.write('      type: {}\n'.format(feature_type)) 
+            metadata_file.write('  - name: {}\n'.format(feature)) 
+            metadata_file.write('    type: {}\n'.format(feature_type)) 
             if first:
-                metadata_file.write('      description: null # optional but '
+                metadata_file.write('    description: null # optional but '
                         'recommended, what the feature measures/indicates, '
                         'unit\n') 
-                metadata_file.write('      code: null # optional, coding '
+                metadata_file.write('    code: null # optional, coding '
                         'information, e.g., Control = 0, Case = 1\n') 
-                metadata_file.write('      transform: ~ # optional, any '
+                metadata_file.write('    transform: ~ # optional, any '
                 'transformation performed on the feature, e.g., log scaled\n') 
                 first = False
 

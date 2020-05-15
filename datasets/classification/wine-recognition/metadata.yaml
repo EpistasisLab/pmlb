@@ -5,36 +5,36 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: 1
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: 2
-      type: continuous
-    - name: 3
-      type: continuous
-    - name: 4
-      type: continuous
-    - name: 5
-      type: discrete
-    - name: 6
-      type: continuous
-    - name: 7
-      type: continuous
-    - name: 8
-      type: continuous
-    - name: 9
-      type: continuous
-    - name: 10
-      type: continuous
-    - name: 11
-      type: continuous
-    - name: 12
-      type: continuous
-    - name: 13
-      type: discrete
+  - name: 1
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: 2
+    type: continuous
+  - name: 3
+    type: continuous
+  - name: 4
+    type: continuous
+  - name: 5
+    type: discrete
+  - name: 6
+    type: continuous
+  - name: 7
+    type: continuous
+  - name: 8
+    type: continuous
+  - name: 9
+    type: continuous
+  - name: 10
+    type: continuous
+  - name: 11
+    type: continuous
+  - name: 12
+    type: continuous
+  - name: 13
+    type: discrete

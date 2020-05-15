@@ -5,30 +5,30 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: S1
-      type: discrete
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: C1
-      type: discrete
-    - name: S2
-      type: discrete
-    - name: C2
-      type: discrete
-    - name: S3
-      type: discrete
-    - name: C3
-      type: discrete
-    - name: S4
-      type: discrete
-    - name: C4
-      type: discrete
-    - name: S5
-      type: discrete
-    - name: C5
-      type: discrete
+  - name: S1
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: C1
+    type: discrete
+  - name: S2
+    type: discrete
+  - name: C2
+    type: discrete
+  - name: S3
+    type: discrete
+  - name: C3
+    type: discrete
+  - name: S4
+    type: discrete
+  - name: C4
+    type: discrete
+  - name: S5
+    type: discrete
+  - name: C5
+    type: discrete

@@ -5,30 +5,30 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 target:
-    type: continuous
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: Inst
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: sex
-      type: continuous
-    - name: Treatment
-      type: continuous
-    - name: Grade
-      type: continuous
-    - name: Age
-      type: continuous
-    - name: Condition
-      type: continuous
-    - name: Site
-      type: continuous
-    - name: T
-      type: continuous
-    - name: "N"
-      type: continuous
-    - name: Status
-      type: continuous
+  - name: Inst
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: sex
+    type: continuous
+  - name: Treatment
+    type: continuous
+  - name: Grade
+    type: continuous
+  - name: Age
+    type: continuous
+  - name: Condition
+    type: continuous
+  - name: Site
+    type: continuous
+  - name: T
+    type: continuous
+  - name: "N"
+    type: continuous
+  - name: Status
+    type: continuous

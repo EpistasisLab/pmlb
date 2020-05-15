@@ -5,28 +5,28 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: Clump_Thickness
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: Cell_Size_Uniformity
-      type: continuous
-    - name: Cell_Shape_Uniformity
-      type: continuous
-    - name: Marginal_Adhesion
-      type: continuous
-    - name: Single_Epi_Cell_Size
-      type: continuous
-    - name: Bare_Nuclei
-      type: discrete
-    - name: Bland_Chromatin
-      type: continuous
-    - name: Normal_Nucleoli
-      type: continuous
-    - name: Mitoses
-      type: continuous
+  - name: Clump_Thickness
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Cell_Size_Uniformity
+    type: continuous
+  - name: Cell_Shape_Uniformity
+    type: continuous
+  - name: Marginal_Adhesion
+    type: continuous
+  - name: Single_Epi_Cell_Size
+    type: continuous
+  - name: Bare_Nuclei
+    type: discrete
+  - name: Bland_Chromatin
+    type: continuous
+  - name: Normal_Nucleoli
+    type: continuous
+  - name: Mitoses
+    type: continuous

@@ -5,38 +5,38 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: ID
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: gain_ratio_1
-      type: discrete
-    - name: gain_ratio_2
-      type: discrete
-    - name: gain_ratio_3
-      type: discrete
-    - name: gain_ratio_4
-      type: discrete
-    - name: gain_ratio_5
-      type: discrete
-    - name: gain_ratio_6
-      type: discrete
-    - name: gain_ratio_7
-      type: discrete
-    - name: gain_ratio_8
-      type: discrete
-    - name: gain_ratio_9
-      type: discrete
-    - name: gain_ratio_10
-      type: discrete
-    - name: gain_ratio_11
-      type: discrete
-    - name: sex
-      type: binary
-    - name: target.1
-      type: binary
+  - name: ID
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: gain_ratio_1
+    type: discrete
+  - name: gain_ratio_2
+    type: discrete
+  - name: gain_ratio_3
+    type: discrete
+  - name: gain_ratio_4
+    type: discrete
+  - name: gain_ratio_5
+    type: discrete
+  - name: gain_ratio_6
+    type: discrete
+  - name: gain_ratio_7
+    type: discrete
+  - name: gain_ratio_8
+    type: discrete
+  - name: gain_ratio_9
+    type: discrete
+  - name: gain_ratio_10
+    type: discrete
+  - name: gain_ratio_11
+    type: discrete
+  - name: sex
+    type: binary
+  - name: target.1
+    type: binary

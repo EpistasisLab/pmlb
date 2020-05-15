@@ -5,24 +5,24 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: sex
-      type: binary
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: index
-      type: continuous
-    - name: FL
-      type: continuous
-    - name: RW
-      type: continuous
-    - name: CL
-      type: continuous
-    - name: CW
-      type: continuous
-    - name: BD
-      type: continuous
+  - name: sex
+    type: binary
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: index
+    type: continuous
+  - name: FL
+    type: continuous
+  - name: RW
+    type: continuous
+  - name: CL
+    type: continuous
+  - name: CW
+    type: continuous
+  - name: BD
+    type: continuous

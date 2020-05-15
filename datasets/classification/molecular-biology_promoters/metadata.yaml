@@ -5,126 +5,126 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: instance
-      type: discrete
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: p-50
-      type: discrete
-    - name: p-49
-      type: discrete
-    - name: p-48
-      type: discrete
-    - name: p-47
-      type: discrete
-    - name: p-46
-      type: discrete
-    - name: p-45
-      type: discrete
-    - name: p-44
-      type: discrete
-    - name: p-43
-      type: discrete
-    - name: p-42
-      type: discrete
-    - name: p-41
-      type: discrete
-    - name: p-40
-      type: discrete
-    - name: p-39
-      type: discrete
-    - name: p-38
-      type: discrete
-    - name: p-37
-      type: discrete
-    - name: p-36
-      type: discrete
-    - name: p-35
-      type: discrete
-    - name: p-34
-      type: discrete
-    - name: p-33
-      type: discrete
-    - name: p-32
-      type: discrete
-    - name: p-31
-      type: discrete
-    - name: p-30
-      type: discrete
-    - name: p-29
-      type: discrete
-    - name: p-28
-      type: discrete
-    - name: p-27
-      type: discrete
-    - name: p-26
-      type: discrete
-    - name: p-25
-      type: discrete
-    - name: p-24
-      type: discrete
-    - name: p-23
-      type: discrete
-    - name: p-22
-      type: discrete
-    - name: p-21
-      type: discrete
-    - name: p-20
-      type: discrete
-    - name: p-19
-      type: discrete
-    - name: p-18
-      type: discrete
-    - name: p-17
-      type: discrete
-    - name: p-16
-      type: discrete
-    - name: p-15
-      type: discrete
-    - name: p-14
-      type: discrete
-    - name: p-13
-      type: discrete
-    - name: p-12
-      type: discrete
-    - name: p-11
-      type: discrete
-    - name: p-10
-      type: discrete
-    - name: p-9
-      type: discrete
-    - name: p-8
-      type: discrete
-    - name: p-7
-      type: discrete
-    - name: p-6
-      type: discrete
-    - name: p-5
-      type: discrete
-    - name: p-4
-      type: discrete
-    - name: p-3
-      type: discrete
-    - name: p-2
-      type: discrete
-    - name: p-1
-      type: discrete
-    - name: p1
-      type: discrete
-    - name: p2
-      type: discrete
-    - name: p3
-      type: discrete
-    - name: p4
-      type: discrete
-    - name: p5
-      type: discrete
-    - name: p6
-      type: discrete
-    - name: p7
-      type: discrete
+  - name: instance
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: p-50
+    type: discrete
+  - name: p-49
+    type: discrete
+  - name: p-48
+    type: discrete
+  - name: p-47
+    type: discrete
+  - name: p-46
+    type: discrete
+  - name: p-45
+    type: discrete
+  - name: p-44
+    type: discrete
+  - name: p-43
+    type: discrete
+  - name: p-42
+    type: discrete
+  - name: p-41
+    type: discrete
+  - name: p-40
+    type: discrete
+  - name: p-39
+    type: discrete
+  - name: p-38
+    type: discrete
+  - name: p-37
+    type: discrete
+  - name: p-36
+    type: discrete
+  - name: p-35
+    type: discrete
+  - name: p-34
+    type: discrete
+  - name: p-33
+    type: discrete
+  - name: p-32
+    type: discrete
+  - name: p-31
+    type: discrete
+  - name: p-30
+    type: discrete
+  - name: p-29
+    type: discrete
+  - name: p-28
+    type: discrete
+  - name: p-27
+    type: discrete
+  - name: p-26
+    type: discrete
+  - name: p-25
+    type: discrete
+  - name: p-24
+    type: discrete
+  - name: p-23
+    type: discrete
+  - name: p-22
+    type: discrete
+  - name: p-21
+    type: discrete
+  - name: p-20
+    type: discrete
+  - name: p-19
+    type: discrete
+  - name: p-18
+    type: discrete
+  - name: p-17
+    type: discrete
+  - name: p-16
+    type: discrete
+  - name: p-15
+    type: discrete
+  - name: p-14
+    type: discrete
+  - name: p-13
+    type: discrete
+  - name: p-12
+    type: discrete
+  - name: p-11
+    type: discrete
+  - name: p-10
+    type: discrete
+  - name: p-9
+    type: discrete
+  - name: p-8
+    type: discrete
+  - name: p-7
+    type: discrete
+  - name: p-6
+    type: discrete
+  - name: p-5
+    type: discrete
+  - name: p-4
+    type: discrete
+  - name: p-3
+    type: discrete
+  - name: p-2
+    type: discrete
+  - name: p-1
+    type: discrete
+  - name: p1
+    type: discrete
+  - name: p2
+    type: discrete
+  - name: p3
+    type: discrete
+  - name: p4
+    type: discrete
+  - name: p5
+    type: discrete
+  - name: p6
+    type: discrete
+  - name: p7
+    type: discrete

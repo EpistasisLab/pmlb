@@ -5,24 +5,24 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 target:
-    type: continuous
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: cars_per_hour
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: temperature_at_2m
-      type: continuous
-    - name: wind_speed
-      type: continuous
-    - name: temperature_diff_2m_25m
-      type: continuous
-    - name: wind_direction
-      type: continuous
-    - name: hour_of_day
-      type: continuous
-    - name: day
-      type: continuous
+  - name: cars_per_hour
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: temperature_at_2m
+    type: continuous
+  - name: wind_speed
+    type: continuous
+  - name: temperature_diff_2m_25m
+    type: continuous
+  - name: wind_direction
+    type: continuous
+  - name: hour_of_day
+    type: continuous
+  - name: day
+    type: continuous

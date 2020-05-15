@@ -5,20 +5,20 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: Sex
-      type: binary
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: DVRT
-      type: continuous
-    - name: Educational_level
-      type: discrete
-    - name: Prestige_score
-      type: discrete
-    - name: Type_school
-      type: discrete
+  - name: Sex
+    type: binary
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: DVRT
+    type: continuous
+  - name: Educational_level
+    type: discrete
+  - name: Prestige_score
+    type: discrete
+  - name: Type_school
+    type: discrete

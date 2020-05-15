@@ -5,346 +5,346 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: molecule_name
-      type: discrete
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: conformation_name
-      type: discrete
-    - name: f1
-      type: continuous
-    - name: f2
-      type: continuous
-    - name: f3
-      type: continuous
-    - name: f4
-      type: continuous
-    - name: f5
-      type: continuous
-    - name: f6
-      type: continuous
-    - name: f7
-      type: continuous
-    - name: f8
-      type: continuous
-    - name: f9
-      type: continuous
-    - name: f10
-      type: continuous
-    - name: f11
-      type: continuous
-    - name: f12
-      type: continuous
-    - name: f13
-      type: continuous
-    - name: f14
-      type: continuous
-    - name: f15
-      type: continuous
-    - name: f16
-      type: continuous
-    - name: f17
-      type: continuous
-    - name: f18
-      type: continuous
-    - name: f19
-      type: continuous
-    - name: f20
-      type: continuous
-    - name: f21
-      type: continuous
-    - name: f22
-      type: continuous
-    - name: f23
-      type: continuous
-    - name: f24
-      type: continuous
-    - name: f25
-      type: continuous
-    - name: f26
-      type: continuous
-    - name: f27
-      type: continuous
-    - name: f28
-      type: continuous
-    - name: f29
-      type: continuous
-    - name: f30
-      type: continuous
-    - name: f31
-      type: continuous
-    - name: f32
-      type: continuous
-    - name: f33
-      type: continuous
-    - name: f34
-      type: continuous
-    - name: f35
-      type: continuous
-    - name: f36
-      type: continuous
-    - name: f37
-      type: continuous
-    - name: f38
-      type: continuous
-    - name: f39
-      type: continuous
-    - name: f40
-      type: continuous
-    - name: f41
-      type: continuous
-    - name: f42
-      type: continuous
-    - name: f43
-      type: continuous
-    - name: f44
-      type: continuous
-    - name: f45
-      type: continuous
-    - name: f46
-      type: continuous
-    - name: f47
-      type: continuous
-    - name: f48
-      type: continuous
-    - name: f49
-      type: continuous
-    - name: f50
-      type: continuous
-    - name: f51
-      type: continuous
-    - name: f52
-      type: continuous
-    - name: f53
-      type: continuous
-    - name: f54
-      type: continuous
-    - name: f55
-      type: continuous
-    - name: f56
-      type: continuous
-    - name: f57
-      type: continuous
-    - name: f58
-      type: continuous
-    - name: f59
-      type: continuous
-    - name: f60
-      type: continuous
-    - name: f61
-      type: continuous
-    - name: f62
-      type: continuous
-    - name: f63
-      type: continuous
-    - name: f64
-      type: continuous
-    - name: f65
-      type: continuous
-    - name: f66
-      type: continuous
-    - name: f67
-      type: continuous
-    - name: f68
-      type: continuous
-    - name: f69
-      type: continuous
-    - name: f70
-      type: continuous
-    - name: f71
-      type: continuous
-    - name: f72
-      type: continuous
-    - name: f73
-      type: continuous
-    - name: f74
-      type: continuous
-    - name: f75
-      type: continuous
-    - name: f76
-      type: continuous
-    - name: f77
-      type: continuous
-    - name: f78
-      type: continuous
-    - name: f79
-      type: continuous
-    - name: f80
-      type: continuous
-    - name: f81
-      type: continuous
-    - name: f82
-      type: continuous
-    - name: f83
-      type: continuous
-    - name: f84
-      type: continuous
-    - name: f85
-      type: continuous
-    - name: f86
-      type: continuous
-    - name: f87
-      type: continuous
-    - name: f88
-      type: continuous
-    - name: f89
-      type: continuous
-    - name: f90
-      type: continuous
-    - name: f91
-      type: continuous
-    - name: f92
-      type: continuous
-    - name: f93
-      type: continuous
-    - name: f94
-      type: continuous
-    - name: f95
-      type: continuous
-    - name: f96
-      type: continuous
-    - name: f97
-      type: continuous
-    - name: f98
-      type: continuous
-    - name: f99
-      type: continuous
-    - name: f100
-      type: continuous
-    - name: f101
-      type: continuous
-    - name: f102
-      type: continuous
-    - name: f103
-      type: continuous
-    - name: f104
-      type: continuous
-    - name: f105
-      type: continuous
-    - name: f106
-      type: continuous
-    - name: f107
-      type: continuous
-    - name: f108
-      type: continuous
-    - name: f109
-      type: continuous
-    - name: f110
-      type: continuous
-    - name: f111
-      type: continuous
-    - name: f112
-      type: continuous
-    - name: f113
-      type: continuous
-    - name: f114
-      type: continuous
-    - name: f115
-      type: continuous
-    - name: f116
-      type: continuous
-    - name: f117
-      type: continuous
-    - name: f118
-      type: continuous
-    - name: f119
-      type: continuous
-    - name: f120
-      type: continuous
-    - name: f121
-      type: continuous
-    - name: f122
-      type: continuous
-    - name: f123
-      type: continuous
-    - name: f124
-      type: continuous
-    - name: f125
-      type: continuous
-    - name: f126
-      type: continuous
-    - name: f127
-      type: continuous
-    - name: f128
-      type: continuous
-    - name: f129
-      type: continuous
-    - name: f130
-      type: continuous
-    - name: f131
-      type: continuous
-    - name: f132
-      type: continuous
-    - name: f133
-      type: continuous
-    - name: f134
-      type: continuous
-    - name: f135
-      type: continuous
-    - name: f136
-      type: continuous
-    - name: f137
-      type: continuous
-    - name: f138
-      type: continuous
-    - name: f139
-      type: continuous
-    - name: f140
-      type: continuous
-    - name: f141
-      type: continuous
-    - name: f142
-      type: continuous
-    - name: f143
-      type: continuous
-    - name: f144
-      type: continuous
-    - name: f145
-      type: continuous
-    - name: f146
-      type: continuous
-    - name: f147
-      type: continuous
-    - name: f148
-      type: continuous
-    - name: f149
-      type: continuous
-    - name: f150
-      type: continuous
-    - name: f151
-      type: continuous
-    - name: f152
-      type: continuous
-    - name: f153
-      type: continuous
-    - name: f154
-      type: continuous
-    - name: f155
-      type: continuous
-    - name: f156
-      type: continuous
-    - name: f157
-      type: continuous
-    - name: f158
-      type: continuous
-    - name: f159
-      type: continuous
-    - name: f160
-      type: continuous
-    - name: f161
-      type: continuous
-    - name: f162
-      type: continuous
-    - name: f163
-      type: continuous
-    - name: f164
-      type: continuous
-    - name: f165
-      type: continuous
-    - name: f166
-      type: continuous
+  - name: molecule_name
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: conformation_name
+    type: discrete
+  - name: f1
+    type: continuous
+  - name: f2
+    type: continuous
+  - name: f3
+    type: continuous
+  - name: f4
+    type: continuous
+  - name: f5
+    type: continuous
+  - name: f6
+    type: continuous
+  - name: f7
+    type: continuous
+  - name: f8
+    type: continuous
+  - name: f9
+    type: continuous
+  - name: f10
+    type: continuous
+  - name: f11
+    type: continuous
+  - name: f12
+    type: continuous
+  - name: f13
+    type: continuous
+  - name: f14
+    type: continuous
+  - name: f15
+    type: continuous
+  - name: f16
+    type: continuous
+  - name: f17
+    type: continuous
+  - name: f18
+    type: continuous
+  - name: f19
+    type: continuous
+  - name: f20
+    type: continuous
+  - name: f21
+    type: continuous
+  - name: f22
+    type: continuous
+  - name: f23
+    type: continuous
+  - name: f24
+    type: continuous
+  - name: f25
+    type: continuous
+  - name: f26
+    type: continuous
+  - name: f27
+    type: continuous
+  - name: f28
+    type: continuous
+  - name: f29
+    type: continuous
+  - name: f30
+    type: continuous
+  - name: f31
+    type: continuous
+  - name: f32
+    type: continuous
+  - name: f33
+    type: continuous
+  - name: f34
+    type: continuous
+  - name: f35
+    type: continuous
+  - name: f36
+    type: continuous
+  - name: f37
+    type: continuous
+  - name: f38
+    type: continuous
+  - name: f39
+    type: continuous
+  - name: f40
+    type: continuous
+  - name: f41
+    type: continuous
+  - name: f42
+    type: continuous
+  - name: f43
+    type: continuous
+  - name: f44
+    type: continuous
+  - name: f45
+    type: continuous
+  - name: f46
+    type: continuous
+  - name: f47
+    type: continuous
+  - name: f48
+    type: continuous
+  - name: f49
+    type: continuous
+  - name: f50
+    type: continuous
+  - name: f51
+    type: continuous
+  - name: f52
+    type: continuous
+  - name: f53
+    type: continuous
+  - name: f54
+    type: continuous
+  - name: f55
+    type: continuous
+  - name: f56
+    type: continuous
+  - name: f57
+    type: continuous
+  - name: f58
+    type: continuous
+  - name: f59
+    type: continuous
+  - name: f60
+    type: continuous
+  - name: f61
+    type: continuous
+  - name: f62
+    type: continuous
+  - name: f63
+    type: continuous
+  - name: f64
+    type: continuous
+  - name: f65
+    type: continuous
+  - name: f66
+    type: continuous
+  - name: f67
+    type: continuous
+  - name: f68
+    type: continuous
+  - name: f69
+    type: continuous
+  - name: f70
+    type: continuous
+  - name: f71
+    type: continuous
+  - name: f72
+    type: continuous
+  - name: f73
+    type: continuous
+  - name: f74
+    type: continuous
+  - name: f75
+    type: continuous
+  - name: f76
+    type: continuous
+  - name: f77
+    type: continuous
+  - name: f78
+    type: continuous
+  - name: f79
+    type: continuous
+  - name: f80
+    type: continuous
+  - name: f81
+    type: continuous
+  - name: f82
+    type: continuous
+  - name: f83
+    type: continuous
+  - name: f84
+    type: continuous
+  - name: f85
+    type: continuous
+  - name: f86
+    type: continuous
+  - name: f87
+    type: continuous
+  - name: f88
+    type: continuous
+  - name: f89
+    type: continuous
+  - name: f90
+    type: continuous
+  - name: f91
+    type: continuous
+  - name: f92
+    type: continuous
+  - name: f93
+    type: continuous
+  - name: f94
+    type: continuous
+  - name: f95
+    type: continuous
+  - name: f96
+    type: continuous
+  - name: f97
+    type: continuous
+  - name: f98
+    type: continuous
+  - name: f99
+    type: continuous
+  - name: f100
+    type: continuous
+  - name: f101
+    type: continuous
+  - name: f102
+    type: continuous
+  - name: f103
+    type: continuous
+  - name: f104
+    type: continuous
+  - name: f105
+    type: continuous
+  - name: f106
+    type: continuous
+  - name: f107
+    type: continuous
+  - name: f108
+    type: continuous
+  - name: f109
+    type: continuous
+  - name: f110
+    type: continuous
+  - name: f111
+    type: continuous
+  - name: f112
+    type: continuous
+  - name: f113
+    type: continuous
+  - name: f114
+    type: continuous
+  - name: f115
+    type: continuous
+  - name: f116
+    type: continuous
+  - name: f117
+    type: continuous
+  - name: f118
+    type: continuous
+  - name: f119
+    type: continuous
+  - name: f120
+    type: continuous
+  - name: f121
+    type: continuous
+  - name: f122
+    type: continuous
+  - name: f123
+    type: continuous
+  - name: f124
+    type: continuous
+  - name: f125
+    type: continuous
+  - name: f126
+    type: continuous
+  - name: f127
+    type: continuous
+  - name: f128
+    type: continuous
+  - name: f129
+    type: continuous
+  - name: f130
+    type: continuous
+  - name: f131
+    type: continuous
+  - name: f132
+    type: continuous
+  - name: f133
+    type: continuous
+  - name: f134
+    type: continuous
+  - name: f135
+    type: continuous
+  - name: f136
+    type: continuous
+  - name: f137
+    type: continuous
+  - name: f138
+    type: continuous
+  - name: f139
+    type: continuous
+  - name: f140
+    type: continuous
+  - name: f141
+    type: continuous
+  - name: f142
+    type: continuous
+  - name: f143
+    type: continuous
+  - name: f144
+    type: continuous
+  - name: f145
+    type: continuous
+  - name: f146
+    type: continuous
+  - name: f147
+    type: continuous
+  - name: f148
+    type: continuous
+  - name: f149
+    type: continuous
+  - name: f150
+    type: continuous
+  - name: f151
+    type: continuous
+  - name: f152
+    type: continuous
+  - name: f153
+    type: continuous
+  - name: f154
+    type: continuous
+  - name: f155
+    type: continuous
+  - name: f156
+    type: continuous
+  - name: f157
+    type: continuous
+  - name: f158
+    type: continuous
+  - name: f159
+    type: continuous
+  - name: f160
+    type: continuous
+  - name: f161
+    type: continuous
+  - name: f162
+    type: continuous
+  - name: f163
+    type: continuous
+  - name: f164
+    type: continuous
+  - name: f165
+    type: continuous
+  - name: f166
+    type: continuous

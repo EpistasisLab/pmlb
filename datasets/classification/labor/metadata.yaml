@@ -5,42 +5,42 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: duration
-      type: discrete
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: wage increase first year
-      type: discrete
-    - name: wage increase second year
-      type: discrete
-    - name: wage increase third year
-      type: discrete
-    - name: cost of living adjustment
-      type: discrete
-    - name: working hours
-      type: discrete
-    - name: pension
-      type: discrete
-    - name: standby pay
-      type: discrete
-    - name: shift differential
-      type: discrete
-    - name: education allowance
-      type: discrete
-    - name: statutory holidays
-      type: discrete
-    - name: vacation
-      type: discrete
-    - name: longterm disability assistance
-      type: discrete
-    - name: contribution to dental plan
-      type: discrete
-    - name: bereavement assistance
-      type: discrete
-    - name: contribution to health plan
-      type: discrete
+  - name: duration
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: wage increase first year
+    type: discrete
+  - name: wage increase second year
+    type: discrete
+  - name: wage increase third year
+    type: discrete
+  - name: cost of living adjustment
+    type: discrete
+  - name: working hours
+    type: discrete
+  - name: pension
+    type: discrete
+  - name: standby pay
+    type: discrete
+  - name: shift differential
+    type: discrete
+  - name: education allowance
+    type: discrete
+  - name: statutory holidays
+    type: discrete
+  - name: vacation
+    type: discrete
+  - name: longterm disability assistance
+    type: discrete
+  - name: contribution to dental plan
+    type: discrete
+  - name: bereavement assistance
+    type: discrete
+  - name: contribution to health plan
+    type: discrete

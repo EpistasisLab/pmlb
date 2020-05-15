@@ -5,96 +5,96 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: bars
-      type: discrete
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: stripes
-      type: discrete
-    - name: colors
-      type: discrete
-    - name: red
-      type: binary
-    - name: green
-      type: binary
-    - name: blue
-      type: binary
-    - name: gold
-      type: binary
-    - name: white
-      type: binary
-    - name: black
-      type: binary
-    - name: orange
-      type: binary
-    - name: circles
-      type: discrete
-    - name: crosses
-      type: discrete
-    - name: saltires
-      type: binary
-    - name: quarters
-      type: discrete
-    - name: sunstars
-      type: discrete
-    - name: crescent
-      type: binary
-    - name: triangle
-      type: binary
-    - name: icon
-      type: binary
-    - name: animate
-      type: binary
-    - name: text
-      type: binary
-    - name: mainhue_green
-      type: binary
-    - name: mainhue_red
-      type: binary
-    - name: mainhue_blue
-      type: binary
-    - name: mainhue_gold
-      type: binary
-    - name: mainhue_white
-      type: binary
-    - name: mainhue_orange
-      type: binary
-    - name: mainhue_black
-      type: binary
-    - name: mainhue_brown
-      type: binary
-    - name: topleft_black
-      type: binary
-    - name: topleft_red
-      type: binary
-    - name: topleft_green
-      type: binary
-    - name: topleft_blue
-      type: binary
-    - name: topleft_white
-      type: binary
-    - name: topleft_orange
-      type: binary
-    - name: topleft_gold
-      type: binary
-    - name: botright_green
-      type: binary
-    - name: botright_red
-      type: binary
-    - name: botright_white
-      type: binary
-    - name: botright_black
-      type: binary
-    - name: botright_blue
-      type: binary
-    - name: botright_gold
-      type: binary
-    - name: botright_orange
-      type: binary
-    - name: botright_brown
-      type: binary
+  - name: bars
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: stripes
+    type: discrete
+  - name: colors
+    type: discrete
+  - name: red
+    type: binary
+  - name: green
+    type: binary
+  - name: blue
+    type: binary
+  - name: gold
+    type: binary
+  - name: white
+    type: binary
+  - name: black
+    type: binary
+  - name: orange
+    type: binary
+  - name: circles
+    type: discrete
+  - name: crosses
+    type: discrete
+  - name: saltires
+    type: binary
+  - name: quarters
+    type: discrete
+  - name: sunstars
+    type: discrete
+  - name: crescent
+    type: binary
+  - name: triangle
+    type: binary
+  - name: icon
+    type: binary
+  - name: animate
+    type: binary
+  - name: text
+    type: binary
+  - name: mainhue_green
+    type: binary
+  - name: mainhue_red
+    type: binary
+  - name: mainhue_blue
+    type: binary
+  - name: mainhue_gold
+    type: binary
+  - name: mainhue_white
+    type: binary
+  - name: mainhue_orange
+    type: binary
+  - name: mainhue_black
+    type: binary
+  - name: mainhue_brown
+    type: binary
+  - name: topleft_black
+    type: binary
+  - name: topleft_red
+    type: binary
+  - name: topleft_green
+    type: binary
+  - name: topleft_blue
+    type: binary
+  - name: topleft_white
+    type: binary
+  - name: topleft_orange
+    type: binary
+  - name: topleft_gold
+    type: binary
+  - name: botright_green
+    type: binary
+  - name: botright_red
+    type: binary
+  - name: botright_white
+    type: binary
+  - name: botright_black
+    type: binary
+  - name: botright_blue
+    type: binary
+  - name: botright_gold
+    type: binary
+  - name: botright_orange
+    type: binary
+  - name: botright_brown
+    type: binary
