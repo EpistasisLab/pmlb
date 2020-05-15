@@ -5,26 +5,26 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: Pregnant
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: plasma glucose
-      type: continuous
-    - name: Diastolic blood pressure
-      type: continuous
-    - name: Triceps skin fold thickness
-      type: continuous
-    - name: 2-Hour serum insulin
-      type: continuous
-    - name: Body mass index
-      type: continuous
-    - name: Diabetes pedigree function
-      type: continuous
-    - name: Age
-      type: continuous
+  - name: Pregnant
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: plasma glucose
+    type: continuous
+  - name: Diastolic blood pressure
+    type: continuous
+  - name: Triceps skin fold thickness
+    type: continuous
+  - name: 2-Hour serum insulin
+    type: continuous
+  - name: Body mass index
+    type: continuous
+  - name: Diabetes pedigree function
+    type: continuous
+  - name: Age
+    type: continuous

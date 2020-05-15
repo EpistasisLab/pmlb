@@ -5,48 +5,48 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: AGE
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: SEX
-      type: binary
-    - name: STEROID
-      type: discrete
-    - name: ANTIVIRALS
-      type: binary
-    - name: FATIGUE
-      type: discrete
-    - name: MALAISE
-      type: discrete
-    - name: ANOREXIA
-      type: discrete
-    - name: LIVER BIG
-      type: discrete
-    - name: LIVER FIRM
-      type: discrete
-    - name: SPLEEN PALPABLE
-      type: discrete
-    - name: SPIDERS
-      type: discrete
-    - name: ASCITES
-      type: discrete
-    - name: VARICES
-      type: discrete
-    - name: BILIRUBIN
-      type: discrete
-    - name: ALK PHOSPHATE
-      type: discrete
-    - name: SGOT
-      type: discrete
-    - name: ALBUMIN
-      type: discrete
-    - name: PROTIME
-      type: discrete
-    - name: HISTOLOGY
-      type: binary
+  - name: AGE
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: SEX
+    type: binary
+  - name: STEROID
+    type: discrete
+  - name: ANTIVIRALS
+    type: binary
+  - name: FATIGUE
+    type: discrete
+  - name: MALAISE
+    type: discrete
+  - name: ANOREXIA
+    type: discrete
+  - name: LIVER BIG
+    type: discrete
+  - name: LIVER FIRM
+    type: discrete
+  - name: SPLEEN PALPABLE
+    type: discrete
+  - name: SPIDERS
+    type: discrete
+  - name: ASCITES
+    type: discrete
+  - name: VARICES
+    type: discrete
+  - name: BILIRUBIN
+    type: discrete
+  - name: ALK PHOSPHATE
+    type: discrete
+  - name: SGOT
+    type: discrete
+  - name: ALBUMIN
+    type: discrete
+  - name: PROTIME
+    type: discrete
+  - name: HISTOLOGY
+    type: binary

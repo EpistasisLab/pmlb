@@ -5,70 +5,70 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: binary
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: Radius1
-      type: continuous
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: Texture1
-      type: continuous
-    - name: Perimeter1
-      type: continuous
-    - name: Area1
-      type: continuous
-    - name: Smoothness1
-      type: continuous
-    - name: Compactness1
-      type: continuous
-    - name: Concavity1
-      type: continuous
-    - name: Concave_points1
-      type: continuous
-    - name: Symmetry1
-      type: continuous
-    - name: Fractal_dimension1
-      type: continuous
-    - name: Radius2
-      type: continuous
-    - name: Texture2
-      type: continuous
-    - name: Perimeter2
-      type: continuous
-    - name: Area2
-      type: continuous
-    - name: Smoothness2
-      type: continuous
-    - name: Compactness2
-      type: continuous
-    - name: Concavity2
-      type: continuous
-    - name: Concave_points2
-      type: continuous
-    - name: Symmetry2
-      type: continuous
-    - name: Fractal_dimension2
-      type: continuous
-    - name: Radius3
-      type: continuous
-    - name: Texture3
-      type: continuous
-    - name: Perimeter3
-      type: continuous
-    - name: Area3
-      type: continuous
-    - name: Smoothness3
-      type: continuous
-    - name: Compactness3
-      type: continuous
-    - name: Concavity3
-      type: continuous
-    - name: Concave_points3
-      type: continuous
-    - name: Symmetry3
-      type: continuous
-    - name: Fractal_dimension3
-      type: continuous
+  - name: Radius1
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Texture1
+    type: continuous
+  - name: Perimeter1
+    type: continuous
+  - name: Area1
+    type: continuous
+  - name: Smoothness1
+    type: continuous
+  - name: Compactness1
+    type: continuous
+  - name: Concavity1
+    type: continuous
+  - name: Concave_points1
+    type: continuous
+  - name: Symmetry1
+    type: continuous
+  - name: Fractal_dimension1
+    type: continuous
+  - name: Radius2
+    type: continuous
+  - name: Texture2
+    type: continuous
+  - name: Perimeter2
+    type: continuous
+  - name: Area2
+    type: continuous
+  - name: Smoothness2
+    type: continuous
+  - name: Compactness2
+    type: continuous
+  - name: Concavity2
+    type: continuous
+  - name: Concave_points2
+    type: continuous
+  - name: Symmetry2
+    type: continuous
+  - name: Fractal_dimension2
+    type: continuous
+  - name: Radius3
+    type: continuous
+  - name: Texture3
+    type: continuous
+  - name: Perimeter3
+    type: continuous
+  - name: Area3
+    type: continuous
+  - name: Smoothness3
+    type: continuous
+  - name: Compactness3
+    type: continuous
+  - name: Concavity3
+    type: continuous
+  - name: Concave_points3
+    type: continuous
+  - name: Symmetry3
+    type: continuous
+  - name: Fractal_dimension3
+    type: continuous

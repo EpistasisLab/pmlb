@@ -5,58 +5,58 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: attribute#1
-      type: binary
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: attribute#2
-      type: binary
-    - name: attribute#3
-      type: binary
-    - name: attribute#4
-      type: binary
-    - name: attribute#5
-      type: binary
-    - name: attribute#6
-      type: binary
-    - name: attribute#7
-      type: binary
-    - name: irrelevant1
-      type: binary
-    - name: irrelevant2
-      type: binary
-    - name: irrelevant3
-      type: binary
-    - name: irrelevant4
-      type: binary
-    - name: irrelevant5
-      type: binary
-    - name: irrelevant6
-      type: binary
-    - name: irrelevant7
-      type: binary
-    - name: irrelevant8
-      type: binary
-    - name: irrelevant9
-      type: binary
-    - name: irrelevant10
-      type: binary
-    - name: irrelevant11
-      type: binary
-    - name: irrelevant12
-      type: binary
-    - name: irrelevant13
-      type: binary
-    - name: irrelevant14
-      type: binary
-    - name: irrelevant15
-      type: binary
-    - name: irrelevant16
-      type: binary
-    - name: irrelevant17
-      type: binary
+  - name: attribute#1
+    type: binary
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: attribute#2
+    type: binary
+  - name: attribute#3
+    type: binary
+  - name: attribute#4
+    type: binary
+  - name: attribute#5
+    type: binary
+  - name: attribute#6
+    type: binary
+  - name: attribute#7
+    type: binary
+  - name: irrelevant1
+    type: binary
+  - name: irrelevant2
+    type: binary
+  - name: irrelevant3
+    type: binary
+  - name: irrelevant4
+    type: binary
+  - name: irrelevant5
+    type: binary
+  - name: irrelevant6
+    type: binary
+  - name: irrelevant7
+    type: binary
+  - name: irrelevant8
+    type: binary
+  - name: irrelevant9
+    type: binary
+  - name: irrelevant10
+    type: binary
+  - name: irrelevant11
+    type: binary
+  - name: irrelevant12
+    type: binary
+  - name: irrelevant13
+    type: binary
+  - name: irrelevant14
+    type: binary
+  - name: irrelevant15
+    type: binary
+  - name: irrelevant16
+    type: binary
+  - name: irrelevant17
+    type: binary

@@ -5,78 +5,78 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: erythema
-      type: discrete
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: scaling
-      type: discrete
-    - name: definite_borders
-      type: discrete
-    - name: itching
-      type: discrete
-    - name: koebner_phenomenon
-      type: discrete
-    - name: polygonal_papules
-      type: discrete
-    - name: follicular_papules
-      type: discrete
-    - name: oral_mucosal_involvement
-      type: discrete
-    - name: knee_and_elbow_involvement
-      type: discrete
-    - name: scalp_involvement
-      type: discrete
-    - name: family_history
-      type: binary
-    - name: melanin_incontinence
-      type: discrete
-    - name: eosinophils_in_the_infiltrate
-      type: discrete
-    - name: PNL_infiltrate
-      type: discrete
-    - name: fibrosis_of_the_papillary_dermis
-      type: discrete
-    - name: exocytosis
-      type: discrete
-    - name: acanthosis
-      type: discrete
-    - name: hyperkeratosis
-      type: discrete
-    - name: parakeratosis
-      type: discrete
-    - name: clubbing_of_the_rete_ridges
-      type: discrete
-    - name: elongation_of_the_rete_ridges
-      type: discrete
-    - name: thinning_of_the_suprapapillary_epidermis
-      type: discrete
-    - name: spongiform_pustule
-      type: discrete
-    - name: munro_microabcess
-      type: discrete
-    - name: focal_hypergranulosis
-      type: discrete
-    - name: disappearance_of_the_granular_layer
-      type: discrete
-    - name: vacuolisation_and_damage_of_basal_layer
-      type: discrete
-    - name: spongiosis
-      type: discrete
-    - name: saw-tooth_appearance_of_retes
-      type: discrete
-    - name: follicular_horn_plug
-      type: discrete
-    - name: perifollicular_parakeratosis
-      type: discrete
-    - name: inflammatory_monoluclear_inflitrate
-      type: discrete
-    - name: band-like_infiltrate
-      type: discrete
-    - name: Age
-      type: discrete
+  - name: erythema
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: scaling
+    type: discrete
+  - name: definite_borders
+    type: discrete
+  - name: itching
+    type: discrete
+  - name: koebner_phenomenon
+    type: discrete
+  - name: polygonal_papules
+    type: discrete
+  - name: follicular_papules
+    type: discrete
+  - name: oral_mucosal_involvement
+    type: discrete
+  - name: knee_and_elbow_involvement
+    type: discrete
+  - name: scalp_involvement
+    type: discrete
+  - name: family_history
+    type: binary
+  - name: melanin_incontinence
+    type: discrete
+  - name: eosinophils_in_the_infiltrate
+    type: discrete
+  - name: PNL_infiltrate
+    type: discrete
+  - name: fibrosis_of_the_papillary_dermis
+    type: discrete
+  - name: exocytosis
+    type: discrete
+  - name: acanthosis
+    type: discrete
+  - name: hyperkeratosis
+    type: discrete
+  - name: parakeratosis
+    type: discrete
+  - name: clubbing_of_the_rete_ridges
+    type: discrete
+  - name: elongation_of_the_rete_ridges
+    type: discrete
+  - name: thinning_of_the_suprapapillary_epidermis
+    type: discrete
+  - name: spongiform_pustule
+    type: discrete
+  - name: munro_microabcess
+    type: discrete
+  - name: focal_hypergranulosis
+    type: discrete
+  - name: disappearance_of_the_granular_layer
+    type: discrete
+  - name: vacuolisation_and_damage_of_basal_layer
+    type: discrete
+  - name: spongiosis
+    type: discrete
+  - name: saw-tooth_appearance_of_retes
+    type: discrete
+  - name: follicular_horn_plug
+    type: discrete
+  - name: perifollicular_parakeratosis
+    type: discrete
+  - name: inflammatory_monoluclear_inflitrate
+    type: discrete
+  - name: band-like_infiltrate
+    type: discrete
+  - name: Age
+    type: discrete

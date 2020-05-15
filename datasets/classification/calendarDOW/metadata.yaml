@@ -5,74 +5,74 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: Feature00
-      type: discrete
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: Feature01
-      type: discrete
-    - name: Feature02
-      type: discrete
-    - name: Feature03
-      type: discrete
-    - name: Feature04
-      type: discrete
-    - name: Feature05
-      type: discrete
-    - name: Feature06
-      type: discrete
-    - name: Feature07
-      type: discrete
-    - name: Feature08
-      type: discrete
-    - name: Feature09
-      type: discrete
-    - name: Feature10
-      type: discrete
-    - name: Feature11
-      type: discrete
-    - name: Feature12
-      type: discrete
-    - name: Feature13
-      type: discrete
-    - name: Feature14
-      type: discrete
-    - name: Feature15
-      type: discrete
-    - name: Feature16
-      type: discrete
-    - name: Feature17
-      type: discrete
-    - name: Feature18
-      type: discrete
-    - name: Feature19
-      type: discrete
-    - name: Feature20
-      type: discrete
-    - name: Feature21
-      type: discrete
-    - name: Feature22
-      type: discrete
-    - name: Feature23
-      type: discrete
-    - name: Feature24
-      type: binary
-    - name: Feature25
-      type: binary
-    - name: Feature26
-      type: discrete
-    - name: Feature27
-      type: discrete
-    - name: Feature28
-      type: discrete
-    - name: Feature29
-      type: discrete
-    - name: Feature30
-      type: discrete
-    - name: Feature31
-      type: discrete
+  - name: Feature00
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Feature01
+    type: discrete
+  - name: Feature02
+    type: discrete
+  - name: Feature03
+    type: discrete
+  - name: Feature04
+    type: discrete
+  - name: Feature05
+    type: discrete
+  - name: Feature06
+    type: discrete
+  - name: Feature07
+    type: discrete
+  - name: Feature08
+    type: discrete
+  - name: Feature09
+    type: discrete
+  - name: Feature10
+    type: discrete
+  - name: Feature11
+    type: discrete
+  - name: Feature12
+    type: discrete
+  - name: Feature13
+    type: discrete
+  - name: Feature14
+    type: discrete
+  - name: Feature15
+    type: discrete
+  - name: Feature16
+    type: discrete
+  - name: Feature17
+    type: discrete
+  - name: Feature18
+    type: discrete
+  - name: Feature19
+    type: discrete
+  - name: Feature20
+    type: discrete
+  - name: Feature21
+    type: discrete
+  - name: Feature22
+    type: discrete
+  - name: Feature23
+    type: discrete
+  - name: Feature24
+    type: binary
+  - name: Feature25
+    type: binary
+  - name: Feature26
+    type: discrete
+  - name: Feature27
+    type: discrete
+  - name: Feature28
+    type: discrete
+  - name: Feature29
+    type: discrete
+  - name: Feature30
+    type: discrete
+  - name: Feature31
+    type: discrete

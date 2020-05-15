@@ -5,370 +5,370 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-    type: discrete
-    description: None yet. See our contributing guide to help us add one.
-    code: None yet. See our contributing guide to help us add one.
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
-    - name: A0
-      type: binary
-      description: null # optional but recommended, what the feature measures/indicates, unit
-      code: null # optional, coding information, e.g., Control = 0, Case = 1
-      transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-    - name: A1
-      type: binary
-    - name: A2
-      type: binary
-    - name: A3
-      type: binary
-    - name: A4
-      type: binary
-    - name: A5
-      type: binary
-    - name: A6
-      type: binary
-    - name: A7
-      type: binary
-    - name: A8
-      type: binary
-    - name: A9
-      type: binary
-    - name: A10
-      type: binary
-    - name: A11
-      type: binary
-    - name: A12
-      type: binary
-    - name: A13
-      type: binary
-    - name: A14
-      type: binary
-    - name: A15
-      type: binary
-    - name: A16
-      type: binary
-    - name: A17
-      type: binary
-    - name: A18
-      type: binary
-    - name: A19
-      type: binary
-    - name: A20
-      type: binary
-    - name: A21
-      type: binary
-    - name: A22
-      type: binary
-    - name: A23
-      type: binary
-    - name: A24
-      type: binary
-    - name: A25
-      type: binary
-    - name: A26
-      type: binary
-    - name: A27
-      type: binary
-    - name: A28
-      type: binary
-    - name: A29
-      type: binary
-    - name: A30
-      type: binary
-    - name: A31
-      type: binary
-    - name: A32
-      type: binary
-    - name: A33
-      type: binary
-    - name: A34
-      type: binary
-    - name: A35
-      type: binary
-    - name: A36
-      type: binary
-    - name: A37
-      type: binary
-    - name: A38
-      type: binary
-    - name: A39
-      type: binary
-    - name: A40
-      type: binary
-    - name: A41
-      type: binary
-    - name: A42
-      type: binary
-    - name: A43
-      type: binary
-    - name: A44
-      type: binary
-    - name: A45
-      type: binary
-    - name: A46
-      type: binary
-    - name: A47
-      type: binary
-    - name: A48
-      type: binary
-    - name: A49
-      type: binary
-    - name: A50
-      type: binary
-    - name: A51
-      type: binary
-    - name: A52
-      type: binary
-    - name: A53
-      type: binary
-    - name: A54
-      type: binary
-    - name: A55
-      type: binary
-    - name: A56
-      type: binary
-    - name: A57
-      type: binary
-    - name: A58
-      type: binary
-    - name: A59
-      type: binary
-    - name: A60
-      type: binary
-    - name: A61
-      type: binary
-    - name: A62
-      type: binary
-    - name: A63
-      type: binary
-    - name: A64
-      type: binary
-    - name: A65
-      type: binary
-    - name: A66
-      type: binary
-    - name: A67
-      type: binary
-    - name: A68
-      type: binary
-    - name: A69
-      type: binary
-    - name: A70
-      type: binary
-    - name: A71
-      type: binary
-    - name: A72
-      type: binary
-    - name: A73
-      type: binary
-    - name: A74
-      type: binary
-    - name: A75
-      type: binary
-    - name: A76
-      type: binary
-    - name: A77
-      type: binary
-    - name: A78
-      type: binary
-    - name: A79
-      type: binary
-    - name: A80
-      type: binary
-    - name: A81
-      type: binary
-    - name: A82
-      type: binary
-    - name: A83
-      type: binary
-    - name: A84
-      type: binary
-    - name: A85
-      type: binary
-    - name: A86
-      type: binary
-    - name: A87
-      type: binary
-    - name: A88
-      type: binary
-    - name: A89
-      type: binary
-    - name: A90
-      type: binary
-    - name: A91
-      type: binary
-    - name: A92
-      type: binary
-    - name: A93
-      type: binary
-    - name: A94
-      type: binary
-    - name: A95
-      type: binary
-    - name: A96
-      type: binary
-    - name: A97
-      type: binary
-    - name: A98
-      type: binary
-    - name: A99
-      type: binary
-    - name: A100
-      type: binary
-    - name: A101
-      type: binary
-    - name: A102
-      type: binary
-    - name: A103
-      type: binary
-    - name: A104
-      type: binary
-    - name: A105
-      type: binary
-    - name: A106
-      type: binary
-    - name: A107
-      type: binary
-    - name: A108
-      type: binary
-    - name: A109
-      type: binary
-    - name: A110
-      type: binary
-    - name: A111
-      type: binary
-    - name: A112
-      type: binary
-    - name: A113
-      type: binary
-    - name: A114
-      type: binary
-    - name: A115
-      type: binary
-    - name: A116
-      type: binary
-    - name: A117
-      type: binary
-    - name: A118
-      type: binary
-    - name: A119
-      type: binary
-    - name: A120
-      type: binary
-    - name: A121
-      type: binary
-    - name: A122
-      type: binary
-    - name: A123
-      type: binary
-    - name: A124
-      type: binary
-    - name: A125
-      type: binary
-    - name: A126
-      type: binary
-    - name: A127
-      type: binary
-    - name: A128
-      type: binary
-    - name: A129
-      type: binary
-    - name: A130
-      type: binary
-    - name: A131
-      type: binary
-    - name: A132
-      type: binary
-    - name: A133
-      type: binary
-    - name: A134
-      type: binary
-    - name: A135
-      type: binary
-    - name: A136
-      type: binary
-    - name: A137
-      type: binary
-    - name: A138
-      type: binary
-    - name: A139
-      type: binary
-    - name: A140
-      type: binary
-    - name: A141
-      type: binary
-    - name: A142
-      type: binary
-    - name: A143
-      type: binary
-    - name: A144
-      type: binary
-    - name: A145
-      type: binary
-    - name: A146
-      type: binary
-    - name: A147
-      type: binary
-    - name: A148
-      type: binary
-    - name: A149
-      type: binary
-    - name: A150
-      type: binary
-    - name: A151
-      type: binary
-    - name: A152
-      type: binary
-    - name: A153
-      type: binary
-    - name: A154
-      type: binary
-    - name: A155
-      type: binary
-    - name: A156
-      type: binary
-    - name: A157
-      type: binary
-    - name: A158
-      type: binary
-    - name: A159
-      type: binary
-    - name: A160
-      type: binary
-    - name: A161
-      type: binary
-    - name: A162
-      type: binary
-    - name: A163
-      type: binary
-    - name: A164
-      type: binary
-    - name: A165
-      type: binary
-    - name: A166
-      type: binary
-    - name: A167
-      type: binary
-    - name: A168
-      type: binary
-    - name: A169
-      type: binary
-    - name: A170
-      type: binary
-    - name: A171
-      type: binary
-    - name: A172
-      type: binary
-    - name: A173
-      type: binary
-    - name: A174
-      type: binary
-    - name: A175
-      type: binary
-    - name: A176
-      type: binary
-    - name: A177
-      type: binary
-    - name: A178
-      type: binary
-    - name: A179
-      type: binary
+  - name: A0
+    type: binary
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: A1
+    type: binary
+  - name: A2
+    type: binary
+  - name: A3
+    type: binary
+  - name: A4
+    type: binary
+  - name: A5
+    type: binary
+  - name: A6
+    type: binary
+  - name: A7
+    type: binary
+  - name: A8
+    type: binary
+  - name: A9
+    type: binary
+  - name: A10
+    type: binary
+  - name: A11
+    type: binary
+  - name: A12
+    type: binary
+  - name: A13
+    type: binary
+  - name: A14
+    type: binary
+  - name: A15
+    type: binary
+  - name: A16
+    type: binary
+  - name: A17
+    type: binary
+  - name: A18
+    type: binary
+  - name: A19
+    type: binary
+  - name: A20
+    type: binary
+  - name: A21
+    type: binary
+  - name: A22
+    type: binary
+  - name: A23
+    type: binary
+  - name: A24
+    type: binary
+  - name: A25
+    type: binary
+  - name: A26
+    type: binary
+  - name: A27
+    type: binary
+  - name: A28
+    type: binary
+  - name: A29
+    type: binary
+  - name: A30
+    type: binary
+  - name: A31
+    type: binary
+  - name: A32
+    type: binary
+  - name: A33
+    type: binary
+  - name: A34
+    type: binary
+  - name: A35
+    type: binary
+  - name: A36
+    type: binary
+  - name: A37
+    type: binary
+  - name: A38
+    type: binary
+  - name: A39
+    type: binary
+  - name: A40
+    type: binary
+  - name: A41
+    type: binary
+  - name: A42
+    type: binary
+  - name: A43
+    type: binary
+  - name: A44
+    type: binary
+  - name: A45
+    type: binary
+  - name: A46
+    type: binary
+  - name: A47
+    type: binary
+  - name: A48
+    type: binary
+  - name: A49
+    type: binary
+  - name: A50
+    type: binary
+  - name: A51
+    type: binary
+  - name: A52
+    type: binary
+  - name: A53
+    type: binary
+  - name: A54
+    type: binary
+  - name: A55
+    type: binary
+  - name: A56
+    type: binary
+  - name: A57
+    type: binary
+  - name: A58
+    type: binary
+  - name: A59
+    type: binary
+  - name: A60
+    type: binary
+  - name: A61
+    type: binary
+  - name: A62
+    type: binary
+  - name: A63
+    type: binary
+  - name: A64
+    type: binary
+  - name: A65
+    type: binary
+  - name: A66
+    type: binary
+  - name: A67
+    type: binary
+  - name: A68
+    type: binary
+  - name: A69
+    type: binary
+  - name: A70
+    type: binary
+  - name: A71
+    type: binary
+  - name: A72
+    type: binary
+  - name: A73
+    type: binary
+  - name: A74
+    type: binary
+  - name: A75
+    type: binary
+  - name: A76
+    type: binary
+  - name: A77
+    type: binary
+  - name: A78
+    type: binary
+  - name: A79
+    type: binary
+  - name: A80
+    type: binary
+  - name: A81
+    type: binary
+  - name: A82
+    type: binary
+  - name: A83
+    type: binary
+  - name: A84
+    type: binary
+  - name: A85
+    type: binary
+  - name: A86
+    type: binary
+  - name: A87
+    type: binary
+  - name: A88
+    type: binary
+  - name: A89
+    type: binary
+  - name: A90
+    type: binary
+  - name: A91
+    type: binary
+  - name: A92
+    type: binary
+  - name: A93
+    type: binary
+  - name: A94
+    type: binary
+  - name: A95
+    type: binary
+  - name: A96
+    type: binary
+  - name: A97
+    type: binary
+  - name: A98
+    type: binary
+  - name: A99
+    type: binary
+  - name: A100
+    type: binary
+  - name: A101
+    type: binary
+  - name: A102
+    type: binary
+  - name: A103
+    type: binary
+  - name: A104
+    type: binary
+  - name: A105
+    type: binary
+  - name: A106
+    type: binary
+  - name: A107
+    type: binary
+  - name: A108
+    type: binary
+  - name: A109
+    type: binary
+  - name: A110
+    type: binary
+  - name: A111
+    type: binary
+  - name: A112
+    type: binary
+  - name: A113
+    type: binary
+  - name: A114
+    type: binary
+  - name: A115
+    type: binary
+  - name: A116
+    type: binary
+  - name: A117
+    type: binary
+  - name: A118
+    type: binary
+  - name: A119
+    type: binary
+  - name: A120
+    type: binary
+  - name: A121
+    type: binary
+  - name: A122
+    type: binary
+  - name: A123
+    type: binary
+  - name: A124
+    type: binary
+  - name: A125
+    type: binary
+  - name: A126
+    type: binary
+  - name: A127
+    type: binary
+  - name: A128
+    type: binary
+  - name: A129
+    type: binary
+  - name: A130
+    type: binary
+  - name: A131
+    type: binary
+  - name: A132
+    type: binary
+  - name: A133
+    type: binary
+  - name: A134
+    type: binary
+  - name: A135
+    type: binary
+  - name: A136
+    type: binary
+  - name: A137
+    type: binary
+  - name: A138
+    type: binary
+  - name: A139
+    type: binary
+  - name: A140
+    type: binary
+  - name: A141
+    type: binary
+  - name: A142
+    type: binary
+  - name: A143
+    type: binary
+  - name: A144
+    type: binary
+  - name: A145
+    type: binary
+  - name: A146
+    type: binary
+  - name: A147
+    type: binary
+  - name: A148
+    type: binary
+  - name: A149
+    type: binary
+  - name: A150
+    type: binary
+  - name: A151
+    type: binary
+  - name: A152
+    type: binary
+  - name: A153
+    type: binary
+  - name: A154
+    type: binary
+  - name: A155
+    type: binary
+  - name: A156
+    type: binary
+  - name: A157
+    type: binary
+  - name: A158
+    type: binary
+  - name: A159
+    type: binary
+  - name: A160
+    type: binary
+  - name: A161
+    type: binary
+  - name: A162
+    type: binary
+  - name: A163
+    type: binary
+  - name: A164
+    type: binary
+  - name: A165
+    type: binary
+  - name: A166
+    type: binary
+  - name: A167
+    type: binary
+  - name: A168
+    type: binary
+  - name: A169
+    type: binary
+  - name: A170
+    type: binary
+  - name: A171
+    type: binary
+  - name: A172
+    type: binary
+  - name: A173
+    type: binary
+  - name: A174
+    type: binary
+  - name: A175
+    type: binary
+  - name: A176
+    type: binary
+  - name: A177
+    type: binary
+  - name: A178
+    type: binary
+  - name: A179
+    type: binary
