@@ -109,6 +109,7 @@ New datasets should follow these guidelines:
  - Each sample/observation forms a row of the dataset.
  - Each feature/variable forms a column of the dataset.
  - The dependent variable, i.e., outcome/target, should be labelled `'target'`.
+ - If the task is classification, the dependent variable must be encoded with numeric, contiguous labels in [0, 1, .. k], where there are k classes in the data.
  - Column headers are feature/variable names and `'target'`.
  - Any `'sample_id'` or `'row_id'` column should be *excluded*.
  - The data should be tab-delimited and in `.tsv.gz` format.
