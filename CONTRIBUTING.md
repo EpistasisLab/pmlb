@@ -114,7 +114,7 @@ New datasets should follow these guidelines:
  - Any `'sample_id'` or `'row_id'` column should be *excluded*.
  - The data should be tab-delimited and in `.tsv.gz` format.
  - The dataset should be in the correct folder; i.e., for a classification dataset, `penn-ml-benchmarks/datasets/classification/your_dataset/`
- - A metadata.yaml file must be provided with all required fields filled in. Please follow the template guidelines.
+ - A metadata.yaml file must be provided with all required fields filled in. Please follow the [template guidelines.](metadata_template.yaml)
  - The dataset should not exceed 50 MB.  
 
 Note that any pull requests for new dataset contributions will not be accepted if these guidelines are not met.
