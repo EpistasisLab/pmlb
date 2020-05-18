@@ -1,0 +1,20 @@
+dataset: # required, dataset name
+description: # required, dataset description
+source: # required, link to the source from where dataset was retrieved
+publication: # optional, study that generated the dataset (doi, pmid, pmcid, or url)
+task: # required, classification or regression
+target:
+  type:
+  description: # required, describe the endpoint/outcome (and unit if exists)
+  code: # optional but recommended, coding information, e.g., 'Control' = 0, 'Case' = 1
+features: # list of features in the dataset
+  - name: # required, name of feature
+    type: # required, either continuous, nominal or ordinal
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., 'Control = 0', 'Case' = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name:
+    type:
+    description:
+    code:
+    transform:
