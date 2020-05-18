@@ -73,6 +73,27 @@ We need help doing this for each dataset!
 1. Verify the source for the dataset.
     - Often the place to start is an internet search of the dataset name. 
     Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](www.kagggle.com). 
+    - Ideally, you will be able to verify the source is correct by downloading the source dataset, applying some simple transformations like normalization, and doing a checksum that validates the two datasets are now equivalent. Something like below.
+
+    ```python
+    import pandas as pd
+    from sklearn.preprocessing import LabelEncoder
+    df_pmlb = fetch_data('example')
+    df_source = pd.read_csv('potential_source_dataset.csv')
+
+    # apply some changes to df_source
+    df_source['x1'] = LabelEncoder().fit_transform(df_source['x1'])
+    
+    import hashlib
+    rowhashes_pmlb = hash_pandas_object(df_pmlb).values 
+    hash_pmlb = hashlib.sha256(rowhashes_pmlb).hexdigest()
+    rowhashes_source = hash_pandas_object(df_source).values 
+    hash_source = hashlib.sha256(rowhashes_source).hexdigest()
+    
+    # verify hashes match
+    print(hash_pmlb == hash_source)
+    ```
+
 2. Update the information on the dataset's metadata.yaml file. 
 Refer to the [metadata template file](metadata_template.yaml) or [wine_quality_red](datasets/wine_quality_red/metadata.yaml) as an example.
 3. Issue a pull request for your changes. In the pull request, document how you verified the source of the dataset, for example, by performing a checksum on the data. Include any information to help us independently check that what you have added is accurate.
