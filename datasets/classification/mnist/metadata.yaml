@@ -1,0 +1,1582 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: mnist
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: 1
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: 2
+    type: discrete
+  - name: 3
+    type: discrete
+  - name: 4
+    type: discrete
+  - name: 5
+    type: discrete
+  - name: 6
+    type: discrete
+  - name: 7
+    type: discrete
+  - name: 8
+    type: discrete
+  - name: 9
+    type: discrete
+  - name: 10
+    type: discrete
+  - name: 11
+    type: discrete
+  - name: 12
+    type: discrete
+  - name: 13
+    type: discrete
+  - name: 14
+    type: discrete
+  - name: 15
+    type: binary
+  - name: 16
+    type: binary
+  - name: 17
+    type: discrete
+  - name: 18
+    type: discrete
+  - name: 19
+    type: discrete
+  - name: 20
+    type: discrete
+  - name: 21
+    type: discrete
+  - name: 22
+    type: discrete
+  - name: 23
+    type: discrete
+  - name: 24
+    type: discrete
+  - name: 25
+    type: discrete
+  - name: 26
+    type: discrete
+  - name: 27
+    type: discrete
+  - name: 28
+    type: discrete
+  - name: 29
+    type: discrete
+  - name: 30
+    type: discrete
+  - name: 31
+    type: discrete
+  - name: 32
+    type: discrete
+  - name: 33
+    type: binary
+  - name: 34
+    type: discrete
+  - name: 35
+    type: discrete
+  - name: 36
+    type: discrete
+  - name: 37
+    type: discrete
+  - name: 38
+    type: discrete
+  - name: 39
+    type: discrete
+  - name: 40
+    type: discrete
+  - name: 41
+    type: discrete
+  - name: 42
+    type: discrete
+  - name: 43
+    type: discrete
+  - name: 44
+    type: discrete
+  - name: 45
+    type: discrete
+  - name: 46
+    type: discrete
+  - name: 47
+    type: discrete
+  - name: 48
+    type: discrete
+  - name: 49
+    type: discrete
+  - name: 50
+    type: discrete
+  - name: 51
+    type: discrete
+  - name: 52
+    type: discrete
+  - name: 53
+    type: discrete
+  - name: 54
+    type: discrete
+  - name: 55
+    type: discrete
+  - name: 56
+    type: discrete
+  - name: 57
+    type: discrete
+  - name: 58
+    type: discrete
+  - name: 59
+    type: binary
+  - name: 60
+    type: discrete
+  - name: 61
+    type: discrete
+  - name: 62
+    type: discrete
+  - name: 63
+    type: discrete
+  - name: 64
+    type: discrete
+  - name: 65
+    type: discrete
+  - name: 66
+    type: discrete
+  - name: 67
+    type: discrete
+  - name: 68
+    type: discrete
+  - name: 69
+    type: discrete
+  - name: 70
+    type: discrete
+  - name: 71
+    type: discrete
+  - name: 72
+    type: discrete
+  - name: 73
+    type: discrete
+  - name: 74
+    type: discrete
+  - name: 75
+    type: discrete
+  - name: 76
+    type: discrete
+  - name: 77
+    type: discrete
+  - name: 78
+    type: discrete
+  - name: 79
+    type: discrete
+  - name: 80
+    type: discrete
+  - name: 81
+    type: discrete
+  - name: 82
+    type: discrete
+  - name: 83
+    type: discrete
+  - name: 84
+    type: discrete
+  - name: 85
+    type: discrete
+  - name: 86
+    type: discrete
+  - name: 87
+    type: discrete
+  - name: 88
+    type: discrete
+  - name: 89
+    type: discrete
+  - name: 90
+    type: discrete
+  - name: 91
+    type: discrete
+  - name: 92
+    type: discrete
+  - name: 93
+    type: discrete
+  - name: 94
+    type: discrete
+  - name: 95
+    type: discrete
+  - name: 96
+    type: discrete
+  - name: 97
+    type: discrete
+  - name: 98
+    type: discrete
+  - name: 99
+    type: discrete
+  - name: 100
+    type: discrete
+  - name: 101
+    type: discrete
+  - name: 102
+    type: discrete
+  - name: 103
+    type: discrete
+  - name: 104
+    type: discrete
+  - name: 105
+    type: discrete
+  - name: 106
+    type: discrete
+  - name: 107
+    type: discrete
+  - name: 108
+    type: discrete
+  - name: 109
+    type: discrete
+  - name: 110
+    type: discrete
+  - name: 111
+    type: discrete
+  - name: 112
+    type: discrete
+  - name: 113
+    type: discrete
+  - name: 114
+    type: binary
+  - name: 115
+    type: discrete
+  - name: 116
+    type: discrete
+  - name: 117
+    type: discrete
+  - name: 118
+    type: discrete
+  - name: 119
+    type: discrete
+  - name: 120
+    type: discrete
+  - name: 121
+    type: discrete
+  - name: 122
+    type: discrete
+  - name: 123
+    type: discrete
+  - name: 124
+    type: discrete
+  - name: 125
+    type: discrete
+  - name: 126
+    type: discrete
+  - name: 127
+    type: discrete
+  - name: 128
+    type: discrete
+  - name: 129
+    type: discrete
+  - name: 130
+    type: discrete
+  - name: 131
+    type: discrete
+  - name: 132
+    type: discrete
+  - name: 133
+    type: discrete
+  - name: 134
+    type: discrete
+  - name: 135
+    type: discrete
+  - name: 136
+    type: discrete
+  - name: 137
+    type: discrete
+  - name: 138
+    type: discrete
+  - name: 139
+    type: discrete
+  - name: 140
+    type: discrete
+  - name: 141
+    type: discrete
+  - name: 142
+    type: binary
+  - name: 143
+    type: discrete
+  - name: 144
+    type: discrete
+  - name: 145
+    type: discrete
+  - name: 146
+    type: discrete
+  - name: 147
+    type: discrete
+  - name: 148
+    type: discrete
+  - name: 149
+    type: discrete
+  - name: 150
+    type: discrete
+  - name: 151
+    type: discrete
+  - name: 152
+    type: discrete
+  - name: 153
+    type: discrete
+  - name: 154
+    type: discrete
+  - name: 155
+    type: discrete
+  - name: 156
+    type: discrete
+  - name: 157
+    type: discrete
+  - name: 158
+    type: discrete
+  - name: 159
+    type: discrete
+  - name: 160
+    type: discrete
+  - name: 161
+    type: discrete
+  - name: 162
+    type: discrete
+  - name: 163
+    type: discrete
+  - name: 164
+    type: discrete
+  - name: 165
+    type: discrete
+  - name: 166
+    type: discrete
+  - name: 167
+    type: discrete
+  - name: 168
+    type: discrete
+  - name: 169
+    type: discrete
+  - name: 170
+    type: discrete
+  - name: 171
+    type: discrete
+  - name: 172
+    type: discrete
+  - name: 173
+    type: discrete
+  - name: 174
+    type: discrete
+  - name: 175
+    type: discrete
+  - name: 176
+    type: discrete
+  - name: 177
+    type: discrete
+  - name: 178
+    type: discrete
+  - name: 179
+    type: discrete
+  - name: 180
+    type: discrete
+  - name: 181
+    type: discrete
+  - name: 182
+    type: discrete
+  - name: 183
+    type: discrete
+  - name: 184
+    type: discrete
+  - name: 185
+    type: discrete
+  - name: 186
+    type: discrete
+  - name: 187
+    type: discrete
+  - name: 188
+    type: discrete
+  - name: 189
+    type: discrete
+  - name: 190
+    type: discrete
+  - name: 191
+    type: discrete
+  - name: 192
+    type: discrete
+  - name: 193
+    type: discrete
+  - name: 194
+    type: discrete
+  - name: 195
+    type: discrete
+  - name: 196
+    type: discrete
+  - name: 197
+    type: binary
+  - name: 198
+    type: discrete
+  - name: 199
+    type: discrete
+  - name: 200
+    type: discrete
+  - name: 201
+    type: discrete
+  - name: 202
+    type: discrete
+  - name: 203
+    type: discrete
+  - name: 204
+    type: discrete
+  - name: 205
+    type: discrete
+  - name: 206
+    type: discrete
+  - name: 207
+    type: discrete
+  - name: 208
+    type: discrete
+  - name: 209
+    type: discrete
+  - name: 210
+    type: discrete
+  - name: 211
+    type: discrete
+  - name: 212
+    type: discrete
+  - name: 213
+    type: discrete
+  - name: 214
+    type: discrete
+  - name: 215
+    type: discrete
+  - name: 216
+    type: discrete
+  - name: 217
+    type: discrete
+  - name: 218
+    type: discrete
+  - name: 219
+    type: discrete
+  - name: 220
+    type: discrete
+  - name: 221
+    type: discrete
+  - name: 222
+    type: discrete
+  - name: 223
+    type: discrete
+  - name: 224
+    type: discrete
+  - name: 225
+    type: discrete
+  - name: 226
+    type: discrete
+  - name: 227
+    type: discrete
+  - name: 228
+    type: discrete
+  - name: 229
+    type: discrete
+  - name: 230
+    type: discrete
+  - name: 231
+    type: discrete
+  - name: 232
+    type: discrete
+  - name: 233
+    type: discrete
+  - name: 234
+    type: discrete
+  - name: 235
+    type: discrete
+  - name: 236
+    type: discrete
+  - name: 237
+    type: discrete
+  - name: 238
+    type: discrete
+  - name: 239
+    type: discrete
+  - name: 240
+    type: discrete
+  - name: 241
+    type: discrete
+  - name: 242
+    type: discrete
+  - name: 243
+    type: discrete
+  - name: 244
+    type: discrete
+  - name: 245
+    type: discrete
+  - name: 246
+    type: discrete
+  - name: 247
+    type: discrete
+  - name: 248
+    type: discrete
+  - name: 249
+    type: discrete
+  - name: 250
+    type: discrete
+  - name: 251
+    type: discrete
+  - name: 252
+    type: discrete
+  - name: 253
+    type: discrete
+  - name: 254
+    type: discrete
+  - name: 255
+    type: discrete
+  - name: 256
+    type: discrete
+  - name: 257
+    type: discrete
+  - name: 258
+    type: discrete
+  - name: 259
+    type: discrete
+  - name: 260
+    type: discrete
+  - name: 261
+    type: discrete
+  - name: 262
+    type: discrete
+  - name: 263
+    type: discrete
+  - name: 264
+    type: discrete
+  - name: 265
+    type: discrete
+  - name: 266
+    type: discrete
+  - name: 267
+    type: discrete
+  - name: 268
+    type: discrete
+  - name: 269
+    type: discrete
+  - name: 270
+    type: discrete
+  - name: 271
+    type: discrete
+  - name: 272
+    type: discrete
+  - name: 273
+    type: discrete
+  - name: 274
+    type: discrete
+  - name: 275
+    type: discrete
+  - name: 276
+    type: discrete
+  - name: 277
+    type: discrete
+  - name: 278
+    type: discrete
+  - name: 279
+    type: discrete
+  - name: 280
+    type: discrete
+  - name: 281
+    type: discrete
+  - name: 282
+    type: discrete
+  - name: 283
+    type: discrete
+  - name: 284
+    type: discrete
+  - name: 285
+    type: discrete
+  - name: 286
+    type: discrete
+  - name: 287
+    type: discrete
+  - name: 288
+    type: discrete
+  - name: 289
+    type: discrete
+  - name: 290
+    type: discrete
+  - name: 291
+    type: discrete
+  - name: 292
+    type: discrete
+  - name: 293
+    type: discrete
+  - name: 294
+    type: discrete
+  - name: 295
+    type: discrete
+  - name: 296
+    type: discrete
+  - name: 297
+    type: discrete
+  - name: 298
+    type: discrete
+  - name: 299
+    type: discrete
+  - name: 300
+    type: discrete
+  - name: 301
+    type: discrete
+  - name: 302
+    type: discrete
+  - name: 303
+    type: discrete
+  - name: 304
+    type: discrete
+  - name: 305
+    type: discrete
+  - name: 306
+    type: discrete
+  - name: 307
+    type: discrete
+  - name: 308
+    type: discrete
+  - name: 309
+    type: discrete
+  - name: 310
+    type: discrete
+  - name: 311
+    type: discrete
+  - name: 312
+    type: discrete
+  - name: 313
+    type: discrete
+  - name: 314
+    type: discrete
+  - name: 315
+    type: discrete
+  - name: 316
+    type: discrete
+  - name: 317
+    type: discrete
+  - name: 318
+    type: discrete
+  - name: 319
+    type: discrete
+  - name: 320
+    type: discrete
+  - name: 321
+    type: discrete
+  - name: 322
+    type: discrete
+  - name: 323
+    type: discrete
+  - name: 324
+    type: discrete
+  - name: 325
+    type: discrete
+  - name: 326
+    type: discrete
+  - name: 327
+    type: discrete
+  - name: 328
+    type: discrete
+  - name: 329
+    type: discrete
+  - name: 330
+    type: discrete
+  - name: 331
+    type: discrete
+  - name: 332
+    type: discrete
+  - name: 333
+    type: discrete
+  - name: 334
+    type: discrete
+  - name: 335
+    type: discrete
+  - name: 336
+    type: discrete
+  - name: 337
+    type: discrete
+  - name: 338
+    type: discrete
+  - name: 339
+    type: discrete
+  - name: 340
+    type: discrete
+  - name: 341
+    type: discrete
+  - name: 342
+    type: discrete
+  - name: 343
+    type: discrete
+  - name: 344
+    type: discrete
+  - name: 345
+    type: discrete
+  - name: 346
+    type: discrete
+  - name: 347
+    type: discrete
+  - name: 348
+    type: discrete
+  - name: 349
+    type: discrete
+  - name: 350
+    type: discrete
+  - name: 351
+    type: discrete
+  - name: 352
+    type: discrete
+  - name: 353
+    type: discrete
+  - name: 354
+    type: discrete
+  - name: 355
+    type: discrete
+  - name: 356
+    type: discrete
+  - name: 357
+    type: discrete
+  - name: 358
+    type: discrete
+  - name: 359
+    type: discrete
+  - name: 360
+    type: discrete
+  - name: 361
+    type: discrete
+  - name: 362
+    type: discrete
+  - name: 363
+    type: discrete
+  - name: 364
+    type: discrete
+  - name: 365
+    type: binary
+  - name: 366
+    type: discrete
+  - name: 367
+    type: discrete
+  - name: 368
+    type: discrete
+  - name: 369
+    type: discrete
+  - name: 370
+    type: discrete
+  - name: 371
+    type: discrete
+  - name: 372
+    type: discrete
+  - name: 373
+    type: discrete
+  - name: 374
+    type: discrete
+  - name: 375
+    type: discrete
+  - name: 376
+    type: discrete
+  - name: 377
+    type: discrete
+  - name: 378
+    type: discrete
+  - name: 379
+    type: discrete
+  - name: 380
+    type: discrete
+  - name: 381
+    type: discrete
+  - name: 382
+    type: discrete
+  - name: 383
+    type: discrete
+  - name: 384
+    type: discrete
+  - name: 385
+    type: discrete
+  - name: 386
+    type: discrete
+  - name: 387
+    type: discrete
+  - name: 388
+    type: discrete
+  - name: 389
+    type: discrete
+  - name: 390
+    type: discrete
+  - name: 391
+    type: discrete
+  - name: 392
+    type: discrete
+  - name: 393
+    type: binary
+  - name: 394
+    type: discrete
+  - name: 395
+    type: discrete
+  - name: 396
+    type: discrete
+  - name: 397
+    type: discrete
+  - name: 398
+    type: discrete
+  - name: 399
+    type: discrete
+  - name: 400
+    type: discrete
+  - name: 401
+    type: discrete
+  - name: 402
+    type: discrete
+  - name: 403
+    type: discrete
+  - name: 404
+    type: discrete
+  - name: 405
+    type: discrete
+  - name: 406
+    type: discrete
+  - name: 407
+    type: discrete
+  - name: 408
+    type: discrete
+  - name: 409
+    type: discrete
+  - name: 410
+    type: discrete
+  - name: 411
+    type: discrete
+  - name: 412
+    type: discrete
+  - name: 413
+    type: discrete
+  - name: 414
+    type: discrete
+  - name: 415
+    type: discrete
+  - name: 416
+    type: discrete
+  - name: 417
+    type: discrete
+  - name: 418
+    type: discrete
+  - name: 419
+    type: discrete
+  - name: 420
+    type: discrete
+  - name: 421
+    type: discrete
+  - name: 422
+    type: discrete
+  - name: 423
+    type: discrete
+  - name: 424
+    type: discrete
+  - name: 425
+    type: discrete
+  - name: 426
+    type: discrete
+  - name: 427
+    type: discrete
+  - name: 428
+    type: discrete
+  - name: 429
+    type: discrete
+  - name: 430
+    type: discrete
+  - name: 431
+    type: discrete
+  - name: 432
+    type: discrete
+  - name: 433
+    type: discrete
+  - name: 434
+    type: discrete
+  - name: 435
+    type: discrete
+  - name: 436
+    type: discrete
+  - name: 437
+    type: discrete
+  - name: 438
+    type: discrete
+  - name: 439
+    type: discrete
+  - name: 440
+    type: discrete
+  - name: 441
+    type: discrete
+  - name: 442
+    type: discrete
+  - name: 443
+    type: discrete
+  - name: 444
+    type: discrete
+  - name: 445
+    type: discrete
+  - name: 446
+    type: discrete
+  - name: 447
+    type: discrete
+  - name: 448
+    type: discrete
+  - name: 449
+    type: binary
+  - name: 450
+    type: discrete
+  - name: 451
+    type: discrete
+  - name: 452
+    type: discrete
+  - name: 453
+    type: discrete
+  - name: 454
+    type: discrete
+  - name: 455
+    type: discrete
+  - name: 456
+    type: discrete
+  - name: 457
+    type: discrete
+  - name: 458
+    type: discrete
+  - name: 459
+    type: discrete
+  - name: 460
+    type: discrete
+  - name: 461
+    type: discrete
+  - name: 462
+    type: discrete
+  - name: 463
+    type: discrete
+  - name: 464
+    type: discrete
+  - name: 465
+    type: discrete
+  - name: 466
+    type: discrete
+  - name: 467
+    type: discrete
+  - name: 468
+    type: discrete
+  - name: 469
+    type: discrete
+  - name: 470
+    type: discrete
+  - name: 471
+    type: discrete
+  - name: 472
+    type: discrete
+  - name: 473
+    type: discrete
+  - name: 474
+    type: discrete
+  - name: 475
+    type: discrete
+  - name: 476
+    type: discrete
+  - name: 477
+    type: discrete
+  - name: 478
+    type: discrete
+  - name: 479
+    type: discrete
+  - name: 480
+    type: discrete
+  - name: 481
+    type: discrete
+  - name: 482
+    type: discrete
+  - name: 483
+    type: discrete
+  - name: 484
+    type: discrete
+  - name: 485
+    type: discrete
+  - name: 486
+    type: discrete
+  - name: 487
+    type: discrete
+  - name: 488
+    type: discrete
+  - name: 489
+    type: discrete
+  - name: 490
+    type: discrete
+  - name: 491
+    type: discrete
+  - name: 492
+    type: discrete
+  - name: 493
+    type: discrete
+  - name: 494
+    type: discrete
+  - name: 495
+    type: discrete
+  - name: 496
+    type: discrete
+  - name: 497
+    type: discrete
+  - name: 498
+    type: discrete
+  - name: 499
+    type: discrete
+  - name: 500
+    type: discrete
+  - name: 501
+    type: discrete
+  - name: 502
+    type: discrete
+  - name: 503
+    type: discrete
+  - name: 504
+    type: discrete
+  - name: 505
+    type: discrete
+  - name: 506
+    type: discrete
+  - name: 507
+    type: discrete
+  - name: 508
+    type: discrete
+  - name: 509
+    type: discrete
+  - name: 510
+    type: discrete
+  - name: 511
+    type: discrete
+  - name: 512
+    type: discrete
+  - name: 513
+    type: discrete
+  - name: 514
+    type: discrete
+  - name: 515
+    type: discrete
+  - name: 516
+    type: discrete
+  - name: 517
+    type: discrete
+  - name: 518
+    type: discrete
+  - name: 519
+    type: discrete
+  - name: 520
+    type: discrete
+  - name: 521
+    type: discrete
+  - name: 522
+    type: discrete
+  - name: 523
+    type: discrete
+  - name: 524
+    type: discrete
+  - name: 525
+    type: discrete
+  - name: 526
+    type: discrete
+  - name: 527
+    type: discrete
+  - name: 528
+    type: discrete
+  - name: 529
+    type: discrete
+  - name: 530
+    type: discrete
+  - name: 531
+    type: discrete
+  - name: 532
+    type: discrete
+  - name: 533
+    type: binary
+  - name: 534
+    type: discrete
+  - name: 535
+    type: discrete
+  - name: 536
+    type: discrete
+  - name: 537
+    type: discrete
+  - name: 538
+    type: discrete
+  - name: 539
+    type: discrete
+  - name: 540
+    type: discrete
+  - name: 541
+    type: discrete
+  - name: 542
+    type: discrete
+  - name: 543
+    type: discrete
+  - name: 544
+    type: discrete
+  - name: 545
+    type: discrete
+  - name: 546
+    type: discrete
+  - name: 547
+    type: discrete
+  - name: 548
+    type: discrete
+  - name: 549
+    type: discrete
+  - name: 550
+    type: discrete
+  - name: 551
+    type: discrete
+  - name: 552
+    type: discrete
+  - name: 553
+    type: discrete
+  - name: 554
+    type: discrete
+  - name: 555
+    type: discrete
+  - name: 556
+    type: discrete
+  - name: 557
+    type: discrete
+  - name: 558
+    type: discrete
+  - name: 559
+    type: discrete
+  - name: 560
+    type: discrete
+  - name: 561
+    type: discrete
+  - name: 562
+    type: discrete
+  - name: 563
+    type: discrete
+  - name: 564
+    type: discrete
+  - name: 565
+    type: discrete
+  - name: 566
+    type: discrete
+  - name: 567
+    type: discrete
+  - name: 568
+    type: discrete
+  - name: 569
+    type: discrete
+  - name: 570
+    type: discrete
+  - name: 571
+    type: discrete
+  - name: 572
+    type: discrete
+  - name: 573
+    type: discrete
+  - name: 574
+    type: discrete
+  - name: 575
+    type: discrete
+  - name: 576
+    type: discrete
+  - name: 577
+    type: discrete
+  - name: 578
+    type: discrete
+  - name: 579
+    type: discrete
+  - name: 580
+    type: discrete
+  - name: 581
+    type: discrete
+  - name: 582
+    type: discrete
+  - name: 583
+    type: discrete
+  - name: 584
+    type: discrete
+  - name: 585
+    type: discrete
+  - name: 586
+    type: discrete
+  - name: 587
+    type: discrete
+  - name: 588
+    type: discrete
+  - name: 589
+    type: binary
+  - name: 590
+    type: discrete
+  - name: 591
+    type: discrete
+  - name: 592
+    type: discrete
+  - name: 593
+    type: discrete
+  - name: 594
+    type: discrete
+  - name: 595
+    type: discrete
+  - name: 596
+    type: discrete
+  - name: 597
+    type: discrete
+  - name: 598
+    type: discrete
+  - name: 599
+    type: discrete
+  - name: 600
+    type: discrete
+  - name: 601
+    type: discrete
+  - name: 602
+    type: discrete
+  - name: 603
+    type: discrete
+  - name: 604
+    type: discrete
+  - name: 605
+    type: discrete
+  - name: 606
+    type: discrete
+  - name: 607
+    type: discrete
+  - name: 608
+    type: discrete
+  - name: 609
+    type: discrete
+  - name: 610
+    type: discrete
+  - name: 611
+    type: discrete
+  - name: 612
+    type: discrete
+  - name: 613
+    type: discrete
+  - name: 614
+    type: discrete
+  - name: 615
+    type: discrete
+  - name: 616
+    type: binary
+  - name: 617
+    type: binary
+  - name: 618
+    type: discrete
+  - name: 619
+    type: discrete
+  - name: 620
+    type: discrete
+  - name: 621
+    type: discrete
+  - name: 622
+    type: discrete
+  - name: 623
+    type: discrete
+  - name: 624
+    type: discrete
+  - name: 625
+    type: discrete
+  - name: 626
+    type: discrete
+  - name: 627
+    type: discrete
+  - name: 628
+    type: discrete
+  - name: 629
+    type: discrete
+  - name: 630
+    type: discrete
+  - name: 631
+    type: discrete
+  - name: 632
+    type: discrete
+  - name: 633
+    type: discrete
+  - name: 634
+    type: discrete
+  - name: 635
+    type: discrete
+  - name: 636
+    type: discrete
+  - name: 637
+    type: discrete
+  - name: 638
+    type: discrete
+  - name: 639
+    type: discrete
+  - name: 640
+    type: discrete
+  - name: 641
+    type: discrete
+  - name: 642
+    type: discrete
+  - name: 643
+    type: discrete
+  - name: 644
+    type: binary
+  - name: 645
+    type: discrete
+  - name: 646
+    type: binary
+  - name: 647
+    type: discrete
+  - name: 648
+    type: discrete
+  - name: 649
+    type: discrete
+  - name: 650
+    type: discrete
+  - name: 651
+    type: discrete
+  - name: 652
+    type: discrete
+  - name: 653
+    type: discrete
+  - name: 654
+    type: discrete
+  - name: 655
+    type: discrete
+  - name: 656
+    type: discrete
+  - name: 657
+    type: discrete
+  - name: 658
+    type: discrete
+  - name: 659
+    type: discrete
+  - name: 660
+    type: discrete
+  - name: 661
+    type: discrete
+  - name: 662
+    type: discrete
+  - name: 663
+    type: discrete
+  - name: 664
+    type: discrete
+  - name: 665
+    type: discrete
+  - name: 666
+    type: discrete
+  - name: 667
+    type: discrete
+  - name: 668
+    type: discrete
+  - name: 669
+    type: discrete
+  - name: 670
+    type: discrete
+  - name: 671
+    type: discrete
+  - name: 672
+    type: discrete
+  - name: 673
+    type: discrete
+  - name: 674
+    type: discrete
+  - name: 675
+    type: discrete
+  - name: 676
+    type: discrete
+  - name: 677
+    type: discrete
+  - name: 678
+    type: discrete
+  - name: 679
+    type: discrete
+  - name: 680
+    type: discrete
+  - name: 681
+    type: discrete
+  - name: 682
+    type: discrete
+  - name: 683
+    type: discrete
+  - name: 684
+    type: discrete
+  - name: 685
+    type: discrete
+  - name: 686
+    type: discrete
+  - name: 687
+    type: discrete
+  - name: 688
+    type: discrete
+  - name: 689
+    type: discrete
+  - name: 690
+    type: discrete
+  - name: 691
+    type: discrete
+  - name: 692
+    type: discrete
+  - name: 693
+    type: discrete
+  - name: 694
+    type: discrete
+  - name: 695
+    type: discrete
+  - name: 696
+    type: discrete
+  - name: 697
+    type: discrete
+  - name: 698
+    type: discrete
+  - name: 699
+    type: discrete
+  - name: 700
+    type: discrete
+  - name: 701
+    type: discrete
+  - name: 702
+    type: discrete
+  - name: 703
+    type: discrete
+  - name: 704
+    type: discrete
+  - name: 705
+    type: discrete
+  - name: 706
+    type: discrete
+  - name: 707
+    type: discrete
+  - name: 708
+    type: discrete
+  - name: 709
+    type: discrete
+  - name: 710
+    type: discrete
+  - name: 711
+    type: discrete
+  - name: 712
+    type: discrete
+  - name: 713
+    type: discrete
+  - name: 714
+    type: discrete
+  - name: 715
+    type: discrete
+  - name: 716
+    type: discrete
+  - name: 717
+    type: discrete
+  - name: 718
+    type: discrete
+  - name: 719
+    type: discrete
+  - name: 720
+    type: discrete
+  - name: 721
+    type: discrete
+  - name: 722
+    type: discrete
+  - name: 723
+    type: discrete
+  - name: 724
+    type: discrete
+  - name: 725
+    type: discrete
+  - name: 726
+    type: discrete
+  - name: 727
+    type: binary
+  - name: 728
+    type: discrete
+  - name: 729
+    type: discrete
+  - name: 730
+    type: discrete
+  - name: 731
+    type: discrete
+  - name: 732
+    type: binary
+  - name: 733
+    type: discrete
+  - name: 734
+    type: discrete
+  - name: 735
+    type: discrete
+  - name: 736
+    type: discrete
+  - name: 737
+    type: discrete
+  - name: 738
+    type: discrete
+  - name: 739
+    type: discrete
+  - name: 740
+    type: discrete
+  - name: 741
+    type: discrete
+  - name: 742
+    type: discrete
+  - name: 743
+    type: discrete
+  - name: 744
+    type: discrete
+  - name: 745
+    type: discrete
+  - name: 746
+    type: discrete
+  - name: 747
+    type: discrete
+  - name: 748
+    type: discrete
+  - name: 749
+    type: discrete
+  - name: 750
+    type: discrete
+  - name: 751
+    type: discrete
+  - name: 752
+    type: discrete
+  - name: 753
+    type: discrete
+  - name: 754
+    type: binary
+  - name: 755
+    type: discrete
+  - name: 756
+    type: discrete
+  - name: 757
+    type: discrete
+  - name: 758
+    type: discrete
+  - name: 759
+    type: discrete
+  - name: 760
+    type: discrete
+  - name: 761
+    type: discrete
+  - name: 762
+    type: discrete
+  - name: 763
+    type: discrete
+  - name: 764
+    type: discrete
+  - name: 765
+    type: discrete
+  - name: 766
+    type: discrete
+  - name: 767
+    type: discrete
+  - name: 768
+    type: discrete
+  - name: 769
+    type: discrete
+  - name: 770
+    type: discrete
+  - name: 771
+    type: discrete
+  - name: 772
+    type: discrete
+  - name: 773
+    type: discrete
+  - name: 774
+    type: discrete
+  - name: 775
+    type: discrete
+  - name: 776
+    type: discrete
+  - name: 777
+    type: discrete
+  - name: 778
+    type: discrete
+  - name: 779
+    type: discrete
+  - name: 780
+    type: discrete
+  - name: 781
+    type: discrete
+  - name: 782
+    type: discrete
+  - name: 783
+    type: discrete
+  - name: 784
+    type: discrete

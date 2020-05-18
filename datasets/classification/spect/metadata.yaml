@@ -1,0 +1,58 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: spect
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: F1
+    type: binary
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: F2
+    type: binary
+  - name: F3
+    type: binary
+  - name: F4
+    type: binary
+  - name: F5
+    type: binary
+  - name: F6
+    type: binary
+  - name: F7
+    type: binary
+  - name: F8
+    type: binary
+  - name: F9
+    type: binary
+  - name: F10
+    type: binary
+  - name: F11
+    type: binary
+  - name: F12
+    type: binary
+  - name: F13
+    type: binary
+  - name: F14
+    type: binary
+  - name: F15
+    type: binary
+  - name: F16
+    type: binary
+  - name: F17
+    type: binary
+  - name: F18
+    type: binary
+  - name: F19
+    type: binary
+  - name: F20
+    type: binary
+  - name: F21
+    type: binary
+  - name: F22
+    type: binary

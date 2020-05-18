@@ -1,0 +1,2014 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: GAMETES_Epistasis_2-Way_1000atts_0.4H_EDM-1_EDM-1_1
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: N0
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: N1
+    type: binary
+  - name: N2
+    type: discrete
+  - name: N3
+    type: discrete
+  - name: N4
+    type: discrete
+  - name: N5
+    type: discrete
+  - name: N6
+    type: discrete
+  - name: N7
+    type: discrete
+  - name: N8
+    type: discrete
+  - name: N9
+    type: discrete
+  - name: N10
+    type: discrete
+  - name: N11
+    type: discrete
+  - name: N12
+    type: discrete
+  - name: N13
+    type: discrete
+  - name: N14
+    type: discrete
+  - name: N15
+    type: discrete
+  - name: N16
+    type: discrete
+  - name: N17
+    type: discrete
+  - name: N18
+    type: discrete
+  - name: N19
+    type: discrete
+  - name: N20
+    type: binary
+  - name: N21
+    type: discrete
+  - name: N22
+    type: discrete
+  - name: N23
+    type: discrete
+  - name: N24
+    type: discrete
+  - name: N25
+    type: discrete
+  - name: N26
+    type: discrete
+  - name: N27
+    type: discrete
+  - name: N28
+    type: discrete
+  - name: N29
+    type: discrete
+  - name: N30
+    type: discrete
+  - name: N31
+    type: binary
+  - name: N32
+    type: discrete
+  - name: N33
+    type: discrete
+  - name: N34
+    type: discrete
+  - name: N35
+    type: binary
+  - name: N36
+    type: discrete
+  - name: N37
+    type: discrete
+  - name: N38
+    type: discrete
+  - name: N39
+    type: discrete
+  - name: N40
+    type: discrete
+  - name: N41
+    type: discrete
+  - name: N42
+    type: discrete
+  - name: N43
+    type: discrete
+  - name: N44
+    type: discrete
+  - name: N45
+    type: discrete
+  - name: N46
+    type: discrete
+  - name: N47
+    type: discrete
+  - name: N48
+    type: discrete
+  - name: N49
+    type: discrete
+  - name: N50
+    type: discrete
+  - name: N51
+    type: discrete
+  - name: N52
+    type: discrete
+  - name: N53
+    type: discrete
+  - name: N54
+    type: discrete
+  - name: N55
+    type: discrete
+  - name: N56
+    type: discrete
+  - name: N57
+    type: discrete
+  - name: N58
+    type: discrete
+  - name: N59
+    type: discrete
+  - name: N60
+    type: discrete
+  - name: N61
+    type: binary
+  - name: N62
+    type: discrete
+  - name: N63
+    type: discrete
+  - name: N64
+    type: discrete
+  - name: N65
+    type: discrete
+  - name: N66
+    type: discrete
+  - name: N67
+    type: discrete
+  - name: N68
+    type: discrete
+  - name: N69
+    type: discrete
+  - name: N70
+    type: discrete
+  - name: N71
+    type: discrete
+  - name: N72
+    type: discrete
+  - name: N73
+    type: discrete
+  - name: N74
+    type: discrete
+  - name: N75
+    type: discrete
+  - name: N76
+    type: discrete
+  - name: N77
+    type: discrete
+  - name: N78
+    type: binary
+  - name: N79
+    type: discrete
+  - name: N80
+    type: discrete
+  - name: N81
+    type: binary
+  - name: N82
+    type: discrete
+  - name: N83
+    type: discrete
+  - name: N84
+    type: discrete
+  - name: N85
+    type: discrete
+  - name: N86
+    type: discrete
+  - name: N87
+    type: discrete
+  - name: N88
+    type: discrete
+  - name: N89
+    type: discrete
+  - name: N90
+    type: discrete
+  - name: N91
+    type: discrete
+  - name: N92
+    type: discrete
+  - name: N93
+    type: binary
+  - name: N94
+    type: discrete
+  - name: N95
+    type: discrete
+  - name: N96
+    type: discrete
+  - name: N97
+    type: discrete
+  - name: N98
+    type: discrete
+  - name: N99
+    type: binary
+  - name: N100
+    type: discrete
+  - name: N101
+    type: discrete
+  - name: N102
+    type: discrete
+  - name: N103
+    type: discrete
+  - name: N104
+    type: discrete
+  - name: N105
+    type: discrete
+  - name: N106
+    type: discrete
+  - name: N107
+    type: discrete
+  - name: N108
+    type: discrete
+  - name: N109
+    type: discrete
+  - name: N110
+    type: discrete
+  - name: N111
+    type: discrete
+  - name: N112
+    type: discrete
+  - name: N113
+    type: discrete
+  - name: N114
+    type: discrete
+  - name: N115
+    type: discrete
+  - name: N116
+    type: discrete
+  - name: N117
+    type: discrete
+  - name: N118
+    type: discrete
+  - name: N119
+    type: discrete
+  - name: N120
+    type: discrete
+  - name: N121
+    type: discrete
+  - name: N122
+    type: discrete
+  - name: N123
+    type: discrete
+  - name: N124
+    type: discrete
+  - name: N125
+    type: discrete
+  - name: N126
+    type: discrete
+  - name: N127
+    type: discrete
+  - name: N128
+    type: discrete
+  - name: N129
+    type: discrete
+  - name: N130
+    type: discrete
+  - name: N131
+    type: discrete
+  - name: N132
+    type: discrete
+  - name: N133
+    type: discrete
+  - name: N134
+    type: discrete
+  - name: N135
+    type: discrete
+  - name: N136
+    type: discrete
+  - name: N137
+    type: discrete
+  - name: N138
+    type: discrete
+  - name: N139
+    type: discrete
+  - name: N140
+    type: discrete
+  - name: N141
+    type: discrete
+  - name: N142
+    type: discrete
+  - name: N143
+    type: discrete
+  - name: N144
+    type: discrete
+  - name: N145
+    type: discrete
+  - name: N146
+    type: discrete
+  - name: N147
+    type: discrete
+  - name: N148
+    type: discrete
+  - name: N149
+    type: discrete
+  - name: N150
+    type: discrete
+  - name: N151
+    type: discrete
+  - name: N152
+    type: discrete
+  - name: N153
+    type: discrete
+  - name: N154
+    type: discrete
+  - name: N155
+    type: discrete
+  - name: N156
+    type: binary
+  - name: N157
+    type: discrete
+  - name: N158
+    type: discrete
+  - name: N159
+    type: discrete
+  - name: N160
+    type: discrete
+  - name: N161
+    type: discrete
+  - name: N162
+    type: discrete
+  - name: N163
+    type: discrete
+  - name: N164
+    type: discrete
+  - name: N165
+    type: discrete
+  - name: N166
+    type: discrete
+  - name: N167
+    type: discrete
+  - name: N168
+    type: discrete
+  - name: N169
+    type: discrete
+  - name: N170
+    type: discrete
+  - name: N171
+    type: discrete
+  - name: N172
+    type: discrete
+  - name: N173
+    type: discrete
+  - name: N174
+    type: discrete
+  - name: N175
+    type: discrete
+  - name: N176
+    type: discrete
+  - name: N177
+    type: discrete
+  - name: N178
+    type: discrete
+  - name: N179
+    type: discrete
+  - name: N180
+    type: discrete
+  - name: N181
+    type: discrete
+  - name: N182
+    type: discrete
+  - name: N183
+    type: discrete
+  - name: N184
+    type: discrete
+  - name: N185
+    type: discrete
+  - name: N186
+    type: discrete
+  - name: N187
+    type: discrete
+  - name: N188
+    type: discrete
+  - name: N189
+    type: discrete
+  - name: N190
+    type: discrete
+  - name: N191
+    type: discrete
+  - name: N192
+    type: discrete
+  - name: N193
+    type: discrete
+  - name: N194
+    type: discrete
+  - name: N195
+    type: discrete
+  - name: N196
+    type: discrete
+  - name: N197
+    type: discrete
+  - name: N198
+    type: discrete
+  - name: N199
+    type: discrete
+  - name: N200
+    type: discrete
+  - name: N201
+    type: discrete
+  - name: N202
+    type: discrete
+  - name: N203
+    type: discrete
+  - name: N204
+    type: discrete
+  - name: N205
+    type: discrete
+  - name: N206
+    type: discrete
+  - name: N207
+    type: discrete
+  - name: N208
+    type: discrete
+  - name: N209
+    type: discrete
+  - name: N210
+    type: discrete
+  - name: N211
+    type: discrete
+  - name: N212
+    type: discrete
+  - name: N213
+    type: discrete
+  - name: N214
+    type: discrete
+  - name: N215
+    type: discrete
+  - name: N216
+    type: discrete
+  - name: N217
+    type: discrete
+  - name: N218
+    type: discrete
+  - name: N219
+    type: discrete
+  - name: N220
+    type: discrete
+  - name: N221
+    type: discrete
+  - name: N222
+    type: discrete
+  - name: N223
+    type: discrete
+  - name: N224
+    type: discrete
+  - name: N225
+    type: discrete
+  - name: N226
+    type: discrete
+  - name: N227
+    type: discrete
+  - name: N228
+    type: discrete
+  - name: N229
+    type: discrete
+  - name: N230
+    type: discrete
+  - name: N231
+    type: discrete
+  - name: N232
+    type: discrete
+  - name: N233
+    type: discrete
+  - name: N234
+    type: binary
+  - name: N235
+    type: discrete
+  - name: N236
+    type: discrete
+  - name: N237
+    type: discrete
+  - name: N238
+    type: discrete
+  - name: N239
+    type: discrete
+  - name: N240
+    type: discrete
+  - name: N241
+    type: discrete
+  - name: N242
+    type: discrete
+  - name: N243
+    type: discrete
+  - name: N244
+    type: discrete
+  - name: N245
+    type: discrete
+  - name: N246
+    type: discrete
+  - name: N247
+    type: discrete
+  - name: N248
+    type: discrete
+  - name: N249
+    type: discrete
+  - name: N250
+    type: discrete
+  - name: N251
+    type: discrete
+  - name: N252
+    type: discrete
+  - name: N253
+    type: discrete
+  - name: N254
+    type: discrete
+  - name: N255
+    type: discrete
+  - name: N256
+    type: discrete
+  - name: N257
+    type: discrete
+  - name: N258
+    type: discrete
+  - name: N259
+    type: discrete
+  - name: N260
+    type: discrete
+  - name: N261
+    type: discrete
+  - name: N262
+    type: discrete
+  - name: N263
+    type: discrete
+  - name: N264
+    type: discrete
+  - name: N265
+    type: discrete
+  - name: N266
+    type: discrete
+  - name: N267
+    type: discrete
+  - name: N268
+    type: discrete
+  - name: N269
+    type: discrete
+  - name: N270
+    type: discrete
+  - name: N271
+    type: discrete
+  - name: N272
+    type: discrete
+  - name: N273
+    type: discrete
+  - name: N274
+    type: discrete
+  - name: N275
+    type: discrete
+  - name: N276
+    type: discrete
+  - name: N277
+    type: discrete
+  - name: N278
+    type: discrete
+  - name: N279
+    type: discrete
+  - name: N280
+    type: discrete
+  - name: N281
+    type: discrete
+  - name: N282
+    type: discrete
+  - name: N283
+    type: discrete
+  - name: N284
+    type: discrete
+  - name: N285
+    type: discrete
+  - name: N286
+    type: discrete
+  - name: N287
+    type: discrete
+  - name: N288
+    type: discrete
+  - name: N289
+    type: discrete
+  - name: N290
+    type: discrete
+  - name: N291
+    type: discrete
+  - name: N292
+    type: discrete
+  - name: N293
+    type: binary
+  - name: N294
+    type: discrete
+  - name: N295
+    type: discrete
+  - name: N296
+    type: discrete
+  - name: N297
+    type: discrete
+  - name: N298
+    type: discrete
+  - name: N299
+    type: discrete
+  - name: N300
+    type: discrete
+  - name: N301
+    type: discrete
+  - name: N302
+    type: discrete
+  - name: N303
+    type: discrete
+  - name: N304
+    type: discrete
+  - name: N305
+    type: discrete
+  - name: N306
+    type: discrete
+  - name: N307
+    type: discrete
+  - name: N308
+    type: discrete
+  - name: N309
+    type: discrete
+  - name: N310
+    type: discrete
+  - name: N311
+    type: discrete
+  - name: N312
+    type: discrete
+  - name: N313
+    type: discrete
+  - name: N314
+    type: discrete
+  - name: N315
+    type: discrete
+  - name: N316
+    type: discrete
+  - name: N317
+    type: discrete
+  - name: N318
+    type: discrete
+  - name: N319
+    type: discrete
+  - name: N320
+    type: discrete
+  - name: N321
+    type: discrete
+  - name: N322
+    type: discrete
+  - name: N323
+    type: discrete
+  - name: N324
+    type: discrete
+  - name: N325
+    type: discrete
+  - name: N326
+    type: discrete
+  - name: N327
+    type: discrete
+  - name: N328
+    type: discrete
+  - name: N329
+    type: discrete
+  - name: N330
+    type: discrete
+  - name: N331
+    type: discrete
+  - name: N332
+    type: discrete
+  - name: N333
+    type: discrete
+  - name: N334
+    type: discrete
+  - name: N335
+    type: discrete
+  - name: N336
+    type: discrete
+  - name: N337
+    type: discrete
+  - name: N338
+    type: discrete
+  - name: N339
+    type: discrete
+  - name: N340
+    type: discrete
+  - name: N341
+    type: discrete
+  - name: N342
+    type: discrete
+  - name: N343
+    type: discrete
+  - name: N344
+    type: discrete
+  - name: N345
+    type: discrete
+  - name: N346
+    type: discrete
+  - name: N347
+    type: discrete
+  - name: N348
+    type: discrete
+  - name: N349
+    type: discrete
+  - name: N350
+    type: discrete
+  - name: N351
+    type: discrete
+  - name: N352
+    type: discrete
+  - name: N353
+    type: discrete
+  - name: N354
+    type: discrete
+  - name: N355
+    type: binary
+  - name: N356
+    type: discrete
+  - name: N357
+    type: discrete
+  - name: N358
+    type: discrete
+  - name: N359
+    type: discrete
+  - name: N360
+    type: discrete
+  - name: N361
+    type: discrete
+  - name: N362
+    type: discrete
+  - name: N363
+    type: discrete
+  - name: N364
+    type: discrete
+  - name: N365
+    type: discrete
+  - name: N366
+    type: discrete
+  - name: N367
+    type: discrete
+  - name: N368
+    type: discrete
+  - name: N369
+    type: discrete
+  - name: N370
+    type: discrete
+  - name: N371
+    type: discrete
+  - name: N372
+    type: discrete
+  - name: N373
+    type: discrete
+  - name: N374
+    type: discrete
+  - name: N375
+    type: discrete
+  - name: N376
+    type: discrete
+  - name: N377
+    type: discrete
+  - name: N378
+    type: discrete
+  - name: N379
+    type: discrete
+  - name: N380
+    type: discrete
+  - name: N381
+    type: discrete
+  - name: N382
+    type: discrete
+  - name: N383
+    type: discrete
+  - name: N384
+    type: discrete
+  - name: N385
+    type: discrete
+  - name: N386
+    type: discrete
+  - name: N387
+    type: discrete
+  - name: N388
+    type: discrete
+  - name: N389
+    type: discrete
+  - name: N390
+    type: discrete
+  - name: N391
+    type: discrete
+  - name: N392
+    type: discrete
+  - name: N393
+    type: discrete
+  - name: N394
+    type: discrete
+  - name: N395
+    type: discrete
+  - name: N396
+    type: discrete
+  - name: N397
+    type: discrete
+  - name: N398
+    type: discrete
+  - name: N399
+    type: discrete
+  - name: N400
+    type: discrete
+  - name: N401
+    type: discrete
+  - name: N402
+    type: discrete
+  - name: N403
+    type: discrete
+  - name: N404
+    type: discrete
+  - name: N405
+    type: discrete
+  - name: N406
+    type: discrete
+  - name: N407
+    type: discrete
+  - name: N408
+    type: discrete
+  - name: N409
+    type: discrete
+  - name: N410
+    type: discrete
+  - name: N411
+    type: discrete
+  - name: N412
+    type: discrete
+  - name: N413
+    type: discrete
+  - name: N414
+    type: discrete
+  - name: N415
+    type: discrete
+  - name: N416
+    type: discrete
+  - name: N417
+    type: discrete
+  - name: N418
+    type: discrete
+  - name: N419
+    type: discrete
+  - name: N420
+    type: discrete
+  - name: N421
+    type: discrete
+  - name: N422
+    type: discrete
+  - name: N423
+    type: discrete
+  - name: N424
+    type: discrete
+  - name: N425
+    type: discrete
+  - name: N426
+    type: discrete
+  - name: N427
+    type: binary
+  - name: N428
+    type: discrete
+  - name: N429
+    type: discrete
+  - name: N430
+    type: discrete
+  - name: N431
+    type: discrete
+  - name: N432
+    type: discrete
+  - name: N433
+    type: discrete
+  - name: N434
+    type: discrete
+  - name: N435
+    type: discrete
+  - name: N436
+    type: discrete
+  - name: N437
+    type: discrete
+  - name: N438
+    type: discrete
+  - name: N439
+    type: discrete
+  - name: N440
+    type: discrete
+  - name: N441
+    type: discrete
+  - name: N442
+    type: discrete
+  - name: N443
+    type: discrete
+  - name: N444
+    type: discrete
+  - name: N445
+    type: discrete
+  - name: N446
+    type: discrete
+  - name: N447
+    type: discrete
+  - name: N448
+    type: discrete
+  - name: N449
+    type: discrete
+  - name: N450
+    type: discrete
+  - name: N451
+    type: discrete
+  - name: N452
+    type: discrete
+  - name: N453
+    type: discrete
+  - name: N454
+    type: discrete
+  - name: N455
+    type: discrete
+  - name: N456
+    type: discrete
+  - name: N457
+    type: discrete
+  - name: N458
+    type: discrete
+  - name: N459
+    type: discrete
+  - name: N460
+    type: discrete
+  - name: N461
+    type: discrete
+  - name: N462
+    type: discrete
+  - name: N463
+    type: discrete
+  - name: N464
+    type: discrete
+  - name: N465
+    type: discrete
+  - name: N466
+    type: discrete
+  - name: N467
+    type: discrete
+  - name: N468
+    type: discrete
+  - name: N469
+    type: discrete
+  - name: N470
+    type: discrete
+  - name: N471
+    type: discrete
+  - name: N472
+    type: discrete
+  - name: N473
+    type: binary
+  - name: N474
+    type: discrete
+  - name: N475
+    type: discrete
+  - name: N476
+    type: discrete
+  - name: N477
+    type: discrete
+  - name: N478
+    type: discrete
+  - name: N479
+    type: discrete
+  - name: N480
+    type: binary
+  - name: N481
+    type: discrete
+  - name: N482
+    type: discrete
+  - name: N483
+    type: discrete
+  - name: N484
+    type: discrete
+  - name: N485
+    type: discrete
+  - name: N486
+    type: discrete
+  - name: N487
+    type: discrete
+  - name: N488
+    type: discrete
+  - name: N489
+    type: discrete
+  - name: N490
+    type: discrete
+  - name: N491
+    type: discrete
+  - name: N492
+    type: discrete
+  - name: N493
+    type: discrete
+  - name: N494
+    type: discrete
+  - name: N495
+    type: discrete
+  - name: N496
+    type: discrete
+  - name: N497
+    type: discrete
+  - name: N498
+    type: discrete
+  - name: N499
+    type: discrete
+  - name: N500
+    type: discrete
+  - name: N501
+    type: discrete
+  - name: N502
+    type: discrete
+  - name: N503
+    type: discrete
+  - name: N504
+    type: discrete
+  - name: N505
+    type: discrete
+  - name: N506
+    type: discrete
+  - name: N507
+    type: discrete
+  - name: N508
+    type: discrete
+  - name: N509
+    type: discrete
+  - name: N510
+    type: discrete
+  - name: N511
+    type: discrete
+  - name: N512
+    type: discrete
+  - name: N513
+    type: discrete
+  - name: N514
+    type: discrete
+  - name: N515
+    type: discrete
+  - name: N516
+    type: discrete
+  - name: N517
+    type: discrete
+  - name: N518
+    type: discrete
+  - name: N519
+    type: discrete
+  - name: N520
+    type: discrete
+  - name: N521
+    type: discrete
+  - name: N522
+    type: discrete
+  - name: N523
+    type: discrete
+  - name: N524
+    type: binary
+  - name: N525
+    type: discrete
+  - name: N526
+    type: discrete
+  - name: N527
+    type: discrete
+  - name: N528
+    type: discrete
+  - name: N529
+    type: discrete
+  - name: N530
+    type: discrete
+  - name: N531
+    type: discrete
+  - name: N532
+    type: discrete
+  - name: N533
+    type: discrete
+  - name: N534
+    type: discrete
+  - name: N535
+    type: discrete
+  - name: N536
+    type: discrete
+  - name: N537
+    type: discrete
+  - name: N538
+    type: discrete
+  - name: N539
+    type: discrete
+  - name: N540
+    type: discrete
+  - name: N541
+    type: binary
+  - name: N542
+    type: discrete
+  - name: N543
+    type: binary
+  - name: N544
+    type: discrete
+  - name: N545
+    type: discrete
+  - name: N546
+    type: discrete
+  - name: N547
+    type: discrete
+  - name: N548
+    type: discrete
+  - name: N549
+    type: discrete
+  - name: N550
+    type: discrete
+  - name: N551
+    type: discrete
+  - name: N552
+    type: discrete
+  - name: N553
+    type: discrete
+  - name: N554
+    type: discrete
+  - name: N555
+    type: discrete
+  - name: N556
+    type: discrete
+  - name: N557
+    type: discrete
+  - name: N558
+    type: discrete
+  - name: N559
+    type: discrete
+  - name: N560
+    type: discrete
+  - name: N561
+    type: discrete
+  - name: N562
+    type: discrete
+  - name: N563
+    type: discrete
+  - name: N564
+    type: discrete
+  - name: N565
+    type: discrete
+  - name: N566
+    type: discrete
+  - name: N567
+    type: discrete
+  - name: N568
+    type: discrete
+  - name: N569
+    type: discrete
+  - name: N570
+    type: discrete
+  - name: N571
+    type: discrete
+  - name: N572
+    type: discrete
+  - name: N573
+    type: discrete
+  - name: N574
+    type: discrete
+  - name: N575
+    type: discrete
+  - name: N576
+    type: discrete
+  - name: N577
+    type: discrete
+  - name: N578
+    type: discrete
+  - name: N579
+    type: discrete
+  - name: N580
+    type: discrete
+  - name: N581
+    type: discrete
+  - name: N582
+    type: discrete
+  - name: N583
+    type: discrete
+  - name: N584
+    type: discrete
+  - name: N585
+    type: discrete
+  - name: N586
+    type: discrete
+  - name: N587
+    type: discrete
+  - name: N588
+    type: discrete
+  - name: N589
+    type: discrete
+  - name: N590
+    type: discrete
+  - name: N591
+    type: discrete
+  - name: N592
+    type: discrete
+  - name: N593
+    type: discrete
+  - name: N594
+    type: discrete
+  - name: N595
+    type: discrete
+  - name: N596
+    type: discrete
+  - name: N597
+    type: discrete
+  - name: N598
+    type: discrete
+  - name: N599
+    type: discrete
+  - name: N600
+    type: discrete
+  - name: N601
+    type: discrete
+  - name: N602
+    type: discrete
+  - name: N603
+    type: discrete
+  - name: N604
+    type: discrete
+  - name: N605
+    type: discrete
+  - name: N606
+    type: discrete
+  - name: N607
+    type: discrete
+  - name: N608
+    type: discrete
+  - name: N609
+    type: discrete
+  - name: N610
+    type: discrete
+  - name: N611
+    type: discrete
+  - name: N612
+    type: discrete
+  - name: N613
+    type: discrete
+  - name: N614
+    type: discrete
+  - name: N615
+    type: discrete
+  - name: N616
+    type: binary
+  - name: N617
+    type: binary
+  - name: N618
+    type: discrete
+  - name: N619
+    type: discrete
+  - name: N620
+    type: discrete
+  - name: N621
+    type: discrete
+  - name: N622
+    type: discrete
+  - name: N623
+    type: discrete
+  - name: N624
+    type: discrete
+  - name: N625
+    type: discrete
+  - name: N626
+    type: discrete
+  - name: N627
+    type: discrete
+  - name: N628
+    type: discrete
+  - name: N629
+    type: discrete
+  - name: N630
+    type: discrete
+  - name: N631
+    type: discrete
+  - name: N632
+    type: discrete
+  - name: N633
+    type: discrete
+  - name: N634
+    type: discrete
+  - name: N635
+    type: discrete
+  - name: N636
+    type: discrete
+  - name: N637
+    type: discrete
+  - name: N638
+    type: discrete
+  - name: N639
+    type: discrete
+  - name: N640
+    type: discrete
+  - name: N641
+    type: discrete
+  - name: N642
+    type: discrete
+  - name: N643
+    type: discrete
+  - name: N644
+    type: discrete
+  - name: N645
+    type: discrete
+  - name: N646
+    type: discrete
+  - name: N647
+    type: discrete
+  - name: N648
+    type: discrete
+  - name: N649
+    type: discrete
+  - name: N650
+    type: discrete
+  - name: N651
+    type: discrete
+  - name: N652
+    type: discrete
+  - name: N653
+    type: discrete
+  - name: N654
+    type: discrete
+  - name: N655
+    type: discrete
+  - name: N656
+    type: discrete
+  - name: N657
+    type: discrete
+  - name: N658
+    type: discrete
+  - name: N659
+    type: binary
+  - name: N660
+    type: discrete
+  - name: N661
+    type: discrete
+  - name: N662
+    type: discrete
+  - name: N663
+    type: discrete
+  - name: N664
+    type: discrete
+  - name: N665
+    type: discrete
+  - name: N666
+    type: discrete
+  - name: N667
+    type: discrete
+  - name: N668
+    type: discrete
+  - name: N669
+    type: discrete
+  - name: N670
+    type: discrete
+  - name: N671
+    type: discrete
+  - name: N672
+    type: discrete
+  - name: N673
+    type: discrete
+  - name: N674
+    type: discrete
+  - name: N675
+    type: discrete
+  - name: N676
+    type: discrete
+  - name: N677
+    type: discrete
+  - name: N678
+    type: discrete
+  - name: N679
+    type: discrete
+  - name: N680
+    type: discrete
+  - name: N681
+    type: discrete
+  - name: N682
+    type: discrete
+  - name: N683
+    type: discrete
+  - name: N684
+    type: discrete
+  - name: N685
+    type: discrete
+  - name: N686
+    type: discrete
+  - name: N687
+    type: discrete
+  - name: N688
+    type: discrete
+  - name: N689
+    type: discrete
+  - name: N690
+    type: discrete
+  - name: N691
+    type: discrete
+  - name: N692
+    type: discrete
+  - name: N693
+    type: discrete
+  - name: N694
+    type: discrete
+  - name: N695
+    type: discrete
+  - name: N696
+    type: discrete
+  - name: N697
+    type: discrete
+  - name: N698
+    type: discrete
+  - name: N699
+    type: discrete
+  - name: N700
+    type: discrete
+  - name: N701
+    type: discrete
+  - name: N702
+    type: discrete
+  - name: N703
+    type: discrete
+  - name: N704
+    type: discrete
+  - name: N705
+    type: discrete
+  - name: N706
+    type: discrete
+  - name: N707
+    type: discrete
+  - name: N708
+    type: discrete
+  - name: N709
+    type: discrete
+  - name: N710
+    type: discrete
+  - name: N711
+    type: discrete
+  - name: N712
+    type: discrete
+  - name: N713
+    type: discrete
+  - name: N714
+    type: discrete
+  - name: N715
+    type: discrete
+  - name: N716
+    type: discrete
+  - name: N717
+    type: discrete
+  - name: N718
+    type: discrete
+  - name: N719
+    type: discrete
+  - name: N720
+    type: discrete
+  - name: N721
+    type: discrete
+  - name: N722
+    type: discrete
+  - name: N723
+    type: discrete
+  - name: N724
+    type: binary
+  - name: N725
+    type: binary
+  - name: N726
+    type: discrete
+  - name: N727
+    type: discrete
+  - name: N728
+    type: discrete
+  - name: N729
+    type: discrete
+  - name: N730
+    type: discrete
+  - name: N731
+    type: discrete
+  - name: N732
+    type: discrete
+  - name: N733
+    type: discrete
+  - name: N734
+    type: discrete
+  - name: N735
+    type: discrete
+  - name: N736
+    type: discrete
+  - name: N737
+    type: discrete
+  - name: N738
+    type: discrete
+  - name: N739
+    type: discrete
+  - name: N740
+    type: discrete
+  - name: N741
+    type: discrete
+  - name: N742
+    type: discrete
+  - name: N743
+    type: discrete
+  - name: N744
+    type: discrete
+  - name: N745
+    type: discrete
+  - name: N746
+    type: discrete
+  - name: N747
+    type: discrete
+  - name: N748
+    type: discrete
+  - name: N749
+    type: discrete
+  - name: N750
+    type: discrete
+  - name: N751
+    type: discrete
+  - name: N752
+    type: discrete
+  - name: N753
+    type: discrete
+  - name: N754
+    type: discrete
+  - name: N755
+    type: discrete
+  - name: N756
+    type: discrete
+  - name: N757
+    type: discrete
+  - name: N758
+    type: discrete
+  - name: N759
+    type: discrete
+  - name: N760
+    type: discrete
+  - name: N761
+    type: discrete
+  - name: N762
+    type: discrete
+  - name: N763
+    type: discrete
+  - name: N764
+    type: discrete
+  - name: N765
+    type: discrete
+  - name: N766
+    type: discrete
+  - name: N767
+    type: discrete
+  - name: N768
+    type: discrete
+  - name: N769
+    type: discrete
+  - name: N770
+    type: discrete
+  - name: N771
+    type: discrete
+  - name: N772
+    type: discrete
+  - name: N773
+    type: discrete
+  - name: N774
+    type: discrete
+  - name: N775
+    type: discrete
+  - name: N776
+    type: discrete
+  - name: N777
+    type: discrete
+  - name: N778
+    type: discrete
+  - name: N779
+    type: discrete
+  - name: N780
+    type: discrete
+  - name: N781
+    type: discrete
+  - name: N782
+    type: discrete
+  - name: N783
+    type: discrete
+  - name: N784
+    type: discrete
+  - name: N785
+    type: discrete
+  - name: N786
+    type: discrete
+  - name: N787
+    type: discrete
+  - name: N788
+    type: discrete
+  - name: N789
+    type: discrete
+  - name: N790
+    type: discrete
+  - name: N791
+    type: discrete
+  - name: N792
+    type: discrete
+  - name: N793
+    type: discrete
+  - name: N794
+    type: discrete
+  - name: N795
+    type: discrete
+  - name: N796
+    type: discrete
+  - name: N797
+    type: discrete
+  - name: N798
+    type: discrete
+  - name: N799
+    type: discrete
+  - name: N800
+    type: discrete
+  - name: N801
+    type: discrete
+  - name: N802
+    type: discrete
+  - name: N803
+    type: binary
+  - name: N804
+    type: discrete
+  - name: N805
+    type: discrete
+  - name: N806
+    type: discrete
+  - name: N807
+    type: discrete
+  - name: N808
+    type: discrete
+  - name: N809
+    type: discrete
+  - name: N810
+    type: discrete
+  - name: N811
+    type: discrete
+  - name: N812
+    type: discrete
+  - name: N813
+    type: discrete
+  - name: N814
+    type: discrete
+  - name: N815
+    type: discrete
+  - name: N816
+    type: discrete
+  - name: N817
+    type: discrete
+  - name: N818
+    type: discrete
+  - name: N819
+    type: discrete
+  - name: N820
+    type: discrete
+  - name: N821
+    type: discrete
+  - name: N822
+    type: discrete
+  - name: N823
+    type: discrete
+  - name: N824
+    type: discrete
+  - name: N825
+    type: discrete
+  - name: N826
+    type: discrete
+  - name: N827
+    type: discrete
+  - name: N828
+    type: discrete
+  - name: N829
+    type: discrete
+  - name: N830
+    type: discrete
+  - name: N831
+    type: discrete
+  - name: N832
+    type: discrete
+  - name: N833
+    type: discrete
+  - name: N834
+    type: discrete
+  - name: N835
+    type: binary
+  - name: N836
+    type: discrete
+  - name: N837
+    type: discrete
+  - name: N838
+    type: discrete
+  - name: N839
+    type: discrete
+  - name: N840
+    type: discrete
+  - name: N841
+    type: discrete
+  - name: N842
+    type: discrete
+  - name: N843
+    type: discrete
+  - name: N844
+    type: discrete
+  - name: N845
+    type: discrete
+  - name: N846
+    type: discrete
+  - name: N847
+    type: discrete
+  - name: N848
+    type: discrete
+  - name: N849
+    type: discrete
+  - name: N850
+    type: discrete
+  - name: N851
+    type: discrete
+  - name: N852
+    type: discrete
+  - name: N853
+    type: discrete
+  - name: N854
+    type: discrete
+  - name: N855
+    type: discrete
+  - name: N856
+    type: discrete
+  - name: N857
+    type: discrete
+  - name: N858
+    type: discrete
+  - name: N859
+    type: discrete
+  - name: N860
+    type: discrete
+  - name: N861
+    type: discrete
+  - name: N862
+    type: discrete
+  - name: N863
+    type: discrete
+  - name: N864
+    type: discrete
+  - name: N865
+    type: discrete
+  - name: N866
+    type: discrete
+  - name: N867
+    type: discrete
+  - name: N868
+    type: discrete
+  - name: N869
+    type: discrete
+  - name: N870
+    type: discrete
+  - name: N871
+    type: discrete
+  - name: N872
+    type: discrete
+  - name: N873
+    type: discrete
+  - name: N874
+    type: discrete
+  - name: N875
+    type: discrete
+  - name: N876
+    type: discrete
+  - name: N877
+    type: discrete
+  - name: N878
+    type: discrete
+  - name: N879
+    type: discrete
+  - name: N880
+    type: discrete
+  - name: N881
+    type: discrete
+  - name: N882
+    type: discrete
+  - name: N883
+    type: discrete
+  - name: N884
+    type: discrete
+  - name: N885
+    type: discrete
+  - name: N886
+    type: discrete
+  - name: N887
+    type: discrete
+  - name: N888
+    type: discrete
+  - name: N889
+    type: discrete
+  - name: N890
+    type: discrete
+  - name: N891
+    type: discrete
+  - name: N892
+    type: discrete
+  - name: N893
+    type: discrete
+  - name: N894
+    type: discrete
+  - name: N895
+    type: discrete
+  - name: N896
+    type: discrete
+  - name: N897
+    type: discrete
+  - name: N898
+    type: discrete
+  - name: N899
+    type: discrete
+  - name: N900
+    type: discrete
+  - name: N901
+    type: discrete
+  - name: N902
+    type: discrete
+  - name: N903
+    type: discrete
+  - name: N904
+    type: discrete
+  - name: N905
+    type: discrete
+  - name: N906
+    type: discrete
+  - name: N907
+    type: discrete
+  - name: N908
+    type: binary
+  - name: N909
+    type: discrete
+  - name: N910
+    type: discrete
+  - name: N911
+    type: discrete
+  - name: N912
+    type: discrete
+  - name: N913
+    type: discrete
+  - name: N914
+    type: discrete
+  - name: N915
+    type: binary
+  - name: N916
+    type: discrete
+  - name: N917
+    type: discrete
+  - name: N918
+    type: discrete
+  - name: N919
+    type: discrete
+  - name: N920
+    type: discrete
+  - name: N921
+    type: discrete
+  - name: N922
+    type: discrete
+  - name: N923
+    type: discrete
+  - name: N924
+    type: discrete
+  - name: N925
+    type: discrete
+  - name: N926
+    type: discrete
+  - name: N927
+    type: binary
+  - name: N928
+    type: discrete
+  - name: N929
+    type: discrete
+  - name: N930
+    type: discrete
+  - name: N931
+    type: discrete
+  - name: N932
+    type: discrete
+  - name: N933
+    type: discrete
+  - name: N934
+    type: discrete
+  - name: N935
+    type: discrete
+  - name: N936
+    type: discrete
+  - name: N937
+    type: discrete
+  - name: N938
+    type: discrete
+  - name: N939
+    type: discrete
+  - name: N940
+    type: discrete
+  - name: N941
+    type: discrete
+  - name: N942
+    type: discrete
+  - name: N943
+    type: discrete
+  - name: N944
+    type: discrete
+  - name: N945
+    type: discrete
+  - name: N946
+    type: discrete
+  - name: N947
+    type: discrete
+  - name: N948
+    type: discrete
+  - name: N949
+    type: discrete
+  - name: N950
+    type: discrete
+  - name: N951
+    type: discrete
+  - name: N952
+    type: discrete
+  - name: N953
+    type: discrete
+  - name: N954
+    type: discrete
+  - name: N955
+    type: discrete
+  - name: N956
+    type: discrete
+  - name: N957
+    type: discrete
+  - name: N958
+    type: discrete
+  - name: N959
+    type: discrete
+  - name: N960
+    type: discrete
+  - name: N961
+    type: discrete
+  - name: N962
+    type: discrete
+  - name: N963
+    type: discrete
+  - name: N964
+    type: discrete
+  - name: N965
+    type: discrete
+  - name: N966
+    type: discrete
+  - name: N967
+    type: binary
+  - name: N968
+    type: discrete
+  - name: N969
+    type: discrete
+  - name: N970
+    type: discrete
+  - name: N971
+    type: discrete
+  - name: N972
+    type: discrete
+  - name: N973
+    type: discrete
+  - name: N974
+    type: discrete
+  - name: N975
+    type: discrete
+  - name: N976
+    type: discrete
+  - name: N977
+    type: discrete
+  - name: N978
+    type: discrete
+  - name: N979
+    type: discrete
+  - name: N980
+    type: discrete
+  - name: N981
+    type: discrete
+  - name: N982
+    type: discrete
+  - name: N983
+    type: discrete
+  - name: N984
+    type: discrete
+  - name: N985
+    type: discrete
+  - name: N986
+    type: discrete
+  - name: N987
+    type: discrete
+  - name: N988
+    type: discrete
+  - name: N989
+    type: discrete
+  - name: N990
+    type: discrete
+  - name: N991
+    type: discrete
+  - name: N992
+    type: binary
+  - name: N993
+    type: discrete
+  - name: N994
+    type: discrete
+  - name: N995
+    type: discrete
+  - name: N996
+    type: discrete
+  - name: N997
+    type: discrete
+  - name: P1
+    type: discrete
+  - name: P2
+    type: discrete

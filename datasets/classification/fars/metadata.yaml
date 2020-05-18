@@ -1,0 +1,72 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: fars
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: CASE_STATE
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: AGE
+    type: discrete
+  - name: SEX
+    type: discrete
+  - name: PERSON_TYPE
+    type: discrete
+  - name: SEATING_POSITION
+    type: discrete
+  - name: RESTRAINT_SYSTEM-USE
+    type: discrete
+  - name: AIR_BAG_AVAILABILITY/DEPLOYMENT
+    type: discrete
+  - name: EJECTION
+    type: discrete
+  - name: EJECTION_PATH
+    type: discrete
+  - name: EXTRICATION
+    type: discrete
+  - name: NON_MOTORIST_LOCATION
+    type: discrete
+  - name: POLICE_REPORTED_ALCOHOL_INVOLVEMENT
+    type: discrete
+  - name: METHOD_ALCOHOL_DETERMINATION
+    type: discrete
+  - name: ALCOHOL_TEST_TYPE
+    type: discrete
+  - name: ALCOHOL_TEST_RESULT
+    type: discrete
+  - name: POLICE-REPORTED_DRUG_INVOLVEMENT
+    type: discrete
+  - name: METHOD_OF_DRUG_DETERMINATION
+    type: discrete
+  - name: DRUG_TEST_TYPE
+    type: discrete
+  - name: DRUG_TEST_RESULTS_(1_of_3)
+    type: discrete
+  - name: DRUG_TEST_TYPE_(2_of_3)
+    type: discrete
+  - name: DRUG_TEST_RESULTS_(2_of_3)
+    type: discrete
+  - name: DRUG_TEST_TYPE_(3_of_3)
+    type: discrete
+  - name: DRUG_TEST_RESULTS_(3_of_3)
+    type: discrete
+  - name: HISPANIC_ORIGIN
+    type: discrete
+  - name: TAKEN_TO_HOSPITAL
+    type: discrete
+  - name: RELATED_FACTOR_(1)-PERSON_LEVEL
+    type: discrete
+  - name: RELATED_FACTOR_(2)-PERSON_LEVEL
+    type: discrete
+  - name: RELATED_FACTOR_(3)-PERSON_LEVEL
+    type: discrete
+  - name: RACE
+    type: discrete

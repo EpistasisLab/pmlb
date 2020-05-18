@@ -1,0 +1,60 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: collins
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: Text
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: FirstPerson
+    type: continuous
+  - name: InnerThinking
+    type: continuous
+  - name: ThinkPositive
+    type: continuous
+  - name: ThinkNegative
+    type: continuous
+  - name: ThinkAhead
+    type: continuous
+  - name: ThinkBack
+    type: continuous
+  - name: Reasoning
+    type: continuous
+  - name: Share_SocTies
+    type: continuous
+  - name: Direct_Activity
+    type: continuous
+  - name: Interacting
+    type: continuous
+  - name: Notifying
+    type: continuous
+  - name: LinearGuidance
+    type: continuous
+  - name: WordPicture
+    type: continuous
+  - name: SpaceInterval
+    type: continuous
+  - name: Motion
+    type: continuous
+  - name: PastEvents
+    type: continuous
+  - name: TimeInterval
+    type: continuous
+  - name: ShiftingEvents
+    type: continuous
+  - name: Text_Coverage
+    type: continuous
+  - name: Genre
+    type: discrete
+  - name: Counter
+    type: continuous
+  - name: Corpus
+    type: discrete
