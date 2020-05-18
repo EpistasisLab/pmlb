@@ -72,7 +72,7 @@ We need help doing this for each dataset!
 
 1. Verify the source for the dataset.
     - Often the place to start is an internet search of the dataset name. 
-    Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](www.kagggle.com). 
+    Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](www.kaggle.com). 
     - Ideally, you will be able to verify the source is correct by downloading the source dataset, applying some simple transformations like normalization, and doing a checksum that validates the two datasets are now equivalent. Something like below.
 
     ```python
