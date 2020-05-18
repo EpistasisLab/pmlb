@@ -24,8 +24,8 @@ We're open to other ideas (improving documentation, writing tutorials, etc.) tha
 We will, too.
 
 ### Responsibilities
- * For sourcing/documentation of existing datasets, make sure your pull request follows our guidelines: *add link*
- * For new datasets, make sure your pull request follows our new dataset guidelines: *add link*
+ * For sourcing/documentation of existing datasets, make sure your pull request follows our [source guidelines](#contributing-source-information)
+ * For new datasets, make sure your pull request follows our [new dataset guidelines](#contributing-a-new-dataset)
  * Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
  * Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. See the [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/) as an example.
 
@@ -71,7 +71,10 @@ We need help doing this for each dataset!
 ### How to submit a contribution
 
 1. Verify the source for the dataset.
-2. Fill in the missing information on the dataset's metadata.yaml file.
+    - Often the place to start is an internet search of the dataset name. 
+    Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](www.kagggle.com). 
+2. Update the information on the dataset's metadata.yaml file. 
+Refer to the [metadata template file](metadata_template.yaml) or [wine_quality_red](datasets/wine_quality_red/metadata.yaml) as an example.
 3. Issue a pull request for your changes. In the pull request, document how you verified the source of the dataset, for example, by performing a checksum on the data. Include any information to help us independently check that what you have added is accurate.
 
 # Contributing a new dataset
