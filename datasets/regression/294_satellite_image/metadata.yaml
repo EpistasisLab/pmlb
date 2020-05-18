@@ -1,0 +1,86 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 294_satellite_image
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: attr1
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: attr2
+    type: continuous
+  - name: attr3
+    type: continuous
+  - name: attr4
+    type: continuous
+  - name: attr5
+    type: continuous
+  - name: attr6
+    type: continuous
+  - name: attr7
+    type: continuous
+  - name: attr8
+    type: continuous
+  - name: attr9
+    type: continuous
+  - name: attr10
+    type: continuous
+  - name: attr11
+    type: continuous
+  - name: attr12
+    type: continuous
+  - name: attr13
+    type: continuous
+  - name: attr14
+    type: continuous
+  - name: attr15
+    type: continuous
+  - name: attr16
+    type: continuous
+  - name: attr17
+    type: continuous
+  - name: attr18
+    type: continuous
+  - name: attr19
+    type: continuous
+  - name: attr20
+    type: continuous
+  - name: attr21
+    type: continuous
+  - name: attr22
+    type: continuous
+  - name: attr23
+    type: continuous
+  - name: attr24
+    type: continuous
+  - name: attr25
+    type: continuous
+  - name: attr26
+    type: continuous
+  - name: attr27
+    type: continuous
+  - name: attr28
+    type: continuous
+  - name: attr29
+    type: continuous
+  - name: attr30
+    type: continuous
+  - name: attr31
+    type: continuous
+  - name: attr32
+    type: continuous
+  - name: attr33
+    type: continuous
+  - name: attr34
+    type: continuous
+  - name: attr35
+    type: continuous
+  - name: attr36
+    type: continuous

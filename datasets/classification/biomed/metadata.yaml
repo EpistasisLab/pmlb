@@ -1,0 +1,30 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: biomed
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: Observation_number
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Hospital_identification_number_for_blood_sample
+    type: continuous
+  - name: Age_of_patient
+    type: continuous
+  - name: Date_that_blood_sample_was_taken
+    type: continuous
+  - name: ml
+    type: continuous
+  - name: m2
+    type: discrete
+  - name: m3
+    type: continuous
+  - name: m4
+    type: discrete

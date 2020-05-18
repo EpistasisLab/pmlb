@@ -1,0 +1,50 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: vehicle
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: COMPACTNESS
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: CIRCULARITY
+    type: continuous
+  - name: DISTANCE CIRCULARITY
+    type: continuous
+  - name: RADIUS RATIO
+    type: continuous
+  - name: PR AXIS ASPECT RATIO
+    type: continuous
+  - name: MAX LENGTH ASPECT RATIO
+    type: continuous
+  - name: SCATTER RATIO
+    type: continuous
+  - name: ELONGATEDNESS
+    type: continuous
+  - name: PR AXISRECTANGULAR
+    type: continuous
+  - name: LENGTHRECTANGULAR
+    type: continuous
+  - name: MAJORVARIANCE
+    type: continuous
+  - name: MINORVARIANCE
+    type: continuous
+  - name: GYRATIONRADIUS
+    type: continuous
+  - name: MAJORSKEWNESS
+    type: continuous
+  - name: MINORSKEWNESS
+    type: continuous
+  - name: MINORKURTOSIS
+    type: continuous
+  - name: MAJORKURTOSIS
+    type: continuous
+  - name: HOLLOWS RATIO
+    type: continuous

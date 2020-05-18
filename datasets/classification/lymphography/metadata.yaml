@@ -1,0 +1,50 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: lymphography
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: Lymphatics
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Block_of_affere
+    type: binary
+  - name: Bl_of_lymph_c
+    type: binary
+  - name: Bl_of_lymph_s
+    type: binary
+  - name: By_pass
+    type: binary
+  - name: Extravasates
+    type: binary
+  - name: Regeneration_of
+    type: binary
+  - name: Early_uptake_in
+    type: binary
+  - name: Lym_nodes_dimin
+    type: discrete
+  - name: Lym_nodes_enlar
+    type: discrete
+  - name: Changes_in_lym
+    type: discrete
+  - name: Defect_in_node
+    type: discrete
+  - name: Changes_in_node
+    type: discrete
+  - name: Changes_in_stru
+    type: discrete
+  - name: Special_forms
+    type: discrete
+  - name: Dislocation_of
+    type: binary
+  - name: Exclusion_of_no
+    type: binary
+  - name: No_of_nodes_in
+    type: discrete

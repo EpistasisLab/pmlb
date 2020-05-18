@@ -1,0 +1,64 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: auto
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: normalized-losses
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: make
+    type: discrete
+  - name: fuel-type
+    type: binary
+  - name: aspiration
+    type: binary
+  - name: num-of-doors
+    type: discrete
+  - name: body-style
+    type: discrete
+  - name: drive-wheels
+    type: discrete
+  - name: engine-location
+    type: binary
+  - name: wheel-base
+    type: continuous
+  - name: length
+    type: continuous
+  - name: width
+    type: continuous
+  - name: height
+    type: continuous
+  - name: curb-weight
+    type: continuous
+  - name: engine-type
+    type: discrete
+  - name: num-of-cylinders
+    type: discrete
+  - name: engine-size
+    type: continuous
+  - name: fuel-system
+    type: discrete
+  - name: bore
+    type: discrete
+  - name: stroke
+    type: discrete
+  - name: compression-ratio
+    type: continuous
+  - name: horsepower
+    type: discrete
+  - name: peak-rpm
+    type: discrete
+  - name: city-mpg
+    type: continuous
+  - name: highway-mpg
+    type: continuous
+  - name: price
+    type: discrete

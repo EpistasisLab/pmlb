@@ -70,7 +70,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     if local_cache_dir is None:
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
     else:
-        dataset_path = os.path.join(local_cache_dir, dataset_name) + suffix
+        dataset_path = os.path.join(local_cache_dir, data_type, dataset_name, 
+                                    dataset_name+suffix) 
 
         # Use the local cache if the file already exists there
         if os.path.exists(dataset_path):
@@ -78,7 +79,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
         # Download the data to the local cache if it is not already there
         else:
             dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
-            dataset.to_csv(dataset_path, sep='\t', compression='gzip', index=False)
+            dataset.to_csv(dataset_path, sep='\t', compression='gzip', 
+                    index=False)
 
     if return_X_y:
         X = dataset.drop('target', axis=1).values
