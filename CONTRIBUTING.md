@@ -26,6 +26,10 @@ We will, too.
 ### Responsibilities
  * For sourcing/documentation of existing datasets, make sure your pull request follows our [source guidelines](#contributing-source-information)
  * For new datasets, make sure your pull request follows our [new dataset guidelines](#contributing-a-new-dataset)
+ * Make sure your changes pass the tests. To check, please run the following (note, you must have the `nose` package installed within your dev environment for this to work):
+    ```
+    nosetests -s -v
+    ```
  * Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
  * Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. See the [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/) as an example.
 
@@ -114,8 +118,3 @@ New datasets should follow these guidelines:
 
 Note that any pull requests for new dataset contributions will not be accepted if these guidelines are not met.
 
-To check your changes haven't broken any existing tests, please run the following (note, you must have the `nose` package installed within your dev environment for this to work):
-
-```
-$ nosetests -s -v
-```
