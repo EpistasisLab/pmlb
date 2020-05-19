@@ -9,8 +9,9 @@ on:
       - master
       - PMLB2.0
   pull_request:
-    branches: [ master ]
-
+    branches: 
+      - master
+      - PMLB2.0
 jobs:
   build:
 
