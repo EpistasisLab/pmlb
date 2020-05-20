@@ -24,7 +24,7 @@ jobs:
       with:
         python-version: 3.8
     - name: Install dependencies
-      run: >
+      run: |
         pip install nose numpy scipy scikit-learn pandas joblib pyyaml parameterized
     - name: Test with nose
       run: |
