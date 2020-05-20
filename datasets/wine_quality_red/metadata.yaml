@@ -17,22 +17,22 @@ target:
     Wine quality score based on sensory data, median of at least 3 evaluations made by wine experts.
   code: ranges from 0 (very bad) to 10 (very excellent)
 features: # list of features in the dataset
-  - name: fixed_acidity
+  - name: fixed acidity
     type: continuous
     description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., 'Control = 0', 'Case' = 1
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
-  - name: volatile_acidity
+  - name: volatile acidity
     type: continuous
-  - name: citric_acid
+  - name: citric acid
     type: continuous
-  - name: residual_sugar
+  - name: residual sugar
     type: continuous
   - name: chlorides
     type: continuous
-  - name: free_sulfur_dioxide
+  - name: free sulfur dioxide
     type: continuous
-  - name: total_sulfur_dioxide
+  - name: total sulfur dioxide
     type: continuous
   - name: density
     type: continuous

@@ -1,0 +1,446 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: mfeat_factors
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: att1
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: att2
+    type: continuous
+  - name: att3
+    type: continuous
+  - name: att4
+    type: continuous
+  - name: att5
+    type: continuous
+  - name: att6
+    type: continuous
+  - name: att7
+    type: continuous
+  - name: att8
+    type: continuous
+  - name: att9
+    type: continuous
+  - name: att10
+    type: continuous
+  - name: att11
+    type: continuous
+  - name: att12
+    type: continuous
+  - name: att13
+    type: continuous
+  - name: att14
+    type: continuous
+  - name: att15
+    type: continuous
+  - name: att16
+    type: continuous
+  - name: att17
+    type: continuous
+  - name: att18
+    type: continuous
+  - name: att19
+    type: continuous
+  - name: att20
+    type: continuous
+  - name: att21
+    type: continuous
+  - name: att22
+    type: continuous
+  - name: att23
+    type: continuous
+  - name: att24
+    type: continuous
+  - name: att25
+    type: continuous
+  - name: att26
+    type: continuous
+  - name: att27
+    type: continuous
+  - name: att28
+    type: continuous
+  - name: att29
+    type: continuous
+  - name: att30
+    type: continuous
+  - name: att31
+    type: continuous
+  - name: att32
+    type: continuous
+  - name: att33
+    type: continuous
+  - name: att34
+    type: continuous
+  - name: att35
+    type: continuous
+  - name: att36
+    type: continuous
+  - name: att37
+    type: continuous
+  - name: att38
+    type: continuous
+  - name: att39
+    type: continuous
+  - name: att40
+    type: continuous
+  - name: att41
+    type: continuous
+  - name: att42
+    type: continuous
+  - name: att43
+    type: continuous
+  - name: att44
+    type: continuous
+  - name: att45
+    type: continuous
+  - name: att46
+    type: continuous
+  - name: att47
+    type: continuous
+  - name: att48
+    type: continuous
+  - name: att49
+    type: continuous
+  - name: att50
+    type: continuous
+  - name: att51
+    type: continuous
+  - name: att52
+    type: continuous
+  - name: att53
+    type: continuous
+  - name: att54
+    type: continuous
+  - name: att55
+    type: continuous
+  - name: att56
+    type: continuous
+  - name: att57
+    type: continuous
+  - name: att58
+    type: continuous
+  - name: att59
+    type: continuous
+  - name: att60
+    type: continuous
+  - name: att61
+    type: continuous
+  - name: att62
+    type: continuous
+  - name: att63
+    type: continuous
+  - name: att64
+    type: continuous
+  - name: att65
+    type: continuous
+  - name: att66
+    type: continuous
+  - name: att67
+    type: continuous
+  - name: att68
+    type: continuous
+  - name: att69
+    type: continuous
+  - name: att70
+    type: continuous
+  - name: att71
+    type: continuous
+  - name: att72
+    type: continuous
+  - name: att73
+    type: continuous
+  - name: att74
+    type: continuous
+  - name: att75
+    type: continuous
+  - name: att76
+    type: continuous
+  - name: att77
+    type: continuous
+  - name: att78
+    type: continuous
+  - name: att79
+    type: continuous
+  - name: att80
+    type: continuous
+  - name: att81
+    type: continuous
+  - name: att82
+    type: continuous
+  - name: att83
+    type: continuous
+  - name: att84
+    type: continuous
+  - name: att85
+    type: continuous
+  - name: att86
+    type: continuous
+  - name: att87
+    type: continuous
+  - name: att88
+    type: continuous
+  - name: att89
+    type: continuous
+  - name: att90
+    type: continuous
+  - name: att91
+    type: continuous
+  - name: att92
+    type: continuous
+  - name: att93
+    type: continuous
+  - name: att94
+    type: continuous
+  - name: att95
+    type: continuous
+  - name: att96
+    type: continuous
+  - name: att97
+    type: continuous
+  - name: att98
+    type: continuous
+  - name: att99
+    type: continuous
+  - name: att100
+    type: continuous
+  - name: att101
+    type: continuous
+  - name: att102
+    type: continuous
+  - name: att103
+    type: continuous
+  - name: att104
+    type: continuous
+  - name: att105
+    type: continuous
+  - name: att106
+    type: continuous
+  - name: att107
+    type: continuous
+  - name: att108
+    type: continuous
+  - name: att109
+    type: continuous
+  - name: att110
+    type: continuous
+  - name: att111
+    type: continuous
+  - name: att112
+    type: continuous
+  - name: att113
+    type: continuous
+  - name: att114
+    type: continuous
+  - name: att115
+    type: continuous
+  - name: att116
+    type: continuous
+  - name: att117
+    type: continuous
+  - name: att118
+    type: continuous
+  - name: att119
+    type: continuous
+  - name: att120
+    type: continuous
+  - name: att121
+    type: continuous
+  - name: att122
+    type: continuous
+  - name: att123
+    type: continuous
+  - name: att124
+    type: continuous
+  - name: att125
+    type: continuous
+  - name: att126
+    type: continuous
+  - name: att127
+    type: continuous
+  - name: att128
+    type: continuous
+  - name: att129
+    type: continuous
+  - name: att130
+    type: continuous
+  - name: att131
+    type: continuous
+  - name: att132
+    type: continuous
+  - name: att133
+    type: continuous
+  - name: att134
+    type: continuous
+  - name: att135
+    type: continuous
+  - name: att136
+    type: continuous
+  - name: att137
+    type: continuous
+  - name: att138
+    type: continuous
+  - name: att139
+    type: continuous
+  - name: att140
+    type: continuous
+  - name: att141
+    type: continuous
+  - name: att142
+    type: continuous
+  - name: att143
+    type: continuous
+  - name: att144
+    type: continuous
+  - name: att145
+    type: continuous
+  - name: att146
+    type: continuous
+  - name: att147
+    type: continuous
+  - name: att148
+    type: continuous
+  - name: att149
+    type: continuous
+  - name: att150
+    type: continuous
+  - name: att151
+    type: continuous
+  - name: att152
+    type: continuous
+  - name: att153
+    type: continuous
+  - name: att154
+    type: continuous
+  - name: att155
+    type: continuous
+  - name: att156
+    type: continuous
+  - name: att157
+    type: continuous
+  - name: att158
+    type: continuous
+  - name: att159
+    type: continuous
+  - name: att160
+    type: continuous
+  - name: att161
+    type: continuous
+  - name: att162
+    type: continuous
+  - name: att163
+    type: continuous
+  - name: att164
+    type: continuous
+  - name: att165
+    type: continuous
+  - name: att166
+    type: continuous
+  - name: att167
+    type: continuous
+  - name: att168
+    type: continuous
+  - name: att169
+    type: continuous
+  - name: att170
+    type: continuous
+  - name: att171
+    type: continuous
+  - name: att172
+    type: continuous
+  - name: att173
+    type: continuous
+  - name: att174
+    type: continuous
+  - name: att175
+    type: continuous
+  - name: att176
+    type: continuous
+  - name: att177
+    type: continuous
+  - name: att178
+    type: continuous
+  - name: att179
+    type: continuous
+  - name: att180
+    type: continuous
+  - name: att181
+    type: continuous
+  - name: att182
+    type: continuous
+  - name: att183
+    type: continuous
+  - name: att184
+    type: continuous
+  - name: att185
+    type: continuous
+  - name: att186
+    type: continuous
+  - name: att187
+    type: continuous
+  - name: att188
+    type: continuous
+  - name: att189
+    type: continuous
+  - name: att190
+    type: continuous
+  - name: att191
+    type: continuous
+  - name: att192
+    type: continuous
+  - name: att193
+    type: continuous
+  - name: att194
+    type: continuous
+  - name: att195
+    type: continuous
+  - name: att196
+    type: continuous
+  - name: att197
+    type: continuous
+  - name: att198
+    type: continuous
+  - name: att199
+    type: continuous
+  - name: att200
+    type: continuous
+  - name: att201
+    type: continuous
+  - name: att202
+    type: continuous
+  - name: att203
+    type: continuous
+  - name: att204
+    type: continuous
+  - name: att205
+    type: continuous
+  - name: att206
+    type: continuous
+  - name: att207
+    type: continuous
+  - name: att208
+    type: continuous
+  - name: att209
+    type: continuous
+  - name: att210
+    type: continuous
+  - name: att211
+    type: continuous
+  - name: att212
+    type: continuous
+  - name: att213
+    type: continuous
+  - name: att214
+    type: continuous
+  - name: att215
+    type: continuous
+  - name: att216
+    type: continuous
