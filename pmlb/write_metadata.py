@@ -29,7 +29,7 @@ import csv
 import pandas as pd
 from collections import Counter
 from pmlb import fetch_data
-from .dataset_lists import (classification_dataset_names, 
+from .dataset_lists import (classification_dataset_names,
                             regression_dataset_names)
 import pdb
 
@@ -40,26 +40,26 @@ protected_feature_names = ['y','Y','yes','Yes','YES','n','N','no','No','NO',
                            'on','On','ON','off','Off','OFF']
 
 def imbalance_metrics(data):
-    """ Computes imbalance metric for a given dataset. 
-    Imbalance metric is equal to 0 when a dataset is perfectly balanced 
+    """ Computes imbalance metric for a given dataset.
+    Imbalance metric is equal to 0 when a dataset is perfectly balanced
     (i.e. number of in each class is exact).
-    :param data : pandas.DataFrame 
+    :param data : pandas.DataFrame
         A dataset in a panda's data frame
-    :returns int 
-        A value of imbalance metric, where zero means that the dataset is 
-        perfectly balanced and the higher the value, the more imbalanced the 
+    :returns int
+        A value of imbalance metric, where zero means that the dataset is
+        perfectly balanced and the higher the value, the more imbalanced the
         dataset.
     """
     if not data:
         return 0
     #imb - shows measure of inbalance within a dataset
-    imb = 0 
+    imb = 0
     num_classes=float(len(Counter(data)))
     for x in Counter(data).values():
         p_x = float(x)/len(data)
         if p_x > 0:
             imb += (p_x - 1/num_classes)*(p_x - 1/num_classes)
-    #worst case scenario: all but 1 examplars in 1st class, the remaining one 
+    #worst case scenario: all but 1 examplars in 1st class, the remaining one
     #in 2nd class
     worst_case=(num_classes-1)*pow(1/num_classes,2) + pow(1-1/num_classes,2)
     return (num_classes,imb/worst_case)
@@ -69,14 +69,14 @@ def count_features_type(features):
     :param features: pandas.DataFrame
         A dataset in a panda's data frame
     :returns a tuple (binary, integer, float)
-    """    
+    """
     counter={k.name: v for k, v in features.columns.to_series().groupby(
         features.dtypes)}
     binary=0
     if ('int64' in counter):
         binary=len(
-                set(features.loc[:, (features<=1).all(axis=0)].columns.values) 
-              & set(features.loc[:, (features>=0).all(axis=0)].columns.values) 
+                set(features.loc[:, (features<=1).all(axis=0)].columns.values)
+              & set(features.loc[:, (features>=0).all(axis=0)].columns.values)
               & set(counter['int64'])
               )
     return (binary,len(counter['int64'])-binary if 'int64' in counter else 0,
@@ -94,74 +94,76 @@ def get_type(x):
         raise ValueError("Error getting type")
 
 def generate_description(df, dataset_name, task, local_cache_dir=None):
-    """Generates desription for a given dataset in its metadata.yaml file in a 
+    """Generates desription for a given dataset in its metadata.yaml file in a
     dataset local_cache_dir file.
-    
+
     :param dataset_name: str
         The name of the data set to load from PMLB.
     :param local_cache_dir: str (required)
         The directory on your local machine to store the data files.
         If None, then the local data cache will not be used.
     """
-    
+
     print('generating metadata for',dataset_name)
     assert (local_cache_dir!=None)
-    metadata_file = open(os.path.join(local_cache_dir, task, 
-        dataset_name, 'metadata.yaml'), 'w')
-    try:
-        fnames = [col for col in df.columns if col!=TARGET_NAME]
-        #determine all required values
-        df_X = df.drop(TARGET_NAME,axis=1)
-        types = [get_type(df_X[col]) for col in df_X.columns]
-        feat=count_features_type(df_X)
-        endpoint=get_type(df[TARGET_NAME])
-        #proceed with writing
-        none_yet = 'None yet. See our contributing guide to help us add one.' 
-        metadata_file.write(
-                '#Generated automatically by pmlb/write_metadata.py\n')
-        # required, dataset name
-        metadata_file.write('dataset: {}\n'.format(dataset_name))
-        # required, dataset description
-        metadata_file.write('description: {}\n'.format(none_yet))
-        # required, link to the source from where dataset was retrieved
-        metadata_file.write('source: {}\n'.format(none_yet))    
-        # optional, study that generated the dataset (doi, pmid, pmcid, or url)
-        metadata_file.write('publication: {}\n'.format(none_yet))    
-        # required, classification or regression
-        metadata_file.write('task: {}\n'.format(task))
-        metadata_file.write('target:\n')
-        metadata_file.write('  type: {}\n'.format(endpoint)) 
-        # required, describe the endpoint/outcome (and unit if exists)
-        metadata_file.write('  description: {}\n'.format(none_yet)) 
-        # optional but recommended, coding information, 
-        # e.g., 'Control' = 0, 'Case' = 1
-        metadata_file.write('  code: {}\n'.format(none_yet)) 
-        metadata_file.write('features: # list of features in the dataset\n')
-        first = True
-        for feature,feature_type in zip(fnames, types):
-            if feature in protected_feature_names:
-                feature = '"'+feature+'"'
-            metadata_file.write('  - name: {}\n'.format(feature)) 
-            metadata_file.write('    type: {}\n'.format(feature_type)) 
-            if first:
-                metadata_file.write('    description: null # optional but '
-                        'recommended, what the feature measures/indicates, '
-                        'unit\n') 
-                metadata_file.write('    code: null # optional, coding '
-                        'information, e.g., Control = 0, Case = 1\n') 
-                metadata_file.write('    transform: ~ # optional, any '
-                'transformation performed on the feature, e.g., log scaled\n') 
-                first = False
+    metadata_filename = os.path.join(local_cache_dir,
+        dataset_name, 'metadata.yaml')
+    if not os.path.isfile(metadata_filename):
+        metadata_file = open(metadata_filename, 'w')
+        try:
+            fnames = [col for col in df.columns if col!=TARGET_NAME]
+            #determine all required values
+            df_X = df.drop(TARGET_NAME,axis=1)
+            types = [get_type(df_X[col]) for col in df_X.columns]
+            feat=count_features_type(df_X)
+            endpoint=get_type(df[TARGET_NAME])
+            #proceed with writing
+            none_yet = 'None yet. See our contributing guide to help us add one.'
+            metadata_file.write(
+                    '#Generated automatically by pmlb/write_metadata.py\n')
+            # required, dataset name
+            metadata_file.write('dataset: {}\n'.format(dataset_name))
+            # required, dataset description
+            metadata_file.write('description: {}\n'.format(none_yet))
+            # required, link to the source from where dataset was retrieved
+            metadata_file.write('source: {}\n'.format(none_yet))
+            # optional, study that generated the dataset (doi, pmid, pmcid, or url)
+            metadata_file.write('publication: {}\n'.format(none_yet))
+            # required, classification or regression
+            metadata_file.write('task: {}\n'.format(task))
+            metadata_file.write('target:\n')
+            metadata_file.write('  type: {}\n'.format(endpoint))
+            # required, describe the endpoint/outcome (and unit if exists)
+            metadata_file.write('  description: {}\n'.format(none_yet))
+            # optional but recommended, coding information,
+            # e.g., 'Control' = 0, 'Case' = 1
+            metadata_file.write('  code: {}\n'.format(none_yet))
+            metadata_file.write('features: # list of features in the dataset\n')
+            first = True
+            for feature,feature_type in zip(fnames, types):
+                if feature in protected_feature_names:
+                    feature = '"'+feature+'"'
+                metadata_file.write('  - name: {}\n'.format(feature))
+                metadata_file.write('    type: {}\n'.format(feature_type))
+                if first:
+                    metadata_file.write('    description: null # optional but '
+                            'recommended, what the feature measures/indicates, '
+                            'unit\n')
+                    metadata_file.write('    code: null # optional, coding '
+                            'information, e.g., Control = 0, Case = 1\n')
+                    metadata_file.write('    transform: ~ # optional, any '
+                    'transformation performed on the feature, e.g., log scaled\n')
+                    first = False
 
-    except IOError as err:
-        print(err)
-    finally:
-        metadata_file.close()
+        except IOError as err:
+            print(err)
+        finally:
+            metadata_file.close()
 
 def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
-    """Generates summary stats for a given dataset in its summary_stats.csv 
+    """Generates summary stats for a given dataset in its summary_stats.csv
     file in a dataset local_cache_dir file.
-    TODO: link dataset_desribe from PennAI to this for generating stats. 
+    TODO: link dataset_desribe from PennAI to this for generating stats.
     :param dataset_name: str
         The name of the data set to load from PMLB.
     :param local_cache_dir: str (required)
@@ -184,7 +186,7 @@ def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
         },index=[0])
 
     assert (local_cache_dir!=None)
-    stats_df.to_csv(os.path.join(local_cache_dir,task,dataset_name,
+    stats_df.to_csv(os.path.join(local_cache_dir,dataset_name,
         'summary_stats.csv'))
     # summary_file = open(os.path.join(local_cache_dir,'datasets',dataset_name,
     #     'summary_stats.csv'), 'wt')
@@ -242,7 +244,7 @@ if __name__ =='__main__':
 
     # assuming this is run from the repo root directory
     local_dir = 'datasets/'
-    
+
     for d in classification_dataset_names:
         print(d,'...')
         df = fetch_data(d, local_cache_dir=local_dir)
