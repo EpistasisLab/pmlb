@@ -1,106 +1,67 @@
 # connect_4
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 67557
+## Summary
 
-#features: 42
+**task**: classification
 
-  #binary_features: 0
+**instances**: 67557
 
-  #integer_features: 42
+**features**: 42
 
-  #float_features: 0
+**number of classes**: 42
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.25466255193727544
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- a1:discrete
-
-a2:discrete
-
-a3:discrete
-
-a4:discrete
-
-a5:discrete
-
-a6:discrete
-
-b1:discrete
-
-b2:discrete
-
-b3:discrete
-
-b4:discrete
-
-b5:discrete
-
-b6:discrete
-
-c1:discrete
-
-c2:discrete
-
-c3:discrete
-
-c4:discrete
-
-c5:discrete
-
-c6:discrete
-
-d1:discrete
-
-d2:discrete
-
-d3:discrete
-
-d4:discrete
-
-d5:discrete
-
-d6:discrete
-
-e1:discrete
-
-e2:discrete
-
-e3:discrete
-
-e4:discrete
-
-e5:discrete
-
-e6:discrete
-
-f1:discrete
-
-f2:discrete
-
-f3:discrete
-
-f4:discrete
-
-f5:discrete
-
-f6:discrete
-
-g1:discrete
-
-g2:discrete
-
-g3:discrete
-
-g4:discrete
-
-g5:discrete
-
-g6:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	a1	|	67557	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	a2	|	67557	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	a3	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	a4	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	a5	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	a6	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	b1	|	67557	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	b2	|	67557	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	b3	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	b4	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	b5	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	b6	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	c1	|	67557	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	c2	|	67557	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	c3	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	c4	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	c5	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	c6	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	d1	|	67557	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	d2	|	67557	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	d3	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	d4	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	d5	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	d6	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	e1	|	67557	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	e2	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	e3	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	e4	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	e5	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	e6	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	f1	|	67557	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	f2	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	f3	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	f4	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	f5	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	f6	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	g1	|	67557	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	g2	|	67557	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	g3	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	g4	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	g5	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	g6	|	67557	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	target	|	67557	|	1	|	0	|	0	|	1	|	2	|	2	|	2

@@ -1,66 +1,47 @@
 # spect
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 267
+## Summary
 
-#features: 22
+**task**: classification
 
-  #binary_features: 22
+**instances**: 267
 
-  #integer_features: 0
+**features**: 22
 
-  #float_features: 0
+**number of classes**: 22
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.3457616182019667
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- F1:binary
-
-F2:binary
-
-F3:binary
-
-F4:binary
-
-F5:binary
-
-F6:binary
-
-F7:binary
-
-F8:binary
-
-F9:binary
-
-F10:binary
-
-F11:binary
-
-F12:binary
-
-F13:binary
-
-F14:binary
-
-F15:binary
-
-F16:binary
-
-F17:binary
-
-F18:binary
-
-F19:binary
-
-F20:binary
-
-F21:binary
-
-F22:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	F1	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F2	|	267	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	F3	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F4	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F5	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F6	|	267	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	F7	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F8	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F9	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F10	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F11	|	267	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	F12	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F13	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F14	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F15	|	267	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	F16	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F17	|	267	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	F18	|	267	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	F19	|	267	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	F20	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F21	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F22	|	267	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	267	|	0	|	0	|	0	|	1	|	1	|	1	|	1

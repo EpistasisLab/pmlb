@@ -1,42 +1,35 @@
 # poker
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1025009
+## Summary
 
-#features: 10
+**task**: classification
 
-  #binary_features: 0
+**instances**: 1025009
 
-  #integer_features: 10
+**features**: 10
 
-  #float_features: 0
+**number of classes**: 10
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 10
+![Labels](label.svg)
 
-Imbalance metric: 0.3693734348624093
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- S1:discrete
-
-C1:discrete
-
-S2:discrete
-
-C2:discrete
-
-S3:discrete
-
-C3:discrete
-
-S4:discrete
-
-C4:discrete
-
-S5:discrete
-
-C5:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	S1	|	1025009	|	2	|	1	|	1	|	2	|	3	|	3	|	4
+|	C1	|	1025009	|	6	|	3	|	1	|	4	|	7	|	10	|	13
+|	S2	|	1025009	|	2	|	1	|	1	|	1	|	2	|	4	|	4
+|	C2	|	1025009	|	7	|	3	|	1	|	4	|	7	|	10	|	13
+|	S3	|	1025009	|	2	|	1	|	1	|	1	|	3	|	4	|	4
+|	C3	|	1025009	|	6	|	3	|	1	|	4	|	7	|	10	|	13
+|	S4	|	1025009	|	2	|	1	|	1	|	2	|	3	|	3	|	4
+|	C4	|	1025009	|	7	|	3	|	1	|	4	|	7	|	10	|	13
+|	S5	|	1025009	|	2	|	1	|	1	|	1	|	2	|	4	|	4
+|	C5	|	1025009	|	6	|	3	|	1	|	4	|	7	|	10	|	13
+|	target	|	1025009	|	0	|	0	|	0	|	0	|	0	|	1	|	9

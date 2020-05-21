@@ -1,34 +1,31 @@
 # bupa
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 345
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 0
+**instances**: 345
 
-  #integer_features: 0
+**features**: 6
 
-  #float_features: 6
+**number of classes**: 6
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.025414828817475334
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Mcv:continous
-
-Alkphos:continous
-
-Sgpt:continous
-
-Sgot:continous
-
-Gammagt:continous
-
-Drinks:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Mcv	|	345	|	90	|	4	|	65	|	87	|	90	|	93	|	103
+|	Alkphos	|	345	|	69	|	18	|	23	|	57	|	67	|	80	|	138
+|	Sgpt	|	345	|	30	|	19	|	4	|	19	|	26	|	34	|	155
+|	Sgot	|	345	|	24	|	10	|	5	|	19	|	23	|	27	|	82
+|	Gammagt	|	345	|	38	|	39	|	5	|	15	|	25	|	46	|	297
+|	Drinks	|	345	|	3	|	3	|	0	|	0	|	3	|	6	|	20
+|	target	|	345	|	1	|	0	|	1	|	1	|	2	|	2	|	2

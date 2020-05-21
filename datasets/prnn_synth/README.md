@@ -1,26 +1,27 @@
 # prnn_synth
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 250
+## Summary
 
-#features: 2
+**task**: classification
 
-  #binary_features: 0
+**instances**: 250
 
-  #integer_features: 0
+**features**: 2
 
-  #float_features: 2
+**number of classes**: 2
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- xs:continous
-
-ys:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	xs	|	250	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	ys	|	250	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	250	|	0	|	0	|	0	|	0	|	0	|	1	|	1

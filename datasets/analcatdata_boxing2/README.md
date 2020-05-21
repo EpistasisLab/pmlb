@@ -1,28 +1,28 @@
 # analcatdata_boxing2
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 132
+## Summary
 
-#features: 3
+**task**: classification
 
-  #binary_features: 1
+**instances**: 132
 
-  #integer_features: 2
+**features**: 3
 
-  #float_features: 0
+**number of classes**: 3
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.005739210284664828
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Judge:discrete
-
-Official:binary
-
-Round:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Judge	|	132	|	5	|	3	|	0	|	2	|	5	|	8	|	10
+|	Official	|	132	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Round	|	132	|	6	|	3	|	1	|	3	|	6	|	9	|	12
+|	target	|	132	|	0	|	0	|	0	|	0	|	1	|	1	|	1

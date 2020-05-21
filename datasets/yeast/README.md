@@ -1,38 +1,33 @@
 # yeast
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1479
+## Summary
 
-#features: 8
+**task**: classification
 
-  #binary_features: 0
+**instances**: 1479
 
-  #integer_features: 0
+**features**: 8
 
-  #float_features: 8
+**number of classes**: 8
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 9
+![Labels](label.svg)
 
-Imbalance metric: 0.1278178474299421
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- mcg:continous
-
-gvh:continous
-
-alm:continous
-
-mit:continous
-
-erl:continous
-
-pox:continous
-
-vac:continous
-
-nuc:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	mcg	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	gvh	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	alm	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mit	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	erl	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	pox	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	vac	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	nuc	|	1479	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	1479	|	2	|	2	|	0	|	1	|	2	|	2	|	8

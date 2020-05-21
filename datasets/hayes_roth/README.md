@@ -1,30 +1,29 @@
 # hayes_roth
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 160
+## Summary
 
-#features: 4
+**task**: classification
 
-  #binary_features: 0
+**instances**: 160
 
-  #integer_features: 0
+**features**: 4
 
-  #float_features: 4
+**number of classes**: 4
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.043867187499999995
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Hobby:continous
-
-Age:continous
-
-Education:continous
-
-Marital status:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Hobby	|	160	|	1	|	0	|	1	|	1	|	2	|	3	|	3
+|	Age	|	160	|	1	|	0	|	1	|	1	|	2	|	3	|	4
+|	Education	|	160	|	1	|	0	|	1	|	1	|	2	|	3	|	4
+|	Marital status	|	160	|	1	|	0	|	1	|	1	|	2	|	3	|	4
+|	target	|	160	|	1	|	0	|	1	|	1	|	2	|	2	|	3

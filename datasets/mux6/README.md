@@ -1,34 +1,31 @@
 # mux6
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 128
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 6
+**instances**: 128
 
-  #integer_features: 0
+**features**: 6
 
-  #float_features: 0
+**number of classes**: 6
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Address bit 1:binary
-
-Address bit 2:binary
-
-Bit 0:binary
-
-Bit 1:binary
-
-Bit 2:binary
-
-Bit 3:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Address bit 1	|	128	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Address bit 2	|	128	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 0	|	128	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 1	|	128	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 2	|	128	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 3	|	128	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	128	|	0	|	0	|	0	|	0	|	0	|	1	|	1

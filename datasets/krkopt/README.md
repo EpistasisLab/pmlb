@@ -1,34 +1,31 @@
 # krkopt
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 28056
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 0
+**instances**: 28056
 
-  #integer_features: 6
+**features**: 6
 
-  #float_features: 0
+**number of classes**: 6
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 18
+![Labels](label.svg)
 
-Imbalance metric: 0.0516687671160113
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- white-king-file:discrete
-
-whike-king-rank:discrete
-
-white-rook-file:discrete
-
-whike-rook-rank:discrete
-
-black-king-file:discrete
-
-black-king-rank:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	white-king-file	|	28056	|	2	|	0	|	0	|	1	|	2	|	3	|	3
+|	whike-king-rank	|	28056	|	1	|	0	|	1	|	1	|	2	|	2	|	4
+|	white-rook-file	|	28056	|	3	|	2	|	0	|	2	|	4	|	6	|	7
+|	whike-rook-rank	|	28056	|	4	|	2	|	1	|	3	|	5	|	6	|	8
+|	black-king-file	|	28056	|	4	|	2	|	0	|	2	|	4	|	6	|	7
+|	black-king-rank	|	28056	|	4	|	2	|	1	|	3	|	4	|	6	|	8
+|	target	|	28056	|	7	|	5	|	0	|	2	|	6	|	13	|	17

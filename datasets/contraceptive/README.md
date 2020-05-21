@@ -1,40 +1,34 @@
 # contraceptive
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1473
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 3
+**instances**: 1473
 
-  #integer_features: 6
+**features**: 9
 
-  #float_features: 0
+**number of classes**: 9
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.03070060823264104
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Wife_age:discrete
-
-Wife_education:discrete
-
-Husband_education:discrete
-
-Children:discrete
-
-Wife_religion:binary
-
-Wife_working:binary
-
-Husband_occupation:discrete
-
-Standard-of-living:discrete
-
-Media_exposure:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Wife_age	|	1473	|	32	|	8	|	16	|	26	|	32	|	39	|	49
+|	Wife_education	|	1473	|	2	|	1	|	1	|	2	|	3	|	4	|	4
+|	Husband_education	|	1473	|	3	|	0	|	1	|	3	|	4	|	4	|	4
+|	Children	|	1473	|	3	|	2	|	0	|	1	|	3	|	4	|	16
+|	Wife_religion	|	1473	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	Wife_working	|	1473	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Husband_occupation	|	1473	|	2	|	0	|	1	|	1	|	2	|	3	|	4
+|	Standard-of-living	|	1473	|	3	|	0	|	1	|	3	|	3	|	4	|	4
+|	Media_exposure	|	1473	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	1473	|	1	|	0	|	1	|	1	|	2	|	3	|	3

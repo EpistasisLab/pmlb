@@ -1,64 +1,46 @@
 # car_evaluation
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1728
+## Summary
 
-#features: 21
+**task**: classification
 
-  #binary_features: 21
+**instances**: 1728
 
-  #integer_features: 0
+**features**: 21
 
-  #float_features: 0
+**number of classes**: 21
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 4
+![Labels](label.svg)
 
-Imbalance metric: 0.39028831590077734
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- buying_price_vhigh:binary
-
-buying_price_high:binary
-
-buying_price_med:binary
-
-buying_price_low:binary
-
-maintenance_price_vhigh:binary
-
-maintenance_price_high:binary
-
-maintenance_price_med:binary
-
-maintenance_price_low:binary
-
-doors_2:binary
-
-doors_3:binary
-
-doors_4:binary
-
-doors_5more:binary
-
-persons_2:binary
-
-persons_4:binary
-
-persons_more:binary
-
-luggage_boot_size_small:binary
-
-luggage_boot_size_med:binary
-
-luggage_boot_size_big:binary
-
-safety_low:binary
-
-safety_med:binary
-
-safety_high:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	target	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	3
+|	buying_price_vhigh	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	buying_price_high	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	buying_price_med	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	buying_price_low	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	maintenance_price_vhigh	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	maintenance_price_high	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	maintenance_price_med	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	maintenance_price_low	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	doors_2	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	doors_3	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	doors_4	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	doors_5more	|	1728	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	persons_2	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	persons_4	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	persons_more	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	luggage_boot_size_small	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	luggage_boot_size_med	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	luggage_boot_size_big	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	safety_low	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	safety_med	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	safety_high	|	1728	|	0	|	0	|	0	|	0	|	0	|	1	|	1

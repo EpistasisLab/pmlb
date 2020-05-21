@@ -1,94 +1,61 @@
 # kr_vs_kp
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 3196
+## Summary
 
-#features: 36
+**task**: classification
 
-  #binary_features: 35
+**instances**: 3196
 
-  #integer_features: 1
+**features**: 36
 
-  #float_features: 0
+**number of classes**: 36
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.001974072722317166
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- c1:binary
-
-c2:binary
-
-c3:binary
-
-c4:binary
-
-c5:binary
-
-c6:binary
-
-c7:binary
-
-c8:binary
-
-c9:binary
-
-c10:binary
-
-c11:binary
-
-c12:binary
-
-c13:binary
-
-c14:binary
-
-c15:discrete
-
-c16:binary
-
-c17:binary
-
-c18:binary
-
-c19:binary
-
-c20:binary
-
-c21:binary
-
-c22:binary
-
-c23:binary
-
-c24:binary
-
-c25:binary
-
-c26:binary
-
-c27:binary
-
-c28:binary
-
-c29:binary
-
-c30:binary
-
-c31:binary
-
-c32:binary
-
-c33:binary
-
-c34:binary
-
-c35:binary
-
-c36:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	c1	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c2	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c3	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c4	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c5	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c6	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c7	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c8	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c9	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c10	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c11	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c12	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c13	|	3196	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	c14	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c15	|	3196	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	c16	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c17	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c18	|	3196	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	c19	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c20	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c21	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c22	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c23	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c24	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c25	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c26	|	3196	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	c27	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c28	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c29	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c30	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c31	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c32	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	c33	|	3196	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	c34	|	3196	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	c35	|	3196	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	c36	|	3196	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	3196	|	0	|	0	|	0	|	0	|	1	|	1	|	1

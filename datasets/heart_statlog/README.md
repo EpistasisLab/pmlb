@@ -1,48 +1,38 @@
 # heart_statlog
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 270
+## Summary
 
-#features: 13
+**task**: classification
 
-  #binary_features: 0
+**instances**: 270
 
-  #integer_features: 0
+**features**: 13
 
-  #float_features: 13
+**number of classes**: 13
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.01234567901234569
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- age:continous
-
-sex:continous
-
-chest:continous
-
-resting_blood_pressure:continous
-
-serum_cholestoral:continous
-
-fasting_blood_sugar:continous
-
-resting_electrocardiographic_results:continous
-
-maximum_heart_rate_achieved:continous
-
-exercise_induced_angina:continous
-
-oldpeak:continous
-
-slope:continous
-
-number_of_major_vessels:continous
-
-thal:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	age	|	270	|	54	|	9	|	29	|	48	|	55	|	61	|	77
+|	sex	|	270	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	chest	|	270	|	3	|	0	|	1	|	3	|	3	|	4	|	4
+|	resting_blood_pressure	|	270	|	131	|	17	|	94	|	120	|	130	|	140	|	200
+|	serum_cholestoral	|	270	|	249	|	51	|	126	|	213	|	245	|	280	|	564
+|	fasting_blood_sugar	|	270	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	resting_electrocardiographic_results	|	270	|	1	|	0	|	0	|	0	|	2	|	2	|	2
+|	maximum_heart_rate_achieved	|	270	|	149	|	23	|	71	|	133	|	153	|	166	|	202
+|	exercise_induced_angina	|	270	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	oldpeak	|	270	|	1	|	1	|	0	|	0	|	0	|	1	|	6
+|	slope	|	270	|	1	|	0	|	1	|	1	|	2	|	2	|	3
+|	number_of_major_vessels	|	270	|	0	|	0	|	0	|	0	|	0	|	1	|	3
+|	thal	|	270	|	4	|	1	|	3	|	3	|	3	|	7	|	7
+|	target	|	270	|	0	|	0	|	0	|	0	|	0	|	1	|	1

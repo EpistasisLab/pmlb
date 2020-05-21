@@ -1,104 +1,66 @@
 # kddcup
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 494020
+## Summary
 
-#features: 41
+**task**: classification
 
-  #binary_features: 6
+**instances**: 494020
 
-  #integer_features: 20
+**features**: 41
 
-  #float_features: 15
+**number of classes**: 41
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 23
+![Labels](label.svg)
 
-Imbalance metric: 0.3820987910470524
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Atr-0:discrete
-
-Atr-1:discrete
-
-Atr-2:discrete
-
-Atr-3:discrete
-
-Atr-4:discrete
-
-Atr-5:discrete
-
-Atr-6:binary
-
-Atr-7:discrete
-
-Atr-8:discrete
-
-Atr-9:discrete
-
-Atr-10:discrete
-
-Atr-11:binary
-
-Atr-12:discrete
-
-Atr-13:binary
-
-Atr-14:discrete
-
-Atr-15:discrete
-
-Atr-16:discrete
-
-Atr-17:discrete
-
-Atr-18:discrete
-
-Atr-19:binary
-
-Atr-20:binary
-
-Atr-21:binary
-
-Atr-22:discrete
-
-Atr-23:discrete
-
-Atr-24:continous
-
-Atr-25:continous
-
-Atr-26:continous
-
-Atr-27:continous
-
-Atr-28:continous
-
-Atr-29:continous
-
-Atr-30:continous
-
-Atr-31:discrete
-
-Atr-32:discrete
-
-Atr-33:continous
-
-Atr-34:continous
-
-Atr-35:continous
-
-Atr-36:continous
-
-Atr-37:continous
-
-Atr-38:continous
-
-Atr-39:continous
-
-Atr-40:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Atr-0	|	494020	|	47	|	707	|	0	|	0	|	0	|	0	|	58329
+|	Atr-1	|	494020	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	Atr-2	|	494020	|	23	|	13	|	0	|	14	|	14	|	42	|	65
+|	Atr-3	|	494020	|	7	|	2	|	0	|	9	|	9	|	9	|	10
+|	Atr-4	|	494020	|	3025	|	988219	|	0	|	45	|	520	|	1032	|	693375640
+|	Atr-5	|	494020	|	868	|	33040	|	0	|	0	|	0	|	0	|	5155468
+|	Atr-6	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-7	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	3
+|	Atr-8	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	3
+|	Atr-9	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	30
+|	Atr-10	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	5
+|	Atr-11	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-12	|	494020	|	0	|	1	|	0	|	0	|	0	|	0	|	884
+|	Atr-13	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-14	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	Atr-15	|	494020	|	0	|	2	|	0	|	0	|	0	|	0	|	993
+|	Atr-16	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	28
+|	Atr-17	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	Atr-18	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	8
+|	Atr-19	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	Atr-20	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	Atr-21	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-22	|	494020	|	332	|	213	|	0	|	117	|	510	|	511	|	511
+|	Atr-23	|	494020	|	292	|	246	|	0	|	10	|	510	|	511	|	511
+|	Atr-24	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-25	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-26	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-27	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-28	|	494020	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	Atr-29	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-30	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-31	|	494020	|	232	|	64	|	0	|	255	|	255	|	255	|	255
+|	Atr-32	|	494020	|	188	|	106	|	0	|	46	|	255	|	255	|	255
+|	Atr-33	|	494020	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Atr-34	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-35	|	494020	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Atr-36	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-37	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-38	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-39	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Atr-40	|	494020	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	494020	|	14	|	4	|	0	|	11	|	18	|	18	|	22

@@ -1,64 +1,46 @@
 # ann_thyroid
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 7200
+## Summary
 
-#features: 21
+**task**: classification
 
-  #binary_features: 15
+**instances**: 7200
 
-  #integer_features: 0
+**features**: 21
 
-  #float_features: 6
+**number of classes**: 21
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.7904668981481481
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- A1:continous
-
-A2:binary
-
-A3:binary
-
-A4:binary
-
-A5:binary
-
-A6:binary
-
-A7:binary
-
-A8:binary
-
-A9:binary
-
-A10:binary
-
-A11:binary
-
-A12:binary
-
-A13:binary
-
-A14:binary
-
-A15:binary
-
-A16:binary
-
-A17:continous
-
-A18:continous
-
-A19:continous
-
-A20:continous
-
-A21:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	A1	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	A2	|	7200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	A3	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A4	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A5	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A6	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A7	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A8	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A9	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A10	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A11	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A12	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A13	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A14	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A15	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A16	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	A17	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	A18	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	A19	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	A20	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	A21	|	7200	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	target	|	7200	|	2	|	0	|	1	|	3	|	3	|	3	|	3

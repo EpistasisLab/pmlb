@@ -1,34 +1,31 @@
 # corral
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 160
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 6
+**instances**: 160
 
-  #integer_features: 0
+**features**: 6
 
-  #float_features: 0
+**number of classes**: 6
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.015625
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- A0:binary
-
-A1:binary
-
-B0:binary
-
-B1:binary
-
-Irrelevant:binary
-
-Correlated:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	A0	|	160	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	A1	|	160	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	B0	|	160	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	B1	|	160	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Irrelevant	|	160	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Correlated	|	160	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	160	|	0	|	0	|	0	|	0	|	0	|	1	|	1

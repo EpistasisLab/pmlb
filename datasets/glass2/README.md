@@ -1,40 +1,34 @@
 # glass2
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 163
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 0
+**instances**: 163
 
-  #integer_features: 0
+**features**: 9
 
-  #float_features: 9
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.004554179683089322
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Refractive Index:continous
-
-Sodium:continous
-
-Magnesium:continous
-
-Aluminum:continous
-
-Silicon:continous
-
-Potassium:continous
-
-Calcium:continous
-
-Barium:continous
-
-Iron:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Refractive Index	|	163	|	1	|	0	|	1	|	1	|	1	|	1	|	1
+|	Sodium	|	163	|	13	|	0	|	10	|	12	|	13	|	13	|	14
+|	Magnesium	|	163	|	3	|	0	|	0	|	3	|	3	|	3	|	4
+|	Aluminum	|	163	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	Silicon	|	163	|	72	|	0	|	69	|	72	|	72	|	73	|	74
+|	Potassium	|	163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Calcium	|	163	|	8	|	1	|	7	|	8	|	8	|	9	|	16
+|	Barium	|	163	|	0	|	0	|	0	|	0	|	0	|	0	|	3
+|	Iron	|	163	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	target	|	163	|	0	|	0	|	0	|	0	|	0	|	1	|	1

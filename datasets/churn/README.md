@@ -1,62 +1,45 @@
 # churn
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 5000
+## Summary
 
-#features: 20
+**task**: classification
 
-  #binary_features: 2
+**instances**: 5000
 
-  #integer_features: 2
+**features**: 20
 
-  #float_features: 16
+**number of classes**: 20
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.5143758400000001
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- state:discrete
-
-account length:continous
-
-area code:continous
-
-phone number:discrete
-
-international plan:binary
-
-voice mail plan:binary
-
-number vmail messages:continous
-
-total day minutes:continous
-
-total day calls:continous
-
-total day charge:continous
-
-total eve minutes:continous
-
-total eve calls:continous
-
-total eve charge:continous
-
-total night minutes:continous
-
-total night calls:continous
-
-total night charge:continous
-
-total intl minutes:continous
-
-total intl calls:continous
-
-total intl charge:continous
-
-number customer service calls:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	state	|	5000	|	25	|	14	|	0	|	13	|	26	|	39	|	50
+|	account length	|	5000	|	100	|	39	|	1	|	73	|	100	|	127	|	243
+|	area code	|	5000	|	436	|	42	|	408	|	408	|	415	|	415	|	510
+|	phone number	|	5000	|	2499	|	1443	|	0	|	1249	|	2499	|	3749	|	4999
+|	international plan	|	5000	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	voice mail plan	|	5000	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	number vmail messages	|	5000	|	7	|	13	|	0	|	0	|	0	|	17	|	52
+|	total day minutes	|	5000	|	180	|	53	|	0	|	143	|	180	|	216	|	351
+|	total day calls	|	5000	|	100	|	19	|	0	|	87	|	100	|	113	|	165
+|	total day charge	|	5000	|	30	|	9	|	0	|	24	|	30	|	36	|	59
+|	total eve minutes	|	5000	|	200	|	50	|	0	|	166	|	201	|	234	|	363
+|	total eve calls	|	5000	|	100	|	19	|	0	|	87	|	100	|	114	|	170
+|	total eve charge	|	5000	|	17	|	4	|	0	|	14	|	17	|	19	|	30
+|	total night minutes	|	5000	|	200	|	50	|	0	|	166	|	200	|	234	|	395
+|	total night calls	|	5000	|	99	|	19	|	0	|	87	|	100	|	113	|	175
+|	total night charge	|	5000	|	9	|	2	|	0	|	7	|	9	|	10	|	17
+|	total intl minutes	|	5000	|	10	|	2	|	0	|	8	|	10	|	12	|	20
+|	total intl calls	|	5000	|	4	|	2	|	0	|	3	|	4	|	6	|	20
+|	total intl charge	|	5000	|	2	|	0	|	0	|	2	|	2	|	3	|	5
+|	number customer service calls	|	5000	|	1	|	1	|	0	|	1	|	1	|	2	|	9
+|	target	|	5000	|	0	|	0	|	0	|	0	|	0	|	0	|	1
