@@ -1,32 +1,30 @@
 # phoneme
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 5404
+## Summary
 
-#features: 5
+**task**: classification
 
-  #binary_features: 0
+**instances**: 5404
 
-  #integer_features: 0
+**features**: 5
 
-  #float_features: 5
+**number of classes**: 5
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.1705916225117124
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Aa:continous
-
-Ao:continous
-
-Dcl:continous
-
-Iy:continous
-
-Sh:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Aa	|	5404	|	0	|	0	|	-1	|	0	|	0	|	1	|	4
+|	Ao	|	5404	|	1	|	0	|	-1	|	0	|	1	|	1	|	4
+|	Dcl	|	5404	|	0	|	0	|	-1	|	0	|	0	|	1	|	3
+|	Iy	|	5404	|	0	|	0	|	-1	|	0	|	0	|	0	|	2
+|	Sh	|	5404	|	0	|	0	|	-1	|	0	|	0	|	0	|	2
+|	target	|	5404	|	0	|	0	|	0	|	0	|	0	|	1	|	1

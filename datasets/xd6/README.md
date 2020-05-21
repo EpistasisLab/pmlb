@@ -1,40 +1,34 @@
 # xd6
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 973
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 9
+**instances**: 973
 
-  #integer_features: 0
+**features**: 9
 
-  #float_features: 0
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.11433155633766365
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Attribute 1:binary
-
-Attribute 2:binary
-
-Attribute 3:binary
-
-Attribute 4:binary
-
-Attribute 5:binary
-
-Attribute 6:binary
-
-Attribute 7:binary
-
-Attribute 8:binary
-
-Attribute 9:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Attribute 1	|	973	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Attribute 2	|	973	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Attribute 3	|	973	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Attribute 4	|	973	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Attribute 5	|	973	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Attribute 6	|	973	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Attribute 7	|	973	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Attribute 8	|	973	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Attribute 9	|	973	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	target	|	973	|	0	|	0	|	0	|	0	|	0	|	1	|	1

@@ -1,42 +1,35 @@
 # breast
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 699
+## Summary
 
-#features: 10
+**task**: classification
 
-  #binary_features: 0
+**instances**: 699
 
-  #integer_features: 1
+**features**: 10
 
-  #float_features: 9
+**number of classes**: 10
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.09637516091862275
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Sample code number:continous
-
-Clump Thickness:continous
-
-Uniformity of Cell Size:continous
-
-Uniformity of Cell Shape:continous
-
-Marginal Adhesion:continous
-
-Single Epithelial Cell Size:continous
-
-Bare Nuclei:discrete
-
-Bland Chromatin:continous
-
-Normal Nucleoli:continous
-
-Mitoses:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Sample code number	|	699	|	1071704	|	617095	|	61634	|	870688	|	1171710	|	1238298	|	13454352
+|	Clump Thickness	|	699	|	4	|	2	|	1	|	2	|	4	|	6	|	10
+|	Uniformity of Cell Size	|	699	|	3	|	3	|	1	|	1	|	1	|	5	|	10
+|	Uniformity of Cell Shape	|	699	|	3	|	2	|	1	|	1	|	1	|	5	|	10
+|	Marginal Adhesion	|	699	|	2	|	2	|	1	|	1	|	1	|	4	|	10
+|	Single Epithelial Cell Size	|	699	|	3	|	2	|	1	|	2	|	2	|	4	|	10
+|	Bare Nuclei	|	699	|	1	|	2	|	0	|	0	|	0	|	1	|	10
+|	Bland Chromatin	|	699	|	3	|	2	|	1	|	2	|	3	|	5	|	10
+|	Normal Nucleoli	|	699	|	2	|	3	|	1	|	1	|	1	|	4	|	10
+|	Mitoses	|	699	|	1	|	1	|	1	|	1	|	1	|	1	|	10
+|	target	|	699	|	0	|	0	|	0	|	0	|	0	|	1	|	1

@@ -1,46 +1,37 @@
 # solar_flare_1
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 315
+## Summary
 
-#features: 12
+**task**: classification
 
-  #binary_features: 1
+**instances**: 315
 
-  #integer_features: 11
+**features**: 12
 
-  #float_features: 0
+**number of classes**: 12
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 5
+![Labels](label.svg)
 
-Imbalance metric: 0.03232552280171328
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- largest_spot_size:discrete
-
-spot_distribution:discrete
-
-Activity:binary
-
-Evolution:discrete
-
-Previous_24_hour_flare_activity_code:binary
-
-Historically-complex:binary
-
-Did_region_become_historically_complex:binary
-
-Area:binary
-
-Area_of_the_largest_spot:binary
-
-C-class_flares_production_by_this_region:discrete
-
-M-class_flares_production_by_this_region:discrete
-
-X-class_flares_production_by_this_region:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	largest_spot_size	|	315	|	2	|	1	|	0	|	2	|	4	|	4	|	5
+|	spot_distribution	|	315	|	1	|	0	|	0	|	1	|	2	|	2	|	3
+|	Activity	|	315	|	1	|	0	|	1	|	1	|	1	|	1	|	2
+|	Evolution	|	315	|	2	|	0	|	1	|	2	|	3	|	3	|	3
+|	Previous_24_hour_flare_activity_code	|	315	|	1	|	0	|	1	|	1	|	1	|	1	|	3
+|	Historically-complex	|	315	|	1	|	0	|	1	|	1	|	1	|	2	|	2
+|	Did_region_become_historically_complex	|	315	|	1	|	0	|	1	|	2	|	2	|	2	|	2
+|	Area	|	315	|	1	|	0	|	1	|	1	|	1	|	1	|	2
+|	Area_of_the_largest_spot	|	315	|	1	|	0	|	1	|	1	|	2	|	2	|	2
+|	C-class_flares_production_by_this_region	|	315	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	M-class_flares_production_by_this_region	|	315	|	0	|	0	|	0	|	0	|	0	|	0	|	4
+|	X-class_flares_production_by_this_region	|	315	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	315	|	2	|	1	|	0	|	1	|	2	|	3	|	5

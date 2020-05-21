@@ -1,40 +1,34 @@
 # glass
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 205
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 0
+**instances**: 205
 
-  #integer_features: 0
+**features**: 9
 
-  #float_features: 9
+**number of classes**: 9
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 5
+![Labels](label.svg)
 
-Imbalance metric: 0.10618679357525282
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- RI:continous
-
-Na:continous
-
-Mg:continous
-
-Al:continous
-
-Si:continous
-
-K:continous
-
-Ca:continous
-
-Ba:continous
-
-Fe:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	RI	|	205	|	1	|	0	|	1	|	1	|	1	|	1	|	1
+|	Na	|	205	|	13	|	0	|	10	|	12	|	13	|	13	|	15
+|	Mg	|	205	|	2	|	1	|	0	|	2	|	3	|	3	|	4
+|	Al	|	205	|	1	|	0	|	0	|	1	|	1	|	1	|	3
+|	Si	|	205	|	72	|	0	|	69	|	72	|	72	|	73	|	75
+|	K	|	205	|	0	|	0	|	0	|	0	|	0	|	0	|	6
+|	Ca	|	205	|	8	|	1	|	5	|	8	|	8	|	9	|	16
+|	Ba	|	205	|	0	|	0	|	0	|	0	|	0	|	0	|	3
+|	Fe	|	205	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	target	|	205	|	2	|	2	|	1	|	1	|	2	|	3	|	7

@@ -1,40 +1,34 @@
 # breast_cancer
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 286
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 2
+**instances**: 286
 
-  #integer_features: 7
+**features**: 9
 
-  #float_features: 0
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.1645068218494792
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- age:discrete
-
-menopause:discrete
-
-tumor-size:discrete
-
-inv-nodes:discrete
-
-node-caps:discrete
-
-deg-malig:discrete
-
-breast:binary
-
-breast-quad:discrete
-
-irradiat:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	age	|	286	|	2	|	1	|	0	|	2	|	3	|	3	|	5
+|	menopause	|	286	|	1	|	0	|	0	|	0	|	2	|	2	|	2
+|	tumor-size	|	286	|	4	|	2	|	0	|	3	|	4	|	5	|	10
+|	inv-nodes	|	286	|	1	|	1	|	0	|	0	|	0	|	1	|	6
+|	node-caps	|	286	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	deg-malig	|	286	|	2	|	0	|	1	|	2	|	2	|	3	|	3
+|	breast	|	286	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	breast-quad	|	286	|	2	|	1	|	0	|	2	|	3	|	3	|	5
+|	irradiat	|	286	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	286	|	0	|	0	|	0	|	0	|	0	|	1	|	1

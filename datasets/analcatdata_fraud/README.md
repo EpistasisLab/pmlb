@@ -1,44 +1,36 @@
 # analcatdata_fraud
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 42
+## Summary
 
-#features: 11
+**task**: classification
 
-  #binary_features: 10
+**instances**: 42
 
-  #integer_features: 1
+**features**: 11
 
-  #float_features: 0
+**number of classes**: 11
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.14512471655328796
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- AC1:binary
-
-AC9:binary
-
-AC16:binary
-
-CL7:binary
-
-CL11:binary
-
-IJ2:binary
-
-IJ3:binary
-
-IJ4:binary
-
-IJ6:binary
-
-IJ12:binary
-
-Total:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	AC1	|	42	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	AC9	|	42	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	AC16	|	42	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	CL7	|	42	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	CL11	|	42	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	IJ2	|	42	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	IJ3	|	42	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	IJ4	|	42	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	IJ6	|	42	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	IJ12	|	42	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Total	|	42	|	3	|	3	|	1	|	1	|	1	|	3	|	22
+|	target	|	42	|	0	|	0	|	0	|	0	|	0	|	1	|	1

@@ -1,34 +1,31 @@
 # analcatdata_creditscore
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 100
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 2
+**instances**: 100
 
-  #integer_features: 1
+**features**: 6
 
-  #float_features: 3
+**number of classes**: 6
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.21159999999999995
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Age:continous
-
-Income.per.dependent:continous
-
-Monthly.credit.card.exp:continous
-
-Own.home:binary
-
-Self.employed:binary
-
-Derogatory.reports:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Age	|	100	|	32	|	7	|	20	|	26	|	31	|	37	|	55
+|	Income.per.dependent	|	100	|	3	|	1	|	1	|	2	|	3	|	3	|	10
+|	Monthly.credit.card.exp	|	100	|	189	|	294	|	0	|	0	|	81	|	252	|	1898
+|	Own.home	|	100	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Self.employed	|	100	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Derogatory.reports	|	100	|	0	|	1	|	0	|	0	|	0	|	0	|	7
+|	target	|	100	|	0	|	0	|	0	|	0	|	1	|	1	|	1

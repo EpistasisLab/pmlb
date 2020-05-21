@@ -1,34 +1,31 @@
 # monk1
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 556
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 2
+**instances**: 556
 
-  #integer_features: 4
+**features**: 6
 
-  #float_features: 0
+**number of classes**: 6
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Head shape:discrete
-
-Body shape:discrete
-
-Is smiling:binary
-
-Holding:discrete
-
-Jacket color:discrete
-
-Has tie:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Head shape	|	556	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	Body shape	|	556	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	Is smiling	|	556	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Holding	|	556	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	Jacket color	|	556	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	Has tie	|	556	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	556	|	0	|	0	|	0	|	0	|	0	|	1	|	1

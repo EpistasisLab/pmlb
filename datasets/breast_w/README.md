@@ -1,40 +1,34 @@
 # breast_w
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 699
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 0
+**instances**: 699
 
-  #integer_features: 1
+**features**: 9
 
-  #float_features: 8
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.09637516091862275
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Clump_Thickness:continous
-
-Cell_Size_Uniformity:continous
-
-Cell_Shape_Uniformity:continous
-
-Marginal_Adhesion:continous
-
-Single_Epi_Cell_Size:continous
-
-Bare_Nuclei:discrete
-
-Bland_Chromatin:continous
-
-Normal_Nucleoli:continous
-
-Mitoses:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Clump_Thickness	|	699	|	4	|	2	|	1	|	2	|	4	|	6	|	10
+|	Cell_Size_Uniformity	|	699	|	3	|	3	|	1	|	1	|	1	|	5	|	10
+|	Cell_Shape_Uniformity	|	699	|	3	|	2	|	1	|	1	|	1	|	5	|	10
+|	Marginal_Adhesion	|	699	|	2	|	2	|	1	|	1	|	1	|	4	|	10
+|	Single_Epi_Cell_Size	|	699	|	3	|	2	|	1	|	2	|	2	|	4	|	10
+|	Bare_Nuclei	|	699	|	1	|	2	|	0	|	0	|	0	|	1	|	10
+|	Bland_Chromatin	|	699	|	3	|	2	|	1	|	2	|	3	|	5	|	10
+|	Normal_Nucleoli	|	699	|	2	|	3	|	1	|	1	|	1	|	4	|	10
+|	Mitoses	|	699	|	1	|	1	|	1	|	1	|	1	|	1	|	10
+|	target	|	699	|	0	|	0	|	0	|	0	|	0	|	1	|	1

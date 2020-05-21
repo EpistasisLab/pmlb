@@ -1,40 +1,34 @@
 # cmc
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1473
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 3
+**instances**: 1473
 
-  #integer_features: 4
+**features**: 9
 
-  #float_features: 2
+**number of classes**: 9
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.03070060823264104
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Wifes_age:continous
-
-Wifes_education:discrete
-
-Husbands_education:discrete
-
-Number_of_children_ever_born:continous
-
-Wifes_religion:binary
-
-Wifes_now_working?:binary
-
-Husbands_occupation:discrete
-
-Standard-of-living_index:discrete
-
-Media_exposure:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Wifes_age	|	1473	|	32	|	8	|	16	|	26	|	32	|	39	|	49
+|	Wifes_education	|	1473	|	2	|	1	|	1	|	2	|	3	|	4	|	4
+|	Husbands_education	|	1473	|	3	|	0	|	1	|	3	|	4	|	4	|	4
+|	Number_of_children_ever_born	|	1473	|	3	|	2	|	0	|	1	|	3	|	4	|	16
+|	Wifes_religion	|	1473	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	Wifes_now_working?	|	1473	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Husbands_occupation	|	1473	|	2	|	0	|	1	|	1	|	2	|	3	|	4
+|	Standard-of-living_index	|	1473	|	3	|	0	|	1	|	3	|	3	|	4	|	4
+|	Media_exposure	|	1473	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	1473	|	1	|	0	|	1	|	1	|	2	|	3	|	3

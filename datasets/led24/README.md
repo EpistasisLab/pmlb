@@ -1,70 +1,49 @@
 # led24
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 3200
+## Summary
 
-#features: 24
+**task**: classification
 
-  #binary_features: 24
+**instances**: 3200
 
-  #integer_features: 0
+**features**: 24
 
-  #float_features: 0
+**number of classes**: 24
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 10
+![Labels](label.svg)
 
-Imbalance metric: 0.0001885850694444445
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- attribute#1:binary
-
-attribute#2:binary
-
-attribute#3:binary
-
-attribute#4:binary
-
-attribute#5:binary
-
-attribute#6:binary
-
-attribute#7:binary
-
-irrelevant1:binary
-
-irrelevant2:binary
-
-irrelevant3:binary
-
-irrelevant4:binary
-
-irrelevant5:binary
-
-irrelevant6:binary
-
-irrelevant7:binary
-
-irrelevant8:binary
-
-irrelevant9:binary
-
-irrelevant10:binary
-
-irrelevant11:binary
-
-irrelevant12:binary
-
-irrelevant13:binary
-
-irrelevant14:binary
-
-irrelevant15:binary
-
-irrelevant16:binary
-
-irrelevant17:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	attribute#1	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#2	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#3	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#4	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#5	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	attribute#6	|	3200	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	attribute#7	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	irrelevant1	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant2	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	irrelevant3	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	irrelevant4	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant5	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	irrelevant6	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant7	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant8	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant9	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant10	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant11	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant12	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	irrelevant13	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant14	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant15	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant16	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	irrelevant17	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	target	|	3200	|	4	|	2	|	0	|	2	|	5	|	7	|	9

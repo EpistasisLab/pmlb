@@ -1,40 +1,34 @@
 # tic_tac_toe
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 958
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 0
+**instances**: 958
 
-  #integer_features: 9
+**features**: 9
 
-  #float_features: 0
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.09418107487327897
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- t1:discrete
-
-t2:discrete
-
-t3:discrete
-
-t4:discrete
-
-t5:discrete
-
-t6:discrete
-
-t7:discrete
-
-t8:discrete
-
-t9:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	t1	|	958	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	t2	|	958	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	t3	|	958	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	t4	|	958	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	t5	|	958	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	t6	|	958	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	t7	|	958	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	t8	|	958	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	t9	|	958	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	target	|	958	|	0	|	0	|	0	|	0	|	1	|	1	|	1

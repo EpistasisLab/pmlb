@@ -1,72 +1,50 @@
 # hypothyroid
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 3163
+## Summary
 
-#features: 25
+**task**: classification
 
-  #binary_features: 17
+**instances**: 3163
 
-  #integer_features: 8
+**features**: 25
 
-  #float_features: 0
+**number of classes**: 25
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.8181582834802777
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- age:discrete
-
-sex:discrete
-
-on_thyroxine:binary
-
-query_on_thyroxine:binary
-
-on_antithyroid_medication:binary
-
-thyroid_surgery:binary
-
-query_hypothyroid:binary
-
-query_hyperthyroid:binary
-
-pregnant:binary
-
-sick:binary
-
-tumor:binary
-
-lithium:binary
-
-goitre:binary
-
-TSH_measured:binary
-
-TSH:discrete
-
-T3_measured:binary
-
-T3:discrete
-
-TT4_measured:binary
-
-TT4:discrete
-
-T4U_measured:binary
-
-T4U:discrete
-
-FTI_measured:binary
-
-FTI:discrete
-
-TBG_measured:binary
-
-TBG:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	age	|	3163	|	50	|	25	|	0	|	29	|	51	|	69	|	92
+|	sex	|	3163	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	on_thyroxine	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	query_on_thyroxine	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	on_antithyroid_medication	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	thyroid_surgery	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	query_hypothyroid	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	query_hyperthyroid	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	pregnant	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	sick	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	tumor	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	lithium	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	goitre	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	TSH_measured	|	3163	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	TSH	|	3163	|	78	|	86	|	0	|	0	|	44	|	133	|	239
+|	T3_measured	|	3163	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	T3	|	3163	|	31	|	21	|	0	|	16	|	23	|	41	|	69
+|	TT4_measured	|	3163	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	TT4	|	3163	|	139	|	107	|	0	|	26	|	136	|	250	|	268
+|	T4U_measured	|	3163	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	T4U	|	3163	|	73	|	32	|	0	|	54	|	66	|	79	|	158
+|	FTI_measured	|	3163	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	FTI	|	3163	|	131	|	113	|	0	|	22	|	80	|	264	|	280
+|	TBG_measured	|	3163	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	TBG	|	3163	|	49	|	8	|	0	|	52	|	52	|	52	|	52
+|	target	|	3163	|	0	|	0	|	0	|	1	|	1	|	1	|	1

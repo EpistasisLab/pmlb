@@ -1,36 +1,32 @@
 # prnn_crabs
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 200
+## Summary
 
-#features: 7
+**task**: classification
 
-  #binary_features: 1
+**instances**: 200
 
-  #integer_features: 0
+**features**: 7
 
-  #float_features: 6
+**number of classes**: 7
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- sex:binary
-
-index:continous
-
-FL:continous
-
-RW:continous
-
-CL:continous
-
-CW:continous
-
-BD:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	sex	|	200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	index	|	200	|	25	|	14	|	1	|	13	|	25	|	38	|	50
+|	FL	|	200	|	15	|	3	|	7	|	12	|	15	|	18	|	23
+|	RW	|	200	|	12	|	2	|	6	|	11	|	12	|	14	|	20
+|	CL	|	200	|	32	|	7	|	14	|	27	|	32	|	37	|	47
+|	CW	|	200	|	36	|	7	|	17	|	31	|	36	|	42	|	54
+|	BD	|	200	|	14	|	3	|	6	|	11	|	13	|	16	|	21
+|	target	|	200	|	0	|	0	|	0	|	0	|	0	|	1	|	1

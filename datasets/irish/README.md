@@ -1,32 +1,30 @@
 # irish
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 500
+## Summary
 
-#features: 5
+**task**: classification
 
-  #binary_features: 1
+**instances**: 500
 
-  #integer_features: 3
+**features**: 5
 
-  #float_features: 1
+**number of classes**: 5
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.01254400000000001
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Sex:binary
-
-DVRT:continous
-
-Educational_level:discrete
-
-Prestige_score:discrete
-
-Type_school:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Sex	|	500	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	DVRT	|	500	|	100	|	15	|	65	|	90	|	101	|	111	|	140
+|	Educational_level	|	500	|	6	|	3	|	0	|	4	|	6	|	10	|	10
+|	Prestige_score	|	500	|	10	|	8	|	0	|	2	|	8	|	18	|	28
+|	Type_school	|	500	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	target	|	500	|	0	|	0	|	0	|	0	|	0	|	1	|	1

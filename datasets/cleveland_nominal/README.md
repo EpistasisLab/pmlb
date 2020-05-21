@@ -1,36 +1,32 @@
 # cleveland_nominal
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 303
+## Summary
 
-#features: 7
+**task**: classification
 
-  #binary_features: 3
+**instances**: 303
 
-  #integer_features: 4
+**features**: 7
 
-  #float_features: 0
+**number of classes**: 7
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 5
+![Labels](label.svg)
 
-Imbalance metric: 0.19400603426679297
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- sex:binary
-
-cp:discrete
-
-fbs:binary
-
-restecg:discrete
-
-exang:binary
-
-slope:discrete
-
-thal:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	sex	|	303	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	cp	|	303	|	3	|	0	|	1	|	3	|	3	|	4	|	4
+|	fbs	|	303	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	restecg	|	303	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	exang	|	303	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	slope	|	303	|	1	|	0	|	1	|	1	|	2	|	2	|	3
+|	thal	|	303	|	0	|	0	|	0	|	0	|	0	|	2	|	3
+|	target	|	303	|	0	|	1	|	0	|	0	|	0	|	2	|	4

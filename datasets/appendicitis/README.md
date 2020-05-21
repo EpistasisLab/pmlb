@@ -1,36 +1,32 @@
 # appendicitis
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 106
+## Summary
 
-#features: 7
+**task**: classification
 
-  #binary_features: 0
+**instances**: 106
 
-  #integer_features: 0
+**features**: 7
 
-  #float_features: 7
+**number of classes**: 7
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.3645425418298327
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- At1:continous
-
-At2:continous
-
-At3:continous
-
-At4:continous
-
-At5:continous
-
-At6:continous
-
-At7:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	At1	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	At2	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	At3	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	At4	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	At5	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	At6	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	At7	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	106	|	0	|	0	|	0	|	0	|	0	|	0	|	1

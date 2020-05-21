@@ -1,138 +1,83 @@
 # molecular_biology_promoters
 
-## Summary Stats
-
-#instances: 106
-
-#features: 58
-
-  #binary_features: 0
-
-  #integer_features: 58
-
-  #float_features: 0
-
-Endpoint type: binary
-
-#Classes: 2
-
-Imbalance metric: 0.0
-
-## Feature Types
-
- instance:discrete
-
-p-50:discrete
-
-p-49:discrete
-
-p-48:discrete
-
-p-47:discrete
-
-p-46:discrete
-
-p-45:discrete
-
-p-44:discrete
-
-p-43:discrete
-
-p-42:discrete
-
-p-41:discrete
-
-p-40:discrete
-
-p-39:discrete
-
-p-38:discrete
-
-p-37:discrete
-
-p-36:discrete
-
-p-35:discrete
-
-p-34:discrete
-
-p-33:discrete
-
-p-32:discrete
-
-p-31:discrete
-
-p-30:discrete
-
-p-29:discrete
-
-p-28:discrete
-
-p-27:discrete
-
-p-26:discrete
-
-p-25:discrete
-
-p-24:discrete
-
-p-23:discrete
-
-p-22:discrete
-
-p-21:discrete
-
-p-20:discrete
-
-p-19:discrete
-
-p-18:discrete
-
-p-17:discrete
-
-p-16:discrete
-
-p-15:discrete
-
-p-14:discrete
-
-p-13:discrete
-
-p-12:discrete
-
-p-11:discrete
-
-p-10:discrete
-
-p-9:discrete
-
-p-8:discrete
-
-p-7:discrete
-
-p-6:discrete
-
-p-5:discrete
-
-p-4:discrete
-
-p-3:discrete
-
-p-2:discrete
-
-p-1:discrete
-
-p1:discrete
-
-p2:discrete
-
-p3:discrete
-
-p4:discrete
-
-p5:discrete
-
-p6:discrete
-
-p7:discrete
-
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
+
+## Summary
+
+**task**: classification
+
+**instances**: 106
+
+**features**: 58
+
+**number of classes**: 58
+
+## Summary Plots
+
+![Labels](label.svg)
+
+![Corr](corr.svg)
+
+## Data Summary
+
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	instance	|	106	|	52	|	30	|	0	|	26	|	52	|	78	|	105
+|	p-50	|	106	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	p-49	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-48	|	106	|	1	|	1	|	0	|	0	|	2	|	2	|	3
+|	p-47	|	106	|	1	|	1	|	0	|	1	|	2	|	2	|	3
+|	p-46	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-45	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-44	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p-43	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p-42	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p-41	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p-40	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p-39	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-38	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	p-37	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	p-36	|	106	|	1	|	1	|	0	|	1	|	3	|	3	|	3
+|	p-35	|	106	|	1	|	1	|	0	|	1	|	3	|	3	|	3
+|	p-34	|	106	|	1	|	0	|	0	|	1	|	2	|	2	|	3
+|	p-33	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-32	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-31	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-30	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	p-29	|	106	|	1	|	1	|	0	|	0	|	2	|	2	|	3
+|	p-28	|	106	|	1	|	1	|	0	|	1	|	2	|	2	|	3
+|	p-27	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-26	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	p-25	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	p-24	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-23	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-22	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-21	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-20	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p-19	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-18	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-17	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-16	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-15	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-14	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-13	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	p-12	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p-11	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-10	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-9	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-8	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-7	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p-6	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	p-5	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	p-4	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p-3	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	p-2	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	p-1	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	p1	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	p2	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	p3	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	p4	|	106	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	p5	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	p6	|	106	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	p7	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	target	|	106	|	0	|	0	|	0	|	0	|	0	|	1	|	1

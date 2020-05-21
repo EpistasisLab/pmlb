@@ -1,34 +1,31 @@
 # mfeat_morphological
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 2000
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 0
+**instances**: 2000
 
-  #integer_features: 0
+**features**: 6
 
-  #float_features: 6
+**number of classes**: 6
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 10
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- att1:continous
-
-att2:continous
-
-att3:continous
-
-att4:continous
-
-att5:continous
-
-att6:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	att1	|	2000	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	att2	|	2000	|	1	|	1	|	0	|	1	|	2	|	3	|	6
+|	att3	|	2000	|	0	|	0	|	0	|	0	|	1	|	1	|	5
+|	att4	|	2000	|	156	|	25	|	99	|	135	|	150	|	175	|	231
+|	att5	|	2000	|	1	|	0	|	1	|	1	|	1	|	1	|	2
+|	att6	|	2000	|	6155	|	3757	|	1439	|	3099	|	5255	|	9093	|	17572
+|	target	|	2000	|	5	|	2	|	1	|	3	|	5	|	8	|	10

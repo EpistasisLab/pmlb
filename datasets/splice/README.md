@@ -1,142 +1,85 @@
 # splice
 
-## Summary Stats
-
-#instances: 3188
-
-#features: 60
-
-  #binary_features: 0
-
-  #integer_features: 60
-
-  #float_features: 0
-
-Endpoint type: integer
-
-#Classes: 3
-
-Imbalance metric: 0.07767630417705039
-
-## Feature Types
-
- A0:discrete
-
-A1:discrete
-
-A2:discrete
-
-A3:discrete
-
-A4:discrete
-
-A5:discrete
-
-A6:discrete
-
-A7:discrete
-
-A8:discrete
-
-A9:discrete
-
-A10:discrete
-
-A11:discrete
-
-A12:discrete
-
-A13:discrete
-
-A14:discrete
-
-A15:discrete
-
-A16:discrete
-
-A17:discrete
-
-A18:discrete
-
-A19:discrete
-
-A20:discrete
-
-A21:discrete
-
-A22:discrete
-
-A23:discrete
-
-A24:discrete
-
-A25:discrete
-
-A26:discrete
-
-A27:discrete
-
-A28:discrete
-
-A29:discrete
-
-A30:discrete
-
-A31:discrete
-
-A32:discrete
-
-A33:discrete
-
-A34:discrete
-
-A35:discrete
-
-A36:discrete
-
-A37:discrete
-
-A38:discrete
-
-A39:discrete
-
-A40:discrete
-
-A41:discrete
-
-A42:discrete
-
-A43:discrete
-
-A44:discrete
-
-A45:discrete
-
-A46:discrete
-
-A47:discrete
-
-A48:discrete
-
-A49:discrete
-
-A50:discrete
-
-A51:discrete
-
-A52:discrete
-
-A53:discrete
-
-A54:discrete
-
-A55:discrete
-
-A56:discrete
-
-A57:discrete
-
-A58:discrete
-
-A59:discrete
-
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
+
+## Summary
+
+**task**: classification
+
+**instances**: 3188
+
+**features**: 60
+
+**number of classes**: 60
+
+## Summary Plots
+
+![Labels](label.svg)
+
+![Corr](corr.svg)
+
+## Data Summary
+
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	A0	|	3188	|	2	|	1	|	0	|	1	|	3	|	3	|	4
+|	A1	|	3188	|	1	|	1	|	0	|	1	|	1	|	3	|	4
+|	A2	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	3
+|	A3	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A4	|	3188	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A5	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A6	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A7	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A8	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A9	|	3188	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A10	|	3188	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A11	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A12	|	3188	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	A13	|	3188	|	1	|	1	|	0	|	0	|	1	|	2	|	4
+|	A14	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A15	|	3188	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	A16	|	3188	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A17	|	3188	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A18	|	3188	|	1	|	1	|	0	|	1	|	2	|	4	|	4
+|	A19	|	3188	|	1	|	1	|	0	|	1	|	2	|	4	|	4
+|	A20	|	3188	|	1	|	1	|	0	|	1	|	2	|	4	|	4
+|	A21	|	3188	|	1	|	1	|	0	|	1	|	1	|	4	|	4
+|	A22	|	3188	|	1	|	1	|	0	|	1	|	1	|	4	|	4
+|	A23	|	3188	|	1	|	1	|	0	|	1	|	1	|	4	|	4
+|	A24	|	3188	|	1	|	1	|	0	|	1	|	1	|	4	|	4
+|	A25	|	3188	|	1	|	1	|	0	|	1	|	2	|	4	|	4
+|	A26	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A27	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A28	|	3188	|	1	|	1	|	0	|	0	|	0	|	2	|	4
+|	A29	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A30	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A31	|	3188	|	2	|	1	|	0	|	1	|	2	|	4	|	4
+|	A32	|	3188	|	1	|	1	|	0	|	0	|	1	|	2	|	4
+|	A33	|	3188	|	1	|	1	|	0	|	0	|	1	|	2	|	4
+|	A34	|	3188	|	2	|	1	|	0	|	1	|	2	|	2	|	5
+|	A35	|	3188	|	2	|	1	|	0	|	1	|	2	|	5	|	5
+|	A36	|	3188	|	1	|	1	|	0	|	0	|	2	|	2	|	4
+|	A37	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A38	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A39	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A40	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A41	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A42	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A43	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A44	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A45	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A46	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A47	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A48	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A49	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A50	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A51	|	3188	|	1	|	1	|	0	|	0	|	1	|	2	|	4
+|	A52	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A53	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A54	|	3188	|	1	|	1	|	0	|	0	|	1	|	2	|	4
+|	A55	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A56	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	A57	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A58	|	3188	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	A59	|	3188	|	1	|	1	|	0	|	1	|	2	|	2	|	4
+|	target	|	3188	|	1	|	0	|	0	|	1	|	2	|	2	|	2
