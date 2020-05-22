@@ -1,2 +1,2 @@
 ,#instances,#features,#binary_features,#integer_features,#float_features,Endpoint_type,#Classes,Imbalance_metric
-0,2000,47,0,0,47,discrete,10.0,0.0
+0,2000,47,0,0,47,categorical,10.0,0.0

@@ -35,6 +35,7 @@ import pdb
 
 TARGET_NAME = 'target'
 
+# these are words that yaml doesn't like you to use
 protected_feature_names = ['y','Y','yes','Yes','YES','n','N','no','No','NO',
                            'true','True','TRUE','false','False','FALSE',
                            'on','On','ON','off','Off','OFF']
@@ -86,10 +87,10 @@ def get_type(x):
     if x.dtype=='float64':
         return 'continuous'
     elif x.dtype=='int64':
-        if x.nunique() == 2:
-            return 'binary'
-        else:
-            return 'discrete'
+        # if x.nunique() == 2:
+        #     return 'binary'
+        # else:
+        return 'categorical'
     else:
         raise ValueError("Error getting type")
 
