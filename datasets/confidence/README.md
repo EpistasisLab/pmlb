@@ -1,28 +1,28 @@
 # confidence
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 72
+## Summary
 
-#features: 3
+**task**: classification
 
-  #binary_features: 0
+**instances**: 72
 
-  #integer_features: 0
+**features**: 3
 
-  #float_features: 3
+**number of classes**: 3
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 6
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- P:continous
-
-N:continous
-
-O:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	P	|	72	|	338	|	263	|	50	|	89	|	309	|	474	|	1051
+|	N	|	72	|	1184	|	1005	|	120	|	209	|	1067	|	2171	|	2567
+|	O	|	72	|	400	|	250	|	45	|	150	|	359	|	620	|	899
+|	target	|	72	|	2	|	1	|	0	|	1	|	2	|	4	|	5

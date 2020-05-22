@@ -1,36 +1,32 @@
 # ecoli
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 327
+## Summary
 
-#features: 7
+**task**: classification
 
-  #binary_features: 0
+**instances**: 327
 
-  #integer_features: 0
+**features**: 7
 
-  #float_features: 7
+**number of classes**: 7
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 5
+![Labels](label.svg)
 
-Imbalance metric: 0.10896482712828137
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- mcg:continous
-
-gvh:continous
-
-lip:continous
-
-chg:continous
-
-aac:continous
-
-alm1:continous
-
-alm2:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	mcg	|	327	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	gvh	|	327	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	lip	|	327	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	chg	|	327	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	aac	|	327	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	alm1	|	327	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	alm2	|	327	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	target	|	327	|	2	|	2	|	0	|	0	|	1	|	4	|	7

@@ -1,50 +1,39 @@
 # schizo
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 340
+## Summary
 
-#features: 14
+**task**: classification
 
-  #binary_features: 1
+**instances**: 340
 
-  #integer_features: 12
+**features**: 14
 
-  #float_features: 1
+**number of classes**: 14
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.001695501730103808
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- ID:continous
-
-target:discrete
-
-gain_ratio_1:discrete
-
-gain_ratio_2:discrete
-
-gain_ratio_3:discrete
-
-gain_ratio_4:discrete
-
-gain_ratio_5:discrete
-
-gain_ratio_6:discrete
-
-gain_ratio_7:discrete
-
-gain_ratio_8:discrete
-
-gain_ratio_9:discrete
-
-gain_ratio_10:discrete
-
-gain_ratio_11:discrete
-
-sex:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	ID	|	340	|	134	|	89	|	7	|	59	|	130	|	233	|	276
+|	target	|	340	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	gain_ratio_1	|	340	|	120	|	62	|	0	|	67	|	125	|	184	|	199
+|	gain_ratio_2	|	340	|	117	|	60	|	0	|	67	|	121	|	180	|	193
+|	gain_ratio_3	|	340	|	118	|	59	|	0	|	70	|	121	|	181	|	190
+|	gain_ratio_4	|	340	|	123	|	64	|	0	|	71	|	126	|	189	|	202
+|	gain_ratio_5	|	340	|	120	|	62	|	0	|	69	|	124	|	185	|	196
+|	gain_ratio_6	|	340	|	121	|	62	|	0	|	70	|	128	|	189	|	194
+|	gain_ratio_7	|	340	|	121	|	59	|	0	|	74	|	128	|	186	|	190
+|	gain_ratio_8	|	340	|	118	|	60	|	0	|	67	|	127	|	184	|	187
+|	gain_ratio_9	|	340	|	119	|	60	|	0	|	68	|	127	|	187	|	187
+|	gain_ratio_10	|	340	|	126	|	62	|	0	|	73	|	135	|	195	|	195
+|	gain_ratio_11	|	340	|	125	|	63	|	0	|	71	|	131	|	196	|	198
+|	sex	|	340	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	target.1	|	340	|	0	|	0	|	0	|	0	|	0	|	1	|	1

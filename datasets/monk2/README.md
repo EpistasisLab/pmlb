@@ -1,34 +1,31 @@
 # monk2
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 601
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 0
+**instances**: 601
 
-  #integer_features: 6
+**features**: 6
 
-  #float_features: 0
+**number of classes**: 6
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.09889507504132047
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- attribute#1:discrete
-
-attribute#2:discrete
-
-attribute#3:binary
-
-attribute#4:discrete
-
-attribute#5:discrete
-
-attribute#6:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	attribute#1	|	601	|	1	|	0	|	1	|	1	|	2	|	3	|	3
+|	attribute#2	|	601	|	1	|	0	|	1	|	1	|	2	|	3	|	3
+|	attribute#3	|	601	|	1	|	0	|	1	|	1	|	2	|	2	|	2
+|	attribute#4	|	601	|	2	|	0	|	1	|	1	|	2	|	3	|	3
+|	attribute#5	|	601	|	2	|	1	|	1	|	1	|	3	|	3	|	4
+|	attribute#6	|	601	|	1	|	0	|	1	|	1	|	2	|	2	|	2
+|	target	|	601	|	0	|	0	|	0	|	0	|	0	|	1	|	1

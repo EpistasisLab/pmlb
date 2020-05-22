@@ -1,42 +1,35 @@
 # analcatdata_cyyoung9302
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 92
+## Summary
 
-#features: 10
+**task**: classification
 
-  #binary_features: 2
+**instances**: 92
 
-  #integer_features: 2
+**features**: 10
 
-  #float_features: 6
+**number of classes**: 10
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.34451795841209826
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Year:discrete
-
-Pitcher:discrete
-
-League:binary
-
-Type:binary
-
-Wins:continous
-
-Win_pct:continous
-
-Saves:continous
-
-ERA:continous
-
-Strikeouts:continous
-
-Innings_pitched:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Year	|	92	|	1997	|	2	|	1993	|	1996	|	1998	|	2000	|	2002
+|	Pitcher	|	92	|	32	|	16	|	0	|	18	|	36	|	45	|	58
+|	League	|	92	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Type	|	92	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Wins	|	92	|	12	|	8	|	0	|	4	|	18	|	20	|	24
+|	Win_pct	|	92	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Saves	|	92	|	19	|	22	|	0	|	0	|	0	|	43	|	55
+|	ERA	|	92	|	2	|	0	|	1	|	2	|	3	|	3	|	4
+|	Strikeouts	|	92	|	150	|	87	|	42	|	70	|	152	|	206	|	372
+|	Innings_pitched	|	92	|	160	|	81	|	49	|	72	|	205	|	232	|	271
+|	target	|	92	|	0	|	0	|	0	|	0	|	0	|	0	|	1

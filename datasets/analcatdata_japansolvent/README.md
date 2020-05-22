@@ -1,40 +1,34 @@
 # analcatdata_japansolvent
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 52
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 0
+**instances**: 52
 
-  #integer_features: 1
+**features**: 9
 
-  #float_features: 8
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0014792899408284047
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Firm:discrete
-
-EBIT/TA:continous
-
-NI/TC:continous
-
-Sales/TA:continous
-
-EBIT/Sales:continous
-
-NI/Sales:continous
-
-WC/TA:continous
-
-Equity/TL:continous
-
-Equity/TA:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Firm	|	52	|	25	|	15	|	0	|	12	|	25	|	38	|	51
+|	EBIT/TA	|	52	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	NI/TC	|	52	|	0	|	0	|	-4	|	0	|	0	|	0	|	0
+|	Sales/TA	|	52	|	1	|	0	|	0	|	0	|	1	|	1	|	4
+|	EBIT/Sales	|	52	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	NI/Sales	|	52	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	WC/TA	|	52	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	Equity/TL	|	52	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	Equity/TA	|	52	|	0	|	0	|	-3	|	0	|	0	|	0	|	0
+|	target	|	52	|	0	|	0	|	0	|	0	|	1	|	1	|	1

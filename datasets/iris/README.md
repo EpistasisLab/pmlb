@@ -1,30 +1,29 @@
 # iris
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 150
+## Summary
 
-#features: 4
+**task**: classification
 
-  #binary_features: 0
+**instances**: 150
 
-  #integer_features: 0
+**features**: 4
 
-  #float_features: 4
+**number of classes**: 4
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- sepal-length:continous
-
-sepal-width:continous
-
-petal-length:continous
-
-petal-width:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	sepal-length	|	150	|	5	|	0	|	4	|	5	|	5	|	6	|	7
+|	sepal-width	|	150	|	3	|	0	|	2	|	2	|	3	|	3	|	4
+|	petal-length	|	150	|	3	|	1	|	1	|	1	|	4	|	5	|	6
+|	petal-width	|	150	|	1	|	0	|	0	|	0	|	1	|	1	|	2
+|	target	|	150	|	1	|	0	|	0	|	0	|	1	|	2	|	2

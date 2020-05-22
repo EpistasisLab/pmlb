@@ -1,36 +1,32 @@
 # led7
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 3200
+## Summary
 
-#features: 7
+**task**: classification
 
-  #binary_features: 7
+**instances**: 3200
 
-  #integer_features: 0
+**features**: 7
 
-  #float_features: 0
+**number of classes**: 7
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 10
+![Labels](label.svg)
 
-Imbalance metric: 0.0004364149305555553
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- attribute#1:binary
-
-attribute#2:binary
-
-attribute#3:binary
-
-attribute#4:binary
-
-attribute#5:binary
-
-attribute#6:binary
-
-attribute#7:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	attribute#1	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#2	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#3	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#4	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	attribute#5	|	3200	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	attribute#6	|	3200	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	attribute#7	|	3200	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	target	|	3200	|	4	|	2	|	0	|	2	|	5	|	7	|	9

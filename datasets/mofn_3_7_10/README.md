@@ -1,42 +1,35 @@
 # mofn_3_7_10
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1324
+## Summary
 
-#features: 10
+**task**: classification
 
-  #binary_features: 10
+**instances**: 1324
 
-  #integer_features: 0
+**features**: 10
 
-  #float_features: 0
+**number of classes**: 10
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.31238305601445765
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Bit-0:binary
-
-Bit-1:binary
-
-Bit-2:binary
-
-Bit-3:binary
-
-Bit-4:binary
-
-Bit-5:binary
-
-Bit-6:binary
-
-Bit-7:binary
-
-Bit-8:binary
-
-Bit-9:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Bit-0	|	1324	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit-1	|	1324	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit-2	|	1324	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Bit-3	|	1324	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit-4	|	1324	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Bit-5	|	1324	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Bit-6	|	1324	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit-7	|	1324	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit-8	|	1324	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit-9	|	1324	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	1324	|	0	|	0	|	0	|	1	|	1	|	1	|	1

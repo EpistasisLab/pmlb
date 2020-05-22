@@ -1,92 +1,60 @@
 # soybean
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 675
+## Summary
 
-#features: 35
+**task**: classification
 
-  #binary_features: 1
+**instances**: 675
 
-  #integer_features: 34
+**features**: 35
 
-  #float_features: 0
+**number of classes**: 35
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 18
+![Labels](label.svg)
 
-Imbalance metric: 0.03626782861292665
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- date:discrete
-
-plant-stand:discrete
-
-precip:discrete
-
-temp:discrete
-
-hail:discrete
-
-crop-hist:discrete
-
-area-damaged:discrete
-
-severity:discrete
-
-seed-tmt:discrete
-
-germination:discrete
-
-plant-growth:discrete
-
-leaves:binary
-
-leafspots-halo:discrete
-
-leafspots-marg:discrete
-
-leafspot-size:discrete
-
-leaf-shread:discrete
-
-leaf-malf:discrete
-
-leaf-mild:discrete
-
-stem:discrete
-
-lodging:discrete
-
-stem-cankers:discrete
-
-canker-lesion:discrete
-
-fruiting-bodies:discrete
-
-external-decay:discrete
-
-mycelium:discrete
-
-int-discolor:discrete
-
-sclerotia:discrete
-
-fruit-pods:discrete
-
-fruit-spots:discrete
-
-seed:discrete
-
-mold-growth:discrete
-
-seed-discolor:discrete
-
-seed-size:discrete
-
-shriveling:discrete
-
-roots:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	date	|	675	|	4	|	1	|	0	|	3	|	4	|	6	|	7
+|	plant-stand	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	2
+|	precip	|	675	|	1	|	0	|	0	|	1	|	1	|	2	|	3
+|	temp	|	675	|	2	|	0	|	0	|	1	|	3	|	3	|	3
+|	hail	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	2
+|	crop-hist	|	675	|	2	|	1	|	0	|	2	|	3	|	3	|	4
+|	area-damaged	|	675	|	2	|	1	|	0	|	1	|	2	|	4	|	4
+|	severity	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	3
+|	seed-tmt	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	3
+|	germination	|	675	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	plant-growth	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	2
+|	leaves	|	675	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	leafspots-halo	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	3
+|	leafspots-marg	|	675	|	1	|	1	|	0	|	1	|	3	|	3	|	3
+|	leafspot-size	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	3
+|	leaf-shread	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	leaf-malf	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	leaf-mild	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	3
+|	stem	|	675	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	lodging	|	675	|	1	|	0	|	0	|	2	|	2	|	2	|	2
+|	stem-cankers	|	675	|	2	|	1	|	0	|	1	|	3	|	3	|	4
+|	canker-lesion	|	675	|	2	|	0	|	0	|	2	|	3	|	3	|	4
+|	fruiting-bodies	|	675	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	external-decay	|	675	|	1	|	0	|	0	|	1	|	1	|	1	|	3
+|	mycelium	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	int-discolor	|	675	|	2	|	0	|	0	|	3	|	3	|	3	|	3
+|	sclerotia	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	fruit-pods	|	675	|	2	|	1	|	0	|	1	|	4	|	4	|	4
+|	fruit-spots	|	675	|	1	|	1	|	0	|	1	|	1	|	3	|	4
+|	seed	|	675	|	1	|	0	|	0	|	1	|	2	|	2	|	2
+|	mold-growth	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	seed-discolor	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	seed-size	|	675	|	1	|	0	|	0	|	2	|	2	|	2	|	2
+|	shriveling	|	675	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	roots	|	675	|	2	|	0	|	0	|	2	|	2	|	2	|	3
+|	target	|	675	|	8	|	5	|	0	|	3	|	7	|	12	|	18

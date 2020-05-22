@@ -1,138 +1,83 @@
 # promoters
 
-## Summary Stats
-
-#instances: 106
-
-#features: 58
-
-  #binary_features: 0
-
-  #integer_features: 58
-
-  #float_features: 0
-
-Endpoint type: binary
-
-#Classes: 2
-
-Imbalance metric: 0.0
-
-## Feature Types
-
- name:discrete
-
-A3:discrete
-
-A4:discrete
-
-A5:discrete
-
-A6:discrete
-
-A7:discrete
-
-A8:discrete
-
-A9:discrete
-
-A10:discrete
-
-A11:discrete
-
-A12:discrete
-
-A13:discrete
-
-A14:discrete
-
-A15:discrete
-
-A16:discrete
-
-A17:discrete
-
-A18:discrete
-
-A19:discrete
-
-A20:discrete
-
-A21:discrete
-
-A22:discrete
-
-A23:discrete
-
-A24:discrete
-
-A25:discrete
-
-A26:discrete
-
-A27:discrete
-
-A28:discrete
-
-A29:discrete
-
-A30:discrete
-
-A31:discrete
-
-A32:discrete
-
-A33:discrete
-
-A34:discrete
-
-A35:discrete
-
-A36:discrete
-
-A37:discrete
-
-A38:discrete
-
-A39:discrete
-
-A40:discrete
-
-A41:discrete
-
-A42:discrete
-
-A43:discrete
-
-A44:discrete
-
-A45:discrete
-
-A46:discrete
-
-A47:discrete
-
-A48:discrete
-
-A49:discrete
-
-A50:discrete
-
-A51:discrete
-
-A52:discrete
-
-A53:discrete
-
-A54:discrete
-
-A55:discrete
-
-A56:discrete
-
-A57:discrete
-
-A58:discrete
-
-A59:discrete
-
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
+
+## Summary
+
+**task**: classification
+
+**instances**: 106
+
+**features**: 58
+
+**number of classes**: 58
+
+## Summary Plots
+
+![Labels](label.svg)
+
+![Corr](corr.svg)
+
+## Data Summary
+
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	name	|	106	|	52	|	30	|	0	|	26	|	52	|	78	|	105
+|	A3	|	106	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	A4	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A5	|	106	|	1	|	1	|	0	|	0	|	2	|	2	|	3
+|	A6	|	106	|	1	|	1	|	0	|	1	|	2	|	2	|	3
+|	A7	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A8	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A9	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A10	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A11	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A12	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A13	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A14	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A15	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	A16	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A17	|	106	|	1	|	1	|	0	|	1	|	3	|	3	|	3
+|	A18	|	106	|	1	|	1	|	0	|	1	|	3	|	3	|	3
+|	A19	|	106	|	1	|	0	|	0	|	1	|	2	|	2	|	3
+|	A20	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A21	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A22	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A23	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	A24	|	106	|	1	|	1	|	0	|	0	|	2	|	2	|	3
+|	A25	|	106	|	1	|	1	|	0	|	1	|	2	|	2	|	3
+|	A26	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A27	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	A28	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	A29	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A30	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A31	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A32	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A33	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A34	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A35	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A36	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A37	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A38	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A39	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A40	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	A41	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A42	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A43	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A44	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A45	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A46	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A47	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	A48	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A49	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A50	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A51	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A52	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A53	|	106	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	A54	|	106	|	1	|	1	|	0	|	0	|	1	|	3	|	3
+|	A55	|	106	|	1	|	1	|	0	|	1	|	2	|	3	|	3
+|	A56	|	106	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	A57	|	106	|	1	|	1	|	0	|	1	|	1	|	2	|	3
+|	A58	|	106	|	1	|	1	|	0	|	1	|	1	|	3	|	3
+|	A59	|	106	|	1	|	1	|	0	|	0	|	2	|	3	|	3
+|	target	|	106	|	0	|	0	|	0	|	0	|	0	|	1	|	1

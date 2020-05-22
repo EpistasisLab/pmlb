@@ -1,32 +1,30 @@
 # tae
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 151
+## Summary
 
-#features: 5
+**task**: classification
 
-  #binary_features: 0
+**instances**: 151
 
-  #integer_features: 2
+**features**: 5
 
-  #float_features: 3
+**number of classes**: 5
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.0003070040787684745
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Whether_of_not_the_TA_is_a_native_English_speaker:binary
-
-Course_instructor:continous
-
-Course:continous
-
-Summer_or_regular_semester:binary
-
-Class_size:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Whether_of_not_the_TA_is_a_native_English_speaker	|	151	|	1	|	0	|	1	|	2	|	2	|	2	|	2
+|	Course_instructor	|	151	|	13	|	6	|	1	|	8	|	13	|	20	|	25
+|	Course	|	151	|	8	|	7	|	1	|	3	|	4	|	15	|	26
+|	Summer_or_regular_semester	|	151	|	1	|	0	|	1	|	2	|	2	|	2	|	2
+|	Class_size	|	151	|	27	|	12	|	3	|	19	|	27	|	37	|	66
+|	target	|	151	|	2	|	0	|	1	|	1	|	2	|	3	|	3

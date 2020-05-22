@@ -1,108 +1,68 @@
 # flags
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 178
+## Summary
 
-#features: 43
+**task**: classification
 
-  #binary_features: 36
+**instances**: 178
 
-  #integer_features: 7
+**features**: 43
 
-  #float_features: 0
+**number of classes**: 43
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 5
+![Labels](label.svg)
 
-Imbalance metric: 0.04391806590077009
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- bars:discrete
-
-stripes:discrete
-
-colors:discrete
-
-red:binary
-
-green:binary
-
-blue:binary
-
-gold:binary
-
-white:binary
-
-black:binary
-
-orange:binary
-
-circles:discrete
-
-crosses:discrete
-
-saltires:binary
-
-quarters:discrete
-
-sunstars:discrete
-
-crescent:binary
-
-triangle:binary
-
-icon:binary
-
-animate:binary
-
-text:binary
-
-mainhue_green:binary
-
-mainhue_red:binary
-
-mainhue_blue:binary
-
-mainhue_gold:binary
-
-mainhue_white:binary
-
-mainhue_orange:binary
-
-mainhue_black:binary
-
-mainhue_brown:binary
-
-topleft_black:binary
-
-topleft_red:binary
-
-topleft_green:binary
-
-topleft_blue:binary
-
-topleft_white:binary
-
-topleft_orange:binary
-
-topleft_gold:binary
-
-botright_green:binary
-
-botright_red:binary
-
-botright_white:binary
-
-botright_black:binary
-
-botright_blue:binary
-
-botright_gold:binary
-
-botright_orange:binary
-
-botright_brown:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	target	|	178	|	2	|	1	|	0	|	1	|	1	|	2	|	6
+|	bars	|	178	|	0	|	1	|	0	|	0	|	0	|	0	|	5
+|	stripes	|	178	|	1	|	2	|	0	|	0	|	0	|	3	|	14
+|	colors	|	178	|	3	|	1	|	1	|	3	|	3	|	4	|	8
+|	red	|	178	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	green	|	178	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	blue	|	178	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	gold	|	178	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	white	|	178	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	black	|	178	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	orange	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	circles	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	crosses	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	saltires	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	quarters	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	4
+|	sunstars	|	178	|	1	|	4	|	0	|	0	|	0	|	1	|	50
+|	crescent	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	triangle	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	icon	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	animate	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	text	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mainhue_green	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mainhue_red	|	178	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	mainhue_blue	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mainhue_gold	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mainhue_white	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mainhue_orange	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mainhue_black	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	mainhue_brown	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	topleft_black	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	topleft_red	|	178	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	topleft_green	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	topleft_blue	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	topleft_white	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	topleft_orange	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	topleft_gold	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	botright_green	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	botright_red	|	178	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	botright_white	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	botright_black	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	botright_blue	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	botright_gold	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	botright_orange	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	botright_brown	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	1

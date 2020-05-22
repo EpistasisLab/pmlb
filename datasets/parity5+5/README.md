@@ -1,42 +1,35 @@
 # parity5+5
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1124
+## Summary
 
-#features: 10
+**task**: classification
 
-  #binary_features: 10
+**instances**: 1124
 
-  #integer_features: 0
+**features**: 10
 
-  #float_features: 0
+**number of classes**: 10
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 7.915299958207264e-05
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Bit 1:binary
-
-Bit 2:binary
-
-Bit 3:binary
-
-Bit 4:binary
-
-Bit 5:binary
-
-Bit 6:binary
-
-Bit 7:binary
-
-Bit 8:binary
-
-Bit 9:binary
-
-Bit 10:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Bit 1	|	1124	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 2	|	1124	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 3	|	1124	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Bit 4	|	1124	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Bit 5	|	1124	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 6	|	1124	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 7	|	1124	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 8	|	1124	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 9	|	1124	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Bit 10	|	1124	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	1124	|	0	|	0	|	0	|	0	|	1	|	1	|	1

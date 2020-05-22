@@ -1,174 +1,101 @@
 # mfeat_fourier
 
-## Summary Stats
-
-#instances: 2000
-
-#features: 76
-
-  #binary_features: 0
-
-  #integer_features: 0
-
-  #float_features: 76
-
-Endpoint type: integer
-
-#Classes: 10
-
-Imbalance metric: 0.0
-
-## Feature Types
-
- att1:continous
-
-att2:continous
-
-att3:continous
-
-att4:continous
-
-att5:continous
-
-att6:continous
-
-att7:continous
-
-att8:continous
-
-att9:continous
-
-att10:continous
-
-att11:continous
-
-att12:continous
-
-att13:continous
-
-att14:continous
-
-att15:continous
-
-att16:continous
-
-att17:continous
-
-att18:continous
-
-att19:continous
-
-att20:continous
-
-att21:continous
-
-att22:continous
-
-att23:continous
-
-att24:continous
-
-att25:continous
-
-att26:continous
-
-att27:continous
-
-att28:continous
-
-att29:continous
-
-att30:continous
-
-att31:continous
-
-att32:continous
-
-att33:continous
-
-att34:continous
-
-att35:continous
-
-att36:continous
-
-att37:continous
-
-att38:continous
-
-att39:continous
-
-att40:continous
-
-att41:continous
-
-att42:continous
-
-att43:continous
-
-att44:continous
-
-att45:continous
-
-att46:continous
-
-att47:continous
-
-att48:continous
-
-att49:continous
-
-att50:continous
-
-att51:continous
-
-att52:continous
-
-att53:continous
-
-att54:continous
-
-att55:continous
-
-att56:continous
-
-att57:continous
-
-att58:continous
-
-att59:continous
-
-att60:continous
-
-att61:continous
-
-att62:continous
-
-att63:continous
-
-att64:continous
-
-att65:continous
-
-att66:continous
-
-att67:continous
-
-att68:continous
-
-att69:continous
-
-att70:continous
-
-att71:continous
-
-att72:continous
-
-att73:continous
-
-att74:continous
-
-att75:continous
-
-att76:continous
-
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
+
+## Summary
+
+**task**: classification
+
+**instances**: 2000
+
+**features**: 76
+
+**number of classes**: 76
+
+## Summary Plots
+
+![Labels](label.svg)
+
+![Corr](corr.svg)
+
+## Data Summary
+
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	att1	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att2	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att3	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att4	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att5	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att6	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att7	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att8	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att9	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att10	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att11	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att12	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att13	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att14	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att15	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att16	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att17	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att18	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att19	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att20	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att21	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att22	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att23	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att24	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att25	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att26	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att27	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att28	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att29	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att30	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att31	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att32	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att33	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att34	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att35	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att36	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att37	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att38	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att39	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att40	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att41	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att42	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att43	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att44	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att45	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att46	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att47	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att48	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att49	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att50	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att51	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att52	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att53	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att54	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att55	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att56	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att57	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att58	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att59	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att60	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att61	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att62	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att63	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att64	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att65	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att66	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att67	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att68	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att69	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att70	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att71	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att72	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att73	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att74	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att75	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	att76	|	2000	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	target	|	2000	|	5	|	2	|	1	|	3	|	5	|	8	|	10

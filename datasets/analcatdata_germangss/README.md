@@ -1,32 +1,30 @@
 # analcatdata_germangss
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 400
+## Summary
 
-#features: 5
+**task**: classification
 
-  #binary_features: 1
+**instances**: 400
 
-  #integer_features: 3
+**features**: 5
 
-  #float_features: 1
+**number of classes**: 5
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 4
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Age:discrete
-
-Time_of_survey:binary
-
-Schooling:discrete
-
-Region:binary
-
-Count:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Age	|	400	|	2	|	1	|	0	|	1	|	2	|	3	|	4
+|	Time_of_survey	|	400	|	1991	|	0	|	1991	|	1991	|	1991	|	1992	|	1992
+|	Schooling	|	400	|	2	|	1	|	0	|	1	|	2	|	3	|	4
+|	Region	|	400	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Count	|	400	|	15	|	30	|	0	|	1	|	3	|	13	|	198
+|	target	|	400	|	1	|	1	|	0	|	0	|	1	|	2	|	3

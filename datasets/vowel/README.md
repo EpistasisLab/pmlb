@@ -1,48 +1,38 @@
 # vowel
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 990
+## Summary
 
-#features: 13
+**task**: classification
 
-  #binary_features: 2
+**instances**: 990
 
-  #integer_features: 1
+**features**: 13
 
-  #float_features: 10
+**number of classes**: 13
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 11
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Train or Test:binary
-
-Speaker Number:discrete
-
-Sex:binary
-
-Feature 0:continous
-
-Feature 1:continous
-
-Feature 2:continous
-
-Feature 3:continous
-
-Feature 4:continous
-
-Feature 5:continous
-
-Feature 6:continous
-
-Feature 7:continous
-
-Feature 8:continous
-
-Feature 9:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Train or Test	|	990	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Speaker Number	|	990	|	7	|	4	|	0	|	3	|	7	|	11	|	14
+|	Sex	|	990	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Feature 0	|	990	|	-3	|	0	|	-5	|	-3	|	-3	|	-2	|	0
+|	Feature 1	|	990	|	1	|	1	|	-1	|	1	|	1	|	2	|	5
+|	Feature 2	|	990	|	0	|	0	|	-2	|	0	|	0	|	0	|	1
+|	Feature 3	|	990	|	0	|	0	|	-1	|	0	|	0	|	1	|	2
+|	Feature 4	|	990	|	0	|	0	|	-2	|	0	|	0	|	0	|	1
+|	Feature 5	|	990	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	Feature 6	|	990	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	Feature 7	|	990	|	0	|	0	|	-1	|	0	|	0	|	0	|	2
+|	Feature 8	|	990	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	Feature 9	|	990	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	target	|	990	|	5	|	3	|	0	|	2	|	5	|	8	|	10

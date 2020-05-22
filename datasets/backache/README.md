@@ -1,86 +1,57 @@
 # backache
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 180
+## Summary
 
-#features: 32
+**task**: classification
 
-  #binary_features: 22
+**instances**: 180
 
-  #integer_features: 4
+**features**: 32
 
-  #float_features: 6
+**number of classes**: 32
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.521604938271605
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- id:continous
-
-col_2:discrete
-
-col_3:discrete
-
-col_4:continous
-
-col_5:continous
-
-col_6:continous
-
-col_7:continous
-
-col_8:continous
-
-col_9:discrete
-
-col_10:discrete
-
-col_11:binary
-
-col_12:binary
-
-col_13:binary
-
-col_14:binary
-
-col_15:binary
-
-col_16:binary
-
-col_17:binary
-
-col_18:binary
-
-col_19:binary
-
-col_20:binary
-
-col_21:binary
-
-col_22:binary
-
-col_23:binary
-
-col_24:binary
-
-col_25:binary
-
-col_26:binary
-
-col_27:binary
-
-col_28:binary
-
-col_29:binary
-
-col_30:binary
-
-col_31:binary
-
-col_32:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	id	|	180	|	90	|	52	|	1	|	45	|	90	|	135	|	180
+|	col_2	|	180	|	1	|	0	|	0	|	1	|	1	|	2	|	3
+|	col_3	|	180	|	3	|	3	|	0	|	0	|	4	|	7	|	9
+|	col_4	|	180	|	26	|	5	|	15	|	22	|	25	|	29	|	42
+|	col_5	|	180	|	1	|	0	|	1	|	1	|	1	|	1	|	1
+|	col_6	|	180	|	59	|	10	|	38	|	52	|	58	|	65	|	95
+|	col_7	|	180	|	70	|	11	|	47	|	63	|	70	|	77	|	100
+|	col_8	|	180	|	3	|	0	|	1	|	2	|	3	|	3	|	6
+|	col_9	|	180	|	0	|	1	|	0	|	0	|	0	|	1	|	7
+|	col_10	|	180	|	1	|	1	|	0	|	1	|	1	|	2	|	4
+|	col_11	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_12	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_13	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_14	|	180	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	col_15	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_16	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_17	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_18	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_19	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_20	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_21	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_22	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_23	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_24	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_25	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_26	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_27	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_28	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_29	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_30	|	180	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	col_31	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	col_32	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	target	|	180	|	0	|	0	|	0	|	0	|	0	|	0	|	1

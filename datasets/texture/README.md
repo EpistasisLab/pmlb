@@ -1,102 +1,65 @@
 # texture
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 5500
+## Summary
 
-#features: 40
+**task**: classification
 
-  #binary_features: 0
+**instances**: 5500
 
-  #integer_features: 0
+**features**: 40
 
-  #float_features: 40
+**number of classes**: 40
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 11
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- A1:continous
-
-A2:continous
-
-A3:continous
-
-A4:continous
-
-A5:continous
-
-A6:continous
-
-A7:continous
-
-A8:continous
-
-A9:continous
-
-A10:continous
-
-A11:continous
-
-A12:continous
-
-A13:continous
-
-A14:continous
-
-A15:continous
-
-A16:continous
-
-A17:continous
-
-A18:continous
-
-A19:continous
-
-A20:continous
-
-A21:continous
-
-A22:continous
-
-A23:continous
-
-A24:continous
-
-A25:continous
-
-A26:continous
-
-A27:continous
-
-A28:continous
-
-A29:continous
-
-A30:continous
-
-A31:continous
-
-A32:continous
-
-A33:continous
-
-A34:continous
-
-A35:continous
-
-A36:continous
-
-A37:continous
-
-A38:continous
-
-A39:continous
-
-A40:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	A1	|	5500	|	-1	|	0	|	-1	|	-1	|	-1	|	-1	|	0
+|	A2	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A3	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A4	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A5	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A6	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A7	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A8	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A9	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A10	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A11	|	5500	|	-1	|	0	|	-1	|	-1	|	-1	|	-1	|	0
+|	A12	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A13	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A14	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A15	|	5500	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	A16	|	5500	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	A17	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A18	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A19	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A20	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A21	|	5500	|	-1	|	0	|	-1	|	-1	|	-1	|	-1	|	0
+|	A22	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A23	|	5500	|	0	|	0	|	-1	|	-1	|	0	|	0	|	0
+|	A24	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A25	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A26	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A27	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A28	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A29	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A30	|	5500	|	0	|	0	|	-1	|	-1	|	0	|	0	|	0
+|	A31	|	5500	|	-1	|	0	|	-1	|	-1	|	-1	|	-1	|	0
+|	A32	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A33	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A34	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A35	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A36	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A37	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A38	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A39	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	A40	|	5500	|	0	|	0	|	-1	|	0	|	0	|	0	|	0
+|	target	|	5500	|	8	|	3	|	2	|	4	|	8	|	12	|	14

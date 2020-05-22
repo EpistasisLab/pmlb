@@ -1,28 +1,28 @@
 # haberman
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 306
+## Summary
 
-#features: 3
+**task**: classification
 
-  #binary_features: 0
+**instances**: 306
 
-  #integer_features: 1
+**features**: 3
 
-  #float_features: 2
+**number of classes**: 3
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.2214532871972319
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Age_of_patient_at_time_of_operation:continous
-
-Patients_year_of_operation:discrete
-
-Number_of_positive_axillary_nodes_detected:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Age_of_patient_at_time_of_operation	|	306	|	52	|	10	|	30	|	44	|	52	|	60	|	83
+|	Patients_year_of_operation	|	306	|	62	|	3	|	58	|	60	|	63	|	65	|	69
+|	Number_of_positive_axillary_nodes_detected	|	306	|	4	|	7	|	0	|	0	|	1	|	4	|	52
+|	target	|	306	|	1	|	0	|	1	|	1	|	1	|	2	|	2

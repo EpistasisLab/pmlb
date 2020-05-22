@@ -1,28 +1,28 @@
 # titanic
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 2201
+## Summary
 
-#features: 3
+**task**: classification
 
-  #binary_features: 0
+**instances**: 2201
 
-  #integer_features: 0
+**features**: 3
 
-  #float_features: 3
+**number of classes**: 3
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.12526646741258618
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Class:continous
-
-Age:continous
-
-Sex:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Class	|	2201	|	0	|	1	|	-1	|	0	|	0	|	0	|	0
+|	Age	|	2201	|	0	|	0	|	0	|	0	|	0	|	0	|	4
+|	Sex	|	2201	|	0	|	1	|	-1	|	0	|	0	|	0	|	0
+|	target	|	2201	|	0	|	0	|	-1	|	-1	|	-1	|	1	|	1

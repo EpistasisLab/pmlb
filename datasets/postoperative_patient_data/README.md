@@ -1,38 +1,33 @@
 # postoperative_patient_data
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 88
+## Summary
 
-#features: 8
+**task**: classification
 
-  #binary_features: 2
+**instances**: 88
 
-  #integer_features: 6
+**features**: 8
 
-  #float_features: 0
+**number of classes**: 8
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.20661157024793392
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- L-CORE:discrete
-
-L-SURF:discrete
-
-L-O2:binary
-
-L-BP:discrete
-
-SURF-STBL:binary
-
-CORE-STBL:discrete
-
-BP-STBL:discrete
-
-COMFORT:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	L-CORE	|	88	|	1	|	0	|	0	|	1	|	2	|	2	|	2
+|	L-SURF	|	88	|	1	|	0	|	0	|	1	|	2	|	2	|	2
+|	L-O2	|	88	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	L-BP	|	88	|	1	|	0	|	0	|	0	|	2	|	2	|	2
+|	SURF-STBL	|	88	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	CORE-STBL	|	88	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	BP-STBL	|	88	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	COMFORT	|	88	|	2	|	0	|	0	|	2	|	2	|	2	|	4
+|	target	|	88	|	0	|	0	|	0	|	0	|	0	|	2	|	2

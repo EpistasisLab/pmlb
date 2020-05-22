@@ -1,2022 +1,1025 @@
 # GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1
 
-## Summary Stats
-
-#instances: 1600
-
-#features: 1000
-
-  #binary_features: 31
-
-  #integer_features: 969
-
-  #float_features: 0
-
-Endpoint type: binary
-
-#Classes: 2
-
-Imbalance metric: 0.0
-
-## Feature Types
-
- N0:discrete
-
-N1:binary
-
-N2:discrete
-
-N3:discrete
-
-N4:discrete
-
-N5:discrete
-
-N6:discrete
-
-N7:discrete
-
-N8:discrete
-
-N9:discrete
-
-N10:discrete
-
-N11:discrete
-
-N12:discrete
-
-N13:discrete
-
-N14:discrete
-
-N15:discrete
-
-N16:discrete
-
-N17:discrete
-
-N18:discrete
-
-N19:discrete
-
-N20:binary
-
-N21:discrete
-
-N22:discrete
-
-N23:discrete
-
-N24:discrete
-
-N25:discrete
-
-N26:discrete
-
-N27:discrete
-
-N28:discrete
-
-N29:discrete
-
-N30:discrete
-
-N31:binary
-
-N32:discrete
-
-N33:discrete
-
-N34:discrete
-
-N35:binary
-
-N36:discrete
-
-N37:discrete
-
-N38:discrete
-
-N39:discrete
-
-N40:discrete
-
-N41:discrete
-
-N42:discrete
-
-N43:discrete
-
-N44:discrete
-
-N45:discrete
-
-N46:discrete
-
-N47:discrete
-
-N48:discrete
-
-N49:discrete
-
-N50:discrete
-
-N51:discrete
-
-N52:discrete
-
-N53:discrete
-
-N54:discrete
-
-N55:discrete
-
-N56:discrete
-
-N57:discrete
-
-N58:discrete
-
-N59:discrete
-
-N60:discrete
-
-N61:binary
-
-N62:discrete
-
-N63:discrete
-
-N64:discrete
-
-N65:discrete
-
-N66:discrete
-
-N67:discrete
-
-N68:discrete
-
-N69:discrete
-
-N70:discrete
-
-N71:discrete
-
-N72:discrete
-
-N73:discrete
-
-N74:discrete
-
-N75:discrete
-
-N76:discrete
-
-N77:discrete
-
-N78:binary
-
-N79:discrete
-
-N80:discrete
-
-N81:binary
-
-N82:discrete
-
-N83:discrete
-
-N84:discrete
-
-N85:discrete
-
-N86:discrete
-
-N87:discrete
-
-N88:discrete
-
-N89:discrete
-
-N90:discrete
-
-N91:discrete
-
-N92:discrete
-
-N93:binary
-
-N94:discrete
-
-N95:discrete
-
-N96:discrete
-
-N97:discrete
-
-N98:discrete
-
-N99:binary
-
-N100:discrete
-
-N101:discrete
-
-N102:discrete
-
-N103:discrete
-
-N104:discrete
-
-N105:discrete
-
-N106:discrete
-
-N107:discrete
-
-N108:discrete
-
-N109:discrete
-
-N110:discrete
-
-N111:discrete
-
-N112:discrete
-
-N113:discrete
-
-N114:discrete
-
-N115:discrete
-
-N116:discrete
-
-N117:discrete
-
-N118:discrete
-
-N119:discrete
-
-N120:discrete
-
-N121:discrete
-
-N122:discrete
-
-N123:discrete
-
-N124:discrete
-
-N125:discrete
-
-N126:discrete
-
-N127:discrete
-
-N128:discrete
-
-N129:discrete
-
-N130:discrete
-
-N131:discrete
-
-N132:discrete
-
-N133:discrete
-
-N134:discrete
-
-N135:discrete
-
-N136:discrete
-
-N137:discrete
-
-N138:discrete
-
-N139:discrete
-
-N140:discrete
-
-N141:discrete
-
-N142:discrete
-
-N143:discrete
-
-N144:discrete
-
-N145:discrete
-
-N146:discrete
-
-N147:discrete
-
-N148:discrete
-
-N149:discrete
-
-N150:discrete
-
-N151:discrete
-
-N152:discrete
-
-N153:discrete
-
-N154:discrete
-
-N155:discrete
-
-N156:binary
-
-N157:discrete
-
-N158:discrete
-
-N159:discrete
-
-N160:discrete
-
-N161:discrete
-
-N162:discrete
-
-N163:discrete
-
-N164:discrete
-
-N165:discrete
-
-N166:discrete
-
-N167:discrete
-
-N168:discrete
-
-N169:discrete
-
-N170:discrete
-
-N171:discrete
-
-N172:discrete
-
-N173:discrete
-
-N174:discrete
-
-N175:discrete
-
-N176:discrete
-
-N177:discrete
-
-N178:discrete
-
-N179:discrete
-
-N180:discrete
-
-N181:discrete
-
-N182:discrete
-
-N183:discrete
-
-N184:discrete
-
-N185:discrete
-
-N186:discrete
-
-N187:discrete
-
-N188:discrete
-
-N189:discrete
-
-N190:discrete
-
-N191:discrete
-
-N192:discrete
-
-N193:discrete
-
-N194:discrete
-
-N195:discrete
-
-N196:discrete
-
-N197:discrete
-
-N198:discrete
-
-N199:discrete
-
-N200:discrete
-
-N201:discrete
-
-N202:discrete
-
-N203:discrete
-
-N204:discrete
-
-N205:discrete
-
-N206:discrete
-
-N207:discrete
-
-N208:discrete
-
-N209:discrete
-
-N210:discrete
-
-N211:discrete
-
-N212:discrete
-
-N213:discrete
-
-N214:discrete
-
-N215:discrete
-
-N216:discrete
-
-N217:discrete
-
-N218:discrete
-
-N219:discrete
-
-N220:discrete
-
-N221:discrete
-
-N222:discrete
-
-N223:discrete
-
-N224:discrete
-
-N225:discrete
-
-N226:discrete
-
-N227:discrete
-
-N228:discrete
-
-N229:discrete
-
-N230:discrete
-
-N231:discrete
-
-N232:discrete
-
-N233:discrete
-
-N234:binary
-
-N235:discrete
-
-N236:discrete
-
-N237:discrete
-
-N238:discrete
-
-N239:discrete
-
-N240:discrete
-
-N241:discrete
-
-N242:discrete
-
-N243:discrete
-
-N244:discrete
-
-N245:discrete
-
-N246:discrete
-
-N247:discrete
-
-N248:discrete
-
-N249:discrete
-
-N250:discrete
-
-N251:discrete
-
-N252:discrete
-
-N253:discrete
-
-N254:discrete
-
-N255:discrete
-
-N256:discrete
-
-N257:discrete
-
-N258:discrete
-
-N259:discrete
-
-N260:discrete
-
-N261:discrete
-
-N262:discrete
-
-N263:discrete
-
-N264:discrete
-
-N265:discrete
-
-N266:discrete
-
-N267:discrete
-
-N268:discrete
-
-N269:discrete
-
-N270:discrete
-
-N271:discrete
-
-N272:discrete
-
-N273:discrete
-
-N274:discrete
-
-N275:discrete
-
-N276:discrete
-
-N277:discrete
-
-N278:discrete
-
-N279:discrete
-
-N280:discrete
-
-N281:discrete
-
-N282:discrete
-
-N283:discrete
-
-N284:discrete
-
-N285:discrete
-
-N286:discrete
-
-N287:discrete
-
-N288:discrete
-
-N289:discrete
-
-N290:discrete
-
-N291:discrete
-
-N292:discrete
-
-N293:binary
-
-N294:discrete
-
-N295:discrete
-
-N296:discrete
-
-N297:discrete
-
-N298:discrete
-
-N299:discrete
-
-N300:discrete
-
-N301:discrete
-
-N302:discrete
-
-N303:discrete
-
-N304:discrete
-
-N305:discrete
-
-N306:discrete
-
-N307:discrete
-
-N308:discrete
-
-N309:discrete
-
-N310:discrete
-
-N311:discrete
-
-N312:discrete
-
-N313:discrete
-
-N314:discrete
-
-N315:discrete
-
-N316:discrete
-
-N317:discrete
-
-N318:discrete
-
-N319:discrete
-
-N320:discrete
-
-N321:discrete
-
-N322:discrete
-
-N323:discrete
-
-N324:discrete
-
-N325:discrete
-
-N326:discrete
-
-N327:discrete
-
-N328:discrete
-
-N329:discrete
-
-N330:discrete
-
-N331:discrete
-
-N332:discrete
-
-N333:discrete
-
-N334:discrete
-
-N335:discrete
-
-N336:discrete
-
-N337:discrete
-
-N338:discrete
-
-N339:discrete
-
-N340:discrete
-
-N341:discrete
-
-N342:discrete
-
-N343:discrete
-
-N344:discrete
-
-N345:discrete
-
-N346:discrete
-
-N347:discrete
-
-N348:discrete
-
-N349:discrete
-
-N350:discrete
-
-N351:discrete
-
-N352:discrete
-
-N353:discrete
-
-N354:discrete
-
-N355:binary
-
-N356:discrete
-
-N357:discrete
-
-N358:discrete
-
-N359:discrete
-
-N360:discrete
-
-N361:discrete
-
-N362:discrete
-
-N363:discrete
-
-N364:discrete
-
-N365:discrete
-
-N366:discrete
-
-N367:discrete
-
-N368:discrete
-
-N369:discrete
-
-N370:discrete
-
-N371:discrete
-
-N372:discrete
-
-N373:discrete
-
-N374:discrete
-
-N375:discrete
-
-N376:discrete
-
-N377:discrete
-
-N378:discrete
-
-N379:discrete
-
-N380:discrete
-
-N381:discrete
-
-N382:discrete
-
-N383:discrete
-
-N384:discrete
-
-N385:discrete
-
-N386:discrete
-
-N387:discrete
-
-N388:discrete
-
-N389:discrete
-
-N390:discrete
-
-N391:discrete
-
-N392:discrete
-
-N393:discrete
-
-N394:discrete
-
-N395:discrete
-
-N396:discrete
-
-N397:discrete
-
-N398:discrete
-
-N399:discrete
-
-N400:discrete
-
-N401:discrete
-
-N402:discrete
-
-N403:discrete
-
-N404:discrete
-
-N405:discrete
-
-N406:discrete
-
-N407:discrete
-
-N408:discrete
-
-N409:discrete
-
-N410:discrete
-
-N411:discrete
-
-N412:discrete
-
-N413:discrete
-
-N414:discrete
-
-N415:discrete
-
-N416:discrete
-
-N417:discrete
-
-N418:discrete
-
-N419:discrete
-
-N420:discrete
-
-N421:discrete
-
-N422:discrete
-
-N423:discrete
-
-N424:discrete
-
-N425:discrete
-
-N426:discrete
-
-N427:binary
-
-N428:discrete
-
-N429:discrete
-
-N430:discrete
-
-N431:discrete
-
-N432:discrete
-
-N433:discrete
-
-N434:discrete
-
-N435:discrete
-
-N436:discrete
-
-N437:discrete
-
-N438:discrete
-
-N439:discrete
-
-N440:discrete
-
-N441:discrete
-
-N442:discrete
-
-N443:discrete
-
-N444:discrete
-
-N445:discrete
-
-N446:discrete
-
-N447:discrete
-
-N448:discrete
-
-N449:discrete
-
-N450:discrete
-
-N451:discrete
-
-N452:discrete
-
-N453:discrete
-
-N454:discrete
-
-N455:discrete
-
-N456:discrete
-
-N457:discrete
-
-N458:discrete
-
-N459:discrete
-
-N460:discrete
-
-N461:discrete
-
-N462:discrete
-
-N463:discrete
-
-N464:discrete
-
-N465:discrete
-
-N466:discrete
-
-N467:discrete
-
-N468:discrete
-
-N469:discrete
-
-N470:discrete
-
-N471:discrete
-
-N472:discrete
-
-N473:binary
-
-N474:discrete
-
-N475:discrete
-
-N476:discrete
-
-N477:discrete
-
-N478:discrete
-
-N479:discrete
-
-N480:binary
-
-N481:discrete
-
-N482:discrete
-
-N483:discrete
-
-N484:discrete
-
-N485:discrete
-
-N486:discrete
-
-N487:discrete
-
-N488:discrete
-
-N489:discrete
-
-N490:discrete
-
-N491:discrete
-
-N492:discrete
-
-N493:discrete
-
-N494:discrete
-
-N495:discrete
-
-N496:discrete
-
-N497:discrete
-
-N498:discrete
-
-N499:discrete
-
-N500:discrete
-
-N501:discrete
-
-N502:discrete
-
-N503:discrete
-
-N504:discrete
-
-N505:discrete
-
-N506:discrete
-
-N507:discrete
-
-N508:discrete
-
-N509:discrete
-
-N510:discrete
-
-N511:discrete
-
-N512:discrete
-
-N513:discrete
-
-N514:discrete
-
-N515:discrete
-
-N516:discrete
-
-N517:discrete
-
-N518:discrete
-
-N519:discrete
-
-N520:discrete
-
-N521:discrete
-
-N522:discrete
-
-N523:discrete
-
-N524:binary
-
-N525:discrete
-
-N526:discrete
-
-N527:discrete
-
-N528:discrete
-
-N529:discrete
-
-N530:discrete
-
-N531:discrete
-
-N532:discrete
-
-N533:discrete
-
-N534:discrete
-
-N535:discrete
-
-N536:discrete
-
-N537:discrete
-
-N538:discrete
-
-N539:discrete
-
-N540:discrete
-
-N541:binary
-
-N542:discrete
-
-N543:binary
-
-N544:discrete
-
-N545:discrete
-
-N546:discrete
-
-N547:discrete
-
-N548:discrete
-
-N549:discrete
-
-N550:discrete
-
-N551:discrete
-
-N552:discrete
-
-N553:discrete
-
-N554:discrete
-
-N555:discrete
-
-N556:discrete
-
-N557:discrete
-
-N558:discrete
-
-N559:discrete
-
-N560:discrete
-
-N561:discrete
-
-N562:discrete
-
-N563:discrete
-
-N564:discrete
-
-N565:discrete
-
-N566:discrete
-
-N567:discrete
-
-N568:discrete
-
-N569:discrete
-
-N570:discrete
-
-N571:discrete
-
-N572:discrete
-
-N573:discrete
-
-N574:discrete
-
-N575:discrete
-
-N576:discrete
-
-N577:discrete
-
-N578:discrete
-
-N579:discrete
-
-N580:discrete
-
-N581:discrete
-
-N582:discrete
-
-N583:discrete
-
-N584:discrete
-
-N585:discrete
-
-N586:discrete
-
-N587:discrete
-
-N588:discrete
-
-N589:discrete
-
-N590:discrete
-
-N591:discrete
-
-N592:discrete
-
-N593:discrete
-
-N594:discrete
-
-N595:discrete
-
-N596:discrete
-
-N597:discrete
-
-N598:discrete
-
-N599:discrete
-
-N600:discrete
-
-N601:discrete
-
-N602:discrete
-
-N603:discrete
-
-N604:discrete
-
-N605:discrete
-
-N606:discrete
-
-N607:discrete
-
-N608:discrete
-
-N609:discrete
-
-N610:discrete
-
-N611:discrete
-
-N612:discrete
-
-N613:discrete
-
-N614:discrete
-
-N615:discrete
-
-N616:binary
-
-N617:binary
-
-N618:discrete
-
-N619:discrete
-
-N620:discrete
-
-N621:discrete
-
-N622:discrete
-
-N623:discrete
-
-N624:discrete
-
-N625:discrete
-
-N626:discrete
-
-N627:discrete
-
-N628:discrete
-
-N629:discrete
-
-N630:discrete
-
-N631:discrete
-
-N632:discrete
-
-N633:discrete
-
-N634:discrete
-
-N635:discrete
-
-N636:discrete
-
-N637:discrete
-
-N638:discrete
-
-N639:discrete
-
-N640:discrete
-
-N641:discrete
-
-N642:discrete
-
-N643:discrete
-
-N644:discrete
-
-N645:discrete
-
-N646:discrete
-
-N647:discrete
-
-N648:discrete
-
-N649:discrete
-
-N650:discrete
-
-N651:discrete
-
-N652:discrete
-
-N653:discrete
-
-N654:discrete
-
-N655:discrete
-
-N656:discrete
-
-N657:discrete
-
-N658:discrete
-
-N659:binary
-
-N660:discrete
-
-N661:discrete
-
-N662:discrete
-
-N663:discrete
-
-N664:discrete
-
-N665:discrete
-
-N666:discrete
-
-N667:discrete
-
-N668:discrete
-
-N669:discrete
-
-N670:discrete
-
-N671:discrete
-
-N672:discrete
-
-N673:discrete
-
-N674:discrete
-
-N675:discrete
-
-N676:discrete
-
-N677:discrete
-
-N678:discrete
-
-N679:discrete
-
-N680:discrete
-
-N681:discrete
-
-N682:discrete
-
-N683:discrete
-
-N684:discrete
-
-N685:discrete
-
-N686:discrete
-
-N687:discrete
-
-N688:discrete
-
-N689:discrete
-
-N690:discrete
-
-N691:discrete
-
-N692:discrete
-
-N693:discrete
-
-N694:discrete
-
-N695:discrete
-
-N696:discrete
-
-N697:discrete
-
-N698:discrete
-
-N699:discrete
-
-N700:discrete
-
-N701:discrete
-
-N702:discrete
-
-N703:discrete
-
-N704:discrete
-
-N705:discrete
-
-N706:discrete
-
-N707:discrete
-
-N708:discrete
-
-N709:discrete
-
-N710:discrete
-
-N711:discrete
-
-N712:discrete
-
-N713:discrete
-
-N714:discrete
-
-N715:discrete
-
-N716:discrete
-
-N717:discrete
-
-N718:discrete
-
-N719:discrete
-
-N720:discrete
-
-N721:discrete
-
-N722:discrete
-
-N723:discrete
-
-N724:binary
-
-N725:binary
-
-N726:discrete
-
-N727:discrete
-
-N728:discrete
-
-N729:discrete
-
-N730:discrete
-
-N731:discrete
-
-N732:discrete
-
-N733:discrete
-
-N734:discrete
-
-N735:discrete
-
-N736:discrete
-
-N737:discrete
-
-N738:discrete
-
-N739:discrete
-
-N740:discrete
-
-N741:discrete
-
-N742:discrete
-
-N743:discrete
-
-N744:discrete
-
-N745:discrete
-
-N746:discrete
-
-N747:discrete
-
-N748:discrete
-
-N749:discrete
-
-N750:discrete
-
-N751:discrete
-
-N752:discrete
-
-N753:discrete
-
-N754:discrete
-
-N755:discrete
-
-N756:discrete
-
-N757:discrete
-
-N758:discrete
-
-N759:discrete
-
-N760:discrete
-
-N761:discrete
-
-N762:discrete
-
-N763:discrete
-
-N764:discrete
-
-N765:discrete
-
-N766:discrete
-
-N767:discrete
-
-N768:discrete
-
-N769:discrete
-
-N770:discrete
-
-N771:discrete
-
-N772:discrete
-
-N773:discrete
-
-N774:discrete
-
-N775:discrete
-
-N776:discrete
-
-N777:discrete
-
-N778:discrete
-
-N779:discrete
-
-N780:discrete
-
-N781:discrete
-
-N782:discrete
-
-N783:discrete
-
-N784:discrete
-
-N785:discrete
-
-N786:discrete
-
-N787:discrete
-
-N788:discrete
-
-N789:discrete
-
-N790:discrete
-
-N791:discrete
-
-N792:discrete
-
-N793:discrete
-
-N794:discrete
-
-N795:discrete
-
-N796:discrete
-
-N797:discrete
-
-N798:discrete
-
-N799:discrete
-
-N800:discrete
-
-N801:discrete
-
-N802:discrete
-
-N803:binary
-
-N804:discrete
-
-N805:discrete
-
-N806:discrete
-
-N807:discrete
-
-N808:discrete
-
-N809:discrete
-
-N810:discrete
-
-N811:discrete
-
-N812:discrete
-
-N813:discrete
-
-N814:discrete
-
-N815:discrete
-
-N816:discrete
-
-N817:discrete
-
-N818:discrete
-
-N819:discrete
-
-N820:discrete
-
-N821:discrete
-
-N822:discrete
-
-N823:discrete
-
-N824:discrete
-
-N825:discrete
-
-N826:discrete
-
-N827:discrete
-
-N828:discrete
-
-N829:discrete
-
-N830:discrete
-
-N831:discrete
-
-N832:discrete
-
-N833:discrete
-
-N834:discrete
-
-N835:binary
-
-N836:discrete
-
-N837:discrete
-
-N838:discrete
-
-N839:discrete
-
-N840:discrete
-
-N841:discrete
-
-N842:discrete
-
-N843:discrete
-
-N844:discrete
-
-N845:discrete
-
-N846:discrete
-
-N847:discrete
-
-N848:discrete
-
-N849:discrete
-
-N850:discrete
-
-N851:discrete
-
-N852:discrete
-
-N853:discrete
-
-N854:discrete
-
-N855:discrete
-
-N856:discrete
-
-N857:discrete
-
-N858:discrete
-
-N859:discrete
-
-N860:discrete
-
-N861:discrete
-
-N862:discrete
-
-N863:discrete
-
-N864:discrete
-
-N865:discrete
-
-N866:discrete
-
-N867:discrete
-
-N868:discrete
-
-N869:discrete
-
-N870:discrete
-
-N871:discrete
-
-N872:discrete
-
-N873:discrete
-
-N874:discrete
-
-N875:discrete
-
-N876:discrete
-
-N877:discrete
-
-N878:discrete
-
-N879:discrete
-
-N880:discrete
-
-N881:discrete
-
-N882:discrete
-
-N883:discrete
-
-N884:discrete
-
-N885:discrete
-
-N886:discrete
-
-N887:discrete
-
-N888:discrete
-
-N889:discrete
-
-N890:discrete
-
-N891:discrete
-
-N892:discrete
-
-N893:discrete
-
-N894:discrete
-
-N895:discrete
-
-N896:discrete
-
-N897:discrete
-
-N898:discrete
-
-N899:discrete
-
-N900:discrete
-
-N901:discrete
-
-N902:discrete
-
-N903:discrete
-
-N904:discrete
-
-N905:discrete
-
-N906:discrete
-
-N907:discrete
-
-N908:binary
-
-N909:discrete
-
-N910:discrete
-
-N911:discrete
-
-N912:discrete
-
-N913:discrete
-
-N914:discrete
-
-N915:binary
-
-N916:discrete
-
-N917:discrete
-
-N918:discrete
-
-N919:discrete
-
-N920:discrete
-
-N921:discrete
-
-N922:discrete
-
-N923:discrete
-
-N924:discrete
-
-N925:discrete
-
-N926:discrete
-
-N927:binary
-
-N928:discrete
-
-N929:discrete
-
-N930:discrete
-
-N931:discrete
-
-N932:discrete
-
-N933:discrete
-
-N934:discrete
-
-N935:discrete
-
-N936:discrete
-
-N937:discrete
-
-N938:discrete
-
-N939:discrete
-
-N940:discrete
-
-N941:discrete
-
-N942:discrete
-
-N943:discrete
-
-N944:discrete
-
-N945:discrete
-
-N946:discrete
-
-N947:discrete
-
-N948:discrete
-
-N949:discrete
-
-N950:discrete
-
-N951:discrete
-
-N952:discrete
-
-N953:discrete
-
-N954:discrete
-
-N955:discrete
-
-N956:discrete
-
-N957:discrete
-
-N958:discrete
-
-N959:discrete
-
-N960:discrete
-
-N961:discrete
-
-N962:discrete
-
-N963:discrete
-
-N964:discrete
-
-N965:discrete
-
-N966:discrete
-
-N967:binary
-
-N968:discrete
-
-N969:discrete
-
-N970:discrete
-
-N971:discrete
-
-N972:discrete
-
-N973:discrete
-
-N974:discrete
-
-N975:discrete
-
-N976:discrete
-
-N977:discrete
-
-N978:discrete
-
-N979:discrete
-
-N980:discrete
-
-N981:discrete
-
-N982:discrete
-
-N983:discrete
-
-N984:discrete
-
-N985:discrete
-
-N986:discrete
-
-N987:discrete
-
-N988:discrete
-
-N989:discrete
-
-N990:discrete
-
-N991:discrete
-
-N992:binary
-
-N993:discrete
-
-N994:discrete
-
-N995:discrete
-
-N996:discrete
-
-N997:discrete
-
-P1:discrete
-
-P2:discrete
-
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
+
+## Summary
+
+**task**: classification
+
+**instances**: 1600
+
+**features**: 1000
+
+**number of classes**: 1000
+
+## Summary Plots
+
+![Labels](label.svg)
+
+![Corr](corr.svg)
+
+## Data Summary
+
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	N0	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N1	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N2	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N3	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N4	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N5	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N6	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N7	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N8	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N9	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N10	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N11	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N12	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N13	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N14	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N15	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N16	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N17	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N18	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N19	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N20	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N21	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N22	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N23	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N24	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N25	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N26	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N27	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N28	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N29	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N30	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N31	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N32	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N33	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N34	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N35	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N36	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N37	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N38	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N39	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N40	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N41	|	1600	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	N42	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N43	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N44	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N45	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N46	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N47	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N48	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N49	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N50	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N51	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N52	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N53	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N54	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N55	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N56	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N57	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N58	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N59	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N60	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N61	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N62	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N63	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N64	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N65	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N66	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N67	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N68	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N69	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N70	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N71	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N72	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N73	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N74	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N75	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N76	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N77	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N78	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N79	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N80	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N81	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N82	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N83	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N84	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N85	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N86	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N87	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N88	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N89	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N90	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N91	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N92	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N93	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N94	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N95	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N96	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N97	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N98	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N99	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N100	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N101	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N102	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N103	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N104	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N105	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N106	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N107	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N108	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N109	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N110	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N111	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N112	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N113	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N114	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N115	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N116	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N117	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N118	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N119	|	1600	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	N120	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N121	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N122	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N123	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N124	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N125	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N126	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N127	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N128	|	1600	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	N129	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N130	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N131	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N132	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N133	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N134	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N135	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N136	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N137	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N138	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N139	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N140	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N141	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N142	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N143	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N144	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N145	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N146	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N147	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N148	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N149	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N150	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N151	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N152	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N153	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N154	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N155	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N156	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N157	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N158	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N159	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N160	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N161	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N162	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N163	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N164	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N165	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N166	|	1600	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	N167	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N168	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N169	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N170	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N171	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N172	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N173	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N174	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N175	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N176	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N177	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N178	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N179	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N180	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N181	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N182	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N183	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N184	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N185	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N186	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N187	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N188	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N189	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N190	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N191	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N192	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N193	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N194	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N195	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N196	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N197	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N198	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N199	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N200	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N201	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N202	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N203	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N204	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N205	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N206	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N207	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N208	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N209	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N210	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N211	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N212	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N213	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N214	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N215	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N216	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N217	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N218	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N219	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N220	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N221	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N222	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N223	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N224	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N225	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N226	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N227	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N228	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N229	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N230	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N231	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N232	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N233	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N234	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N235	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N236	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N237	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N238	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N239	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N240	|	1600	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	N241	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N242	|	1600	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	N243	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N244	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N245	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N246	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N247	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N248	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N249	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N250	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N251	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N252	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N253	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N254	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N255	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N256	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N257	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N258	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N259	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N260	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N261	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N262	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N263	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N264	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N265	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N266	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N267	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N268	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N269	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N270	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N271	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N272	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N273	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N274	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N275	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N276	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N277	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N278	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N279	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N280	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N281	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N282	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N283	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N284	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N285	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N286	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N287	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N288	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N289	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N290	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N291	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N292	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N293	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N294	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N295	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N296	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N297	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N298	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N299	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N300	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N301	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N302	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N303	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N304	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N305	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N306	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N307	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N308	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N309	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N310	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N311	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N312	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N313	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N314	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N315	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N316	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N317	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N318	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N319	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N320	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N321	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N322	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N323	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N324	|	1600	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	N325	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N326	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N327	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N328	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N329	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N330	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N331	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N332	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N333	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N334	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N335	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N336	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N337	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N338	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N339	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N340	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N341	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N342	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N343	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N344	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N345	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N346	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N347	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N348	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N349	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N350	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N351	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N352	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N353	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N354	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N355	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N356	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N357	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N358	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N359	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N360	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N361	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N362	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N363	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N364	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N365	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N366	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N367	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N368	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N369	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N370	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N371	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N372	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N373	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N374	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N375	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N376	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N377	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N378	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N379	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N380	|	1600	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	N381	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N382	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N383	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N384	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N385	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N386	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N387	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N388	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N389	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N390	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N391	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N392	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N393	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N394	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N395	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N396	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N397	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N398	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N399	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N400	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N401	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N402	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N403	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N404	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N405	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N406	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N407	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N408	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N409	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N410	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N411	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N412	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N413	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N414	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N415	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N416	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N417	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N418	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N419	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N420	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N421	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N422	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N423	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N424	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N425	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N426	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N427	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N428	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N429	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N430	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N431	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N432	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N433	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N434	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N435	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N436	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N437	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N438	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N439	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N440	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N441	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N442	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N443	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N444	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N445	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N446	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N447	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N448	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N449	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N450	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N451	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N452	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N453	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N454	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N455	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N456	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N457	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N458	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N459	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N460	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N461	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N462	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N463	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N464	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N465	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N466	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N467	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N468	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N469	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N470	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N471	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N472	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N473	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N474	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N475	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N476	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N477	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N478	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N479	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N480	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N481	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N482	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N483	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N484	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N485	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N486	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N487	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N488	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N489	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N490	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N491	|	1600	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	N492	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N493	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N494	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N495	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N496	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N497	|	1600	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	N498	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N499	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N500	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N501	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N502	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N503	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N504	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N505	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N506	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N507	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N508	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N509	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N510	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N511	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N512	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N513	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N514	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N515	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N516	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N517	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N518	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N519	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N520	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N521	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N522	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N523	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N524	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N525	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N526	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N527	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N528	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N529	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N530	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N531	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N532	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N533	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N534	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N535	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N536	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N537	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N538	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N539	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N540	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N541	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N542	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N543	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N544	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N545	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N546	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N547	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N548	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N549	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N550	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N551	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N552	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N553	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N554	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N555	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N556	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N557	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N558	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N559	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N560	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N561	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N562	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N563	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N564	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N565	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N566	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N567	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N568	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N569	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N570	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N571	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N572	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N573	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N574	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N575	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N576	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N577	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N578	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N579	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N580	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N581	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N582	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N583	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N584	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N585	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N586	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N587	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N588	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N589	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N590	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N591	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N592	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N593	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N594	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N595	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N596	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N597	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N598	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N599	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N600	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N601	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N602	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N603	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N604	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N605	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N606	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N607	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N608	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N609	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N610	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N611	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N612	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N613	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N614	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N615	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N616	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N617	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N618	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N619	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N620	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N621	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N622	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N623	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N624	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N625	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N626	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N627	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N628	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N629	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N630	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N631	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N632	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N633	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N634	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N635	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N636	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N637	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N638	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N639	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N640	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N641	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N642	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N643	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N644	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N645	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N646	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N647	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N648	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N649	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N650	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N651	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N652	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N653	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N654	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N655	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N656	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N657	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N658	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N659	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N660	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N661	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N662	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N663	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N664	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N665	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N666	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N667	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N668	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N669	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N670	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N671	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N672	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N673	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N674	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N675	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N676	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N677	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N678	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N679	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N680	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N681	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N682	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N683	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N684	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N685	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N686	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N687	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N688	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N689	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N690	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N691	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N692	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N693	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N694	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N695	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N696	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N697	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N698	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N699	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N700	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N701	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N702	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N703	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N704	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N705	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N706	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N707	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N708	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N709	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N710	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N711	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N712	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N713	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N714	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N715	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N716	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N717	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N718	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N719	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N720	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N721	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N722	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N723	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N724	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N725	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N726	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N727	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N728	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N729	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N730	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N731	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N732	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N733	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N734	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N735	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N736	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N737	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N738	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N739	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N740	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N741	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N742	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N743	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N744	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N745	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N746	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N747	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N748	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N749	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N750	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N751	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N752	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N753	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N754	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N755	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N756	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N757	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N758	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N759	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N760	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N761	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N762	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N763	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N764	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N765	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N766	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N767	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N768	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N769	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N770	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N771	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N772	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N773	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N774	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N775	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N776	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N777	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N778	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N779	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N780	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N781	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N782	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N783	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N784	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N785	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N786	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N787	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N788	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N789	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N790	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N791	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N792	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N793	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N794	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N795	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N796	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N797	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N798	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N799	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N800	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N801	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N802	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N803	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N804	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N805	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N806	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N807	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N808	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N809	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N810	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N811	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N812	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N813	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N814	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N815	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N816	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N817	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N818	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N819	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N820	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N821	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N822	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N823	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N824	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N825	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N826	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N827	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N828	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N829	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N830	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N831	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N832	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N833	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N834	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N835	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N836	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N837	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N838	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N839	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N840	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N841	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N842	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N843	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N844	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N845	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N846	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N847	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N848	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N849	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N850	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N851	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N852	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N853	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N854	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N855	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N856	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N857	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N858	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N859	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N860	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N861	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N862	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N863	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N864	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N865	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N866	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N867	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N868	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N869	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N870	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N871	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N872	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N873	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N874	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N875	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N876	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N877	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N878	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N879	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N880	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N881	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N882	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N883	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N884	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N885	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N886	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N887	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N888	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N889	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N890	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N891	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N892	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N893	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N894	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N895	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N896	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N897	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N898	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N899	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N900	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N901	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N902	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N903	|	1600	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	N904	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N905	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N906	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N907	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N908	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N909	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N910	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N911	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N912	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N913	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N914	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N915	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N916	|	1600	|	1	|	0	|	0	|	1	|	1	|	1	|	2
+|	N917	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N918	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N919	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N920	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N921	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N922	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N923	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N924	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N925	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N926	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N927	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N928	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N929	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N930	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N931	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N932	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N933	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N934	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N935	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N936	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N937	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N938	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N939	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N940	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N941	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N942	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N943	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N944	|	1600	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	N945	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N946	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N947	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N948	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N949	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N950	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N951	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N952	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N953	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N954	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N955	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N956	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N957	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N958	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N959	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N960	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N961	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N962	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N963	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N964	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N965	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N966	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N967	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N968	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N969	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N970	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N971	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N972	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N973	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N974	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N975	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N976	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N977	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N978	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N979	|	1600	|	0	|	0	|	0	|	1	|	1	|	1	|	2
+|	N980	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N981	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N982	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N983	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N984	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N985	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N986	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N987	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N988	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N989	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N990	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N991	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N992	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N993	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N994	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N995	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N996	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N997	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	P1	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	P2	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	target	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	1

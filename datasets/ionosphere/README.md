@@ -1,90 +1,59 @@
 # ionosphere
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 351
+## Summary
 
-#features: 34
+**task**: classification
 
-  #binary_features: 2
+**instances**: 351
 
-  #integer_features: 0
+**features**: 34
 
-  #float_features: 32
+**number of classes**: 34
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.07955292570677189
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- 0:binary
-
-1:binary
-
-2:continous
-
-3:continous
-
-4:continous
-
-5:continous
-
-6:continous
-
-7:continous
-
-8:continous
-
-9:continous
-
-10:continous
-
-11:continous
-
-12:continous
-
-13:continous
-
-14:continous
-
-15:continous
-
-16:continous
-
-17:continous
-
-18:continous
-
-19:continous
-
-20:continous
-
-21:continous
-
-22:continous
-
-23:continous
-
-24:continous
-
-25:continous
-
-26:continous
-
-27:continous
-
-28:continous
-
-29:continous
-
-30:continous
-
-31:continous
-
-32:continous
-
-33:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	0	|	351	|	0	|	0	|	0	|	1	|	1	|	1	|	1
+|	1	|	351	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	2	|	351	|	0	|	0	|	-1	|	0	|	0	|	1	|	1
+|	3	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	4	|	351	|	0	|	0	|	-1	|	0	|	0	|	1	|	1
+|	5	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	6	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	7	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	8	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	9	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	10	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	11	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	12	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	13	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	14	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	15	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	16	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	17	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	18	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	19	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	20	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	21	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	22	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	23	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	24	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	25	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	26	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	27	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	28	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	29	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	30	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	31	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	32	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	33	|	351	|	0	|	0	|	-1	|	0	|	0	|	0	|	1
+|	target	|	351	|	0	|	0	|	0	|	0	|	1	|	1	|	1

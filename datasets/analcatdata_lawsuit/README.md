@@ -1,30 +1,29 @@
 # analcatdata_lawsuit
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 264
+## Summary
 
-#features: 4
+**task**: classification
 
-  #binary_features: 1
+**instances**: 264
 
-  #integer_features: 0
+**features**: 4
 
-  #float_features: 3
+**number of classes**: 4
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.7328397612488521
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Length.of.service:continous
-
-CAP:continous
-
-PA.normalized:continous
-
-Minority:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Length.of.service	|	264	|	12	|	7	|	0	|	7	|	10	|	17	|	42
+|	CAP	|	264	|	35	|	13	|	6	|	27	|	36	|	45	|	60
+|	PA.normalized	|	264	|	20	|	6	|	1	|	17	|	20	|	24	|	30
+|	Minority	|	264	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	264	|	0	|	0	|	0	|	0	|	0	|	0	|	1

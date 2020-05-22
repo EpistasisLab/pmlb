@@ -1,48 +1,38 @@
 # wine_recognition
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 178
+## Summary
 
-#features: 13
+**task**: classification
 
-  #binary_features: 0
+**instances**: 178
 
-  #integer_features: 2
+**features**: 13
 
-  #float_features: 11
+**number of classes**: 13
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.012529983587930811
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- 1:continous
-
-2:continous
-
-3:continous
-
-4:continous
-
-5:discrete
-
-6:continous
-
-7:continous
-
-8:continous
-
-9:continous
-
-10:continous
-
-11:continous
-
-12:continous
-
-13:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	target	|	178	|	1	|	0	|	1	|	1	|	2	|	3	|	3
+|	1	|	178	|	13	|	0	|	11	|	12	|	13	|	13	|	14
+|	2	|	178	|	2	|	1	|	0	|	1	|	1	|	3	|	5
+|	3	|	178	|	2	|	0	|	1	|	2	|	2	|	2	|	3
+|	4	|	178	|	19	|	3	|	10	|	17	|	19	|	21	|	30
+|	5	|	178	|	99	|	14	|	70	|	88	|	98	|	107	|	162
+|	6	|	178	|	2	|	0	|	0	|	1	|	2	|	2	|	3
+|	7	|	178	|	2	|	0	|	0	|	1	|	2	|	2	|	5
+|	8	|	178	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	9	|	178	|	1	|	0	|	0	|	1	|	1	|	1	|	3
+|	10	|	178	|	5	|	2	|	1	|	3	|	4	|	6	|	13
+|	11	|	178	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	12	|	178	|	2	|	0	|	1	|	1	|	2	|	3	|	4
+|	13	|	178	|	746	|	314	|	278	|	500	|	673	|	985	|	1680

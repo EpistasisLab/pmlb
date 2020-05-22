@@ -1,40 +1,34 @@
 # saheart
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 462
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 1
+**instances**: 462
 
-  #integer_features: 3
+**features**: 9
 
-  #float_features: 5
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.09446974382039316
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Sbp:discrete
-
-Tobacco:continous
-
-Ldl:continous
-
-Adiposity:continous
-
-Famhist:binary
-
-Typea:discrete
-
-Obesity:continous
-
-Alcohol:continous
-
-Age:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Sbp	|	462	|	138	|	20	|	101	|	124	|	134	|	148	|	218
+|	Tobacco	|	462	|	3	|	4	|	0	|	0	|	2	|	5	|	31
+|	Ldl	|	462	|	4	|	2	|	0	|	3	|	4	|	5	|	15
+|	Adiposity	|	462	|	25	|	7	|	6	|	19	|	26	|	31	|	42
+|	Famhist	|	462	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Typea	|	462	|	53	|	9	|	13	|	47	|	53	|	60	|	78
+|	Obesity	|	462	|	26	|	4	|	14	|	22	|	25	|	28	|	46
+|	Alcohol	|	462	|	17	|	24	|	0	|	0	|	7	|	23	|	147
+|	Age	|	462	|	42	|	14	|	15	|	31	|	45	|	55	|	64
+|	target	|	462	|	0	|	0	|	0	|	0	|	0	|	1	|	1

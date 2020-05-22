@@ -1,30 +1,29 @@
 # analcatdata_dmft
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 797
+## Summary
 
-#features: 4
+**task**: classification
 
-  #binary_features: 1
+**instances**: 797
 
-  #integer_features: 3
+**features**: 4
 
-  #float_features: 0
+**number of classes**: 4
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 6
+![Labels](label.svg)
 
-Imbalance metric: 0.0013428651042412818
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- DMFT.Begin:discrete
-
-DMFT.End:discrete
-
-Gender:binary
-
-Ethnic:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	DMFT.Begin	|	797	|	3	|	2	|	0	|	1	|	3	|	5	|	8
+|	DMFT.End	|	797	|	1	|	1	|	0	|	0	|	2	|	3	|	6
+|	Gender	|	797	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Ethnic	|	797	|	1	|	0	|	0	|	1	|	1	|	2	|	2
+|	target	|	797	|	2	|	1	|	0	|	1	|	3	|	4	|	5

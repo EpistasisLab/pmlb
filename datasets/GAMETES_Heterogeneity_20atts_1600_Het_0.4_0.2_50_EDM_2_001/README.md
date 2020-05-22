@@ -1,62 +1,45 @@
 # GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1600
+## Summary
 
-#features: 20
+**task**: classification
 
-  #binary_features: 1
+**instances**: 1600
 
-  #integer_features: 19
+**features**: 20
 
-  #float_features: 0
+**number of classes**: 20
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- N0:discrete
-
-N1:discrete
-
-N2:binary
-
-N3:discrete
-
-N4:discrete
-
-N5:discrete
-
-N6:discrete
-
-N7:discrete
-
-N8:discrete
-
-N9:discrete
-
-N10:discrete
-
-N11:discrete
-
-N12:discrete
-
-N13:discrete
-
-N14:discrete
-
-N15:discrete
-
-M0P0:discrete
-
-M0P1:discrete
-
-M1P0:discrete
-
-M1P1:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	N0	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N1	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N2	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	N3	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N4	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N5	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	N6	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N7	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N8	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N9	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N10	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N11	|	1600	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	N12	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N13	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N14	|	1600	|	0	|	0	|	0	|	0	|	1	|	1	|	2
+|	N15	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	M0P0	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	M0P1	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	M1P0	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	M1P1	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	2
+|	target	|	1600	|	0	|	0	|	0	|	0	|	0	|	1	|	1

@@ -1,30 +1,29 @@
 # balance_scale
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 625
+## Summary
 
-#features: 4
+**task**: classification
 
-  #binary_features: 0
+**instances**: 625
 
-  #integer_features: 4
+**features**: 4
 
-  #float_features: 0
+**number of classes**: 4
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.14622976
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Left-Weight:discrete
-
-Left-Distance:discrete
-
-Right-Weight:discrete
-
-Right-Distance:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Left-Weight	|	625	|	3	|	1	|	1	|	2	|	3	|	4	|	5
+|	Left-Distance	|	625	|	3	|	1	|	1	|	2	|	3	|	4	|	5
+|	Right-Weight	|	625	|	3	|	1	|	1	|	2	|	3	|	4	|	5
+|	Right-Distance	|	625	|	3	|	1	|	1	|	2	|	3	|	4	|	5
+|	target	|	625	|	1	|	0	|	0	|	1	|	1	|	2	|	2

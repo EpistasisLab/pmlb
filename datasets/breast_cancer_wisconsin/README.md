@@ -1,82 +1,55 @@
 # breast_cancer_wisconsin
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 569
+## Summary
 
-#features: 30
+**task**: classification
 
-  #binary_features: 0
+**instances**: 569
 
-  #integer_features: 0
+**features**: 30
 
-  #float_features: 30
+**number of classes**: 30
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.06493987849061501
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- 2:continous
-
-3:continous
-
-4:continous
-
-5:continous
-
-6:continous
-
-7:continous
-
-8:continous
-
-9:continous
-
-10:continous
-
-11:continous
-
-12:continous
-
-13:continous
-
-14:continous
-
-15:continous
-
-16:continous
-
-17:continous
-
-18:continous
-
-19:continous
-
-20:continous
-
-21:continous
-
-22:continous
-
-23:continous
-
-24:continous
-
-25:continous
-
-26:continous
-
-27:continous
-
-28:continous
-
-29:continous
-
-30:continous
-
-31:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	target	|	569	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	2	|	569	|	14	|	3	|	6	|	11	|	13	|	15	|	28
+|	3	|	569	|	19	|	4	|	9	|	16	|	18	|	21	|	39
+|	4	|	569	|	91	|	24	|	43	|	75	|	86	|	104	|	188
+|	5	|	569	|	654	|	351	|	143	|	420	|	551	|	782	|	2501
+|	6	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	7	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	8	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	9	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	10	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	11	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	12	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	13	|	569	|	1	|	0	|	0	|	0	|	1	|	1	|	4
+|	14	|	569	|	2	|	2	|	0	|	1	|	2	|	3	|	21
+|	15	|	569	|	40	|	45	|	6	|	17	|	24	|	45	|	542
+|	16	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	17	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	18	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	19	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	20	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	21	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	22	|	569	|	16	|	4	|	7	|	13	|	14	|	18	|	36
+|	23	|	569	|	25	|	6	|	12	|	21	|	25	|	29	|	49
+|	24	|	569	|	107	|	33	|	50	|	84	|	97	|	125	|	251
+|	25	|	569	|	880	|	569	|	185	|	515	|	686	|	1084	|	4254
+|	26	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	27	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	28	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	29	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	30	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	31	|	569	|	0	|	0	|	0	|	0	|	0	|	0	|	0
