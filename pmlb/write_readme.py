@@ -70,7 +70,7 @@ def write_readme(dataset, problem_type, df):
             f.write('**number of classes**: {}\n\n'.format(
                 summary_stats['#features'].values[0]))
         f.write('## Summary Plots\n\n')
-        f.write('![Labels](label.svg)\n\n')
+        f.write('![Labels](label.svg)\n')
         f.write('![Corr](corr.svg)\n\n')
 
         # make markdown table
