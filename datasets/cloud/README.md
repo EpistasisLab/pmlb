@@ -1,36 +1,32 @@
 # cloud
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 108
+## Summary
 
-#features: 7
+**task**: classification
 
-  #binary_features: 1
+**instances**: 108
 
-  #integer_features: 0
+**features**: 7
 
-  #float_features: 6
+**number of classes**: 7
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 4
+![Labels](label.svg)
 
-Imbalance metric: 0.005029721079103795
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- PERIOD:continous
-
-SEEDED:binary
-
-TE:continous
-
-TW:continous
-
-NC:continous
-
-SC:continous
-
-NWC:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	PERIOD	|	108	|	100	|	58	|	1	|	55	|	106	|	133	|	194
+|	SEEDED	|	108	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	TE	|	108	|	1	|	1	|	0	|	0	|	0	|	1	|	6
+|	TW	|	108	|	2	|	1	|	0	|	0	|	1	|	3	|	6
+|	NC	|	108	|	1	|	1	|	0	|	0	|	1	|	2	|	9
+|	SC	|	108	|	1	|	0	|	0	|	0	|	0	|	1	|	4
+|	NWC	|	108	|	2	|	1	|	0	|	0	|	1	|	3	|	7
+|	target	|	108	|	1	|	1	|	0	|	1	|	1	|	3	|	3

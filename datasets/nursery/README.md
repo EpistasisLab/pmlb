@@ -1,38 +1,33 @@
 # nursery
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 12958
+## Summary
 
-#features: 8
+**task**: classification
 
-  #binary_features: 1
+**instances**: 12958
 
-  #integer_features: 7
+**features**: 8
 
-  #float_features: 0
+**number of classes**: 8
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 4
+![Labels](label.svg)
 
-Imbalance metric: 0.09008993664001576
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- parents:discrete
-
-has_nurs:discrete
-
-form:discrete
-
-children:discrete
-
-housing:discrete
-
-finance:binary
-
-social:discrete
-
-health:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	parents	|	12958	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	has_nurs	|	12958	|	1	|	1	|	0	|	1	|	2	|	3	|	4
+|	form	|	12958	|	1	|	1	|	0	|	1	|	2	|	2	|	3
+|	children	|	12958	|	1	|	1	|	0	|	1	|	2	|	2	|	3
+|	housing	|	12958	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	finance	|	12958	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	social	|	12958	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	health	|	12958	|	0	|	0	|	0	|	0	|	1	|	2	|	2
+|	target	|	12958	|	1	|	1	|	0	|	0	|	1	|	3	|	4

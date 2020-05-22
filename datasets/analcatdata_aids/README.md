@@ -1,30 +1,29 @@
 # analcatdata_aids
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 50
+## Summary
 
-#features: 4
+**task**: classification
 
-  #binary_features: 0
+**instances**: 50
 
-  #integer_features: 2
+**features**: 4
 
-  #float_features: 2
+**number of classes**: 4
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Age:discrete
-
-Race:discrete
-
-AIDS:continous
-
-Total:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Age	|	50	|	2	|	1	|	0	|	1	|	2	|	3	|	4
+|	Race	|	50	|	2	|	1	|	0	|	1	|	2	|	3	|	4
+|	AIDS	|	50	|	9037	|	16823	|	3	|	114	|	1640	|	9073	|	82334
+|	Total	|	50	|	4423370	|	6371785	|	162616	|	702786	|	1616417	|	2806359	|	22686934
+|	target	|	50	|	0	|	0	|	0	|	0	|	0	|	1	|	1

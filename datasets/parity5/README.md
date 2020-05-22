@@ -1,32 +1,30 @@
 # parity5
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 32
+## Summary
 
-#features: 5
+**task**: classification
 
-  #binary_features: 5
+**instances**: 32
 
-  #integer_features: 0
+**features**: 5
 
-  #float_features: 0
+**number of classes**: 5
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Bit 1:binary
-
-Bit 2:binary
-
-Bit 3:binary
-
-Bit 4:binary
-
-Bit 5:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Bit 1	|	32	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 2	|	32	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 3	|	32	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 4	|	32	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	Bit 5	|	32	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	32	|	0	|	0	|	0	|	0	|	0	|	1	|	1

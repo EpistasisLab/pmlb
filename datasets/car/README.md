@@ -1,34 +1,31 @@
 # car
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1728
+## Summary
 
-#features: 6
+**task**: classification
 
-  #binary_features: 0
+**instances**: 1728
 
-  #integer_features: 6
+**features**: 6
 
-  #float_features: 0
+**number of classes**: 6
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 4
+![Labels](label.svg)
 
-Imbalance metric: 0.39028831590077734
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- buying:discrete
-
-maint:discrete
-
-doors:discrete
-
-persons:discrete
-
-lug_boot:discrete
-
-safety:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	buying	|	1728	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	maint	|	1728	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	doors	|	1728	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	persons	|	1728	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	lug_boot	|	1728	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	safety	|	1728	|	1	|	0	|	0	|	0	|	1	|	2	|	2
+|	target	|	1728	|	1	|	0	|	0	|	1	|	2	|	2	|	3

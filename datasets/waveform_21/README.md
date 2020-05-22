@@ -1,64 +1,46 @@
 # waveform_21
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 5000
+## Summary
 
-#features: 21
+**task**: classification
 
-  #binary_features: 0
+**instances**: 5000
 
-  #integer_features: 0
+**features**: 21
 
-  #float_features: 21
+**number of classes**: 21
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 8.043999999999987e-05
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- X00:continous
-
-X01:continous
-
-X02:continous
-
-X03:continous
-
-X04:continous
-
-X05:continous
-
-X06:continous
-
-X07:continous
-
-X08:continous
-
-X09:continous
-
-X10:continous
-
-X11:continous
-
-X12:continous
-
-X13:continous
-
-X14:continous
-
-X15:continous
-
-X16:continous
-
-X17:continous
-
-X18:continous
-
-X19:continous
-
-X20:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	X00	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X01	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	3
+|	X02	|	5000	|	0	|	1	|	-4	|	0	|	0	|	1	|	4
+|	X03	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	5
+|	X04	|	5000	|	1	|	1	|	-3	|	0	|	1	|	2	|	6
+|	X05	|	5000	|	1	|	1	|	-2	|	0	|	1	|	3	|	7
+|	X06	|	5000	|	2	|	2	|	-3	|	1	|	2	|	4	|	8
+|	X07	|	5000	|	2	|	1	|	-3	|	1	|	2	|	3	|	7
+|	X08	|	5000	|	2	|	1	|	-3	|	1	|	2	|	3	|	7
+|	X09	|	5000	|	2	|	1	|	-1	|	1	|	3	|	4	|	7
+|	X10	|	5000	|	3	|	1	|	-1	|	2	|	3	|	4	|	9
+|	X11	|	5000	|	3	|	1	|	-1	|	1	|	3	|	4	|	7
+|	X12	|	5000	|	2	|	1	|	-2	|	1	|	2	|	3	|	7
+|	X13	|	5000	|	2	|	1	|	-2	|	1	|	2	|	3	|	7
+|	X14	|	5000	|	2	|	2	|	-2	|	1	|	2	|	4	|	8
+|	X15	|	5000	|	2	|	1	|	-2	|	0	|	1	|	3	|	7
+|	X16	|	5000	|	1	|	1	|	-3	|	0	|	1	|	2	|	6
+|	X17	|	5000	|	1	|	1	|	-4	|	0	|	0	|	1	|	6
+|	X18	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	5
+|	X19	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	4
+|	X20	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	4
+|	target	|	5000	|	1	|	0	|	0	|	0	|	1	|	2	|	2

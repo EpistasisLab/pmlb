@@ -1,44 +1,36 @@
 # wine_quality_red
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 1599
+## Summary
 
-#features: 11
+**task**: classification
 
-  #binary_features: 0
+**instances**: 1599
 
-  #integer_features: 0
+**features**: 11
 
-  #float_features: 11
+**number of classes**: 11
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 6
+![Labels](label.svg)
 
-Imbalance metric: 0.22880411889701233
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- fixed acidity:continous
-
-volatile acidity:continous
-
-citric acid:continous
-
-residual sugar:continous
-
-chlorides:continous
-
-free sulfur dioxide:continous
-
-total sulfur dioxide:continous
-
-density:continous
-
-pH:continous
-
-sulphates:continous
-
-alcohol:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	fixed acidity	|	1599	|	8	|	1	|	4	|	7	|	7	|	9	|	15
+|	volatile acidity	|	1599	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	citric acid	|	1599	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	residual sugar	|	1599	|	2	|	1	|	0	|	1	|	2	|	2	|	15
+|	chlorides	|	1599	|	0	|	0	|	0	|	0	|	0	|	0	|	0
+|	free sulfur dioxide	|	1599	|	15	|	10	|	1	|	7	|	14	|	21	|	72
+|	total sulfur dioxide	|	1599	|	46	|	32	|	6	|	22	|	38	|	62	|	289
+|	density	|	1599	|	0	|	0	|	0	|	0	|	0	|	0	|	1
+|	pH	|	1599	|	3	|	0	|	2	|	3	|	3	|	3	|	4
+|	sulphates	|	1599	|	0	|	0	|	0	|	0	|	0	|	0	|	2
+|	alcohol	|	1599	|	10	|	1	|	8	|	9	|	10	|	11	|	14
+|	target	|	1599	|	5	|	0	|	3	|	5	|	6	|	6	|	8

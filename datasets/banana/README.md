@@ -1,26 +1,27 @@
 # banana
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 5300
+## Summary
 
-#features: 2
+**task**: classification
 
-  #binary_features: 0
+**instances**: 5300
 
-  #integer_features: 0
+**features**: 2
 
-  #float_features: 2
+**number of classes**: 2
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.010690779636881451
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- At1:continous
-
-At2:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	At1	|	5300	|	0	|	0	|	-3	|	0	|	0	|	0	|	2
+|	At2	|	5300	|	0	|	1	|	-2	|	0	|	0	|	0	|	3
+|	target	|	5300	|	0	|	0	|	-1	|	-1	|	-1	|	1	|	1

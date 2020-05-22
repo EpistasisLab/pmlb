@@ -1,62 +1,45 @@
 # twonorm
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 7400
+## Summary
 
-#features: 20
+**task**: classification
 
-  #binary_features: 0
+**instances**: 7400
 
-  #integer_features: 0
+**features**: 20
 
-  #float_features: 20
+**number of classes**: 20
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 6.57414170927761e-07
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- A1:continous
-
-A2:continous
-
-A3:continous
-
-A4:continous
-
-A5:continous
-
-A6:continous
-
-A7:continous
-
-A8:continous
-
-A9:continous
-
-A10:continous
-
-A11:continous
-
-A12:continous
-
-A13:continous
-
-A14:continous
-
-A15:continous
-
-A16:continous
-
-A17:continous
-
-A18:continous
-
-A19:continous
-
-A20:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	A1	|	7400	|	0	|	1	|	-4	|	0	|	0	|	0	|	3
+|	A2	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A3	|	7400	|	0	|	1	|	-4	|	0	|	0	|	0	|	4
+|	A4	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A5	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	5
+|	A6	|	7400	|	0	|	1	|	-4	|	0	|	0	|	0	|	3
+|	A7	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A8	|	7400	|	0	|	1	|	-4	|	0	|	0	|	0	|	3
+|	A9	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A10	|	7400	|	0	|	1	|	-4	|	0	|	0	|	0	|	4
+|	A11	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A12	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A13	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	A14	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A15	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	A16	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	A17	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	A18	|	7400	|	0	|	1	|	-4	|	0	|	0	|	0	|	4
+|	A19	|	7400	|	0	|	1	|	-4	|	0	|	0	|	0	|	4
+|	A20	|	7400	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	target	|	7400	|	0	|	0	|	0	|	0	|	0	|	1	|	1

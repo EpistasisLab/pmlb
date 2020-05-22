@@ -1,28 +1,28 @@
 # analcatdata_happiness
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 60
+## Summary
 
-#features: 3
+**task**: classification
 
-  #binary_features: 0
+**instances**: 60
 
-  #integer_features: 2
+**features**: 3
 
-  #float_features: 1
+**number of classes**: 3
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 0.0
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Years_of_schooling:discrete
-
-Siblings:discrete
-
-Count:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Years_of_schooling	|	60	|	1	|	1	|	0	|	0	|	1	|	2	|	3
+|	Siblings	|	60	|	2	|	1	|	0	|	1	|	2	|	3	|	4
+|	Count	|	60	|	25	|	23	|	0	|	6	|	16	|	36	|	96
+|	target	|	60	|	1	|	0	|	0	|	0	|	1	|	2	|	2

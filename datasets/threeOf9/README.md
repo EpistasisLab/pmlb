@@ -1,40 +1,34 @@
 # threeOf9
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 512
+## Summary
 
-#features: 9
+**task**: classification
 
-  #binary_features: 9
+**instances**: 512
 
-  #integer_features: 0
+**features**: 9
 
-  #float_features: 0
+**number of classes**: 9
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.00494384765625
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- F1:binary
-
-F2:binary
-
-F3:binary
-
-F4:binary
-
-F5:binary
-
-F6:binary
-
-F7:binary
-
-F8:binary
-
-F9:binary
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	F1	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F2	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F3	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F4	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F5	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F6	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F7	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F8	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	F9	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1
+|	target	|	512	|	0	|	0	|	0	|	0	|	0	|	1	|	1

@@ -1,28 +1,28 @@
 # lupus
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 87
+## Summary
 
-#features: 3
+**task**: classification
 
-  #binary_features: 0
+**instances**: 87
 
-  #integer_features: 0
+**features**: 3
 
-  #float_features: 3
+**number of classes**: 3
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.038182058396089326
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- TIME:continous
-
-DURATION:continous
-
-LOG(1+DURATION):continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	TIME	|	87	|	142	|	73	|	4	|	87	|	147	|	193	|	276
+|	DURATION	|	87	|	10	|	21	|	0	|	0	|	2	|	9	|	106
+|	LOG(1+DURATION)	|	87	|	1	|	1	|	0	|	0	|	1	|	2	|	4
+|	target	|	87	|	0	|	0	|	0	|	0	|	0	|	1	|	1

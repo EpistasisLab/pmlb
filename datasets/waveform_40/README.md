@@ -1,102 +1,65 @@
 # waveform_40
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 5000
+## Summary
 
-#features: 40
+**task**: classification
 
-  #binary_features: 0
+**instances**: 5000
 
-  #integer_features: 0
+**features**: 40
 
-  #float_features: 40
+**number of classes**: 40
 
-Endpoint type: integer
+## Summary Plots
 
-#Classes: 3
+![Labels](label.svg)
 
-Imbalance metric: 5.787999999999951e-05
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- X00:continous
-
-X01:continous
-
-X02:continous
-
-X03:continous
-
-X04:continous
-
-X05:continous
-
-X06:continous
-
-X07:continous
-
-X08:continous
-
-X09:continous
-
-X10:continous
-
-X11:continous
-
-X12:continous
-
-X13:continous
-
-X14:continous
-
-X15:continous
-
-X16:continous
-
-X17:continous
-
-X18:continous
-
-X19:continous
-
-X20:continous
-
-X21:continous
-
-X22:continous
-
-X23:continous
-
-X24:continous
-
-X25:continous
-
-X26:continous
-
-X27:continous
-
-X28:continous
-
-X29:continous
-
-X30:continous
-
-X31:continous
-
-X32:continous
-
-X33:continous
-
-X34:continous
-
-X35:continous
-
-X36:continous
-
-X37:continous
-
-X38:continous
-
-X39:continous
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	X00	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X01	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	4
+|	X02	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	4
+|	X03	|	5000	|	1	|	1	|	-3	|	0	|	0	|	2	|	5
+|	X04	|	5000	|	1	|	1	|	-3	|	0	|	1	|	2	|	6
+|	X05	|	5000	|	2	|	1	|	-3	|	0	|	1	|	3	|	7
+|	X06	|	5000	|	2	|	2	|	-2	|	1	|	2	|	4	|	8
+|	X07	|	5000	|	2	|	1	|	-2	|	1	|	2	|	3	|	7
+|	X08	|	5000	|	2	|	1	|	-2	|	1	|	2	|	3	|	7
+|	X09	|	5000	|	2	|	1	|	-1	|	1	|	3	|	4	|	7
+|	X10	|	5000	|	3	|	1	|	-1	|	2	|	3	|	4	|	8
+|	X11	|	5000	|	2	|	1	|	-1	|	1	|	3	|	4	|	7
+|	X12	|	5000	|	2	|	1	|	-2	|	1	|	2	|	3	|	6
+|	X13	|	5000	|	2	|	1	|	-2	|	1	|	2	|	3	|	8
+|	X14	|	5000	|	2	|	2	|	-2	|	1	|	2	|	4	|	8
+|	X15	|	5000	|	1	|	1	|	-2	|	0	|	1	|	3	|	7
+|	X16	|	5000	|	1	|	1	|	-3	|	0	|	1	|	2	|	6
+|	X17	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	6
+|	X18	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	4
+|	X19	|	5000	|	0	|	1	|	-3	|	0	|	0	|	1	|	4
+|	X20	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X21	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X22	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X23	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X24	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X25	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X26	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X27	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X28	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X29	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X30	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X31	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X32	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X33	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	4
+|	X34	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X35	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X36	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X37	|	5000	|	0	|	0	|	-3	|	0	|	0	|	0	|	3
+|	X38	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	X39	|	5000	|	0	|	1	|	-3	|	0	|	0	|	0	|	3
+|	target	|	5000	|	0	|	0	|	0	|	0	|	1	|	2	|	2

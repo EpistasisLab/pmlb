@@ -1,28 +1,28 @@
 # analcatdata_asbestos
 
-## Summary Stats
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-#instances: 83
+## Summary
 
-#features: 3
+**task**: classification
 
-  #binary_features: 1
+**instances**: 83
 
-  #integer_features: 1
+**features**: 3
 
-  #float_features: 1
+**number of classes**: 3
 
-Endpoint type: binary
+## Summary Plots
 
-#Classes: 2
+![Labels](label.svg)
 
-Imbalance metric: 0.011757874872985923
+![Corr](corr.svg)
 
-## Feature Types
+## Data Summary
 
- Ventilation:binary
-
-Duration:continous
-
-Exposure:discrete
-
+|	variable	|	count	|	mean	|	std	|	min	|	25%	|	50%	|	75%	|	max|
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|	Ventilation	|	83	|	0	|	0	|	0	|	0	|	1	|	1	|	1
+|	Duration	|	83	|	147	|	75	|	30	|	85	|	138	|	212	|	300
+|	Exposure	|	83	|	0	|	0	|	0	|	0	|	0	|	2	|	2
+|	target	|	83	|	0	|	0	|	0	|	0	|	0	|	1	|	1
