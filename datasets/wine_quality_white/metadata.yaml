@@ -1,12 +1,17 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: wine_quality_white
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
+description: >
+  The dataset is related to the white variant of the Portuguese "Vinho Verde" wine.
+  For more details, consult: http://www.vinhoverde.pt/en/ or the reference (Cortez et al., 2009).
+  Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.).
+  The inputs include objective tests (e.g. pH values) and the output is sensory data (median of at least 3 evaluations made by wine experts).
+source: http://archive.ics.uci.edu/ml/datasets/Wine+Quality
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
-  description: None yet. See our contributing guide to help us add one.
+  type: ordinal
+  description: >
+    Wine quality score based on sensory data, median of at least 3 evaluations made by wine experts.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: fixed acidity
