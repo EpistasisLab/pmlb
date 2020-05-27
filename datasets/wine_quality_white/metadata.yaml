@@ -5,7 +5,9 @@ description: >
   For more details, consult: http://www.vinhoverde.pt/en/ or the reference (Cortez et al., 2009).
   Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.).
   The inputs include objective tests (e.g. pH values) and the output is sensory data (median of at least 3 evaluations made by wine experts).
-source: http://archive.ics.uci.edu/ml/datasets/Wine+Quality
+source: >
+  http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv
+  http://archive.ics.uci.edu/ml/datasets/Wine+Quality
 publication: >
   P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
   Modeling wine preferences by data mining from physicochemical properties.
