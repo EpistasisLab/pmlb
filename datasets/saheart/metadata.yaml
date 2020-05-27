@@ -4,6 +4,7 @@ dataset: saheart
 description: A retrospective sample of males in a heart-disease high-risk region of the Western Cape.
 source: >
   https://www.openml.org/data/get_csv/1592290/phpgNaXZe
+  https://www.openml.org/d/1498
   https://rdrr.io/cran/ElemStatLearn/man/SAheart.html
 publication: >
   Rousseauw, J., du Plessis, J., Benade, A., Jordaan, P., Kotze, J. and Ferreira, J. (1983). 
