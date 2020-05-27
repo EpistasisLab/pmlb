@@ -6,7 +6,9 @@ description: >
   Each class is generated from a combination of 2 of 3 base waves.
   All 40 features describing the waveform include noise.
   The last 19 features are noise with mean 0 and variance 1.
-source: https://www.openml.org/data/get_csv/60/dataset_60_waveform-5000.arff
+source: >
+  https://www.openml.org/data/get_csv/60/dataset_60_waveform-5000.arff
+  https://www.openml.org/d/60
 publication: > 
   Breiman, L., Friedman, J.H., Olshen, R.A., and Stone, C.J. (1984). 
   Classification and Regression Trees. 
