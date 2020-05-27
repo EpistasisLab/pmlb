@@ -1,19 +1,26 @@
 #Generated automatically by pmlb/write_metadata.py
+#Reviewed by Trang Le
 dataset: waveform_40
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  Generated 3 classes of waves.
+  Each class is generated from a combination of 2 of 3 base waves.
+  All 40 features describing the waveform include noise.
+  The last 19 features are noise with mean 0 and variance 1.
+source: https://www.openml.org/data/get_csv/60/dataset_60_waveform-5000.arff
+publication: > 
+  Breiman, L., Friedman, J.H., Olshen, R.A., and Stone, C.J. (1984). 
+  Classification and Regression Trees. 
+  Wadsworth International, pp 49-55, 169.
+  doi:10.1201/9781315139470
 task: classification
 target:
-  type: discrete
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  type: nominal
+  description: One of 3 classes of wave.
+  code: None.
 features: # list of features in the dataset
   - name: X00
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: See general description.
   - name: X01
     type: continuous
   - name: X02
