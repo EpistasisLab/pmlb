@@ -5,7 +5,7 @@ name: Python application
 
 on:
   push:
-    branches: 
+    branches:
       - master
       - PMLB2.0
   pull_request:
@@ -25,7 +25,7 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install nose numpy scipy scikit-learn pandas joblib pyyaml
+        pip install nose numpy scipy pandas pyyaml requests
     - name: Test with nose
       run: |
         nosetests -s -v
