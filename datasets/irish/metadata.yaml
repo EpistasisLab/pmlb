@@ -37,4 +37,4 @@ features: # list of features in the dataset
   - name: Type_school
     type: discrete
     description: Type of schooling
-    code: 'secondary'=1, 'vocational'=2, 'primary_terminal_leaver'=9
+    code: 'secondary'=1, 'vocational'=2, 'primary_terminal_leaver'=0
