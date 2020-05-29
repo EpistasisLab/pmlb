@@ -1,4 +1,5 @@
 #Generated automatically by pmlb/write_metadata.py
+# Reviewed by Trang Le
 dataset: wine_quality_white
 description: >
   The dataset is related to the white variant of the Portuguese "Vinho Verde" wine.
