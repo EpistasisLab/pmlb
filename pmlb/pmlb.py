@@ -33,7 +33,7 @@ dataset_names = classification_dataset_names + regression_dataset_names
 GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
 suffix = '.tsv.gz'
 
-def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
+def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True):
     """Download a data set from the PMLB, (optionally) store it locally, and return the data set.
 
     You must be connected to the internet if you are fetching a data set that is not cached locally.
@@ -47,6 +47,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
     local_cache_dir: str (default: None)
         The directory on your local machine to store the data files.
         If None, then the local data cache will not be used.
+    dropna: bool
+        If True, pmlb will drop NAs in exported dataset.
 
     Returns
     ----------
@@ -82,6 +84,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
             dataset.to_csv(dataset_path, sep='\t', compression='gzip',
                     index=False)
 
+    if dropna:
+        dataset.dropna(inplace=True)
     if return_X_y:
         X = dataset.drop('target', axis=1).values
         y = dataset['target'].values

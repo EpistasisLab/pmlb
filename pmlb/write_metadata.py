@@ -247,11 +247,11 @@ if __name__ =='__main__':
 
     for d in classification_dataset_names:
         print(d,'...')
-        df = fetch_data(d, local_cache_dir=local_dir)
+        df = fetch_data(d, local_cache_dir=local_dir, dropna=False)
         generate_description(df, d,'classification',local_cache_dir=local_dir)
         generate_summarystats(df, d,'classification',local_cache_dir=local_dir)
     for d in regression_dataset_names:
         print(d,'...')
-        df = fetch_data(d, local_cache_dir=local_dir)
+        df = fetch_data(d, local_cache_dir=local_dir, dropna=False)
         generate_description(df, d,'regression',local_cache_dir=local_dir)
         generate_summarystats(df, d,'regression',local_cache_dir=local_dir)
