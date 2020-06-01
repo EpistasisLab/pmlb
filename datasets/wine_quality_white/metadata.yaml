@@ -1,0 +1,45 @@
+#Generated automatically by pmlb/write_metadata.py
+# Reviewed by Trang Le
+dataset: wine_quality_white
+description: >
+  The dataset is related to the white variant of the Portuguese "Vinho Verde" wine.
+  For more details, consult: http://www.vinhoverde.pt/en/ or the reference (Cortez et al., 2009).
+  Due to privacy and logistic issues, only physicochemical (inputs) and sensory (the output) variables are available (e.g. there is no data about grape types, wine brand, wine selling price, etc.).
+  The inputs include objective tests (e.g. pH values) and the output is sensory data (median of at least 3 evaluations made by wine experts).
+source: >
+  http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv
+  http://archive.ics.uci.edu/ml/datasets/Wine+Quality
+publication: >
+  P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
+  Modeling wine preferences by data mining from physicochemical properties.
+  In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236.
+  doi:10.1016/j.dss.2009.05.016
+task: classification
+target:
+  type: ordinal
+  description: >
+    Wine quality score based on sensory data, median of at least 3 evaluations made by wine experts.
+  code: ranges from 0 (very bad) to 10 (very excellent)
+features: # list of features in the dataset
+  - name: fixed acidity
+    type: continuous
+  - name: volatile acidity
+    type: continuous
+  - name: citric acid
+    type: continuous
+  - name: residual sugar
+    type: continuous
+  - name: chlorides
+    type: continuous
+  - name: free sulfur dioxide
+    type: continuous
+  - name: total sulfur dioxide
+    type: continuous
+  - name: density
+    type: continuous
+  - name: pH
+    type: continuous
+  - name: sulphates
+    type: continuous
+  - name: alcohol
+    type: continuous

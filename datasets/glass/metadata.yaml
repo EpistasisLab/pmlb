@@ -1,0 +1,32 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: glass
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: RI
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Na
+    type: continuous
+  - name: Mg
+    type: continuous
+  - name: Al
+    type: continuous
+  - name: Si
+    type: continuous
+  - name: K
+    type: continuous
+  - name: Ca
+    type: continuous
+  - name: Ba
+    type: continuous
+  - name: Fe
+    type: continuous

@@ -1,1 +1,0 @@
-# 1203_BNG_pwLinear

@@ -9,7 +9,7 @@ on:
       - master
       - PMLB2.0
   pull_request:
-    branches: 
+    branches:
       - master
       - PMLB2.0
 jobs:
@@ -25,7 +25,7 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install nose numpy scipy pandas pyyaml requests
+        pip install nose numpy scipy pandas pyyaml requests parameterized
     - name: Test with nose
       run: |
         nosetests -s -v

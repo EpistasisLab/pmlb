@@ -1,0 +1,96 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: kddcup
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: discrete
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: Atr-0
+    type: discrete
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Atr-1
+    type: discrete
+  - name: Atr-2
+    type: discrete
+  - name: Atr-3
+    type: discrete
+  - name: Atr-4
+    type: discrete
+  - name: Atr-5
+    type: discrete
+  - name: Atr-6
+    type: binary
+  - name: Atr-7
+    type: discrete
+  - name: Atr-8
+    type: discrete
+  - name: Atr-9
+    type: discrete
+  - name: Atr-10
+    type: discrete
+  - name: Atr-11
+    type: binary
+  - name: Atr-12
+    type: discrete
+  - name: Atr-13
+    type: binary
+  - name: Atr-14
+    type: discrete
+  - name: Atr-15
+    type: discrete
+  - name: Atr-16
+    type: discrete
+  - name: Atr-17
+    type: discrete
+  - name: Atr-18
+    type: discrete
+  - name: Atr-19
+    type: discrete
+  - name: Atr-20
+    type: discrete
+  - name: Atr-21
+    type: binary
+  - name: Atr-22
+    type: discrete
+  - name: Atr-23
+    type: discrete
+  - name: Atr-24
+    type: continuous
+  - name: Atr-25
+    type: continuous
+  - name: Atr-26
+    type: continuous
+  - name: Atr-27
+    type: continuous
+  - name: Atr-28
+    type: continuous
+  - name: Atr-29
+    type: continuous
+  - name: Atr-30
+    type: continuous
+  - name: Atr-31
+    type: discrete
+  - name: Atr-32
+    type: discrete
+  - name: Atr-33
+    type: continuous
+  - name: Atr-34
+    type: continuous
+  - name: Atr-35
+    type: continuous
+  - name: Atr-36
+    type: continuous
+  - name: Atr-37
+    type: continuous
+  - name: Atr-38
+    type: continuous
+  - name: Atr-39
+    type: continuous
+  - name: Atr-40
+    type: continuous
