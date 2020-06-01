@@ -1,0 +1,82 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: ionosphere
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: 0
+    type: binary
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: 1
+    type: discrete
+  - name: 2
+    type: continuous
+  - name: 3
+    type: continuous
+  - name: 4
+    type: continuous
+  - name: 5
+    type: continuous
+  - name: 6
+    type: continuous
+  - name: 7
+    type: continuous
+  - name: 8
+    type: continuous
+  - name: 9
+    type: continuous
+  - name: 10
+    type: continuous
+  - name: 11
+    type: continuous
+  - name: 12
+    type: continuous
+  - name: 13
+    type: continuous
+  - name: 14
+    type: continuous
+  - name: 15
+    type: continuous
+  - name: 16
+    type: continuous
+  - name: 17
+    type: continuous
+  - name: 18
+    type: continuous
+  - name: 19
+    type: continuous
+  - name: 20
+    type: continuous
+  - name: 21
+    type: continuous
+  - name: 22
+    type: continuous
+  - name: 23
+    type: continuous
+  - name: 24
+    type: continuous
+  - name: 25
+    type: continuous
+  - name: 26
+    type: continuous
+  - name: 27
+    type: continuous
+  - name: 28
+    type: continuous
+  - name: 29
+    type: continuous
+  - name: 30
+    type: continuous
+  - name: 31
+    type: continuous
+  - name: 32
+    type: continuous
+  - name: 33
+    type: continuous
