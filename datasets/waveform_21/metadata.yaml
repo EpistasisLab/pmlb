@@ -1,19 +1,27 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: waveform_21
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  Three classes of waves, twenty one attributes.
+  Each class is generated from a combination of 2 of 3 "base" waves with added noise.
+  All attributes include noise.
+  The column names from source are similar to those found in pmlb, except they start with X, are all two digits, and
+  begin indexing at 0 instead of at 1. The 'target' feature in pmlb is equivalent to 'V22'.
+source: https://www.openml.org/d/4551
+publication: >
+  https://archive.ics.uci.edu/ml/datasets/Waveform+Database+Generator+%28Version+1%29
+  Breiman, L., Friedman, J.H., Olshen, R.A., and Stone, C.J. (1984). 
+  Classification and Regression Trees. 
+  Wadsworth International, pp 49-55, 169.
+  doi: 10.1201/9781315139470
 task: classification
 target:
   type: discrete
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: One of the three classes of wave; determined by the 21 attributes.
+  code: see general description.
 features: # list of features in the dataset
   - name: X00
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: see general description for this and all following features.
   - name: X01
     type: continuous
   - name: X02
