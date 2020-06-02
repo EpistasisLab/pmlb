@@ -34,10 +34,10 @@ features: # list of features in the dataset
     code: 0 = almond, 1 = anise, 2 = creosote, 8 = fishy, 4 = foul, 5 = musty, 6 = none, 7 = pungent, 3 = spicy
   - name: gill-attachment
     type: binary
-    code: 0 = attached, NA = descending, 1 = free, NA = notched
+    code: 0 = attached, 1 = free
   - name: gill-spacing
     type: binary
-    code: 0 = close, 1 = crowded, NA = distant
+    code: 0 = close, 1 = crowded
   - name: gill-size
     type: binary
     code: 0 = broad, 1 = narrow
@@ -49,7 +49,7 @@ features: # list of features in the dataset
     code: 0 = enlarging, 1 = tapering
   - name: stalk-root
     type: nominal
-    code: 1 = bulbous, 2 = club, NA = cup, 3 = equal, NA = rhizomorphs, 4 = rooted, 0 = missing
+    code: 1 = bulbous, 2 = club, 3 = equal, 4 = rooted, 0 = missing
   - name: stalk-surface-above-ring
     type: nominal
     code: 0 = fibrous, 1 = scaly, 2 = silky, 3 = smooth
@@ -73,7 +73,7 @@ features: # list of features in the dataset
     code: 0 = none, 1 = one, 2 = two
   - name: ring-type
     type: nominal
-    code: NA = cobwebby, 0 = evanescent, 1 = flaring, 2 = large, 3 = none, 4 = pendant, NA = sheathing, NA = zone
+    code: 0 = evanescent, 1 = flaring, 2 = large, 3 = none, 4 = pendant
   - name: spore-print-color
     type: nominal
     code: 0 = black, 1 = brown, 2 = buff, 3 = chocolate, 4 = green, 5 = orange, 6 = purple, 7 = white, 8 = yellow
