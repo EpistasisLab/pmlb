@@ -1,58 +1,85 @@
 #Generated automatically by pmlb/write_metadata.py
+#Reviewed by Trang Le
 dataset: mushroom
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: Mushroom records drawn from The Audubon Society Field Guide to North American Mushrooms.
+source: >
+  https://www.openml.org/data/get_csv/24/dataset_24_mushroom.arff
+  https://www.openml.org/d/24
+  https://sonj.me/projects/2018/09/05/poisonous-mushroom-classification.html
+publication: >
+  Alfred A. Knopf.
+  The Audubon Society Field Guide to North American Mushrooms (1981).
+  G. H. Lincoff (Pres.), New York.
+  doi:10.2307/3792705
 task: classification
 target:
   type: binary
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: Whether a mushroom is poisonous or edible.
+  code: 1 = poisonous, 0 = edible
 features: # list of features in the dataset
   - name: cap-shape
-    type: discrete
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    type: nominal
+    code: 0 = bell, 1 = conical, 2 = convex, 3 = flat, 4 = knobbed, 5 = sunken
   - name: cap-surface
-    type: discrete
+    type: nominal
+    code: 0 = fibrous, 1 = grooves, 2 = scaly, 3 = smooth
   - name: cap-color
-    type: discrete
+    type: nominal
+    code: 0 = brown, 1 = buff, 2 = cinnamon, 3 = gray, 4 = green, 5 = pink, 6 = purple, 7 = red, 8 = white, 9 = yellow
   - name: bruises?
     type: binary
+    code: 0 = bruises, 1 = no
   - name: odor
-    type: discrete
+    type: nominal
+    code: 0 = almond, 1 = anise, 2 = creosote, 8 = fishy, 4 = foul, 5 = musty, 6 = none, 7 = pungent, 3 = spicy
   - name: gill-attachment
     type: binary
+    code: 0 = attached, 1 = free
   - name: gill-spacing
     type: binary
+    code: 0 = close, 1 = crowded
   - name: gill-size
     type: binary
+    code: 0 = broad, 1 = narrow
   - name: gill-color
-    type: discrete
+    type: nominal
+    code: 0 = black, 1 = brown, 2 = buff, 3 = chocolate, 4 = gray, 5 = green, 6 = orange, 7 = pink, 8 = purple, 9 = red, 10 = white, 11 = yellow
   - name: stalk-shape
     type: binary
+    code: 0 = enlarging, 1 = tapering
   - name: stalk-root
-    type: discrete
+    type: nominal
+    code: 1 = bulbous, 2 = club, 3 = equal, 4 = rooted, 0 = missing
   - name: stalk-surface-above-ring
-    type: discrete
+    type: nominal
+    code: 0 = fibrous, 1 = scaly, 2 = silky, 3 = smooth
   - name: stalk-surface-below-ring
-    type: discrete
+    type: nominal
+    code: 0 = fibrous, 1 = scaly, 2 = silky, 3 = smooth
   - name: stalk-color-above-ring
-    type: discrete
+    type: nominal
+    code: 0 = brown, 1 = buff, 2 = cinnamon, 3 = gray, 4 = orange, 5 = pink, 6 = red, 7 = white, 8 = yellow
   - name: stalk-color-below-ring
-    type: discrete
+    type: nominal
+    code: 0 = brown, 1 = buff, 2 = cinnamon, 3 = gray, 4 = orange, 5 = pink, 6 = red, 7 = white, 8 = yellow
   - name: veil-type
-    type: discrete
+    type: nominal
+    code: 0 = partial, 1 = universal
   - name: veil-color
-    type: discrete
+    type: nominal
+    code: 0 = brown, 1 = orange, 2 = white, 3 = yellow
   - name: ring-number
-    type: discrete
+    type: ordinal
+    code: 0 = none, 1 = one, 2 = two
   - name: ring-type
-    type: discrete
+    type: nominal
+    code: 0 = evanescent, 1 = flaring, 2 = large, 3 = none, 4 = pendant
   - name: spore-print-color
-    type: discrete
+    type: nominal
+    code: 0 = black, 1 = brown, 2 = buff, 3 = chocolate, 4 = green, 5 = orange, 6 = purple, 7 = white, 8 = yellow
   - name: population
-    type: discrete
+    type: nominal
+    code: 0 = abundant, 1 = clustered, 2 = numerous, 3 = scattered, 4 = several, 5 = solitary
   - name: habitat
-    type: discrete
+    type: nominal
+    code: 0 = grasses, 1 = leaves, 2 = meadows, 3 = paths, 4 = urban, 5 = waste, 6 = woods
