@@ -28,6 +28,7 @@ import os
 from .dataset_lists import classification_dataset_names, regression_dataset_names
 import requests
 import warnings
+import pdb
 
 dataset_names = classification_dataset_names + regression_dataset_names
 GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
@@ -64,6 +65,7 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None):
 
     old_dataset_url = '{GITHUB_URL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(
                                 GITHUB_URL=GITHUB_URL,
+                                DATA_TYPE=data_type,
                                 DATASET_NAME=dataset_name,
                                 SUFFIX=suffix
                                 )
