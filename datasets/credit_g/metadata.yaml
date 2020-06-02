@@ -10,45 +10,45 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: checking_status
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: duration
     type: continuous
   - name: credit_history
-    type: discrete
+    type: categorical
   - name: purpose
-    type: discrete
+    type: categorical
   - name: credit_amount
     type: continuous
   - name: savings_status
-    type: discrete
+    type: categorical
   - name: employment
-    type: discrete
+    type: categorical
   - name: installment_commitment
     type: continuous
   - name: personal_status
-    type: discrete
+    type: categorical
   - name: other_parties
-    type: discrete
+    type: categorical
   - name: residence_since
     type: continuous
   - name: property_magnitude
-    type: discrete
+    type: categorical
   - name: age
     type: continuous
   - name: other_payment_plans
-    type: discrete
+    type: categorical
   - name: housing
-    type: discrete
+    type: categorical
   - name: existing_credits
     type: continuous
   - name: job
-    type: discrete
+    type: categorical
   - name: num_dependents
     type: continuous
   - name: own_telephone
-    type: binary
+    type: categorical
   - name: foreign_worker
-    type: binary
+    type: categorical

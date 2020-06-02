@@ -12,7 +12,7 @@ package_version = calculate_version()
 setup(
     name='pmlb',
     version=package_version,
-    author='Randal S. Olson, William La Cava, Trane Le, Weixuan Fu',
+    author='Randal S. Olson, William La Cava, Trang Le, Weixuan Fu',
     author_email='rso@randalolson.com, lacava@upenn.edu, ttle@pennmedicine.upenn.edu, weixuanf@pennmedicine.upenn.edu',
     packages=find_packages(),
     url='https://github.com/EpistasisLab/penn-ml-benchmarks',

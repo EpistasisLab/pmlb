@@ -121,69 +121,69 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
     assert (local_cache_dir!=None)
     metadata_filename = os.path.join(local_cache_dir,
         dataset_name, 'metadata.yaml')
-    if not os.path.isfile(metadata_filename):
-        pdb.set_trace()
-        metadata_file = open(metadata_filename, 'r')
-        header = metadata_file[0]
-        if header != header_to_print:
-            logger.warning('Not writing '+ dataset_name + '.yaml ; '
-                           + 'It has a customized metadta file\n')
-            return 
+    # if not os.path.isfile(metadata_filename):
+    metadata_file = open(metadata_filename, 'r')
+    header = metadata_file.readline()
+    if header != header_to_print:
+        
+        logger.warning('Not writing '+ dataset_name + '.yaml ; '
+                       + 'It has a customized metadta file\n')
+        return 
 
+    metadata_file.close()
+    metadata_file = open(metadata_filename, 'w')
+    try:
+        fnames = [col for col in df.columns if col!=TARGET_NAME]
+        #determine all required values
+        df_X = df.drop(TARGET_NAME,axis=1)
+        types = [get_type(df_X[col]) for col in df_X.columns]
+        feat=count_features_type(df_X)
+        endpoint=get_type(df[TARGET_NAME], include_binary=True)
+        #proceed with writing
+        none_yet = ('None yet. '
+                    'See our contributing guide to help us add one.')
+        metadata_file.write(header_to_print)
+        # required, dataset name
+        metadata_file.write('dataset: {}\n'.format(dataset_name))
+        # required, dataset description
+        metadata_file.write('description: {}\n'.format(none_yet))
+        # required, link to the source from where dataset was retrieved
+        metadata_file.write('source: {}\n'.format(none_yet))
+        # optional, study that generated the dataset (doi, pmid, pmcid, 
+        # or url)
+        metadata_file.write('publication: {}\n'.format(none_yet))
+        # required, classification or regression
+        metadata_file.write('task: {}\n'.format(task))
+        metadata_file.write('target:\n')
+        metadata_file.write('  type: {}\n'.format(endpoint))
+        # required, describe the endpoint/outcome (and unit if exists)
+        metadata_file.write('  description: {}\n'.format(none_yet))
+        # optional but recommended, coding information,
+        # e.g., 'Control' = 0, 'Case' = 1
+        metadata_file.write('  code: {}\n'.format(none_yet))
+        metadata_file.write('features: # list of features in the '
+                'dataset\n')
+        first = True
+        for feature,feature_type in zip(fnames, types):
+            if feature in protected_feature_names:
+                feature = '"'+feature+'"'
+            metadata_file.write('  - name: {}\n'.format(feature))
+            metadata_file.write('    type: {}\n'.format(feature_type))
+            if first:
+                metadata_file.write('    description: null # optional but '
+                        'recommended, what the feature measures/indicates, '
+                        'unit\n')
+                metadata_file.write('    code: null # optional, coding '
+                        'information, e.g., Control = 0, Case = 1\n')
+                metadata_file.write('    transform: ~ # optional, any '
+                'transformation performed on the feature, e.g., log '
+                'scaled\n')
+                first = False
+
+    except IOError as err:
+        print(err)
+    finally:
         metadata_file.close()
-        metadata_file = open(metadata_filename, 'w')
-        try:
-            fnames = [col for col in df.columns if col!=TARGET_NAME]
-            #determine all required values
-            df_X = df.drop(TARGET_NAME,axis=1)
-            types = [get_type(df_X[col]) for col in df_X.columns]
-            feat=count_features_type(df_X)
-            endpoint=get_type(df[TARGET_NAME], include_binary=True)
-            #proceed with writing
-            none_yet = ('None yet. '
-                        'See our contributing guide to help us add one.')
-            metadata_file.write(header_to_print)
-            # required, dataset name
-            metadata_file.write('dataset: {}\n'.format(dataset_name))
-            # required, dataset description
-            metadata_file.write('description: {}\n'.format(none_yet))
-            # required, link to the source from where dataset was retrieved
-            metadata_file.write('source: {}\n'.format(none_yet))
-            # optional, study that generated the dataset (doi, pmid, pmcid, 
-            # or url)
-            metadata_file.write('publication: {}\n'.format(none_yet))
-            # required, classification or regression
-            metadata_file.write('task: {}\n'.format(task))
-            metadata_file.write('target:\n')
-            metadata_file.write('  type: {}\n'.format(endpoint))
-            # required, describe the endpoint/outcome (and unit if exists)
-            metadata_file.write('  description: {}\n'.format(none_yet))
-            # optional but recommended, coding information,
-            # e.g., 'Control' = 0, 'Case' = 1
-            metadata_file.write('  code: {}\n'.format(none_yet))
-            metadata_file.write('features: # list of features in the '
-                    'dataset\n')
-            first = True
-            for feature,feature_type in zip(fnames, types):
-                if feature in protected_feature_names:
-                    feature = '"'+feature+'"'
-                metadata_file.write('  - name: {}\n'.format(feature))
-                metadata_file.write('    type: {}\n'.format(feature_type))
-                if first:
-                    metadata_file.write('    description: null # optional but '
-                            'recommended, what the feature measures/indicates, '
-                            'unit\n')
-                    metadata_file.write('    code: null # optional, coding '
-                            'information, e.g., Control = 0, Case = 1\n')
-                    metadata_file.write('    transform: ~ # optional, any '
-                    'transformation performed on the feature, e.g., log '
-                    'scaled\n')
-                    first = False
-
-        except IOError as err:
-            print(err)
-        finally:
-            metadata_file.close()
 
 def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
     """Generates summary stats for a given dataset in its summary_stats.csv
