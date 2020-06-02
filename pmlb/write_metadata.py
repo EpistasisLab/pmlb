@@ -8,20 +8,23 @@ PMLB was primarily developed at the University of Pennsylvania by:
     - Trang Le (ttle@pennmedicine.upenn.edu)
     - and many more generous open source contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software
-and associated documentation files (the "Software"), to deal in the Software without restriction,
-including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of 
+this software and associated documentation files (the "Software"), to deal in 
+the Software without restriction, including without limitation the rights to 
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies 
+of the Software, and to permit persons to whom the Software is furnished to do 
+so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial
-portions of the Software.
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+SOFTWARE.
 """
 
 import glob, os
@@ -32,6 +35,14 @@ from pmlb import fetch_data
 from .dataset_lists import (classification_dataset_names,
                             regression_dataset_names)
 import pdb
+import logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+ch = logging.StreamHandler()
+ch.setLevel(logging.INFO)
+formatter = logging.Formatter('%(module)s: %(levelname)s: %(message)s')
+ch.setFormatter(formatter)
+logger.addHandler(ch)
 
 TARGET_NAME = 'target'
 
@@ -106,10 +117,20 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
     """
 
     print('generating metadata for',dataset_name)
+    header_to_print = '#Generated automatically by pmlb/write_metadata.py\n'
     assert (local_cache_dir!=None)
     metadata_filename = os.path.join(local_cache_dir,
         dataset_name, 'metadata.yaml')
     if not os.path.isfile(metadata_filename):
+        pdb.set_trace()
+        metadata_file = open(metadata_filename, 'r')
+        header = metadata_file[0]
+        if header != header_to_print:
+            logger.warning('Not writing '+ dataset_name + '.yaml ; '
+                           + 'It has a customized metadta file\n')
+            return 
+
+        metadata_file.close()
         metadata_file = open(metadata_filename, 'w')
         try:
             fnames = [col for col in df.columns if col!=TARGET_NAME]
@@ -119,16 +140,17 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
             feat=count_features_type(df_X)
             endpoint=get_type(df[TARGET_NAME], include_binary=True)
             #proceed with writing
-            none_yet = 'None yet. See our contributing guide to help us add one.'
-            metadata_file.write(
-                    '#Generated automatically by pmlb/write_metadata.py\n')
+            none_yet = ('None yet. '
+                        'See our contributing guide to help us add one.')
+            metadata_file.write(header_to_print)
             # required, dataset name
             metadata_file.write('dataset: {}\n'.format(dataset_name))
             # required, dataset description
             metadata_file.write('description: {}\n'.format(none_yet))
             # required, link to the source from where dataset was retrieved
             metadata_file.write('source: {}\n'.format(none_yet))
-            # optional, study that generated the dataset (doi, pmid, pmcid, or url)
+            # optional, study that generated the dataset (doi, pmid, pmcid, 
+            # or url)
             metadata_file.write('publication: {}\n'.format(none_yet))
             # required, classification or regression
             metadata_file.write('task: {}\n'.format(task))
@@ -139,7 +161,8 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
             # optional but recommended, coding information,
             # e.g., 'Control' = 0, 'Case' = 1
             metadata_file.write('  code: {}\n'.format(none_yet))
-            metadata_file.write('features: # list of features in the dataset\n')
+            metadata_file.write('features: # list of features in the '
+                    'dataset\n')
             first = True
             for feature,feature_type in zip(fnames, types):
                 if feature in protected_feature_names:
@@ -153,7 +176,8 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
                     metadata_file.write('    code: null # optional, coding '
                             'information, e.g., Control = 0, Case = 1\n')
                     metadata_file.write('    transform: ~ # optional, any '
-                    'transformation performed on the feature, e.g., log scaled\n')
+                    'transformation performed on the feature, e.g., log '
+                    'scaled\n')
                     first = False
 
         except IOError as err:
