@@ -83,13 +83,13 @@ def count_features_type(features):
     return (binary,len(counter['int64'])-binary if 'int64' in counter else 0,
             len(counter['float64']) if 'float64' in counter else 0)
 
-def get_type(x):
+def get_type(x, include_binary=False):
     if x.dtype=='float64':
         return 'continuous'
     elif x.dtype=='int64':
-        # if x.nunique() == 2:
-        #     return 'binary'
-        # else:
+        if include_binary:
+            if x.nunique() == 2:
+                return 'binary'
         return 'categorical'
     else:
         raise ValueError("Error getting type")
@@ -117,7 +117,7 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
             df_X = df.drop(TARGET_NAME,axis=1)
             types = [get_type(df_X[col]) for col in df_X.columns]
             feat=count_features_type(df_X)
-            endpoint=get_type(df[TARGET_NAME])
+            endpoint=get_type(df[TARGET_NAME], include_binary=True)
             #proceed with writing
             none_yet = 'None yet. See our contributing guide to help us add one.'
             metadata_file.write(
