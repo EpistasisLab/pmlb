@@ -76,23 +76,23 @@ def imbalance_metrics(data):
     worst_case=(num_classes-1)*pow(1/num_classes,2) + pow(1-1/num_classes,2)
     return (num_classes,imb/worst_case)
 
-def count_features_type(features):
-    """ Counts three different types of features (float, integer, binary).
-    :param features: pandas.DataFrame
-        A dataset in a panda's data frame
-    :returns a tuple (binary, integer, float)
+def count_features_type(types, include_binary=False):
+    """ Counts two or three different types of features 
+    (binary (optional), categorical, continuous).
+    :param types: list of types from get_type
+    :returns a tuple (binary (optional), categorical, continuous)
     """
-    counter={k.name: v for k, v in features.columns.to_series().groupby(
-        features.dtypes)}
-    binary=0
-    if ('int64' in counter):
-        binary=len(
-                set(features.loc[:, (features<=1).all(axis=0)].columns.values)
-              & set(features.loc[:, (features>=0).all(axis=0)].columns.values)
-              & set(counter['int64'])
-              )
-    return (binary,len(counter['int64'])-binary if 'int64' in counter else 0,
-            len(counter['float64']) if 'float64' in counter else 0)
+    if include_binary:
+        return (
+                types.count('binary'), 
+                types.count('categorical'), 
+                types.count('continuous')
+                )
+    else:
+        return (
+                types.count('categorical'), 
+                types.count('continuous')
+                )
 
 def get_type(x, include_binary=False):
     if x.dtype=='float64':
@@ -137,7 +137,6 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
         #determine all required values
         df_X = df.drop(TARGET_NAME,axis=1)
         types = [get_type(df_X[col]) for col in df_X.columns]
-        feat=count_features_type(df_X)
         endpoint=get_type(df[TARGET_NAME], include_binary=True)
         #proceed with writing
         none_yet = ('None yet. '
@@ -196,16 +195,18 @@ def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
         If None, then the local data cache will not be used.
     """
     print('generating summary stats for',dataset_name)
-    feat=count_features_type(df.drop(TARGET_NAME,axis=1))
+    df_X = df.drop('target',axis=1)
+    types = [get_type(df_X[col], include_binary=True) for col in df_X.columns]
+    feat=count_features_type(types, include_binary=True)
     mse=imbalance_metrics(df[TARGET_NAME].tolist())
 
     stats_df = pd.DataFrame({
         '#instances':len(df),
         '#features':len(df.columns)-1,
         '#binary_features':feat[0],
-        '#integer_features':feat[1],
-        '#float_features':feat[2],
-        'Endpoint_type':get_type(df[TARGET_NAME]),
+        '#categorical_features':feat[1],
+        '#continuous_features':feat[2],
+        'Endpoint_type':get_type(df[TARGET_NAME], include_binary=True),
         '#Classes':mse[0],
         'Imbalance_metric':mse[1],
         },index=[0])
@@ -213,57 +214,6 @@ def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
     assert (local_cache_dir!=None)
     stats_df.to_csv(os.path.join(local_cache_dir,dataset_name,
         'summary_stats.csv'))
-    # summary_file = open(os.path.join(local_cache_dir,'datasets',dataset_name,
-    #     'summary_stats.csv'), 'wt')
-    # try:
-    #     summary_file.write('# %s\n\n' % dataset_name)
-    #     summary_file.write('## Summary Stats\n\n')
-    #     summary_file.write('#instances: %s\n\n' % str(len(df.axes[0])))
-    #     summary_file.write("#features: %s\n\n" % str(len(df.axes[1])-1))
-    #     summary_file.write("  #binary_features: %s\n\n" % feat[0])
-    #     summary_file.write("  #integer_features: %s\n\n" % feat[1])
-    #     summary_file.write("  #float_features: %s\n\n" % feat[2])
-    #     summary_file.write("Endpoint type: %s\n\n" % endpoint)
-    #     summary_file.write("#Classes: %s\n\n" % int(mse[0]))
-    #     summary_file.write("Imbalance metric: %s\n\n" % mse[1])
-    #     summary_file.write('## Feature Types\n\n %s\n\n' % '\n\n'.join(
-    #         [f + ':' + t for f,t in zip(fnames,types)]))
-
-# def generate_readmes(local_cache_dir=None):
-#     """Generates a summary report for all dataset in PMLB
-#     :param local_cache_dir: str (required)
-#         The directory on your local machine to store the data files.
-#     """
-#     for dataset in dataset_names:
-#         print("Dataset:", dataset)
-#         generate_description(dataset,local_cache_dir)
-
-#def generate_pmlb_summary(local_cache_dir=None):
-#    """Generates a summary report for all dataset in PMLB
-#    :param local_cache_dir: str (required)
-#        The directory on your local machine to store the data files.
-#    """
-#    report_filename = open(os.path.join(local_cache_dir, 'report.csv'), 'wt')
-#    assert (local_cache_dir!=None)
-#    try:
-#        writer = csv.writer(report_filename, delimiter='\t')
-#        writer.writerow(['Dataset','#instances','#features',
-#            '#binary_features','#integer_features','#float_features',
-#            'Endpoint_type','#classes','Imbalance_metric'])
-
-#        for dataset in dataset_names:
-#            df=fetch_data(dataset)
-#            print( "Dataset:", dataset)
-#            assert TARGET_NAME in df.columns, "no class column"
-#            #removing class column
-#            print( "SIZE: "+ str(len(df.axes[0]))+ " x " + str(len(df.axes[1])-1))
-#            feat=count_features_type(df.ix[:, df.columns != TARGET_NAME])
-#            endpoint=determine_endpoint_type(df.ix[:, df.columns == TARGET_NAME])
-#            mse=imbalance_metrics(df[TARGET_NAME].tolist())
-#            #writer.writerow([file,str(len(df.axes[0])),str(len(df.axes[1])-1),feat[0],feat[1],feat[2],endpoint,mse[0],mse[1],mse[2]])
-#            writer.writerow([dataset,str(len(df.axes[0])),str(len(df.axes[1])-1),feat[0],feat[1],feat[2],endpoint,int(mse[0]),mse[1]])
-#    finally:
-#        report_filename.close()
 
 if __name__ =='__main__':
 
