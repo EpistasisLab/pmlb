@@ -10,25 +10,25 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: class code
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: largest spot code
-    type: discrete
+    type: categorical
   - name: spot dist code
-    type: discrete
+    type: categorical
   - name: Activity
-    type: binary
+    type: categorical
   - name: Evolution
     type: continuous
   - name: Previous 24 hour code
     type: continuous
   - name: Historically-complex
-    type: binary
+    type: categorical
   - name: become complex
-    type: binary
+    type: categorical
   - name: Area
-    type: binary
+    type: categorical
   - name: Area of the largest spot
-    type: discrete
+    type: categorical
