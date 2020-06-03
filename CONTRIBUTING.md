@@ -105,7 +105,7 @@ We need help doing this for each dataset!
 
     ```
 
-    See this [example Google Colab notebook](https://colab.research.google.com/drive/1N48BWz6IdeyIDUM3ROhd1wUPjhhL-Vz4?usp=sharing)).
+    See this [example Google Colab notebook](https://colab.research.google.com/drive/1N48BWz6IdeyIDUM3ROhd1wUPjhhL-Vz4?usp=sharing).
 
 2. Update the information on the dataset's metadata.yaml file. 
 Refer to the [metadata template file](metadata_template.yaml) or [wine_quality_red](datasets/wine_quality_red/metadata.yaml) as an example.
