@@ -34,7 +34,6 @@ from collections import Counter
 from pmlb import fetch_data
 from .dataset_lists import (classification_dataset_names,
                             regression_dataset_names)
-import pdb
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -105,7 +104,8 @@ def get_type(x, include_binary=False):
     else:
         raise ValueError("Error getting type")
 
-def generate_description(df, dataset_name, task, local_cache_dir=None):
+def generate_description(df, dataset_name, task, overwrite_existing=True, 
+                         local_cache_dir=None):
     """Generates desription for a given dataset in its metadata.yaml file in a
     dataset local_cache_dir file.
 
@@ -121,13 +121,15 @@ def generate_description(df, dataset_name, task, local_cache_dir=None):
     assert (local_cache_dir!=None)
     metadata_filename = os.path.join(local_cache_dir,
         dataset_name, 'metadata.yaml')
-    # if not os.path.isfile(metadata_filename):
+    if (not overwrite_existing) and os.path.isfile(metadata_filename):
+        logger.warning('Not writing '+ dataset_name + '/metadata.yaml ; '
+                   + 'File exists (use overwrite_existing=True to override\n')
     metadata_file = open(metadata_filename, 'r')
     header = metadata_file.readline()
     if header != header_to_print:
         
         logger.warning('Not writing '+ dataset_name + '.yaml ; '
-                       + 'It has a customized metadta file\n')
+                       + 'It has a customized metadata file\n')
         return 
 
     metadata_file.close()
@@ -219,14 +221,19 @@ if __name__ =='__main__':
 
     # assuming this is run from the repo root directory
     local_dir = 'datasets/'
+    overwrite = True
 
     for d in classification_dataset_names:
         print(d,'...')
         df = fetch_data(d, local_cache_dir=local_dir)
-        generate_description(df, d,'classification',local_cache_dir=local_dir)
+        generate_description(df, d,'classification',
+                overwrite_existing=overwrite,
+                local_cache_dir=local_dir)
         generate_summarystats(df, d,'classification',local_cache_dir=local_dir)
     for d in regression_dataset_names:
         print(d,'...')
         df = fetch_data(d, local_cache_dir=local_dir)
-        generate_description(df, d,'regression',local_cache_dir=local_dir)
-        generate_summarystats(df, d,'regression',local_cache_dir=local_dir)
+        generate_description(df, d,'regression',
+                overwrite_existing=overwrite,
+                local_cache_dir=local_dir)
+        generate_summarystats(df, d,'regression', local_cache_dir=local_dir)
