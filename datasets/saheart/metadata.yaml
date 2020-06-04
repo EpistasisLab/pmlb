@@ -1,32 +1,48 @@
-#Generated automatically by pmlb/write_metadata.py
+#Reviewed by Trang Le
 dataset: saheart
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: A retrospective sample of males in a heart-disease high-risk region of the Western Cape.
+source: >
+  https://www.openml.org/data/get_csv/1592290/phpgNaXZe
+  https://www.openml.org/d/1498
+  https://rdrr.io/cran/ElemStatLearn/man/SAheart.html
+publication: >
+  Rousseauw, J., du Plessis, J., Benade, A., Jordaan, P., Kotze, J. and Ferreira, J. (1983). 
+  Coronary risk factor screening in three rural communities. 
+  South African Medical Journal 64: 430-436.
+  pmid:6623218
 task: classification
 target:
   type: binary
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: status of coronary heart disease (CHD)
+  code: No = 0, CHD = 1
 features: # list of features in the dataset
   - name: Sbp
     type: discrete
-    description: null # optional but recommended, what the feature measures/indicates, unit
+    description: systolic blood pressure
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Tobacco
     type: continuous
+    description: cumulative tobacco (kg)
   - name: Ldl
     type: continuous
+    description: low density lipoprotein cholesterol
   - name: Adiposity
     type: continuous
+    description: a numeric vector (body fat measure?)
   - name: Famhist
     type: binary
+    description: family history of heart disease
+    code: Absent = 0, Present = 1
   - name: Typea
     type: discrete
+    description: type-A behavior
   - name: Obesity
     type: continuous
+    description: a numeric vector (bmi?)
   - name: Alcohol
     type: continuous
+    description: current alcohol consumption
   - name: Age
     type: discrete
+    description: age at onset
