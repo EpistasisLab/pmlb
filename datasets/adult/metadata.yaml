@@ -111,7 +111,9 @@ features: # list of features in the dataset
   - name: sex
     type: binary
     description: Physical sex of adult
-    code: 'Female' = 0, 'Male' = 1
+    code: >
+      'Female' = 0,
+      'Male' = 1
   - name: capital-gain
     type: continuous
     description: Capital gain of adult
