@@ -19,7 +19,7 @@ features: # list of features in the dataset
       'male'=1,
       'female'=0
   - name: DVRT
-    type: ordinal
+    type: continuous
     description: Drumcondra Verbal Reasoning Test score
   - name: Educational_level
     type: nominal
