@@ -42,5 +42,5 @@ features: # list of features in the dataset
     description: Type of schooling
     code: >
       'secondary'=1,
-       'vocational'=2,
-       'primary_terminal_leaver'=0
+      'vocational'=2,
+      'primary_terminal_leaver'=0
