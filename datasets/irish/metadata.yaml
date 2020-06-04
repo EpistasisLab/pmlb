@@ -13,8 +13,9 @@ features: # list of features in the dataset
   - name: Sex
     type: binary
     description: Sex of child # optional but recommended, what the feature measures/indicates, unit
-    code: 'male'=1, 'female'=0 # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    code: >
+      'male'=1,
+      'female'=0
   - name: DVRT
     type: ordinal
     description: Drumcondra Verbal Reasoning Test score
@@ -37,4 +38,7 @@ features: # list of features in the dataset
   - name: Type_school
     type: nominal
     description: Type of schooling
-    code: 'secondary'=1, 'vocational'=2, 'primary_terminal_leaver'=0
+    code: >
+      'secondary'=1,
+       'vocational'=2,
+       'primary_terminal_leaver'=0
