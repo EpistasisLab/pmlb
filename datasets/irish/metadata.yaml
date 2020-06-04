@@ -8,7 +8,9 @@ task: classification
 target:
   type: binary
   description: Leaving certificate taken
-  code: 'not_taken'=1, 'taken'=2
+  code: >
+    'not_taken'=1,
+    'taken'=2
 features: # list of features in the dataset
   - name: Sex
     type: binary
