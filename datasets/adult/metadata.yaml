@@ -12,8 +12,8 @@ target:
   type: binary
   description: If a given adult makes over $50K a year
   code: >
-    ' <=50K' = 0, 
-    ' >50K' = 1
+    ' <=50K' = 1, 
+    ' >50K' = 0
 features: # list of features in the dataset
   - name: age
     type: continuous
@@ -40,7 +40,7 @@ features: # list of features in the dataset
     type: ordinal
     description: education level of adult
     code: >
-      ' 10th' = 0, 
+      '10th' = 0, 
       ' 11th' = 1, 
       ' 12th' = 2, 
       ' 1st-4th' = 3, 
