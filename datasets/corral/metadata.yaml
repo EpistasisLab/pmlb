@@ -10,17 +10,17 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: A0
-    type: binary
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: A1
-    type: binary
+    type: categorical
   - name: B0
-    type: binary
+    type: categorical
   - name: B1
-    type: binary
+    type: categorical
   - name: Irrelevant
-    type: binary
+    type: categorical
   - name: Correlated
-    type: binary
+    type: categorical

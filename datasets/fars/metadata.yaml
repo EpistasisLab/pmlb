@@ -5,68 +5,68 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: CASE_STATE
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: AGE
-    type: discrete
+    type: categorical
   - name: SEX
-    type: discrete
+    type: categorical
   - name: PERSON_TYPE
-    type: discrete
+    type: categorical
   - name: SEATING_POSITION
-    type: discrete
+    type: categorical
   - name: RESTRAINT_SYSTEM-USE
-    type: discrete
+    type: categorical
   - name: AIR_BAG_AVAILABILITY/DEPLOYMENT
-    type: discrete
+    type: categorical
   - name: EJECTION
-    type: discrete
+    type: categorical
   - name: EJECTION_PATH
-    type: discrete
+    type: categorical
   - name: EXTRICATION
-    type: discrete
+    type: categorical
   - name: NON_MOTORIST_LOCATION
-    type: discrete
+    type: categorical
   - name: POLICE_REPORTED_ALCOHOL_INVOLVEMENT
-    type: discrete
+    type: categorical
   - name: METHOD_ALCOHOL_DETERMINATION
-    type: discrete
+    type: categorical
   - name: ALCOHOL_TEST_TYPE
-    type: discrete
+    type: categorical
   - name: ALCOHOL_TEST_RESULT
-    type: discrete
+    type: categorical
   - name: POLICE-REPORTED_DRUG_INVOLVEMENT
-    type: discrete
+    type: categorical
   - name: METHOD_OF_DRUG_DETERMINATION
-    type: discrete
+    type: categorical
   - name: DRUG_TEST_TYPE
-    type: discrete
+    type: categorical
   - name: DRUG_TEST_RESULTS_(1_of_3)
-    type: discrete
+    type: categorical
   - name: DRUG_TEST_TYPE_(2_of_3)
-    type: discrete
+    type: categorical
   - name: DRUG_TEST_RESULTS_(2_of_3)
-    type: discrete
+    type: categorical
   - name: DRUG_TEST_TYPE_(3_of_3)
-    type: discrete
+    type: categorical
   - name: DRUG_TEST_RESULTS_(3_of_3)
-    type: discrete
+    type: categorical
   - name: HISPANIC_ORIGIN
-    type: discrete
+    type: categorical
   - name: TAKEN_TO_HOSPITAL
-    type: discrete
+    type: categorical
   - name: RELATED_FACTOR_(1)-PERSON_LEVEL
-    type: discrete
+    type: categorical
   - name: RELATED_FACTOR_(2)-PERSON_LEVEL
-    type: discrete
+    type: categorical
   - name: RELATED_FACTOR_(3)-PERSON_LEVEL
-    type: discrete
+    type: categorical
   - name: RACE
-    type: discrete
+    type: categorical

@@ -5,7 +5,7 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
@@ -15,18 +15,18 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Wifes_education
-    type: discrete
+    type: categorical
   - name: Husbands_education
-    type: discrete
+    type: categorical
   - name: Number_of_children_ever_born
     type: continuous
   - name: Wifes_religion
-    type: binary
+    type: categorical
   - name: Wifes_now_working?
-    type: binary
+    type: categorical
   - name: Husbands_occupation
-    type: discrete
+    type: categorical
   - name: Standard-of-living_index
-    type: discrete
+    type: categorical
   - name: Media_exposure
-    type: binary
+    type: categorical

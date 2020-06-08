@@ -10,37 +10,37 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: duration
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: wage increase first year
-    type: discrete
+    type: categorical
   - name: wage increase second year
-    type: discrete
+    type: categorical
   - name: wage increase third year
-    type: discrete
+    type: categorical
   - name: cost of living adjustment
-    type: discrete
+    type: categorical
   - name: working hours
-    type: discrete
+    type: categorical
   - name: pension
-    type: discrete
+    type: categorical
   - name: standby pay
-    type: discrete
+    type: categorical
   - name: shift differential
-    type: discrete
+    type: categorical
   - name: education allowance
-    type: discrete
+    type: categorical
   - name: statutory holidays
-    type: discrete
+    type: categorical
   - name: vacation
-    type: discrete
+    type: categorical
   - name: longterm disability assistance
-    type: discrete
+    type: categorical
   - name: contribution to dental plan
-    type: discrete
+    type: categorical
   - name: bereavement assistance
-    type: discrete
+    type: categorical
   - name: contribution to health plan
-    type: discrete
+    type: categorical

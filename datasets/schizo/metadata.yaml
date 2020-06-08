@@ -5,7 +5,7 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
@@ -15,28 +15,28 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: gain_ratio_1
-    type: discrete
+    type: categorical
   - name: gain_ratio_2
-    type: discrete
+    type: categorical
   - name: gain_ratio_3
-    type: discrete
+    type: categorical
   - name: gain_ratio_4
-    type: discrete
+    type: categorical
   - name: gain_ratio_5
-    type: discrete
+    type: categorical
   - name: gain_ratio_6
-    type: discrete
+    type: categorical
   - name: gain_ratio_7
-    type: discrete
+    type: categorical
   - name: gain_ratio_8
-    type: discrete
+    type: categorical
   - name: gain_ratio_9
-    type: discrete
+    type: categorical
   - name: gain_ratio_10
-    type: discrete
+    type: categorical
   - name: gain_ratio_11
-    type: discrete
+    type: categorical
   - name: sex
-    type: binary
+    type: categorical
   - name: target.1
-    type: binary
+    type: categorical

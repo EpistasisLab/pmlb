@@ -15,38 +15,38 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: SEX
-    type: binary
+    type: categorical
   - name: STEROID
-    type: discrete
+    type: categorical
   - name: ANTIVIRALS
-    type: binary
+    type: categorical
   - name: FATIGUE
-    type: discrete
+    type: categorical
   - name: MALAISE
-    type: discrete
+    type: categorical
   - name: ANOREXIA
-    type: discrete
+    type: categorical
   - name: LIVER BIG
-    type: discrete
+    type: categorical
   - name: LIVER FIRM
-    type: discrete
+    type: categorical
   - name: SPLEEN PALPABLE
-    type: discrete
+    type: categorical
   - name: SPIDERS
-    type: discrete
+    type: categorical
   - name: ASCITES
-    type: discrete
+    type: categorical
   - name: VARICES
-    type: discrete
+    type: categorical
   - name: BILIRUBIN
-    type: discrete
+    type: categorical
   - name: ALK PHOSPHATE
-    type: discrete
+    type: categorical
   - name: SGOT
-    type: discrete
+    type: categorical
   - name: ALBUMIN
-    type: discrete
+    type: categorical
   - name: PROTIME
-    type: discrete
+    type: categorical
   - name: HISTOLOGY
-    type: binary
+    type: categorical
