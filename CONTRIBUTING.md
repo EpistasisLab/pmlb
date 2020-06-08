@@ -77,35 +77,7 @@ We need help doing this for each dataset!
 1. Verify the source for the dataset.
     - Often the place to start is an internet search of the dataset name. 
     Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](www.kaggle.com). 
-    - Ideally, you will be able to verify the source is correct by downloading the source dataset, applying some simple transformations like normalization, and validating the two datasets are now equivalent. Something like below (make sure your `pmlb` wrapper is installed via `pip install pmlb`).
-
-    ```python
-    import pandas as pd
-    from pandas.util import hash_pandas_object
-    from pmlb import fetch_data
-    from sklearn.preprocessing import LabelEncoder
-    
-    df_pmlb = fetch_data('example')
-    df_source = pd.read_csv('potential_source_dataset.csv')
-
-    # optionally apply some changes to df_source to make it match df_pmlb
-    df_source['x1'] = LabelEncoder().fit_transform(df_source['x1'])
-    
-    #option 1: assert the dataframes are equal using Pandas 'testing' module
-    pd.testing.assert_frame_equal(df_source, df_pmlb)
-
-    # option 2: verify hashes match
-    import hashlib
-    rowhashes_pmlb = hash_pandas_object(df_pmlb).values 
-    hash_pmlb = hashlib.sha256(rowhashes_pmlb).hexdigest()
-    rowhashes_source = hash_pandas_object(df_source).values 
-    hash_source = hashlib.sha256(rowhashes_source).hexdigest()
-    
-    print(hash_pmlb == hash_source)
-
-    ```
-
-    See this [example Google Colab notebook](https://colab.research.google.com/drive/1N48BWz6IdeyIDUM3ROhd1wUPjhhL-Vz4?usp=sharing).
+    - Follow [this guide](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/PMLB2.0/how-to-verify-source.md) to verify that the PMLB dataset actually came from the source you found.
 
 2. Update the information on the dataset's metadata.yaml file. 
 Refer to the [metadata template file](metadata_template.yaml) or [wine_quality_red](datasets/wine_quality_red/metadata.yaml) as an example.
