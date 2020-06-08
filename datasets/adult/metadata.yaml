@@ -1,4 +1,5 @@
 #Generated automatically by pmlb/write_metadata.py
+#Reviewed by Daniel Goldberg
 dataset: adult
 description: Prediction of whether a person makes over $50K a year, based on 14 other features.
 source: >
