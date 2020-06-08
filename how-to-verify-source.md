@@ -1,9 +1,9 @@
 There are a few ways we can check whether a PMLB dataframe (`pmlb_df`) agrees with its source (`source_df`), provided that we have checked their shapes (by printing `pmlb_df.shape` and `pmlb_df.shape`).
 
 - If the two dataframes are exactly the same, the following line of code does not return anything ✔️:
-  ```
-  pd.testing.assert_frame_equal(df_source, df_pmlb)
   ``` python
+  pd.testing.assert_frame_equal(df_source, df_pmlb)
+  ```
 
 - If it gives error, the column names may be different. If we have good reasons to ignore column names, we can check if the values contained in the 2 dataframes are the same with
   ``` python
