@@ -1,6 +1,6 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: adult
-description: Predictipn of if person make over $50K a year, based on 14 other features.
+description: Prediction of whether a person makes over $50K a year, based on 14 other features.
 source: >
   http://mlr.cs.umass.edu/ml/datasets/Adult
   https://www.openml.org/d/1590
