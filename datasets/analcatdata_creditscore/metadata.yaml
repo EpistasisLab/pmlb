@@ -19,8 +19,8 @@ features: # list of features in the dataset
   - name: Monthly.credit.card.exp
     type: continuous
   - name: Own.home
-    type: binary
+    type: categorical
   - name: Self.employed
-    type: binary
+    type: categorical
   - name: Derogatory.reports
-    type: discrete
+    type: categorical

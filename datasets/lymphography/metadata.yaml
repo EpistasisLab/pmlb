@@ -5,46 +5,46 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Lymphatics
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Block_of_affere
-    type: binary
+    type: categorical
   - name: Bl_of_lymph_c
-    type: binary
+    type: categorical
   - name: Bl_of_lymph_s
-    type: binary
+    type: categorical
   - name: By_pass
-    type: binary
+    type: categorical
   - name: Extravasates
-    type: binary
+    type: categorical
   - name: Regeneration_of
-    type: binary
+    type: categorical
   - name: Early_uptake_in
-    type: binary
+    type: categorical
   - name: Lym_nodes_dimin
-    type: discrete
+    type: categorical
   - name: Lym_nodes_enlar
-    type: discrete
+    type: categorical
   - name: Changes_in_lym
-    type: discrete
+    type: categorical
   - name: Defect_in_node
-    type: discrete
+    type: categorical
   - name: Changes_in_node
-    type: discrete
+    type: categorical
   - name: Changes_in_stru
-    type: discrete
+    type: categorical
   - name: Special_forms
-    type: discrete
+    type: categorical
   - name: Dislocation_of
-    type: binary
+    type: categorical
   - name: Exclusion_of_no
-    type: binary
+    type: categorical
   - name: No_of_nodes_in
-    type: discrete
+    type: categorical

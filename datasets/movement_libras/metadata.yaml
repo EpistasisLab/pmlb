@@ -1,19 +1,21 @@
-#Generated automatically by pmlb/write_metadata.py
+#Edited by Daniel Goldberg
 dataset: movement_libras
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
+description: >
+  LIBRAS is an acronym of the Portuguese name "LIngua BRAsileira de Sinais", the official brazilian sign language. Each
+  class is a different hand movement. The hand movement is represented as a bidimensional curve performed by 
+  the hand in a period of time. Each feature is derived from a frame from a video of someone doing a hand 
+  movement (class). See the source (openML link) for more information about how the curves were obtained and how the
+  features were derived.
+source: https://www.openml.org/d/299
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  type: categorical
+  description: Which hand movement is represented by the features
 features: # list of features in the dataset
   - name: 1st_coordinate_abcissa
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: See general description for description of this and all following features.
   - name: 1st_coordinate_ordinate
     type: continuous
   - name: 2st_coordinate_abcissa

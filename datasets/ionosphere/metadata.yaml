@@ -10,12 +10,12 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: 0
-    type: binary
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: 1
-    type: discrete
+    type: categorical
   - name: 2
     type: continuous
   - name: 3

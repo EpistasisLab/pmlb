@@ -23,7 +23,7 @@ features: # list of features in the dataset
   - name: Single_Epi_Cell_Size
     type: continuous
   - name: Bare_Nuclei
-    type: discrete
+    type: categorical
   - name: Bland_Chromatin
     type: continuous
   - name: Normal_Nucleoli

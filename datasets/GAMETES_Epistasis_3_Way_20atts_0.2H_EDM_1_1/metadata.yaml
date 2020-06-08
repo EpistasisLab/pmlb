@@ -10,45 +10,45 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: N0
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: N1
-    type: discrete
+    type: categorical
   - name: N2
-    type: discrete
+    type: categorical
   - name: N3
-    type: discrete
+    type: categorical
   - name: N4
-    type: discrete
+    type: categorical
   - name: N5
-    type: discrete
+    type: categorical
   - name: N6
-    type: discrete
+    type: categorical
   - name: N7
-    type: discrete
+    type: categorical
   - name: N8
-    type: discrete
+    type: categorical
   - name: N9
-    type: discrete
+    type: categorical
   - name: N10
-    type: discrete
+    type: categorical
   - name: N11
-    type: discrete
+    type: categorical
   - name: N12
-    type: discrete
+    type: categorical
   - name: N13
-    type: discrete
+    type: categorical
   - name: N14
-    type: discrete
+    type: categorical
   - name: N15
-    type: discrete
+    type: categorical
   - name: N16
-    type: discrete
+    type: categorical
   - name: P1
-    type: discrete
+    type: categorical
   - name: P2
-    type: discrete
+    type: categorical
   - name: P3
-    type: discrete
+    type: categorical
