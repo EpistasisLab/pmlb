@@ -5,12 +5,12 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Whether_of_not_the_TA_is_a_native_English_speaker
-    type: binary
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
@@ -19,6 +19,6 @@ features: # list of features in the dataset
   - name: Course
     type: continuous
   - name: Summer_or_regular_semester
-    type: binary
+    type: categorical
   - name: Class_size
     type: continuous

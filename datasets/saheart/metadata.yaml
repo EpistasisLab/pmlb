@@ -44,5 +44,5 @@ features: # list of features in the dataset
     type: continuous
     description: current alcohol consumption
   - name: Age
-    type: discrete
+    type: categorical
     description: age at onset

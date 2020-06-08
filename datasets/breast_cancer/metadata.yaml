@@ -10,23 +10,23 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: age
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: menopause
-    type: discrete
+    type: categorical
   - name: tumor-size
-    type: discrete
+    type: categorical
   - name: inv-nodes
-    type: discrete
+    type: categorical
   - name: node-caps
-    type: discrete
+    type: categorical
   - name: deg-malig
-    type: discrete
+    type: categorical
   - name: breast
-    type: binary
+    type: categorical
   - name: breast-quad
-    type: discrete
+    type: categorical
   - name: irradiat
-    type: binary
+    type: categorical

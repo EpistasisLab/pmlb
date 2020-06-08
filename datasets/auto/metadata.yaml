@@ -5,29 +5,29 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: normalized-losses
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: make
-    type: discrete
+    type: categorical
   - name: fuel-type
-    type: binary
+    type: categorical
   - name: aspiration
-    type: binary
+    type: categorical
   - name: num-of-doors
-    type: discrete
+    type: categorical
   - name: body-style
-    type: discrete
+    type: categorical
   - name: drive-wheels
-    type: discrete
+    type: categorical
   - name: engine-location
-    type: binary
+    type: categorical
   - name: wheel-base
     type: continuous
   - name: length
@@ -39,26 +39,26 @@ features: # list of features in the dataset
   - name: curb-weight
     type: continuous
   - name: engine-type
-    type: discrete
+    type: categorical
   - name: num-of-cylinders
-    type: discrete
+    type: categorical
   - name: engine-size
     type: continuous
   - name: fuel-system
-    type: discrete
+    type: categorical
   - name: bore
-    type: discrete
+    type: categorical
   - name: stroke
-    type: discrete
+    type: categorical
   - name: compression-ratio
     type: continuous
   - name: horsepower
-    type: discrete
+    type: categorical
   - name: peak-rpm
-    type: discrete
+    type: categorical
   - name: city-mpg
     type: continuous
   - name: highway-mpg
     type: continuous
   - name: price
-    type: discrete
+    type: categorical
