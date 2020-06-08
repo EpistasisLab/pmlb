@@ -10,7 +10,7 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Overtime
-    type: binary
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
@@ -21,12 +21,12 @@ features: # list of features in the dataset
   - name: Pointspread
     type: continuous
   - name: Favorite_Name
-    type: discrete
+    type: categorical
   - name: Underdog_name
-    type: discrete
+    type: categorical
   - name: Year
     type: continuous
   - name: Week
     type: continuous
   - name: Weekday
-    type: discrete
+    type: categorical

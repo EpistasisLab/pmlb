@@ -10,7 +10,7 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: state
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
@@ -19,11 +19,11 @@ features: # list of features in the dataset
   - name: area code
     type: continuous
   - name: phone number
-    type: discrete
+    type: categorical
   - name: international plan
-    type: binary
+    type: categorical
   - name: voice mail plan
-    type: binary
+    type: categorical
   - name: number vmail messages
     type: continuous
   - name: total day minutes

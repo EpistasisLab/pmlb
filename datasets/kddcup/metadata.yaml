@@ -5,61 +5,61 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Atr-0
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Atr-1
-    type: discrete
+    type: categorical
   - name: Atr-2
-    type: discrete
+    type: categorical
   - name: Atr-3
-    type: discrete
+    type: categorical
   - name: Atr-4
-    type: discrete
+    type: categorical
   - name: Atr-5
-    type: discrete
+    type: categorical
   - name: Atr-6
-    type: binary
+    type: categorical
   - name: Atr-7
-    type: discrete
+    type: categorical
   - name: Atr-8
-    type: discrete
+    type: categorical
   - name: Atr-9
-    type: discrete
+    type: categorical
   - name: Atr-10
-    type: discrete
+    type: categorical
   - name: Atr-11
-    type: binary
+    type: categorical
   - name: Atr-12
-    type: discrete
+    type: categorical
   - name: Atr-13
-    type: binary
+    type: categorical
   - name: Atr-14
-    type: discrete
+    type: categorical
   - name: Atr-15
-    type: discrete
+    type: categorical
   - name: Atr-16
-    type: discrete
+    type: categorical
   - name: Atr-17
-    type: discrete
+    type: categorical
   - name: Atr-18
-    type: discrete
+    type: categorical
   - name: Atr-19
-    type: discrete
+    type: categorical
   - name: Atr-20
-    type: discrete
+    type: categorical
   - name: Atr-21
-    type: binary
+    type: categorical
   - name: Atr-22
-    type: discrete
+    type: categorical
   - name: Atr-23
-    type: discrete
+    type: categorical
   - name: Atr-24
     type: continuous
   - name: Atr-25
@@ -75,9 +75,9 @@ features: # list of features in the dataset
   - name: Atr-30
     type: continuous
   - name: Atr-31
-    type: discrete
+    type: categorical
   - name: Atr-32
-    type: discrete
+    type: categorical
   - name: Atr-33
     type: continuous
   - name: Atr-34

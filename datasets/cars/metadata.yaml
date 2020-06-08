@@ -5,7 +5,7 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
@@ -27,4 +27,4 @@ features: # list of features in the dataset
   - name: year
     type: continuous
   - name: brand
-    type: discrete
+    type: categorical
