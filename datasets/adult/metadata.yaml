@@ -6,14 +6,14 @@ source: >
   http://mlr.cs.umass.edu/ml/datasets/Adult
   https://www.openml.org/d/1590
 publication: >
-  Ron Kohavi, "Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid",
+  Ron Kohavi, "Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid", 
   Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, 1996
 task: classification
 target:
   type: binary
   description: If a given adult makes over $50K a year
   code: >
-    '<=50K' = 1,
+    '<=50K' = 1, 
     '>50K' = 0
 features: # list of features in the dataset
   - name: age
@@ -23,14 +23,14 @@ features: # list of features in the dataset
     type: categorical
     description: working class (mostly between government or self employed)
     code: >
-      '?' = 0,
-      'Federal-gov' = 1,
-      'Local-gov' = 2,
-      'Never-worked' = 3,
-      'Private' = 4,
-      'Self-emp-inc' = 5,
-      'Self-emp-not-inc' = 6,
-      'State-gov' = 7,
+      '?' = 0, 
+      'Federal-gov' = 1, 
+      'Local-gov' = 2, 
+      'Never-worked' = 3, 
+      'Private' = 4, 
+      'Self-emp-inc' = 5, 
+      'Self-emp-not-inc' = 6, 
+      'State-gov' = 7, 
       'Without-pay' = 8
   - name: fnlwgt
     type: continuous
@@ -41,21 +41,21 @@ features: # list of features in the dataset
     type: ordinal
     description: education level of adult
     code: >
-      '10th' = 0,
-      '11th' = 1,
-      '12th' = 2,
-      '1st-4th' = 3,
-      '5th-6th' = 4,
-      '7th-8th' = 5,
-      '9th' = 6,
-      'Assoc-acdm' = 7,
-      'Assoc-voc' = 8,
-      'Bachelors' = 9,
-      'Doctorate' = 10,
-      'HS-grad' = 11,
-      'Masters' = 12,
-      'Preschool' = 13,
-      'Prof-school' = 14,
+      '10th' = 0, 
+      '11th' = 1, 
+      '12th' = 2, 
+      '1st-4th' = 3, 
+      '5th-6th' = 4, 
+      '7th-8th' = 5, 
+      '9th' = 6, 
+      'Assoc-acdm' = 7, 
+      'Assoc-voc' = 8, 
+      'Bachelors' = 9, 
+      'Doctorate' = 10, 
+      'HS-grad' = 11, 
+      'Masters' = 12, 
+      'Preschool' = 13, 
+      'Prof-school' = 14, 
       'Some-college' = 15
   - name: education-num
     type: continuous
@@ -64,50 +64,50 @@ features: # list of features in the dataset
     type: categorical
     description: Marital status of adult
     code: >
-      'Divorced' = 0,
-      'Married-AF-spouse' = 1,
-      'Married-civ-spouse' = 2,
-      'Married-spouse-absent' = 3,
-      'Never-married' = 4,
-      'Separated' = 5,
+      'Divorced' = 0, 
+      'Married-AF-spouse' = 1, 
+      'Married-civ-spouse' = 2, 
+      'Married-spouse-absent' = 3, 
+      'Never-married' = 4, 
+      'Separated' = 5, 
       'Widowed' = 6
   - name: occupation
     type: categorical
     description: Primary occupation
     code: >
-      '?' = 0,
-      'Adm-clerical' = 1,
-      'Armed-Forces' = 2,
-      'Craft-repair' = 3,
-      'Exec-managerial' = 4,
-      'Farming-fishing' = 5,
-      'Handlers-cleaners' = 6,
-      'Machine-op-inspct' = 7,
-      'Other-service' = 8,
-      'Priv-house-serv' = 9,
-      'Prof-specialty' = 10,
-      'Protective-serv' = 11,
-      'Sales' = 12,
-      'Tech-support' = 13,
+      '?' = 0, 
+      'Adm-clerical' = 1, 
+      'Armed-Forces' = 2, 
+      'Craft-repair' = 3, 
+      'Exec-managerial' = 4, 
+      'Farming-fishing' = 5, 
+      'Handlers-cleaners' = 6, 
+      'Machine-op-inspct' = 7, 
+      'Other-service' = 8, 
+      'Priv-house-serv' = 9, 
+      'Prof-specialty' = 10, 
+      'Protective-serv' = 11, 
+      'Sales' = 12, 
+      'Tech-support' = 13, 
       'Transport-moving' = 14
   - name: relationship
     type: categorical
     description: Relationship status
-    code: >
-      'Husband' = 0,
-      'Not-in-family' = 1,
-      'Other-relative' = 2,
-      'Own-child' = 3,
-      'Unmarried' = 4,
+    code: > 
+      'Husband' = 0, 
+      'Not-in-family' = 1, 
+      'Other-relative' = 2, 
+      'Own-child' = 3, 
+      'Unmarried' = 4, 
       'Wife' = 5
   - name: race
     type: categorical
     description: Race of adult
     code: >
-      'Amer-Indian-Eskimo' = 0,
-      'Asian-Pac-Islander' = 1,
-      'Black' = 2,
-      'Other' = 3,
+      'Amer-Indian-Eskimo' = 0, 
+      'Asian-Pac-Islander' = 1, 
+      'Black' = 2, 
+      'Other' = 3, 
       'White' = 4
   - name: sex
     type: binary
@@ -128,45 +128,45 @@ features: # list of features in the dataset
     type: categorical
     description: Native country of origin
     code: >
-      '?' = 0,
-      'Cambodia' = 1,
-      'Canada' = 2,
-      'China' = 3,
-      'Columbia' = 4,
-      'Cuba' = 5,
-      'Dominican-Republic' = 6,
-      'Ecuador' = 7,
-      'El-Salvador' = 8,
-      'England' = 9,
-      'France' = 10,
-      'Germany' = 11,
-      'Greece' = 12,
-      'Guatemala' = 13,
-      'Haiti' = 14,
-      'Holand-Netherlands' = 15,
-      'Honduras' = 16,
-      'Hong' = 17,
-      'Hungary' = 18,
-      'India' = 19,
-      'Iran' = 20,
-      'Ireland' = 21,
-      'Italy' = 22,
-      'Jamaica' = 23,
-      'Japan' = 24,
-      'Laos' = 25,
-      'Mexico' = 26,
-      'Nicaragua' = 27,
-      'Outlying-US(Guam-USVI-etc)' = 28,
-      'Peru' = 29,
-      'Philippines' = 30,
-      'Poland' = 31,
-      'Portugal' = 32,
-      'Puerto-Rico' = 33,
-      'Scotland' = 34,
-      'South' = 35,
-      'Taiwan' = 36,
-      'Thailand' = 37,
-      'Trinadad&Tobago' = 38,
-      'United-States' = 39,
-      'Vietnam' = 40,
+      '?' = 0, 
+      'Cambodia' = 1, 
+      'Canada' = 2, 
+      'China' = 3, 
+      'Columbia' = 4, 
+      'Cuba' = 5, 
+      'Dominican-Republic' = 6, 
+      'Ecuador' = 7, 
+      'El-Salvador' = 8, 
+      'England' = 9, 
+      'France' = 10, 
+      'Germany' = 11, 
+      'Greece' = 12, 
+      'Guatemala' = 13, 
+      'Haiti' = 14, 
+      'Holand-Netherlands' = 15, 
+      'Honduras' = 16, 
+      'Hong' = 17, 
+      'Hungary' = 18, 
+      'India' = 19, 
+      'Iran' = 20, 
+      'Ireland' = 21, 
+      'Italy' = 22, 
+      'Jamaica' = 23, 
+      'Japan' = 24, 
+      'Laos' = 25, 
+      'Mexico' = 26, 
+      'Nicaragua' = 27, 
+      'Outlying-US(Guam-USVI-etc)' = 28, 
+      'Peru' = 29, 
+      'Philippines' = 30, 
+      'Poland' = 31, 
+      'Portugal' = 32, 
+      'Puerto-Rico' = 33, 
+      'Scotland' = 34, 
+      'South' = 35, 
+      'Taiwan' = 36, 
+      'Thailand' = 37, 
+      'Trinadad&Tobago' = 38, 
+      'United-States' = 39, 
+      'Vietnam' = 40, 
       'Yugoslavia' = 41
