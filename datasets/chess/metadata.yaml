@@ -38,7 +38,7 @@ features: # list of features in the dataset
   - name: A02
     type: binary
     code: >
-      'f' = 0, 
+      'f' = 0,
       't' = 1
   - name: A03
     type: binary
@@ -53,13 +53,13 @@ features: # list of features in the dataset
   - name: A05
     type: binary
     code: >
-      'f' = 0, 
+      'f' = 0,
       't' = 1
   - name: A06
     type: binary
     code: >
       'f' = 0,
-      't' = 1, 
+      't' = 1
   - name: A07
     type: binary
     code: >
@@ -119,8 +119,8 @@ features: # list of features in the dataset
   - name: A18
     type: binary
     code: >
-      'f' = 0, 
-      't' = 1, 
+      'f' = 0,
+      't' = 1
   - name: A19
     type: binary
     code: >
@@ -145,7 +145,7 @@ features: # list of features in the dataset
     type: binary
     code: >
       'f' = 0, 
-      't' = 1, 
+      't' = 1
   - name: A24
     type: binary
     code: >
@@ -160,7 +160,7 @@ features: # list of features in the dataset
     type: binary
     code: >
       'f' = 0, 
-      't' = 1, 
+      't' = 1
   - name: A27
     type: binary
     code: >
