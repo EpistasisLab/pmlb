@@ -5,68 +5,68 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: age
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: sex
-    type: discrete
+    type: categorical
   - name: on thyroxine
-    type: binary
+    type: categorical
   - name: query on thyroxine
-    type: binary
+    type: categorical
   - name: on antithyroid medication
-    type: binary
+    type: categorical
   - name: sick
-    type: binary
+    type: categorical
   - name: pregnant
-    type: binary
+    type: categorical
   - name: thyroid surgery
-    type: binary
+    type: categorical
   - name: I131 treatment
-    type: binary
+    type: categorical
   - name: query hypothyroid
-    type: binary
+    type: categorical
   - name: query hyperthyroid
-    type: binary
+    type: categorical
   - name: lithium
-    type: binary
+    type: categorical
   - name: goitre
-    type: binary
+    type: categorical
   - name: tumor
-    type: binary
+    type: categorical
   - name: hypopituitary
-    type: binary
+    type: categorical
   - name: psych
-    type: binary
+    type: categorical
   - name: TSH measured
-    type: binary
+    type: categorical
   - name: TSH
-    type: discrete
+    type: categorical
   - name: T3 measured
-    type: binary
+    type: categorical
   - name: T3
-    type: discrete
+    type: categorical
   - name: TT4 measured
-    type: binary
+    type: categorical
   - name: TT4
-    type: discrete
+    type: categorical
   - name: T4U measured
-    type: binary
+    type: categorical
   - name: T4U
-    type: discrete
+    type: categorical
   - name: FTI measured
-    type: binary
+    type: categorical
   - name: FTI
-    type: discrete
+    type: categorical
   - name: TBG measured
-    type: discrete
+    type: categorical
   - name: TBG
-    type: discrete
+    type: categorical
   - name: referral source
-    type: discrete
+    type: categorical

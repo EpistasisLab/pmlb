@@ -26,8 +26,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import pandas as pd
 import os
 from .dataset_lists import classification_dataset_names, regression_dataset_names
-import requests
-import warnings
 
 dataset_names = classification_dataset_names + regression_dataset_names
 GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'

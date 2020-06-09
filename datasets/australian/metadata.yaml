@@ -10,7 +10,7 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: A1
-    type: binary
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
@@ -19,23 +19,23 @@ features: # list of features in the dataset
   - name: A3
     type: continuous
   - name: A4
-    type: discrete
+    type: categorical
   - name: A5
-    type: discrete
+    type: categorical
   - name: A6
-    type: discrete
+    type: categorical
   - name: A7
     type: continuous
   - name: A8
-    type: binary
+    type: categorical
   - name: A9
-    type: binary
+    type: categorical
   - name: A10
     type: continuous
   - name: A11
-    type: binary
+    type: categorical
   - name: A12
-    type: discrete
+    type: categorical
   - name: A13
     type: continuous
   - name: A14

@@ -123,6 +123,6 @@ features: # list of features in the dataset
   - name: 54
     type: continuous
   - name: 55
-    type: discrete
+    type: categorical
   - name: 56
-    type: discrete
+    type: categorical

@@ -15,23 +15,23 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: workclass
-    type: discrete
+    type: categorical
   - name: fnlwgt
     type: continuous
   - name: education
-    type: discrete
+    type: categorical
   - name: education-num
     type: continuous
   - name: marital-status
-    type: discrete
+    type: categorical
   - name: occupation
-    type: discrete
+    type: categorical
   - name: relationship
-    type: discrete
+    type: categorical
   - name: race
-    type: discrete
+    type: categorical
   - name: sex
-    type: binary
+    type: categorical
   - name: capital-gain
     type: continuous
   - name: capital-loss
@@ -39,4 +39,4 @@ features: # list of features in the dataset
   - name: hours-per-week
     type: continuous
   - name: native-country
-    type: discrete
+    type: categorical

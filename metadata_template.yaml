@@ -1,3 +1,4 @@
+# Created by [your name and/or contact info]
 dataset: # required, dataset name
 description: # required, dataset description
 source: # required, link to the source from where dataset was retrieved
