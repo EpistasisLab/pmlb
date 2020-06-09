@@ -8,22 +8,22 @@ PMLB was primarily developed at the University of Pennsylvania by:
     - Trang Le (ttle@pennmedicine.upenn.edu)
     - and many more generous open source contributors
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of 
-this software and associated documentation files (the "Software"), to deal in 
-the Software without restriction, including without limitation the rights to 
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies 
-of the Software, and to permit persons to whom the Software is furnished to do 
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
 so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all 
+The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
@@ -76,20 +76,20 @@ def imbalance_metrics(data):
     return (num_classes,imb/worst_case)
 
 def count_features_type(types, include_binary=False):
-    """ Counts two or three different types of features 
+    """ Counts two or three different types of features
     (binary (optional), categorical, continuous).
     :param types: list of types from get_type
     :returns a tuple (binary (optional), categorical, continuous)
     """
     if include_binary:
         return (
-                types.count('binary'), 
-                types.count('categorical'), 
+                types.count('binary'),
+                types.count('categorical'),
                 types.count('continuous')
                 )
     else:
         return (
-                types.count('categorical'), 
+                types.count('categorical'),
                 types.count('continuous')
                 )
 
@@ -104,7 +104,7 @@ def get_type(x, include_binary=False):
     else:
         raise ValueError("Error getting type")
 
-def generate_description(df, dataset_name, task, overwrite_existing=True, 
+def generate_description(df, dataset_name, task, overwrite_existing=True,
                          local_cache_dir=None):
     """Generates desription for a given dataset in its metadata.yaml file in a
     dataset local_cache_dir file.
@@ -127,10 +127,10 @@ def generate_description(df, dataset_name, task, overwrite_existing=True,
     metadata_file = open(metadata_filename, 'r')
     header = metadata_file.readline()
     if header != header_to_print:
-        
+
         logger.warning('Not writing '+ dataset_name + '.yaml ; '
                        + 'It has a customized metadata file\n')
-        return 
+        return
 
     metadata_file.close()
     metadata_file = open(metadata_filename, 'w')
@@ -150,7 +150,7 @@ def generate_description(df, dataset_name, task, overwrite_existing=True,
         metadata_file.write('description: {}\n'.format(none_yet))
         # required, link to the source from where dataset was retrieved
         metadata_file.write('source: {}\n'.format(none_yet))
-        # optional, study that generated the dataset (doi, pmid, pmcid, 
+        # optional, study that generated the dataset (doi, pmid, pmcid,
         # or url)
         metadata_file.write('publication: {}\n'.format(none_yet))
         # required, classification or regression
