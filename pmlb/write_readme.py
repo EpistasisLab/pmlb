@@ -57,8 +57,8 @@ def write_readme(dataset, problem_type, df):
                                 +'summary_stats.csv')
     print('summary_stats:',summary_stats)
     if os.path.isfile(filename):
-        print('WARNING:',filename,'exists. Overwriting...') 
-    with open(filename, 'w') as f: 
+        print('WARNING:',filename,'exists. Overwriting...')
+    with open(filename, 'w') as f:
         f.write('# %s\n\n' % dataset)
         f.write('[Metadata](metadata.yaml) |'
                 ' [Summary Statistics](summary_stats.csv)\n\n')
@@ -102,11 +102,10 @@ if __name__ =='__main__':
     for d in classification_dataset_names:
     # for d in ['adult']:
         print(d,'...')
-        df = fetch_data(d, local_cache_dir=local_dir)
+        df = fetch_data(d, local_cache_dir=local_dir, dropna=False)
         write_readme(d, 'classification', df)
     for d in regression_dataset_names:
     # for d in ['1027_ESL']:
         print(d,'...')
-        df = fetch_data(d, local_cache_dir=local_dir)
+        df = fetch_data(d, local_cache_dir=local_dir, dropna=False)
         write_readme(d, 'regression', df)
-
