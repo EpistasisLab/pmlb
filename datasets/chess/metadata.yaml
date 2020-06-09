@@ -19,8 +19,8 @@ target:
   type: binary
   description: Represents if white can win or white cannot win
   code: >
-    ''nowin'' = 0, 
-    ''won'' = 1, 
+    'nowin' = 0, 
+    'won' = 1, 
 features: # list of features in the dataset
   - name: A00
     type: binary
@@ -28,182 +28,182 @@ features: # list of features in the dataset
       See general description for this and all following features
       (Each feature correponds to a particular position)
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A01
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A02
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A03
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A04
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A05
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A06
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A07
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A08
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A09
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A10
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A11
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A12
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A13
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A14
     type: discrete
     code: >
-      ''b'' = 0, 
-      ''n'' = 1, 
-      ''w'' = 2,
+      'b' = 0, 
+      'n' = 1, 
+      'w' = 2,
   - name: A15
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A16
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A17
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A18
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A19
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A20
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A21
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A22
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A23
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A24
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1,  
   - name: A25
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A26
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A27
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A28
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A29
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A30
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A31
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A32
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A33
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A34
     type: binary
     code: >
-      ''f'' = 0, 
-      ''t'' = 1, 
+      'f' = 0, 
+      't' = 1, 
   - name: A35
     type: binary
     code: >
-      ''b'' = 0, 
-      ''n'' = 1, 
-      ''w'' = 2,
+      'b' = 0, 
+      'n' = 1, 
+      'w' = 2,
