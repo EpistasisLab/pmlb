@@ -10,25 +10,25 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Bit-0
-    type: binary
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Bit-1
-    type: binary
+    type: categorical
   - name: Bit-2
-    type: binary
+    type: categorical
   - name: Bit-3
-    type: binary
+    type: categorical
   - name: Bit-4
-    type: binary
+    type: categorical
   - name: Bit-5
-    type: binary
+    type: categorical
   - name: Bit-6
-    type: binary
+    type: categorical
   - name: Bit-7
-    type: binary
+    type: categorical
   - name: Bit-8
-    type: binary
+    type: categorical
   - name: Bit-9
-    type: binary
+    type: categorical

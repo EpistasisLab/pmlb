@@ -19,4 +19,4 @@ features: # list of features in the dataset
   - name: PA.normalized
     type: continuous
   - name: Minority
-    type: binary
+    type: categorical

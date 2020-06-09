@@ -5,74 +5,74 @@ source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
 target:
-  type: discrete
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Feature00
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Feature01
-    type: discrete
+    type: categorical
   - name: Feature02
-    type: discrete
+    type: categorical
   - name: Feature03
-    type: discrete
+    type: categorical
   - name: Feature04
-    type: discrete
+    type: categorical
   - name: Feature05
-    type: discrete
+    type: categorical
   - name: Feature06
-    type: discrete
+    type: categorical
   - name: Feature07
-    type: discrete
+    type: categorical
   - name: Feature08
-    type: discrete
+    type: categorical
   - name: Feature09
-    type: discrete
+    type: categorical
   - name: Feature10
-    type: discrete
+    type: categorical
   - name: Feature11
-    type: discrete
+    type: categorical
   - name: Feature12
-    type: discrete
+    type: categorical
   - name: Feature13
-    type: discrete
+    type: categorical
   - name: Feature14
-    type: discrete
+    type: categorical
   - name: Feature15
-    type: discrete
+    type: categorical
   - name: Feature16
-    type: discrete
+    type: categorical
   - name: Feature17
-    type: discrete
+    type: categorical
   - name: Feature18
-    type: discrete
+    type: categorical
   - name: Feature19
-    type: discrete
+    type: categorical
   - name: Feature20
-    type: discrete
+    type: categorical
   - name: Feature21
-    type: discrete
+    type: categorical
   - name: Feature22
-    type: discrete
+    type: categorical
   - name: Feature23
-    type: discrete
+    type: categorical
   - name: Feature24
-    type: binary
+    type: categorical
   - name: Feature25
-    type: binary
+    type: categorical
   - name: Feature26
-    type: discrete
+    type: categorical
   - name: Feature27
-    type: discrete
+    type: categorical
   - name: Feature28
-    type: discrete
+    type: categorical
   - name: Feature29
-    type: discrete
+    type: categorical
   - name: Feature30
-    type: discrete
+    type: categorical
   - name: Feature31
-    type: discrete
+    type: categorical

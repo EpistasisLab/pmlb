@@ -25,7 +25,7 @@ features: # list of features in the dataset
   - name: Single Epithelial Cell Size
     type: continuous
   - name: Bare Nuclei
-    type: discrete
+    type: categorical
   - name: Bland Chromatin
     type: continuous
   - name: Normal Nucleoli

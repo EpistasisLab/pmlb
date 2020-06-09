@@ -10,49 +10,49 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: surgery
-    type: discrete
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Age
-    type: binary
+    type: categorical
   - name: rectal temperature
-    type: discrete
+    type: categorical
   - name: pulse
-    type: discrete
+    type: categorical
   - name: respiratory rate
-    type: discrete
+    type: categorical
   - name: temperature of extremities
-    type: discrete
+    type: categorical
   - name: peripheral pulse
-    type: discrete
+    type: categorical
   - name: mucous membranes
-    type: discrete
+    type: categorical
   - name: capillary refill time
-    type: discrete
+    type: categorical
   - name: pain
-    type: discrete
+    type: categorical
   - name: peristalsis
-    type: discrete
+    type: categorical
   - name: abdominal distension
-    type: discrete
+    type: categorical
   - name: nasogastric tube
-    type: discrete
+    type: categorical
   - name: nasogastric reflux
-    type: discrete
+    type: categorical
   - name: nasogastric reflux PH
-    type: discrete
+    type: categorical
   - name: rectal examination
-    type: discrete
+    type: categorical
   - name: abdomen
-    type: discrete
+    type: categorical
   - name: packed cell volume
-    type: discrete
+    type: categorical
   - name: total protein
-    type: discrete
+    type: categorical
   - name: abdominocentesis appearance
-    type: discrete
+    type: categorical
   - name: abdomcentesis total protein
-    type: discrete
+    type: categorical
   - name: outcome
-    type: discrete
+    type: categorical
