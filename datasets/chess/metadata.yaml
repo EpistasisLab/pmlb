@@ -1,86 +1,209 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: chess
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  Whether a chess game is winnable or not, giving the following conditions:
+    White side has king and rook;
+    Black side has king and pawn, with pawn one move away from queening (on the second to last row);
+    It is white's turn to move.
+  The format of the data is as follows:
+    Each instance has 36 features that describe the state of the board and a 37th feature (target) that classifies if
+    a win is possible.
+  Each feature correponds to a particular position.
+source: https://www.openml.org/d/3
+publication: >
+  Database originally generated and described by Alen Shapiro
+  Donor/Coder: Rob Holte
+  Database was supplied to Holte by Peter Clark of the Turing Institute in Glasgow, 1 August 1989
 task: classification
 target:
   type: binary
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: Represents if white can win or white cannot win
+  code: >
+    'nowin' = 0,
+    'won' = 1
 features: # list of features in the dataset
   - name: A00
-    type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    type: binary
+    description: >
+      See general description for this and all following features
+      (Each feature correponds to a particular position)
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A01
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A02
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A03
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A04
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A05
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A06
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A07
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A08
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A09
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A10
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A11
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A12
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A13
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A14
-    type: categorical
+    type: discrete
+    code: >
+      'b' = 0,
+      'n' = 1,
+      'w' = 2
   - name: A15
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A16
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A17
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A18
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A19
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A20
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A21
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A22
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A23
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A24
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A25
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A26
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A27
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A28
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A29
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0, 
+      't' = 1
   - name: A30
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A31
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A32
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A33
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A34
-    type: categorical
+    type: binary
+    code: >
+      'f' = 0,
+      't' = 1
   - name: A35
-    type: categorical
+    type: binary
+    code: >
+      'b' = 0,
+      'n' = 1,
+      'w' = 2
