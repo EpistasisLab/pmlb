@@ -1,7 +1,9 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by Trang Le
 dataset: 1089_USCrime
 description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
+source: >
+  https://www.openml.org/d/1089
+  http://tunedit.org/repo/DASL
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 target:
@@ -11,11 +13,10 @@ target:
 features: # list of features in the dataset
   - name: R
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: Crime rate, number of offenses reported to police per million population
   - name: Age
     type: continuous
+    description: The number of males of age 14-24 per 1000 population
   - name: S
     type: continuous
   - name: Ed
