@@ -31,4 +31,4 @@ jobs:
         nosetests -s -v
     - name: Generate readme figures
       run: |
-        python -m pmlb.generate_dataset_figures
+        python -m pmlb.update_dataset_readmes
