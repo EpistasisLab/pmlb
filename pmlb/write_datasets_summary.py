@@ -56,6 +56,9 @@ if __name__ =='__main__':
                      edgecolor='w', ax=ax, hue='problem_type')
     ax.set_yscale('log')
     ax.set_xscale('log')
+    h, l = ax.get_legend_handles_labels()
+    print('labels:',l)
+    ax.legend(
     plt.title('Dataset Sizes')
     plt.savefig('datasets/dataset_sizes.svg',dpi=300)
 

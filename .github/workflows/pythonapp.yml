@@ -29,3 +29,6 @@ jobs:
     - name: Test with nose
       run: |
         nosetests -s -v
+    - name: Generate readme figures
+      run: |
+        python -m pmlb.generate_dataset_figures
