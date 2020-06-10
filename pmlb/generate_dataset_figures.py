@@ -36,6 +36,7 @@ import pandas as pd
 import numpy as np
 import operator
 from glob import glob
+import subprocess
 
 def plot_corr(dataset, df):
     if df.shape[0] > 1000:
@@ -102,7 +103,17 @@ def make_plots(dataset, y, problem_type):
     g = plot_corr(dataset, df)
     return h, g
     
-    
+def get_updated_datasets():
+    """Looks at commit and returns a list of datasets that were updated."""
+    cmd = 'git diff-tree --no-commit-id --name-only -r HEAD'
+    res = subprocess.check_output(cmd.split(' '))
+    files = [r for r in res.decode().split('\n')]
+    files = [f for f in files if 'datasets/' in files]
+    files = [f for f in files if 'metadata.yaml' in files or '.tsv.gz' in files]
+    results = [f.split('dataset/')[-1].split('/')[0] for f in files]
+    print('changed datasets:',results)
+
+    return results
 
 if __name__ =='__main__':
 
@@ -114,7 +125,7 @@ if __name__ =='__main__':
     #     'classification': classification_dataset_names[:5]
     }
 
-    updated_datasets = []
+    updated_datasets = get_updated_datasets()
 
     for problem_type in ['classification','regression']:
         for dataset in names[problem_type]:
