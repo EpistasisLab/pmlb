@@ -115,6 +115,67 @@ def get_updated_datasets():
 
     return results
 
+TARGET_NAME = 'target'
+
+protected_feature_names = ['y','Y','yes','Yes','YES','n','N','no','No','NO',
+                           'true','True','TRUE','false','False','FALSE',
+                           'on','On','ON','off','Off','OFF']
+
+def typify(x):
+    """Tries to typecast argument to a numeric type."""
+    try:
+        return int(x)
+    except:
+        try:
+            return float(x)
+        except:
+            return x
+
+def write_readme(dataset, problem_type, df):
+    """Writes a readme file for a dataset."""
+
+    filename = 'datasets/'+dataset+'/README.md'
+    summary_stats = pd.read_csv(filename.split('README.md')[0]
+                                +'summary_stats.csv')
+    print('summary_stats:',summary_stats)
+    if os.path.isfile(filename):
+        print('WARNING:',filename,'exists. Overwriting...')
+    with open(filename, 'w') as f:
+        f.write('# %s\n\n' % dataset)
+        f.write('[Metadata](metadata.yaml) |'
+                ' [Summary Statistics](summary_stats.csv)\n\n')
+        f.write('## Summary\n\n')
+        f.write('**task**: %s\n\n' % problem_type)
+        f.write('**instances**: %s\n\n' % summary_stats['#instances'].values[0])
+        f.write('**features**: %s\n\n' % summary_stats['#features'].values[0])
+        if problem_type == 'classification':
+            f.write('**number of classes**: {}\n\n'.format(
+                summary_stats['#features'].values[0]))
+        f.write('## Summary Plots\n\n')
+        f.write('![Labels](label.svg)\n\n')
+        f.write('![Corr](corr.svg)\n\n')
+
+        # make markdown table
+        f.write('## Data Summary\n\n')
+        summary = df.describe()
+        print('summary:',summary)
+        f.write('|\tvariable')
+        for stat in summary.index:
+            f.write('\t|\t{}'.format(stat))
+        f.write('|\n')
+        for i in np.arange(len(summary)+1):
+            f.write('| --- ')
+        f.write('|\n')
+        for col in summary.columns:
+            f.write('|\t'+col)
+            for stat in summary.index:
+                s = typify(summary.loc[stat,col])
+                if type(s) == int:
+                    f.write('\t|\t{:d}'.format(s))
+                else:
+                    f.write('\t|\t{:6.2f}'.format(s))
+            f.write('\n')
+
 if __name__ =='__main__':
 
     local_dir = 'datasets/'
@@ -125,43 +186,54 @@ if __name__ =='__main__':
     #     'classification': classification_dataset_names[:5]
     }
 
+    # figure out which datasets have changed for this commit
     updated_datasets = get_updated_datasets()
+
+    ##
+    # update dataset specific readme files
+    ##
 
     for problem_type in ['classification','regression']:
         for dataset in names[problem_type]:
             if dataset not in updated_datasets:
+                # don't update if the dataset has not changed
                 continue
             df = fetch_data(dataset, local_cache_dir = local_dir)
             fig1, fig2 = make_plots(dataset, df['target'], problem_type)
             fig1.savefig(local_dir+ '/'+dataset+'/label.svg',dpi=300) 
             fig2.savefig(local_dir+ '/'+dataset+'/corr.svg',dpi=300) 
 
+            write_readme(dataset, problem_type, df)
+
     ##
     # generate summary plot for main README
     ##
-    # collect summary stats
-    frames = []
-    for f in glob('datasets/*/summary_stats.csv'):
-        df = pd.read_csv(f)
-        df['dataset'] = f.split('datasets/')[-1].split('/')[0]
-        if df['Endpoint_type'].values[0]=='continuous':
-            df['Task'] = 'regression'  
-        else:
-            df['Task'] = 'classification'
-        frames.append(df)
-    df_summary = pd.concat(frames)
-    nclass = len(df_summary.loc[df_summary.Task=='classification'])
-    nreg = len(df_summary.loc[df_summary.Task=='regression'])
-    df_summary['Task'] = df_summary['Task'].apply(lambda x: {
-        'classification':'classification ('+str(nclass)+')',
-        'regression':'regression ('+str(nreg)+')'
-        ''}[x])
-    # generate figure
-    sns.set(style="whitegrid")
-    f, ax = plt.subplots(figsize=(6, 6))
-    sns.scatterplot("#instances", "#features", data=df_summary,
-                     edgecolor='w', ax=ax, hue='Task')
-    ax.set_yscale('log')
-    ax.set_xscale('log')
-    plt.title('Dataset Sizes')
-    plt.savefig('datasets/dataset_sizes.svg',dpi=300)
+    if len(updated_datasets) > 0:
+        # only update if datasets have been changed
+
+        # collect summary stats
+        frames = []
+        for f in glob('datasets/*/summary_stats.csv'):
+            df = pd.read_csv(f)
+            df['dataset'] = f.split('datasets/')[-1].split('/')[0]
+            if df['Endpoint_type'].values[0]=='continuous':
+                df['Task'] = 'regression'  
+            else:
+                df['Task'] = 'classification'
+            frames.append(df)
+        df_summary = pd.concat(frames)
+        nclass = len(df_summary.loc[df_summary.Task=='classification'])
+        nreg = len(df_summary.loc[df_summary.Task=='regression'])
+        df_summary['Task'] = df_summary['Task'].apply(lambda x: {
+            'classification':'classification ('+str(nclass)+')',
+            'regression':'regression ('+str(nreg)+')'
+            ''}[x])
+        # generate figure
+        sns.set(style="whitegrid")
+        f, ax = plt.subplots(figsize=(6, 6))
+        sns.scatterplot("#instances", "#features", data=df_summary,
+                         edgecolor='w', ax=ax, hue='Task')
+        ax.set_yscale('log')
+        ax.set_xscale('log')
+        plt.title('Dataset Sizes')
+        plt.savefig('datasets/dataset_sizes.svg',dpi=300)
