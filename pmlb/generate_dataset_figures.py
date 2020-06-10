@@ -35,6 +35,7 @@ import seaborn as sns
 import pandas as pd
 import numpy as np
 import operator
+from glob import glob
 
 def plot_corr(dataset, df):
     if df.shape[0] > 1000:
@@ -113,9 +114,43 @@ if __name__ =='__main__':
     #     'classification': classification_dataset_names[:5]
     }
 
+    updated_datasets = []
+
     for problem_type in ['classification','regression']:
         for dataset in names[problem_type]:
+            if dataset not in updated_datasets:
+                continue
             df = fetch_data(dataset, local_cache_dir = local_dir)
             fig1, fig2 = make_plots(dataset, df['target'], problem_type)
             fig1.savefig(local_dir+ '/'+dataset+'/label.svg',dpi=300) 
             fig2.savefig(local_dir+ '/'+dataset+'/corr.svg',dpi=300) 
+
+    ##
+    # generate summary plot for main README
+    ##
+    # collect summary stats
+    frames = []
+    for f in glob('datasets/*/summary_stats.csv'):
+        df = pd.read_csv(f)
+        df['dataset'] = f.split('datasets/')[-1].split('/')[0]
+        if df['Endpoint_type'].values[0]=='continuous':
+            df['Task'] = 'regression'  
+        else:
+            df['Task'] = 'classification'
+        frames.append(df)
+    df_summary = pd.concat(frames)
+    nclass = len(df_summary.loc[df_summary.Task=='classification'])
+    nreg = len(df_summary.loc[df_summary.Task=='regression'])
+    df_summary['Task'] = df_summary['Task'].apply(lambda x: {
+        'classification':'classification ('+str(nclass)+')',
+        'regression':'regression ('+str(nreg)+')'
+        ''}[x])
+    # generate figure
+    sns.set(style="whitegrid")
+    f, ax = plt.subplots(figsize=(6, 6))
+    sns.scatterplot("#instances", "#features", data=df_summary,
+                     edgecolor='w', ax=ax, hue='Task')
+    ax.set_yscale('log')
+    ax.set_xscale('log')
+    plt.title('Dataset Sizes')
+    plt.savefig('datasets/dataset_sizes.svg',dpi=300)
