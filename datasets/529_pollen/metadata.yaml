@@ -6,8 +6,10 @@ description: >
   Although the underlaying distribution is Gaussian, the data has been scaled, rotated and translated.
   Variable names are ficticious.
 source: >
+  https://www.openml.org/data/get_csv/52641/pollen.arff
   https://www.openml.org/d/529
-publication: None yet. See our contributing guide to help us add one.
+  http://stat-computing.org/dataexpo/1986.html
+publication: None.
 task: regression
 target:
   type: continuous
