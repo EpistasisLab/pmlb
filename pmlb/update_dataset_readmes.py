@@ -110,9 +110,9 @@ def get_updated_datasets():
     print('raw res:',res)
     files = [r for r in res.decode().split('\n')]
     print('files:',files)
-    files = [f for f in files if 'datasets/' in files]
+    files = [f for f in files if 'datasets/' in f]
     print('files:',files)
-    files = [f for f in files if 'metadata.yaml' in files or '.tsv.gz' in files]
+    files = [f for f in files if 'metadata.yaml' in f or '.tsv.gz' in f]
     print('files:',files)
     results = [f.split('dataset/')[-1].split('/')[0] for f in files]
     print('changed datasets:',results)
