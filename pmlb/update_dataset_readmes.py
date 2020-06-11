@@ -37,6 +37,7 @@ import numpy as np
 import operator
 from glob import glob
 import subprocess
+import os
 
 def plot_corr(dataset, df):
     if df.shape[0] > 1000:
@@ -107,14 +108,11 @@ def get_updated_datasets():
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff-tree --no-commit-id --name-only -r HEAD'
     res = subprocess.check_output(cmd.split(' '))
-    print('raw res:',res)
+    print('raw git check:',res)
     files = [r for r in res.decode().split('\n')]
-    print('files:',files)
     files = [f for f in files if 'datasets/' in f]
-    print('files:',files)
     files = [f for f in files if 'metadata.yaml' in f or '.tsv.gz' in f]
-    print('files:',files)
-    results = [f.split('dataset/')[-1].split('/')[0] for f in files]
+    results = [f.split('datasets/')[-1].split('/')[0] for f in files]
     print('changed datasets:',results)
 
     return results
