@@ -107,9 +107,13 @@ def get_updated_datasets():
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff-tree --no-commit-id --name-only -r HEAD'
     res = subprocess.check_output(cmd.split(' '))
+    print('raw res:',res)
     files = [r for r in res.decode().split('\n')]
+    print('files:',files)
     files = [f for f in files if 'datasets/' in files]
+    print('files:',files)
     files = [f for f in files if 'metadata.yaml' in files or '.tsv.gz' in files]
+    print('files:',files)
     results = [f.split('dataset/')[-1].split('/')[0] for f in files]
     print('changed datasets:',results)
 
