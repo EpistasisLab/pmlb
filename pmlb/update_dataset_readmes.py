@@ -106,7 +106,7 @@ def make_plots(dataset, y, problem_type):
     
 def get_updated_datasets():
     """Looks at commit and returns a list of datasets that were updated."""
-    cmd = 'git diff-tree --no-commit-id --name-only -r HEAD'
+    cmd = 'git diff --name-only HEAD HEAD~1'
     res = subprocess.check_output(cmd.split(' '))
     print('raw git check:',res)
     files = [r for r in res.decode().split('\n')]
