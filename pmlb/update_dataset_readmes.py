@@ -162,7 +162,6 @@ def write_readme(dataset, problem_type, df):
 
     path = pathlib.Path(f'datasets/{dataset}/README.md')
     summary_stats = pd.read_csv(path.with_name('summary_stats.csv'))
-    summary_stats = summary_stats.rename(columns={'variable': 'feature'})
     if path.exists():
         print(f'WARNING: {path} exists. Overwriting...')
     readme = readme_template.format(
