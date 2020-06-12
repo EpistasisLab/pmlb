@@ -5,8 +5,8 @@
 ## Summary
 
 - **task**: classification
-- **instances**: 392
-- **features**: 8
+- **number of instances**: 392
+- **number of features**: 8
 - **number of classes**: 3.0
 
 ## Summary Plots

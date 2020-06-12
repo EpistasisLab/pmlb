@@ -5,8 +5,8 @@
 ## Summary
 
 - **task**: regression
-- **instances**: 47
-- **features**: 13
+- **number of instances**: 47
+- **number of features**: 13
 
 
 ## Summary Plots
