@@ -50,7 +50,6 @@ def plot_corr(dataset, df):
 	    }
     corrs = {k:v for k,v in corrs.items() if not np.isnan(v)}
     sorted_corrs = sorted(corrs.items(), key=operator.itemgetter(1))[::-1]
-    print('sorted_corrs:',sorted_corrs[:max_cols])
     order = [sc[0] for sc in sorted_corrs[:max_cols]]
     order.remove('target')
     order += ['target']
@@ -84,7 +83,6 @@ def plot_label(dataset, y, problem_type,ax):
         # then do a bar plot
         classes = list(np.sort(y.unique()))
         bins = sorted([c-0.25 for c in classes]+[c+0.25 for c in classes])
-        print(bins)
 #         bins = [-0.25, 0.25, 0.75, 1.25]
         ax = sns.distplot(y, kde=False,
                           bins = bins, hist_kws={'align':'mid'})
@@ -144,8 +142,8 @@ readme_template = '''\
 ## Summary
 
 - **task**: {problem_type}
-- **instances**: {n_instances:,}
-- **features**: {n_features:,}
+- **number of instances**: {n_instances:,}
+- **number of features**: {n_features:,}
 {n_classes_line}
 
 ## Summary Plots
@@ -164,6 +162,7 @@ def write_readme(dataset, problem_type, df):
 
     path = pathlib.Path(f'datasets/{dataset}/README.md')
     summary_stats = pd.read_csv(path.with_name('summary_stats.csv'))
+    summary_stats = summary_stats.rename(columns={'variable': 'feature'})
     if path.exists():
         print(f'WARNING: {path} exists. Overwriting...')
     readme = readme_template.format(
