@@ -108,8 +108,7 @@ def make_plots(dataset, y, problem_type):
 def get_updated_datasets():
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff --name-only HEAD HEAD~1'
-    res = subprocess.check_output(cmd.split(' '), universal_newlines=True)
-    print('raw git check:', res)
+    res = subprocess.check_output(cmd.split(), universal_newlines=True)
     changed_datasets = set()
     for path in res.splitlines():
         path = pathlib.Path(path)
@@ -137,59 +136,56 @@ def typify(x):
         except:
             return x
 
+readme_template = '''\
+# {dataset}
+
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
+
+## Summary
+
+- **task**: {problem_type}
+- **instances**: {n_instances:,}
+- **features**: {n_features:,}
+{n_classes_line}
+
+## Summary Plots
+
+![Target distribution](label.svg)
+
+![Correlation plot](corr.svg)
+
+## Data Summary
+
+{description_table}
+'''
+
 def write_readme(dataset, problem_type, df):
     """Writes a readme file for a dataset."""
 
-    filename = 'datasets/'+dataset+'/README.md'
-    summary_stats = pd.read_csv(filename.split('README.md')[0]
-                                +'summary_stats.csv')
-    print('summary_stats:',summary_stats)
-    if os.path.isfile(filename):
-        print('WARNING:',filename,'exists. Overwriting...')
-    with open(filename, 'w') as f:
-        f.write('# %s\n\n' % dataset)
-        f.write('[Metadata](metadata.yaml) |'
-                ' [Summary Statistics](summary_stats.csv)\n\n')
-        f.write('## Summary\n\n')
-        f.write('**task**: %s\n\n' % problem_type)
-        f.write('**instances**: %s\n\n' % summary_stats['#instances'].values[0])
-        f.write('**features**: %s\n\n' % summary_stats['#features'].values[0])
-        if problem_type == 'classification':
-            f.write('**number of classes**: {}\n\n'.format(
-                summary_stats['#features'].values[0]))
-        f.write('## Summary Plots\n\n')
-        f.write('![Labels](label.svg)\n\n')
-        f.write('![Corr](corr.svg)\n\n')
-
-        # make markdown table
-        f.write('## Data Summary\n\n')
-        summary = df.describe()
-        print('summary:',summary)
-        f.write('|\tvariable')
-        for stat in summary.index:
-            f.write('\t|\t{}'.format(stat))
-        f.write('|\n')
-        for i in np.arange(len(summary)+1):
-            f.write('| --- ')
-        f.write('|\n')
-        for col in summary.columns:
-            f.write('|\t'+col)
-            for stat in summary.index:
-                s = typify(summary.loc[stat,col])
-                if type(s) == int:
-                    f.write('\t|\t{:d}'.format(s))
-                else:
-                    f.write('\t|\t{:6.2f}'.format(s))
-            f.write('\n')
+    path = pathlib.Path(f'datasets/{dataset}/README.md')
+    summary_stats = pd.read_csv(path.with_name('summary_stats.csv'))
+    if path.exists():
+        print(f'WARNING: {path} exists. Overwriting...')
+    readme = readme_template.format(
+        dataset=dataset,
+        problem_type=problem_type,
+        n_instances=summary_stats['#instances'].values[0],
+        n_features=summary_stats['#features'].values[0],
+        n_classes_line=(
+            f"- **number of classes**: {summary_stats['#Classes'].values[0]}"
+            if problem_type == 'classification' else ''),
+        description_table=df.describe().to_markdown(),
+    )
+    path.write_text(readme)
 
 if __name__ =='__main__':
 
     local_dir = 'datasets/'
     names = {
-	'regression': regression_dataset_names,
-	'classification': classification_dataset_names
-    #     'regression': regression_dataset_names[:5],
-    #     'classification': classification_dataset_names[:5]
+    	'regression': regression_dataset_names,
+    	'classification': classification_dataset_names
+        #     'regression': regression_dataset_names[:5],
+        #     'classification': classification_dataset_names[:5]
     }
 
     # figure out which datasets have changed for this commit
