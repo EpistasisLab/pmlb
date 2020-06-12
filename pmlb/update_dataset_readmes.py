@@ -28,7 +28,7 @@ SOFTWARE.
 """
 
 from pmlb import fetch_data
-from .dataset_lists import (classification_dataset_names, 
+from .dataset_lists import (classification_dataset_names,
                             regression_dataset_names)
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -38,6 +38,7 @@ import operator
 from glob import glob
 import subprocess
 import os
+import pathlib
 
 def plot_corr(dataset, df):
     if df.shape[0] > 1000:
@@ -54,7 +55,7 @@ def plot_corr(dataset, df):
     order.remove('target')
     order += ['target']
     df = df[order]
-    # make correlation plot 
+    # make correlation plot
     corr = np.square(df.corr())
     # Generate a mask for the upper triangle
     mask = np.zeros_like(corr, dtype=np.bool)
@@ -65,7 +66,7 @@ def plot_corr(dataset, df):
 
     g = plt.figure()
     sns.heatmap(corr, mask=mask, cmap=cmap,  center=0,
-                square=True, linewidths=.5, 
+                square=True, linewidths=.5,
                 cbar_kws={"shrink": .5,
                           'label':'Square Corr. Coef'},
                 xticklabels=[k.lower() for k in df.columns],
@@ -85,7 +86,7 @@ def plot_label(dataset, y, problem_type,ax):
         bins = sorted([c-0.25 for c in classes]+[c+0.25 for c in classes])
         print(bins)
 #         bins = [-0.25, 0.25, 0.75, 1.25]
-        ax = sns.distplot(y, kde=False, 
+        ax = sns.distplot(y, kde=False,
                           bins = bins, hist_kws={'align':'mid'})
         ax.set_xticks(np.sort(y.unique()))
     elif problem_type == 'regression':
@@ -103,19 +104,22 @@ def make_plots(dataset, y, problem_type):
     plot_label(dataset, df['target'], problem_type, ax)
     g = plot_corr(dataset, df)
     return h, g
-    
+
 def get_updated_datasets():
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff --name-only HEAD HEAD~1'
-    res = subprocess.check_output(cmd.split(' '))
-    print('raw git check:',res)
-    files = [r for r in res.decode().split('\n')]
-    files = [f for f in files if 'datasets/' in f]
-    files = [f for f in files if 'metadata.yaml' in f or '.tsv.gz' in f]
-    results = [f.split('datasets/')[-1].split('/')[0] for f in files]
-    print('changed datasets:',results)
-
-    return results
+    res = subprocess.check_output(cmd.split(' '), universal_newlines=True)
+    print('raw git check:', res)
+    changed_datasets = set()
+    for path in res.splitlines():
+        path = pathlib.Path(path)
+        if path.parts[0] != 'datasets':
+            continue
+        if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
+            changed_datasets.add(path.parts[1])
+    changed_datasets = sorted(changed_datasets)
+    print(f'changed datasets: {changed_datasets}')
+    return changed_datasets
 
 TARGET_NAME = 'target'
 
@@ -202,8 +206,8 @@ if __name__ =='__main__':
                 continue
             df = fetch_data(dataset, local_cache_dir = local_dir)
             fig1, fig2 = make_plots(dataset, df['target'], problem_type)
-            fig1.savefig(local_dir+ '/'+dataset+'/label.svg',dpi=300) 
-            fig2.savefig(local_dir+ '/'+dataset+'/corr.svg',dpi=300) 
+            fig1.savefig(local_dir+ '/'+dataset+'/label.svg',dpi=300)
+            fig2.savefig(local_dir+ '/'+dataset+'/corr.svg',dpi=300)
 
             write_readme(dataset, problem_type, df)
 
@@ -219,7 +223,7 @@ if __name__ =='__main__':
             df = pd.read_csv(f)
             df['dataset'] = f.split('datasets/')[-1].split('/')[0]
             if df['Endpoint_type'].values[0]=='continuous':
-                df['Task'] = 'regression'  
+                df['Task'] = 'regression'
             else:
                 df['Task'] = 'classification'
             frames.append(df)
