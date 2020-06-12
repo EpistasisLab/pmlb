@@ -172,7 +172,7 @@ def write_readme(dataset, problem_type, df):
         n_classes_line=(
             f"- **number of classes**: {summary_stats['#Classes'].values[0]}"
             if problem_type == 'classification' else ''),
-        description_table=df.describe().to_markdown(),
+        description_table=df.describe().transpose().to_markdown(),
     )
     path.write_text(readme)
 
