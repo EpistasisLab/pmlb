@@ -5,7 +5,12 @@ description: >
   List of possible poker hands (combinations of five playing cards from a standard deck with significance 
   given to the order). Classifies which, if any, sort of poker hand results (two pair, straight flush, etc).
 source: https://archive.ics.uci.edu/ml/datasets/Poker+Hand
-publication: https://www.researchgate.net/publication/255579999_Evolutionary_Data_Mining_With_Automatic_Rule_Generalization
+publication: >
+  Cattral R, Oppacher F, Deugo D.
+  Evolutionary data mining with automatic rule generalization.
+  Recent Advances in Computers, Computing and Communications.
+  2002;1(1):296-300.
+  https://www.researchgate.net/publication/255579999_Evolutionary_Data_Mining_With_Automatic_Rule_Generalization
 task: classification
 target:
   type: ordinal
@@ -32,7 +37,7 @@ features: # list of features in the dataset
     type: ordinal
     description: >
       Name of first card.
-      The numbers correlate to the card; ‘Ace’ = 1, ‘2’ = 2, …, ‘Queen’ = 12, ‘King’ = 13.
+      The numbers correlate to the card; 'Ace' = 1, '2' = 2, ..., 'Queen' = 12, 'King' = 13.
       Same encoding for the rest of the C* features.
   - name: S2
     type: nominal
@@ -58,4 +63,9 @@ features: # list of features in the dataset
   - name: C5
     type: ordinal
     description: Name of fifth card.
-keywords: poker, game, cards, chance, probability
+keywords:
+  - poker
+  - game
+  - cards
+  - chance
+  - probability
