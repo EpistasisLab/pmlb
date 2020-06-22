@@ -1,8 +1,23 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: soybean
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+This is the large soybean database from the UCI repository, 
+with its training and test database combined into a single file.
+There are 19 classes, only the first 15 of which have been used in prior work. The folklore seems to be that the last four classes
+are unjustified by the data since they have so few examples. There are 35 categorical attributes,
+some nominal and some ordered. The value 'dna' means does not apply. 
+The values for attributes are encoded numerically, with the first value encoded as 
+"0,'' the second as "1,'' and so forth. An unknown value is encoded as "?''.
+source: >
+  https://www.openml.org/d/42,
+  https://www.openml.org/data/get_csv/42/dataset_42_soybean.arff
+publication: >
+  R.S. Michalski and R.L. Chilausky
+  "Learning by Being Told and Learning from Examples: An Experimental Comparison of the 
+  Two Methods of Knowledge Acquisition in the Context of Developing an Expert System 
+  for Soybean Disease Diagnosis",
+  International Journal of Policy Analysis and Information Systems, 
+  Vol. 4, No. 2, 1980.
 task: classification
 target:
   type: categorical
@@ -11,11 +26,21 @@ target:
 features: # list of features in the dataset
   - name: date
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    code: >
+      '?' = 0, 
+      'april' = 1, 
+      'august' = 2, 
+      'july' = 3, 
+      'june' = 4, 
+      'may' = 5, 
+      'october' = 6, 
+      'september' = 7
   - name: plant-stand
     type: categorical
+    code: >
+      '?' = 0, 
+      'lt-normal' = 1, 
+      'normal' = 2, 
   - name: precip
     type: categorical
   - name: temp
