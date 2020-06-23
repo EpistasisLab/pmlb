@@ -1,13 +1,14 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by Natasha Ray, Trang Le
 dataset: soybean
 description: >
-This is the large soybean database from the UCI repository, 
-with its training and test database combined into a single file.
-There are 19 classes, only the first 15 of which have been used in prior work. The folklore seems to be that the last four classes
-are unjustified by the data since they have so few examples. There are 35 categorical attributes,
-some nominal and some ordered. The value 'dna' means does not apply. 
-The values for attributes are encoded numerically, with the first value encoded as 
-"0,'' the second as "1,'' and so forth. An unknown value is encoded as "?''.
+  This is the large soybean database from the UCI repository, 
+  with its training and test database combined into a single file.
+  There are 19 classes, only the first 15 of which have been used in prior work.
+  The folklore seems to be that the last four classes are unjustified by the data 
+  since they have so few examples. There are 35 categorical attributes,
+  some nominal and some ordered. The value 'dna' means does not apply.
+  The values for attributes are encoded numerically, with the first value encoded as 
+  "0" the second as "1" and so forth. An unknown value is encoded as "?".
 source: >
   https://www.openml.org/d/42,
   https://www.openml.org/data/get_csv/42/dataset_42_soybean.arff
@@ -21,8 +22,27 @@ publication: >
 task: classification
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: type of plant disease
+  code: >
+    '2-4-d-injury' = 0, 
+    'alternarialeaf-spot' = 1, 
+    'anthracnose' = 2, 
+    'bacterial-blight' = 3, 
+    'bacterial-pustule' = 4, 
+    'brown-spot' = 5, 
+    'brown-stem-rot' = 6, 
+    'charcoal-rot' = 7, 
+    'cyst-nematode' = 8, 
+    'diaporthe-pod-&-stem-blight' = 9, 
+    'diaporthe-stem-canker' = 10, 
+    'downy-mildew' = 11, 
+    'frog-eye-leaf-spot' = 12, 
+    'herbicide-injury' = 13, 
+    'phyllosticta-leaf-spot' = 14, 
+    'phytophthora-rot' = 15, 
+    'powdery-mildew' = 16, 
+    'purple-seed-stain' = 17, 
+    'rhizoctonia-root-rot' = 18  
 features: # list of features in the dataset
   - name: date
     type: categorical
@@ -40,70 +60,224 @@ features: # list of features in the dataset
     code: >
       '?' = 0, 
       'lt-normal' = 1, 
-      'normal' = 2, 
+      'normal' = 2
   - name: precip
     type: categorical
+    code: >
+      '?' = 0, 
+      'gt-norm' = 1, 
+      'lt-norm' = 2, 
+      'norm' = 3
   - name: temp
     type: categorical
+    code: >
+      '?' = 0, 
+      'gt-norm' = 1, 
+      'lt-norm' = 2, 
+      'norm' = 3
   - name: hail
     type: categorical
+    code: >
+      '?' = 0, 
+      'no' = 1, 
+      'yes' = 2 
   - name: crop-hist
     type: categorical
+    code: >
+      '?' = 0, 
+      'diff-lst-year' = 1, 
+      'same-lst-sev-yrs' = 2, 
+      'same-lst-two-yrs' = 3, 
+      'same-lst-yr' = 4
   - name: area-damaged
     type: categorical
+    code: >
+      '?' = 0, 
+      'low-areas' = 1, 
+      'scattered' = 2, 
+      'upper-areas' = 3, 
+      'whole-field' = 4
   - name: severity
     type: categorical
+    code: >
+      '?' = 0, 
+      'minor' = 1, 
+      'pot-severe' = 2, 
+      'severe' = 3
   - name: seed-tmt
     type: categorical
+    code: >
+      '?' = 0, 
+      'fungicide' = 1, 
+      'none' = 2, 
+      'other' = 3
   - name: germination
     type: categorical
+    code: >
+      '80-89' = 0, 
+      '90-100' = 1, 
+      '?' = 2, 
+      'lt-80' = 3
   - name: plant-growth
     type: categorical
+    code: >
+      '?' = 0, 
+      'abnorm' = 1, 
+      'norm' = 2
   - name: leaves
     type: categorical
+    code: >
+      'abnorm' = 0, 
+      'norm' = 1
   - name: leafspots-halo
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'no-yellow-halos' = 2, 
+      'yellow-halos' = 3
   - name: leafspots-marg
     type: categorical
+    code: >
+      '?' = 0, 
+      'dna' = 1, 
+      'no-w-s-marg' = 2, 
+      'w-s-marg' = 3
   - name: leafspot-size
     type: categorical
+    code: >
+      '?' = 0, 
+      'dna' = 1, 
+      'gt-1/8' = 2, 
+      'lt-1/8' = 3
   - name: leaf-shread
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: leaf-malf
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: leaf-mild
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'lower-surf' = 2, 
+      'upper-surf' = 3
   - name: stem
     type: categorical
+    code: >
+      '?' = 0, 
+      'abnorm' = 1, 
+      'norm' = 2
   - name: lodging
     type: categorical
+    code: >
+      '?' = 0, 
+      'no' = 1, 
+      'yes' = 2
   - name: stem-cankers
     type: categorical
+    code: >
+      '?' = 0, 
+      'above-sec-nde' = 1, 
+      'above-soil' = 2, 
+      'absent' = 3, 
+      'below-soil' = 4
   - name: canker-lesion
     type: categorical
+    code: >
+      '?' = 0, 
+      'brown' = 1, 
+      'dk-brown-blk' = 2, 
+      'dna' = 3, 
+      'tan' = 4
   - name: fruiting-bodies
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: external-decay
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'firm-and-dry' = 2, 
+      'watery' = 3
   - name: mycelium
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: int-discolor
     type: categorical
+    code: >
+      'black' = 1, 
+      'brown' = 2, 
+      'none' = 3
   - name: sclerotia
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: fruit-pods
     type: categorical
+    code: >
+      '?' = 0, 
+      'diseased' = 1, 
+      'dna' = 2, 
+      'few-present' = 3, 
+      'norm' = 4
   - name: fruit-spots
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'brown-w/blk-specks' = 2, 
+      'colored' = 3, 
+      'dna' = 4
   - name: seed
     type: categorical
+    code: >
+      '?' = 0, 
+      'abnorm' = 1, 
+      'norm' = 2
   - name: mold-growth
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: seed-discolor
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: seed-size
     type: categorical
+    code: >
+      '?' = 0, 
+      'lt-norm' = 1, 
+      'norm' = 2
   - name: shriveling
     type: categorical
+    code: >
+      '?' = 0, 
+      'absent' = 1, 
+      'present' = 2
   - name: roots
     type: categorical
+    code: >
+      '?' = 0, 
+      'galls-cysts' = 1, 
+      'norm' = 2, 
+      'rotted' = 3
