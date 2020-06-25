@@ -4,6 +4,7 @@ dataset: poker
 description: >
   List of possible poker hands (combinations of five playing cards from a standard deck with significance 
   given to the order). Classifies which, if any, sort of poker hand results (two pair, straight flush, etc).
+  Note that the dataset contains over 2000 duplicated rows.
 source: https://archive.ics.uci.edu/ml/datasets/Poker+Hand
 publication: >
   Cattral R, Oppacher F, Deugo D.
