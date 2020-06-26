@@ -31,19 +31,19 @@ jobs:
     - name: Test with nose
       run: |
         nosetests -s -v
-    - name: Generate readme figures
-      run: |
-        python -m pmlb.update_dataset_readmes
-    - name: Set deploy variables
-      run: |
-        BRANCH_REF=${{github.head_ref || github.ref}}
-        echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
+    #- name: Generate readme figures
+      #run: |
+        #python -m pmlb.update_dataset_readmes
+    #- name: Set deploy variables
+      #run: |
+        #BRANCH_REF=${{github.head_ref || github.ref}}
+        #echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
+    #- name: Deploy
+      #uses: peaceiris/actions-gh-pages@v3
+      #with:
         # external_repository: ${{ github.repository }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
-        publish_branch: ${{ env.BRANCH }}
+        #github_token: ${{ secrets.GITHUB_TOKEN }}
+        #publish_dir: .
+        #publish_branch: ${{ env.BRANCH }}
         # without keep_files, .github/workflows/pythonapp.yml was removed
-        keep_files: true
+        #keep_files: true
