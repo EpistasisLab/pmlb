@@ -46,4 +46,4 @@ jobs:
         #publish_dir: .
         #publish_branch: ${{ env.BRANCH }}
         # without keep_files, .github/workflows/pythonapp.yml was removed
-        keep_files: true
+        #keep_files: true
