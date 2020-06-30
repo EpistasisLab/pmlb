@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Trang Le, Weixuan Fu">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Using PMLB python wrapper - PMLB</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Using PMLB python wrapper";
+    var mkdocs_page_input_path = "using.md";
+    var mkdocs_page_url = "/penn-ml-benchmarks/using/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> PMLB</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Home</span>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installing/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Using PMLB python wrapper</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#using-pmlb-in-python-scripts">Using PMLB in Python scripts</a></li>
+    
+
+    <li class="toctree-l2"><a href="#example-usage-compare-two-classification-algorithms-with-pmlb">Example usage: Compare two classification algorithms with PMLB</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../contributing/">Contributing</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../how-to-verify-source/">How to verify source</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">PMLB</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Using PMLB python wrapper</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/edit/gh_pages/docs_sources/using.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="using-pmlb-in-python-scripts">Using PMLB in Python scripts</h2>
+<pre><code class="python">from pmlb import fetch_data
+
+# Returns a pandas DataFrame
+adult_data = fetch_data('adult')
+print(adult_data.describe())
+</code></pre>
+
+<p>The <code>fetch_data</code> function has two additional parameters:
+* <code>return_X_y</code> (True/False): Whether to return the data in scikit-learn format, with the features and labels stored in separate NumPy arrays.
+* <code>local_cache_dir</code> (string): The directory on your local machine to store the data files so you don't have to fetch them over the web again. By default, the wrapper does not use a local cache directory.</p>
+<p>For example:</p>
+<pre><code class="python">from pmlb import fetch_data
+
+# Returns NumPy arrays
+adult_X, adult_y = fetch_data('adult', return_X_y=True, local_cache_dir='./')
+print(adult_X)
+print(adult_y)
+</code></pre>
+
+<p>You can also list all of the available data sets as follows:</p>
+<pre><code class="python">from pmlb import dataset_names
+
+print(dataset_names)
+</code></pre>
+
+<p>Or if you only want a list of available classification or regression datasets:</p>
+<pre><code class="python">from pmlb import classification_dataset_names, regression_dataset_names
+
+print(classification_dataset_names)
+print('')
+print(regression_dataset_names)
+</code></pre>
+
+<h2 id="example-usage-compare-two-classification-algorithms-with-pmlb">Example usage: Compare two classification algorithms with PMLB</h2>
+<p>PMLB is designed to make it easy to benchmark machine learning algorithms against each other. Below is a Python code snippet showing the most basic way to use PMLB to compare two algorithms.</p>
+<pre><code class="python">from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import GaussianNB
+from sklearn.model_selection import train_test_split
+
+import matplotlib.pyplot as plt
+import seaborn as sb
+
+from pmlb import fetch_data, classification_dataset_names
+
+logit_test_scores = []
+gnb_test_scores = []
+
+for classification_dataset in classification_dataset_names:
+    X, y = fetch_data(classification_dataset, return_X_y=True)
+    train_X, test_X, train_y, test_y = train_test_split(X, y)
+
+    logit = LogisticRegression()
+    gnb = GaussianNB()
+
+    logit.fit(train_X, train_y)
+    gnb.fit(train_X, train_y)
+
+    logit_test_scores.append(logit.score(test_X, test_y))
+    gnb_test_scores.append(gnb.score(test_X, test_y))
+
+sb.boxplot(data=[logit_test_scores, gnb_test_scores], notch=True)
+plt.xticks([0, 1], ['LogisticRegression', 'GaussianNB'])
+plt.ylabel('Test Accuracy')
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../contributing/" class="btn btn-neutral float-right" title="Contributing">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../installing/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Developed by Randal S. Olson, William La Cava, Trang Le, Weixuan Fu and others at the University of Pennsylvania</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../installing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../contributing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
