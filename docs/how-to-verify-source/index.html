@@ -113,35 +113,39 @@
               
                 <p>There are a few ways we can check whether a PMLB dataframe (<code>pmlb_df</code>) agrees with its source (<code>source_df</code>), provided that we have checked their shapes (by printing <code>pmlb_df.shape</code> and <code>pmlb_df.shape</code>) and changed the column name of the dependent variable to <code>target</code>. For example, if the dependent variable in the source dataset is <code>class</code>, you can use <code>df_source = df_source.rename(columns={'class': 'target'})</code>.</p>
 <ul>
-<li>
-<p>If the two dataframes are exactly the same, the following line of code does not return anything ✔️:
-  <code>python
+<li>If the two dataframes are exactly the same, the following line of code does not return anything ✔️:</li>
+</ul>
+<p><code>python
   pd.testing.assert_frame_equal(df_source, df_pmlb)</code></p>
-</li>
-<li>
-<p>If it gives error, the column names may be different. If we have good reasons to ignore column names, we can check if the values contained in the 2 dataframes are the same with
-  ``` python
+<ul>
+<li>If it gives error, the column names may be different. If we have good reasons to ignore column names, we can check if the values contained in the 2 dataframes are the same with</li>
+</ul>
+<p>```python
   from pandas.util import hash_pandas_object
   import hashlib</p>
-</li>
-</ul>
-<p>rowhashes_pmlb = hash_pandas_object(df_pmlb, index = False).values 
+<p>rowhashes_pmlb = hash_pandas_object(df_pmlb, index = False).values
   hash_pmlb = hashlib.sha256(rowhashes_pmlb).hexdigest()
-  rowhashes_source = hash_pandas_object(df_source, index = False).values 
+  rowhashes_source = hash_pandas_object(df_source, index = False).values
   hash_source = hashlib.sha256(rowhashes_source).hexdigest()</p>
 <p># verify hashes match
   print(hash_pmlb == hash_source)
-  <code>or</code> python
-  (df_source.values == df_pmlb.values).all()
-  <code>- If we still get `False`, it is possible that the rows have been permuted. To check if they are:</code> python
-  set(df_pmlb.itertuples(index=False)) == set(df_source.itertuples(index=False))
-  <code>or, if row hashes have been computed,</code> python
-  set(rowhashes_source) == set(rowhashes_pmlb)
-  <code>or "subtracting" the two datasets row by row</code> python
+  ```
+  or</p>
+<p><code>python
+  (df_source.values == df_pmlb.values).all()</code>
+- If we still get <code>False</code>, it is possible that the rows have been permuted. To check if they are:</p>
+<p><code>python
+  set(df_pmlb.itertuples(index=False)) == set(df_source.itertuples(index=False))</code>
+  or, if row hashes have been computed,</p>
+<p><code>python
+  set(rowhashes_source) == set(rowhashes_pmlb)</code>
+  or "subtracting" the two datasets row by row</p>
+<p><code>python
   df_source.merge(df_pmlb, indicator = True, how='left').loc[lambda x : x['_merge']!='both']
-  df_pmlb.merge(df_source, indicator = True, how='left').loc[lambda x : x['_merge']!='both']
-  <code>This code will print the rows that are in one dataframe but not the other and can help you see the difference a bit better.
-- If the two dataframes have floats that are almost equal to each other, we can use `numpy`'s `isclose` to check if they are element-wise equal within a tolerance:</code> python
+  df_pmlb.merge(df_source, indicator = True, how='left').loc[lambda x : x['_merge']!='both']</code>
+  This code will print the rows that are in one dataframe but not the other and can help you see the difference a bit better.
+- If the two dataframes have floats that are almost equal to each other, we can use <code>numpy</code>'s <code>isclose</code> to check if they are element-wise equal within a tolerance:</p>
+<p>```python
   from numpy import isclose</p>
 <p>isclose(df_source.values, df_pmlb.values).all()
   ```</p>
