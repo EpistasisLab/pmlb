@@ -122,7 +122,6 @@ classification_dataset_names = [
     'led24',
     'led7',
     'letter',
-    'liver_disorder',
     'lupus',
     'lymphography',
     'magic',
