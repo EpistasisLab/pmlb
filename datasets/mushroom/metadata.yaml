@@ -2,8 +2,8 @@
 dataset: mushroom
 description: Mushroom records drawn from The Audubon Society Field Guide to North American Mushrooms.
 source: >
-  https://www.openml.org/data/get_csv/24/dataset_24_mushroom.arff
-  https://www.openml.org/d/24
+  https://www.openml.org/data/get_csv/24/dataset_24_mushroom.arff,
+  https://www.openml.org/d/24,
   https://sonj.me/projects/2018/09/05/poisonous-mushroom-classification.html
 publication: >
   Alfred A. Knopf.
