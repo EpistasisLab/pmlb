@@ -27,10 +27,20 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install nose numpy scipy tabulate pandas pyyaml requests parameterized matplotlib seaborn
+        pip install nose numpy scipy tabulate pandas pyyaml requests parameterized matplotlib seaborn mkdocs
     - name: Test with nose
       run: |
         nosetests -s -v
+    - name: Set deploy variables
+      run: |
+        BRANCH_REF=${{github.head_ref || github.ref}}
+        echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
+        git config --local user.name 'github-actions[bot]'
+        git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+    - name: Deploy GitHub Pages
+      run: |
+        mkdocs gh-deploy
+
     #- name: Generate readme figures
       #run: |
         #python -m pmlb.update_dataset_readmes
