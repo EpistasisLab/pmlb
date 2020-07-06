@@ -15,11 +15,12 @@ description: >
   Each row is a record of a single male individual.
 source: https://www.openml.org/d/8
 publication: https://archive.ics.uci.edu/ml/datasets/Liver+Disorders
-task: regression
+task: classification
 target:
-  type: continuous
+  type: binary
   description: >
     Number of half-pint equivalents of alcoholic beverages drunk per day.
+    0: >= 3; 1: < 3
 features: # list of features in the dataset
   - name: Mcv
     type: continuous
