@@ -1,19 +1,18 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: 560_bodyfat
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
+description: Lists estimates of the percentage of body fat determined by underwater
+weighing and various body circumference measurements for 252 men
+source: [UCI (not available anymore)](https://archive.ics.uci.edu/ml/index.php), [TunedIT](http://tunedit.org/repo/UCI/numeric/bodyfat.arff)
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features: wrist, forearm, biceps, ankle, knee, thigh, hip, abdomen, chest, neck, height, weight, age, density
   - name: Density
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: determined from underwater weighing, Body Density (gm/cm^3)
   - name: Age
     type: continuous
   - name: Weight
