@@ -1,41 +1,60 @@
-#Generated automatically by pmlb/write_metadata.py
+# Generated automatically by pmlb/write_metadata.py
+# Reviewed by Natasha Ray
 dataset: 560_bodyfat
-description: Lists estimates of the percentage of body fat determined by underwater
-weighing and various body circumference measurements for 252 men
-source: [UCI (not available anymore)](https://archive.ics.uci.edu/ml/index.php), [TunedIT](http://tunedit.org/repo/UCI/numeric/bodyfat.arff)
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  Lists estimates of the percentage of body fat determined by underwater weighing and various body circumference measurements for 252 men.
+source: >
+  http://tunedit.org/repo/UCI/numeric/bodyfat.arff,
+  https://www.openml.org/data/get_csv/52738/bodyfat.arff
+publication: >
+  Penrose KW, Nelson AG, Fisher AG.
+  Generalized body composition prediction equation for men using simple measurement techniques.
+  Medicine & Science in Sports & Exercise. 1985 Apr 1;17(2):189.
 task: regression
 target:
   type: continuous
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
-features: wrist, forearm, biceps, ankle, knee, thigh, hip, abdomen, chest, neck, height, weight, age, density
+  description: Percent of body fat
+  code: None.
+features:
   - name: Density
     type: continuous
     description: determined from underwater weighing, Body Density (gm/cm^3)
   - name: Age
     type: continuous
+    description: (years)
   - name: Weight
     type: continuous
+    description: (lbs)
   - name: Height
     type: continuous
+    description: (inches)
   - name: Neck
     type: continuous
+    description: Neck circumference (cm)
   - name: Chest
     type: continuous
+    description: Chest circumference (cm)
   - name: Abdomen
     type: continuous
+    description: Abdomen circumference (cm)
   - name: Hip
     type: continuous
+    description: Hip circumference (cm)
   - name: Thigh
     type: continuous
+    description: Thigh circumference (cm)
   - name: Knee
     type: continuous
+    description: Knee circumference (cm)
   - name: Ankle
     type: continuous
+    description: Ankle circumference (cm)
   - name: Biceps
     type: continuous
+    description: Biceps circumference (cm)
   - name: Forearm
     type: continuous
+    description: Forearm circumference (cm)
   - name: Wrist
     type: continuous
+    description: Wrist circumference (cm)
