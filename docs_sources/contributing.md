@@ -1,5 +1,6 @@
-# Introduction
+# Contribution Guides
 
+## Introduction
 ### Thanks!
 
 First off, thank you for considering contributing to PMLB.
@@ -19,7 +20,7 @@ The main contribution our project needs at the moment is help identifying, sourc
 We would also consider dataset contributions that meet the format specifications of PMLB.
 We're open to other ideas (improving documentation, writing tutorials, etc.) that you may want to make.  
 
-# Ground Rules
+## Ground Rules
 ### Be kind.
 We will, too.
 
@@ -33,7 +34,7 @@ We will, too.
  * Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
  * Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. See the [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/) as an example.
 
-# Your First Contribution
+## Your First Contribution
 Help people who are new to your project understand where they can be most helpful.
 This is also a good time to let people know if you follow a label convention for flagging beginner issues.
 
@@ -46,7 +47,7 @@ If you haven't contributed to open source code before, check out these friendly 
 
 Those guides should tell you everything you need to start out!
 
-# Getting started
+## Getting started
 ### How to submit a contribution
 
 1. Create your own fork of this repository
@@ -55,7 +56,7 @@ Those guides should tell you everything you need to start out!
     * Make sure you have followed the guidelines above.
     * Submit a pull request.
 
-# How to report a bug
+## How to report a bug
 
 When filing an issue, please make sure to answer these five questions:
 
@@ -83,7 +84,7 @@ We need help doing this for each dataset!
 Refer to the [metadata template file](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/gh_pages/metadata_template.yaml) or [wine_quality_red](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/gh_pages/datasets/wine_quality_red/metadata.yaml) as an example.
 3. Issue a pull request for your changes. In the pull request, document how you verified the source of the dataset, for example, by performing a checksum on the data. Include any information to help us independently check that what you have added is accurate.
 
-# Contributing a new dataset
+## Contributing a new dataset
 
 New datasets should follow these guidelines:
 

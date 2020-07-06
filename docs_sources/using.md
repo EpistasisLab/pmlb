@@ -1,3 +1,5 @@
+# Using PMLB
+
 ## Using PMLB in Python scripts
 
 ```python
