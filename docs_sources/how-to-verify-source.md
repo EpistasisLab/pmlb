@@ -1,3 +1,5 @@
+# How to verify source
+
 There are a few ways we can check whether a PMLB dataframe (`pmlb_df`) agrees with its source (`source_df`), provided that we have checked their shapes (by printing `pmlb_df.shape` and `pmlb_df.shape`) and changed the column name of the dependent variable to `target`. For example, if the dependent variable in the source dataset is `class`, you can use `df_source = df_source.rename(columns={'class': 'target'})`.
 
 - If the two dataframes are exactly the same, the following line of code does not return anything ✔️:
