@@ -42,9 +42,10 @@ jobs:
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
     - name: Deploy
       run: |
-        git checkout $BRANCH
         git add --all
         git commit --message "deploy ${GITHUB_SHA:7} on $(date --iso --utc)"
+        git branch --force $BRANCH
+        git checkout $BRANCH
         git push origin $BRANCH
     # - name: Deploy
     #   uses: peaceiris/actions-gh-pages@v3
