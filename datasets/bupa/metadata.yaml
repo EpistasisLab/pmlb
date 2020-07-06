@@ -1,15 +1,13 @@
 #Generated automatically by pmlb/write_metadata.py
 #Reviewed by Daniel Goldberg
-
-TODO!
 Description of current target: >
   Train/test selector.
   The classification of either 1 or 2 was used by BUPA researchers to decide what data should go in train vs in test.
   This feature is NOT whether the individual had a liver condition.
   The dataset does not contain ANY features determining presence or absence of a liver condition.
   The Drinks feature is designed to be the dependent variable of this dataset.
-Remove TODO, this line, and everything in between, when dataset has been changed.
-  
+
+
 dataset: bupa
 description: >
   BUPA medical research on liver disease that might arise from excessive alcohol consumption.
