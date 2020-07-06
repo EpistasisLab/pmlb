@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documentation for PMLB, a large curated repository of benchmark datasets for evaluating supervised machine learning algorithms.">
+  <meta name="author" content="Trang Le, Weixuan Fu">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Home - PMLB</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/penn-ml-benchmarks/";
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> PMLB</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1 current">
+		
+    <span class="caption-text">Home</span>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#penn-machine-learning-benchmarks">Penn Machine Learning Benchmarks</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#datasets-summary">Datasets Summary</a></li>
+        
+            <li><a class="toctree-l3" href="#data-set-format">Data set format</a></li>
+        
+            <li><a class="toctree-l3" href="#citing-pmlb">Citing PMLB</a></li>
+        
+            <li><a class="toctree-l3" href="#support-for-pmlb">Support for PMLB</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="installing/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="using/">Using PMLB python wrapper</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="contributing/">Contributing</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="how-to-verify-source/">How to verify source</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">PMLB</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/edit/gh_pages/docs_sources/index.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="penn-machine-learning-benchmarks">Penn Machine Learning Benchmarks</h1>
+<p>This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms. These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features. There are no missing values in these data sets.</p>
+<p>Check the <code>datasets</code> directory for information about the individual data sets.</p>
+<h2 id="datasets-summary">Datasets Summary</h2>
+<p><center>
+<img src="https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/PMLB2.0/datasets/dataset_sizes.svg" />
+</center></p>
+<h2 id="data-set-format">Data set format</h2>
+<p>All data sets are stored in a common format:</p>
+<ul>
+<li>First row is the column names</li>
+<li>Each following row corresponds to one row of the data</li>
+<li>The target column is named <code>target</code></li>
+<li>All columns are tab (<code>\t</code>) separated</li>
+<li>All files are compressed with <code>gzip</code> to conserve space</li>
+</ul>
+<h2 id="citing-pmlb">Citing PMLB</h2>
+<p>If you use PMLB in a scientific publication, please consider citing the following paper:</p>
+<p>Randal S. Olson, William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore (2017). <a href="https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4">PMLB: a large benchmark suite for machine learning evaluation and comparison</a>. <em>BioData Mining</em> <strong>10</strong>, page 36.</p>
+<p>BibTeX entry:</p>
+<pre><code class="bibtex">@article{Olson2017PMLB,
+    author=&quot;Olson, Randal S. and La Cava, William and Orzechowski, Patryk and Urbanowicz, Ryan J. and Moore, Jason H.&quot;,
+    title=&quot;PMLB: a large benchmark suite for machine learning evaluation and comparison&quot;,
+    journal=&quot;BioData Mining&quot;,
+    year=&quot;2017&quot;,
+    month=&quot;Dec&quot;,
+    day=&quot;11&quot;,
+    volume=&quot;10&quot;,
+    number=&quot;1&quot;,
+    pages=&quot;36&quot;,
+    issn=&quot;1756-0381&quot;,
+    doi=&quot;10.1186/s13040-017-0154-4&quot;,
+    url=&quot;https://doi.org/10.1186/s13040-017-0154-4&quot;
+}
+</code></pre>
+
+<h2 id="support-for-pmlb">Support for PMLB</h2>
+<p>PMLB was developed in the <a href="http://epistasis.org/">Computational Genetics Lab</a> at the <a href="https://www.upenn.edu/">University of Pennsylvania</a> with funding from the <a href="http://www.nih.gov/">NIH</a> under grant R01 AI117694. We are incredibly grateful for the support of the NIH and the University of Pennsylvania during the development of this project.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installing/" class="btn btn-neutral float-right" title="Installation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Developed by Randal S. Olson, William La Cava, Trang Le, Weixuan Fu and others at the University of Pennsylvania</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+      
+        <span style="margin-left: 15px"><a href="installing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.0
+Build Date UTC : 2020-06-30 16:01:02
+-->
