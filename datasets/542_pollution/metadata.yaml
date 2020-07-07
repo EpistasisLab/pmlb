@@ -3,7 +3,7 @@
 dataset: 542_pollution
 description: Air pollution and mortality rate
 source: https://www.openml.org/d/542
-publication:
+publication: >
   McDonald GC, Schwing RC.
   Instabilities of regression estimates relating air pollution to mortality.
   Technometrics. 1973 Aug 1;15(3):463-81.
