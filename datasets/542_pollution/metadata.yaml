@@ -1,19 +1,16 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: 542_pollution
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: This is the pollution data so loved by writers of papers on ridge regression.
+source: McDonald, G.C. and Schwing, R.C. (1973) 'Instabilities of regression estimates relating air pollution to mortality', Technometrics, vol.15, 463-
 task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features: PREC, JANT, JULT, OVR65, POPN, EDUC, HOUS, DENS, NONW, WWDRK, POOR, HC, NOX, SO2, HUMID 
   - name: PREC
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: Average annual precipitation in inches
   - name: JANT
     type: continuous
   - name: JULT
