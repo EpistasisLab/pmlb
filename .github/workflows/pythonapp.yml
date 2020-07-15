@@ -39,6 +39,7 @@ jobs:
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
     - name: Deploy GitHub Pages
       run: |
+        git fetch --all
         python -m pmlb.write_dataset_list
         mkdocs gh-deploy
 
