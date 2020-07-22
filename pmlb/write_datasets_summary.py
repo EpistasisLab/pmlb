@@ -47,6 +47,16 @@ if __name__ =='__main__':
             df['problem_type'] = 'classification'
         frames.append(df)
     df_summary = pd.concat(frames)
+    
+    cols = list(df_summary)
+    cols.insert(0, cols.pop(cols.index('dataset')))
+    (
+        df_summary
+        .loc[:, cols] # move dataset column to front
+        .drop(columns = ['#integer_features', '#float_features'])
+        .to_csv('datasets/all_summary_stats.csv', index=False)
+    )
+
     nclass_datasets = len(df_summary.loc[df_summary.problem_type=='classification'])
     nreg_datasets = len(df_summary.loc[df_summary.problem_type=='regression'])
 
