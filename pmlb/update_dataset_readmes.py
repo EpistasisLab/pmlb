@@ -36,7 +36,6 @@ import pandas as pd
 import numpy as np
 import operator
 from glob import glob
-import subprocess
 import os
 import pathlib
 

@@ -28,6 +28,8 @@ import os
 from .dataset_lists import classification_dataset_names, regression_dataset_names
 import requests
 import warnings
+import subprocess
+import pathlib
 
 dataset_names = classification_dataset_names + regression_dataset_names
 GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
