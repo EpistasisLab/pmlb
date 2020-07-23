@@ -1,6 +1,11 @@
 #Generated automatically by pmlb/write_metadata.py
+# Reviewed by Praneel Chakraborty
 dataset: dna
-description: Splice-junction sequences and intron-exon boundaries
+description: >
+  Splice-junction sequences and intron-exon boundaries;
+  60 total nucleotides, each encoded in a set of 3 binary indicator values; 
+  180 total features (i.e. each group of (A0-A2), (A3-A5), etc. encodes a single nucleotide);
+  A = 1 0 0, C = 0 1 0, G = 0 0 1, T = 0 0 0.
 source: https://www.openml.org/d/40670
 publication: None.
 task: classification
@@ -9,8 +14,6 @@ target:
   description: Exon/intron boundary type
   code: Exon-intron = 1, Intron-exon = 2, Neither = 3
 features: 
-  - description: 60 total nucleotides, each encoded in a set of 3 binary indicator values; 180 total features (i.e. each of A0-2, 3-5, etc. encodes a single nucleotide)
-  - code: A = 1 0 0, C = 0 1 0, G = 0 0 1, T = 0 0 0
   - name: A0
     type: categorical
   - name: A1
