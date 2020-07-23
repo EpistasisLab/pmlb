@@ -37,6 +37,11 @@ jobs:
         echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
         git config --local user.name 'github-actions[bot]'
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Generate profiling reports
+      run: |
+        python -m pmlb.profiling
+
     - name: Deploy GitHub Pages
       run: |
         mkdocs gh-deploy
