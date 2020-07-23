@@ -77,7 +77,7 @@ We need help doing this for each dataset!
 
 1. Verify the source for the dataset.
     - Often the place to start is an internet search of the dataset name.
-    Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](www.kaggle.com).
+    Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](https://kaggle.com).
     - Follow <a href="../how-to-verify-source">"How to verify source"</a> section to verify that the PMLB dataset actually came from the source you found.
 
 2. Update the information on the dataset's metadata.yaml file.

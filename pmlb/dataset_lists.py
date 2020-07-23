@@ -147,6 +147,7 @@ classification_dataset_names = [
     'parity5',
     'parity5+5',
     'pendigits',
+    'penguins',
     'phoneme',
     'pima',
     'poker',
