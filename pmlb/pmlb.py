@@ -124,3 +124,19 @@ def get_dataset_url(GITHUB_URL, data_type, dataset_name, suffix):
     else:
         raise ValueError('Dataset not found in PMLB.')
     return dataset_url
+
+
+def get_updated_datasets():
+    """Looks at commit and returns a list of datasets that were updated."""
+    cmd = 'git diff --name-only HEAD HEAD~1'
+    res = subprocess.check_output(cmd.split(), universal_newlines=True)
+    changed_datasets = set()
+    for path in res.splitlines():
+        path = pathlib.Path(path)
+        if path.parts[0] != 'datasets':
+            continue
+        if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
+            changed_datasets.add(path.parts[1])
+    changed_datasets = sorted(changed_datasets)
+    print(f'changed datasets: {changed_datasets}')
+    return changed_datasets
