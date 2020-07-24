@@ -45,11 +45,13 @@ jobs:
     - name: Build
       run: mkdocs build
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs
+    - run: ls -lhR docs/
+
+    # - name: Deploy
+    #   uses: peaceiris/actions-gh-pages@v3
+    #   with:
+    #     github_token: ${{ secrets.GITHUB_TOKEN }}
+    #     publish_dir: docs
 
     #- name: Generate readme figures
       #run: |
