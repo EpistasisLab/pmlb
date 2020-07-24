@@ -21,12 +21,12 @@ if __name__ =='__main__':
     write_dir = pathlib.Path('docs_sources/profile/')
     write_dir.mkdir(exist_ok=True)
 
-    # updated_datasets = get_updated_datasets()
+    updated_datasets = get_updated_datasets()
 
     for dataset in dataset_names:
         write_path = write_dir.joinpath(dataset + '.html')
 
-        # if (dataset not in updated_datasets and write_path.exists()):
-        #     # don't update if the dataset has not changed
-        #     continue
+        if (dataset not in updated_datasets and write_path.exists()):
+            # don't update if the dataset has not changed
+            continue
         make_profiling(dataset, write_dir)
