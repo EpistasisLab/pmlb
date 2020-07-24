@@ -6,9 +6,12 @@ import pathlib
 def make_profiling(dataset, write_dir, dat_dir='datasets/'):
     df = fetch_data(dataset, local_cache_dir=dat_dir)
     write_path = write_dir.joinpath(dataset + '.html')
-    
-    profile = ProfileReport(df, title=dataset, explorative=True)
-    
+
+    if len(df.columns) > 20:
+        profile = ProfileReport(df, title=dataset, explorative=True, minimal=True)
+    else:
+        profile = ProfileReport(df, title=dataset, explorative=True)
+
     profile.to_file(write_path)
 
 
