@@ -10,6 +10,8 @@ if __name__ =='__main__':
 Please click on a dataset to access its [pandas-profiling](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/) report:
 '''
     for dataset in dataset_names:
+        if dataset == 'mnist':
+            continue
         path = pathlib.Path(f'docs_sources/browse-datasets.md')
 
         browse_md = browse_md + (f'\n- [{dataset}](profile/{dataset}.html)')

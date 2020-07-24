@@ -109,7 +109,6 @@ Please click on a dataset to access its [pandas-profiling](https://pandas-profil
 - [mfeat_morphological](profile/mfeat_morphological.html)
 - [mfeat_pixel](profile/mfeat_pixel.html)
 - [mfeat_zernike](profile/mfeat_zernike.html)
-- [mnist](profile/mnist.html)
 - [mofn_3_7_10](profile/mofn_3_7_10.html)
 - [molecular_biology_promoters](profile/molecular_biology_promoters.html)
 - [monk1](profile/monk1.html)

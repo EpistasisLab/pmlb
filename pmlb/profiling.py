@@ -2,6 +2,7 @@ import pandas as pd
 from pmlb import fetch_data, dataset_names, get_updated_datasets
 from pandas_profiling import ProfileReport
 import pathlib
+import os
 
 def make_profiling(dataset, write_dir, dat_dir='datasets/'):
     df = fetch_data(dataset, local_cache_dir=dat_dir)
@@ -14,6 +15,11 @@ def make_profiling(dataset, write_dir, dat_dir='datasets/'):
 
     profile.to_file(write_path)
 
+def datasets_to_gen():
+    if 'regenerate_profiles' in os.environ:
+        return dataset_names
+    return get_updated_datasets()
+
 
 if __name__ =='__main__':
 
@@ -21,12 +27,8 @@ if __name__ =='__main__':
     write_dir = pathlib.Path('docs_sources/profile/')
     write_dir.mkdir(exist_ok=True)
 
-    updated_datasets = get_updated_datasets()
+    datasets = datasets_to_gen()
 
-    for dataset in dataset_names:
+    for dataset in datasets:
         write_path = write_dir.joinpath(dataset + '.html')
-
-        if (dataset not in updated_datasets and write_path.exists()):
-            # don't update if the dataset has not changed
-            continue
         make_profiling(dataset, write_dir)
