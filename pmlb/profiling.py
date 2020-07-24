@@ -23,7 +23,7 @@ if __name__ =='__main__':
 
     # updated_datasets = get_updated_datasets()
 
-    for dataset in dataset_names[:30]:
+    for dataset in dataset_names:
         write_path = write_dir.joinpath(dataset + '.html')
 
         # if (dataset not in updated_datasets and write_path.exists()):
