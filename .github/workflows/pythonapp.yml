@@ -27,7 +27,7 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install nose numpy scipy tabulate pandas pyyaml requests parameterized matplotlib seaborn mkdocs
+        pip install nose numpy scipy tabulate pandas pyyaml requests parameterized matplotlib seaborn mkdocs pandas-profiling
     - name: Test with nose
       run: |
         nosetests -s -v
