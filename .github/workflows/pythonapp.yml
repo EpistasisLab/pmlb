@@ -59,7 +59,7 @@ jobs:
         publish_dir: docs
         force_orphan: true # diff not tracked on gh-pages branch
         keep_files: |
-          ${{ !contains(github.event.head_commit.message, "[regenerate_profiles]") }}
+          ${{ !contains(github.event.head_commit.message, '[regenerate_profiles]') }}
         # keep existing files if no changes, unless commit message has regenerate_profiles
 
     #- name: Generate readme figures
