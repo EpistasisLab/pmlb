@@ -38,6 +38,11 @@ jobs:
         git config --local user.name 'github-actions[bot]'
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
 
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github.event) }}
+      run: echo "$GITHUB_CONTEXT"
+
     - name: Conditionally set environment variable
       if: contains(github.event.head_commit.message, '[regenerate_profiles]')
       run: |
