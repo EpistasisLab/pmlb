@@ -1,6 +1,7 @@
 # Browse datasets
 
-Please click on a dataset to access its [pandas-profiling](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/) report:
+Please click on a dataset to access its [pandas-profiling](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/) report.
+*Note*: if a dataset has more than 20 predictors, only 20 of them are selected to show in the report.
 
 - [GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1](profile/GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1.html)
 - [GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1](profile/GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1.html)
@@ -109,6 +110,7 @@ Please click on a dataset to access its [pandas-profiling](https://pandas-profil
 - [mfeat_morphological](profile/mfeat_morphological.html)
 - [mfeat_pixel](profile/mfeat_pixel.html)
 - [mfeat_zernike](profile/mfeat_zernike.html)
+- [mnist](profile/mnist.html)
 - [mofn_3_7_10](profile/mofn_3_7_10.html)
 - [molecular_biology_promoters](profile/molecular_biology_promoters.html)
 - [monk1](profile/monk1.html)

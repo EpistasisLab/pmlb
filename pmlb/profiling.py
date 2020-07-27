@@ -12,7 +12,13 @@ def make_profiling(dataset, write_dir, dat_dir='datasets/'):
     write_path = write_dir.joinpath(dataset + '.html')
 
     if len(df.columns) > 20:
-        profile = ProfileReport(df, title=dataset, explorative=True, minimal=True)
+        df_rand = (
+            df
+            .drop(columns = ['target'])
+            .sample(n=19, axis=1, random_state=42)
+        )
+        df = pd.concat([df_rand, df.loc[:,['target']]], axis = 1)
+        profile = ProfileReport(df, title=dataset, explorative=True)
     else:
         profile = ProfileReport(df, title=dataset, explorative=True)
 
