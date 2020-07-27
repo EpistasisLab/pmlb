@@ -31,22 +31,6 @@ jobs:
     - name: Test with nose
       run: |
         nosetests -s -v
-    # - name: Set deploy variables
-    #   run: |
-    #     BRANCH_REF=${{github.head_ref || github.ref}}
-    #     echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
-    #     git config --local user.name 'github-actions[bot]'
-    #     git config --local user.email 'github-actions[bot]@users.noreply.github.com'
-
-    # - name: Dump GitHub context
-    #   env:
-    #     GITHUB_CONTEXT: ${{ toJson(github) }}
-    #   run: echo "$GITHUB_CONTEXT"
-
-    # - name: Conditionally set environment variable
-    #   if: contains(github.event.head_commit.message, '[regenerate_profiles]')
-    #   run: |
-    #     echo "::set-env name=regenerate_profiles::true"
 
     - name: Generate profiling reports
       run: |
@@ -66,19 +50,3 @@ jobs:
         # keep existing files if no changes, unless commit message has regenerate_profiles
         keep_files: ${{ env.regenerate_profiles == null }}
 
-    #- name: Generate readme figures
-      #run: |
-        #python -m pmlb.update_dataset_readmes
-    #- name: Set deploy variables
-      #run: |
-        #BRANCH_REF=${{github.head_ref || github.ref}}
-        #echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
-    #- name: Deploy
-      #uses: peaceiris/actions-gh-pages@v3
-      #with:
-        # external_repository: ${{ github.repository }}
-        #github_token: ${{ secrets.GITHUB_TOKEN }}
-        #publish_dir: .
-        #publish_branch: ${{ env.BRANCH }}
-        # without keep_files, .github/workflows/pythonapp.yml was removed
-        #keep_files: true
