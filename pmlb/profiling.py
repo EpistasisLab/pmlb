@@ -1,8 +1,11 @@
-import pandas as pd
-from pmlb import fetch_data, dataset_names, get_updated_datasets
-from pandas_profiling import ProfileReport
 import pathlib
 import os
+import subprocess
+
+import pandas as pd
+from pandas_profiling import ProfileReport
+
+from pmlb import fetch_data, dataset_names, get_updated_datasets
 
 def make_profiling(dataset, write_dir, dat_dir='datasets/'):
     df = fetch_data(dataset, local_cache_dir=dat_dir)
@@ -15,7 +18,21 @@ def make_profiling(dataset, write_dir, dat_dir='datasets/'):
 
     profile.to_file(write_path)
 
-def datasets_to_gen():
+def last_commit_message() -> str:
+    """
+    Get commit message from last commit, excluding merge commits
+    """
+    command = "git log --no-merges -1 --pretty=%B".split()
+    message = subprocess.check_output(command, universal_newlines=True)
+    return message
+
+def datasets_to_gen() -> list:
+    """
+    Return datasets to regenerate profiles for 
+    """
+    if '[regenerate_profiles]' in last_commit_message():
+        print('::set-env name=regenerate_profiles::true')
+        return dataset_names
     if 'regenerate_profiles' in os.environ:
         return dataset_names
     return get_updated_datasets()
