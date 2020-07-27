@@ -64,7 +64,7 @@ jobs:
         publish_dir: docs
         force_orphan: true # diff not tracked on gh-pages branch
         # keep existing files if no changes, unless commit message has regenerate_profiles
-        keep_files: ${{ env.regenerate_profiles != null }}
+        keep_files: ${{ env.regenerate_profiles == null }}
 
     #- name: Generate readme figures
       #run: |
