@@ -40,11 +40,11 @@ jobs:
 
     - name: Dump GitHub context
       env:
-        GITHUB_CONTEXT: ${{ toJson(steps.log.outputs) }}
+        GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
 
     - name: Conditionally set environment variable
-      if: contains(github.event.head_commit.message, '[regenerate_profiles]')
+      if: contains(steps.log.output.message, '[regenerate_profiles]')
       run: |
         echo "::set-env name=regenerate_profiles::true"
 
@@ -64,7 +64,7 @@ jobs:
         publish_dir: docs
         force_orphan: true # diff not tracked on gh-pages branch
         keep_files: |
-          ${{ !contains(github.event.head_commit.message, '[regenerate_profiles]') }}
+          ${{ !contains(steps.log.output.message, '[regenerate_profiles]') }}
         # keep existing files if no changes, unless commit message has regenerate_profiles
 
     #- name: Generate readme figures
