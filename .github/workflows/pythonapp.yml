@@ -40,7 +40,7 @@ jobs:
 
     - name: Dump GitHub context
       env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
+        GITHUB_CONTEXT: ${{ toJson(steps.log.outputs) }}
       run: echo "$GITHUB_CONTEXT"
 
     - name: Conditionally set environment variable
