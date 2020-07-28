@@ -44,3 +44,6 @@ features:
     code: >
       'female' = 0,
       'male' = 1
+  - name: year
+    type: continuous
+    description: study year (2007, 2008, or 2009)
