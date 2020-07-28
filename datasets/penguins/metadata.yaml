@@ -29,10 +29,10 @@ features:
       'Biscoe' = 0,
       'Dream' = 1,
       'Torgersen' = 2
-  - name: culmen_length_mm
+  - name: bill_length_mm
     type: continuous
     description: culmen is the upper ridge of a bird's beak
-  - name: culmen_depth_mm
+  - name: bill_depth_mm
     type: continuous
   - name: flipper_length_mm
     type: continuous
