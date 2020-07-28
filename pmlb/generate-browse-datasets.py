@@ -13,5 +13,5 @@ Please click on a dataset to access its [pandas-profiling](https://pandas-profil
     for dataset in dataset_names:
         path = pathlib.Path(f'docs_sources/browse-datasets.md')
 
-        browse_md = browse_md + (f'\n- [{dataset}](profile/{dataset}.html)')
+        browse_md = browse_md + (f'\n- [{dataset}](../profile/{dataset}.html)')
         path.write_text(browse_md)
