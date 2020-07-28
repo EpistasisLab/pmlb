@@ -4,7 +4,8 @@ output:
   tufte::tufte_html: default
 knit: (function(inputFile, encoding) {
     rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs_sources/")
-  }) 
+  })
+twitterImg: imgs/summary-plotly.png
 ---
 
 The plot below is created with [plotly](https://plotly.com/).
