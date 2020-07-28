@@ -10,6 +10,8 @@ Check the `datasets` directory for information about the individual data sets.
 <img src="https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/PMLB2.0/datasets/dataset_sizes.svg" />
 </center>
 
+Go [here](explore.html) for an interactive exploration of the datasets.
+
 ## Data set format
 
 All data sets are stored in a common format:

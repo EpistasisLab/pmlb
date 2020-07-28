@@ -90,3 +90,15 @@ ENV/
 
 # test notebook
 test*.ipynb
+.Rproj.user
+
+# test R scripts
+r-scripts/
+.DS_Store
+.Rhistory
+penn-ml-benchmarks.Rproj
+datasets/.DS_Store
+
+# mkdocs
+docs/
+docs_sources/profile/

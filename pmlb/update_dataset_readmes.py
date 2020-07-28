@@ -27,7 +27,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from pmlb import fetch_data
+from pmlb import fetch_data, get_updated_datasets
 from .dataset_lists import (classification_dataset_names,
                             regression_dataset_names)
 import matplotlib.pyplot as plt
@@ -36,7 +36,6 @@ import pandas as pd
 import numpy as np
 import operator
 from glob import glob
-import subprocess
 import os
 import pathlib
 
@@ -102,21 +101,6 @@ def make_plots(dataset, y, problem_type):
     plot_label(dataset, df['target'], problem_type, ax)
     g = plot_corr(dataset, df)
     return h, g
-
-def get_updated_datasets():
-    """Looks at commit and returns a list of datasets that were updated."""
-    cmd = 'git diff --name-only HEAD HEAD~1'
-    res = subprocess.check_output(cmd.split(), universal_newlines=True)
-    changed_datasets = set()
-    for path in res.splitlines():
-        path = pathlib.Path(path)
-        if path.parts[0] != 'datasets':
-            continue
-        if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
-            changed_datasets.add(path.parts[1])
-    changed_datasets = sorted(changed_datasets)
-    print(f'changed datasets: {changed_datasets}')
-    return changed_datasets
 
 TARGET_NAME = 'target'
 
