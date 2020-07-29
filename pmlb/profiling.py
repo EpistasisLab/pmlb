@@ -53,5 +53,6 @@ if __name__ =='__main__':
     datasets = datasets_to_gen()
 
     for dataset in datasets:
+        print(dataset)
         write_path = write_dir.joinpath(dataset + '.html')
         make_profiling(dataset, write_dir)
