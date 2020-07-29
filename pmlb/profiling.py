@@ -8,7 +8,7 @@ from pandas_profiling import ProfileReport
 from pmlb import fetch_data, dataset_names, get_updated_datasets
 
 def make_profiling(dataset, write_dir, dat_dir='datasets/'):
-    df = fetch_data(dataset, local_cache_dir=dat_dir)
+    df = fetch_data(dataset, local_cache_dir=dat_dir, dropna=False)
     write_path = write_dir.joinpath(dataset + '.html')
 
     if len(df.columns) > 20:
