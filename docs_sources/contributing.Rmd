@@ -1,0 +1,177 @@
+---
+title: "Contribution guides"
+---
+
+
+## First off
+### Thanks!
+
+Thank you for contributing to PMLB!
+We want this to be the easiest resource to use for benchmarking machine learning algorithms on many datasets.
+This is a community effort, and we rely on help from users like you.
+
+
+### Why you should read this
+
+Making a really easy-to-use benchmark resource also means being diligent about how contributions are made.
+Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project.
+In return, we will reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
+
+### Types of contributions
+
+The main contribution our project needs at the moment is help identifying, sourcing and documenting the datasets that currently don't have that information.
+We would also consider dataset contributions that meet the format specifications of PMLB.
+We're open to other ideas (improving documentation, writing tutorials, etc.) that you may want to make.  
+
+### Ground rules
+Be kind.
+We will, too.
+
+### Responsibilities
+ * For sourcing/documentation of existing datasets, make sure your pull request follows our [source guidelines](#contributing-source-information)
+ * For new datasets, make sure your pull request follows our [new dataset guidelines](#contributing-a-new-dataset)
+ * Make sure your changes pass the tests. To check, please run the following (note, you must have the `nose` package installed within your dev environment for this to work):
+    ```
+    nosetests -s -v
+    ```
+ * Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.
+ * Be welcoming to newcomers and encourage diverse new contributors from all backgrounds. See the [Python Community Code of Conduct](https://www.python.org/psf/codeofconduct/) as an example.
+
+## Getting started
+### Your first contribution
+Help people who are new to your project understand where they can be most helpful.
+This is also a good time to let people know if you follow a label convention for flagging beginner issues.
+
+Unsure where to begin contributing to PMLB? You can start by looking through issues for help-wanted tags.
+
+If you haven't contributed to open source code before, check out these friendly tutorials:
+ * http://makeapullrequest.com/
+ 
+ * http://www.firsttimersonly.com/
+ 
+ * [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
+
+Those guides should tell you everything you need to start out!
+
+### How to submit a contribution
+
+1. Create your own fork of this repository
+2. Make the changes in your fork
+3. If you think the project would benefit from these changes:
+    * Make sure you have followed the guidelines above.
+    * Submit a pull request.
+
+### How to report a bug
+
+When filing an issue, please make sure to answer these five questions:
+
+1. What version of PMLB are you using?
+2. What operating system and processor architecture are you using?
+3. What did you do?
+4. What did you expect to see?
+5. What did you see instead?
+
+### Contributing a new dataset
+
+New datasets should follow these guidelines:
+
+ - Each sample/observation forms a row of the dataset.
+ - Each feature/variable forms a column of the dataset.
+ - The dependent variable, i.e., outcome/target, should be labelled `'target'`.
+ - If the task is classification, the dependent variable must be encoded with numeric, contiguous labels in [0, 1, .. k], where there are k classes in the data.
+ - Column headers are feature/variable names and `'target'`.
+ - Any `'sample_id'` or `'row_id'` column should be *excluded*.
+ - The data should be tab-delimited and in `.tsv.gz` format.
+ - The dataset should be in the correct folder; i.e., for a classification dataset, `penn-ml-benchmarks/datasets/classification/your_dataset/`
+ - A metadata.yaml file must be provided with all required fields filled in. Please follow the [template guidelines.](metadata_template.yaml)
+ - The dataset should not exceed 50 MB.  
+
+Note that any pull requests for new dataset contributions will not be accepted if these guidelines are not met.
+
+
+
+
+Relevant issues: [#13](https://github.com/EpistasisLab/penn-ml-benchmarks/issues/13), [#22](https://github.com/EpistasisLab/penn-ml-benchmarks/issues/22).
+
+As part of our [PMLB 2.0 Project](https://github.com/EpistasisLab/penn-ml-benchmarks/projects/1), each dataset is getting revamped with a README file, a metadata.yaml file, and a summary statistics file.
+We need help doing this for each dataset!
+
+## What else can you help with?
+
+1. Verify the source for the dataset.
+    - Often the place to start is an internet search of the dataset name.
+    Most datasets can be found in [OpenML](https://www.openml.org/), [the UC Irvine ML repository](http://archive.ics.uci.edu/ml/index.php), or [Kaggle](https://kaggle.com).
+    - Follow <a href="../how-to-verify-source">"How to verify source"</a> section to verify that the PMLB dataset actually came from the source you found.
+
+2. Update the information on the dataset's metadata.yaml file.
+Refer to the [metadata template file](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/gh_pages/metadata_template.yaml) or [wine_quality_red](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/gh_pages/datasets/wine_quality_red/metadata.yaml) as an example.
+
+3. Issue a pull request for your changes. In the pull request, document how you verified the source of the dataset, for example, by performing a checksum on the data. Include any information to help us independently check that what you have added is accurate.
+
+
+## How to verify source
+
+There are a few ways we can check whether a PMLB dataframe (`pmlb_df`) agrees with its source (`source_df`), provided that we have checked their shapes (by printing `pmlb_df.shape` and `pmlb_df.shape`) and changed the column name of the dependent variable to `target`. For example, if the dependent variable in the source dataset is `class`, you can use `df_source = df_source.rename(columns={'class': 'target'})`.
+
+- If the two dataframes are exactly the same, the following line of code does not return anything ✔️:
+
+``` python
+pd.testing.assert_frame_equal(df_source, df_pmlb)
+```
+
+- If it gives error, the column names may be different. If we have good reasons to ignore column names, we can check if the values contained in the 2 dataframes are the same with
+
+``` python
+from pandas.util import hash_pandas_object
+import hashlib
+
+rowhashes_pmlb = hash_pandas_object(df_pmlb, index = False).values
+hash_pmlb = hashlib.sha256(rowhashes_pmlb).hexdigest()
+rowhashes_source = hash_pandas_object(df_source, index = False).values
+hash_source = hashlib.sha256(rowhashes_source).hexdigest()
+
+# verify hashes match
+print(hash_pmlb == hash_source)
+```
+
+or
+
+``` python
+(df_source.values == df_pmlb.values).all()
+```
+If we still get `False`, it is possible that the rows have been permuted. To check if they are:
+
+``` python
+set(df_pmlb.itertuples(index=False)) == set(df_source.itertuples(index=False))
+```
+
+or, if row hashes have been computed,
+
+```python
+set(rowhashes_source) == set(rowhashes_pmlb)
+```
+
+or "subtracting" the two datasets row by row
+
+``` python
+df_source.merge(df_pmlb, indicator = True, how='left').loc[lambda x : x['_merge']!='both']
+df_pmlb.merge(df_source, indicator = True, how='left').loc[lambda x : x['_merge']!='both']
+```
+
+This code will print the rows that are in one dataframe but not the other and can help you see the difference a bit better.
+
+If the two dataframes have floats that are almost equal to each other, we can use `numpy`'s `isclose` to check if they are element-wise equal within a tolerance:
+
+``` python
+from numpy import isclose
+
+isclose(df_source.values, df_pmlb.values).all()
+```
+
+We have been using [Google Colab notebooks](https://colab.research.google.com/) to share our checks, but other methods are also welcomed.
+Here are a few existing notebooks for reference:
+[wine-quality-red](https://colab.research.google.com/drive/1N48BWz6IdeyIDUM3ROhd1wUPjhhL-Vz4#scrollTo=yxujo7a_gjMV),
+[wine-quality-white](https://colab.research.google.com/drive/1z_aFLydv2xMjDWwYIGGbW5N8_XFraysT),
+[waveform-mushroom-saheart](https://colab.research.google.com/drive/1DyB2oqenINVmJzFLkwjPKYv0iAb5Mz02#scrollTo=5QZDL8Yffx62),
+[irish](https://colab.research.google.com/drive/1gB7r_CN8LrWG3nOqCS3AXJ7enj_Ssavk?usp=sharing#scrollTo=ioB2C8bb_WGa),
+[adult](https://colab.research.google.com/drive/1s2J0v2Ubzj0-CxzgQnxdmAAVoK33a1AY#scrollTo=-gBzhYeQMi3t).

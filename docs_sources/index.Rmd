@@ -1,0 +1,187 @@
+---
+title: "Penn Machine Learning Benchmarks"
+# date: "`r Sys.Date()`"
+# output:
+#   # tufte::tufte_html:
+#   html_document:
+#     theme: sandston
+#     toc: true
+#     toc_float: true
+#     toc_depth: 2
+#     highlight: tango
+#     number_sections: true
+# knit: (function(inputFile, encoding) {
+#     rmarkdown::render(inputFile, encoding = encoding, output_dir = "docs_sources/")
+#   })
+# twitterImg: imgs/summary-plotly.png
+---
+
+
+This repository contains the code and data for a large collection of curated benchmark datasets for evaluating and comparing supervised machine learning algorithms.
+These datasets cover a broad range of applications including binary/multi-class classification and regression problems as well as combinations of categorical, ordinal, and continuous features.
+
+
+## Summary statistics of PMLB datasets
+
+The plot below is created with [plotly](https://plotly.com/).
+Each dot represents a dataset colored based on its associated task (classification vs. regression).
+In log scale, the *x* and *y* axis shows the number of observations and features respectively.
+Please click on the legend to hide/show the groups of datasets.
+Click on each dot to access the dataset's [pandas-profiling](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/) report.
+
+```{r setup, include=FALSE}
+library(plotly)
+library(tidyverse)
+library(purrr)
+library(htmlwidgets)
+# library(htmltools)
+library(jsonlite)
+library(shiny)
+```
+
+```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=8.5}
+sum_stats <- read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/PMLB2.0/datasets/all_summary_stats.csv') %>% 
+  mutate(urls = paste0(
+    'https://epistasislab.github.io/penn-ml-benchmarks/profile/',
+    dataset,
+    '.html'),
+    Metadata = paste0('https://github.com/EpistasisLab/penn-ml-benchmarks/tree/PMLB2.0/datasets/', dataset, '/metadata.yaml'))
+
+ply_dat <- sum_stats %>% 
+  add_count(problem_type) %>% 
+  mutate(Task = paste0(problem_type, ' (', n, ')')) 
+
+ggp <- ply_dat %>% 
+  ggplot(aes(x = `#instances`, y = `#features`, color = Task)) +
+  geom_point() +
+  # ggthemes::theme_solarized() +
+  theme_bw() +
+  theme(legend.title = element_blank(),
+        legend.position = 'bottom',
+        # panel.grid.major = element_line(colour = "grey50"),
+        # panel.background = element_rect(fill = '#FFFFF8'),
+        # plot.background = element_rect(fill = '#FFFFF8'),
+        # legend.background = element_rect(fill = '#FCFCFC')
+        ) +
+  scale_x_log10(name = 'Number of observations',
+                ) +
+  scale_y_log10(name = 'Number of features') +
+  scale_color_brewer(palette = 'Dark2') +
+  NULL
+ply <- plotly_build(ggp)
+
+
+class_dats <- sum_stats %>% 
+  filter(problem_type == 'classification') %>% 
+  pull(dataset)
+fig_lay1 <- gsub(pattern = '<br \\/>Task: classification \\(164\\)', replacement = '', ply$x$data[[1]]$text) %>% 
+  gsub(pattern = '#instances:\\s+', '', .) %>% 
+  gsub(pattern = '<br \\/>#features:\\s+', ' observations<br />', .) %>% 
+  paste0(' features')
+
+ply$x$data[[1]]$text <- paste0('<b>', class_dats, '</b><br /><br />', fig_lay1)
+
+reg_dats <- sum_stats %>% 
+  filter(problem_type == 'regression') %>% 
+  pull(dataset)
+fig_lay2 <- gsub(pattern = '<br \\/>Task: regression \\(122\\)', replacement = '', ply$x$data[[2]]$text) %>% 
+  gsub(pattern = '#instances:\\s+', '', .) %>% 
+  gsub(pattern = '<br \\/>#features:\\s+', ' observations<br />', .) %>% 
+  paste0(' features')
+
+ply$x$data[[2]]$text <- paste0('<b>', reg_dats, '</b><br /><br />', fig_lay2)
+
+
+ply$elementId <- "PlotlyGraph"
+
+javascript <- HTML(paste("var myPlot = document.getElementById('", ply$elementId, "');
+                           myPlot.on('plotly_click', function(data){
+                           var urls = ", toJSON(split(ply_dat, ply_dat$Task)), ";
+                           window.open(urls[data.points[0].data.name][data.points[0].pointNumber]['urls'],'_blank');
+                           });", sep=''))  
+
+ply <- prependContent(ply, onStaticRenderComplete(javascript))
+ply
+# saveWidget(widget=ply, file=file.path('test.html'), selfcontained = FALSE)
+```
+
+Browse, sort, filter and search the complete table of summary statistics below.
+Click on the dataset's name to access the dataset’s pandas-profiling report.
+Click on the GitHub Octocat <i class="fab fa-github"></i> to access its metadata.
+To filter, please type in the box at the bottom of each numeric column in the format `low ... high`.
+For example, if you want to see all classification datasets with 80 to 100 observations, type `80 ... 100` at the bottom of the `n_obs` column and select `classification` at the bottom of `Task`.
+
+
+```{r echo=FALSE}
+my_data <- sum_stats %>% 
+  mutate(Metadata = paste0("<a href='", Metadata,"'>", 
+                           as.character(icon("github", lib = "font-awesome")),"</a>"),
+         dataset = paste0("<a href='", urls,"'>", dataset,"</a>"),
+         # Dataset = paste(dataset, Metadata),
+         `Imbalance` = round(Imbalance_metric, 2),
+         n_classes = ifelse(Endpoint_type == 'continuous', NA, `#Classes`),
+         Task = as.factor(problem_type),
+         Endpoint = as.factor(Endpoint_type)) %>% 
+  arrange(problem_type, dataset) %>% 
+  select(Dataset = dataset, n_observations = `#instances`, n_features = `#features`, 
+         n_classes, Endpoint, `Imbalance`, Task, Metadata)
+
+DT::datatable(
+  my_data,
+   escape = FALSE,
+  extensions = 'Buttons', options = list(
+    dom = 'Blfrtip',
+    buttons = c('csv')
+  ),
+  filter = list(position = 'bottom', clear = FALSE),
+  rownames= FALSE,
+#   extensions = 'FixedColumns',
+#   options = list(
+#   dom = 't',
+#   scrollX = TRUE,
+#   scrollCollapse = TRUE
+# )
+)
+```
+
+## Dataset format
+
+All datasets are stored in a common format:
+
+* First row is the column names
+* Each following row corresponds to one observation of the data
+* The dependent variable/endpoint column is named `target`
+* All columns are tab (`\t`) separated
+* All files are compressed with `gzip` to conserve space
+
+
+## Citing PMLB
+
+If you use PMLB in a scientific publication, please consider citing the following paper:
+
+Randal S. Olson, William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore (2017). [PMLB: a large benchmark suite for machine learning evaluation and comparison](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4). *BioData Mining* **10**, page 36.
+
+BibTeX entry:
+
+```bibtex
+@article{Olson2017PMLB,
+    author="Olson, Randal S. and La Cava, William and Orzechowski, Patryk and Urbanowicz, Ryan J. and Moore, Jason H.",
+    title="PMLB: a large benchmark suite for machine learning evaluation and comparison",
+    journal="BioData Mining",
+    year="2017",
+    month="Dec",
+    day="11",
+    volume="10",
+    number="1",
+    pages="36",
+    issn="1756-0381",
+    doi="10.1186/s13040-017-0154-4",
+    url="https://doi.org/10.1186/s13040-017-0154-4"
+}
+```
+
+## Support for PMLB
+
+PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant R01 AI117694.
+We are grateful for the support of the NIH and the University of Pennsylvania during the development of this project.
+

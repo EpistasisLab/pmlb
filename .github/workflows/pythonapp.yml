@@ -36,8 +36,14 @@ jobs:
       run: |
         python -m pmlb.profiling
 
-    - name: Build
-      run: mkdocs build
+    - uses: r-lib/actions/setup-r@v1
+    - uses: r-lib/actions/setup-pandoc@v1
+    - name: Install rmarkdown
+      run: Rscript -e 'install.packages("rmarkdown")'
+    - name: Build site
+      run: Rscript -e 'rmarkdown::render_site(input = "docs_sources")'
+    # - name: Build
+    #   run: mkdocs build
 
     - run: ls -lhR docs/
 
