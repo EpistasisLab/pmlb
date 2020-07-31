@@ -2,7 +2,7 @@ output_dir: "../docs"
 output:
   # tufte::tufte_html:
   html_document:
-    theme: sandstone
+    theme: flatly
     toc: true
     toc_float: true
     toc_depth: 2
