@@ -138,7 +138,7 @@ def get_updated_datasets():
         if path.parts[0] != 'datasets':
             continue
         if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
-            changed_datasets.add(path.parts[1])
+            changed_datasets.add(path.parts[-2])
     changed_datasets = sorted(changed_datasets)
     print(f'changed datasets: {changed_datasets}')
     return changed_datasets
