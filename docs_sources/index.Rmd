@@ -31,16 +31,14 @@ Click on each dot to access the dataset's [pandas-profiling](https://pandas-prof
 
 ```{r setup, include=FALSE}
 library(plotly)
-library(tidyverse)
-library(purrr)
+library(ggplot2)
+library(dplyr)
+library(htmltools)
 library(htmlwidgets)
-# library(htmltools)
-library(jsonlite)
-library(shiny)
 ```
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=8.5}
-sum_stats <- read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/PMLB2.0/datasets/all_summary_stats.csv') %>% 
+sum_stats <- readr::read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/PMLB2.0/datasets/all_summary_stats.csv') %>% 
   mutate(urls = paste0(
     'https://epistasislab.github.io/penn-ml-benchmarks/profile/',
     dataset,
@@ -96,7 +94,7 @@ ply$elementId <- "PlotlyGraph"
 
 javascript <- HTML(paste("var myPlot = document.getElementById('", ply$elementId, "');
                            myPlot.on('plotly_click', function(data){
-                           var urls = ", toJSON(split(ply_dat, ply_dat$Task)), ";
+                           var urls = ", jsonlite::toJSON(split(ply_dat, ply_dat$Task)), ";
                            window.open(urls[data.points[0].data.name][data.points[0].pointNumber]['urls'],'_blank');
                            });", sep=''))  
 
@@ -115,7 +113,7 @@ For example, if you want to see all classification datasets with 80 to 100 obser
 ```{r echo=FALSE}
 my_data <- sum_stats %>% 
   mutate(Metadata = paste0("<a href='", Metadata,"'>", 
-                           as.character(icon("github", lib = "font-awesome")),"</a>"),
+                           "<i class=\"fab fa-github\"></i>","</a>"),
          dataset = paste0("<a href='", urls,"'>", dataset,"</a>"),
          # Dataset = paste(dataset, Metadata),
          `Imbalance` = round(Imbalance_metric, 2),

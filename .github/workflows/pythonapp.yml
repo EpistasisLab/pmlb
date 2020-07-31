@@ -38,8 +38,8 @@ jobs:
 
     - uses: r-lib/actions/setup-r@v1
     - uses: r-lib/actions/setup-pandoc@v1
-    - name: Install rmarkdown
-      run: Rscript -e 'install.packages("rmarkdown")'
+    - name: Install R packages
+      run: Rscript -e 'install.packages(c("rmarkdown", "ggplot", "plotly", "dplyr", "htmlwidgets", "htmltools", "jsonlite", "readr", "DT"))'
     - name: Build site
       run: Rscript -e 'rmarkdown::render_site(input = "docs_sources")'
     # - name: Build
