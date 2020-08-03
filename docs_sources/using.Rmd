@@ -7,7 +7,7 @@ title: "Using PMLB"
 knitr::knit_engines$set(python = reticulate::eng_python)
 knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
 library(reticulate)
-reticulate::py_discover_config()
+print(reticulate::py_discover_config())
 # use_python('/anaconda3/envs/tpotDataSel/lib/python3.7')
 use_python(Sys.which('python'), required = TRUE)
 py_install(c("pmlb", 'matplotlib', 'sklearn', 'seaborn'))
@@ -48,7 +48,7 @@ import random
 from pmlb import dataset_names, classification_dataset_names, regression_dataset_names
 
 rand_datasets = random.choices(dataset_names, k=7)
-print('7 arbitrary datasets from PMLB:\n', '\n'.join(rand_datasets))
+print('7 arbitrary datasets from PMLB:\n', '\n '.join(rand_datasets))
     
 print(
     f'PMLB has {len(classification_dataset_names)} classification datasets '
@@ -57,7 +57,6 @@ print(
 ```
 
 ## Example usage
-Let's compare two classification algorithms with PMLB.
 
 PMLB is designed to make it easy to benchmark machine learning algorithms against each other. Below is a Python code snippet showing the a sample comparison of two classification algorithms on the first 40 PMLB datasets.
 
@@ -87,7 +86,7 @@ for classification_dataset in classification_dataset_names[:40]:
     logit.fit(train_X, train_y)
     gnb.fit(train_X, train_y)
 
-    # Log the performance score on the test set:
+    # Log the performance score on the test set
     logit_test_scores.append(logit.score(test_X, test_y))
     gnb_test_scores.append(gnb.score(test_X, test_y))
 ```

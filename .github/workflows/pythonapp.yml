@@ -42,7 +42,9 @@ jobs:
     - name: Install R packages
       run: Rscript -e 'install.packages(c("rmarkdown", "plotly", "dplyr", "htmlwidgets", "htmltools", "jsonlite", "readr", "DT", "reticulate"))'
     - name: Build site
-      run: Rscript -e 'rmarkdown::render_site(input = "docs_sources")'
+      run: |
+        Rscript -e 'print(reticulate::py_discover_config())'
+        Rscript -e 'rmarkdown::render_site(input = "docs_sources")'
     # - name: Build
     #   run: mkdocs build
 
