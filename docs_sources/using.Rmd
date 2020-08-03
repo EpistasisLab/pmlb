@@ -10,7 +10,7 @@ library(reticulate)
 print(reticulate::py_discover_config())
 # use_python('/anaconda3/envs/tpotDataSel/lib/python3.7')
 # use_python(Sys.which('python'), required = TRUE)
-use_python('/usr/bin/python3', required = TRUE)
+# use_python('/usr/bin/python3', required = TRUE)
 py_install(c("pmlb", 'matplotlib', 'sklearn', 'seaborn'))
 ```
 
