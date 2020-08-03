@@ -49,7 +49,6 @@ jobs:
         reticulate::install_miniconda()
         reticulate::py_config()
         reticulate::py_discover_config()
-        reticulate::py_install(c("numpy", "pmlb", "matplotlib", "sklearn", "sklearn"))
       shell: Rscript {0}
 
     - name: Build site
