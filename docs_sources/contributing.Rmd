@@ -7,6 +7,7 @@ title: "Contribution guide"
 ### Thank you
 
 for contributing to PMLB!
+
 We want this to be the easiest resource to use for benchmarking machine learning algorithms on many datasets.
 This is a community effort, and we rely on help from users like you.
 
@@ -37,11 +38,13 @@ We're also open to other ideas including improving documentation, writing tutori
 
 If you haven't contributed to open source code before, check out these friendly tutorials:
 
+
  * http://makeapullrequest.com/
  
  * http://www.firsttimersonly.com/
  
  * [How to contribute to an open source project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github).
+
 
 Those guides should tell you everything you need to start out!
 
@@ -77,6 +80,7 @@ New datasets should follow these guidelines:
  - The dataset should be in the correct folder; i.e., for a classification dataset, `penn-ml-benchmarks/datasets/classification/your_dataset/`
  - A metadata.yaml file must be provided with all required fields filled in. Please follow the [template guidelines.](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/metadata_template.yaml)
  - The dataset should not exceed 50 MB.
+
 
 Note that any pull requests for new dataset contributions will not be accepted if these guidelines are not met.
 
