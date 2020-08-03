@@ -1,0 +1,25 @@
+output_dir: "../docs"
+output:
+  # tufte::tufte_html:
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    highlight: tango
+    number_sections: false
+navbar:
+  title: Penn Machine Learning Benchmarks
+  left: 
+    - icon: fa-home
+      href: index.html
+    - text: Using PMLB
+      href: using.html
+    - text: Contribution guide
+      href: contributing.html
+  right:
+    - icon: fa-github
+      href: https://github.com/EpistasisLab/penn-ml-benchmarks/
+
+
+

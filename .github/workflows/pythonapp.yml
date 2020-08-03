@@ -28,6 +28,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install nose numpy scipy tabulate pandas pyyaml requests parameterized matplotlib seaborn mkdocs pandas-profiling
+        sudo apt-get install libssl-dev libcurl4-openssl-dev
     - name: Test with nose
       run: |
         nosetests -s -v
@@ -36,8 +37,26 @@ jobs:
       run: |
         python -m pmlb.profiling
 
-    - name: Build
-      run: mkdocs build
+    - uses: r-lib/actions/setup-r@v1
+    - uses: r-lib/actions/setup-pandoc@v1
+    - name: Install R packages
+      run: Rscript -e 'install.packages(c("rmarkdown", "plotly", "dplyr", "htmlwidgets", "htmltools", "jsonlite", "readr", "DT", "remotes"))'
+
+    - name: Set up reticulate
+      run: |
+        remotes::install_github('rstudio/reticulate')
+        library(reticulate)
+        reticulate::install_miniconda()
+        reticulate::py_config()
+        reticulate::py_discover_config()
+      shell: Rscript {0}
+
+    - name: Build site
+      run: |
+        Rscript -e 'print(reticulate::py_discover_config())'
+        Rscript -e 'rmarkdown::render_site(input = "docs_sources")'
+    # - name: Build
+    #   run: mkdocs build
 
     - run: ls -lhR docs/
 
