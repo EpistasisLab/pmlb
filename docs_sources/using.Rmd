@@ -8,16 +8,6 @@ library(reticulate)
 
 knitr::knit_engines$set(python = reticulate::eng_python)
 knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
-# print(reticulate::py_discover_config())
-# use_python('/anaconda3/envs/tpotDataSel/lib/python3.7')
-# use_python(Sys.which('python'), required = TRUE)
-# use_python('/usr/bin/python3', required = TRUE)
-# python_3 <- function() {
-#   system("which python3", intern = TRUE)
-# }
-
-# reticulate::use_python(python_3(), required = TRUE)
-
 reticulate::py_install(c("matplotlib", "scikit-learn", "seaborn"))
 reticulate::py_install("pmlb", pip = TRUE)
 
@@ -29,7 +19,7 @@ from pmlb import fetch_data
 
 # Returns a pandas DataFrame
 mushroom_data = fetch_data('mushroom')
-print(mushroom_data.describe())
+mushroom_data.describe().transpose()
 
 mushroom_data.shape
 ```
