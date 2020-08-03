@@ -19,7 +19,6 @@ Click on each dot to access the dataset's [pandas-profiling](https://pandas-prof
 library(plotly)
 library(dplyr)
 library(htmltools)
-
 library(htmlwidgets)
 ```
 
@@ -38,15 +37,8 @@ ply_dat <- sum_stats %>%
 ggp <- ply_dat %>% 
   ggplot(aes(x = `#instances`, y = `#features`, color = Task)) +
   geom_point() +
-  # ggthemes::theme_solarized() +
   theme_bw() +
-  theme(legend.title = element_blank(),
-        legend.position = 'bottom',
-        # panel.grid.major = element_line(colour = "grey50"),
-        # panel.background = element_rect(fill = '#FFFFF8'),
-        # plot.background = element_rect(fill = '#FFFFF8'),
-        # legend.background = element_rect(fill = '#FCFCFC')
-        ) +
+  theme(legend.title = element_blank()) +
   scale_x_log10(name = 'Number of observations',
                 ) +
   scale_y_log10(name = 'Number of features') +
@@ -86,7 +78,6 @@ javascript <- HTML(paste("var myPlot = document.getElementById('", ply$elementId
 
 ply <- prependContent(ply, onStaticRenderComplete(javascript))
 ply
-# saveWidget(widget=ply, file=file.path('test.html'), selfcontained = FALSE)
 ```
 
 Browse, sort, filter and search the complete table of summary statistics below.
@@ -120,14 +111,8 @@ DT::datatable(
     dom = 'Blfrtip',
     buttons = c('csv')
   ),
-  filter = list(position = 'bottom', clear = FALSE),
+  filter = list(position = 'bottom', clear = FALSE, plain = TRUE),
   rownames= FALSE,
-#   extensions = 'FixedColumns',
-#   options = list(
-#   dom = 't',
-#   scrollX = TRUE,
-#   scrollCollapse = TRUE
-# )
 )
 ```
 
@@ -137,7 +122,7 @@ All datasets are stored in a common format:
 
 * First row is the column names
 * Each following row corresponds to one observation of the data
-* The dependent variable/endpoint column is named `target`
+* The dependent variable/endpoint/outcome column is named `target`
 * All columns are tab (`\t`) separated
 * All files are compressed with `gzip` to conserve space
 
