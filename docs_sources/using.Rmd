@@ -9,7 +9,8 @@ knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
 library(reticulate)
 print(reticulate::py_discover_config())
 # use_python('/anaconda3/envs/tpotDataSel/lib/python3.7')
-use_python(Sys.which('python'), required = TRUE)
+# use_python(Sys.which('python'), required = TRUE)
+use_python('/opt/hostedtoolcache/Python/3.8.5/x64/bin/python3')
 py_install(c("pmlb", 'matplotlib', 'sklearn', 'seaborn'))
 ```
 

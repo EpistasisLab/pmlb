@@ -3,8 +3,8 @@ title: "Contribution guide"
 ---
 
 
-## First off
-### Thanks!
+## Introduction
+### Thank you!
 
 Thank you for contributing to PMLB!
 We want this to be the easiest resource to use for benchmarking machine learning algorithms on many datasets.
