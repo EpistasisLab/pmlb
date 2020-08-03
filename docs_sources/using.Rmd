@@ -4,14 +4,21 @@ title: "Using PMLB"
 
 ## Python interface
 ```{r setup, include=FALSE}
+library(reticulate)
+
 knitr::knit_engines$set(python = reticulate::eng_python)
 knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
-library(reticulate)
-print(reticulate::py_discover_config())
+# print(reticulate::py_discover_config())
 # use_python('/anaconda3/envs/tpotDataSel/lib/python3.7')
 # use_python(Sys.which('python'), required = TRUE)
 # use_python('/usr/bin/python3', required = TRUE)
-py_install(c("pmlb", 'matplotlib', 'sklearn', 'seaborn'))
+# python_3 <- function() {
+#   system("which python3", intern = TRUE)
+# }
+
+# reticulate::use_python(python_3(), required = TRUE)
+
+# py_install()
 ```
 
 
