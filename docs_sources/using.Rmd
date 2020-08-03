@@ -18,7 +18,8 @@ knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
 
 # reticulate::use_python(python_3(), required = TRUE)
 
-reticulate::py_install(c("pmlb", "matplotlib", "sklearn", "seaborn"))
+reticulate::py_install(c("matplotlib", "scikit-learn", "seaborn"))
+reticulate::py_install("pmlb", pip = TRUE)
 
 ```
 
