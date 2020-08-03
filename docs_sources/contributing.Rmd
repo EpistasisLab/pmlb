@@ -1,5 +1,5 @@
 ---
-title: "Contribution guides"
+title: "Contribution guide"
 ---
 
 
