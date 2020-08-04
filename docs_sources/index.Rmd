@@ -109,7 +109,8 @@ DT::datatable(
    escape = FALSE,
   extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
-    buttons = c('csv')
+    buttons = c('csv'),
+    columnDefs = list(list(className = 'dt-center', targets = 1:7))
   ),
   filter = list(position = 'bottom', clear = FALSE, plain = TRUE),
   rownames= FALSE,
