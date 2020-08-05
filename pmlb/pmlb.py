@@ -107,7 +107,6 @@ def get_dataset_url(GITHUB_URL, data_type, dataset_name, suffix):
     new_name = dataset_name.replace("-", "_")
     new_dataset_url = '{GITHUB_URL}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(
                                 GITHUB_URL=GITHUB_URL,
-                                DATA_TYPE=data_type,
                                 DATASET_NAME=new_name,
                                 SUFFIX=suffix
                                 )
@@ -139,6 +138,7 @@ def get_updated_datasets():
             continue
         if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
             changed_datasets.add(path.parts[-2])
+    changed_datasets &= set(dataset_names)
     changed_datasets = sorted(changed_datasets)
     print(f'changed datasets: {changed_datasets}')
     return changed_datasets
