@@ -18,10 +18,10 @@ reticulate::py_install("pmlb", pip = TRUE)
 from pmlb import fetch_data
 
 # Returns a pandas DataFrame
-mushroom_data = fetch_data('mushroom')
-mushroom_data.describe().transpose()
+mushroom = fetch_data('mushroom')
+mushroom.describe().transpose()
 
-mushroom_data.shape
+mushroom.shape
 ```
 
 The `fetch_data` function has two additional parameters:
