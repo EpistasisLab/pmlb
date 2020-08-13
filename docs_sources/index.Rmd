@@ -87,7 +87,7 @@ Browse, sort, filter and search the complete table of summary statistics below.
 * Click on the GitHub Octocat <i class="fab fa-github"></i> to access its metadata.
 
 * To filter, please type in the box at the bottom of each numeric column in the format `low ... high`.
-For example, if you want to see all classification datasets with 80 to 100 observations, type `80 ... 100` at the bottom of the `n_obs` column and select `classification` at the bottom of `Task`.
+For example, if you want to see all *classification datasets with 80 to 100 observations*, select `classification` at the bottom of `Task` and type `80 ... 100` at the bottom of the `n_observations` column. 
 
 
 ```{r echo=FALSE}
