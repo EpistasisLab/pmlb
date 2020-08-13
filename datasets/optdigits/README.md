@@ -1,6 +1,6 @@
 # optdigits
 
-[**Pandas Profiling Report**](../docs_sources/profile/optdigits.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/optdigits.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 

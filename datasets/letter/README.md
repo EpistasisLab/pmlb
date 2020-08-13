@@ -1,6 +1,6 @@
 # letter
 
-[**Pandas Profiling Report**](../docs_sources/profile/letter.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/letter.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 

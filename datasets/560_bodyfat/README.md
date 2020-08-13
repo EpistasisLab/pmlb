@@ -1,6 +1,6 @@
 # 560_bodyfat
 
-[**Pandas Profiling Report**](../docs_sources/profile/560_bodyfat.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/560_bodyfat.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
