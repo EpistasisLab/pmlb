@@ -5,7 +5,7 @@ description: >
   Each data point refers to a single passenger;
   Features describe relevant of the passenger such as age, passenger class, and sex.
 source: https://www.openml.org/d/40704
-publication: Eaton, J. & Haas, C. (2011). Titanic : triumph and tragedy : a chronicle in words and pictures. Sparkford: Haynes.
+publication: Eaton, J. & Haas, C. (2011). Titanic: triumph and tragedy: a chronicle in words and pictures. Sparkford: Haynes.
 task: classification
 target:
   type: categorical
