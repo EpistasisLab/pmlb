@@ -1,20 +1,23 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: titanic
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  Information regarding the survival of individual passengers;
+  Each data point refers to a single passenger;
+  Features describe relevant of the passenger such as age, passenger class, and sex.
+source: https://www.openml.org/d/40704
+publication: Eaton, J. & Haas, C. (2011). Titanic : triumph and tragedy : a chronicle in words and pictures. Sparkford: Haynes.
 task: classification
 target:
-  type: continuous
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  type: categorical
+  description: Whether or not the individual survived
+  code: -1: died, 1 : survived
 features: # list of features in the dataset
   - name: Class
-    type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    type: categorical
+    description: Passenger class on boat (e.g. 1st, 2nd, 3rd, Steerage)
   - name: Age
-    type: continuous
+    type: categorical
+    description: Age group of passenger (adult/child)
   - name: Sex
-    type: continuous
+    type: categorical
+    description: Sex of passenger (male/female)
