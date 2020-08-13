@@ -1,32 +1,6 @@
 # poker
 
+[**Pandas Profiling Report**](../docs_sources/profile/poker.html)
+
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
-## Summary
-
-- **task**: classification
-- **number of instances**: 1,025,010
-- **number of features**: 10
-- **number of classes**: 10.0
-
-## Summary Plots
-
-![Target distribution](label.svg)
-
-![Correlation plot](corr.svg)
-
-## Data Summary
-
-|        |       count |     mean |      std |   min |   25% |   50% |   75% |   max |
-|:-------|------------:|---------:|---------:|------:|------:|------:|------:|------:|
-| S1     | 1.02501e+06 | 2.50069  | 1.11774  |     1 |     2 |     3 |     3 |     4 |
-| C1     | 1.02501e+06 | 6.99786  | 3.74353  |     1 |     4 |     7 |    10 |    13 |
-| S2     | 1.02501e+06 | 2.49984  | 1.11865  |     1 |     1 |     2 |     4 |     4 |
-| C2     | 1.02501e+06 | 7.00629  | 3.74405  |     1 |     4 |     7 |    10 |    13 |
-| S3     | 1.02501e+06 | 2.5011   | 1.11835  |     1 |     1 |     3 |     4 |     4 |
-| C3     | 1.02501e+06 | 6.99925  | 3.74196  |     1 |     4 |     7 |    10 |    13 |
-| S4     | 1.02501e+06 | 2.50028  | 1.11721  |     1 |     2 |     3 |     3 |     4 |
-| C4     | 1.02501e+06 | 7.00084  | 3.74142  |     1 |     4 |     7 |    10 |    13 |
-| S5     | 1.02501e+06 | 2.4994   | 1.11894  |     1 |     1 |     2 |     4 |     4 |
-| C5     | 1.02501e+06 | 6.98883  | 3.73994  |     1 |     4 |     7 |    10 |    13 |
-| target | 1.02501e+06 | 0.617006 | 0.773746 |     0 |     0 |     0 |     1 |     9 |
