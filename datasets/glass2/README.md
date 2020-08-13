@@ -1,6 +1,6 @@
 # glass2
 
-[**Pandas Profiling Report**](../docs_sources/profile/glass2.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/glass2.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 

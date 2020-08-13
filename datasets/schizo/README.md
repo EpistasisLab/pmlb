@@ -1,6 +1,6 @@
 # schizo
 
-[**Pandas Profiling Report**](../docs_sources/profile/schizo.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/schizo.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 

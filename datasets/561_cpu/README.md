@@ -1,6 +1,6 @@
 # 561_cpu
 
-[**Pandas Profiling Report**](../docs_sources/profile/561_cpu.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/561_cpu.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 

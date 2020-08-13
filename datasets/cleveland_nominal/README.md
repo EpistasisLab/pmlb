@@ -1,6 +1,6 @@
 # cleveland_nominal
 
-[**Pandas Profiling Report**](../docs_sources/profile/cleveland_nominal.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/cleveland_nominal.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 

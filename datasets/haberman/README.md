@@ -1,6 +1,6 @@
 # haberman
 
-[**Pandas Profiling Report**](../docs_sources/profile/haberman.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/haberman.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.csv)
 
