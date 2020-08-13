@@ -11,11 +11,11 @@ task: classification
 target:
   type: categorical
   description: Whether or not the individual survived
-  code: -1: died, 1 : survived
+  code: -1:died, 1:survived
 features: # list of features in the dataset
   - name: Class
     type: categorical
-    description: Passenger class on boat (e.g. 1st, 2nd, 3rd, Steerage)
+    description: Passenger class on boat (e.g. 1st, 2nd, 3rd)
   - name: Age
     type: categorical
     description: Age group of passenger (adult/child)
