@@ -1,26 +1,40 @@
 #Generated automatically by pmlb/write_metadata.py
 dataset: car
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  dataset for car evaluation based on six factors;
+  factors considered are buying price, maintenance price, # doors, # people carriable, size of boot, and estimated safety
+source: M. Bohanec, V. Rajkovic. Expert system for decision making. Sistemica 1(1), pp. 145-157, 1990.
+publication: >
+  M. Bohanec and V. Rajkovic
+  Knowledge acquisition and explanation for multi-attribute decision making. 
+  In 8th Intl Workshop on Expert Systems and their Applications, Avignon, France. 1988.
 task: classification
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: accceptability of the car
+  code: 0 = acceptable, 1 = good, 2 = unacceptable, 3 = very good
 features: # list of features in the dataset
   - name: buying
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: buying price of car (vhigh, high, med, low)
+    code: 3 = vhigh, 0 = high, 2 -> med, 1 -> low
   - name: maint
     type: categorical
+    description: price of maintenance
+    code: 3 -> vhigh, 0 -> high, 2 -> med, 1 -> low
   - name: doors
     type: categorical
+    description: number of doors
+    code: 0 -> 2 doors, 1 -> 3 doors, 2 -> 4 doors, 3 -> 5+ doors
   - name: persons
     type: categorical
+    description: capacity (passengers + driver)
+    code: 0 -> 2 people, 1 -> 4 people, 2 -> >4 people
   - name: lug_boot
     type: categorical
+    description: size of luggage boot/trunk
+    code: 2 -> small, 1 -> medium, 0 -> big
   - name: safety
     type: categorical
+    description: estimated safety rating
+    code: 1 -> low, 2 -> med, 0 -> high
