@@ -1,0 +1,34 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: flare
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: class code
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: largest spot code
+    type: categorical
+  - name: spot dist code
+    type: categorical
+  - name: Activity
+    type: categorical
+  - name: Evolution
+    type: continuous
+  - name: Previous 24 hour code
+    type: continuous
+  - name: Historically-complex
+    type: categorical
+  - name: become complex
+    type: categorical
+  - name: Area
+    type: categorical
+  - name: Area of the largest spot
+    type: categorical

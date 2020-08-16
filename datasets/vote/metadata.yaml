@@ -1,0 +1,46 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: vote
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: handicapped infants
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: water project cost sharing
+    type: categorical
+  - name: adoption of the budget resolution
+    type: categorical
+  - name: physician fee freeze
+    type: categorical
+  - name: el salvador aid
+    type: categorical
+  - name: religious groups in schools
+    type: categorical
+  - name: anti satellite test ban
+    type: categorical
+  - name: aid to nicaraguan contras
+    type: categorical
+  - name: mx missile
+    type: categorical
+  - name: immigration
+    type: categorical
+  - name: synfuels corporation cutback
+    type: categorical
+  - name: education spending
+    type: categorical
+  - name: superfund right to sue
+    type: categorical
+  - name: crime
+    type: categorical
+  - name: duty free exports
+    type: categorical
+  - name: export administration act south africa
+    type: categorical

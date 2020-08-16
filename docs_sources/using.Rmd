@@ -1,0 +1,101 @@
+---
+title: "Using PMLB"
+---
+
+## Python interface
+```{r setup, include=FALSE}
+library(reticulate)
+
+knitr::knit_engines$set(python = reticulate::eng_python)
+knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
+reticulate::py_install(c("matplotlib", "scikit-learn", "seaborn"))
+reticulate::py_install("pmlb", pip = TRUE)
+
+```
+
+
+``` {python}
+from pmlb import fetch_data
+
+# Returns a pandas DataFrame
+mushroom = fetch_data('mushroom')
+mushroom.describe().transpose()
+
+mushroom.shape
+```
+
+The `fetch_data` function has two additional parameters:
+
+* `return_X_y` (True/False): Whether to return the data in scikit-learn format, with the features and labels stored in separate NumPy arrays.
+
+* `local_cache_dir` (string): The directory on your local machine to store the data files so you don't have to fetch them over the web again. By default, the wrapper does not use a local cache directory.
+
+For example:
+
+``` {python}
+from pmlb import fetch_data
+
+# Returns NumPy arrays
+mushroom_X, mushroom_y = fetch_data('mushroom', return_X_y=True, local_cache_dir='./')
+mushroom_X.shape
+mushroom_y.shape
+```
+
+You can also list the available datasets as follows:
+
+``` {python}
+import random
+from pmlb import dataset_names, classification_dataset_names, regression_dataset_names
+
+rand_datasets = random.choices(dataset_names, k=7)
+print('7 arbitrary datasets from PMLB:\n', '\n '.join(rand_datasets))
+    
+print(
+    f'PMLB has {len(classification_dataset_names)} classification datasets '
+    f'and {len(regression_dataset_names)} regression datasets.'
+)
+```
+
+## Example usage
+
+PMLB is designed to make it easy to benchmark machine learning algorithms against each other. Below is a Python code snippet showing the a sample comparison of two classification algorithms on the first 40 PMLB datasets.
+
+
+``` {python results='hide', message=FALSE, warning=FALSE, fig.keep = 'last'}
+from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import GaussianNB
+from sklearn.model_selection import train_test_split
+
+import matplotlib.pyplot as plt
+import seaborn as sb
+
+from pmlb import fetch_data, classification_dataset_names
+
+logit_test_scores = []
+gnb_test_scores = []
+
+for classification_dataset in classification_dataset_names[:40]:
+    # Read in the datasets and split them into training/testing
+    X, y = fetch_data(classification_dataset, return_X_y=True)
+    train_X, test_X, train_y, test_y = train_test_split(X, y)
+
+    # Fit two sklearn algorithms: 
+    # Logistic regression and Gaussian Naive Bayes
+    logit = LogisticRegression()
+    gnb = GaussianNB()
+    logit.fit(train_X, train_y)
+    gnb.fit(train_X, train_y)
+
+    # Log the performance score on the test set
+    logit_test_scores.append(logit.score(test_X, test_y))
+    gnb_test_scores.append(gnb.score(test_X, test_y))
+```
+
+```{python}
+# Visualize the result:
+sb.boxplot(data=[logit_test_scores, gnb_test_scores], notch=True)
+plt.xticks([0, 1], ['LogisticRegression', 'GaussianNB'])
+plt.ylabel('Test Accuracy')
+```
+
+

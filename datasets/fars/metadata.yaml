@@ -1,0 +1,72 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: fars
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: CASE_STATE
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: AGE
+    type: categorical
+  - name: SEX
+    type: categorical
+  - name: PERSON_TYPE
+    type: categorical
+  - name: SEATING_POSITION
+    type: categorical
+  - name: RESTRAINT_SYSTEM-USE
+    type: categorical
+  - name: AIR_BAG_AVAILABILITY/DEPLOYMENT
+    type: categorical
+  - name: EJECTION
+    type: categorical
+  - name: EJECTION_PATH
+    type: categorical
+  - name: EXTRICATION
+    type: categorical
+  - name: NON_MOTORIST_LOCATION
+    type: categorical
+  - name: POLICE_REPORTED_ALCOHOL_INVOLVEMENT
+    type: categorical
+  - name: METHOD_ALCOHOL_DETERMINATION
+    type: categorical
+  - name: ALCOHOL_TEST_TYPE
+    type: categorical
+  - name: ALCOHOL_TEST_RESULT
+    type: categorical
+  - name: POLICE-REPORTED_DRUG_INVOLVEMENT
+    type: categorical
+  - name: METHOD_OF_DRUG_DETERMINATION
+    type: categorical
+  - name: DRUG_TEST_TYPE
+    type: categorical
+  - name: DRUG_TEST_RESULTS_(1_of_3)
+    type: categorical
+  - name: DRUG_TEST_TYPE_(2_of_3)
+    type: categorical
+  - name: DRUG_TEST_RESULTS_(2_of_3)
+    type: categorical
+  - name: DRUG_TEST_TYPE_(3_of_3)
+    type: categorical
+  - name: DRUG_TEST_RESULTS_(3_of_3)
+    type: categorical
+  - name: HISPANIC_ORIGIN
+    type: categorical
+  - name: TAKEN_TO_HOSPITAL
+    type: categorical
+  - name: RELATED_FACTOR_(1)-PERSON_LEVEL
+    type: categorical
+  - name: RELATED_FACTOR_(2)-PERSON_LEVEL
+    type: categorical
+  - name: RELATED_FACTOR_(3)-PERSON_LEVEL
+    type: categorical
+  - name: RACE
+    type: categorical

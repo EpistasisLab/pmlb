@@ -1,0 +1,56 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: car_evaluation
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: buying_price_vhigh
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: buying_price_high
+    type: categorical
+  - name: buying_price_med
+    type: categorical
+  - name: buying_price_low
+    type: categorical
+  - name: maintenance_price_vhigh
+    type: categorical
+  - name: maintenance_price_high
+    type: categorical
+  - name: maintenance_price_med
+    type: categorical
+  - name: maintenance_price_low
+    type: categorical
+  - name: doors_2
+    type: categorical
+  - name: doors_3
+    type: categorical
+  - name: doors_4
+    type: categorical
+  - name: doors_5more
+    type: categorical
+  - name: persons_2
+    type: categorical
+  - name: persons_4
+    type: categorical
+  - name: persons_more
+    type: categorical
+  - name: luggage_boot_size_small
+    type: categorical
+  - name: luggage_boot_size_med
+    type: categorical
+  - name: luggage_boot_size_big
+    type: categorical
+  - name: safety_low
+    type: categorical
+  - name: safety_med
+    type: categorical
+  - name: safety_high
+    type: categorical

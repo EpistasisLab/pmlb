@@ -1,0 +1,154 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: analcatdata_authorship
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: a
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: all
+    type: continuous
+  - name: also
+    type: continuous
+  - name: an
+    type: continuous
+  - name: and
+    type: continuous
+  - name: any
+    type: continuous
+  - name: are
+    type: continuous
+  - name: as
+    type: continuous
+  - name: at
+    type: continuous
+  - name: be
+    type: continuous
+  - name: been
+    type: continuous
+  - name: but
+    type: continuous
+  - name: by
+    type: continuous
+  - name: can
+    type: continuous
+  - name: do
+    type: continuous
+  - name: down
+    type: continuous
+  - name: even
+    type: continuous
+  - name: every
+    type: continuous
+  - name: for
+    type: continuous
+  - name: from
+    type: continuous
+  - name: had
+    type: continuous
+  - name: has
+    type: continuous
+  - name: have
+    type: continuous
+  - name: her
+    type: continuous
+  - name: his
+    type: continuous
+  - name: if
+    type: continuous
+  - name: in
+    type: continuous
+  - name: into
+    type: continuous
+  - name: is
+    type: continuous
+  - name: it
+    type: continuous
+  - name: its
+    type: continuous
+  - name: may
+    type: continuous
+  - name: more
+    type: continuous
+  - name: must
+    type: continuous
+  - name: my
+    type: continuous
+  - name: "no"
+    type: continuous
+  - name: not
+    type: continuous
+  - name: now
+    type: continuous
+  - name: of
+    type: continuous
+  - name: "on"
+    type: continuous
+  - name: one
+    type: continuous
+  - name: only
+    type: continuous
+  - name: or
+    type: continuous
+  - name: our
+    type: continuous
+  - name: should
+    type: continuous
+  - name: so
+    type: continuous
+  - name: some
+    type: continuous
+  - name: such
+    type: continuous
+  - name: than
+    type: continuous
+  - name: that
+    type: continuous
+  - name: the
+    type: continuous
+  - name: their
+    type: continuous
+  - name: then
+    type: continuous
+  - name: there
+    type: continuous
+  - name: things
+    type: continuous
+  - name: this
+    type: continuous
+  - name: to
+    type: continuous
+  - name: up
+    type: continuous
+  - name: upon
+    type: continuous
+  - name: was
+    type: continuous
+  - name: were
+    type: continuous
+  - name: what
+    type: continuous
+  - name: when
+    type: continuous
+  - name: which
+    type: continuous
+  - name: who
+    type: continuous
+  - name: will
+    type: continuous
+  - name: with
+    type: continuous
+  - name: would
+    type: continuous
+  - name: your
+    type: continuous
+  - name: BookID
+    type: continuous

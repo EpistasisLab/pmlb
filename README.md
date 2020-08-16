@@ -2,7 +2,11 @@
 
 This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms. These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features. There are no missing values in these data sets.
 
-Check the `datasets` directory for information about the individual data sets. All binary and multiclass classification datasets are in the `classification` sub-directory, and all regression datasets are in the `regression` sub-directory.
+Check the `datasets` directory for information about the individual data sets. 
+
+## Datasets Summary
+
+![Dataset_Sizes](datasets/dataset_sizes.svg)
 
 ## Data set format
 

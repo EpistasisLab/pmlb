@@ -1,0 +1,130 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: molecular_biology_promoters
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: instance
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: p-50
+    type: categorical
+  - name: p-49
+    type: categorical
+  - name: p-48
+    type: categorical
+  - name: p-47
+    type: categorical
+  - name: p-46
+    type: categorical
+  - name: p-45
+    type: categorical
+  - name: p-44
+    type: categorical
+  - name: p-43
+    type: categorical
+  - name: p-42
+    type: categorical
+  - name: p-41
+    type: categorical
+  - name: p-40
+    type: categorical
+  - name: p-39
+    type: categorical
+  - name: p-38
+    type: categorical
+  - name: p-37
+    type: categorical
+  - name: p-36
+    type: categorical
+  - name: p-35
+    type: categorical
+  - name: p-34
+    type: categorical
+  - name: p-33
+    type: categorical
+  - name: p-32
+    type: categorical
+  - name: p-31
+    type: categorical
+  - name: p-30
+    type: categorical
+  - name: p-29
+    type: categorical
+  - name: p-28
+    type: categorical
+  - name: p-27
+    type: categorical
+  - name: p-26
+    type: categorical
+  - name: p-25
+    type: categorical
+  - name: p-24
+    type: categorical
+  - name: p-23
+    type: categorical
+  - name: p-22
+    type: categorical
+  - name: p-21
+    type: categorical
+  - name: p-20
+    type: categorical
+  - name: p-19
+    type: categorical
+  - name: p-18
+    type: categorical
+  - name: p-17
+    type: categorical
+  - name: p-16
+    type: categorical
+  - name: p-15
+    type: categorical
+  - name: p-14
+    type: categorical
+  - name: p-13
+    type: categorical
+  - name: p-12
+    type: categorical
+  - name: p-11
+    type: categorical
+  - name: p-10
+    type: categorical
+  - name: p-9
+    type: categorical
+  - name: p-8
+    type: categorical
+  - name: p-7
+    type: categorical
+  - name: p-6
+    type: categorical
+  - name: p-5
+    type: categorical
+  - name: p-4
+    type: categorical
+  - name: p-3
+    type: categorical
+  - name: p-2
+    type: categorical
+  - name: p-1
+    type: categorical
+  - name: p1
+    type: categorical
+  - name: p2
+    type: categorical
+  - name: p3
+    type: categorical
+  - name: p4
+    type: categorical
+  - name: p5
+    type: categorical
+  - name: p6
+    type: categorical
+  - name: p7
+    type: categorical

@@ -1,0 +1,52 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: hepatitis
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: AGE
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: SEX
+    type: categorical
+  - name: STEROID
+    type: categorical
+  - name: ANTIVIRALS
+    type: categorical
+  - name: FATIGUE
+    type: categorical
+  - name: MALAISE
+    type: categorical
+  - name: ANOREXIA
+    type: categorical
+  - name: LIVER BIG
+    type: categorical
+  - name: LIVER FIRM
+    type: categorical
+  - name: SPLEEN PALPABLE
+    type: categorical
+  - name: SPIDERS
+    type: categorical
+  - name: ASCITES
+    type: categorical
+  - name: VARICES
+    type: categorical
+  - name: BILIRUBIN
+    type: categorical
+  - name: ALK PHOSPHATE
+    type: categorical
+  - name: SGOT
+    type: categorical
+  - name: ALBUMIN
+    type: categorical
+  - name: PROTIME
+    type: categorical
+  - name: HISTOLOGY
+    type: categorical

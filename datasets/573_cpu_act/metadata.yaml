@@ -1,0 +1,56 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 573_cpu_act
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: lread
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: lwrite
+    type: continuous
+  - name: scall
+    type: continuous
+  - name: sread
+    type: continuous
+  - name: swrite
+    type: continuous
+  - name: fork
+    type: continuous
+  - name: exec
+    type: continuous
+  - name: rchar
+    type: continuous
+  - name: wchar
+    type: continuous
+  - name: pgout
+    type: continuous
+  - name: ppgout
+    type: continuous
+  - name: pgfree
+    type: continuous
+  - name: pgscan
+    type: continuous
+  - name: atch
+    type: continuous
+  - name: pgin
+    type: continuous
+  - name: ppgin
+    type: continuous
+  - name: pflt
+    type: continuous
+  - name: vflt
+    type: continuous
+  - name: runqsz
+    type: continuous
+  - name: freemem
+    type: continuous
+  - name: freeswap
+    type: continuous

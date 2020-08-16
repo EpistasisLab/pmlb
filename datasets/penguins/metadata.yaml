@@ -1,0 +1,49 @@
+# Reviewed by Trang Le
+dataset: penguins
+description: >
+  Data on three Palmer Archipelago (Antarctica) penguin species collected and 
+  made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, 
+  a member of the Long Term Ecological Research Network.
+source: >
+  https://github.com/allisonhorst/penguins
+  https://github.com/allisonhorst/penguins/raw/master/data/penguins_size.csv
+publication: >
+  Gorman KB, Williams TD, Fraser WR (2014).
+  Ecological Sexual Dimorphism and Environmental Variability within a 
+  Community of Antarctic Penguins (Genus Pygoscelis). 
+  PLoS ONE 9(3): e90081.
+  doi:10.1371/journal.pone.0090081
+task: classification
+target:
+  type: nominal
+  description: None yet. See our contributing guide to help us add one.
+  code: >
+    'Adelie' = 0,
+    'Chinstrap' = 1,
+    'Gentoo' = 2
+features:
+  - name: island
+    type: nominal
+    description: island name in the Palmer Archipelago (Antarctica)
+    code: >
+      'Biscoe' = 0,
+      'Dream' = 1,
+      'Torgersen' = 2
+  - name: bill_length_mm
+    type: continuous
+    description: culmen is the upper ridge of a bird's beak
+  - name: bill_depth_mm
+    type: continuous
+  - name: flipper_length_mm
+    type: continuous
+  - name: body_mass_g
+    type: continuous
+    description: body mass (grams)
+  - name: sex
+    type: nominal
+    code: >
+      'female' = 0,
+      'male' = 1
+  - name: year
+    type: continuous
+    description: study year (2007, 2008, or 2009)

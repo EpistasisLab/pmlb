@@ -1,0 +1,54 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: N0
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: N1
+    type: categorical
+  - name: N2
+    type: categorical
+  - name: N3
+    type: categorical
+  - name: N4
+    type: categorical
+  - name: N5
+    type: categorical
+  - name: N6
+    type: categorical
+  - name: N7
+    type: categorical
+  - name: N8
+    type: categorical
+  - name: N9
+    type: categorical
+  - name: N10
+    type: categorical
+  - name: N11
+    type: categorical
+  - name: N12
+    type: categorical
+  - name: N13
+    type: categorical
+  - name: N14
+    type: categorical
+  - name: N15
+    type: categorical
+  - name: M0P0
+    type: categorical
+  - name: M0P1
+    type: categorical
+  - name: M1P0
+    type: categorical
+  - name: M1P1
+    type: categorical

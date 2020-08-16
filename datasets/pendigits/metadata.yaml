@@ -1,0 +1,46 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: pendigits
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: input1
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: input2
+    type: continuous
+  - name: input3
+    type: continuous
+  - name: input4
+    type: continuous
+  - name: input5
+    type: continuous
+  - name: input6
+    type: continuous
+  - name: input7
+    type: continuous
+  - name: input8
+    type: continuous
+  - name: input9
+    type: continuous
+  - name: input10
+    type: continuous
+  - name: input11
+    type: continuous
+  - name: input12
+    type: continuous
+  - name: input13
+    type: continuous
+  - name: input14
+    type: continuous
+  - name: input15
+    type: continuous
+  - name: input16
+    type: continuous

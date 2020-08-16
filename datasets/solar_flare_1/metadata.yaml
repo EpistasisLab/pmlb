@@ -1,0 +1,38 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: solar_flare_1
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: largest_spot_size
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: spot_distribution
+    type: categorical
+  - name: Activity
+    type: categorical
+  - name: Evolution
+    type: categorical
+  - name: Previous_24_hour_flare_activity_code
+    type: categorical
+  - name: Historically-complex
+    type: categorical
+  - name: Did_region_become_historically_complex
+    type: categorical
+  - name: Area
+    type: categorical
+  - name: Area_of_the_largest_spot
+    type: categorical
+  - name: C-class_flares_production_by_this_region
+    type: categorical
+  - name: M-class_flares_production_by_this_region
+    type: categorical
+  - name: X-class_flares_production_by_this_region
+    type: categorical

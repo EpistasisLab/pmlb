@@ -1,0 +1,100 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: flags
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: bars
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: stripes
+    type: categorical
+  - name: colors
+    type: categorical
+  - name: red
+    type: categorical
+  - name: green
+    type: categorical
+  - name: blue
+    type: categorical
+  - name: gold
+    type: categorical
+  - name: white
+    type: categorical
+  - name: black
+    type: categorical
+  - name: orange
+    type: categorical
+  - name: circles
+    type: categorical
+  - name: crosses
+    type: categorical
+  - name: saltires
+    type: categorical
+  - name: quarters
+    type: categorical
+  - name: sunstars
+    type: categorical
+  - name: crescent
+    type: categorical
+  - name: triangle
+    type: categorical
+  - name: icon
+    type: categorical
+  - name: animate
+    type: categorical
+  - name: text
+    type: categorical
+  - name: mainhue_green
+    type: categorical
+  - name: mainhue_red
+    type: categorical
+  - name: mainhue_blue
+    type: categorical
+  - name: mainhue_gold
+    type: categorical
+  - name: mainhue_white
+    type: categorical
+  - name: mainhue_orange
+    type: categorical
+  - name: mainhue_black
+    type: categorical
+  - name: mainhue_brown
+    type: categorical
+  - name: topleft_black
+    type: categorical
+  - name: topleft_red
+    type: categorical
+  - name: topleft_green
+    type: categorical
+  - name: topleft_blue
+    type: categorical
+  - name: topleft_white
+    type: categorical
+  - name: topleft_orange
+    type: categorical
+  - name: topleft_gold
+    type: categorical
+  - name: botright_green
+    type: categorical
+  - name: botright_red
+    type: categorical
+  - name: botright_white
+    type: categorical
+  - name: botright_black
+    type: categorical
+  - name: botright_blue
+    type: categorical
+  - name: botright_gold
+    type: categorical
+  - name: botright_orange
+    type: categorical
+  - name: botright_brown
+    type: categorical

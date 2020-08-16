@@ -1,0 +1,102 @@
+#Reviewed by Trang Le
+dataset: waveform_40
+description: >
+  Generated 3 classes of waves.
+  Each class is generated from a combination of 2 of 3 base waves.
+  All 40 features describing the waveform include noise.
+  The last 19 features are noise with mean 0 and variance 1.
+source: >
+  https://www.openml.org/data/get_csv/60/dataset_60_waveform-5000.arff
+  https://www.openml.org/d/60
+publication: > 
+  Breiman, L., Friedman, J.H., Olshen, R.A., and Stone, C.J. (1984). 
+  Classification and Regression Trees. 
+  Wadsworth International, pp 49-55, 169.
+  doi:10.1201/9781315139470
+task: classification
+target:
+  type: nominal
+  description: One of 3 classes of wave.
+  code: None.
+features: # list of features in the dataset
+  - name: X00
+    type: continuous
+    description: See general description.
+  - name: X01
+    type: continuous
+  - name: X02
+    type: continuous
+  - name: X03
+    type: continuous
+  - name: X04
+    type: continuous
+  - name: X05
+    type: continuous
+  - name: X06
+    type: continuous
+  - name: X07
+    type: continuous
+  - name: X08
+    type: continuous
+  - name: X09
+    type: continuous
+  - name: X10
+    type: continuous
+  - name: X11
+    type: continuous
+  - name: X12
+    type: continuous
+  - name: X13
+    type: continuous
+  - name: X14
+    type: continuous
+  - name: X15
+    type: continuous
+  - name: X16
+    type: continuous
+  - name: X17
+    type: continuous
+  - name: X18
+    type: continuous
+  - name: X19
+    type: continuous
+  - name: X20
+    type: continuous
+  - name: X21
+    type: continuous
+  - name: X22
+    type: continuous
+  - name: X23
+    type: continuous
+  - name: X24
+    type: continuous
+  - name: X25
+    type: continuous
+  - name: X26
+    type: continuous
+  - name: X27
+    type: continuous
+  - name: X28
+    type: continuous
+  - name: X29
+    type: continuous
+  - name: X30
+    type: continuous
+  - name: X31
+    type: continuous
+  - name: X32
+    type: continuous
+  - name: X33
+    type: continuous
+  - name: X34
+    type: continuous
+  - name: X35
+    type: continuous
+  - name: X36
+    type: continuous
+  - name: X37
+    type: continuous
+  - name: X38
+    type: continuous
+  - name: X39
+    type: continuous

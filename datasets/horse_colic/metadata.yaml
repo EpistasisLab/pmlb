@@ -1,0 +1,58 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: horse_colic
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: surgery
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Age
+    type: categorical
+  - name: rectal temperature
+    type: categorical
+  - name: pulse
+    type: categorical
+  - name: respiratory rate
+    type: categorical
+  - name: temperature of extremities
+    type: categorical
+  - name: peripheral pulse
+    type: categorical
+  - name: mucous membranes
+    type: categorical
+  - name: capillary refill time
+    type: categorical
+  - name: pain
+    type: categorical
+  - name: peristalsis
+    type: categorical
+  - name: abdominal distension
+    type: categorical
+  - name: nasogastric tube
+    type: categorical
+  - name: nasogastric reflux
+    type: categorical
+  - name: nasogastric reflux PH
+    type: categorical
+  - name: rectal examination
+    type: categorical
+  - name: abdomen
+    type: categorical
+  - name: packed cell volume
+    type: categorical
+  - name: total protein
+    type: categorical
+  - name: abdominocentesis appearance
+    type: categorical
+  - name: abdomcentesis total protein
+    type: categorical
+  - name: outcome
+    type: categorical

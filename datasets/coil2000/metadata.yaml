@@ -1,0 +1,184 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: coil2000
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: MOSTYPE
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: MAANTHUI
+    type: categorical
+  - name: MGEMOMV
+    type: categorical
+  - name: MGEMLEEF
+    type: categorical
+  - name: MOSHOOFD
+    type: categorical
+  - name: MGODRK
+    type: categorical
+  - name: MGODPR
+    type: categorical
+  - name: MGODOV
+    type: categorical
+  - name: MGODGE
+    type: categorical
+  - name: MRELGE
+    type: categorical
+  - name: MRELSA
+    type: categorical
+  - name: MRELOV
+    type: categorical
+  - name: MFALLEEN
+    type: categorical
+  - name: MFGEKIND
+    type: categorical
+  - name: MFWEKIND
+    type: categorical
+  - name: MOPLHOOG
+    type: categorical
+  - name: MOPLMIDD
+    type: categorical
+  - name: MOPLLAAG
+    type: categorical
+  - name: MBERHOOG
+    type: categorical
+  - name: MBERZELF
+    type: categorical
+  - name: MBERBOER
+    type: categorical
+  - name: MBERMIDD
+    type: categorical
+  - name: MBERARBG
+    type: categorical
+  - name: MBERARBO
+    type: categorical
+  - name: MSKA
+    type: categorical
+  - name: MSKB1
+    type: categorical
+  - name: MSKB2
+    type: categorical
+  - name: MSKC
+    type: categorical
+  - name: MSKD
+    type: categorical
+  - name: MHHUUR
+    type: categorical
+  - name: MHKOOP
+    type: categorical
+  - name: MAUT1
+    type: categorical
+  - name: MAUT2
+    type: categorical
+  - name: MAUT0
+    type: categorical
+  - name: MZFONDS
+    type: categorical
+  - name: MZPART
+    type: categorical
+  - name: MINKM30
+    type: categorical
+  - name: MINK3045
+    type: categorical
+  - name: MINK4575
+    type: categorical
+  - name: MINK7512
+    type: categorical
+  - name: MINK123M
+    type: categorical
+  - name: MINKGEM
+    type: categorical
+  - name: MKOOPKLA
+    type: categorical
+  - name: PWAPART
+    type: categorical
+  - name: PWABEDR
+    type: categorical
+  - name: PWALAND
+    type: categorical
+  - name: PPERSAUT
+    type: categorical
+  - name: PBESAUT
+    type: categorical
+  - name: PMOTSCO
+    type: categorical
+  - name: PVRAAUT
+    type: categorical
+  - name: PAANHANG
+    type: categorical
+  - name: PTRACTOR
+    type: categorical
+  - name: PWERKT
+    type: categorical
+  - name: PBROM
+    type: categorical
+  - name: PLEVEN
+    type: categorical
+  - name: PPERSONG
+    type: categorical
+  - name: PGEZONG
+    type: categorical
+  - name: PWAOREG
+    type: categorical
+  - name: PBRAND
+    type: categorical
+  - name: PZEILPL
+    type: categorical
+  - name: PPLEZIER
+    type: categorical
+  - name: PFIETS
+    type: categorical
+  - name: PINBOED
+    type: categorical
+  - name: PBYSTAND
+    type: categorical
+  - name: AWAPART
+    type: categorical
+  - name: AWABEDR
+    type: categorical
+  - name: AWALAND
+    type: categorical
+  - name: APERSAUT
+    type: categorical
+  - name: ABESAUT
+    type: categorical
+  - name: AMOTSCO
+    type: categorical
+  - name: AVRAAUT
+    type: categorical
+  - name: AAANHANG
+    type: categorical
+  - name: ATRACTOR
+    type: categorical
+  - name: AWERKT
+    type: categorical
+  - name: ABROM
+    type: categorical
+  - name: ALEVEN
+    type: categorical
+  - name: APERSONG
+    type: categorical
+  - name: AGEZONG
+    type: categorical
+  - name: AWAOREG
+    type: categorical
+  - name: ABRAND
+    type: categorical
+  - name: AZEILPL
+    type: categorical
+  - name: APLEZIER
+    type: categorical
+  - name: AFIETS
+    type: categorical
+  - name: AINBOED
+    type: categorical
+  - name: ABYSTAND
+    type: categorical

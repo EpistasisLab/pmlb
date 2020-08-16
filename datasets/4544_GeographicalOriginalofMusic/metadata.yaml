@@ -1,0 +1,248 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 4544_GeographicalOriginalofMusic
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: V1
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: V2
+    type: continuous
+  - name: V3
+    type: continuous
+  - name: V4
+    type: continuous
+  - name: V5
+    type: continuous
+  - name: V6
+    type: continuous
+  - name: V7
+    type: continuous
+  - name: V8
+    type: continuous
+  - name: V9
+    type: continuous
+  - name: V10
+    type: continuous
+  - name: V11
+    type: continuous
+  - name: V12
+    type: continuous
+  - name: V13
+    type: continuous
+  - name: V14
+    type: continuous
+  - name: V15
+    type: continuous
+  - name: V16
+    type: continuous
+  - name: V17
+    type: continuous
+  - name: V18
+    type: continuous
+  - name: V19
+    type: continuous
+  - name: V20
+    type: continuous
+  - name: V21
+    type: continuous
+  - name: V22
+    type: continuous
+  - name: V23
+    type: continuous
+  - name: V24
+    type: continuous
+  - name: V25
+    type: continuous
+  - name: V26
+    type: continuous
+  - name: V27
+    type: continuous
+  - name: V28
+    type: continuous
+  - name: V29
+    type: continuous
+  - name: V30
+    type: continuous
+  - name: V31
+    type: continuous
+  - name: V32
+    type: continuous
+  - name: V33
+    type: continuous
+  - name: V34
+    type: continuous
+  - name: V35
+    type: continuous
+  - name: V36
+    type: continuous
+  - name: V37
+    type: continuous
+  - name: V38
+    type: continuous
+  - name: V39
+    type: continuous
+  - name: V40
+    type: continuous
+  - name: V41
+    type: continuous
+  - name: V42
+    type: continuous
+  - name: V43
+    type: continuous
+  - name: V44
+    type: continuous
+  - name: V45
+    type: continuous
+  - name: V46
+    type: continuous
+  - name: V47
+    type: continuous
+  - name: V48
+    type: continuous
+  - name: V49
+    type: continuous
+  - name: V50
+    type: continuous
+  - name: V51
+    type: continuous
+  - name: V52
+    type: continuous
+  - name: V53
+    type: continuous
+  - name: V54
+    type: continuous
+  - name: V55
+    type: continuous
+  - name: V56
+    type: continuous
+  - name: V57
+    type: continuous
+  - name: V58
+    type: continuous
+  - name: V59
+    type: continuous
+  - name: V60
+    type: continuous
+  - name: V61
+    type: continuous
+  - name: V62
+    type: continuous
+  - name: V63
+    type: continuous
+  - name: V64
+    type: continuous
+  - name: V65
+    type: continuous
+  - name: V66
+    type: continuous
+  - name: V67
+    type: continuous
+  - name: V68
+    type: continuous
+  - name: V69
+    type: continuous
+  - name: V70
+    type: continuous
+  - name: V71
+    type: continuous
+  - name: V72
+    type: continuous
+  - name: V73
+    type: continuous
+  - name: V74
+    type: continuous
+  - name: V75
+    type: continuous
+  - name: V76
+    type: continuous
+  - name: V77
+    type: continuous
+  - name: V78
+    type: continuous
+  - name: V79
+    type: continuous
+  - name: V80
+    type: continuous
+  - name: V81
+    type: continuous
+  - name: V82
+    type: continuous
+  - name: V83
+    type: continuous
+  - name: V84
+    type: continuous
+  - name: V85
+    type: continuous
+  - name: V86
+    type: continuous
+  - name: V87
+    type: continuous
+  - name: V88
+    type: continuous
+  - name: V89
+    type: continuous
+  - name: V90
+    type: continuous
+  - name: V91
+    type: continuous
+  - name: V92
+    type: continuous
+  - name: V93
+    type: continuous
+  - name: V94
+    type: continuous
+  - name: V95
+    type: continuous
+  - name: V96
+    type: continuous
+  - name: V97
+    type: continuous
+  - name: V98
+    type: continuous
+  - name: V99
+    type: continuous
+  - name: V101
+    type: continuous
+  - name: V102
+    type: continuous
+  - name: V103
+    type: continuous
+  - name: V104
+    type: continuous
+  - name: V105
+    type: continuous
+  - name: V106
+    type: continuous
+  - name: V107
+    type: continuous
+  - name: V108
+    type: continuous
+  - name: V109
+    type: continuous
+  - name: V110
+    type: continuous
+  - name: V111
+    type: continuous
+  - name: V112
+    type: continuous
+  - name: V113
+    type: continuous
+  - name: V114
+    type: continuous
+  - name: V115
+    type: continuous
+  - name: V116
+    type: continuous
+  - name: V117
+    type: continuous
+  - name: V118
+    type: continuous

@@ -1,0 +1,376 @@
+#Generated automatically by pmlb/write_metadata.py
+# Reviewed by Praneel Chakraborty
+dataset: dna
+description: >
+  Splice-junction sequences and intron-exon boundaries;
+  60 total nucleotides, each encoded in a set of 3 binary indicator values; 
+  180 total features (i.e. each group of (A0-A2), (A3-A5), etc. encodes a single nucleotide);
+  A = 1 0 0, C = 0 1 0, G = 0 0 1, T = 0 0 0.
+source: https://www.openml.org/d/40670
+publication: None.
+task: classification
+target:
+  type: categorical
+  description: Exon/intron boundary type
+  code: Exon-intron = 1, Intron-exon = 2, Neither = 3
+features: 
+  - name: A0
+    type: categorical
+  - name: A1
+    type: categorical
+  - name: A2
+    type: categorical
+  - name: A3
+    type: categorical
+  - name: A4
+    type: categorical
+  - name: A5
+    type: categorical
+  - name: A6
+    type: categorical
+  - name: A7
+    type: categorical
+  - name: A8
+    type: categorical
+  - name: A9
+    type: categorical
+  - name: A10
+    type: categorical
+  - name: A11
+    type: categorical
+  - name: A12
+    type: categorical
+  - name: A13
+    type: categorical
+  - name: A14
+    type: categorical
+  - name: A15
+    type: categorical
+  - name: A16
+    type: categorical
+  - name: A17
+    type: categorical
+  - name: A18
+    type: categorical
+  - name: A19
+    type: categorical
+  - name: A20
+    type: categorical
+  - name: A21
+    type: categorical
+  - name: A22
+    type: categorical
+  - name: A23
+    type: categorical
+  - name: A24
+    type: categorical
+  - name: A25
+    type: categorical
+  - name: A26
+    type: categorical
+  - name: A27
+    type: categorical
+  - name: A28
+    type: categorical
+  - name: A29
+    type: categorical
+  - name: A30
+    type: categorical
+  - name: A31
+    type: categorical
+  - name: A32
+    type: categorical
+  - name: A33
+    type: categorical
+  - name: A34
+    type: categorical
+  - name: A35
+    type: categorical
+  - name: A36
+    type: categorical
+  - name: A37
+    type: categorical
+  - name: A38
+    type: categorical
+  - name: A39
+    type: categorical
+  - name: A40
+    type: categorical
+  - name: A41
+    type: categorical
+  - name: A42
+    type: categorical
+  - name: A43
+    type: categorical
+  - name: A44
+    type: categorical
+  - name: A45
+    type: categorical
+  - name: A46
+    type: categorical
+  - name: A47
+    type: categorical
+  - name: A48
+    type: categorical
+  - name: A49
+    type: categorical
+  - name: A50
+    type: categorical
+  - name: A51
+    type: categorical
+  - name: A52
+    type: categorical
+  - name: A53
+    type: categorical
+  - name: A54
+    type: categorical
+  - name: A55
+    type: categorical
+  - name: A56
+    type: categorical
+  - name: A57
+    type: categorical
+  - name: A58
+    type: categorical
+  - name: A59
+    type: categorical
+  - name: A60
+    type: categorical
+  - name: A61
+    type: categorical
+  - name: A62
+    type: categorical
+  - name: A63
+    type: categorical
+  - name: A64
+    type: categorical
+  - name: A65
+    type: categorical
+  - name: A66
+    type: categorical
+  - name: A67
+    type: categorical
+  - name: A68
+    type: categorical
+  - name: A69
+    type: categorical
+  - name: A70
+    type: categorical
+  - name: A71
+    type: categorical
+  - name: A72
+    type: categorical
+  - name: A73
+    type: categorical
+  - name: A74
+    type: categorical
+  - name: A75
+    type: categorical
+  - name: A76
+    type: categorical
+  - name: A77
+    type: categorical
+  - name: A78
+    type: categorical
+  - name: A79
+    type: categorical
+  - name: A80
+    type: categorical
+  - name: A81
+    type: categorical
+  - name: A82
+    type: categorical
+  - name: A83
+    type: categorical
+  - name: A84
+    type: categorical
+  - name: A85
+    type: categorical
+  - name: A86
+    type: categorical
+  - name: A87
+    type: categorical
+  - name: A88
+    type: categorical
+  - name: A89
+    type: categorical
+  - name: A90
+    type: categorical
+  - name: A91
+    type: categorical
+  - name: A92
+    type: categorical
+  - name: A93
+    type: categorical
+  - name: A94
+    type: categorical
+  - name: A95
+    type: categorical
+  - name: A96
+    type: categorical
+  - name: A97
+    type: categorical
+  - name: A98
+    type: categorical
+  - name: A99
+    type: categorical
+  - name: A100
+    type: categorical
+  - name: A101
+    type: categorical
+  - name: A102
+    type: categorical
+  - name: A103
+    type: categorical
+  - name: A104
+    type: categorical
+  - name: A105
+    type: categorical
+  - name: A106
+    type: categorical
+  - name: A107
+    type: categorical
+  - name: A108
+    type: categorical
+  - name: A109
+    type: categorical
+  - name: A110
+    type: categorical
+  - name: A111
+    type: categorical
+  - name: A112
+    type: categorical
+  - name: A113
+    type: categorical
+  - name: A114
+    type: categorical
+  - name: A115
+    type: categorical
+  - name: A116
+    type: categorical
+  - name: A117
+    type: categorical
+  - name: A118
+    type: categorical
+  - name: A119
+    type: categorical
+  - name: A120
+    type: categorical
+  - name: A121
+    type: categorical
+  - name: A122
+    type: categorical
+  - name: A123
+    type: categorical
+  - name: A124
+    type: categorical
+  - name: A125
+    type: categorical
+  - name: A126
+    type: categorical
+  - name: A127
+    type: categorical
+  - name: A128
+    type: categorical
+  - name: A129
+    type: categorical
+  - name: A130
+    type: categorical
+  - name: A131
+    type: categorical
+  - name: A132
+    type: categorical
+  - name: A133
+    type: categorical
+  - name: A134
+    type: categorical
+  - name: A135
+    type: categorical
+  - name: A136
+    type: categorical
+  - name: A137
+    type: categorical
+  - name: A138
+    type: categorical
+  - name: A139
+    type: categorical
+  - name: A140
+    type: categorical
+  - name: A141
+    type: categorical
+  - name: A142
+    type: categorical
+  - name: A143
+    type: categorical
+  - name: A144
+    type: categorical
+  - name: A145
+    type: categorical
+  - name: A146
+    type: categorical
+  - name: A147
+    type: categorical
+  - name: A148
+    type: categorical
+  - name: A149
+    type: categorical
+  - name: A150
+    type: categorical
+  - name: A151
+    type: categorical
+  - name: A152
+    type: categorical
+  - name: A153
+    type: categorical
+  - name: A154
+    type: categorical
+  - name: A155
+    type: categorical
+  - name: A156
+    type: categorical
+  - name: A157
+    type: categorical
+  - name: A158
+    type: categorical
+  - name: A159
+    type: categorical
+  - name: A160
+    type: categorical
+  - name: A161
+    type: categorical
+  - name: A162
+    type: categorical
+  - name: A163
+    type: categorical
+  - name: A164
+    type: categorical
+  - name: A165
+    type: categorical
+  - name: A166
+    type: categorical
+  - name: A167
+    type: categorical
+  - name: A168
+    type: categorical
+  - name: A169
+    type: categorical
+  - name: A170
+    type: categorical
+  - name: A171
+    type: categorical
+  - name: A172
+    type: categorical
+  - name: A173
+    type: categorical
+  - name: A174
+    type: categorical
+  - name: A175
+    type: categorical
+  - name: A176
+    type: categorical
+  - name: A177
+    type: categorical
+  - name: A178
+    type: categorical
+  - name: A179
+    type: categorical
