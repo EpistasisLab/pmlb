@@ -23,7 +23,7 @@ library(htmlwidgets)
 ```
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=8.5}
-sum_stats <- readr::read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/PMLB2.0/datasets/all_summary_stats.csv') %>% 
+sum_stats <- readr::read_csv('../datasets/all_summary_stats.csv') %>% 
   mutate(urls = paste0(
     'https://epistasislab.github.io/penn-ml-benchmarks/profile/',
     dataset,
