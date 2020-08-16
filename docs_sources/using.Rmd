@@ -36,7 +36,7 @@ For example:
 from pmlb import fetch_data
 
 # Returns NumPy arrays
-mushroom_X, mushroom_y = fetch_data('mushroom', return_X_y=True, local_cache_dir='./')
+mushroom_X, mushroom_y = fetch_data('mushroom', return_X_y=True, local_cache_dir='../datasets')
 mushroom_X.shape
 mushroom_y.shape
 ```
@@ -49,7 +49,7 @@ from pmlb import dataset_names, classification_dataset_names, regression_dataset
 
 rand_datasets = random.choices(dataset_names, k=7)
 print('7 arbitrary datasets from PMLB:\n', '\n '.join(rand_datasets))
-    
+
 print(
     f'PMLB has {len(classification_dataset_names)} classification datasets '
     f'and {len(regression_dataset_names)} regression datasets.'
@@ -79,7 +79,7 @@ for classification_dataset in classification_dataset_names[:40]:
     X, y = fetch_data(classification_dataset, return_X_y=True)
     train_X, test_X, train_y, test_y = train_test_split(X, y)
 
-    # Fit two sklearn algorithms: 
+    # Fit two sklearn algorithms:
     # Logistic regression and Gaussian Naive Bayes
     logit = LogisticRegression()
     gnb = GaussianNB()
@@ -97,5 +97,3 @@ sb.boxplot(data=[logit_test_scores, gnb_test_scores], notch=True)
 plt.xticks([0, 1], ['LogisticRegression', 'GaussianNB'])
 plt.ylabel('Test Accuracy')
 ```
-
-
