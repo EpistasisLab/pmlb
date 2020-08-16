@@ -2,7 +2,16 @@
 
 This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms. These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features. There are no missing values in these data sets.
 
-Check the `datasets` directory for information about the individual data sets. 
+Check the `datasets` directory for information about the individual datasets. 
+
+## Breaking changes in PMLB 1.0
+
+**This repository has been restructured.**
+If you have an older version of PMLB, we highly recommend you upgrade it to v1.0 for updated URLs and names of datasets:
+
+```
+pip install pmlb --upgrade
+```
 
 ## Datasets Summary
 
