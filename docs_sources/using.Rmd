@@ -36,7 +36,7 @@ For example:
 from pmlb import fetch_data
 
 # Returns NumPy arrays
-mushroom_X, mushroom_y = fetch_data('mushroom', return_X_y=True, local_cache_dir='./')
+mushroom_X, mushroom_y = fetch_data('mushroom', return_X_y=True, local_cache_dir='./datasets')
 mushroom_X.shape
 mushroom_y.shape
 ```
