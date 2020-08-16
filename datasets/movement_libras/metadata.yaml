@@ -1,0 +1,196 @@
+#Edited by Daniel Goldberg
+dataset: movement_libras
+description: >
+  LIBRAS is an acronym of the Portuguese name "LIngua BRAsileira de Sinais", the official brazilian sign language. Each
+  class is a different hand movement. The hand movement is represented as a bidimensional curve performed by 
+  the hand in a period of time. Each feature is derived from a frame from a video of someone doing a hand 
+  movement (class). See the source (openML link) for more information about how the curves were obtained and how the
+  features were derived.
+source: https://www.openml.org/d/299
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: Which hand movement is represented by the features
+features: # list of features in the dataset
+  - name: 1st_coordinate_abcissa
+    type: continuous
+    description: See general description for description of this and all following features.
+  - name: 1st_coordinate_ordinate
+    type: continuous
+  - name: 2st_coordinate_abcissa
+    type: continuous
+  - name: 2st_coordinate_ordinate
+    type: continuous
+  - name: 3st_coordinate_abcissa
+    type: continuous
+  - name: 3st_coordinate_ordinate
+    type: continuous
+  - name: 4st_coordinate_abcissa
+    type: continuous
+  - name: 4st_coordinate_ordinate
+    type: continuous
+  - name: 5st_coordinate_abcissa
+    type: continuous
+  - name: 5st_coordinate_ordinate
+    type: continuous
+  - name: 6st_coordinate_abcissa
+    type: continuous
+  - name: 6st_coordinate_ordinate
+    type: continuous
+  - name: 7st_coordinate_abcissa
+    type: continuous
+  - name: 7st_coordinate_ordinate
+    type: continuous
+  - name: 8st_coordinate_abcissa
+    type: continuous
+  - name: 8st_coordinate_ordinate
+    type: continuous
+  - name: 9st_coordinate_abcissa
+    type: continuous
+  - name: 9st_coordinate_ordinate
+    type: continuous
+  - name: 10st_coordinate_abcissa
+    type: continuous
+  - name: 10st_coordinate_ordinate
+    type: continuous
+  - name: 11st_coordinate_abcissa
+    type: continuous
+  - name: 11st_coordinate_ordinate
+    type: continuous
+  - name: 12st_coordinate_abcissa
+    type: continuous
+  - name: 12st_coordinate_ordinate
+    type: continuous
+  - name: 13st_coordinate_abcissa
+    type: continuous
+  - name: 13st_coordinate_ordinate
+    type: continuous
+  - name: 14st_coordinate_abcissa
+    type: continuous
+  - name: 14st_coordinate_ordinate
+    type: continuous
+  - name: 15st_coordinate_abcissa
+    type: continuous
+  - name: 15st_coordinate_ordinate
+    type: continuous
+  - name: 16st_coordinate_abcissa
+    type: continuous
+  - name: 16st_coordinate_ordinate
+    type: continuous
+  - name: 17st_coordinate_abcissa
+    type: continuous
+  - name: 17st_coordinate_ordinate
+    type: continuous
+  - name: 18st_coordinate_abcissa
+    type: continuous
+  - name: 18st_coordinate_ordinate
+    type: continuous
+  - name: 19st_coordinate_abcissa
+    type: continuous
+  - name: 19st_coordinate_ordinate
+    type: continuous
+  - name: 20st_coordinate_abcissa
+    type: continuous
+  - name: 20st_coordinate_ordinate
+    type: continuous
+  - name: 21st_coordinate_abcissa
+    type: continuous
+  - name: 21st_coordinate_ordinate
+    type: continuous
+  - name: 22st_coordinate_abcissa
+    type: continuous
+  - name: 22st_coordinate_ordinate
+    type: continuous
+  - name: 23st_coordinate_abcissa
+    type: continuous
+  - name: 23st_coordinate_ordinate
+    type: continuous
+  - name: 24st_coordinate_abcissa
+    type: continuous
+  - name: 24st_coordinate_ordinate
+    type: continuous
+  - name: 25st_coordinate_abcissa
+    type: continuous
+  - name: 25st_coordinate_ordinate
+    type: continuous
+  - name: 26st_coordinate_abcissa
+    type: continuous
+  - name: 26st_coordinate_ordinate
+    type: continuous
+  - name: 27st_coordinate_abcissa
+    type: continuous
+  - name: 27st_coordinate_ordinate
+    type: continuous
+  - name: 28st_coordinate_abcissa
+    type: continuous
+  - name: 28st_coordinate_ordinate
+    type: continuous
+  - name: 29st_coordinate_abcissa
+    type: continuous
+  - name: 29st_coordinate_ordinate
+    type: continuous
+  - name: 30st_coordinate_abcissa
+    type: continuous
+  - name: 30st_coordinate_ordinate
+    type: continuous
+  - name: 31st_coordinate_abcissa
+    type: continuous
+  - name: 31st_coordinate_ordinate
+    type: continuous
+  - name: 32st_coordinate_abcissa
+    type: continuous
+  - name: 32st_coordinate_ordinate
+    type: continuous
+  - name: 33st_coordinate_abcissa
+    type: continuous
+  - name: 33st_coordinate_ordinate
+    type: continuous
+  - name: 34st_coordinate_abcissa
+    type: continuous
+  - name: 34st_coordinate_ordinate
+    type: continuous
+  - name: 35st_coordinate_abcissa
+    type: continuous
+  - name: 35st_coordinate_ordinate
+    type: continuous
+  - name: 36st_coordinate_abcissa
+    type: continuous
+  - name: 36st_coordinate_ordinate
+    type: continuous
+  - name: 37st_coordinate_abcissa
+    type: continuous
+  - name: 37st_coordinate_ordinate
+    type: continuous
+  - name: 38st_coordinate_abcissa
+    type: continuous
+  - name: 38st_coordinate_ordinate
+    type: continuous
+  - name: 39st_coordinate_abcissa
+    type: continuous
+  - name: 39st_coordinate_ordinate
+    type: continuous
+  - name: 40st_coordinate_abcissa
+    type: continuous
+  - name: 40st_coordinate_ordinate
+    type: continuous
+  - name: 41st_coordinate_abcissa
+    type: continuous
+  - name: 41st_coordinate_ordinate
+    type: continuous
+  - name: 42st_coordinate_abcissa
+    type: continuous
+  - name: 42st_coordinate_ordinate
+    type: continuous
+  - name: 43st_coordinate_abcissa
+    type: continuous
+  - name: 43st_coordinate_ordinate
+    type: continuous
+  - name: 44st_coordinate_abcissa
+    type: continuous
+  - name: 44st_coordinate_ordinate
+    type: continuous
+  - name: 45st_coordinate_abcissa
+    type: continuous
+  - name: 45st_coordinate_ordinate
+    type: continuous

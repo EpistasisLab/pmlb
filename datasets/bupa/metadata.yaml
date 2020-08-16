@@ -1,0 +1,39 @@
+#Generated automatically by pmlb/write_metadata.py
+#Reviewed by Daniel Goldberg
+Description of current target: >
+  Train/test selector.
+  The classification of either 1 or 2 was used by BUPA researchers to decide what data should go in train vs in test.
+  This feature is NOT whether the individual had a liver condition.
+  The dataset does not contain ANY features determining presence or absence of a liver condition.
+  The Drinks feature is designed to be the dependent variable of this dataset.
+
+
+dataset: bupa
+description: >
+  BUPA medical research on liver disease that might arise from excessive alcohol consumption.
+  The first five features are different blood tests that may be sensitive to liver disorders.
+  Each row is a record of a single male individual.
+source: https://www.openml.org/d/8
+publication: https://archive.ics.uci.edu/ml/datasets/Liver+Disorders
+task: classification
+target:
+  type: binary
+  description: >
+    Number of half-pint equivalents of alcoholic beverages drunk per day.
+    0: < 3; 1: >= 3
+features: # list of features in the dataset
+  - name: Mcv
+    type: continuous
+    description: mean corpuscular volume
+  - name: Alkphos
+    type: continuous
+    description: alkaline phosphotase
+  - name: Sgpt
+    type: continuous
+    description: alanine aminotransferase
+  - name: Sgot
+    type: continuous
+    description: aspartate aminotransferase
+  - name: Gammagt
+    type: continuous
+    description: gamma-glutamyl transpeptidase

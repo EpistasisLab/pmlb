@@ -1,0 +1,46 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: labor
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: duration
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: wage increase first year
+    type: categorical
+  - name: wage increase second year
+    type: categorical
+  - name: wage increase third year
+    type: categorical
+  - name: cost of living adjustment
+    type: categorical
+  - name: working hours
+    type: categorical
+  - name: pension
+    type: categorical
+  - name: standby pay
+    type: categorical
+  - name: shift differential
+    type: categorical
+  - name: education allowance
+    type: categorical
+  - name: statutory holidays
+    type: categorical
+  - name: vacation
+    type: categorical
+  - name: longterm disability assistance
+    type: categorical
+  - name: contribution to dental plan
+    type: categorical
+  - name: bereavement assistance
+    type: categorical
+  - name: contribution to health plan
+    type: categorical

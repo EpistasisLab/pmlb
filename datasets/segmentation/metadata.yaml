@@ -1,0 +1,52 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: segmentation
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: region-centroid-col
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: region-centroid-row
+    type: continuous
+  - name: region-pixel-count
+    type: continuous
+  - name: short-line-density-5
+    type: continuous
+  - name: short-line-density-2
+    type: continuous
+  - name: vedge-mean
+    type: continuous
+  - name: vedge-sd
+    type: continuous
+  - name: hedge-mean
+    type: continuous
+  - name: hedge-sd
+    type: continuous
+  - name: intensity-mean
+    type: continuous
+  - name: rawred-mean
+    type: continuous
+  - name: rawblue-mean
+    type: continuous
+  - name: rawgreen-mean
+    type: continuous
+  - name: exred-mean
+    type: continuous
+  - name: exblue-mean
+    type: continuous
+  - name: exgreen-mean
+    type: continuous
+  - name: value-mean
+    type: continuous
+  - name: saturatoin-mean
+    type: continuous
+  - name: hue-mean
+    type: continuous

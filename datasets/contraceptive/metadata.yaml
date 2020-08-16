@@ -1,0 +1,32 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: contraceptive
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: Wife_age
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Wife_education
+    type: categorical
+  - name: Husband_education
+    type: categorical
+  - name: Children
+    type: categorical
+  - name: Wife_religion
+    type: categorical
+  - name: Wife_working
+    type: categorical
+  - name: Husband_occupation
+    type: categorical
+  - name: Standard-of-living
+    type: categorical
+  - name: Media_exposure
+    type: categorical

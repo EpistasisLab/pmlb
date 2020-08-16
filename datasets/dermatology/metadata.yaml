@@ -1,0 +1,82 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: dermatology
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: erythema
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: scaling
+    type: categorical
+  - name: definite_borders
+    type: categorical
+  - name: itching
+    type: categorical
+  - name: koebner_phenomenon
+    type: categorical
+  - name: polygonal_papules
+    type: categorical
+  - name: follicular_papules
+    type: categorical
+  - name: oral_mucosal_involvement
+    type: categorical
+  - name: knee_and_elbow_involvement
+    type: categorical
+  - name: scalp_involvement
+    type: categorical
+  - name: family_history
+    type: categorical
+  - name: melanin_incontinence
+    type: categorical
+  - name: eosinophils_in_the_infiltrate
+    type: categorical
+  - name: PNL_infiltrate
+    type: categorical
+  - name: fibrosis_of_the_papillary_dermis
+    type: categorical
+  - name: exocytosis
+    type: categorical
+  - name: acanthosis
+    type: categorical
+  - name: hyperkeratosis
+    type: categorical
+  - name: parakeratosis
+    type: categorical
+  - name: clubbing_of_the_rete_ridges
+    type: categorical
+  - name: elongation_of_the_rete_ridges
+    type: categorical
+  - name: thinning_of_the_suprapapillary_epidermis
+    type: categorical
+  - name: spongiform_pustule
+    type: categorical
+  - name: munro_microabcess
+    type: categorical
+  - name: focal_hypergranulosis
+    type: categorical
+  - name: disappearance_of_the_granular_layer
+    type: categorical
+  - name: vacuolisation_and_damage_of_basal_layer
+    type: categorical
+  - name: spongiosis
+    type: categorical
+  - name: saw-tooth_appearance_of_retes
+    type: categorical
+  - name: follicular_horn_plug
+    type: categorical
+  - name: perifollicular_parakeratosis
+    type: categorical
+  - name: inflammatory_monoluclear_inflitrate
+    type: categorical
+  - name: band-like_infiltrate
+    type: categorical
+  - name: Age
+    type: categorical

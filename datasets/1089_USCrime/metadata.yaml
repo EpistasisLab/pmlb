@@ -1,0 +1,62 @@
+# Reviewed by Trang Le
+dataset: 1089_USCrime
+description: >
+  These data are crime-related and demographic statistics for 47 US states in 1960.
+  The data were collected from the FBI's Uniform Crime Report and other government agencies 
+  to determine how the variable crime rate depends on the other variables measured in the study. 
+source: >
+  https://www.openml.org/d/1089
+  http://tunedit.org/repo/DASL
+publication: >
+  Vandaele, W. (1978)
+  Participation in illegitimate activities: Erlich revisited. 
+  In Deterrence and incapacitation, Blumstein, A., Cohen, J. and Nagin, D., eds., Washington, D.C.: 
+  National Academy of Sciences, 270-335. 
+  Methods: A Primer, New York: Chapman & Hall, 11. 
+  Also found in: Hand, D.J., et al. (1994) 
+  A Handbook of Small Data Sets, London: Chapman & Hall, 101-103. 
+task: regression
+target:
+  type: continuous
+  description: The number of families per 1000 earning below 1/2 the median income
+features: # list of features in the dataset
+  - name: R
+    type: continuous
+    description: Crime rate, number of offenses reported to police per million population
+  - name: Age
+    type: continuous
+    description: The number of males of age 14-24 per 1000 population
+  - name: S
+    type: continuous
+    description: Indicator variable for Southern states (0 = No, 1 = Yes)
+    code: No = 0, Yes = 1
+  - name: Ed
+    type: continuous
+    description: Mean number of years of schooling x 10 for persons of age 25 or older 
+  - name: Ex0
+    type: continuous
+    description: 1960 per capita expenditure on police by state and local government
+  - name: Ex1
+    type: continuous
+    description: 1959 per capita expenditure on police by state and local government
+  - name: LF
+    type: continuous
+    description: Labor force participation rate per 1000 civilian urban males age 14-24
+  - name: M
+    type: continuous
+    description: The number of males per 1000 females
+  - name: "N"
+    type: continuous
+    description: State population size in hundred thousands
+  - name: NW
+    type: continuous
+    description: The number of non-whites per 1000 population
+  - name: U1
+    type: continuous
+    description: Unemployment rate of urban males per 1000 of age 14-24
+  - name: U2
+    type: continuous
+    description: Unemployment rate of urban males per 1000 of age 35-39
+  - name: W
+    type: continuous
+    description: Median value of transferable goods and assets or family income in tens of dollars

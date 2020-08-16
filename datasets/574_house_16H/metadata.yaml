@@ -1,0 +1,46 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: 574_house_16H
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+target:
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: P1
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: P5p1
+    type: continuous
+  - name: P6p2
+    type: continuous
+  - name: P11p4
+    type: continuous
+  - name: P14p9
+    type: continuous
+  - name: P15p1
+    type: continuous
+  - name: P15p3
+    type: continuous
+  - name: P16p2
+    type: continuous
+  - name: P18p2
+    type: continuous
+  - name: P27p4
+    type: continuous
+  - name: H2p2
+    type: continuous
+  - name: H8p2
+    type: continuous
+  - name: H10p1
+    type: continuous
+  - name: H13p1
+    type: continuous
+  - name: H18pA
+    type: continuous
+  - name: H40p4
+    type: continuous

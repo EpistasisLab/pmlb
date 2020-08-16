@@ -1,0 +1,1582 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: mnist
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: 1
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: 2
+    type: categorical
+  - name: 3
+    type: categorical
+  - name: 4
+    type: categorical
+  - name: 5
+    type: categorical
+  - name: 6
+    type: categorical
+  - name: 7
+    type: categorical
+  - name: 8
+    type: categorical
+  - name: 9
+    type: categorical
+  - name: 10
+    type: categorical
+  - name: 11
+    type: categorical
+  - name: 12
+    type: categorical
+  - name: 13
+    type: categorical
+  - name: 14
+    type: categorical
+  - name: 15
+    type: categorical
+  - name: 16
+    type: categorical
+  - name: 17
+    type: categorical
+  - name: 18
+    type: categorical
+  - name: 19
+    type: categorical
+  - name: 20
+    type: categorical
+  - name: 21
+    type: categorical
+  - name: 22
+    type: categorical
+  - name: 23
+    type: categorical
+  - name: 24
+    type: categorical
+  - name: 25
+    type: categorical
+  - name: 26
+    type: categorical
+  - name: 27
+    type: categorical
+  - name: 28
+    type: categorical
+  - name: 29
+    type: categorical
+  - name: 30
+    type: categorical
+  - name: 31
+    type: categorical
+  - name: 32
+    type: categorical
+  - name: 33
+    type: categorical
+  - name: 34
+    type: categorical
+  - name: 35
+    type: categorical
+  - name: 36
+    type: categorical
+  - name: 37
+    type: categorical
+  - name: 38
+    type: categorical
+  - name: 39
+    type: categorical
+  - name: 40
+    type: categorical
+  - name: 41
+    type: categorical
+  - name: 42
+    type: categorical
+  - name: 43
+    type: categorical
+  - name: 44
+    type: categorical
+  - name: 45
+    type: categorical
+  - name: 46
+    type: categorical
+  - name: 47
+    type: categorical
+  - name: 48
+    type: categorical
+  - name: 49
+    type: categorical
+  - name: 50
+    type: categorical
+  - name: 51
+    type: categorical
+  - name: 52
+    type: categorical
+  - name: 53
+    type: categorical
+  - name: 54
+    type: categorical
+  - name: 55
+    type: categorical
+  - name: 56
+    type: categorical
+  - name: 57
+    type: categorical
+  - name: 58
+    type: categorical
+  - name: 59
+    type: categorical
+  - name: 60
+    type: categorical
+  - name: 61
+    type: categorical
+  - name: 62
+    type: categorical
+  - name: 63
+    type: categorical
+  - name: 64
+    type: categorical
+  - name: 65
+    type: categorical
+  - name: 66
+    type: categorical
+  - name: 67
+    type: categorical
+  - name: 68
+    type: categorical
+  - name: 69
+    type: categorical
+  - name: 70
+    type: categorical
+  - name: 71
+    type: categorical
+  - name: 72
+    type: categorical
+  - name: 73
+    type: categorical
+  - name: 74
+    type: categorical
+  - name: 75
+    type: categorical
+  - name: 76
+    type: categorical
+  - name: 77
+    type: categorical
+  - name: 78
+    type: categorical
+  - name: 79
+    type: categorical
+  - name: 80
+    type: categorical
+  - name: 81
+    type: categorical
+  - name: 82
+    type: categorical
+  - name: 83
+    type: categorical
+  - name: 84
+    type: categorical
+  - name: 85
+    type: categorical
+  - name: 86
+    type: categorical
+  - name: 87
+    type: categorical
+  - name: 88
+    type: categorical
+  - name: 89
+    type: categorical
+  - name: 90
+    type: categorical
+  - name: 91
+    type: categorical
+  - name: 92
+    type: categorical
+  - name: 93
+    type: categorical
+  - name: 94
+    type: categorical
+  - name: 95
+    type: categorical
+  - name: 96
+    type: categorical
+  - name: 97
+    type: categorical
+  - name: 98
+    type: categorical
+  - name: 99
+    type: categorical
+  - name: 100
+    type: categorical
+  - name: 101
+    type: categorical
+  - name: 102
+    type: categorical
+  - name: 103
+    type: categorical
+  - name: 104
+    type: categorical
+  - name: 105
+    type: categorical
+  - name: 106
+    type: categorical
+  - name: 107
+    type: categorical
+  - name: 108
+    type: categorical
+  - name: 109
+    type: categorical
+  - name: 110
+    type: categorical
+  - name: 111
+    type: categorical
+  - name: 112
+    type: categorical
+  - name: 113
+    type: categorical
+  - name: 114
+    type: categorical
+  - name: 115
+    type: categorical
+  - name: 116
+    type: categorical
+  - name: 117
+    type: categorical
+  - name: 118
+    type: categorical
+  - name: 119
+    type: categorical
+  - name: 120
+    type: categorical
+  - name: 121
+    type: categorical
+  - name: 122
+    type: categorical
+  - name: 123
+    type: categorical
+  - name: 124
+    type: categorical
+  - name: 125
+    type: categorical
+  - name: 126
+    type: categorical
+  - name: 127
+    type: categorical
+  - name: 128
+    type: categorical
+  - name: 129
+    type: categorical
+  - name: 130
+    type: categorical
+  - name: 131
+    type: categorical
+  - name: 132
+    type: categorical
+  - name: 133
+    type: categorical
+  - name: 134
+    type: categorical
+  - name: 135
+    type: categorical
+  - name: 136
+    type: categorical
+  - name: 137
+    type: categorical
+  - name: 138
+    type: categorical
+  - name: 139
+    type: categorical
+  - name: 140
+    type: categorical
+  - name: 141
+    type: categorical
+  - name: 142
+    type: categorical
+  - name: 143
+    type: categorical
+  - name: 144
+    type: categorical
+  - name: 145
+    type: categorical
+  - name: 146
+    type: categorical
+  - name: 147
+    type: categorical
+  - name: 148
+    type: categorical
+  - name: 149
+    type: categorical
+  - name: 150
+    type: categorical
+  - name: 151
+    type: categorical
+  - name: 152
+    type: categorical
+  - name: 153
+    type: categorical
+  - name: 154
+    type: categorical
+  - name: 155
+    type: categorical
+  - name: 156
+    type: categorical
+  - name: 157
+    type: categorical
+  - name: 158
+    type: categorical
+  - name: 159
+    type: categorical
+  - name: 160
+    type: categorical
+  - name: 161
+    type: categorical
+  - name: 162
+    type: categorical
+  - name: 163
+    type: categorical
+  - name: 164
+    type: categorical
+  - name: 165
+    type: categorical
+  - name: 166
+    type: categorical
+  - name: 167
+    type: categorical
+  - name: 168
+    type: categorical
+  - name: 169
+    type: categorical
+  - name: 170
+    type: categorical
+  - name: 171
+    type: categorical
+  - name: 172
+    type: categorical
+  - name: 173
+    type: categorical
+  - name: 174
+    type: categorical
+  - name: 175
+    type: categorical
+  - name: 176
+    type: categorical
+  - name: 177
+    type: categorical
+  - name: 178
+    type: categorical
+  - name: 179
+    type: categorical
+  - name: 180
+    type: categorical
+  - name: 181
+    type: categorical
+  - name: 182
+    type: categorical
+  - name: 183
+    type: categorical
+  - name: 184
+    type: categorical
+  - name: 185
+    type: categorical
+  - name: 186
+    type: categorical
+  - name: 187
+    type: categorical
+  - name: 188
+    type: categorical
+  - name: 189
+    type: categorical
+  - name: 190
+    type: categorical
+  - name: 191
+    type: categorical
+  - name: 192
+    type: categorical
+  - name: 193
+    type: categorical
+  - name: 194
+    type: categorical
+  - name: 195
+    type: categorical
+  - name: 196
+    type: categorical
+  - name: 197
+    type: categorical
+  - name: 198
+    type: categorical
+  - name: 199
+    type: categorical
+  - name: 200
+    type: categorical
+  - name: 201
+    type: categorical
+  - name: 202
+    type: categorical
+  - name: 203
+    type: categorical
+  - name: 204
+    type: categorical
+  - name: 205
+    type: categorical
+  - name: 206
+    type: categorical
+  - name: 207
+    type: categorical
+  - name: 208
+    type: categorical
+  - name: 209
+    type: categorical
+  - name: 210
+    type: categorical
+  - name: 211
+    type: categorical
+  - name: 212
+    type: categorical
+  - name: 213
+    type: categorical
+  - name: 214
+    type: categorical
+  - name: 215
+    type: categorical
+  - name: 216
+    type: categorical
+  - name: 217
+    type: categorical
+  - name: 218
+    type: categorical
+  - name: 219
+    type: categorical
+  - name: 220
+    type: categorical
+  - name: 221
+    type: categorical
+  - name: 222
+    type: categorical
+  - name: 223
+    type: categorical
+  - name: 224
+    type: categorical
+  - name: 225
+    type: categorical
+  - name: 226
+    type: categorical
+  - name: 227
+    type: categorical
+  - name: 228
+    type: categorical
+  - name: 229
+    type: categorical
+  - name: 230
+    type: categorical
+  - name: 231
+    type: categorical
+  - name: 232
+    type: categorical
+  - name: 233
+    type: categorical
+  - name: 234
+    type: categorical
+  - name: 235
+    type: categorical
+  - name: 236
+    type: categorical
+  - name: 237
+    type: categorical
+  - name: 238
+    type: categorical
+  - name: 239
+    type: categorical
+  - name: 240
+    type: categorical
+  - name: 241
+    type: categorical
+  - name: 242
+    type: categorical
+  - name: 243
+    type: categorical
+  - name: 244
+    type: categorical
+  - name: 245
+    type: categorical
+  - name: 246
+    type: categorical
+  - name: 247
+    type: categorical
+  - name: 248
+    type: categorical
+  - name: 249
+    type: categorical
+  - name: 250
+    type: categorical
+  - name: 251
+    type: categorical
+  - name: 252
+    type: categorical
+  - name: 253
+    type: categorical
+  - name: 254
+    type: categorical
+  - name: 255
+    type: categorical
+  - name: 256
+    type: categorical
+  - name: 257
+    type: categorical
+  - name: 258
+    type: categorical
+  - name: 259
+    type: categorical
+  - name: 260
+    type: categorical
+  - name: 261
+    type: categorical
+  - name: 262
+    type: categorical
+  - name: 263
+    type: categorical
+  - name: 264
+    type: categorical
+  - name: 265
+    type: categorical
+  - name: 266
+    type: categorical
+  - name: 267
+    type: categorical
+  - name: 268
+    type: categorical
+  - name: 269
+    type: categorical
+  - name: 270
+    type: categorical
+  - name: 271
+    type: categorical
+  - name: 272
+    type: categorical
+  - name: 273
+    type: categorical
+  - name: 274
+    type: categorical
+  - name: 275
+    type: categorical
+  - name: 276
+    type: categorical
+  - name: 277
+    type: categorical
+  - name: 278
+    type: categorical
+  - name: 279
+    type: categorical
+  - name: 280
+    type: categorical
+  - name: 281
+    type: categorical
+  - name: 282
+    type: categorical
+  - name: 283
+    type: categorical
+  - name: 284
+    type: categorical
+  - name: 285
+    type: categorical
+  - name: 286
+    type: categorical
+  - name: 287
+    type: categorical
+  - name: 288
+    type: categorical
+  - name: 289
+    type: categorical
+  - name: 290
+    type: categorical
+  - name: 291
+    type: categorical
+  - name: 292
+    type: categorical
+  - name: 293
+    type: categorical
+  - name: 294
+    type: categorical
+  - name: 295
+    type: categorical
+  - name: 296
+    type: categorical
+  - name: 297
+    type: categorical
+  - name: 298
+    type: categorical
+  - name: 299
+    type: categorical
+  - name: 300
+    type: categorical
+  - name: 301
+    type: categorical
+  - name: 302
+    type: categorical
+  - name: 303
+    type: categorical
+  - name: 304
+    type: categorical
+  - name: 305
+    type: categorical
+  - name: 306
+    type: categorical
+  - name: 307
+    type: categorical
+  - name: 308
+    type: categorical
+  - name: 309
+    type: categorical
+  - name: 310
+    type: categorical
+  - name: 311
+    type: categorical
+  - name: 312
+    type: categorical
+  - name: 313
+    type: categorical
+  - name: 314
+    type: categorical
+  - name: 315
+    type: categorical
+  - name: 316
+    type: categorical
+  - name: 317
+    type: categorical
+  - name: 318
+    type: categorical
+  - name: 319
+    type: categorical
+  - name: 320
+    type: categorical
+  - name: 321
+    type: categorical
+  - name: 322
+    type: categorical
+  - name: 323
+    type: categorical
+  - name: 324
+    type: categorical
+  - name: 325
+    type: categorical
+  - name: 326
+    type: categorical
+  - name: 327
+    type: categorical
+  - name: 328
+    type: categorical
+  - name: 329
+    type: categorical
+  - name: 330
+    type: categorical
+  - name: 331
+    type: categorical
+  - name: 332
+    type: categorical
+  - name: 333
+    type: categorical
+  - name: 334
+    type: categorical
+  - name: 335
+    type: categorical
+  - name: 336
+    type: categorical
+  - name: 337
+    type: categorical
+  - name: 338
+    type: categorical
+  - name: 339
+    type: categorical
+  - name: 340
+    type: categorical
+  - name: 341
+    type: categorical
+  - name: 342
+    type: categorical
+  - name: 343
+    type: categorical
+  - name: 344
+    type: categorical
+  - name: 345
+    type: categorical
+  - name: 346
+    type: categorical
+  - name: 347
+    type: categorical
+  - name: 348
+    type: categorical
+  - name: 349
+    type: categorical
+  - name: 350
+    type: categorical
+  - name: 351
+    type: categorical
+  - name: 352
+    type: categorical
+  - name: 353
+    type: categorical
+  - name: 354
+    type: categorical
+  - name: 355
+    type: categorical
+  - name: 356
+    type: categorical
+  - name: 357
+    type: categorical
+  - name: 358
+    type: categorical
+  - name: 359
+    type: categorical
+  - name: 360
+    type: categorical
+  - name: 361
+    type: categorical
+  - name: 362
+    type: categorical
+  - name: 363
+    type: categorical
+  - name: 364
+    type: categorical
+  - name: 365
+    type: categorical
+  - name: 366
+    type: categorical
+  - name: 367
+    type: categorical
+  - name: 368
+    type: categorical
+  - name: 369
+    type: categorical
+  - name: 370
+    type: categorical
+  - name: 371
+    type: categorical
+  - name: 372
+    type: categorical
+  - name: 373
+    type: categorical
+  - name: 374
+    type: categorical
+  - name: 375
+    type: categorical
+  - name: 376
+    type: categorical
+  - name: 377
+    type: categorical
+  - name: 378
+    type: categorical
+  - name: 379
+    type: categorical
+  - name: 380
+    type: categorical
+  - name: 381
+    type: categorical
+  - name: 382
+    type: categorical
+  - name: 383
+    type: categorical
+  - name: 384
+    type: categorical
+  - name: 385
+    type: categorical
+  - name: 386
+    type: categorical
+  - name: 387
+    type: categorical
+  - name: 388
+    type: categorical
+  - name: 389
+    type: categorical
+  - name: 390
+    type: categorical
+  - name: 391
+    type: categorical
+  - name: 392
+    type: categorical
+  - name: 393
+    type: categorical
+  - name: 394
+    type: categorical
+  - name: 395
+    type: categorical
+  - name: 396
+    type: categorical
+  - name: 397
+    type: categorical
+  - name: 398
+    type: categorical
+  - name: 399
+    type: categorical
+  - name: 400
+    type: categorical
+  - name: 401
+    type: categorical
+  - name: 402
+    type: categorical
+  - name: 403
+    type: categorical
+  - name: 404
+    type: categorical
+  - name: 405
+    type: categorical
+  - name: 406
+    type: categorical
+  - name: 407
+    type: categorical
+  - name: 408
+    type: categorical
+  - name: 409
+    type: categorical
+  - name: 410
+    type: categorical
+  - name: 411
+    type: categorical
+  - name: 412
+    type: categorical
+  - name: 413
+    type: categorical
+  - name: 414
+    type: categorical
+  - name: 415
+    type: categorical
+  - name: 416
+    type: categorical
+  - name: 417
+    type: categorical
+  - name: 418
+    type: categorical
+  - name: 419
+    type: categorical
+  - name: 420
+    type: categorical
+  - name: 421
+    type: categorical
+  - name: 422
+    type: categorical
+  - name: 423
+    type: categorical
+  - name: 424
+    type: categorical
+  - name: 425
+    type: categorical
+  - name: 426
+    type: categorical
+  - name: 427
+    type: categorical
+  - name: 428
+    type: categorical
+  - name: 429
+    type: categorical
+  - name: 430
+    type: categorical
+  - name: 431
+    type: categorical
+  - name: 432
+    type: categorical
+  - name: 433
+    type: categorical
+  - name: 434
+    type: categorical
+  - name: 435
+    type: categorical
+  - name: 436
+    type: categorical
+  - name: 437
+    type: categorical
+  - name: 438
+    type: categorical
+  - name: 439
+    type: categorical
+  - name: 440
+    type: categorical
+  - name: 441
+    type: categorical
+  - name: 442
+    type: categorical
+  - name: 443
+    type: categorical
+  - name: 444
+    type: categorical
+  - name: 445
+    type: categorical
+  - name: 446
+    type: categorical
+  - name: 447
+    type: categorical
+  - name: 448
+    type: categorical
+  - name: 449
+    type: categorical
+  - name: 450
+    type: categorical
+  - name: 451
+    type: categorical
+  - name: 452
+    type: categorical
+  - name: 453
+    type: categorical
+  - name: 454
+    type: categorical
+  - name: 455
+    type: categorical
+  - name: 456
+    type: categorical
+  - name: 457
+    type: categorical
+  - name: 458
+    type: categorical
+  - name: 459
+    type: categorical
+  - name: 460
+    type: categorical
+  - name: 461
+    type: categorical
+  - name: 462
+    type: categorical
+  - name: 463
+    type: categorical
+  - name: 464
+    type: categorical
+  - name: 465
+    type: categorical
+  - name: 466
+    type: categorical
+  - name: 467
+    type: categorical
+  - name: 468
+    type: categorical
+  - name: 469
+    type: categorical
+  - name: 470
+    type: categorical
+  - name: 471
+    type: categorical
+  - name: 472
+    type: categorical
+  - name: 473
+    type: categorical
+  - name: 474
+    type: categorical
+  - name: 475
+    type: categorical
+  - name: 476
+    type: categorical
+  - name: 477
+    type: categorical
+  - name: 478
+    type: categorical
+  - name: 479
+    type: categorical
+  - name: 480
+    type: categorical
+  - name: 481
+    type: categorical
+  - name: 482
+    type: categorical
+  - name: 483
+    type: categorical
+  - name: 484
+    type: categorical
+  - name: 485
+    type: categorical
+  - name: 486
+    type: categorical
+  - name: 487
+    type: categorical
+  - name: 488
+    type: categorical
+  - name: 489
+    type: categorical
+  - name: 490
+    type: categorical
+  - name: 491
+    type: categorical
+  - name: 492
+    type: categorical
+  - name: 493
+    type: categorical
+  - name: 494
+    type: categorical
+  - name: 495
+    type: categorical
+  - name: 496
+    type: categorical
+  - name: 497
+    type: categorical
+  - name: 498
+    type: categorical
+  - name: 499
+    type: categorical
+  - name: 500
+    type: categorical
+  - name: 501
+    type: categorical
+  - name: 502
+    type: categorical
+  - name: 503
+    type: categorical
+  - name: 504
+    type: categorical
+  - name: 505
+    type: categorical
+  - name: 506
+    type: categorical
+  - name: 507
+    type: categorical
+  - name: 508
+    type: categorical
+  - name: 509
+    type: categorical
+  - name: 510
+    type: categorical
+  - name: 511
+    type: categorical
+  - name: 512
+    type: categorical
+  - name: 513
+    type: categorical
+  - name: 514
+    type: categorical
+  - name: 515
+    type: categorical
+  - name: 516
+    type: categorical
+  - name: 517
+    type: categorical
+  - name: 518
+    type: categorical
+  - name: 519
+    type: categorical
+  - name: 520
+    type: categorical
+  - name: 521
+    type: categorical
+  - name: 522
+    type: categorical
+  - name: 523
+    type: categorical
+  - name: 524
+    type: categorical
+  - name: 525
+    type: categorical
+  - name: 526
+    type: categorical
+  - name: 527
+    type: categorical
+  - name: 528
+    type: categorical
+  - name: 529
+    type: categorical
+  - name: 530
+    type: categorical
+  - name: 531
+    type: categorical
+  - name: 532
+    type: categorical
+  - name: 533
+    type: categorical
+  - name: 534
+    type: categorical
+  - name: 535
+    type: categorical
+  - name: 536
+    type: categorical
+  - name: 537
+    type: categorical
+  - name: 538
+    type: categorical
+  - name: 539
+    type: categorical
+  - name: 540
+    type: categorical
+  - name: 541
+    type: categorical
+  - name: 542
+    type: categorical
+  - name: 543
+    type: categorical
+  - name: 544
+    type: categorical
+  - name: 545
+    type: categorical
+  - name: 546
+    type: categorical
+  - name: 547
+    type: categorical
+  - name: 548
+    type: categorical
+  - name: 549
+    type: categorical
+  - name: 550
+    type: categorical
+  - name: 551
+    type: categorical
+  - name: 552
+    type: categorical
+  - name: 553
+    type: categorical
+  - name: 554
+    type: categorical
+  - name: 555
+    type: categorical
+  - name: 556
+    type: categorical
+  - name: 557
+    type: categorical
+  - name: 558
+    type: categorical
+  - name: 559
+    type: categorical
+  - name: 560
+    type: categorical
+  - name: 561
+    type: categorical
+  - name: 562
+    type: categorical
+  - name: 563
+    type: categorical
+  - name: 564
+    type: categorical
+  - name: 565
+    type: categorical
+  - name: 566
+    type: categorical
+  - name: 567
+    type: categorical
+  - name: 568
+    type: categorical
+  - name: 569
+    type: categorical
+  - name: 570
+    type: categorical
+  - name: 571
+    type: categorical
+  - name: 572
+    type: categorical
+  - name: 573
+    type: categorical
+  - name: 574
+    type: categorical
+  - name: 575
+    type: categorical
+  - name: 576
+    type: categorical
+  - name: 577
+    type: categorical
+  - name: 578
+    type: categorical
+  - name: 579
+    type: categorical
+  - name: 580
+    type: categorical
+  - name: 581
+    type: categorical
+  - name: 582
+    type: categorical
+  - name: 583
+    type: categorical
+  - name: 584
+    type: categorical
+  - name: 585
+    type: categorical
+  - name: 586
+    type: categorical
+  - name: 587
+    type: categorical
+  - name: 588
+    type: categorical
+  - name: 589
+    type: categorical
+  - name: 590
+    type: categorical
+  - name: 591
+    type: categorical
+  - name: 592
+    type: categorical
+  - name: 593
+    type: categorical
+  - name: 594
+    type: categorical
+  - name: 595
+    type: categorical
+  - name: 596
+    type: categorical
+  - name: 597
+    type: categorical
+  - name: 598
+    type: categorical
+  - name: 599
+    type: categorical
+  - name: 600
+    type: categorical
+  - name: 601
+    type: categorical
+  - name: 602
+    type: categorical
+  - name: 603
+    type: categorical
+  - name: 604
+    type: categorical
+  - name: 605
+    type: categorical
+  - name: 606
+    type: categorical
+  - name: 607
+    type: categorical
+  - name: 608
+    type: categorical
+  - name: 609
+    type: categorical
+  - name: 610
+    type: categorical
+  - name: 611
+    type: categorical
+  - name: 612
+    type: categorical
+  - name: 613
+    type: categorical
+  - name: 614
+    type: categorical
+  - name: 615
+    type: categorical
+  - name: 616
+    type: categorical
+  - name: 617
+    type: categorical
+  - name: 618
+    type: categorical
+  - name: 619
+    type: categorical
+  - name: 620
+    type: categorical
+  - name: 621
+    type: categorical
+  - name: 622
+    type: categorical
+  - name: 623
+    type: categorical
+  - name: 624
+    type: categorical
+  - name: 625
+    type: categorical
+  - name: 626
+    type: categorical
+  - name: 627
+    type: categorical
+  - name: 628
+    type: categorical
+  - name: 629
+    type: categorical
+  - name: 630
+    type: categorical
+  - name: 631
+    type: categorical
+  - name: 632
+    type: categorical
+  - name: 633
+    type: categorical
+  - name: 634
+    type: categorical
+  - name: 635
+    type: categorical
+  - name: 636
+    type: categorical
+  - name: 637
+    type: categorical
+  - name: 638
+    type: categorical
+  - name: 639
+    type: categorical
+  - name: 640
+    type: categorical
+  - name: 641
+    type: categorical
+  - name: 642
+    type: categorical
+  - name: 643
+    type: categorical
+  - name: 644
+    type: categorical
+  - name: 645
+    type: categorical
+  - name: 646
+    type: categorical
+  - name: 647
+    type: categorical
+  - name: 648
+    type: categorical
+  - name: 649
+    type: categorical
+  - name: 650
+    type: categorical
+  - name: 651
+    type: categorical
+  - name: 652
+    type: categorical
+  - name: 653
+    type: categorical
+  - name: 654
+    type: categorical
+  - name: 655
+    type: categorical
+  - name: 656
+    type: categorical
+  - name: 657
+    type: categorical
+  - name: 658
+    type: categorical
+  - name: 659
+    type: categorical
+  - name: 660
+    type: categorical
+  - name: 661
+    type: categorical
+  - name: 662
+    type: categorical
+  - name: 663
+    type: categorical
+  - name: 664
+    type: categorical
+  - name: 665
+    type: categorical
+  - name: 666
+    type: categorical
+  - name: 667
+    type: categorical
+  - name: 668
+    type: categorical
+  - name: 669
+    type: categorical
+  - name: 670
+    type: categorical
+  - name: 671
+    type: categorical
+  - name: 672
+    type: categorical
+  - name: 673
+    type: categorical
+  - name: 674
+    type: categorical
+  - name: 675
+    type: categorical
+  - name: 676
+    type: categorical
+  - name: 677
+    type: categorical
+  - name: 678
+    type: categorical
+  - name: 679
+    type: categorical
+  - name: 680
+    type: categorical
+  - name: 681
+    type: categorical
+  - name: 682
+    type: categorical
+  - name: 683
+    type: categorical
+  - name: 684
+    type: categorical
+  - name: 685
+    type: categorical
+  - name: 686
+    type: categorical
+  - name: 687
+    type: categorical
+  - name: 688
+    type: categorical
+  - name: 689
+    type: categorical
+  - name: 690
+    type: categorical
+  - name: 691
+    type: categorical
+  - name: 692
+    type: categorical
+  - name: 693
+    type: categorical
+  - name: 694
+    type: categorical
+  - name: 695
+    type: categorical
+  - name: 696
+    type: categorical
+  - name: 697
+    type: categorical
+  - name: 698
+    type: categorical
+  - name: 699
+    type: categorical
+  - name: 700
+    type: categorical
+  - name: 701
+    type: categorical
+  - name: 702
+    type: categorical
+  - name: 703
+    type: categorical
+  - name: 704
+    type: categorical
+  - name: 705
+    type: categorical
+  - name: 706
+    type: categorical
+  - name: 707
+    type: categorical
+  - name: 708
+    type: categorical
+  - name: 709
+    type: categorical
+  - name: 710
+    type: categorical
+  - name: 711
+    type: categorical
+  - name: 712
+    type: categorical
+  - name: 713
+    type: categorical
+  - name: 714
+    type: categorical
+  - name: 715
+    type: categorical
+  - name: 716
+    type: categorical
+  - name: 717
+    type: categorical
+  - name: 718
+    type: categorical
+  - name: 719
+    type: categorical
+  - name: 720
+    type: categorical
+  - name: 721
+    type: categorical
+  - name: 722
+    type: categorical
+  - name: 723
+    type: categorical
+  - name: 724
+    type: categorical
+  - name: 725
+    type: categorical
+  - name: 726
+    type: categorical
+  - name: 727
+    type: categorical
+  - name: 728
+    type: categorical
+  - name: 729
+    type: categorical
+  - name: 730
+    type: categorical
+  - name: 731
+    type: categorical
+  - name: 732
+    type: categorical
+  - name: 733
+    type: categorical
+  - name: 734
+    type: categorical
+  - name: 735
+    type: categorical
+  - name: 736
+    type: categorical
+  - name: 737
+    type: categorical
+  - name: 738
+    type: categorical
+  - name: 739
+    type: categorical
+  - name: 740
+    type: categorical
+  - name: 741
+    type: categorical
+  - name: 742
+    type: categorical
+  - name: 743
+    type: categorical
+  - name: 744
+    type: categorical
+  - name: 745
+    type: categorical
+  - name: 746
+    type: categorical
+  - name: 747
+    type: categorical
+  - name: 748
+    type: categorical
+  - name: 749
+    type: categorical
+  - name: 750
+    type: categorical
+  - name: 751
+    type: categorical
+  - name: 752
+    type: categorical
+  - name: 753
+    type: categorical
+  - name: 754
+    type: categorical
+  - name: 755
+    type: categorical
+  - name: 756
+    type: categorical
+  - name: 757
+    type: categorical
+  - name: 758
+    type: categorical
+  - name: 759
+    type: categorical
+  - name: 760
+    type: categorical
+  - name: 761
+    type: categorical
+  - name: 762
+    type: categorical
+  - name: 763
+    type: categorical
+  - name: 764
+    type: categorical
+  - name: 765
+    type: categorical
+  - name: 766
+    type: categorical
+  - name: 767
+    type: categorical
+  - name: 768
+    type: categorical
+  - name: 769
+    type: categorical
+  - name: 770
+    type: categorical
+  - name: 771
+    type: categorical
+  - name: 772
+    type: categorical
+  - name: 773
+    type: categorical
+  - name: 774
+    type: categorical
+  - name: 775
+    type: categorical
+  - name: 776
+    type: categorical
+  - name: 777
+    type: categorical
+  - name: 778
+    type: categorical
+  - name: 779
+    type: categorical
+  - name: 780
+    type: categorical
+  - name: 781
+    type: categorical
+  - name: 782
+    type: categorical
+  - name: 783
+    type: categorical
+  - name: 784
+    type: categorical

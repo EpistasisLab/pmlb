@@ -1,0 +1,78 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: backache
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: id
+    type: continuous
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: col_2
+    type: categorical
+  - name: col_3
+    type: categorical
+  - name: col_4
+    type: continuous
+  - name: col_5
+    type: continuous
+  - name: col_6
+    type: continuous
+  - name: col_7
+    type: continuous
+  - name: col_8
+    type: continuous
+  - name: col_9
+    type: categorical
+  - name: col_10
+    type: categorical
+  - name: col_11
+    type: categorical
+  - name: col_12
+    type: categorical
+  - name: col_13
+    type: categorical
+  - name: col_14
+    type: categorical
+  - name: col_15
+    type: categorical
+  - name: col_16
+    type: categorical
+  - name: col_17
+    type: categorical
+  - name: col_18
+    type: categorical
+  - name: col_19
+    type: categorical
+  - name: col_20
+    type: categorical
+  - name: col_21
+    type: categorical
+  - name: col_22
+    type: categorical
+  - name: col_23
+    type: categorical
+  - name: col_24
+    type: categorical
+  - name: col_25
+    type: categorical
+  - name: col_26
+    type: categorical
+  - name: col_27
+    type: categorical
+  - name: col_28
+    type: categorical
+  - name: col_29
+    type: categorical
+  - name: col_30
+    type: categorical
+  - name: col_31
+    type: categorical
+  - name: col_32
+    type: categorical

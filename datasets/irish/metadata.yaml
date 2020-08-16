@@ -1,0 +1,45 @@
+#Reviewed by Daniel Goldberg
+dataset: irish
+description: Educational transitions of Irish schoolchildren, aged 11 in 1967.
+source: https://www.openml.org/d/451
+publication: Monitoring the Learning Outcomes of Education Systems by Vincent Greaney and Thomas Kelleghan
+task: classification
+target:
+  type: binary
+  description: Leaving certificate taken
+  code: >
+    'not_taken'=1,
+    'taken'=2
+features: # list of features in the dataset
+  - name: Sex
+    type: binary
+    description: Sex of child # optional but recommended, what the feature measures/indicates, unit
+    code: >
+      'male'=1,
+      'female'=0
+  - name: DVRT
+    type: continuous
+    description: Drumcondra Verbal Reasoning Test score
+  - name: Educational_level
+    type: nominal
+    description: attained education level
+    code: >
+      '3rd_level_complete'=0, '3rd_level_incomplete'=1, '?'=2, 'Junior_cycle_incomplete-secondary_school'=3, 
+      'Junior_cycle_incomplete-vocational_school'=4, 'Junior_cycle_terminal_leaver-secondary_school'=5,
+      'Junior_cycle_terminal_leaver-vocational_school'=6, 'Primary_terminal_leaver'=7,
+      'Senior_cycle_incomplete-secondary_school'=8, 'Senior_cycle_incomplete-vocational_school'=9,
+      'Senior_cycle_terminal_leaver-secondary_school'=10
+  - name: Prestige_score
+    type: ordinal
+    description: Prestige score for father's occupation as calculated by Raftery and Hout, 1985
+    code: >
+      '18'=0, '27'=1, '28'=2, '30'=3, '31'=4, '33'=5, '35'=6, '36'=7, '37'=8, '38'=9, '40'=10, '42'=11, '43'=12, 
+      '46'=13, '47'=14, '48'=15, '51'=16, '53'=17, '57'=18, '58'=19, '61'=20, '62'=21, '64'=22, '65'=23, '66'=24,
+      '69'=25, '71'=26, '75'=27, '?'=28
+  - name: Type_school
+    type: nominal
+    description: Type of schooling
+    code: >
+      'secondary'=1,
+      'vocational'=2,
+      'primary_terminal_leaver'=0

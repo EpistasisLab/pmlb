@@ -1,0 +1,86 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: kr_vs_kp
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: c1
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: c2
+    type: categorical
+  - name: c3
+    type: categorical
+  - name: c4
+    type: categorical
+  - name: c5
+    type: categorical
+  - name: c6
+    type: categorical
+  - name: c7
+    type: categorical
+  - name: c8
+    type: categorical
+  - name: c9
+    type: categorical
+  - name: c10
+    type: categorical
+  - name: c11
+    type: categorical
+  - name: c12
+    type: categorical
+  - name: c13
+    type: categorical
+  - name: c14
+    type: categorical
+  - name: c15
+    type: categorical
+  - name: c16
+    type: categorical
+  - name: c17
+    type: categorical
+  - name: c18
+    type: categorical
+  - name: c19
+    type: categorical
+  - name: c20
+    type: categorical
+  - name: c21
+    type: categorical
+  - name: c22
+    type: categorical
+  - name: c23
+    type: categorical
+  - name: c24
+    type: categorical
+  - name: c25
+    type: categorical
+  - name: c26
+    type: categorical
+  - name: c27
+    type: categorical
+  - name: c28
+    type: categorical
+  - name: c29
+    type: categorical
+  - name: c30
+    type: categorical
+  - name: c31
+    type: categorical
+  - name: c32
+    type: categorical
+  - name: c33
+    type: categorical
+  - name: c34
+    type: categorical
+  - name: c35
+    type: categorical
+  - name: c36
+    type: categorical

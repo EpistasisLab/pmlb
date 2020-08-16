@@ -1,0 +1,66 @@
+# Generated automatically by pmlb/write_metadata.py
+# Reviewed by Natasha Ray and Trang Le
+dataset: 542_pollution
+description: Air pollution and mortality rate
+source: https://www.openml.org/d/542
+publication: >
+  McDonald GC, Schwing RC.
+  Instabilities of regression estimates relating air pollution to mortality.
+  Technometrics. 1973 Aug 1;15(3):463-81.
+task: regression
+keywords:
+  - environment
+  - air pollution
+  - pollutants
+  - weather
+  - mortality
+target:
+  type: continuous
+  description: Total age-adjusted mortality rate per 100,000
+  code: None.
+features:
+  - name: PREC
+    type: continuous
+    description: Average annual precipitation in inches
+  - name: JANT
+    type: continuous
+    description: Average January temperature in degrees F
+  - name: JULT
+    type: continuous
+    description: Average July temperature in degrees F
+  - name: OVR65
+    type: continuous
+    description: Percentage of 1960 SMSA population aged 65 or older
+  - name: POPN
+    type: continuous
+    description: Average household size
+  - name: EDUC
+    type: continuous
+    description: Median school years completed by those over 22
+  - name: HOUS
+    type: continuous
+    description: Percentage of housing units which are sound & with all facilities
+  - name: DENS
+    type: continuous
+    description: Population per sq. mile in urbanized areas, 1960
+  - name: NONW
+    type: continuous
+    description: Percentage of non-white population in urbanized areas, 1960
+  - name: WWDRK
+    type: continuous
+    description: Percentage of employed in white collar occupations
+  - name: POOR
+    type: continuous
+    description: Percentage of families with income < $3000
+  - name: HC
+    type: continuous
+    description: Relative hydrocarbon pollution potential
+  - name: NOX
+    type: continuous
+    description: Relative nitric oxides pollution potential 
+  - name: SO2
+    type: continuous
+    description: Relative sulphur dioxide pollution potential
+  - name: HUMID
+    type: continuous
+    description: Annual average percentage relative humidity at 1pm

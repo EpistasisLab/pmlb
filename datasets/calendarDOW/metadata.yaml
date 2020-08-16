@@ -1,0 +1,78 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: calendarDOW
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: Feature00
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Feature01
+    type: categorical
+  - name: Feature02
+    type: categorical
+  - name: Feature03
+    type: categorical
+  - name: Feature04
+    type: categorical
+  - name: Feature05
+    type: categorical
+  - name: Feature06
+    type: categorical
+  - name: Feature07
+    type: categorical
+  - name: Feature08
+    type: categorical
+  - name: Feature09
+    type: categorical
+  - name: Feature10
+    type: categorical
+  - name: Feature11
+    type: categorical
+  - name: Feature12
+    type: categorical
+  - name: Feature13
+    type: categorical
+  - name: Feature14
+    type: categorical
+  - name: Feature15
+    type: categorical
+  - name: Feature16
+    type: categorical
+  - name: Feature17
+    type: categorical
+  - name: Feature18
+    type: categorical
+  - name: Feature19
+    type: categorical
+  - name: Feature20
+    type: categorical
+  - name: Feature21
+    type: categorical
+  - name: Feature22
+    type: categorical
+  - name: Feature23
+    type: categorical
+  - name: Feature24
+    type: categorical
+  - name: Feature25
+    type: categorical
+  - name: Feature26
+    type: categorical
+  - name: Feature27
+    type: categorical
+  - name: Feature28
+    type: categorical
+  - name: Feature29
+    type: categorical
+  - name: Feature30
+    type: categorical
+  - name: Feature31
+    type: categorical

@@ -1,0 +1,54 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: german
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: Status
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Duration
+    type: continuous
+  - name: Credit-history
+    type: categorical
+  - name: Purpose
+    type: categorical
+  - name: Credit
+    type: continuous
+  - name: Savings-account
+    type: categorical
+  - name: Employment
+    type: categorical
+  - name: Installment-rate
+    type: continuous
+  - name: Personal-status
+    type: categorical
+  - name: Debtors
+    type: categorical
+  - name: Residence-time
+    type: continuous
+  - name: Property
+    type: categorical
+  - name: Age
+    type: continuous
+  - name: Installments
+    type: categorical
+  - name: Housing
+    type: categorical
+  - name: Existing-credits
+    type: continuous
+  - name: Job
+    type: categorical
+  - name: Liable-people
+    type: continuous
+  - name: Telephone
+    type: categorical
+  - name: Foreign
+    type: categorical

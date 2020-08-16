@@ -1,0 +1,58 @@
+#Generated automatically by pmlb/write_metadata.py
+dataset: agaricus_lepiota
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+target:
+  type: binary
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features: # list of features in the dataset
+  - name: cap-shape
+    type: categorical
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+  - name: cap-surface
+    type: categorical
+  - name: cap-color
+    type: categorical
+  - name: bruises?
+    type: categorical
+  - name: odor
+    type: categorical
+  - name: gill-attachment
+    type: categorical
+  - name: gill-spacing
+    type: categorical
+  - name: gill-size
+    type: categorical
+  - name: gill-color
+    type: categorical
+  - name: stalk-shape
+    type: categorical
+  - name: stalk-root
+    type: categorical
+  - name: stalk-surface-above-ring
+    type: categorical
+  - name: stalk-surface-below-ring
+    type: categorical
+  - name: stalk-color-above-ring
+    type: categorical
+  - name: stalk-color-below-ring
+    type: categorical
+  - name: veil-type
+    type: categorical
+  - name: veil-color
+    type: categorical
+  - name: ring-number
+    type: categorical
+  - name: ring-type
+    type: categorical
+  - name: spore-print-color
+    type: categorical
+  - name: population
+    type: categorical
+  - name: habitat
+    type: categorical
