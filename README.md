@@ -140,4 +140,4 @@ BibTeX entry:
 
 ## Support for PMLB
 
-PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant R01 AI117694. We are incredibly grateful for the support of the NIH and the University of Pennsylvania during the development of this project.
+PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant AI117694, LM010098 and LM012601. We are incredibly grateful for the support of the NIH and the University of Pennsylvania during the development of this project.
