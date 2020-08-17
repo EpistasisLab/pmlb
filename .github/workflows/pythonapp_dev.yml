@@ -6,10 +6,10 @@ name: Python application
 on:
   push:
     branches:
-      - master
+      - development
   pull_request:
     branches:
-      - master
+      - development
 jobs:
   build:
 
@@ -30,10 +30,6 @@ jobs:
     - name: Test with nose
       run: |
         nosetests -s -v
-
-    - name: Generate profiling reports
-      run: |
-        python -m pmlb.profiling
 
     - uses: r-lib/actions/setup-r@v1
     - uses: r-lib/actions/setup-pandoc@v1
@@ -57,11 +53,3 @@ jobs:
     #   run: mkdocs build
 
     - run: ls -lhR docs/
-
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs
-        # keep existing files if no changes, unless commit message has regenerate_profiles
-        keep_files: ${{ env.regenerate_profiles == null }}
