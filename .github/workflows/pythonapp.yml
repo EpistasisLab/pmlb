@@ -7,11 +7,7 @@ on:
   push:
     branches:
       - master
-      - PMLB2.0
   pull_request:
-    branches:
-      - master
-      - PMLB2.0
 jobs:
   build:
 
@@ -55,12 +51,11 @@ jobs:
       run: |
         Rscript -e 'print(reticulate::py_discover_config())'
         Rscript -e 'rmarkdown::render_site(input = "docs_sources")'
-    # - name: Build
-    #   run: mkdocs build
 
     - run: ls -lhR docs/
 
     - name: Deploy
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push' && !github.event.repository.fork
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
