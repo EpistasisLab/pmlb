@@ -91,11 +91,6 @@ target:
   description: Positive class indicates a promoter.
   code: -:1, +:0 (promoter)
 features: # list of features in the dataset
-  - name: instance
-    type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: p-50
     type: categorical
   - name: p-49
