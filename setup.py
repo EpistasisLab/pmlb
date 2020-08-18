@@ -28,15 +28,19 @@ If you have any questions or comments about the Penn Machine Learning Benchmark,
 This project is hosted at https://github.com/EpistasisLab/penn-ml-benchmarks
 ''',
     zip_safe=True,
-    install_requires=['pandas'],
+    install_requires=['pandas>=1.0.5',
+                    'requests>=2.24.0',
+                    'pyyaml>=5.3.1'
+                    ],
     classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: Information Technology',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         'Topic :: Utilities'
     ],
     keywords=['data mining', 'benchmark', 'machine learning', 'data analysis', 'data sets', 'data science', 'wrapper'],

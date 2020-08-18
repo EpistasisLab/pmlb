@@ -83,6 +83,9 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
             dataset_url = get_dataset_url(GITHUB_URL, data_type,
                                             dataset_name, suffix)
             dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
+            dataset_dir = os.path.split(dataset_path)[0]
+            if not os.path.isdir(dataset_dir):
+                os.makedirs(dataset_dir)
             dataset.to_csv(dataset_path, sep='\t', compression='gzip',
                     index=False)
 
@@ -107,7 +110,6 @@ def get_dataset_url(GITHUB_URL, data_type, dataset_name, suffix):
     new_name = dataset_name.replace("-", "_")
     new_dataset_url = '{GITHUB_URL}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(
                                 GITHUB_URL=GITHUB_URL,
-                                DATA_TYPE=data_type,
                                 DATASET_NAME=new_name,
                                 SUFFIX=suffix
                                 )
@@ -138,7 +140,8 @@ def get_updated_datasets():
         if path.parts[0] != 'datasets':
             continue
         if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
-            changed_datasets.add(path.parts[1])
+            changed_datasets.add(path.parts[-2])
+    changed_datasets &= set(dataset_names)
     changed_datasets = sorted(changed_datasets)
     print(f'changed datasets: {changed_datasets}')
     return changed_datasets

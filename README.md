@@ -2,7 +2,16 @@
 
 This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms. These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features. There are no missing values in these data sets.
 
-Check the `datasets` directory for information about the individual data sets. 
+Check the `datasets` directory for information about the individual datasets. 
+
+## Breaking changes in PMLB 1.0
+
+**This repository has been restructured.**
+If you have an older version of PMLB, we highly recommend you upgrade it to v1.0 for updated URLs and names of datasets:
+
+```
+pip install pmlb --upgrade
+```
 
 ## Datasets Summary
 
@@ -131,4 +140,4 @@ BibTeX entry:
 
 ## Support for PMLB
 
-PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant R01 AI117694. We are incredibly grateful for the support of the NIH and the University of Pennsylvania during the development of this project.
+PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant AI117694, LM010098 and LM012601. We are incredibly grateful for the support of the NIH and the University of Pennsylvania during the development of this project.
