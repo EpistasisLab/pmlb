@@ -71,6 +71,7 @@ description: >
               3-59   The remaining 57 fields are the sequence, starting at
                      position -50 (p-50) and ending at position +7 (p7). Each of
                      these fields is filled by one of {a, g, t, c}.
+                     Code: a=0; c=1; g=2; t=3.
 
 source: >
     Creators:
