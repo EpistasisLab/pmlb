@@ -29,7 +29,7 @@ sum_stats <- readr::read_csv('../datasets/all_summary_stats.csv') %>%
     'https://epistasislab.github.io/penn-ml-benchmarks/profile/',
     dataset,
     '.html'),
-    Metadata = paste0('https://github.com/EpistasisLab/penn-ml-benchmarks/tree/PMLB2.0/datasets/', dataset, '/metadata.yaml'))
+    Metadata = paste0('https://github.com/EpistasisLab/penn-ml-benchmarks/tree/master/datasets/', dataset, '/metadata.yaml'))
 
 ply_dat <- sum_stats %>% 
   add_count(problem_type) %>% 
