@@ -1,23 +1,25 @@
 # Penn Machine Learning Benchmarks
 
-This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms. These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features. There are no missing values in these data sets.
+This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms.
+These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features.
 
-Check the `datasets` directory for information about the individual datasets. 
+Please go to our [home page](https://epistasislab.github.io/penn-ml-benchmarks/) to interactively browse the datasets, vignette, and contribution guide!
 
 ## Breaking changes in PMLB 1.0
 
-**This repository has been restructured.**
+*This repository has been restructured, and several dataset names have been changed!*
+
 If you have an older version of PMLB, we highly recommend you upgrade it to v1.0 for updated URLs and names of datasets:
 
 ```
 pip install pmlb --upgrade
 ```
 
-## Datasets Summary
+## Datasets
 
-![Dataset_Sizes](datasets/dataset_sizes.svg)
-
-## Data set format
+Datasets are tracked with Git Large File Storage (LFS).
+If you would like to clone the entire repository, please [install and set up Git LFS](https://git-lfs.github.com/) for your user account. 
+Alternatively, you can download the `.zip` file from GitHub.
 
 All data sets are stored in a common format:
 
@@ -26,6 +28,8 @@ All data sets are stored in a common format:
 * The target column is named `target`
 * All columns are tab (`\t`) separated
 * All files are compressed with `gzip` to conserve space
+
+![Dataset_Sizes](datasets/dataset_sizes.svg)
 
 ## Python wrapper
 
