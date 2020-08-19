@@ -1,9 +1,20 @@
 ---
-title: "Installation"
+title: "Installing PMLB"
+output:
+  html_document:
+    toc: false
 ---
 
-For easy access to the benchmark data sets, we have provided a Python wrapper named `pmlb`. The wrapper can be installed on Python via `pip`:
+Most users should install PMLB from the Python Package Index (PyPI) using `pip`:
 
+```{bash, eval=FALSE}
+$ pip install pmlb
 ```
-pip install pmlb
+
+For access to new features or datasets that are not yet merged into an official release, you can instead install from [the GitHub sources](https://github.com/EpistasisLab/penn-ml-benchmarks):
+
+```{bash, eval=FALSE}
+$ git clone https://github.com/EpistasisLab/penn-ml-benchmarks
+$ cd penn-ml-benchamrks/
+$ pip install .
 ```
