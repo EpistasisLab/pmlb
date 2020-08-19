@@ -99,6 +99,11 @@ r-scripts/
 penn-ml-benchmarks.Rproj
 datasets/.DS_Store
 
-# mkdocs
+# assembled documentation files
 docs/
 docs_sources/profile/
+docs_sources/*.html
+!docs_sources/card.html
+
+# MacOS junk
+.DS_Store
