@@ -89,7 +89,7 @@ task: classification
 target:
   type: binary
   description: Positive class indicates a promoter.
-  code: -:1, +:0 (promoter)
+  code: -:0, +:1 (promoter)
 features: # list of features in the dataset
   - name: p-50
     type: categorical
