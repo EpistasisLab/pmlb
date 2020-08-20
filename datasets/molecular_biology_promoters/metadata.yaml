@@ -84,7 +84,10 @@ source: >
 publication: >
     Harley, C. and Reynolds, R. 1987. "Analysis of E. Coli Promoter Sequences." Nucleic Acids Research, 15:2343-2361.
     Towell, G., Shavlik, J. and Noordewier, M. 1990. "Refinement of Approximate Domain Theories by Knowledge-Based Artificial Neural Networks." In Proceedings of the Eighth National Conference on Artificial Intelligence (AAAI-90).
-
+keywords:
+  - biology
+  - genetics
+  - molecular biology
 task: classification
 target:
   type: binary
