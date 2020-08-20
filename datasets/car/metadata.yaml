@@ -1,12 +1,12 @@
 #Generated automatically by pmlb/write_metadata.py
+# Reviewed by Praneel Chakraborty
 dataset: car
 description: >
   dataset for car evaluation based on six factors;
   factors considered are buying price, maintenance price, # doors, # people carriable, size of boot, and estimated safety
-source: >
-  https://www.openml.org/d/40975;
-  M. Bohanec, V. Rajkovic. Expert system for decision making. Sistemica 1(1), pp. 145-157, 1990.
+source: https://www.openml.org/d/40975
 publication: >
+  M. Bohanec, V. Rajkovic. Expert system for decision making. Sistemica 1(1), pp. 145-157, 1990.
   M. Bohanec and V. Rajkovic
   Knowledge acquisition and explanation for multi-attribute decision making. 
   In 8th Intl Workshop on Expert Systems and their Applications, Avignon, France. 1988.
@@ -31,7 +31,7 @@ features: # list of features in the dataset
   - name: persons
     type: categorical
     description: capacity (passengers + driver)
-    code: 0 = 2 people, 1 = 4 people, 2 = >4 people
+    code: 0 = 2 people, 1 = 4 people, 2 = 5+ people
   - name: lug_boot
     type: categorical
     description: size of luggage boot/trunk
