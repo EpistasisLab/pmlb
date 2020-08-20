@@ -1,19 +1,24 @@
 #Generated automatically by pmlb/write_metadata.py
+  #Reviewed by Praneel Chakraborty
 dataset: connect_4
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  Database contains the set of all possible board states corresponding to a connect-4 game at 8-ply;
+  Features correspond to spaces on a 7x6 board, with rows [1-6] and columns [a-f];
+  Each feature has an integral value in range [0,2];
+  Feature code - 0 = space is empty, 1 = taken by Player 1, 2 = taken by Player 2 
+source: https://archive.ics.uci.edu/ml/datasets/Connect-4; https://www.openml.org/d/40668
+publication: > 
+  Dua, D. and Graff, C. (2019). 
+  UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. 
+  Irvine, CA: University of California, School of Information and Computer Science.
 task: classification
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: Game-theoretical match result
+  code: 0 = draw, 1 = Player 1 victory, 2 = Player 2 victory
 features: # list of features in the dataset
   - name: a1
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: a2
     type: categorical
   - name: a3

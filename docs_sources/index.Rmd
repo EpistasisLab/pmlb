@@ -9,11 +9,12 @@ These datasets cover a broad range of applications including binary/multi-class 
 
 ## Summary statistics
 
-The plot below is created with [plotly](https://plotly.com/).
-Each dot represents a dataset colored based on its associated task (classification vs. regression).
+In the interactive  [plotly](https://plotly.com/) chart below, each dot represents a dataset colored based on its associated task (classification vs. regression).
 In log scale, the *x* and *y* axis shows the number of observations and features respectively.
 Please click on the legend to hide/show the groups of datasets.
 Click on each dot to access the dataset's [pandas-profiling](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/) report.
+
+*Note*: If a dataset has more than 20 features, we randomly chose 20 to be displayed in its profiling report. Therefore, please disregard the `Number of variables` in the corresponding report and, instead, use the correct `n_features` in the chart and table below.
 
 ```{r setup, include=FALSE}
 library(plotly)
@@ -28,7 +29,7 @@ sum_stats <- readr::read_csv('../datasets/all_summary_stats.csv') %>%
     'https://epistasislab.github.io/penn-ml-benchmarks/profile/',
     dataset,
     '.html'),
-    Metadata = paste0('https://github.com/EpistasisLab/penn-ml-benchmarks/tree/PMLB2.0/datasets/', dataset, '/metadata.yaml'))
+    Metadata = paste0('https://github.com/EpistasisLab/penn-ml-benchmarks/tree/master/datasets/', dataset, '/metadata.yaml'))
 
 ply_dat <- sum_stats %>% 
   add_count(problem_type) %>% 
@@ -155,6 +156,6 @@ BibTeX entry:
 
 ## Support for PMLB
 
-PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant R01 AI117694.
+PMLB was developed in the [Computational Genetics Lab](http://epistasis.org/) at the [University of Pennsylvania](https://www.upenn.edu/) with funding from the [NIH](http://www.nih.gov/) under grant AI117694, LM010098 and LM012601.
 We are grateful for the support of the NIH and the University of Pennsylvania during the development of this project.
 

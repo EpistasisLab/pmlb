@@ -156,7 +156,6 @@ classification_dataset_names = [
     'prnn_fglass',
     'prnn_synth',
     'profb',
-    'promoters',
     'ring',
     'saheart',
     'satimage',
