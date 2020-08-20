@@ -59,11 +59,7 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
         if return_X_y == True: A tuple of NumPy arrays containing (features, labels)
 
     """
-    if dataset_name in classification_dataset_names:
-        data_type = 'classification'
-    elif dataset_name in regression_dataset_names:
-        data_type = 'regression'
-    else:
+    if dataset_name not in dataset_names:
         raise ValueError('Dataset not found in PMLB.')
 
 
@@ -107,7 +103,6 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
                                 )
 
     re = requests.get(dataset_url)
-
     if re.status_code != 200:
         raise ValueError('Dataset not found in PMLB.')
     return dataset_url
