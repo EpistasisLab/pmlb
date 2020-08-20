@@ -178,17 +178,23 @@ def filterDatasets(obsMin = None, obsMax = None, featMin = None, featMax = None,
     
     """
 
-    summaryset = pd.read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/master/datasets/all_summary_stats.csv')
-    listofNames = []
-    for i, row in summaryset.iterrows():
-    if obsMin is None or obsMin <= row['#instances']:
-        if obsMax is None or row['#instances'] <= obsMax:
-            if featMin is None or featMin <= row['#features']:
-                if featMax is None or row['#features'] <= featMax:
-                    if classMin is None or classMin <= row['#Classes']:
-                        if classMax is None or row['#Classes'] <= classMax:
-                            if maxImbalance is None or row['Imbalance_metric'] <= maxImbalance:
-                                if endpt is None or row['Endpoint_type'] == (endpt):
-                                    if task is None or row['problem_type'] == (task):
-                                        listofNames.append(row['dataset'])
-    return listofNames
+    tempdf = pd.read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/master/datasets/all_summary_stats.csv')
+    if obsMin is not None:
+        tempdf = tempdf.loc[tempdf['#instances'] >= obsMin]
+    if obsMax is not None:
+        tempdf = tempdf.loc[tempdf['#instances'] <= obsMax]
+    if featMin is not None:
+        tempdf = tempdf.loc[tempdf['#features'] >= featMin]
+    if featMax is not None:
+        tempdf = tempdf.loc[tempdf['#features'] <= featMax]
+    if classMin is not None:
+        tempdf = tempdf.loc[tempdf['#Classes'] >= classMin]
+    if classMax is not None:
+        tempdf = tempdf.loc[tempdf['#Classes'] <= classMax]
+    if maxImbalance is not None:
+        tempdf = tempdf.loc[tempdf['Imbalance_metric'] < maxImbalance]
+    if endpt is not None:
+        tempdf = tempdf.loc[tempdf['Endpoint_type'] == endpt]
+    if task is not None:
+        tempdf = tempdf.loc[tempdf['problem_type'] == task]
+    return list(tempdf['dataset'].values)
