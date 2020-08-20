@@ -15,9 +15,13 @@ navbar:
   left: 
     - icon: fa-home
       href: index.html
-    - text: Using PMLB
+    - text: Install
+      href: install.html
+    - text: User Guide
       href: using.html
-    - text: Contribution guide
+    - text: API
+      href: reference.html
+    - text: Contributing
       href: contributing.html
   right:
     - icon: fa-github
