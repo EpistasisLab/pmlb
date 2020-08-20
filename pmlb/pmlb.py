@@ -145,3 +145,50 @@ def get_updated_datasets():
     changed_datasets = sorted(changed_datasets)
     print(f'changed datasets: {changed_datasets}')
     return changed_datasets
+
+def filterDatasets(obsMin = None, obsMax = None, featMin = None, featMax = None, classMin = None, classMax = None, endpt = None, maxImbalance = None, task = None):
+    """Filters existing datasets by given parameters, and returns a list of their names.
+    
+    Parameters
+    ----------
+    obsMin: int (default: None)
+        The minimum acceptable number of observations/instances in the dataset
+    obsMax: int (default: None)
+        The maximum acceptable number of observations/instances in the dataset
+    featMin: int (default: None)
+        The minimum acceptable number of features in the dataset
+    featMax: int (default: None)
+        The maximum acceptable number of features in the dataset
+    classMin: int (default: None)
+        The minimum acceptable number of classes in the dataset
+    classMax: int (default: None)
+        The maximum acceptable number of classes in the dataset
+    maxImbalance: float (default: None)
+        Maximum acceptable imbalance value for the dataset
+    endpt: str (default: None)
+        Whether the dataset endpoint type should be discrete, continuous, categorical, or binary
+    task: str (default: None)
+        Whether the dataset is suited for classification or regression problems
+
+    Returns
+    ----------
+    list (str): 
+        list of names of datasets within filters. Will return an empty list if no datasets match.
+        
+    
+    """
+
+    summaryset = pd.read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/master/datasets/all_summary_stats.csv')
+    listofNames = []
+    for i, row in summaryset.iterrows():
+    if obsMin is None or obsMin <= row['#instances']:
+        if obsMax is None or row['#instances'] <= obsMax:
+            if featMin is None or featMin <= row['#features']:
+                if featMax is None or row['#features'] <= featMax:
+                    if classMin is None or classMin <= row['#Classes']:
+                        if classMax is None or row['#Classes'] <= classMax:
+                            if maxImbalance is None or row['Imbalance_metric'] <= maxImbalance:
+                                if endpt is None or row['Endpoint_type'] == (endpt):
+                                    if task is None or row['problem_type'] == (task):
+                                        listofNames.append(row['dataset'])
+    return listofNames
