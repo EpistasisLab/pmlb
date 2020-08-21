@@ -24,7 +24,7 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install nose numpy scipy tabulate pandas pyyaml requests parameterized matplotlib seaborn mkdocs pandas-profiling
+        pip install nose numpy scipy tabulate pandas pyyaml requests parameterized matplotlib seaborn pandas-profiling
         sudo apt-get update
         sudo apt-get install libssl-dev libcurl4-openssl-dev
     - name: Test with nose
