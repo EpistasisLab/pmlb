@@ -59,16 +59,12 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
         if return_X_y == True: A tuple of NumPy arrays containing (features, labels)
 
     """
-    if dataset_name in classification_dataset_names:
-        data_type = 'classification'
-    elif dataset_name in regression_dataset_names:
-        data_type = 'regression'
-    else:
+    if dataset_name not in dataset_names:
         raise ValueError('Dataset not found in PMLB.')
 
 
     if local_cache_dir is None:
-        dataset_url = get_dataset_url(GITHUB_URL, data_type,
+        dataset_url = get_dataset_url(GITHUB_URL,
                                         dataset_name, suffix)
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
     else:
@@ -80,7 +76,7 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
             dataset = pd.read_csv(dataset_path, sep='\t', compression='gzip')
         # Download the data to the local cache if it is not already there
         else:
-            dataset_url = get_dataset_url(GITHUB_URL, data_type,
+            dataset_url = get_dataset_url(GITHUB_URL,
                                             dataset_name, suffix)
             dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
             dataset_dir = os.path.split(dataset_path)[0]
@@ -99,33 +95,15 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
         return dataset
 
 
-def get_dataset_url(GITHUB_URL, data_type, dataset_name, suffix):
-    old_dataset_url = '{GITHUB_URL}/{DATA_TYPE}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(
+def get_dataset_url(GITHUB_URL, dataset_name, suffix):
+    dataset_url = '{GITHUB_URL}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(
                                 GITHUB_URL=GITHUB_URL,
-                                DATA_TYPE=data_type,
                                 DATASET_NAME=dataset_name,
                                 SUFFIX=suffix
                                 )
 
-    new_name = dataset_name.replace("-", "_")
-    new_dataset_url = '{GITHUB_URL}/{DATASET_NAME}/{DATASET_NAME}{SUFFIX}'.format(
-                                GITHUB_URL=GITHUB_URL,
-                                DATASET_NAME=new_name,
-                                SUFFIX=suffix
-                                )
-    # check which url is vaild url
-    old_re = requests.get(old_dataset_url)
-    new_re = requests.get(new_dataset_url)
-    if old_re.status_code == 200:
-        dataset_url = old_dataset_url
-        warning_msg = "Dataset name and its url will be changed in PMLB v1.0."
-        warnings.warn(warning_msg, FutureWarning)
-    elif new_re.status_code == 200:
-        dataset_url = new_dataset_url
-        warning_msg = ("Dataset name and its url has been "
-            "changed in PMLB v1.0. Please update PMLB.")
-        warnings.warn(warning_msg, DeprecationWarning)
-    else:
+    re = requests.get(dataset_url)
+    if re.status_code != 200:
         raise ValueError('Dataset not found in PMLB.')
     return dataset_url
 
