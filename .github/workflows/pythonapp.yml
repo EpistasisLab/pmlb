@@ -47,7 +47,6 @@ jobs:
         reticulate::install_miniconda()
         reticulate::py_config()
         reticulate::py_discover_config()
-        reticulate::conda_install("")
       shell: Rscript {0}
 
     - name: Build site
