@@ -63,4 +63,3 @@ jobs:
         publish_dir: docs
         # keep existing files if no changes, unless commit message has regenerate_profiles
         keep_files: ${{ env.regenerate_profiles == null }}
-
