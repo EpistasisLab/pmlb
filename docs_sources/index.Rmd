@@ -37,13 +37,13 @@ ply_dat <- sum_stats %>%
 
 ggp <- ply_dat %>% 
   ggplot(aes(x = `#instances`, y = `#features`, color = Task)) +
-  geom_point() +
+  geom_point(alpha = 0.6, size = 2) +
   theme_bw() +
   theme(legend.title = element_blank()) +
   scale_x_log10(name = 'Number of observations',
                 ) +
   scale_y_log10(name = 'Number of features') +
-  scale_color_brewer(palette = 'Dark2') +
+  scale_color_manual(values = c('#D0587E', '#009392')) +
   NULL
 ply <- plotly_build(ggp)
 
