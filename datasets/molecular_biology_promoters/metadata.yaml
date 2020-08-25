@@ -73,14 +73,14 @@ description: >
                      these fields is filled by one of {a, g, t, c}.
                      Code: a=0; c=1; g=2; t=3.
 
-source: >
     Creators:
 
     1. promoter instances: C. Harley (CHARLEY '@' McMaster.CA) and R. Reynolds
 
     2. non-promoter instances and domain theory: M. Noordewier
     -- (non-promoters derived from work of lab of Prof. Tom Record, University of Wisconsin Biochemistry Department)
-
+    
+source: https://www.openml.org/d/164
 publication: >
     Harley, C. and Reynolds, R. 1987. "Analysis of E. Coli Promoter Sequences." Nucleic Acids Research, 15:2343-2361.
     Towell, G., Shavlik, J. and Noordewier, M. 1990. "Refinement of Approximate Domain Theories by Knowledge-Based Artificial Neural Networks." In Proceedings of the Eighth National Conference on Artificial Intelligence (AAAI-90).
