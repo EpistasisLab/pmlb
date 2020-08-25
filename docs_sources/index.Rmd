@@ -43,7 +43,7 @@ ggp <- ply_dat %>%
   scale_x_log10(name = 'Number of observations',
                 ) +
   scale_y_log10(name = 'Number of features') +
-  scale_color_manual(values = c('#D0587E', '#009392')) +
+  scale_color_manual(values = c('#ca446f', '#009392')) +
   NULL
 ply <- plotly_build(ggp)
 
