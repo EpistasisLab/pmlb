@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>API Reference</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Penn Machine Learning Benchmarks">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/db5c0806394943160890f70b4ee790ccd4d848fb/card.png">
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h2 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h3 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h4 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h5 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.section h6 {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Penn Machine Learning Benchmarks</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="install.html">Install</a>
+</li>
+<li>
+  <a href="using.html">User Guide</a>
+</li>
+<li>
+  <a href="reference.html">API</a>
+</li>
+<li>
+  <a href="contributing.html">Contributing</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">API Reference</h1>
+
+</div>
+
+
+<p>PMLB provides the following user-facing functions and variables. For installation instructions or a high-level overview of how to use PMLB, see <a href="./install.html">Install</a> or <a href="./using.html">Using PMLB</a>.</p>
+<div id="functions" class="section level2">
+<h2>Functions</h2>
+<div id="docstring-output" class="section level3">
+<h3><code>fetch_data</code></h3>
+<p><em>function</em> <code>pmlb.fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
+<p>Download a dataset from PMLB, (optionally) store it locally, and return the dataset.</p>
+<p>You must be connected to the internet if you are fetching a dataset that is not cached locally.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><strong>dataset_name : str</strong> Name of the dataset to fetch. A list of available datasets can be found in the documentation or via <code>pmlb.get_updated_datasets</code>.</li>
+<li><strong>return_X_y : bool, default=False</strong> Specify the format of the data returned to the user. If <code>False</code>, the data are returned as a <code>pandas.DataFrame</code>, of size (n_samples, n_features+1), where the last column is <code>target</code> - the true target value of the data point. If <code>True</code>, the data are returned as a tuple (of length 2), where the first element is a <code>numpy.ndarray</code> of size (n_samples, n_features), and the second element is a <code>numpy.ndarray</code> of size (n_samples,), corresponding to the feature matrix (usually denoted <code>X</code>) and the list of target values (usually denoted <code>y</code>), respectively.</li>
+<li><strong>local_cache_dir : str, default=None</strong> The directory on your local machine in which to store the data files. If <code>None</code>, no local data cache will be used.</li>
+<li><strong>dropna : bool, default=True</strong> If <code>True</code>, <code>pmlb</code> will drop <code>NA</code>s from the exported dataset.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li><strong>dataset : pandas.DataFrame or (array-like, array-like)</strong> If <code>return_X_y == False</code>, a <code>pandas.DataFrame</code> containing the fetched dataset. If <code>return_X_y == True</code>, a 2-tuple of <code>numpy.ndarray</code>s containing the feature matrix <code>X</code> and the target array <code>y</code>, respectively.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>In [<span class="dv">2</span>]: X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>In [<span class="dv">3</span>]: X</span>
+<span id="cb1-6"><a href="#cb1-6"></a>Out[<span class="dv">3</span>]: </span>
+<span id="cb1-7"><a href="#cb1-7"></a>array([[<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">7</span>, ..., <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">6</span>],</span>
+<span id="cb1-8"><a href="#cb1-8"></a>       [<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">9</span>, ..., <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>],</span>
+<span id="cb1-9"><a href="#cb1-9"></a>       [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">8</span>, ..., <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>],</span>
+<span id="cb1-10"><a href="#cb1-10"></a>       ...,</span>
+<span id="cb1-11"><a href="#cb1-11"></a>       [<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">8</span>, ..., <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">0</span>],</span>
+<span id="cb1-12"><a href="#cb1-12"></a>       [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">8</span>, ..., <span class="dv">7</span>, <span class="dv">3</span>, <span class="dv">0</span>],</span>
+<span id="cb1-13"><a href="#cb1-13"></a>       [<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">0</span>, ..., <span class="dv">7</span>, <span class="dv">4</span>, <span class="dv">6</span>]], dtype<span class="op">=</span>int64)</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a>In [<span class="dv">4</span>]: y</span>
+<span id="cb1-16"><a href="#cb1-16"></a>Out[<span class="dv">4</span>]: array([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, ..., <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>], dtype<span class="op">=</span>int64)</span></code></pre></div>
+</div>
+<div id="docstring-output" class="section level3">
+<h3><code>get_updated_datasets</code></h3>
+<p><em>function</em> <code>pmlb.get_updated_datasets()</code></p>
+<p>Looks at most recent commit and returns a list of datasets that were updated since the previous commit.</p>
+<p>This function is mainly used for generating profiling reports of the datasets.</p>
+<p><strong>Returns:</strong></p>
+<ul>
+<li><strong>changed_datasets : set</strong> Set of datasets that have been changed since the previous Git commit.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> get_updated_datasets</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>In [<span class="dv">2</span>]: get_updated_datasets()</span>
+<span id="cb2-4"><a href="#cb2-4"></a>changed datasets: []</span>
+<span id="cb2-5"><a href="#cb2-5"></a>Out[<span class="dv">2</span>]: []</span></code></pre></div>
+</div>
+</div>
+<div id="variables" class="section level2">
+<h2>Variables</h2>
+<p>These variables are used to list the datasets that are currently available in PMLB.</p>
+<div id="docstring-output" class="section level3">
+<h3><code>dataset_names</code></h3>
+<p><em>variable</em> <code>pmlb.dataset_names</code></p>
+<p>A list of all datasets included in PMLB.</p>
+<p>The contents of this variable are equal to the union of <code>pmlb.classification_dataset_names</code> and <code>pmlb.regression_dataset_names</code>.</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>In [<span class="dv">2</span>]: dataset_names</span>
+<span id="cb3-4"><a href="#cb3-4"></a>Out[<span class="dv">2</span>]: </span>
+<span id="cb3-5"><a href="#cb3-5"></a>[<span class="st">&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;</span>,</span>
+<span id="cb3-6"><a href="#cb3-6"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;</span>,</span>
+<span id="cb3-7"><a href="#cb3-7"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;</span>,</span>
+<span id="cb3-8"><a href="#cb3-8"></a> <span class="st">&#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;</span>,</span>
+<span id="cb3-9"><a href="#cb3-9"></a>...</span>
+<span id="cb3-10"><a href="#cb3-10"></a> <span class="st">&#39;712_chscase_geyser1&#39;</span>]</span></code></pre></div>
+</div>
+<div id="docstring-output" class="section level3">
+<h3><code>classification_dataset_names</code></h3>
+<p><em>variable</em> <code>pmlb.classification_dataset_names</code></p>
+<p>A list of all classification datasets included in PMLB.</p>
+<p>Classification datasets are datasets where the target value for each data point is discrete (rather than continuous).</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a>In [<span class="dv">2</span>]: classification_dataset_names</span>
+<span id="cb4-4"><a href="#cb4-4"></a>Out[<span class="dv">2</span>]: </span>
+<span id="cb4-5"><a href="#cb4-5"></a>[<span class="st">&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;</span>,</span>
+<span id="cb4-6"><a href="#cb4-6"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;</span>,</span>
+<span id="cb4-7"><a href="#cb4-7"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;</span>,</span>
+<span id="cb4-8"><a href="#cb4-8"></a> <span class="st">&#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;</span>,</span>
+<span id="cb4-9"><a href="#cb4-9"></a>...</span>
+<span id="cb4-10"><a href="#cb4-10"></a> <span class="st">&#39;yeast&#39;</span>]</span></code></pre></div>
+</div>
+<div id="docstring-output" class="section level3">
+<h3><code>regression_dataset_names</code></h3>
+<p><em>variable</em> <code>pmlb.regression_dataset_names</code></p>
+<p>A list of all regression datasets included in PMLB.</p>
+<p>Regression datasets are datasets where the target value for each data point is continuous (rather than discrete).</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>In [<span class="dv">2</span>]: regression_dataset_names</span>
+<span id="cb5-4"><a href="#cb5-4"></a>Out[<span class="dv">2</span>]: </span>
+<span id="cb5-5"><a href="#cb5-5"></a>[<span class="st">&#39;1027_ESL&#39;</span>,</span>
+<span id="cb5-6"><a href="#cb5-6"></a> <span class="st">&#39;1028_SWD&#39;</span>,</span>
+<span id="cb5-7"><a href="#cb5-7"></a> <span class="st">&#39;1029_LEV&#39;</span>,</span>
+<span id="cb5-8"><a href="#cb5-8"></a> <span class="st">&#39;1030_ERA&#39;</span>,</span>
+<span id="cb5-9"><a href="#cb5-9"></a>...</span>
+<span id="cb5-10"><a href="#cb5-10"></a> <span class="st">&#39;712_chscase_geyser1&#39;</span>]</span></code></pre></div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
