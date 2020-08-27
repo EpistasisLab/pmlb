@@ -54,7 +54,7 @@ if __name__ =='__main__':
         df_summary
         .loc[:, cols] # move dataset column to front
         .drop(columns = ['#integer_features', '#float_features'])
-        .to_csv('datasets/all_summary_stats.csv', index=False)
+        .to_csv('pmlb/all_summary_stats.csv', index=False)
     )
 
     nclass_datasets = len(df_summary.loc[df_summary.problem_type=='classification'])
