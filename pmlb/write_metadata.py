@@ -31,7 +31,7 @@ import glob, os
 import csv
 import pandas as pd
 from collections import Counter
-from pmlb import fetch_data
+from .pmlb import fetch_data
 from .dataset_lists import (classification_dataset_names,
                             regression_dataset_names)
 import logging
@@ -197,7 +197,7 @@ def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
         If None, then the local data cache will not be used.
     """
     print('generating summary stats for',dataset_name)
-    df_X = df.drop('target',axis=1)
+    df_X = df.drop(TARGET_NAME,axis=1)
     types = [get_type(df_X[col], include_binary=True) for col in df_X.columns]
     feat=count_features_type(types, include_binary=True)
     mse=imbalance_metrics(df[TARGET_NAME].tolist())
@@ -212,10 +212,8 @@ def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
         '#Classes':mse[0],
         'Imbalance_metric':mse[1],
         },index=[0])
+    return stats_df
 
-    assert (local_cache_dir!=None)
-    stats_df.to_csv(os.path.join(local_cache_dir,dataset_name,
-        'summary_stats.csv'))
 
 if __name__ =='__main__':
 
@@ -229,11 +227,15 @@ if __name__ =='__main__':
         generate_description(df, d,'classification',
                 overwrite_existing=overwrite,
                 local_cache_dir=local_dir)
-        generate_summarystats(df, d,'classification',local_cache_dir=local_dir)
+        stats_df = generate_summarystats(df, d,'classification',
+                                         local_cache_dir=local_dir)
+        stats_df.to_csv(os.path.join(local_dir,d,'summary_stats.csv'))
     for d in regression_dataset_names:
         print(d,'...')
         df = fetch_data(d, local_cache_dir=local_dir)
         generate_description(df, d,'regression',
                 overwrite_existing=overwrite,
                 local_cache_dir=local_dir)
-        generate_summarystats(df, d,'regression', local_cache_dir=local_dir)
+        stats_df = generate_summarystats(df, d,'regression', 
+                                         local_cache_dir=local_dir)
+        stats_df.to_csv(os.path.join(local_dir,d,'summary_stats.csv'))

@@ -123,3 +123,65 @@ def get_updated_datasets():
     changed_datasets = sorted(changed_datasets)
     print(f'changed datasets: {changed_datasets}')
     return changed_datasets
+
+from sklearn.neighbors import NearestNeighbors
+from pmlb.write_metadata import generate_summarystats
+
+def fetch_nearest_dataset_names(X,y=None, **kwargs):
+    """
+    X: numpy array
+        an n_samples x n_features array of independent variables
+    y: numpy array or None (default: None)
+        a n_samples array of dependent variables
+    """
+    df = pd.DataFrame({**{'x_'+str(i):x for i,x in enumerate(X.transpose)}
+                       **{'target':y}})
+    return fetch_nearest_dataset_names(df, **kwargs)
+
+def fetch_nearest_dataset_names(df, n=1, 
+        dimensions=['#instances','#features'],
+        task=None):
+    """Returns names of most similar datasets to df, in order of similarity. 
+
+    Parameters
+    ----------
+    df: pandas Dataframe 
+        a dataframe of n_samples x n_features+1 with a target column labeled
+        'target'
+    n: int (default: 1)
+        the number of dataset names to return
+    dimensions: list of str (default ['NumberOfInstances','NumberOfFeatures']
+        a list of dataset characteristics to include in similarity calculation.
+        Dimensions must correspond to columns of datasets/all_summary_stats.csv.
+    task: str or None (default: None)
+        specify classification or regression for summary stat generation. If 
+        None, we use classification unless the target column has more than 5 
+        unique values.
+
+    Returns
+    -------
+    dataset_names: an n-element list of dataset names in order of most similar 
+        to least similar.
+    """
+
+    # load pmlb summary stats
+    pmlb_stats = pd.read_csv('datasets/all_summary_stats.csv')
+    assert(all([d in pmlb_stats.columns for d in dimensions]))
+
+    all_names = pmlb_stats['dataset'].values
+    pmlb_stats = pmlb_stats[dimensions]  
+
+    # get summary stats for dataset
+    if task==None:
+        task = 'classification' if df['target'].nunique()<5 else 'regression'
+    dataset_stats = generate_summarystats(df, 'dataset', task)
+    dataset_stats = dataset_stats[dimensions]
+
+    # find nearest neighbors
+    nn = NearestNeighbors(n_neighbors=n).fit(pmlb_stats.values)
+    dataset_names = all_names[nn.kneighbors(dataset_stats.values, 
+                                            n_neighbors=n, 
+                                            return_distance=False)
+                             ]
+
+    return dataset_names
