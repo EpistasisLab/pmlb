@@ -68,23 +68,5 @@ if __name__ =='__main__':
     ax.set_xscale('log')
     h, l = ax.get_legend_handles_labels()
     print('labels:',l)
-    ax.legend(
     plt.title('Dataset Sizes')
     plt.savefig('datasets/dataset_sizes.svg',dpi=300)
-
-    # write readme
-
-    filename = 'datasets/README.md'
-
-    if os.path.isfile(filename):
-        print('WARNING:',filename,'exists. Overwriting...')
-    with open(filename, 'w') as f:
-        f.write('# PMLB Datasets\n\n')
-
-        f.write('Classification datasets: {}\n\n'.format(nclass_datasets))
-        f.write('Regression datasets: {}\n\n'.format(nreg_datasets))
-        
-        f.write('## Summary Plots\n\n')
-        f.write('![Dataset_Sizes](dataset_sizes.svg)\n\n')
-
-
