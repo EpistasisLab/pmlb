@@ -194,6 +194,8 @@ def fetch_nearest_dataset_names(df, n=1,
     dataset_stats = dataset_stats[dimensions]
 
 
+    #TODO: figure out why pmlb_stats_norm has a nan value in the 
+    # #categorical and #continuous features columns
     ss = StandardScaler()
     pmlb_stats_norm = ss.fit_transform(pmlb_stats) 
     print('pmlb_stats_norm:',pmlb_stats_norm)
