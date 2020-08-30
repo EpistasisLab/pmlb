@@ -32,7 +32,7 @@ import yaml
 import pandas as pd
 from collections import Counter
 from pmlb import fetch_data, dataset_names
-from dataset_lists import (classification_dataset_names,
+from .dataset_lists import (classification_dataset_names,
                             regression_dataset_names,
                             datasets_with_metadata)
 import logging

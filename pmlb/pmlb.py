@@ -25,7 +25,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import pandas as pd
 import os
-from dataset_lists import classification_dataset_names, regression_dataset_names
+from .dataset_lists import classification_dataset_names, regression_dataset_names
 import requests
 import warnings
 import subprocess
