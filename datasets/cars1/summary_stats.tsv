@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+cars1	392	7	0	0	7	categorical	3.0	0.1919968242399	classification

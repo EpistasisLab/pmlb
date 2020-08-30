@@ -1,8 +1,11 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: 210_cloud
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+keywords:
+  -
+  -
 task: regression
 target:
   type: continuous
@@ -10,12 +13,12 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: seeded
-    type: continuous
+    type: categorical
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: season
-    type: continuous
+    type: categorical
   - name: NC
     type: continuous
   - name: SC

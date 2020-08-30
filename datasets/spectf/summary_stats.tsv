@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+spectf	349	44	0	0	44	categorical	2.0	0.20755987225063832	classification

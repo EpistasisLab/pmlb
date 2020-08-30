@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+dna	3186	180	0	180	0	categorical	3.0	0.07768479801580122	classification

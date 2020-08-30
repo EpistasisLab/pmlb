@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+ring	7400	20	0	0	20	categorical	2.0	9.46676406135857e-05	classification

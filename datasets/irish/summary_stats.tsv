@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+irish	500	5	0	4	1	categorical	2.0	0.01254400000000001	classification

@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+218_house_8L	22784	8	0	0	8	continuous	2045.0	0.01935343224397843	regression

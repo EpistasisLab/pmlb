@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+analcatdata_lawsuit	264	4	0	1	3	categorical	2.0	0.7328397612488521	classification

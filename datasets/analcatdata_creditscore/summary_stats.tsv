@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+analcatdata_creditscore	100	6	0	3	3	categorical	2.0	0.21159999999999995	classification

@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+allhyper	3771	29	0	29	0	categorical	4.0	0.9301422508626843	classification
