@@ -27,13 +27,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-import glob, os
-import csv
+import glob, pathlib
+import yaml
 import pandas as pd
 from collections import Counter
-from pmlb import fetch_data
-from .dataset_lists import (classification_dataset_names,
-                            regression_dataset_names)
+from pmlb import fetch_data, dataset_names
+from dataset_lists import (classification_dataset_names,
+                            regression_dataset_names,
+                            datasets_with_metadata)
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -50,7 +51,7 @@ protected_feature_names = ['y','Y','yes','Yes','YES','n','N','no','No','NO',
                            'true','True','TRUE','false','False','FALSE',
                            'on','On','ON','off','Off','OFF']
 
-def imbalance_metrics(data):
+def compute_imbalance(data):
     """ Computes imbalance metric for a given dataset.
     Imbalance metric is equal to 0 when a dataset is perfectly balanced
     (i.e. number of in each class is exact).
@@ -104,7 +105,55 @@ def get_type(x, include_binary=False):
     else:
         raise ValueError("Error getting type")
 
-def generate_description(df, dataset_name, task, overwrite_existing=True,
+def get_dataset_info(df):
+    feat_names = [col for col in df.columns if col!=TARGET_NAME]
+    types = [get_type(df[col]) for col in feat_names]
+    feat = count_features_type(types, include_binary=True)
+    endpoint = get_type(df[TARGET_NAME])
+    mse = compute_imbalance(df[TARGET_NAME].tolist())
+    task = 'regression' if endpoint == 'continuous' else 'classification'
+
+    return {
+        'n_instances': len(df),
+        'n_features': len(df.columns)-1,
+        'feat_names': feat_names,
+        'types': types,
+        'feat': feat,
+        'endpoint': endpoint,
+        'task': task,
+        'mse': mse
+    }
+
+metadata_template = '''\
+{header_to_print}
+dataset: {dataset_name}
+description: {none_yet}
+source: {none_yet}
+publication: {none_yet}
+keywords:
+  -
+  -
+task: {task}
+target:
+  type: {endpoint}
+  description: {none_yet}
+  code: {none_yet}
+features: # list of features in the dataset
+{all_features}\
+'''
+
+feature_template = '''\
+  - name: {feat_name}
+    type: {feat_type}
+'''
+
+extra_template = '''\
+    description: null # optional but recommended, what the feature measures/indicates, unit
+    code: null # optional, coding information, e.g., Control = 0, Case = 1
+    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+'''
+
+def generate_metadata(df, dataset_name, dataset_info, overwrite_existing=True,
                          local_cache_dir=None):
     """Generates desription for a given dataset in its metadata.yaml file in a
     dataset local_cache_dir file.
@@ -115,78 +164,61 @@ def generate_description(df, dataset_name, task, overwrite_existing=True,
         The directory on your local machine to store the data files.
         If None, then the local data cache will not be used.
     """
+    
+    none_yet = ('None yet. See our contributing guide to help us add one.')
+    header_to_print = '# Reviewed by [your name here]'
 
-    print('generating metadata for',dataset_name)
-    header_to_print = '#Generated automatically by pmlb/write_metadata.py\n'
-    assert (local_cache_dir!=None)
-    metadata_filename = os.path.join(local_cache_dir,
-        dataset_name, 'metadata.yaml')
-    if (not overwrite_existing) and os.path.isfile(metadata_filename):
-        logger.warning('Not writing '+ dataset_name + '/metadata.yaml ; '
-                   + 'File exists (use overwrite_existing=True to override\n')
-    metadata_file = open(metadata_filename, 'r')
-    header = metadata_file.readline()
-    if header != header_to_print:
+    assert (local_cache_dir != None)
+    meta_path = pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')
+    
+    if meta_path.exists():
+#         with open(meta_path, 'r') as f:
+#             header = f.readline()
+#         if header != header_to_print:
+#             logger.warning(f'Not writing {dataset_name}.yaml ; '
+#                             'It has a customized metadata file\n')
+#             return None
 
-        logger.warning('Not writing '+ dataset_name + '.yaml ; '
-                       + 'It has a customized metadata file\n')
-        return
+        if (not overwrite_existing):
+            logger.warning(f'Not writing {dataset_name}/metadata.yaml ; '
+                            'File exists (use overwrite_existing=True to override.\n')
+            return None
 
-    metadata_file.close()
-    metadata_file = open(metadata_filename, 'w')
+        print(f'WARNING: {meta_path} exists. Overwriting...')
+
+    print('Generating metadata for', dataset_name)
+
+    all_features = ''
+    first = True
+    
+    for feature, feature_type in zip(dataset_info['feat_names'], dataset_info['types']):
+        if feature in protected_feature_names:
+            feature = f'"{feature}"'
+
+        all_features += feature_template.format(
+            feat_name=feature,
+            feat_type=feature_type
+        )
+
+        if first:
+            all_features += extra_template
+            first = False
+
+    metadata = metadata_template.format(
+        header_to_print=header_to_print,
+        dataset_name=dataset_name,
+        none_yet=none_yet,
+        endpoint=dataset_info['endpoint'],
+        task=dataset_info['task'],
+        all_features=all_features
+    )
+    
     try:
-        fnames = [col for col in df.columns if col!=TARGET_NAME]
-        #determine all required values
-        df_X = df.drop(TARGET_NAME,axis=1)
-        types = [get_type(df_X[col]) for col in df_X.columns]
-        endpoint=get_type(df[TARGET_NAME], include_binary=True)
-        #proceed with writing
-        none_yet = ('None yet. '
-                    'See our contributing guide to help us add one.')
-        metadata_file.write(header_to_print)
-        # required, dataset name
-        metadata_file.write('dataset: {}\n'.format(dataset_name))
-        # required, dataset description
-        metadata_file.write('description: {}\n'.format(none_yet))
-        # required, link to the source from where dataset was retrieved
-        metadata_file.write('source: {}\n'.format(none_yet))
-        # optional, study that generated the dataset (doi, pmid, pmcid,
-        # or url)
-        metadata_file.write('publication: {}\n'.format(none_yet))
-        # required, classification or regression
-        metadata_file.write('task: {}\n'.format(task))
-        metadata_file.write('target:\n')
-        metadata_file.write('  type: {}\n'.format(endpoint))
-        # required, describe the endpoint/outcome (and unit if exists)
-        metadata_file.write('  description: {}\n'.format(none_yet))
-        # optional but recommended, coding information,
-        # e.g., 'Control' = 0, 'Case' = 1
-        metadata_file.write('  code: {}\n'.format(none_yet))
-        metadata_file.write('features: # list of features in the '
-                'dataset\n')
-        first = True
-        for feature,feature_type in zip(fnames, types):
-            if feature in protected_feature_names:
-                feature = '"'+feature+'"'
-            metadata_file.write('  - name: {}\n'.format(feature))
-            metadata_file.write('    type: {}\n'.format(feature_type))
-            if first:
-                metadata_file.write('    description: null # optional but '
-                        'recommended, what the feature measures/indicates, '
-                        'unit\n')
-                metadata_file.write('    code: null # optional, coding '
-                        'information, e.g., Control = 0, Case = 1\n')
-                metadata_file.write('    transform: ~ # optional, any '
-                'transformation performed on the feature, e.g., log '
-                'scaled\n')
-                first = False
-
+        meta_path.write_text(metadata)
     except IOError as err:
         print(err)
-    finally:
-        metadata_file.close()
 
-def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
+def generate_summarystats(dataset_name, dataset_info, local_cache_dir=None):
     """Generates summary stats for a given dataset in its summary_stats.csv
     file in a dataset local_cache_dir file.
     TODO: link dataset_desribe from PennAI to this for generating stats.
@@ -196,44 +228,51 @@ def generate_summarystats(df, dataset_name, task, local_cache_dir=None):
         The directory on your local machine to store the data files.
         If None, then the local data cache will not be used.
     """
-    print('generating summary stats for',dataset_name)
-    df_X = df.drop('target',axis=1)
-    types = [get_type(df_X[col], include_binary=True) for col in df_X.columns]
-    feat=count_features_type(types, include_binary=True)
-    mse=imbalance_metrics(df[TARGET_NAME].tolist())
+    print('generating summary stats for', dataset_name)
+
+    feat = dataset_info['feat']
+    mse = dataset_info['mse']
 
     stats_df = pd.DataFrame({
-        '#instances':len(df),
-        '#features':len(df.columns)-1,
-        '#binary_features':feat[0],
-        '#categorical_features':feat[1],
-        '#continuous_features':feat[2],
-        'Endpoint_type':get_type(df[TARGET_NAME], include_binary=True),
-        '#Classes':mse[0],
-        'Imbalance_metric':mse[1],
-        },index=[0])
+        'dataset':dataset_name,
+        'n_instances':dataset_info['n_instances'],
+        'n_features':dataset_info['n_features'],
+        'n_binary_features':feat[0],
+        'n_categorical_features':feat[1],
+        'n_continuous_features':feat[2],
+        'endpoint_type':dataset_info['endpoint'],
+        'n_classes':mse[0],
+        'imbalance':mse[1],
+        'task':dataset_info['yaml_task']
+        }, index=[0])
 
-    assert (local_cache_dir!=None)
-    stats_df.to_csv(os.path.join(local_cache_dir,dataset_name,
-        'summary_stats.csv'))
+    assert (local_cache_dir != None)
+    stats_df.to_csv(pathlib.Path(f'{local_cache_dir}{dataset_name}/summary_stats.tsv'),
+                   index=False, sep='\t')
+
+def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, local_cache_dir=None):
+    df = fetch_data(dataset_name, local_cache_dir=local_cache_dir)
+    dataset_info = get_dataset_info(df)
+    if dataset_name not in datasets_with_metadata:
+        generate_metadata(df, dataset_name, dataset_info, overwrite, local_dir)
+    
+    with open(pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')) as f:
+        meta_dict = yaml.load(f, Loader=yaml.FullLoader)
+
+    dataset_info['yaml_task'] = meta_dict['task']
+
+    generate_summarystats(d, dataset_info, local_dir)
 
 if __name__ =='__main__':
-
     # assuming this is run from the repo root directory
     local_dir = 'datasets/'
     overwrite = True
 
-    for d in classification_dataset_names:
-        print(d,'...')
-        df = fetch_data(d, local_cache_dir=local_dir)
-        generate_description(df, d,'classification',
-                overwrite_existing=overwrite,
-                local_cache_dir=local_dir)
-        generate_summarystats(df, d,'classification',local_cache_dir=local_dir)
-    for d in regression_dataset_names:
-        print(d,'...')
-        df = fetch_data(d, local_cache_dir=local_dir)
-        generate_description(df, d,'regression',
-                overwrite_existing=overwrite,
-                local_cache_dir=local_dir)
-        generate_summarystats(df, d,'regression', local_cache_dir=local_dir)
+    for d in dataset_names:
+        print(d, '...')
+        update_metadata_summary(
+            d, datasets_with_metadata, 
+            overwrite=overwrite,
+            local_cache_dir=local_dir)
+
+

@@ -313,3 +313,27 @@ regression_dataset_names = [
     '706_sleuth_case1202',
     '712_chscase_geyser1'
 ]
+
+datasets_with_metadata = [
+    'molecular_biology_promoters',
+    'car',
+    'connect_4',
+    'dna',
+    '542_pollution',
+    '560_bodyfat',
+    'poker',
+    'USCrime',
+    'pollen',
+    'chess',
+    'penguins',
+    'bupa',
+    'movement_libras',
+    'adult',
+    'waveform_21',
+    'waveform_40',
+    'saheart',
+    'wine_quality_white',
+    'wine_quality_red',
+    'irish',
+    'mushroom'
+]
