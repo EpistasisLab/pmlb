@@ -64,9 +64,9 @@ features: # list of features in the dataset
   - name: Feature23
     type: categorical
   - name: Feature24
-    type: categorical
+    type: binary
   - name: Feature25
-    type: categorical
+    type: binary
   - name: Feature26
     type: categorical
   - name: Feature27

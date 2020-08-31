@@ -20,7 +20,7 @@ features: # list of features in the dataset
   - name: N1
     type: categorical
   - name: N2
-    type: categorical
+    type: binary
   - name: N3
     type: categorical
   - name: N4

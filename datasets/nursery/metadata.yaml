@@ -26,7 +26,7 @@ features: # list of features in the dataset
   - name: housing
     type: categorical
   - name: finance
-    type: categorical
+    type: binary
   - name: social
     type: categorical
   - name: health

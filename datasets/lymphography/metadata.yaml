@@ -18,19 +18,19 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: Block_of_affere
-    type: categorical
+    type: binary
   - name: Bl_of_lymph_c
-    type: categorical
+    type: binary
   - name: Bl_of_lymph_s
-    type: categorical
+    type: binary
   - name: By_pass
-    type: categorical
+    type: binary
   - name: Extravasates
-    type: categorical
+    type: binary
   - name: Regeneration_of
-    type: categorical
+    type: binary
   - name: Early_uptake_in
-    type: categorical
+    type: binary
   - name: Lym_nodes_dimin
     type: categorical
   - name: Lym_nodes_enlar
@@ -46,8 +46,8 @@ features: # list of features in the dataset
   - name: Special_forms
     type: categorical
   - name: Dislocation_of
-    type: categorical
+    type: binary
   - name: Exclusion_of_no
-    type: categorical
+    type: binary
   - name: No_of_nodes_in
     type: categorical

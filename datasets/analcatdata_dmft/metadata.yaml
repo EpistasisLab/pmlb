@@ -20,6 +20,6 @@ features: # list of features in the dataset
   - name: DMFT.End
     type: categorical
   - name: Gender
-    type: categorical
+    type: binary
   - name: Ethnic
     type: categorical

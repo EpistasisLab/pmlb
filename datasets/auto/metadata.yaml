@@ -20,9 +20,9 @@ features: # list of features in the dataset
   - name: make
     type: categorical
   - name: fuel-type
-    type: categorical
+    type: binary
   - name: aspiration
-    type: categorical
+    type: binary
   - name: num-of-doors
     type: categorical
   - name: body-style
@@ -30,7 +30,7 @@ features: # list of features in the dataset
   - name: drive-wheels
     type: categorical
   - name: engine-location
-    type: categorical
+    type: binary
   - name: wheel-base
     type: continuous
   - name: length

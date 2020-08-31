@@ -28,9 +28,9 @@ features: # list of features in the dataset
   - name: x6
     type: continuous
   - name: x7
-    type: categorical
+    type: binary
   - name: x8
-    type: categorical
+    type: binary
   - name: x9
     type: continuous
   - name: x10

@@ -52,6 +52,6 @@ features: # list of features in the dataset
   - name: Liable-people
     type: continuous
   - name: Telephone
-    type: categorical
+    type: binary
   - name: Foreign
-    type: categorical
+    type: binary

@@ -18,7 +18,7 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: Sex
-    type: categorical
+    type: binary
   - name: Chest pain type
     type: categorical
   - name: Trestbps
@@ -26,13 +26,13 @@ features: # list of features in the dataset
   - name: Cholesterol
     type: continuous
   - name: Fasting blood sugar &lt; 120
-    type: categorical
+    type: binary
   - name: Resting ecg
     type: categorical
   - name: Max heart rate
     type: continuous
   - name: Exercise induced angina
-    type: categorical
+    type: binary
   - name: Oldpeak
     type: continuous
   - name: Slope

@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-cleveland_nominal	303	7	0	7	0	categorical	5.0	0.19400603426679297	classification
+cleveland_nominal	303	7	3	4	0	categorical	5.0	0.19400603426679297	classification

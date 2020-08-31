@@ -44,9 +44,9 @@ features: # list of features in the dataset
   - name: 14
     type: categorical
   - name: 15
-    type: categorical
+    type: binary
   - name: 16
-    type: categorical
+    type: binary
   - name: 17
     type: categorical
   - name: 18
@@ -80,7 +80,7 @@ features: # list of features in the dataset
   - name: 32
     type: categorical
   - name: 33
-    type: categorical
+    type: binary
   - name: 34
     type: categorical
   - name: 35
@@ -132,7 +132,7 @@ features: # list of features in the dataset
   - name: 58
     type: categorical
   - name: 59
-    type: categorical
+    type: binary
   - name: 60
     type: categorical
   - name: 61
@@ -242,7 +242,7 @@ features: # list of features in the dataset
   - name: 113
     type: categorical
   - name: 114
-    type: categorical
+    type: binary
   - name: 115
     type: categorical
   - name: 116
@@ -298,7 +298,7 @@ features: # list of features in the dataset
   - name: 141
     type: categorical
   - name: 142
-    type: categorical
+    type: binary
   - name: 143
     type: categorical
   - name: 144
@@ -408,7 +408,7 @@ features: # list of features in the dataset
   - name: 196
     type: categorical
   - name: 197
-    type: categorical
+    type: binary
   - name: 198
     type: categorical
   - name: 199
@@ -744,7 +744,7 @@ features: # list of features in the dataset
   - name: 364
     type: categorical
   - name: 365
-    type: categorical
+    type: binary
   - name: 366
     type: categorical
   - name: 367
@@ -800,7 +800,7 @@ features: # list of features in the dataset
   - name: 392
     type: categorical
   - name: 393
-    type: categorical
+    type: binary
   - name: 394
     type: categorical
   - name: 395
@@ -912,7 +912,7 @@ features: # list of features in the dataset
   - name: 448
     type: categorical
   - name: 449
-    type: categorical
+    type: binary
   - name: 450
     type: categorical
   - name: 451
@@ -1080,7 +1080,7 @@ features: # list of features in the dataset
   - name: 532
     type: categorical
   - name: 533
-    type: categorical
+    type: binary
   - name: 534
     type: categorical
   - name: 535
@@ -1192,7 +1192,7 @@ features: # list of features in the dataset
   - name: 588
     type: categorical
   - name: 589
-    type: categorical
+    type: binary
   - name: 590
     type: categorical
   - name: 591
@@ -1246,9 +1246,9 @@ features: # list of features in the dataset
   - name: 615
     type: categorical
   - name: 616
-    type: categorical
+    type: binary
   - name: 617
-    type: categorical
+    type: binary
   - name: 618
     type: categorical
   - name: 619
@@ -1302,11 +1302,11 @@ features: # list of features in the dataset
   - name: 643
     type: categorical
   - name: 644
-    type: categorical
+    type: binary
   - name: 645
     type: categorical
   - name: 646
-    type: categorical
+    type: binary
   - name: 647
     type: categorical
   - name: 648
@@ -1468,7 +1468,7 @@ features: # list of features in the dataset
   - name: 726
     type: categorical
   - name: 727
-    type: categorical
+    type: binary
   - name: 728
     type: categorical
   - name: 729
@@ -1478,7 +1478,7 @@ features: # list of features in the dataset
   - name: 731
     type: categorical
   - name: 732
-    type: categorical
+    type: binary
   - name: 733
     type: categorical
   - name: 734
@@ -1522,7 +1522,7 @@ features: # list of features in the dataset
   - name: 753
     type: categorical
   - name: 754
-    type: categorical
+    type: binary
   - name: 755
     type: categorical
   - name: 756

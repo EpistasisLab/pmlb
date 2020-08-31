@@ -28,7 +28,7 @@ features: # list of features in the dataset
   - name: Atr-5
     type: categorical
   - name: Atr-6
-    type: categorical
+    type: binary
   - name: Atr-7
     type: categorical
   - name: Atr-8
@@ -38,11 +38,11 @@ features: # list of features in the dataset
   - name: Atr-10
     type: categorical
   - name: Atr-11
-    type: categorical
+    type: binary
   - name: Atr-12
     type: categorical
   - name: Atr-13
-    type: categorical
+    type: binary
   - name: Atr-14
     type: categorical
   - name: Atr-15
@@ -58,7 +58,7 @@ features: # list of features in the dataset
   - name: Atr-20
     type: categorical
   - name: Atr-21
-    type: categorical
+    type: binary
   - name: Atr-22
     type: categorical
   - name: Atr-23

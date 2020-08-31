@@ -105,9 +105,9 @@ def get_type(x, include_binary=False):
     else:
         raise ValueError("Error getting type")
 
-def get_dataset_info(df):
+def get_dataset_stats(df):
     feat_names = [col for col in df.columns if col!=TARGET_NAME]
-    types = [get_type(df[col]) for col in feat_names]
+    types = [get_type(df[col], include_binary=True) for col in feat_names]
     feat = count_features_type(types, include_binary=True)
     endpoint = get_type(df[TARGET_NAME])
     mse = compute_imbalance(df[TARGET_NAME].tolist())
@@ -153,7 +153,7 @@ extra_template = '''\
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
 '''
 
-def generate_metadata(df, dataset_name, dataset_info, overwrite_existing=True,
+def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
                          local_cache_dir=None):
     """Generates desription for a given dataset in its metadata.yaml file in a
     dataset local_cache_dir file.
@@ -191,7 +191,7 @@ def generate_metadata(df, dataset_name, dataset_info, overwrite_existing=True,
     all_features = ''
     first = True
     
-    for feature, feature_type in zip(dataset_info['feat_names'], dataset_info['types']):
+    for feature, feature_type in zip(dataset_stats['feat_names'], dataset_stats['types']):
         if feature in protected_feature_names:
             feature = f'"{feature}"'
 
@@ -208,8 +208,8 @@ def generate_metadata(df, dataset_name, dataset_info, overwrite_existing=True,
         header_to_print=header_to_print,
         dataset_name=dataset_name,
         none_yet=none_yet,
-        endpoint=dataset_info['endpoint'],
-        task=dataset_info['task'],
+        endpoint=dataset_stats['endpoint'],
+        task=dataset_stats['task'],
         all_features=all_features
     )
     
@@ -218,7 +218,7 @@ def generate_metadata(df, dataset_name, dataset_info, overwrite_existing=True,
     except IOError as err:
         print(err)
 
-def generate_summarystats(dataset_name, dataset_info, local_cache_dir=None):
+def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None):
     """Generates summary stats for a given dataset in its summary_stats.csv
     file in a dataset local_cache_dir file.
     TODO: link dataset_desribe from PennAI to this for generating stats.
@@ -230,20 +230,20 @@ def generate_summarystats(dataset_name, dataset_info, local_cache_dir=None):
     """
     print('generating summary stats for', dataset_name)
 
-    feat = dataset_info['feat']
-    mse = dataset_info['mse']
+    feat = dataset_stats['feat']
+    mse = dataset_stats['mse']
 
     stats_df = pd.DataFrame({
         'dataset':dataset_name,
-        'n_instances':dataset_info['n_instances'],
-        'n_features':dataset_info['n_features'],
+        'n_instances':dataset_stats['n_instances'],
+        'n_features':dataset_stats['n_features'],
         'n_binary_features':feat[0],
         'n_categorical_features':feat[1],
         'n_continuous_features':feat[2],
-        'endpoint_type':dataset_info['endpoint'],
+        'endpoint_type':dataset_stats['endpoint'],
         'n_classes':mse[0],
         'imbalance':mse[1],
-        'task':dataset_info['yaml_task']
+        'task':dataset_stats['yaml_task']
         }, index=[0])
 
     assert (local_cache_dir != None)
@@ -252,16 +252,16 @@ def generate_summarystats(dataset_name, dataset_info, local_cache_dir=None):
 
 def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, local_cache_dir=None):
     df = fetch_data(dataset_name, local_cache_dir=local_cache_dir)
-    dataset_info = get_dataset_info(df)
+    dataset_stats = get_dataset_stats(df)
     if dataset_name not in datasets_with_metadata:
-        generate_metadata(df, dataset_name, dataset_info, overwrite, local_dir)
+        generate_metadata(df, dataset_name, dataset_stats, overwrite, local_dir)
     
     with open(pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')) as f:
         meta_dict = yaml.load(f, Loader=yaml.FullLoader)
 
-    dataset_info['yaml_task'] = meta_dict['task']
+    dataset_stats['yaml_task'] = meta_dict['task']
 
-    generate_summarystats(d, dataset_info, local_dir)
+    generate_summarystats(d, dataset_stats, local_dir)
 
 if __name__ =='__main__':
     # assuming this is run from the repo root directory

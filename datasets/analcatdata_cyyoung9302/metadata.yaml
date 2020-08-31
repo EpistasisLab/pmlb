@@ -20,9 +20,9 @@ features: # list of features in the dataset
   - name: Pitcher
     type: categorical
   - name: League
-    type: categorical
+    type: binary
   - name: Type
-    type: categorical
+    type: binary
   - name: Wins
     type: continuous
   - name: Win_pct

@@ -13,27 +13,27 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: AC1
-    type: categorical
+    type: binary
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: AC9
-    type: categorical
+    type: binary
   - name: AC16
-    type: categorical
+    type: binary
   - name: CL7
-    type: categorical
+    type: binary
   - name: CL11
-    type: categorical
+    type: binary
   - name: IJ2
-    type: categorical
+    type: binary
   - name: IJ3
-    type: categorical
+    type: binary
   - name: IJ4
-    type: categorical
+    type: binary
   - name: IJ6
-    type: categorical
+    type: binary
   - name: IJ12
-    type: categorical
+    type: binary
   - name: Total
     type: categorical

@@ -36,7 +36,7 @@ features: # list of features in the dataset
   - name: scalp_involvement
     type: categorical
   - name: family_history
-    type: categorical
+    type: binary
   - name: melanin_incontinence
     type: categorical
   - name: eosinophils_in_the_infiltrate

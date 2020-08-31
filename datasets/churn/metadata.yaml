@@ -24,9 +24,9 @@ features: # list of features in the dataset
   - name: phone number
     type: categorical
   - name: international plan
-    type: categorical
+    type: binary
   - name: voice mail plan
-    type: categorical
+    type: binary
   - name: number vmail messages
     type: continuous
   - name: total day minutes

@@ -40,6 +40,6 @@ features: # list of features in the dataset
   - name: gain_ratio_11
     type: categorical
   - name: sex
-    type: categorical
+    type: binary
   - name: target.1
-    type: categorical
+    type: binary

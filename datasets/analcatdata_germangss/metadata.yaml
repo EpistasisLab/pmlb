@@ -18,10 +18,10 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: Time_of_survey
-    type: categorical
+    type: binary
   - name: Schooling
     type: categorical
   - name: Region
-    type: categorical
+    type: binary
   - name: Count
     type: continuous

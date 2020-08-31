@@ -32,7 +32,7 @@ features: # list of features in the dataset
   - name: N7
     type: categorical
   - name: N8
-    type: categorical
+    type: binary
   - name: N9
     type: categorical
   - name: N10

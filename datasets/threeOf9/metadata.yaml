@@ -13,23 +13,23 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: F1
-    type: categorical
+    type: binary
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: F2
-    type: categorical
+    type: binary
   - name: F3
-    type: categorical
+    type: binary
   - name: F4
-    type: categorical
+    type: binary
   - name: F5
-    type: categorical
+    type: binary
   - name: F6
-    type: categorical
+    type: binary
   - name: F7
-    type: categorical
+    type: binary
   - name: F8
-    type: categorical
+    type: binary
   - name: F9
-    type: categorical
+    type: binary

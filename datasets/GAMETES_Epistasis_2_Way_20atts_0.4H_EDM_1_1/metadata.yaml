@@ -13,7 +13,7 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: N0
-    type: categorical
+    type: binary
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
@@ -36,7 +36,7 @@ features: # list of features in the dataset
   - name: N9
     type: categorical
   - name: N10
-    type: categorical
+    type: binary
   - name: N11
     type: categorical
   - name: N12

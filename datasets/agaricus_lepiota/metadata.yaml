@@ -22,19 +22,19 @@ features: # list of features in the dataset
   - name: cap-color
     type: categorical
   - name: bruises?
-    type: categorical
+    type: binary
   - name: odor
     type: categorical
   - name: gill-attachment
-    type: categorical
+    type: binary
   - name: gill-spacing
-    type: categorical
+    type: binary
   - name: gill-size
-    type: categorical
+    type: binary
   - name: gill-color
     type: categorical
   - name: stalk-shape
-    type: categorical
+    type: binary
   - name: stalk-root
     type: categorical
   - name: stalk-surface-above-ring

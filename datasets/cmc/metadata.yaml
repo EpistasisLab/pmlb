@@ -24,12 +24,12 @@ features: # list of features in the dataset
   - name: Number_of_children_ever_born
     type: continuous
   - name: Wifes_religion
-    type: categorical
+    type: binary
   - name: Wifes_now_working?
-    type: categorical
+    type: binary
   - name: Husbands_occupation
     type: categorical
   - name: Standard-of-living_index
     type: categorical
   - name: Media_exposure
-    type: categorical
+    type: binary

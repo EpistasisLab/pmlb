@@ -138,7 +138,7 @@ features: # list of features in the dataset
   - name: PPLEZIER
     type: categorical
   - name: PFIETS
-    type: categorical
+    type: binary
   - name: PINBOED
     type: categorical
   - name: PBYSTAND
@@ -148,7 +148,7 @@ features: # list of features in the dataset
   - name: AWABEDR
     type: categorical
   - name: AWALAND
-    type: categorical
+    type: binary
   - name: APERSAUT
     type: categorical
   - name: ABESAUT
@@ -168,15 +168,15 @@ features: # list of features in the dataset
   - name: ALEVEN
     type: categorical
   - name: APERSONG
-    type: categorical
+    type: binary
   - name: AGEZONG
-    type: categorical
+    type: binary
   - name: AWAOREG
     type: categorical
   - name: ABRAND
     type: categorical
   - name: AZEILPL
-    type: categorical
+    type: binary
   - name: APLEZIER
     type: categorical
   - name: AFIETS

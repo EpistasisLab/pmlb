@@ -22,16 +22,16 @@ features: # list of features in the dataset
   - name: spot dist code
     type: categorical
   - name: Activity
-    type: categorical
+    type: binary
   - name: Evolution
     type: continuous
   - name: Previous 24 hour code
     type: continuous
   - name: Historically-complex
-    type: categorical
+    type: binary
   - name: become complex
-    type: categorical
+    type: binary
   - name: Area
-    type: categorical
+    type: binary
   - name: Area of the largest spot
     type: categorical

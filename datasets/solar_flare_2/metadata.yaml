@@ -20,17 +20,17 @@ features: # list of features in the dataset
   - name: spot_distribution
     type: categorical
   - name: Activity
-    type: categorical
+    type: binary
   - name: Evolution
     type: categorical
   - name: Previous_24_hour_flare_activity_code
     type: categorical
   - name: Historically-complex
-    type: categorical
+    type: binary
   - name: Did_region_become_historically_complex
-    type: categorical
+    type: binary
   - name: Area
-    type: categorical
+    type: binary
   - name: Area_of_the_largest_spot
     type: categorical
   - name: C-class_flares_production_by_this_region

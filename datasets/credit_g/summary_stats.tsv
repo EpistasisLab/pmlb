@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-credit_g	1000	20	0	13	7	categorical	2.0	0.15999999999999998	classification
+credit_g	1000	20	2	11	7	categorical	2.0	0.15999999999999998	classification

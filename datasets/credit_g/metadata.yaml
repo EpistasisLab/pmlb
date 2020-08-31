@@ -52,6 +52,6 @@ features: # list of features in the dataset
   - name: num_dependents
     type: continuous
   - name: own_telephone
-    type: categorical
+    type: binary
   - name: foreign_worker
-    type: categorical
+    type: binary

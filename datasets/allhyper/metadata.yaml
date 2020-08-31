@@ -20,51 +20,51 @@ features: # list of features in the dataset
   - name: sex
     type: categorical
   - name: on thyroxine
-    type: categorical
+    type: binary
   - name: query on thyroxine
-    type: categorical
+    type: binary
   - name: on antithyroid medication
-    type: categorical
+    type: binary
   - name: sick
-    type: categorical
+    type: binary
   - name: pregnant
-    type: categorical
+    type: binary
   - name: thyroid surgery
-    type: categorical
+    type: binary
   - name: I131 treatment
-    type: categorical
+    type: binary
   - name: query hypothyroid
-    type: categorical
+    type: binary
   - name: query hyperthyroid
-    type: categorical
+    type: binary
   - name: lithium
-    type: categorical
+    type: binary
   - name: goitre
-    type: categorical
+    type: binary
   - name: tumor
-    type: categorical
+    type: binary
   - name: hypopituitary
-    type: categorical
+    type: binary
   - name: psych
-    type: categorical
+    type: binary
   - name: TSH measured
-    type: categorical
+    type: binary
   - name: TSH
     type: categorical
   - name: T3 measured
-    type: categorical
+    type: binary
   - name: T3
     type: categorical
   - name: TT4 measured
-    type: categorical
+    type: binary
   - name: TT4
     type: categorical
   - name: T4U measured
-    type: categorical
+    type: binary
   - name: T4U
     type: categorical
   - name: FTI measured
-    type: categorical
+    type: binary
   - name: FTI
     type: categorical
   - name: TBG measured

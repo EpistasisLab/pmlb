@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-ionosphere	351	34	0	2	32	categorical	2.0	0.07955292570677189	classification
+ionosphere	351	34	1	1	32	categorical	2.0	0.07955292570677189	classification

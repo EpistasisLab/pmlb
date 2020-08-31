@@ -18,7 +18,7 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: Age
-    type: categorical
+    type: binary
   - name: rectal_temperature
     type: categorical
   - name: pulse

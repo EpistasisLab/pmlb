@@ -38,7 +38,7 @@ features: # list of features in the dataset
   - name: plant-growth
     type: categorical
   - name: leaves
-    type: categorical
+    type: binary
   - name: leafspots-halo
     type: categorical
   - name: leafspots-marg

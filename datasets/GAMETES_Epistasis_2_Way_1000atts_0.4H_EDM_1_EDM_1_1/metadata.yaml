@@ -18,7 +18,7 @@ features: # list of features in the dataset
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: N1
-    type: categorical
+    type: binary
   - name: N2
     type: categorical
   - name: N3
@@ -56,7 +56,7 @@ features: # list of features in the dataset
   - name: N19
     type: categorical
   - name: N20
-    type: categorical
+    type: binary
   - name: N21
     type: categorical
   - name: N22
@@ -78,7 +78,7 @@ features: # list of features in the dataset
   - name: N30
     type: categorical
   - name: N31
-    type: categorical
+    type: binary
   - name: N32
     type: categorical
   - name: N33
@@ -86,7 +86,7 @@ features: # list of features in the dataset
   - name: N34
     type: categorical
   - name: N35
-    type: categorical
+    type: binary
   - name: N36
     type: categorical
   - name: N37
@@ -138,7 +138,7 @@ features: # list of features in the dataset
   - name: N60
     type: categorical
   - name: N61
-    type: categorical
+    type: binary
   - name: N62
     type: categorical
   - name: N63
@@ -172,13 +172,13 @@ features: # list of features in the dataset
   - name: N77
     type: categorical
   - name: N78
-    type: categorical
+    type: binary
   - name: N79
     type: categorical
   - name: N80
     type: categorical
   - name: N81
-    type: categorical
+    type: binary
   - name: N82
     type: categorical
   - name: N83
@@ -202,7 +202,7 @@ features: # list of features in the dataset
   - name: N92
     type: categorical
   - name: N93
-    type: categorical
+    type: binary
   - name: N94
     type: categorical
   - name: N95
@@ -214,7 +214,7 @@ features: # list of features in the dataset
   - name: N98
     type: categorical
   - name: N99
-    type: categorical
+    type: binary
   - name: N100
     type: categorical
   - name: N101
@@ -328,7 +328,7 @@ features: # list of features in the dataset
   - name: N155
     type: categorical
   - name: N156
-    type: categorical
+    type: binary
   - name: N157
     type: categorical
   - name: N158
@@ -484,7 +484,7 @@ features: # list of features in the dataset
   - name: N233
     type: categorical
   - name: N234
-    type: categorical
+    type: binary
   - name: N235
     type: categorical
   - name: N236
@@ -602,7 +602,7 @@ features: # list of features in the dataset
   - name: N292
     type: categorical
   - name: N293
-    type: categorical
+    type: binary
   - name: N294
     type: categorical
   - name: N295
@@ -726,7 +726,7 @@ features: # list of features in the dataset
   - name: N354
     type: categorical
   - name: N355
-    type: categorical
+    type: binary
   - name: N356
     type: categorical
   - name: N357
@@ -870,7 +870,7 @@ features: # list of features in the dataset
   - name: N426
     type: categorical
   - name: N427
-    type: categorical
+    type: binary
   - name: N428
     type: categorical
   - name: N429
@@ -962,7 +962,7 @@ features: # list of features in the dataset
   - name: N472
     type: categorical
   - name: N473
-    type: categorical
+    type: binary
   - name: N474
     type: categorical
   - name: N475
@@ -976,7 +976,7 @@ features: # list of features in the dataset
   - name: N479
     type: categorical
   - name: N480
-    type: categorical
+    type: binary
   - name: N481
     type: categorical
   - name: N482
@@ -1064,7 +1064,7 @@ features: # list of features in the dataset
   - name: N523
     type: categorical
   - name: N524
-    type: categorical
+    type: binary
   - name: N525
     type: categorical
   - name: N526
@@ -1098,11 +1098,11 @@ features: # list of features in the dataset
   - name: N540
     type: categorical
   - name: N541
-    type: categorical
+    type: binary
   - name: N542
     type: categorical
   - name: N543
-    type: categorical
+    type: binary
   - name: N544
     type: categorical
   - name: N545
@@ -1248,9 +1248,9 @@ features: # list of features in the dataset
   - name: N615
     type: categorical
   - name: N616
-    type: categorical
+    type: binary
   - name: N617
-    type: categorical
+    type: binary
   - name: N618
     type: categorical
   - name: N619
@@ -1334,7 +1334,7 @@ features: # list of features in the dataset
   - name: N658
     type: categorical
   - name: N659
-    type: categorical
+    type: binary
   - name: N660
     type: categorical
   - name: N661
@@ -1464,9 +1464,9 @@ features: # list of features in the dataset
   - name: N723
     type: categorical
   - name: N724
-    type: categorical
+    type: binary
   - name: N725
-    type: categorical
+    type: binary
   - name: N726
     type: categorical
   - name: N727
@@ -1622,7 +1622,7 @@ features: # list of features in the dataset
   - name: N802
     type: categorical
   - name: N803
-    type: categorical
+    type: binary
   - name: N804
     type: categorical
   - name: N805
@@ -1686,7 +1686,7 @@ features: # list of features in the dataset
   - name: N834
     type: categorical
   - name: N835
-    type: categorical
+    type: binary
   - name: N836
     type: categorical
   - name: N837
@@ -1832,7 +1832,7 @@ features: # list of features in the dataset
   - name: N907
     type: categorical
   - name: N908
-    type: categorical
+    type: binary
   - name: N909
     type: categorical
   - name: N910
@@ -1846,7 +1846,7 @@ features: # list of features in the dataset
   - name: N914
     type: categorical
   - name: N915
-    type: categorical
+    type: binary
   - name: N916
     type: categorical
   - name: N917
@@ -1870,7 +1870,7 @@ features: # list of features in the dataset
   - name: N926
     type: categorical
   - name: N927
-    type: categorical
+    type: binary
   - name: N928
     type: categorical
   - name: N929
@@ -1950,7 +1950,7 @@ features: # list of features in the dataset
   - name: N966
     type: categorical
   - name: N967
-    type: categorical
+    type: binary
   - name: N968
     type: categorical
   - name: N969
@@ -2000,7 +2000,7 @@ features: # list of features in the dataset
   - name: N991
     type: categorical
   - name: N992
-    type: categorical
+    type: binary
   - name: N993
     type: categorical
   - name: N994

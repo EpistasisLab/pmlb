@@ -13,7 +13,7 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Whether_of_not_the_TA_is_a_native_English_speaker
-    type: categorical
+    type: binary
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
@@ -22,6 +22,6 @@ features: # list of features in the dataset
   - name: Course
     type: continuous
   - name: Summer_or_regular_semester
-    type: categorical
+    type: binary
   - name: Class_size
     type: continuous

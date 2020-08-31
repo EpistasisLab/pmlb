@@ -20,10 +20,10 @@ features: # list of features in the dataset
   - name: Body shape
     type: categorical
   - name: Is smiling
-    type: categorical
+    type: binary
   - name: Holding
     type: categorical
   - name: Jacket color
     type: categorical
   - name: Has tie
-    type: categorical
+    type: binary

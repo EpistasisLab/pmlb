@@ -20,11 +20,11 @@ features: # list of features in the dataset
   - name: L-SURF
     type: categorical
   - name: L-O2
-    type: categorical
+    type: binary
   - name: L-BP
     type: categorical
   - name: SURF-STBL
-    type: categorical
+    type: binary
   - name: CORE-STBL
     type: categorical
   - name: BP-STBL

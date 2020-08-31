@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-analcatdata_cyyoung9302	92	10	0	4	6	categorical	2.0	0.34451795841209826	classification
+analcatdata_cyyoung9302	92	10	2	2	6	categorical	2.0	0.34451795841209826	classification

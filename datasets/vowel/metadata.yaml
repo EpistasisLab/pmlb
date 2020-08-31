@@ -13,14 +13,14 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features: # list of features in the dataset
   - name: Train or Test
-    type: categorical
+    type: binary
     description: null # optional but recommended, what the feature measures/indicates, unit
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: null # optional, any transformation performed on the feature, e.g., log scaled
   - name: Speaker Number
     type: categorical
   - name: Sex
-    type: categorical
+    type: binary
   - name: Feature 0
     type: continuous
   - name: Feature 1

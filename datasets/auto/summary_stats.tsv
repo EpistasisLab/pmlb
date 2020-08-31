@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-auto	202	25	0	16	9	categorical	5.0	0.045375453386922844	classification
+auto	202	25	3	13	9	categorical	5.0	0.045375453386922844	classification

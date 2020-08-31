@@ -32,13 +32,13 @@ features: # list of features in the dataset
   - name: A8
     type: continuous
   - name: A9
-    type: categorical
+    type: binary
   - name: A10
-    type: categorical
+    type: binary
   - name: A11
     type: continuous
   - name: A12
-    type: categorical
+    type: binary
   - name: A13
     type: categorical
   - name: A14

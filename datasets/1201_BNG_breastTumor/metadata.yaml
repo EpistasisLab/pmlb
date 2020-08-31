@@ -22,14 +22,14 @@ features: # list of features in the dataset
   - name: inv-nodes
     type: continuous
   - name: node-caps
-    type: categorical
+    type: binary
   - name: deg-malig
     type: continuous
   - name: breast
-    type: categorical
+    type: binary
   - name: breast-quad
     type: categorical
   - name: irradiation
-    type: categorical
+    type: binary
   - name: recurrence
-    type: categorical
+    type: binary
