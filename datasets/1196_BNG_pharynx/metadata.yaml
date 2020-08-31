@@ -3,35 +3,62 @@ dataset: 1196_BNG_pharynx
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: regression
 keywords:
   -
   -
-task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Inst
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: sex
     type: continuous
+    description:
+    code:
+    transform:
   - name: Treatment
     type: continuous
+    description:
+    code:
+    transform:
   - name: Grade
     type: continuous
+    description:
+    code:
+    transform:
   - name: Age
     type: continuous
+    description:
+    code:
+    transform:
   - name: Condition
     type: continuous
+    description:
+    code:
+    transform:
   - name: Site
     type: continuous
+    description:
+    code:
+    transform:
   - name: T
     type: continuous
+    description:
+    code:
+    transform:
   - name: "N"
     type: continuous
+    description:
+    code:
+    transform:
   - name: Status
     type: continuous
+    description:
+    code:
+    transform:

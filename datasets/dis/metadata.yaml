@@ -3,73 +3,157 @@ dataset: dis
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: age
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: sex
     type: categorical
+    description:
+    code:
+    transform:
   - name: on thyroxine
     type: binary
+    description:
+    code:
+    transform:
   - name: query on thyroxine
     type: binary
+    description:
+    code:
+    transform:
   - name: on antithyroid medication
     type: binary
+    description:
+    code:
+    transform:
   - name: sick
     type: binary
+    description:
+    code:
+    transform:
   - name: pregnant
     type: binary
+    description:
+    code:
+    transform:
   - name: thyroid surgery
     type: binary
+    description:
+    code:
+    transform:
   - name: I131 treatment
     type: binary
+    description:
+    code:
+    transform:
   - name: query hypothyroid
     type: binary
+    description:
+    code:
+    transform:
   - name: query hyperthyroid
     type: binary
+    description:
+    code:
+    transform:
   - name: lithium
     type: binary
+    description:
+    code:
+    transform:
   - name: goitre
     type: binary
+    description:
+    code:
+    transform:
   - name: tumor
     type: binary
+    description:
+    code:
+    transform:
   - name: hypopituitary
     type: binary
+    description:
+    code:
+    transform:
   - name: psych
     type: binary
+    description:
+    code:
+    transform:
   - name: TSH measured
     type: binary
+    description:
+    code:
+    transform:
   - name: TSH
     type: categorical
+    description:
+    code:
+    transform:
   - name: T3 measured
     type: binary
+    description:
+    code:
+    transform:
   - name: T3
     type: categorical
+    description:
+    code:
+    transform:
   - name: TT4 measured
     type: binary
+    description:
+    code:
+    transform:
   - name: TT4
     type: categorical
+    description:
+    code:
+    transform:
   - name: T4U measured
     type: binary
+    description:
+    code:
+    transform:
   - name: T4U
     type: categorical
+    description:
+    code:
+    transform:
   - name: FTI measured
     type: binary
+    description:
+    code:
+    transform:
   - name: FTI
     type: categorical
+    description:
+    code:
+    transform:
   - name: TBG measured
     type: categorical
+    description:
+    code:
+    transform:
   - name: TBG
     type: categorical
+    description:
+    code:
+    transform:
   - name: referral source
     type: categorical
+    description:
+    code:
+    transform:

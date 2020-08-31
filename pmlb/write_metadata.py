@@ -27,7 +27,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-import glob, pathlib
+import pathlib
 import yaml
 import pandas as pd
 from collections import Counter
@@ -130,15 +130,15 @@ dataset: {dataset_name}
 description: {none_yet}
 source: {none_yet}
 publication: {none_yet}
+task: {task}
 keywords:
   -
   -
-task: {task}
 target:
   type: {endpoint}
   description: {none_yet}
   code: {none_yet}
-features: # list of features in the dataset
+features:
 {all_features}\
 '''
 
@@ -146,11 +146,15 @@ feature_template = '''\
   - name: {feat_name}
     type: {feat_type}
 '''
-
-extra_template = '''\
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+feat_extra_template = '''\
+    description:
+    code:
+    transform:
+'''
+feat_extra_first = '''\
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
 '''
 
 def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
@@ -178,7 +182,6 @@ def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
 #             logger.warning(f'Not writing {dataset_name}.yaml ; '
 #                             'It has a customized metadata file\n')
 #             return None
-
         if (not overwrite_existing):
             logger.warning(f'Not writing {dataset_name}/metadata.yaml ; '
                             'File exists (use overwrite_existing=True to override.\n')
@@ -194,15 +197,17 @@ def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
     for feature, feature_type in zip(dataset_stats['feat_names'], dataset_stats['types']):
         if feature in protected_feature_names:
             feature = f'"{feature}"'
-
         all_features += feature_template.format(
             feat_name=feature,
             feat_type=feature_type
         )
-
         if first:
-            all_features += extra_template
+            all_features += feat_extra_first
             first = False
+        else:
+            all_features += feat_extra_template
+
+
 
     metadata = metadata_template.format(
         header_to_print=header_to_print,
@@ -271,7 +276,7 @@ if __name__ =='__main__':
     for d in dataset_names:
         print(d, '...')
         update_metadata_summary(
-            d, datasets_with_metadata, 
+            d, datasets_with_metadata,
             overwrite=overwrite,
             local_cache_dir=local_dir)
 

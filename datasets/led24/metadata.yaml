@@ -3,63 +3,132 @@ dataset: led24
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: attribute#1
     type: binary
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: attribute#2
     type: binary
+    description:
+    code:
+    transform:
   - name: attribute#3
     type: binary
+    description:
+    code:
+    transform:
   - name: attribute#4
     type: binary
+    description:
+    code:
+    transform:
   - name: attribute#5
     type: binary
+    description:
+    code:
+    transform:
   - name: attribute#6
     type: binary
+    description:
+    code:
+    transform:
   - name: attribute#7
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant1
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant2
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant3
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant4
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant5
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant6
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant7
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant8
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant9
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant10
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant11
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant12
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant13
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant14
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant15
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant16
     type: binary
+    description:
+    code:
+    transform:
   - name: irrelevant17
     type: binary
+    description:
+    code:
+    transform:

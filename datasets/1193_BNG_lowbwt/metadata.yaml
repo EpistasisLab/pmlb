@@ -3,33 +3,57 @@ dataset: 1193_BNG_lowbwt
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: regression
 keywords:
   -
   -
-task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: LOW
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: AGE
     type: continuous
+    description:
+    code:
+    transform:
   - name: LWT
     type: continuous
+    description:
+    code:
+    transform:
   - name: RACE
     type: continuous
+    description:
+    code:
+    transform:
   - name: SMOKE
     type: continuous
+    description:
+    code:
+    transform:
   - name: PTL
     type: continuous
+    description:
+    code:
+    transform:
   - name: HT
     type: continuous
+    description:
+    code:
+    transform:
   - name: UI
     type: continuous
+    description:
+    code:
+    transform:
   - name: FTV
     type: continuous
+    description:
+    code:
+    transform:

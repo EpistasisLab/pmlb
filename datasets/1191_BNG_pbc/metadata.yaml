@@ -3,51 +3,102 @@ dataset: 1191_BNG_pbc
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: regression
 keywords:
   -
   -
-task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: D
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Z1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z4
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z5
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z6
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z7
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z8
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z9
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z10
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z11
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z12
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z13
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z14
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z15
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z16
     type: continuous
+    description:
+    code:
+    transform:
   - name: Z17
     type: continuous
+    description:
+    code:
+    transform:

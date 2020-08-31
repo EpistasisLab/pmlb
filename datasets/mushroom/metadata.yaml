@@ -1,4 +1,4 @@
-#Reviewed by Trang Le
+# Reviewed by Trang Le
 dataset: mushroom
 description: Mushroom records drawn from The Audubon Society Field Guide to North American Mushrooms.
 source: >
@@ -10,6 +10,10 @@ publication: >
   The Audubon Society Field Guide to North American Mushrooms (1981).
   G. H. Lincoff (Pres.), New York.
   doi:10.2307/3792705
+keywords:
+  - mushroom
+  - biology
+  - toxicology
 task: classification
 target:
   type: binary

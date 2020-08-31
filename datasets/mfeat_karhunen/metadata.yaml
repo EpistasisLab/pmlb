@@ -3,143 +3,332 @@ dataset: mfeat_karhunen
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: att1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: att2
     type: continuous
+    description:
+    code:
+    transform:
   - name: att3
     type: continuous
+    description:
+    code:
+    transform:
   - name: att4
     type: continuous
+    description:
+    code:
+    transform:
   - name: att5
     type: continuous
+    description:
+    code:
+    transform:
   - name: att6
     type: continuous
+    description:
+    code:
+    transform:
   - name: att7
     type: continuous
+    description:
+    code:
+    transform:
   - name: att8
     type: continuous
+    description:
+    code:
+    transform:
   - name: att9
     type: continuous
+    description:
+    code:
+    transform:
   - name: att10
     type: continuous
+    description:
+    code:
+    transform:
   - name: att11
     type: continuous
+    description:
+    code:
+    transform:
   - name: att12
     type: continuous
+    description:
+    code:
+    transform:
   - name: att13
     type: continuous
+    description:
+    code:
+    transform:
   - name: att14
     type: continuous
+    description:
+    code:
+    transform:
   - name: att15
     type: continuous
+    description:
+    code:
+    transform:
   - name: att16
     type: continuous
+    description:
+    code:
+    transform:
   - name: att17
     type: continuous
+    description:
+    code:
+    transform:
   - name: att18
     type: continuous
+    description:
+    code:
+    transform:
   - name: att19
     type: continuous
+    description:
+    code:
+    transform:
   - name: att20
     type: continuous
+    description:
+    code:
+    transform:
   - name: att21
     type: continuous
+    description:
+    code:
+    transform:
   - name: att22
     type: continuous
+    description:
+    code:
+    transform:
   - name: att23
     type: continuous
+    description:
+    code:
+    transform:
   - name: att24
     type: continuous
+    description:
+    code:
+    transform:
   - name: att25
     type: continuous
+    description:
+    code:
+    transform:
   - name: att26
     type: continuous
+    description:
+    code:
+    transform:
   - name: att27
     type: continuous
+    description:
+    code:
+    transform:
   - name: att28
     type: continuous
+    description:
+    code:
+    transform:
   - name: att29
     type: continuous
+    description:
+    code:
+    transform:
   - name: att30
     type: continuous
+    description:
+    code:
+    transform:
   - name: att31
     type: continuous
+    description:
+    code:
+    transform:
   - name: att32
     type: continuous
+    description:
+    code:
+    transform:
   - name: att33
     type: continuous
+    description:
+    code:
+    transform:
   - name: att34
     type: continuous
+    description:
+    code:
+    transform:
   - name: att35
     type: continuous
+    description:
+    code:
+    transform:
   - name: att36
     type: continuous
+    description:
+    code:
+    transform:
   - name: att37
     type: continuous
+    description:
+    code:
+    transform:
   - name: att38
     type: continuous
+    description:
+    code:
+    transform:
   - name: att39
     type: continuous
+    description:
+    code:
+    transform:
   - name: att40
     type: continuous
+    description:
+    code:
+    transform:
   - name: att41
     type: continuous
+    description:
+    code:
+    transform:
   - name: att42
     type: continuous
+    description:
+    code:
+    transform:
   - name: att43
     type: continuous
+    description:
+    code:
+    transform:
   - name: att44
     type: continuous
+    description:
+    code:
+    transform:
   - name: att45
     type: continuous
+    description:
+    code:
+    transform:
   - name: att46
     type: continuous
+    description:
+    code:
+    transform:
   - name: att47
     type: continuous
+    description:
+    code:
+    transform:
   - name: att48
     type: continuous
+    description:
+    code:
+    transform:
   - name: att49
     type: continuous
+    description:
+    code:
+    transform:
   - name: att50
     type: continuous
+    description:
+    code:
+    transform:
   - name: att51
     type: continuous
+    description:
+    code:
+    transform:
   - name: att52
     type: continuous
+    description:
+    code:
+    transform:
   - name: att53
     type: continuous
+    description:
+    code:
+    transform:
   - name: att54
     type: continuous
+    description:
+    code:
+    transform:
   - name: att55
     type: continuous
+    description:
+    code:
+    transform:
   - name: att56
     type: continuous
+    description:
+    code:
+    transform:
   - name: att57
     type: continuous
+    description:
+    code:
+    transform:
   - name: att58
     type: continuous
+    description:
+    code:
+    transform:
   - name: att59
     type: continuous
+    description:
+    code:
+    transform:
   - name: att60
     type: continuous
+    description:
+    code:
+    transform:
   - name: att61
     type: continuous
+    description:
+    code:
+    transform:
   - name: att62
     type: continuous
+    description:
+    code:
+    transform:
   - name: att63
     type: continuous
+    description:
+    code:
+    transform:
   - name: att64
     type: continuous
+    description:
+    code:
+    transform:

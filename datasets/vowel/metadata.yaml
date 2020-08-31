@@ -3,41 +3,77 @@ dataset: vowel
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Train or Test
     type: binary
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Speaker Number
     type: categorical
+    description:
+    code:
+    transform:
   - name: Sex
     type: binary
+    description:
+    code:
+    transform:
   - name: Feature 0
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 4
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 5
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 6
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 7
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 8
     type: continuous
+    description:
+    code:
+    transform:
   - name: Feature 9
     type: continuous
+    description:
+    code:
+    transform:

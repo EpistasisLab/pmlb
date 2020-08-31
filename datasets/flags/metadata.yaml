@@ -3,101 +3,227 @@ dataset: flags
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: bars
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: stripes
     type: categorical
+    description:
+    code:
+    transform:
   - name: colors
     type: categorical
+    description:
+    code:
+    transform:
   - name: red
     type: binary
+    description:
+    code:
+    transform:
   - name: green
     type: binary
+    description:
+    code:
+    transform:
   - name: blue
     type: binary
+    description:
+    code:
+    transform:
   - name: gold
     type: binary
+    description:
+    code:
+    transform:
   - name: white
     type: binary
+    description:
+    code:
+    transform:
   - name: black
     type: binary
+    description:
+    code:
+    transform:
   - name: orange
     type: binary
+    description:
+    code:
+    transform:
   - name: circles
     type: categorical
+    description:
+    code:
+    transform:
   - name: crosses
     type: categorical
+    description:
+    code:
+    transform:
   - name: saltires
     type: binary
+    description:
+    code:
+    transform:
   - name: quarters
     type: categorical
+    description:
+    code:
+    transform:
   - name: sunstars
     type: categorical
+    description:
+    code:
+    transform:
   - name: crescent
     type: binary
+    description:
+    code:
+    transform:
   - name: triangle
     type: binary
+    description:
+    code:
+    transform:
   - name: icon
     type: binary
+    description:
+    code:
+    transform:
   - name: animate
     type: binary
+    description:
+    code:
+    transform:
   - name: text
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_green
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_red
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_blue
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_gold
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_white
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_orange
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_black
     type: binary
+    description:
+    code:
+    transform:
   - name: mainhue_brown
     type: binary
+    description:
+    code:
+    transform:
   - name: topleft_black
     type: binary
+    description:
+    code:
+    transform:
   - name: topleft_red
     type: binary
+    description:
+    code:
+    transform:
   - name: topleft_green
     type: binary
+    description:
+    code:
+    transform:
   - name: topleft_blue
     type: binary
+    description:
+    code:
+    transform:
   - name: topleft_white
     type: binary
+    description:
+    code:
+    transform:
   - name: topleft_orange
     type: binary
+    description:
+    code:
+    transform:
   - name: topleft_gold
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_green
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_red
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_white
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_black
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_blue
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_gold
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_orange
     type: binary
+    description:
+    code:
+    transform:
   - name: botright_brown
     type: binary
+    description:
+    code:
+    transform:

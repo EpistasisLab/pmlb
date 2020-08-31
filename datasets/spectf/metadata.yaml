@@ -3,103 +3,232 @@ dataset: spectf
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: F1R
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: F1S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F2R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F2S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F3R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F3S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F4R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F4S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F5R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F5S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F6R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F6S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F7R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F7S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F8R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F8S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F9R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F9S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F10R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F10S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F11R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F11S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F12R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F12S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F13R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F13S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F14R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F14S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F15R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F15S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F16R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F16S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F17R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F17S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F18R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F18S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F19R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F19S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F20R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F20S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F21R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F21S
     type: continuous
+    description:
+    code:
+    transform:
   - name: F22R
     type: continuous
+    description:
+    code:
+    transform:
   - name: F22S
     type: continuous
+    description:
+    code:
+    transform:

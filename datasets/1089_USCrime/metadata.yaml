@@ -3,41 +3,77 @@ dataset: 1089_USCrime
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: regression
 keywords:
   -
   -
-task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: R
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Age
     type: continuous
+    description:
+    code:
+    transform:
   - name: S
     type: continuous
+    description:
+    code:
+    transform:
   - name: Ed
     type: continuous
+    description:
+    code:
+    transform:
   - name: Ex0
     type: continuous
+    description:
+    code:
+    transform:
   - name: Ex1
     type: continuous
+    description:
+    code:
+    transform:
   - name: LF
     type: continuous
+    description:
+    code:
+    transform:
   - name: M
     type: continuous
+    description:
+    code:
+    transform:
   - name: "N"
     type: continuous
+    description:
+    code:
+    transform:
   - name: NW
     type: continuous
+    description:
+    code:
+    transform:
   - name: U1
     type: continuous
+    description:
+    code:
+    transform:
   - name: U2
     type: continuous
+    description:
+    code:
+    transform:
   - name: W
     type: continuous
+    description:
+    code:
+    transform:

@@ -1,9 +1,12 @@
-#Reviewed by Daniel Goldberg
+# Reviewed by Daniel Goldberg
 dataset: irish
 description: Educational transitions of Irish schoolchildren, aged 11 in 1967.
 source: https://www.openml.org/d/451
 publication: Monitoring the Learning Outcomes of Education Systems by Vincent Greaney and Thomas Kelleghan
 task: classification
+keywords:
+  - education
+  - ses
 target:
   type: binary
   description: Leaving certificate taken

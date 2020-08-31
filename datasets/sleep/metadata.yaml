@@ -3,41 +3,77 @@ dataset: sleep
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: V0
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: V1
     type: continuous
+    description:
+    code:
+    transform:
   - name: V2
     type: continuous
+    description:
+    code:
+    transform:
   - name: V3
     type: continuous
+    description:
+    code:
+    transform:
   - name: V4
     type: continuous
+    description:
+    code:
+    transform:
   - name: V5
     type: continuous
+    description:
+    code:
+    transform:
   - name: V6
     type: continuous
+    description:
+    code:
+    transform:
   - name: V7
     type: continuous
+    description:
+    code:
+    transform:
   - name: V8
     type: continuous
+    description:
+    code:
+    transform:
   - name: V9
     type: continuous
+    description:
+    code:
+    transform:
   - name: V10
     type: continuous
+    description:
+    code:
+    transform:
   - name: V11
     type: continuous
+    description:
+    code:
+    transform:
   - name: V12
     type: continuous
+    description:
+    code:
+    transform:

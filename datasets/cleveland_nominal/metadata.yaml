@@ -3,29 +3,47 @@ dataset: cleveland_nominal
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: sex
     type: binary
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: cp
     type: categorical
+    description:
+    code:
+    transform:
   - name: fbs
     type: binary
+    description:
+    code:
+    transform:
   - name: restecg
     type: categorical
+    description:
+    code:
+    transform:
   - name: exang
     type: binary
+    description:
+    code:
+    transform:
   - name: slope
     type: categorical
+    description:
+    code:
+    transform:
   - name: thal
     type: categorical
+    description:
+    code:
+    transform:

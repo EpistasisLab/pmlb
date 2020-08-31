@@ -3,25 +3,37 @@ dataset: tae
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Whether_of_not_the_TA_is_a_native_English_speaker
     type: binary
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Course_instructor
     type: continuous
+    description:
+    code:
+    transform:
   - name: Course
     type: continuous
+    description:
+    code:
+    transform:
   - name: Summer_or_regular_semester
     type: binary
+    description:
+    code:
+    transform:
   - name: Class_size
     type: continuous
+    description:
+    code:
+    transform:

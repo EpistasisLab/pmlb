@@ -3,51 +3,102 @@ dataset: lymphography
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Lymphatics
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Block_of_affere
     type: binary
+    description:
+    code:
+    transform:
   - name: Bl_of_lymph_c
     type: binary
+    description:
+    code:
+    transform:
   - name: Bl_of_lymph_s
     type: binary
+    description:
+    code:
+    transform:
   - name: By_pass
     type: binary
+    description:
+    code:
+    transform:
   - name: Extravasates
     type: binary
+    description:
+    code:
+    transform:
   - name: Regeneration_of
     type: binary
+    description:
+    code:
+    transform:
   - name: Early_uptake_in
     type: binary
+    description:
+    code:
+    transform:
   - name: Lym_nodes_dimin
     type: categorical
+    description:
+    code:
+    transform:
   - name: Lym_nodes_enlar
     type: categorical
+    description:
+    code:
+    transform:
   - name: Changes_in_lym
     type: categorical
+    description:
+    code:
+    transform:
   - name: Defect_in_node
     type: categorical
+    description:
+    code:
+    transform:
   - name: Changes_in_node
     type: categorical
+    description:
+    code:
+    transform:
   - name: Changes_in_stru
     type: categorical
+    description:
+    code:
+    transform:
   - name: Special_forms
     type: categorical
+    description:
+    code:
+    transform:
   - name: Dislocation_of
     type: binary
+    description:
+    code:
+    transform:
   - name: Exclusion_of_no
     type: binary
+    description:
+    code:
+    transform:
   - name: No_of_nodes_in
     type: categorical
+    description:
+    code:
+    transform:

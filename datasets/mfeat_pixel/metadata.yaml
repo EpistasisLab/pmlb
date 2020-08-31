@@ -3,495 +3,1212 @@ dataset: mfeat_pixel
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: attribute_0
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: attribute_1
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_2
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_3
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_4
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_5
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_6
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_7
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_8
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_9
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_10
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_11
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_12
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_13
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_14
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_15
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_16
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_17
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_18
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_19
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_20
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_21
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_22
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_23
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_24
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_25
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_26
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_27
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_28
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_29
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_30
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_31
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_32
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_33
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_34
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_35
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_36
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_37
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_38
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_39
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_40
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_41
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_42
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_43
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_44
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_45
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_46
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_47
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_48
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_49
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_50
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_51
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_52
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_53
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_54
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_55
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_56
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_57
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_58
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_59
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_60
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_61
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_62
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_63
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_64
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_65
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_66
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_67
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_68
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_69
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_70
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_71
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_72
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_73
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_74
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_75
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_76
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_77
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_78
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_79
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_80
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_81
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_82
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_83
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_84
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_85
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_86
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_87
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_88
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_89
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_90
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_91
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_92
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_93
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_94
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_95
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_96
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_97
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_98
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_99
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_100
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_101
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_102
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_103
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_104
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_105
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_106
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_107
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_108
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_109
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_110
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_111
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_112
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_113
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_114
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_115
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_116
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_117
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_118
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_119
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_120
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_121
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_122
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_123
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_124
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_125
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_126
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_127
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_128
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_129
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_130
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_131
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_132
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_133
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_134
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_135
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_136
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_137
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_138
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_139
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_140
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_141
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_142
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_143
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_144
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_145
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_146
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_147
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_148
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_149
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_150
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_151
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_152
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_153
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_154
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_155
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_156
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_157
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_158
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_159
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_160
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_161
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_162
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_163
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_164
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_165
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_166
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_167
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_168
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_169
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_170
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_171
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_172
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_173
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_174
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_175
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_176
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_177
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_178
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_179
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_180
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_181
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_182
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_183
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_184
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_185
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_186
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_187
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_188
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_189
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_190
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_191
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_192
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_193
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_194
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_195
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_196
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_197
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_198
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_199
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_200
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_201
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_202
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_203
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_204
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_205
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_206
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_207
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_208
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_209
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_210
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_211
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_212
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_213
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_214
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_215
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_216
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_217
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_218
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_219
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_220
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_221
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_222
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_223
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_224
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_225
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_226
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_227
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_228
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_229
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_230
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_231
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_232
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_233
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_234
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_235
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_236
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_237
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_238
     type: continuous
+    description:
+    code:
+    transform:
   - name: attribute_239
     type: continuous
+    description:
+    code:
+    transform:

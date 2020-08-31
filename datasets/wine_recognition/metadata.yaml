@@ -3,41 +3,77 @@ dataset: wine_recognition
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: 1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: 2
     type: continuous
+    description:
+    code:
+    transform:
   - name: 3
     type: continuous
+    description:
+    code:
+    transform:
   - name: 4
     type: continuous
+    description:
+    code:
+    transform:
   - name: 5
     type: categorical
+    description:
+    code:
+    transform:
   - name: 6
     type: continuous
+    description:
+    code:
+    transform:
   - name: 7
     type: continuous
+    description:
+    code:
+    transform:
   - name: 8
     type: continuous
+    description:
+    code:
+    transform:
   - name: 9
     type: continuous
+    description:
+    code:
+    transform:
   - name: 10
     type: continuous
+    description:
+    code:
+    transform:
   - name: 11
     type: continuous
+    description:
+    code:
+    transform:
   - name: 12
     type: continuous
+    description:
+    code:
+    transform:
   - name: 13
     type: categorical
+    description:
+    code:
+    transform:

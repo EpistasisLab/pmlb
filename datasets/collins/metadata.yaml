@@ -3,61 +3,127 @@ dataset: collins
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Text
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: FirstPerson
     type: continuous
+    description:
+    code:
+    transform:
   - name: InnerThinking
     type: continuous
+    description:
+    code:
+    transform:
   - name: ThinkPositive
     type: continuous
+    description:
+    code:
+    transform:
   - name: ThinkNegative
     type: continuous
+    description:
+    code:
+    transform:
   - name: ThinkAhead
     type: continuous
+    description:
+    code:
+    transform:
   - name: ThinkBack
     type: continuous
+    description:
+    code:
+    transform:
   - name: Reasoning
     type: continuous
+    description:
+    code:
+    transform:
   - name: Share_SocTies
     type: continuous
+    description:
+    code:
+    transform:
   - name: Direct_Activity
     type: continuous
+    description:
+    code:
+    transform:
   - name: Interacting
     type: continuous
+    description:
+    code:
+    transform:
   - name: Notifying
     type: continuous
+    description:
+    code:
+    transform:
   - name: LinearGuidance
     type: continuous
+    description:
+    code:
+    transform:
   - name: WordPicture
     type: continuous
+    description:
+    code:
+    transform:
   - name: SpaceInterval
     type: continuous
+    description:
+    code:
+    transform:
   - name: Motion
     type: continuous
+    description:
+    code:
+    transform:
   - name: PastEvents
     type: continuous
+    description:
+    code:
+    transform:
   - name: TimeInterval
     type: continuous
+    description:
+    code:
+    transform:
   - name: ShiftingEvents
     type: continuous
+    description:
+    code:
+    transform:
   - name: Text_Coverage
     type: continuous
+    description:
+    code:
+    transform:
   - name: Genre
     type: categorical
+    description:
+    code:
+    transform:
   - name: Counter
     type: continuous
+    description:
+    code:
+    transform:
   - name: Corpus
     type: categorical
+    description:
+    code:
+    transform:

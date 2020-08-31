@@ -3,185 +3,437 @@ dataset: coil2000
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: MOSTYPE
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: MAANTHUI
     type: categorical
+    description:
+    code:
+    transform:
   - name: MGEMOMV
     type: categorical
+    description:
+    code:
+    transform:
   - name: MGEMLEEF
     type: categorical
+    description:
+    code:
+    transform:
   - name: MOSHOOFD
     type: categorical
+    description:
+    code:
+    transform:
   - name: MGODRK
     type: categorical
+    description:
+    code:
+    transform:
   - name: MGODPR
     type: categorical
+    description:
+    code:
+    transform:
   - name: MGODOV
     type: categorical
+    description:
+    code:
+    transform:
   - name: MGODGE
     type: categorical
+    description:
+    code:
+    transform:
   - name: MRELGE
     type: categorical
+    description:
+    code:
+    transform:
   - name: MRELSA
     type: categorical
+    description:
+    code:
+    transform:
   - name: MRELOV
     type: categorical
+    description:
+    code:
+    transform:
   - name: MFALLEEN
     type: categorical
+    description:
+    code:
+    transform:
   - name: MFGEKIND
     type: categorical
+    description:
+    code:
+    transform:
   - name: MFWEKIND
     type: categorical
+    description:
+    code:
+    transform:
   - name: MOPLHOOG
     type: categorical
+    description:
+    code:
+    transform:
   - name: MOPLMIDD
     type: categorical
+    description:
+    code:
+    transform:
   - name: MOPLLAAG
     type: categorical
+    description:
+    code:
+    transform:
   - name: MBERHOOG
     type: categorical
+    description:
+    code:
+    transform:
   - name: MBERZELF
     type: categorical
+    description:
+    code:
+    transform:
   - name: MBERBOER
     type: categorical
+    description:
+    code:
+    transform:
   - name: MBERMIDD
     type: categorical
+    description:
+    code:
+    transform:
   - name: MBERARBG
     type: categorical
+    description:
+    code:
+    transform:
   - name: MBERARBO
     type: categorical
+    description:
+    code:
+    transform:
   - name: MSKA
     type: categorical
+    description:
+    code:
+    transform:
   - name: MSKB1
     type: categorical
+    description:
+    code:
+    transform:
   - name: MSKB2
     type: categorical
+    description:
+    code:
+    transform:
   - name: MSKC
     type: categorical
+    description:
+    code:
+    transform:
   - name: MSKD
     type: categorical
+    description:
+    code:
+    transform:
   - name: MHHUUR
     type: categorical
+    description:
+    code:
+    transform:
   - name: MHKOOP
     type: categorical
+    description:
+    code:
+    transform:
   - name: MAUT1
     type: categorical
+    description:
+    code:
+    transform:
   - name: MAUT2
     type: categorical
+    description:
+    code:
+    transform:
   - name: MAUT0
     type: categorical
+    description:
+    code:
+    transform:
   - name: MZFONDS
     type: categorical
+    description:
+    code:
+    transform:
   - name: MZPART
     type: categorical
+    description:
+    code:
+    transform:
   - name: MINKM30
     type: categorical
+    description:
+    code:
+    transform:
   - name: MINK3045
     type: categorical
+    description:
+    code:
+    transform:
   - name: MINK4575
     type: categorical
+    description:
+    code:
+    transform:
   - name: MINK7512
     type: categorical
+    description:
+    code:
+    transform:
   - name: MINK123M
     type: categorical
+    description:
+    code:
+    transform:
   - name: MINKGEM
     type: categorical
+    description:
+    code:
+    transform:
   - name: MKOOPKLA
     type: categorical
+    description:
+    code:
+    transform:
   - name: PWAPART
     type: categorical
+    description:
+    code:
+    transform:
   - name: PWABEDR
     type: categorical
+    description:
+    code:
+    transform:
   - name: PWALAND
     type: categorical
+    description:
+    code:
+    transform:
   - name: PPERSAUT
     type: categorical
+    description:
+    code:
+    transform:
   - name: PBESAUT
     type: categorical
+    description:
+    code:
+    transform:
   - name: PMOTSCO
     type: categorical
+    description:
+    code:
+    transform:
   - name: PVRAAUT
     type: categorical
+    description:
+    code:
+    transform:
   - name: PAANHANG
     type: categorical
+    description:
+    code:
+    transform:
   - name: PTRACTOR
     type: categorical
+    description:
+    code:
+    transform:
   - name: PWERKT
     type: categorical
+    description:
+    code:
+    transform:
   - name: PBROM
     type: categorical
+    description:
+    code:
+    transform:
   - name: PLEVEN
     type: categorical
+    description:
+    code:
+    transform:
   - name: PPERSONG
     type: categorical
+    description:
+    code:
+    transform:
   - name: PGEZONG
     type: categorical
+    description:
+    code:
+    transform:
   - name: PWAOREG
     type: categorical
+    description:
+    code:
+    transform:
   - name: PBRAND
     type: categorical
+    description:
+    code:
+    transform:
   - name: PZEILPL
     type: categorical
+    description:
+    code:
+    transform:
   - name: PPLEZIER
     type: categorical
+    description:
+    code:
+    transform:
   - name: PFIETS
     type: binary
+    description:
+    code:
+    transform:
   - name: PINBOED
     type: categorical
+    description:
+    code:
+    transform:
   - name: PBYSTAND
     type: categorical
+    description:
+    code:
+    transform:
   - name: AWAPART
     type: categorical
+    description:
+    code:
+    transform:
   - name: AWABEDR
     type: categorical
+    description:
+    code:
+    transform:
   - name: AWALAND
     type: binary
+    description:
+    code:
+    transform:
   - name: APERSAUT
     type: categorical
+    description:
+    code:
+    transform:
   - name: ABESAUT
     type: categorical
+    description:
+    code:
+    transform:
   - name: AMOTSCO
     type: categorical
+    description:
+    code:
+    transform:
   - name: AVRAAUT
     type: categorical
+    description:
+    code:
+    transform:
   - name: AAANHANG
     type: categorical
+    description:
+    code:
+    transform:
   - name: ATRACTOR
     type: categorical
+    description:
+    code:
+    transform:
   - name: AWERKT
     type: categorical
+    description:
+    code:
+    transform:
   - name: ABROM
     type: categorical
+    description:
+    code:
+    transform:
   - name: ALEVEN
     type: categorical
+    description:
+    code:
+    transform:
   - name: APERSONG
     type: binary
+    description:
+    code:
+    transform:
   - name: AGEZONG
     type: binary
+    description:
+    code:
+    transform:
   - name: AWAOREG
     type: categorical
+    description:
+    code:
+    transform:
   - name: ABRAND
     type: categorical
+    description:
+    code:
+    transform:
   - name: AZEILPL
     type: binary
+    description:
+    code:
+    transform:
   - name: APLEZIER
     type: categorical
+    description:
+    code:
+    transform:
   - name: AFIETS
     type: categorical
+    description:
+    code:
+    transform:
   - name: AINBOED
     type: categorical
+    description:
+    code:
+    transform:
   - name: ABYSTAND
     type: categorical
+    description:
+    code:
+    transform:

@@ -3,85 +3,187 @@ dataset: soybean
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: date
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: plant-stand
     type: categorical
+    description:
+    code:
+    transform:
   - name: precip
     type: categorical
+    description:
+    code:
+    transform:
   - name: temp
     type: categorical
+    description:
+    code:
+    transform:
   - name: hail
     type: categorical
+    description:
+    code:
+    transform:
   - name: crop-hist
     type: categorical
+    description:
+    code:
+    transform:
   - name: area-damaged
     type: categorical
+    description:
+    code:
+    transform:
   - name: severity
     type: categorical
+    description:
+    code:
+    transform:
   - name: seed-tmt
     type: categorical
+    description:
+    code:
+    transform:
   - name: germination
     type: categorical
+    description:
+    code:
+    transform:
   - name: plant-growth
     type: categorical
+    description:
+    code:
+    transform:
   - name: leaves
     type: binary
+    description:
+    code:
+    transform:
   - name: leafspots-halo
     type: categorical
+    description:
+    code:
+    transform:
   - name: leafspots-marg
     type: categorical
+    description:
+    code:
+    transform:
   - name: leafspot-size
     type: categorical
+    description:
+    code:
+    transform:
   - name: leaf-shread
     type: categorical
+    description:
+    code:
+    transform:
   - name: leaf-malf
     type: categorical
+    description:
+    code:
+    transform:
   - name: leaf-mild
     type: categorical
+    description:
+    code:
+    transform:
   - name: stem
     type: categorical
+    description:
+    code:
+    transform:
   - name: lodging
     type: categorical
+    description:
+    code:
+    transform:
   - name: stem-cankers
     type: categorical
+    description:
+    code:
+    transform:
   - name: canker-lesion
     type: categorical
+    description:
+    code:
+    transform:
   - name: fruiting-bodies
     type: categorical
+    description:
+    code:
+    transform:
   - name: external-decay
     type: categorical
+    description:
+    code:
+    transform:
   - name: mycelium
     type: categorical
+    description:
+    code:
+    transform:
   - name: int-discolor
     type: categorical
+    description:
+    code:
+    transform:
   - name: sclerotia
     type: categorical
+    description:
+    code:
+    transform:
   - name: fruit-pods
     type: categorical
+    description:
+    code:
+    transform:
   - name: fruit-spots
     type: categorical
+    description:
+    code:
+    transform:
   - name: seed
     type: categorical
+    description:
+    code:
+    transform:
   - name: mold-growth
     type: categorical
+    description:
+    code:
+    transform:
   - name: seed-discolor
     type: categorical
+    description:
+    code:
+    transform:
   - name: seed-size
     type: categorical
+    description:
+    code:
+    transform:
   - name: shriveling
     type: categorical
+    description:
+    code:
+    transform:
   - name: roots
     type: categorical
+    description:
+    code:
+    transform:

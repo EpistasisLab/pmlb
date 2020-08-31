@@ -3,351 +3,852 @@ dataset: clean1
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: molecule_name
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: conformation_name
     type: categorical
+    description:
+    code:
+    transform:
   - name: f1
     type: continuous
+    description:
+    code:
+    transform:
   - name: f2
     type: continuous
+    description:
+    code:
+    transform:
   - name: f3
     type: continuous
+    description:
+    code:
+    transform:
   - name: f4
     type: continuous
+    description:
+    code:
+    transform:
   - name: f5
     type: continuous
+    description:
+    code:
+    transform:
   - name: f6
     type: continuous
+    description:
+    code:
+    transform:
   - name: f7
     type: continuous
+    description:
+    code:
+    transform:
   - name: f8
     type: continuous
+    description:
+    code:
+    transform:
   - name: f9
     type: continuous
+    description:
+    code:
+    transform:
   - name: f10
     type: continuous
+    description:
+    code:
+    transform:
   - name: f11
     type: continuous
+    description:
+    code:
+    transform:
   - name: f12
     type: continuous
+    description:
+    code:
+    transform:
   - name: f13
     type: continuous
+    description:
+    code:
+    transform:
   - name: f14
     type: continuous
+    description:
+    code:
+    transform:
   - name: f15
     type: continuous
+    description:
+    code:
+    transform:
   - name: f16
     type: continuous
+    description:
+    code:
+    transform:
   - name: f17
     type: continuous
+    description:
+    code:
+    transform:
   - name: f18
     type: continuous
+    description:
+    code:
+    transform:
   - name: f19
     type: continuous
+    description:
+    code:
+    transform:
   - name: f20
     type: continuous
+    description:
+    code:
+    transform:
   - name: f21
     type: continuous
+    description:
+    code:
+    transform:
   - name: f22
     type: continuous
+    description:
+    code:
+    transform:
   - name: f23
     type: continuous
+    description:
+    code:
+    transform:
   - name: f24
     type: continuous
+    description:
+    code:
+    transform:
   - name: f25
     type: continuous
+    description:
+    code:
+    transform:
   - name: f26
     type: continuous
+    description:
+    code:
+    transform:
   - name: f27
     type: continuous
+    description:
+    code:
+    transform:
   - name: f28
     type: continuous
+    description:
+    code:
+    transform:
   - name: f29
     type: continuous
+    description:
+    code:
+    transform:
   - name: f30
     type: continuous
+    description:
+    code:
+    transform:
   - name: f31
     type: continuous
+    description:
+    code:
+    transform:
   - name: f32
     type: continuous
+    description:
+    code:
+    transform:
   - name: f33
     type: continuous
+    description:
+    code:
+    transform:
   - name: f34
     type: continuous
+    description:
+    code:
+    transform:
   - name: f35
     type: continuous
+    description:
+    code:
+    transform:
   - name: f36
     type: continuous
+    description:
+    code:
+    transform:
   - name: f37
     type: continuous
+    description:
+    code:
+    transform:
   - name: f38
     type: continuous
+    description:
+    code:
+    transform:
   - name: f39
     type: continuous
+    description:
+    code:
+    transform:
   - name: f40
     type: continuous
+    description:
+    code:
+    transform:
   - name: f41
     type: continuous
+    description:
+    code:
+    transform:
   - name: f42
     type: continuous
+    description:
+    code:
+    transform:
   - name: f43
     type: continuous
+    description:
+    code:
+    transform:
   - name: f44
     type: continuous
+    description:
+    code:
+    transform:
   - name: f45
     type: continuous
+    description:
+    code:
+    transform:
   - name: f46
     type: continuous
+    description:
+    code:
+    transform:
   - name: f47
     type: continuous
+    description:
+    code:
+    transform:
   - name: f48
     type: continuous
+    description:
+    code:
+    transform:
   - name: f49
     type: continuous
+    description:
+    code:
+    transform:
   - name: f50
     type: continuous
+    description:
+    code:
+    transform:
   - name: f51
     type: continuous
+    description:
+    code:
+    transform:
   - name: f52
     type: continuous
+    description:
+    code:
+    transform:
   - name: f53
     type: continuous
+    description:
+    code:
+    transform:
   - name: f54
     type: continuous
+    description:
+    code:
+    transform:
   - name: f55
     type: continuous
+    description:
+    code:
+    transform:
   - name: f56
     type: continuous
+    description:
+    code:
+    transform:
   - name: f57
     type: continuous
+    description:
+    code:
+    transform:
   - name: f58
     type: continuous
+    description:
+    code:
+    transform:
   - name: f59
     type: continuous
+    description:
+    code:
+    transform:
   - name: f60
     type: continuous
+    description:
+    code:
+    transform:
   - name: f61
     type: continuous
+    description:
+    code:
+    transform:
   - name: f62
     type: continuous
+    description:
+    code:
+    transform:
   - name: f63
     type: continuous
+    description:
+    code:
+    transform:
   - name: f64
     type: continuous
+    description:
+    code:
+    transform:
   - name: f65
     type: continuous
+    description:
+    code:
+    transform:
   - name: f66
     type: continuous
+    description:
+    code:
+    transform:
   - name: f67
     type: continuous
+    description:
+    code:
+    transform:
   - name: f68
     type: continuous
+    description:
+    code:
+    transform:
   - name: f69
     type: continuous
+    description:
+    code:
+    transform:
   - name: f70
     type: continuous
+    description:
+    code:
+    transform:
   - name: f71
     type: continuous
+    description:
+    code:
+    transform:
   - name: f72
     type: continuous
+    description:
+    code:
+    transform:
   - name: f73
     type: continuous
+    description:
+    code:
+    transform:
   - name: f74
     type: continuous
+    description:
+    code:
+    transform:
   - name: f75
     type: continuous
+    description:
+    code:
+    transform:
   - name: f76
     type: continuous
+    description:
+    code:
+    transform:
   - name: f77
     type: continuous
+    description:
+    code:
+    transform:
   - name: f78
     type: continuous
+    description:
+    code:
+    transform:
   - name: f79
     type: continuous
+    description:
+    code:
+    transform:
   - name: f80
     type: continuous
+    description:
+    code:
+    transform:
   - name: f81
     type: continuous
+    description:
+    code:
+    transform:
   - name: f82
     type: continuous
+    description:
+    code:
+    transform:
   - name: f83
     type: continuous
+    description:
+    code:
+    transform:
   - name: f84
     type: continuous
+    description:
+    code:
+    transform:
   - name: f85
     type: continuous
+    description:
+    code:
+    transform:
   - name: f86
     type: continuous
+    description:
+    code:
+    transform:
   - name: f87
     type: continuous
+    description:
+    code:
+    transform:
   - name: f88
     type: continuous
+    description:
+    code:
+    transform:
   - name: f89
     type: continuous
+    description:
+    code:
+    transform:
   - name: f90
     type: continuous
+    description:
+    code:
+    transform:
   - name: f91
     type: continuous
+    description:
+    code:
+    transform:
   - name: f92
     type: continuous
+    description:
+    code:
+    transform:
   - name: f93
     type: continuous
+    description:
+    code:
+    transform:
   - name: f94
     type: continuous
+    description:
+    code:
+    transform:
   - name: f95
     type: continuous
+    description:
+    code:
+    transform:
   - name: f96
     type: continuous
+    description:
+    code:
+    transform:
   - name: f97
     type: continuous
+    description:
+    code:
+    transform:
   - name: f98
     type: continuous
+    description:
+    code:
+    transform:
   - name: f99
     type: continuous
+    description:
+    code:
+    transform:
   - name: f100
     type: continuous
+    description:
+    code:
+    transform:
   - name: f101
     type: continuous
+    description:
+    code:
+    transform:
   - name: f102
     type: continuous
+    description:
+    code:
+    transform:
   - name: f103
     type: continuous
+    description:
+    code:
+    transform:
   - name: f104
     type: continuous
+    description:
+    code:
+    transform:
   - name: f105
     type: continuous
+    description:
+    code:
+    transform:
   - name: f106
     type: continuous
+    description:
+    code:
+    transform:
   - name: f107
     type: continuous
+    description:
+    code:
+    transform:
   - name: f108
     type: continuous
+    description:
+    code:
+    transform:
   - name: f109
     type: continuous
+    description:
+    code:
+    transform:
   - name: f110
     type: continuous
+    description:
+    code:
+    transform:
   - name: f111
     type: continuous
+    description:
+    code:
+    transform:
   - name: f112
     type: continuous
+    description:
+    code:
+    transform:
   - name: f113
     type: continuous
+    description:
+    code:
+    transform:
   - name: f114
     type: continuous
+    description:
+    code:
+    transform:
   - name: f115
     type: continuous
+    description:
+    code:
+    transform:
   - name: f116
     type: continuous
+    description:
+    code:
+    transform:
   - name: f117
     type: continuous
+    description:
+    code:
+    transform:
   - name: f118
     type: continuous
+    description:
+    code:
+    transform:
   - name: f119
     type: continuous
+    description:
+    code:
+    transform:
   - name: f120
     type: continuous
+    description:
+    code:
+    transform:
   - name: f121
     type: continuous
+    description:
+    code:
+    transform:
   - name: f122
     type: continuous
+    description:
+    code:
+    transform:
   - name: f123
     type: continuous
+    description:
+    code:
+    transform:
   - name: f124
     type: continuous
+    description:
+    code:
+    transform:
   - name: f125
     type: continuous
+    description:
+    code:
+    transform:
   - name: f126
     type: continuous
+    description:
+    code:
+    transform:
   - name: f127
     type: continuous
+    description:
+    code:
+    transform:
   - name: f128
     type: continuous
+    description:
+    code:
+    transform:
   - name: f129
     type: continuous
+    description:
+    code:
+    transform:
   - name: f130
     type: continuous
+    description:
+    code:
+    transform:
   - name: f131
     type: continuous
+    description:
+    code:
+    transform:
   - name: f132
     type: continuous
+    description:
+    code:
+    transform:
   - name: f133
     type: continuous
+    description:
+    code:
+    transform:
   - name: f134
     type: continuous
+    description:
+    code:
+    transform:
   - name: f135
     type: continuous
+    description:
+    code:
+    transform:
   - name: f136
     type: continuous
+    description:
+    code:
+    transform:
   - name: f137
     type: continuous
+    description:
+    code:
+    transform:
   - name: f138
     type: continuous
+    description:
+    code:
+    transform:
   - name: f139
     type: continuous
+    description:
+    code:
+    transform:
   - name: f140
     type: continuous
+    description:
+    code:
+    transform:
   - name: f141
     type: continuous
+    description:
+    code:
+    transform:
   - name: f142
     type: continuous
+    description:
+    code:
+    transform:
   - name: f143
     type: continuous
+    description:
+    code:
+    transform:
   - name: f144
     type: continuous
+    description:
+    code:
+    transform:
   - name: f145
     type: continuous
+    description:
+    code:
+    transform:
   - name: f146
     type: continuous
+    description:
+    code:
+    transform:
   - name: f147
     type: continuous
+    description:
+    code:
+    transform:
   - name: f148
     type: continuous
+    description:
+    code:
+    transform:
   - name: f149
     type: continuous
+    description:
+    code:
+    transform:
   - name: f150
     type: continuous
+    description:
+    code:
+    transform:
   - name: f151
     type: continuous
+    description:
+    code:
+    transform:
   - name: f152
     type: continuous
+    description:
+    code:
+    transform:
   - name: f153
     type: continuous
+    description:
+    code:
+    transform:
   - name: f154
     type: continuous
+    description:
+    code:
+    transform:
   - name: f155
     type: continuous
+    description:
+    code:
+    transform:
   - name: f156
     type: continuous
+    description:
+    code:
+    transform:
   - name: f157
     type: continuous
+    description:
+    code:
+    transform:
   - name: f158
     type: continuous
+    description:
+    code:
+    transform:
   - name: f159
     type: continuous
+    description:
+    code:
+    transform:
   - name: f160
     type: continuous
+    description:
+    code:
+    transform:
   - name: f161
     type: continuous
+    description:
+    code:
+    transform:
   - name: f162
     type: continuous
+    description:
+    code:
+    transform:
   - name: f163
     type: continuous
+    description:
+    code:
+    transform:
   - name: f164
     type: continuous
+    description:
+    code:
+    transform:
   - name: f165
     type: continuous
+    description:
+    code:
+    transform:
   - name: f166
     type: continuous
+    description:
+    code:
+    transform:

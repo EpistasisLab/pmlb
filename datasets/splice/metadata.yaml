@@ -3,135 +3,312 @@ dataset: splice
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: A0
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: A1
     type: categorical
+    description:
+    code:
+    transform:
   - name: A2
     type: categorical
+    description:
+    code:
+    transform:
   - name: A3
     type: categorical
+    description:
+    code:
+    transform:
   - name: A4
     type: categorical
+    description:
+    code:
+    transform:
   - name: A5
     type: categorical
+    description:
+    code:
+    transform:
   - name: A6
     type: categorical
+    description:
+    code:
+    transform:
   - name: A7
     type: categorical
+    description:
+    code:
+    transform:
   - name: A8
     type: categorical
+    description:
+    code:
+    transform:
   - name: A9
     type: categorical
+    description:
+    code:
+    transform:
   - name: A10
     type: categorical
+    description:
+    code:
+    transform:
   - name: A11
     type: categorical
+    description:
+    code:
+    transform:
   - name: A12
     type: categorical
+    description:
+    code:
+    transform:
   - name: A13
     type: categorical
+    description:
+    code:
+    transform:
   - name: A14
     type: categorical
+    description:
+    code:
+    transform:
   - name: A15
     type: categorical
+    description:
+    code:
+    transform:
   - name: A16
     type: categorical
+    description:
+    code:
+    transform:
   - name: A17
     type: categorical
+    description:
+    code:
+    transform:
   - name: A18
     type: categorical
+    description:
+    code:
+    transform:
   - name: A19
     type: categorical
+    description:
+    code:
+    transform:
   - name: A20
     type: categorical
+    description:
+    code:
+    transform:
   - name: A21
     type: categorical
+    description:
+    code:
+    transform:
   - name: A22
     type: categorical
+    description:
+    code:
+    transform:
   - name: A23
     type: categorical
+    description:
+    code:
+    transform:
   - name: A24
     type: categorical
+    description:
+    code:
+    transform:
   - name: A25
     type: categorical
+    description:
+    code:
+    transform:
   - name: A26
     type: categorical
+    description:
+    code:
+    transform:
   - name: A27
     type: categorical
+    description:
+    code:
+    transform:
   - name: A28
     type: categorical
+    description:
+    code:
+    transform:
   - name: A29
     type: categorical
+    description:
+    code:
+    transform:
   - name: A30
     type: categorical
+    description:
+    code:
+    transform:
   - name: A31
     type: categorical
+    description:
+    code:
+    transform:
   - name: A32
     type: categorical
+    description:
+    code:
+    transform:
   - name: A33
     type: categorical
+    description:
+    code:
+    transform:
   - name: A34
     type: categorical
+    description:
+    code:
+    transform:
   - name: A35
     type: categorical
+    description:
+    code:
+    transform:
   - name: A36
     type: categorical
+    description:
+    code:
+    transform:
   - name: A37
     type: categorical
+    description:
+    code:
+    transform:
   - name: A38
     type: categorical
+    description:
+    code:
+    transform:
   - name: A39
     type: categorical
+    description:
+    code:
+    transform:
   - name: A40
     type: categorical
+    description:
+    code:
+    transform:
   - name: A41
     type: categorical
+    description:
+    code:
+    transform:
   - name: A42
     type: categorical
+    description:
+    code:
+    transform:
   - name: A43
     type: categorical
+    description:
+    code:
+    transform:
   - name: A44
     type: categorical
+    description:
+    code:
+    transform:
   - name: A45
     type: categorical
+    description:
+    code:
+    transform:
   - name: A46
     type: categorical
+    description:
+    code:
+    transform:
   - name: A47
     type: categorical
+    description:
+    code:
+    transform:
   - name: A48
     type: categorical
+    description:
+    code:
+    transform:
   - name: A49
     type: categorical
+    description:
+    code:
+    transform:
   - name: A50
     type: categorical
+    description:
+    code:
+    transform:
   - name: A51
     type: categorical
+    description:
+    code:
+    transform:
   - name: A52
     type: categorical
+    description:
+    code:
+    transform:
   - name: A53
     type: categorical
+    description:
+    code:
+    transform:
   - name: A54
     type: categorical
+    description:
+    code:
+    transform:
   - name: A55
     type: categorical
+    description:
+    code:
+    transform:
   - name: A56
     type: categorical
+    description:
+    code:
+    transform:
   - name: A57
     type: categorical
+    description:
+    code:
+    transform:
   - name: A58
     type: categorical
+    description:
+    code:
+    transform:
   - name: A59
     type: categorical
+    description:
+    code:
+    transform:

@@ -3,33 +3,57 @@ dataset: 1201_BNG_breastTumor
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: regression
 keywords:
   -
   -
-task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: age
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: menopause
     type: categorical
+    description:
+    code:
+    transform:
   - name: inv-nodes
     type: continuous
+    description:
+    code:
+    transform:
   - name: node-caps
     type: binary
+    description:
+    code:
+    transform:
   - name: deg-malig
     type: continuous
+    description:
+    code:
+    transform:
   - name: breast
     type: binary
+    description:
+    code:
+    transform:
   - name: breast-quad
     type: categorical
+    description:
+    code:
+    transform:
   - name: irradiation
     type: binary
+    description:
+    code:
+    transform:
   - name: recurrence
     type: binary
+    description:
+    code:
+    transform:

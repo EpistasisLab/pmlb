@@ -3,33 +3,57 @@ dataset: tic_tac_toe
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: t1
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: t2
     type: categorical
+    description:
+    code:
+    transform:
   - name: t3
     type: categorical
+    description:
+    code:
+    transform:
   - name: t4
     type: categorical
+    description:
+    code:
+    transform:
   - name: t5
     type: categorical
+    description:
+    code:
+    transform:
   - name: t6
     type: categorical
+    description:
+    code:
+    transform:
   - name: t7
     type: categorical
+    description:
+    code:
+    transform:
   - name: t8
     type: categorical
+    description:
+    code:
+    transform:
   - name: t9
     type: categorical
+    description:
+    code:
+    transform:

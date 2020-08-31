@@ -3,59 +3,122 @@ dataset: agaricus_lepiota
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: cap-shape
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: cap-surface
     type: categorical
+    description:
+    code:
+    transform:
   - name: cap-color
     type: categorical
+    description:
+    code:
+    transform:
   - name: bruises?
     type: binary
+    description:
+    code:
+    transform:
   - name: odor
     type: categorical
+    description:
+    code:
+    transform:
   - name: gill-attachment
     type: binary
+    description:
+    code:
+    transform:
   - name: gill-spacing
     type: binary
+    description:
+    code:
+    transform:
   - name: gill-size
     type: binary
+    description:
+    code:
+    transform:
   - name: gill-color
     type: categorical
+    description:
+    code:
+    transform:
   - name: stalk-shape
     type: binary
+    description:
+    code:
+    transform:
   - name: stalk-root
     type: categorical
+    description:
+    code:
+    transform:
   - name: stalk-surface-above-ring
     type: categorical
+    description:
+    code:
+    transform:
   - name: stalk-surface-below-ring
     type: categorical
+    description:
+    code:
+    transform:
   - name: stalk-color-above-ring
     type: categorical
+    description:
+    code:
+    transform:
   - name: stalk-color-below-ring
     type: categorical
+    description:
+    code:
+    transform:
   - name: veil-type
     type: categorical
+    description:
+    code:
+    transform:
   - name: veil-color
     type: categorical
+    description:
+    code:
+    transform:
   - name: ring-number
     type: categorical
+    description:
+    code:
+    transform:
   - name: ring-type
     type: categorical
+    description:
+    code:
+    transform:
   - name: spore-print-color
     type: categorical
+    description:
+    code:
+    transform:
   - name: population
     type: categorical
+    description:
+    code:
+    transform:
   - name: habitat
     type: categorical
+    description:
+    code:
+    transform:

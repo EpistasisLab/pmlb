@@ -3,249 +3,597 @@ dataset: 4544_GeographicalOriginalofMusic
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: regression
 keywords:
   -
   -
-task: regression
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: V1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: V2
     type: continuous
+    description:
+    code:
+    transform:
   - name: V3
     type: continuous
+    description:
+    code:
+    transform:
   - name: V4
     type: continuous
+    description:
+    code:
+    transform:
   - name: V5
     type: continuous
+    description:
+    code:
+    transform:
   - name: V6
     type: continuous
+    description:
+    code:
+    transform:
   - name: V7
     type: continuous
+    description:
+    code:
+    transform:
   - name: V8
     type: continuous
+    description:
+    code:
+    transform:
   - name: V9
     type: continuous
+    description:
+    code:
+    transform:
   - name: V10
     type: continuous
+    description:
+    code:
+    transform:
   - name: V11
     type: continuous
+    description:
+    code:
+    transform:
   - name: V12
     type: continuous
+    description:
+    code:
+    transform:
   - name: V13
     type: continuous
+    description:
+    code:
+    transform:
   - name: V14
     type: continuous
+    description:
+    code:
+    transform:
   - name: V15
     type: continuous
+    description:
+    code:
+    transform:
   - name: V16
     type: continuous
+    description:
+    code:
+    transform:
   - name: V17
     type: continuous
+    description:
+    code:
+    transform:
   - name: V18
     type: continuous
+    description:
+    code:
+    transform:
   - name: V19
     type: continuous
+    description:
+    code:
+    transform:
   - name: V20
     type: continuous
+    description:
+    code:
+    transform:
   - name: V21
     type: continuous
+    description:
+    code:
+    transform:
   - name: V22
     type: continuous
+    description:
+    code:
+    transform:
   - name: V23
     type: continuous
+    description:
+    code:
+    transform:
   - name: V24
     type: continuous
+    description:
+    code:
+    transform:
   - name: V25
     type: continuous
+    description:
+    code:
+    transform:
   - name: V26
     type: continuous
+    description:
+    code:
+    transform:
   - name: V27
     type: continuous
+    description:
+    code:
+    transform:
   - name: V28
     type: continuous
+    description:
+    code:
+    transform:
   - name: V29
     type: continuous
+    description:
+    code:
+    transform:
   - name: V30
     type: continuous
+    description:
+    code:
+    transform:
   - name: V31
     type: continuous
+    description:
+    code:
+    transform:
   - name: V32
     type: continuous
+    description:
+    code:
+    transform:
   - name: V33
     type: continuous
+    description:
+    code:
+    transform:
   - name: V34
     type: continuous
+    description:
+    code:
+    transform:
   - name: V35
     type: continuous
+    description:
+    code:
+    transform:
   - name: V36
     type: continuous
+    description:
+    code:
+    transform:
   - name: V37
     type: continuous
+    description:
+    code:
+    transform:
   - name: V38
     type: continuous
+    description:
+    code:
+    transform:
   - name: V39
     type: continuous
+    description:
+    code:
+    transform:
   - name: V40
     type: continuous
+    description:
+    code:
+    transform:
   - name: V41
     type: continuous
+    description:
+    code:
+    transform:
   - name: V42
     type: continuous
+    description:
+    code:
+    transform:
   - name: V43
     type: continuous
+    description:
+    code:
+    transform:
   - name: V44
     type: continuous
+    description:
+    code:
+    transform:
   - name: V45
     type: continuous
+    description:
+    code:
+    transform:
   - name: V46
     type: continuous
+    description:
+    code:
+    transform:
   - name: V47
     type: continuous
+    description:
+    code:
+    transform:
   - name: V48
     type: continuous
+    description:
+    code:
+    transform:
   - name: V49
     type: continuous
+    description:
+    code:
+    transform:
   - name: V50
     type: continuous
+    description:
+    code:
+    transform:
   - name: V51
     type: continuous
+    description:
+    code:
+    transform:
   - name: V52
     type: continuous
+    description:
+    code:
+    transform:
   - name: V53
     type: continuous
+    description:
+    code:
+    transform:
   - name: V54
     type: continuous
+    description:
+    code:
+    transform:
   - name: V55
     type: continuous
+    description:
+    code:
+    transform:
   - name: V56
     type: continuous
+    description:
+    code:
+    transform:
   - name: V57
     type: continuous
+    description:
+    code:
+    transform:
   - name: V58
     type: continuous
+    description:
+    code:
+    transform:
   - name: V59
     type: continuous
+    description:
+    code:
+    transform:
   - name: V60
     type: continuous
+    description:
+    code:
+    transform:
   - name: V61
     type: continuous
+    description:
+    code:
+    transform:
   - name: V62
     type: continuous
+    description:
+    code:
+    transform:
   - name: V63
     type: continuous
+    description:
+    code:
+    transform:
   - name: V64
     type: continuous
+    description:
+    code:
+    transform:
   - name: V65
     type: continuous
+    description:
+    code:
+    transform:
   - name: V66
     type: continuous
+    description:
+    code:
+    transform:
   - name: V67
     type: continuous
+    description:
+    code:
+    transform:
   - name: V68
     type: continuous
+    description:
+    code:
+    transform:
   - name: V69
     type: continuous
+    description:
+    code:
+    transform:
   - name: V70
     type: continuous
+    description:
+    code:
+    transform:
   - name: V71
     type: continuous
+    description:
+    code:
+    transform:
   - name: V72
     type: continuous
+    description:
+    code:
+    transform:
   - name: V73
     type: continuous
+    description:
+    code:
+    transform:
   - name: V74
     type: continuous
+    description:
+    code:
+    transform:
   - name: V75
     type: continuous
+    description:
+    code:
+    transform:
   - name: V76
     type: continuous
+    description:
+    code:
+    transform:
   - name: V77
     type: continuous
+    description:
+    code:
+    transform:
   - name: V78
     type: continuous
+    description:
+    code:
+    transform:
   - name: V79
     type: continuous
+    description:
+    code:
+    transform:
   - name: V80
     type: continuous
+    description:
+    code:
+    transform:
   - name: V81
     type: continuous
+    description:
+    code:
+    transform:
   - name: V82
     type: continuous
+    description:
+    code:
+    transform:
   - name: V83
     type: continuous
+    description:
+    code:
+    transform:
   - name: V84
     type: continuous
+    description:
+    code:
+    transform:
   - name: V85
     type: continuous
+    description:
+    code:
+    transform:
   - name: V86
     type: continuous
+    description:
+    code:
+    transform:
   - name: V87
     type: continuous
+    description:
+    code:
+    transform:
   - name: V88
     type: continuous
+    description:
+    code:
+    transform:
   - name: V89
     type: continuous
+    description:
+    code:
+    transform:
   - name: V90
     type: continuous
+    description:
+    code:
+    transform:
   - name: V91
     type: continuous
+    description:
+    code:
+    transform:
   - name: V92
     type: continuous
+    description:
+    code:
+    transform:
   - name: V93
     type: continuous
+    description:
+    code:
+    transform:
   - name: V94
     type: continuous
+    description:
+    code:
+    transform:
   - name: V95
     type: continuous
+    description:
+    code:
+    transform:
   - name: V96
     type: continuous
+    description:
+    code:
+    transform:
   - name: V97
     type: continuous
+    description:
+    code:
+    transform:
   - name: V98
     type: continuous
+    description:
+    code:
+    transform:
   - name: V99
     type: continuous
+    description:
+    code:
+    transform:
   - name: V101
     type: continuous
+    description:
+    code:
+    transform:
   - name: V102
     type: continuous
+    description:
+    code:
+    transform:
   - name: V103
     type: continuous
+    description:
+    code:
+    transform:
   - name: V104
     type: continuous
+    description:
+    code:
+    transform:
   - name: V105
     type: continuous
+    description:
+    code:
+    transform:
   - name: V106
     type: continuous
+    description:
+    code:
+    transform:
   - name: V107
     type: continuous
+    description:
+    code:
+    transform:
   - name: V108
     type: continuous
+    description:
+    code:
+    transform:
   - name: V109
     type: continuous
+    description:
+    code:
+    transform:
   - name: V110
     type: continuous
+    description:
+    code:
+    transform:
   - name: V111
     type: continuous
+    description:
+    code:
+    transform:
   - name: V112
     type: continuous
+    description:
+    code:
+    transform:
   - name: V113
     type: continuous
+    description:
+    code:
+    transform:
   - name: V114
     type: continuous
+    description:
+    code:
+    transform:
   - name: V115
     type: continuous
+    description:
+    code:
+    transform:
   - name: V116
     type: continuous
+    description:
+    code:
+    transform:
   - name: V117
     type: continuous
+    description:
+    code:
+    transform:
   - name: V118
     type: continuous
+    description:
+    code:
+    transform:

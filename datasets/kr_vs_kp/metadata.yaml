@@ -3,87 +3,192 @@ dataset: kr_vs_kp
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: c1
     type: binary
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: c2
     type: binary
+    description:
+    code:
+    transform:
   - name: c3
     type: binary
+    description:
+    code:
+    transform:
   - name: c4
     type: binary
+    description:
+    code:
+    transform:
   - name: c5
     type: binary
+    description:
+    code:
+    transform:
   - name: c6
     type: binary
+    description:
+    code:
+    transform:
   - name: c7
     type: binary
+    description:
+    code:
+    transform:
   - name: c8
     type: binary
+    description:
+    code:
+    transform:
   - name: c9
     type: binary
+    description:
+    code:
+    transform:
   - name: c10
     type: binary
+    description:
+    code:
+    transform:
   - name: c11
     type: binary
+    description:
+    code:
+    transform:
   - name: c12
     type: binary
+    description:
+    code:
+    transform:
   - name: c13
     type: binary
+    description:
+    code:
+    transform:
   - name: c14
     type: binary
+    description:
+    code:
+    transform:
   - name: c15
     type: categorical
+    description:
+    code:
+    transform:
   - name: c16
     type: binary
+    description:
+    code:
+    transform:
   - name: c17
     type: binary
+    description:
+    code:
+    transform:
   - name: c18
     type: binary
+    description:
+    code:
+    transform:
   - name: c19
     type: binary
+    description:
+    code:
+    transform:
   - name: c20
     type: binary
+    description:
+    code:
+    transform:
   - name: c21
     type: binary
+    description:
+    code:
+    transform:
   - name: c22
     type: binary
+    description:
+    code:
+    transform:
   - name: c23
     type: binary
+    description:
+    code:
+    transform:
   - name: c24
     type: binary
+    description:
+    code:
+    transform:
   - name: c25
     type: binary
+    description:
+    code:
+    transform:
   - name: c26
     type: binary
+    description:
+    code:
+    transform:
   - name: c27
     type: binary
+    description:
+    code:
+    transform:
   - name: c28
     type: binary
+    description:
+    code:
+    transform:
   - name: c29
     type: binary
+    description:
+    code:
+    transform:
   - name: c30
     type: binary
+    description:
+    code:
+    transform:
   - name: c31
     type: binary
+    description:
+    code:
+    transform:
   - name: c32
     type: binary
+    description:
+    code:
+    transform:
   - name: c33
     type: binary
+    description:
+    code:
+    transform:
   - name: c34
     type: binary
+    description:
+    code:
+    transform:
   - name: c35
     type: binary
+    description:
+    code:
+    transform:
   - name: c36
     type: binary
+    description:
+    code:
+    transform:

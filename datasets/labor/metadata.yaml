@@ -3,47 +3,92 @@ dataset: labor
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: duration
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: wage increase first year
     type: categorical
+    description:
+    code:
+    transform:
   - name: wage increase second year
     type: categorical
+    description:
+    code:
+    transform:
   - name: wage increase third year
     type: categorical
+    description:
+    code:
+    transform:
   - name: cost of living adjustment
     type: categorical
+    description:
+    code:
+    transform:
   - name: working hours
     type: categorical
+    description:
+    code:
+    transform:
   - name: pension
     type: categorical
+    description:
+    code:
+    transform:
   - name: standby pay
     type: categorical
+    description:
+    code:
+    transform:
   - name: shift differential
     type: categorical
+    description:
+    code:
+    transform:
   - name: education allowance
     type: categorical
+    description:
+    code:
+    transform:
   - name: statutory holidays
     type: categorical
+    description:
+    code:
+    transform:
   - name: vacation
     type: categorical
+    description:
+    code:
+    transform:
   - name: longterm disability assistance
     type: categorical
+    description:
+    code:
+    transform:
   - name: contribution to dental plan
     type: categorical
+    description:
+    code:
+    transform:
   - name: bereavement assistance
     type: categorical
+    description:
+    code:
+    transform:
   - name: contribution to health plan
     type: categorical
+    description:
+    code:
+    transform:

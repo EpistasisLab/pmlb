@@ -3,59 +3,122 @@ dataset: spect
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: F1
     type: binary
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: F2
     type: binary
+    description:
+    code:
+    transform:
   - name: F3
     type: binary
+    description:
+    code:
+    transform:
   - name: F4
     type: binary
+    description:
+    code:
+    transform:
   - name: F5
     type: binary
+    description:
+    code:
+    transform:
   - name: F6
     type: binary
+    description:
+    code:
+    transform:
   - name: F7
     type: binary
+    description:
+    code:
+    transform:
   - name: F8
     type: binary
+    description:
+    code:
+    transform:
   - name: F9
     type: binary
+    description:
+    code:
+    transform:
   - name: F10
     type: binary
+    description:
+    code:
+    transform:
   - name: F11
     type: binary
+    description:
+    code:
+    transform:
   - name: F12
     type: binary
+    description:
+    code:
+    transform:
   - name: F13
     type: binary
+    description:
+    code:
+    transform:
   - name: F14
     type: binary
+    description:
+    code:
+    transform:
   - name: F15
     type: binary
+    description:
+    code:
+    transform:
   - name: F16
     type: binary
+    description:
+    code:
+    transform:
   - name: F17
     type: binary
+    description:
+    code:
+    transform:
   - name: F18
     type: binary
+    description:
+    code:
+    transform:
   - name: F19
     type: binary
+    description:
+    code:
+    transform:
   - name: F20
     type: binary
+    description:
+    code:
+    transform:
   - name: F21
     type: binary
+    description:
+    code:
+    transform:
   - name: F22
     type: binary
+    description:
+    code:
+    transform:

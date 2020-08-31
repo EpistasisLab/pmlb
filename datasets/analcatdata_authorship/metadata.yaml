@@ -3,155 +3,362 @@ dataset: analcatdata_authorship
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
+task: classification
 keywords:
   -
   -
-task: classification
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: a
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: null # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: all
     type: continuous
+    description:
+    code:
+    transform:
   - name: also
     type: continuous
+    description:
+    code:
+    transform:
   - name: an
     type: continuous
+    description:
+    code:
+    transform:
   - name: and
     type: continuous
+    description:
+    code:
+    transform:
   - name: any
     type: continuous
+    description:
+    code:
+    transform:
   - name: are
     type: continuous
+    description:
+    code:
+    transform:
   - name: as
     type: continuous
+    description:
+    code:
+    transform:
   - name: at
     type: continuous
+    description:
+    code:
+    transform:
   - name: be
     type: continuous
+    description:
+    code:
+    transform:
   - name: been
     type: continuous
+    description:
+    code:
+    transform:
   - name: but
     type: continuous
+    description:
+    code:
+    transform:
   - name: by
     type: continuous
+    description:
+    code:
+    transform:
   - name: can
     type: continuous
+    description:
+    code:
+    transform:
   - name: do
     type: continuous
+    description:
+    code:
+    transform:
   - name: down
     type: continuous
+    description:
+    code:
+    transform:
   - name: even
     type: continuous
+    description:
+    code:
+    transform:
   - name: every
     type: continuous
+    description:
+    code:
+    transform:
   - name: for
     type: continuous
+    description:
+    code:
+    transform:
   - name: from
     type: continuous
+    description:
+    code:
+    transform:
   - name: had
     type: continuous
+    description:
+    code:
+    transform:
   - name: has
     type: continuous
+    description:
+    code:
+    transform:
   - name: have
     type: continuous
+    description:
+    code:
+    transform:
   - name: her
     type: continuous
+    description:
+    code:
+    transform:
   - name: his
     type: continuous
+    description:
+    code:
+    transform:
   - name: if
     type: continuous
+    description:
+    code:
+    transform:
   - name: in
     type: continuous
+    description:
+    code:
+    transform:
   - name: into
     type: continuous
+    description:
+    code:
+    transform:
   - name: is
     type: continuous
+    description:
+    code:
+    transform:
   - name: it
     type: continuous
+    description:
+    code:
+    transform:
   - name: its
     type: continuous
+    description:
+    code:
+    transform:
   - name: may
     type: continuous
+    description:
+    code:
+    transform:
   - name: more
     type: continuous
+    description:
+    code:
+    transform:
   - name: must
     type: continuous
+    description:
+    code:
+    transform:
   - name: my
     type: continuous
+    description:
+    code:
+    transform:
   - name: "no"
     type: continuous
+    description:
+    code:
+    transform:
   - name: not
     type: continuous
+    description:
+    code:
+    transform:
   - name: now
     type: continuous
+    description:
+    code:
+    transform:
   - name: of
     type: continuous
+    description:
+    code:
+    transform:
   - name: "on"
     type: continuous
+    description:
+    code:
+    transform:
   - name: one
     type: continuous
+    description:
+    code:
+    transform:
   - name: only
     type: continuous
+    description:
+    code:
+    transform:
   - name: or
     type: continuous
+    description:
+    code:
+    transform:
   - name: our
     type: continuous
+    description:
+    code:
+    transform:
   - name: should
     type: continuous
+    description:
+    code:
+    transform:
   - name: so
     type: continuous
+    description:
+    code:
+    transform:
   - name: some
     type: continuous
+    description:
+    code:
+    transform:
   - name: such
     type: continuous
+    description:
+    code:
+    transform:
   - name: than
     type: continuous
+    description:
+    code:
+    transform:
   - name: that
     type: continuous
+    description:
+    code:
+    transform:
   - name: the
     type: continuous
+    description:
+    code:
+    transform:
   - name: their
     type: continuous
+    description:
+    code:
+    transform:
   - name: then
     type: continuous
+    description:
+    code:
+    transform:
   - name: there
     type: continuous
+    description:
+    code:
+    transform:
   - name: things
     type: continuous
+    description:
+    code:
+    transform:
   - name: this
     type: continuous
+    description:
+    code:
+    transform:
   - name: to
     type: continuous
+    description:
+    code:
+    transform:
   - name: up
     type: continuous
+    description:
+    code:
+    transform:
   - name: upon
     type: continuous
+    description:
+    code:
+    transform:
   - name: was
     type: continuous
+    description:
+    code:
+    transform:
   - name: were
     type: continuous
+    description:
+    code:
+    transform:
   - name: what
     type: continuous
+    description:
+    code:
+    transform:
   - name: when
     type: continuous
+    description:
+    code:
+    transform:
   - name: which
     type: continuous
+    description:
+    code:
+    transform:
   - name: who
     type: continuous
+    description:
+    code:
+    transform:
   - name: will
     type: continuous
+    description:
+    code:
+    transform:
   - name: with
     type: continuous
+    description:
+    code:
+    transform:
   - name: would
     type: continuous
+    description:
+    code:
+    transform:
   - name: your
     type: continuous
+    description:
+    code:
+    transform:
   - name: BookID
     type: continuous
+    description:
+    code:
+    transform:
