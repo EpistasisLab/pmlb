@@ -1,4 +1,3 @@
-#Generated automatically by pmlb/write_metadata.py
 # Reviewed by Praneel Chakraborty
 dataset: car
 description: >
@@ -11,6 +10,9 @@ publication: >
   Knowledge acquisition and explanation for multi-attribute decision making. 
   In 8th Intl Workshop on Expert Systems and their Applications, Avignon, France. 1988.
 task: classification
+keywords:
+  - mobile vehicle
+  - expense
 target:
   type: categorical
   description: accceptability of the car

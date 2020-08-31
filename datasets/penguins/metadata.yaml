@@ -14,8 +14,13 @@ publication: >
   PLoS ONE 9(3): e90081.
   doi:10.1371/journal.pone.0090081
 task: classification
+keywords:
+  - antarctic penguins
+  - ecological
+  - animal
+  - environmental
 target:
-  type: nominal
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: >
     'Adelie' = 0,
@@ -23,7 +28,7 @@ target:
     'Gentoo' = 2
 features:
   - name: island
-    type: nominal
+    type: categorical
     description: island name in the Palmer Archipelago (Antarctica)
     code: >
       'Biscoe' = 0,
@@ -40,7 +45,7 @@ features:
     type: continuous
     description: body mass (grams)
   - name: sex
-    type: nominal
+    type: binary
     code: >
       'female' = 0,
       'male' = 1

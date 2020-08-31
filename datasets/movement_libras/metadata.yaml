@@ -1,4 +1,4 @@
-#Edited by Daniel Goldberg
+# Reviewed by Daniel Goldberg
 dataset: movement_libras
 description: >
   LIBRAS is an acronym of the Portuguese name "LIngua BRAsileira de Sinais", the official brazilian sign language. Each
@@ -9,6 +9,11 @@ description: >
 source: https://www.openml.org/d/299
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  - sign language
+  - video
+  - image
+  - curve
 target:
   type: categorical
   description: Which hand movement is represented by the features

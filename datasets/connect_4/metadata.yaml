@@ -1,5 +1,4 @@
-#Generated automatically by pmlb/write_metadata.py
-  #Reviewed by Praneel Chakraborty
+# Reviewed by Praneel Chakraborty
 dataset: connect_4
 description: >
   Database contains the set of all possible board states corresponding to a connect-4 game at 8-ply;
@@ -12,6 +11,9 @@ publication: >
   UCI Machine Learning Repository [http://archive.ics.uci.edu/ml]. 
   Irvine, CA: University of California, School of Information and Computer Science.
 task: classification
+keywords:
+  - board game
+  - moves
 target:
   type: categorical
   description: Game-theoretical match result

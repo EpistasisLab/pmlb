@@ -1,4 +1,4 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by Daniel Goldberg
 dataset: chess
 description: >
   Whether a chess game is winnable or not, giving the following conditions:
@@ -8,13 +8,17 @@ description: >
   The format of the data is as follows:
     Each instance has 36 features that describe the state of the board and a 37th feature (target) that classifies if
     a win is possible.
-  Each feature correponds to a particular position.
+  Each feature corresponds to a particular position.
 source: https://www.openml.org/d/3
 publication: >
   Database originally generated and described by Alen Shapiro
   Donor/Coder: Rob Holte
   Database was supplied to Holte by Peter Clark of the Turing Institute in Glasgow, 1 August 1989
 task: classification
+keywords:
+  - game
+  - chess
+  - moves
 target:
   type: binary
   description: Represents if white can win or white cannot win
@@ -96,7 +100,7 @@ features: # list of features in the dataset
       'f' = 0, 
       't' = 1
   - name: A14
-    type: discrete
+    type: categorical
     code: >
       'b' = 0,
       'n' = 1,
