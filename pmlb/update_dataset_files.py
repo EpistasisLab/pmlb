@@ -31,10 +31,8 @@ import pathlib
 import yaml
 import pandas as pd
 from collections import Counter
-from pmlb import fetch_data, dataset_names
-from .dataset_lists import (classification_dataset_names,
-                            regression_dataset_names,
-                            datasets_with_metadata)
+from .pmlb import fetch_data, dataset_names, get_updated_datasets
+from .dataset_lists import datasets_with_metadata
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -124,7 +122,20 @@ def get_dataset_stats(df):
         'mse': mse
     }
 
-metadata_template = '''\
+
+def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
+                         local_cache_dir=None):
+    """Generates desription for a given dataset in its metadata.yaml file in a
+    dataset local_cache_dir file.
+
+    :param dataset_name: str
+        The name of the data set to load from PMLB.
+    :param local_cache_dir: str (required)
+        The directory on your local machine to store the data files.
+        If None, then the local data cache will not be used.
+    """
+
+    metadata_template = '''\
 {header_to_print}
 dataset: {dataset_name}
 description: {none_yet}
@@ -141,47 +152,26 @@ target:
 features:
 {all_features}\
 '''
-
-feature_template = '''\
+    feature_template = '''\
   - name: {feat_name}
     type: {feat_type}
 '''
-feat_extra_template = '''\
+    feat_extra_template = '''\
     description:
     code:
     transform:
 '''
-feat_extra_first = '''\
+    feat_extra_first = '''\
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
 '''
-
-def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
-                         local_cache_dir=None):
-    """Generates desription for a given dataset in its metadata.yaml file in a
-    dataset local_cache_dir file.
-
-    :param dataset_name: str
-        The name of the data set to load from PMLB.
-    :param local_cache_dir: str (required)
-        The directory on your local machine to store the data files.
-        If None, then the local data cache will not be used.
-    """
     
     none_yet = ('None yet. See our contributing guide to help us add one.')
     header_to_print = '# Reviewed by [your name here]'
-
     assert (local_cache_dir != None)
     meta_path = pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')
-    
     if meta_path.exists():
-#         with open(meta_path, 'r') as f:
-#             header = f.readline()
-#         if header != header_to_print:
-#             logger.warning(f'Not writing {dataset_name}.yaml ; '
-#                             'It has a customized metadata file\n')
-#             return None
         if (not overwrite_existing):
             logger.warning(f'Not writing {dataset_name}/metadata.yaml ; '
                             'File exists (use overwrite_existing=True to override.\n')
@@ -193,7 +183,6 @@ def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
 
     all_features = ''
     first = True
-    
     for feature, feature_type in zip(dataset_stats['feat_names'], dataset_stats['types']):
         if feature in protected_feature_names:
             feature = f'"{feature}"'
@@ -206,8 +195,6 @@ def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
             first = False
         else:
             all_features += feat_extra_template
-
-
 
     metadata = metadata_template.format(
         header_to_print=header_to_print,
@@ -255,6 +242,12 @@ def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None):
     stats_df.to_csv(pathlib.Path(f'{local_cache_dir}{dataset_name}/summary_stats.tsv'),
                    index=False, sep='\t')
 
+def generate_all_summaries(local_cache_dir='datasets/'):
+    frames = []
+    for f in sorted(pathlib.Path(local_cache_dir).glob('*/summary_stats.tsv')):
+        frames.append(pd.read_csv(f, sep = '\t'))
+    pd.concat(frames).to_csv('pmlb/all_summary_stats.tsv', index=False, sep='\t')
+
 def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, local_cache_dir=None):
     df = fetch_data(dataset_name, local_cache_dir=local_cache_dir)
     dataset_stats = get_dataset_stats(df)
@@ -266,18 +259,60 @@ def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=Fals
 
     dataset_stats['yaml_task'] = meta_dict['task']
 
-    generate_summarystats(d, dataset_stats, local_dir)
+    generate_summarystats(dataset_name, dataset_stats, local_dir)
+
+def write_readme(dataset):
+    readme_template = '''\
+# {dataset}
+
+[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/{dataset}.html)
+
+[Metadata](metadata.yaml) | [Summary Statistics](summary_stats.tsv)
+'''
+    """Writes a readme file for a dataset."""
+    print(dataset)
+    path = pathlib.Path(f'datasets/{dataset}/README.md')
+
+    if path.exists():
+        print(f'WARNING: {path} exists. Overwriting...')
+    readme = readme_template.format(dataset=dataset)
+    path.write_text(readme)
 
 if __name__ =='__main__':
     # assuming this is run from the repo root directory
     local_dir = 'datasets/'
-    overwrite = True
 
-    for d in dataset_names:
-        print(d, '...')
+    # overwrite = True
+    # for d in dataset_names:
+    #     print(d, '...')
+    #     update_metadata_summary(
+    #         d, datasets_with_metadata,
+    #         overwrite=overwrite,
+    #         local_cache_dir=local_dir)
+
+    # which datasets have changed for this commit
+    updated_sets = get_updated_datasets()
+    updated_datasets = updated_sets['changed_datasets']
+    updated_metadatas = updated_sets['changed_metadatas']
+
+    for dataset_name in updated_datasets:
+        print(f'Adding readme, metadata and summary stats for {dataset_name}...')
+        # update dataset specific readme files
+        write_readme(dataset_name)
+        # add metadata and summary_stats
         update_metadata_summary(
-            d, datasets_with_metadata,
-            overwrite=overwrite,
+            dataset_name, datasets_with_metadata,
+            overwrite=False,
             local_cache_dir=local_dir)
 
+    for dataset_name in updated_metadatas:
+        print(f'Updating summary stats for {dataset_name}...')
+        datasets_with_metadata.append(dataset_name)
+        # update summary_stats from updated metadata
+        update_metadata_summary(
+            dataset_name, datasets_with_metadata,
+            overwrite=False,
+            local_cache_dir=local_dir)
 
+    # update summary_stats from updated metadata
+    generate_all_summaries(local_cache_dir=local_dir)
