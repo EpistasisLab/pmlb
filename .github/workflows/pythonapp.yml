@@ -43,7 +43,7 @@ jobs:
     - name: Push updates to active branch
       run: |
         git add --all
-        git commit --message "push updates ${GITHUB_SHA:7} on $(date --iso --utc)"
+        git commit --allow-empty --message "push updates ${GITHUB_SHA:7} on $(date --iso --utc)"
         git branch --force $BRANCH
         git checkout $BRANCH
         git push origin $BRANCH
