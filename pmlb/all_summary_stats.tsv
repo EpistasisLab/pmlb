@@ -191,7 +191,6 @@ diabetes	768	8	0	0	8	categorical	2.0	0.09125434027777776	classification
 dis	3772	29	19	10	0	categorical	2.0	0.9394399094067016	classification
 dna	3186	180	180	0	0	categorical	3.0	0.07768479801580122	classification
 ecoli	327	7	0	0	7	categorical	5.0	0.10896482712828136	classification
-fakedata	8124	22	5	17	0	categorical	2.0	0.0012918910021209884	classification
 fars	100968	29	0	29	0	categorical	8.0	0.15649358830559487	classification
 flags	178	43	36	7	0	categorical	5.0	0.04391806590077009	classification
 flare	1066	10	4	4	2	categorical	2.0	0.43367043426531815	classification
