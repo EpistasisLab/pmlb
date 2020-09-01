@@ -31,6 +31,23 @@ jobs:
       run: |
         nosetests -s -v
 
+    - name: Update support files for new datasets
+      run: |
+        python -m pmlb.update_dataset_files
+    - name: Set deploy variables
+      run: |
+        BRANCH_REF=${{github.head_ref || github.ref}}
+        echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
+        git config --local user.name 'github-actions[bot]'
+        git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+    - name: Push updates to active branch
+      run: |
+        git add --all
+        git commit --message "push updates ${GITHUB_SHA:7} on $(date --iso --utc)"
+        git branch --force $BRANCH
+        git checkout $BRANCH
+        git push origin $BRANCH
+
     - name: Generate profiling reports
       run: |
         python -m pmlb.profiling
