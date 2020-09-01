@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+kddcup	494020	41	4	22	15	categorical	23.0	0.3820987910470524	classification

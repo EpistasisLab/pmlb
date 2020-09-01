@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+connect_4	67557	42	0	42	0	categorical	3.0	0.25466255193727544	classification

@@ -1,78 +1,174 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: backache
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: id
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: col_2
     type: categorical
+    description:
+    code:
+    transform:
   - name: col_3
     type: categorical
+    description:
+    code:
+    transform:
   - name: col_4
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_5
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_6
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_7
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_8
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_9
     type: categorical
+    description:
+    code:
+    transform:
   - name: col_10
     type: categorical
+    description:
+    code:
+    transform:
   - name: col_11
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_12
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_13
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_14
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_15
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_16
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_17
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_18
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_19
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_20
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_21
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_22
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_23
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_24
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_25
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_26
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_27
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_28
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_29
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_30
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_31
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: col_32
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:

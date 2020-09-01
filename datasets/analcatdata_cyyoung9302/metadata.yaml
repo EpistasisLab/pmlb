@@ -1,34 +1,64 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: analcatdata_cyyoung9302
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Year
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Pitcher
     type: categorical
+    description:
+    code:
+    transform:
   - name: League
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Type
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Wins
     type: continuous
+    description:
+    code:
+    transform:
   - name: Win_pct
     type: continuous
+    description:
+    code:
+    transform:
   - name: Saves
     type: continuous
+    description:
+    code:
+    transform:
   - name: ERA
     type: continuous
+    description:
+    code:
+    transform:
   - name: Strikeouts
     type: continuous
+    description:
+    code:
+    transform:
   - name: Innings_pitched
     type: continuous
+    description:
+    code:
+    transform:

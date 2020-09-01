@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+592_fri_c4_1000_25	1000	25	0	0	25	continuous	1000.0	0.0	regression

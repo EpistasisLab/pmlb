@@ -1,42 +1,84 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: 503_wind
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
+keywords:
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: year
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: month
     type: continuous
+    description:
+    code:
+    transform:
   - name: day
     type: continuous
+    description:
+    code:
+    transform:
   - name: RPT
     type: continuous
+    description:
+    code:
+    transform:
   - name: VAL
     type: continuous
+    description:
+    code:
+    transform:
   - name: ROS
     type: continuous
+    description:
+    code:
+    transform:
   - name: KIL
     type: continuous
+    description:
+    code:
+    transform:
   - name: SHA
     type: continuous
+    description:
+    code:
+    transform:
   - name: BIR
     type: continuous
+    description:
+    code:
+    transform:
   - name: DUB
     type: continuous
+    description:
+    code:
+    transform:
   - name: CLA
     type: continuous
+    description:
+    code:
+    transform:
   - name: MUL
     type: continuous
+    description:
+    code:
+    transform:
   - name: CLO
     type: continuous
+    description:
+    code:
+    transform:
   - name: BEL
     type: continuous
+    description:
+    code:
+    transform:

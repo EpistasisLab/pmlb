@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+waveform_21	5000	21	0	0	21	categorical	3.0	8.043999999999987e-05	classification

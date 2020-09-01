@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+colic	368	22	1	21	0	categorical	2.0	0.0680529300567108	classification

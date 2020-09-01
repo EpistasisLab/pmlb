@@ -1,142 +1,334 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: optdigits
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: input1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: input2
     type: continuous
+    description:
+    code:
+    transform:
   - name: input3
     type: continuous
+    description:
+    code:
+    transform:
   - name: input4
     type: continuous
+    description:
+    code:
+    transform:
   - name: input5
     type: continuous
+    description:
+    code:
+    transform:
   - name: input6
     type: continuous
+    description:
+    code:
+    transform:
   - name: input7
     type: continuous
+    description:
+    code:
+    transform:
   - name: input8
     type: continuous
+    description:
+    code:
+    transform:
   - name: input9
     type: continuous
+    description:
+    code:
+    transform:
   - name: input10
     type: continuous
+    description:
+    code:
+    transform:
   - name: input11
     type: continuous
+    description:
+    code:
+    transform:
   - name: input12
     type: continuous
+    description:
+    code:
+    transform:
   - name: input13
     type: continuous
+    description:
+    code:
+    transform:
   - name: input14
     type: continuous
+    description:
+    code:
+    transform:
   - name: input15
     type: continuous
+    description:
+    code:
+    transform:
   - name: input16
     type: continuous
+    description:
+    code:
+    transform:
   - name: input17
     type: continuous
+    description:
+    code:
+    transform:
   - name: input18
     type: continuous
+    description:
+    code:
+    transform:
   - name: input19
     type: continuous
+    description:
+    code:
+    transform:
   - name: input20
     type: continuous
+    description:
+    code:
+    transform:
   - name: input21
     type: continuous
+    description:
+    code:
+    transform:
   - name: input22
     type: continuous
+    description:
+    code:
+    transform:
   - name: input23
     type: continuous
+    description:
+    code:
+    transform:
   - name: input24
     type: continuous
+    description:
+    code:
+    transform:
   - name: input25
     type: continuous
+    description:
+    code:
+    transform:
   - name: input26
     type: continuous
+    description:
+    code:
+    transform:
   - name: input27
     type: continuous
+    description:
+    code:
+    transform:
   - name: input28
     type: continuous
+    description:
+    code:
+    transform:
   - name: input29
     type: continuous
+    description:
+    code:
+    transform:
   - name: input30
     type: continuous
+    description:
+    code:
+    transform:
   - name: input31
     type: continuous
+    description:
+    code:
+    transform:
   - name: input32
     type: continuous
+    description:
+    code:
+    transform:
   - name: input33
     type: continuous
+    description:
+    code:
+    transform:
   - name: input34
     type: continuous
+    description:
+    code:
+    transform:
   - name: input35
     type: continuous
+    description:
+    code:
+    transform:
   - name: input36
     type: continuous
+    description:
+    code:
+    transform:
   - name: input37
     type: continuous
+    description:
+    code:
+    transform:
   - name: input38
     type: continuous
+    description:
+    code:
+    transform:
   - name: input39
     type: continuous
+    description:
+    code:
+    transform:
   - name: input40
     type: continuous
+    description:
+    code:
+    transform:
   - name: input41
     type: continuous
+    description:
+    code:
+    transform:
   - name: input42
     type: continuous
+    description:
+    code:
+    transform:
   - name: input43
     type: continuous
+    description:
+    code:
+    transform:
   - name: input44
     type: continuous
+    description:
+    code:
+    transform:
   - name: input45
     type: continuous
+    description:
+    code:
+    transform:
   - name: input46
     type: continuous
+    description:
+    code:
+    transform:
   - name: input47
     type: continuous
+    description:
+    code:
+    transform:
   - name: input48
     type: continuous
+    description:
+    code:
+    transform:
   - name: input49
     type: continuous
+    description:
+    code:
+    transform:
   - name: input50
     type: continuous
+    description:
+    code:
+    transform:
   - name: input51
     type: continuous
+    description:
+    code:
+    transform:
   - name: input52
     type: continuous
+    description:
+    code:
+    transform:
   - name: input53
     type: continuous
+    description:
+    code:
+    transform:
   - name: input54
     type: continuous
+    description:
+    code:
+    transform:
   - name: input55
     type: continuous
+    description:
+    code:
+    transform:
   - name: input56
     type: continuous
+    description:
+    code:
+    transform:
   - name: input57
     type: continuous
+    description:
+    code:
+    transform:
   - name: input58
     type: continuous
+    description:
+    code:
+    transform:
   - name: input59
     type: continuous
+    description:
+    code:
+    transform:
   - name: input60
     type: continuous
+    description:
+    code:
+    transform:
   - name: input61
     type: continuous
+    description:
+    code:
+    transform:
   - name: input62
     type: continuous
+    description:
+    code:
+    transform:
   - name: input63
     type: continuous
+    description:
+    code:
+    transform:
   - name: input64
     type: continuous
+    description:
+    code:
+    transform:

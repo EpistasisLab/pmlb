@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+695_chatfield_4	235	12	0	0	12	continuous	211.0	0.0008964194097738692	regression

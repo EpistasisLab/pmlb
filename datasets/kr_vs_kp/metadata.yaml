@@ -1,86 +1,194 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: kr_vs_kp
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: c1
-    type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    type: binary
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: c2
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c3
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c4
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c5
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c6
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c7
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c8
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c9
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c10
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c11
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c12
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c13
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c14
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c15
     type: categorical
+    description:
+    code:
+    transform:
   - name: c16
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c17
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c18
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c19
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c20
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c21
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c22
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c23
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c24
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c25
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c26
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c27
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c28
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c29
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c30
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c31
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c32
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c33
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c34
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c35
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: c36
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:

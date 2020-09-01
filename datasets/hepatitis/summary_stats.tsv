@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+hepatitis	155	19	3	15	1	categorical	2.0	0.3446826222684704	classification

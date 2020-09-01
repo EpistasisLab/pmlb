@@ -1,128 +1,299 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: spambase
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: 0
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: 1
     type: continuous
+    description:
+    code:
+    transform:
   - name: 2
     type: continuous
+    description:
+    code:
+    transform:
   - name: 3
     type: continuous
+    description:
+    code:
+    transform:
   - name: 4
     type: continuous
+    description:
+    code:
+    transform:
   - name: 5
     type: continuous
+    description:
+    code:
+    transform:
   - name: 6
     type: continuous
+    description:
+    code:
+    transform:
   - name: 7
     type: continuous
+    description:
+    code:
+    transform:
   - name: 8
     type: continuous
+    description:
+    code:
+    transform:
   - name: 9
     type: continuous
+    description:
+    code:
+    transform:
   - name: 10
     type: continuous
+    description:
+    code:
+    transform:
   - name: 11
     type: continuous
+    description:
+    code:
+    transform:
   - name: 12
     type: continuous
+    description:
+    code:
+    transform:
   - name: 13
     type: continuous
+    description:
+    code:
+    transform:
   - name: 14
     type: continuous
+    description:
+    code:
+    transform:
   - name: 15
     type: continuous
+    description:
+    code:
+    transform:
   - name: 16
     type: continuous
+    description:
+    code:
+    transform:
   - name: 17
     type: continuous
+    description:
+    code:
+    transform:
   - name: 18
     type: continuous
+    description:
+    code:
+    transform:
   - name: 19
     type: continuous
+    description:
+    code:
+    transform:
   - name: 20
     type: continuous
+    description:
+    code:
+    transform:
   - name: 21
     type: continuous
+    description:
+    code:
+    transform:
   - name: 22
     type: continuous
+    description:
+    code:
+    transform:
   - name: 23
     type: continuous
+    description:
+    code:
+    transform:
   - name: 24
     type: continuous
+    description:
+    code:
+    transform:
   - name: 25
     type: continuous
+    description:
+    code:
+    transform:
   - name: 26
     type: continuous
+    description:
+    code:
+    transform:
   - name: 27
     type: continuous
+    description:
+    code:
+    transform:
   - name: 28
     type: continuous
+    description:
+    code:
+    transform:
   - name: 29
     type: continuous
+    description:
+    code:
+    transform:
   - name: 30
     type: continuous
+    description:
+    code:
+    transform:
   - name: 31
     type: continuous
+    description:
+    code:
+    transform:
   - name: 32
     type: continuous
+    description:
+    code:
+    transform:
   - name: 33
     type: continuous
+    description:
+    code:
+    transform:
   - name: 34
     type: continuous
+    description:
+    code:
+    transform:
   - name: 35
     type: continuous
+    description:
+    code:
+    transform:
   - name: 36
     type: continuous
+    description:
+    code:
+    transform:
   - name: 37
     type: continuous
+    description:
+    code:
+    transform:
   - name: 38
     type: continuous
+    description:
+    code:
+    transform:
   - name: 39
     type: continuous
+    description:
+    code:
+    transform:
   - name: 40
     type: continuous
+    description:
+    code:
+    transform:
   - name: 41
     type: continuous
+    description:
+    code:
+    transform:
   - name: 42
     type: continuous
+    description:
+    code:
+    transform:
   - name: 43
     type: continuous
+    description:
+    code:
+    transform:
   - name: 44
     type: continuous
+    description:
+    code:
+    transform:
   - name: 45
     type: continuous
+    description:
+    code:
+    transform:
   - name: 46
     type: continuous
+    description:
+    code:
+    transform:
   - name: 47
     type: continuous
+    description:
+    code:
+    transform:
   - name: 48
     type: continuous
+    description:
+    code:
+    transform:
   - name: 49
     type: continuous
+    description:
+    code:
+    transform:
   - name: 50
     type: continuous
+    description:
+    code:
+    transform:
   - name: 51
     type: continuous
+    description:
+    code:
+    transform:
   - name: 52
     type: continuous
+    description:
+    code:
+    transform:
   - name: 53
     type: continuous
+    description:
+    code:
+    transform:
   - name: 54
     type: continuous
+    description:
+    code:
+    transform:
   - name: 55
     type: categorical
+    description:
+    code:
+    transform:
   - name: 56
     type: categorical
+    description:
+    code:
+    transform:

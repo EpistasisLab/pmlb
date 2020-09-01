@@ -1,82 +1,184 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: dermatology
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: erythema
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: scaling
     type: categorical
+    description:
+    code:
+    transform:
   - name: definite_borders
     type: categorical
+    description:
+    code:
+    transform:
   - name: itching
     type: categorical
+    description:
+    code:
+    transform:
   - name: koebner_phenomenon
     type: categorical
+    description:
+    code:
+    transform:
   - name: polygonal_papules
     type: categorical
+    description:
+    code:
+    transform:
   - name: follicular_papules
     type: categorical
+    description:
+    code:
+    transform:
   - name: oral_mucosal_involvement
     type: categorical
+    description:
+    code:
+    transform:
   - name: knee_and_elbow_involvement
     type: categorical
+    description:
+    code:
+    transform:
   - name: scalp_involvement
     type: categorical
+    description:
+    code:
+    transform:
   - name: family_history
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: melanin_incontinence
     type: categorical
+    description:
+    code:
+    transform:
   - name: eosinophils_in_the_infiltrate
     type: categorical
+    description:
+    code:
+    transform:
   - name: PNL_infiltrate
     type: categorical
+    description:
+    code:
+    transform:
   - name: fibrosis_of_the_papillary_dermis
     type: categorical
+    description:
+    code:
+    transform:
   - name: exocytosis
     type: categorical
+    description:
+    code:
+    transform:
   - name: acanthosis
     type: categorical
+    description:
+    code:
+    transform:
   - name: hyperkeratosis
     type: categorical
+    description:
+    code:
+    transform:
   - name: parakeratosis
     type: categorical
+    description:
+    code:
+    transform:
   - name: clubbing_of_the_rete_ridges
     type: categorical
+    description:
+    code:
+    transform:
   - name: elongation_of_the_rete_ridges
     type: categorical
+    description:
+    code:
+    transform:
   - name: thinning_of_the_suprapapillary_epidermis
     type: categorical
+    description:
+    code:
+    transform:
   - name: spongiform_pustule
     type: categorical
+    description:
+    code:
+    transform:
   - name: munro_microabcess
     type: categorical
+    description:
+    code:
+    transform:
   - name: focal_hypergranulosis
     type: categorical
+    description:
+    code:
+    transform:
   - name: disappearance_of_the_granular_layer
     type: categorical
+    description:
+    code:
+    transform:
   - name: vacuolisation_and_damage_of_basal_layer
     type: categorical
+    description:
+    code:
+    transform:
   - name: spongiosis
     type: categorical
+    description:
+    code:
+    transform:
   - name: saw-tooth_appearance_of_retes
     type: categorical
+    description:
+    code:
+    transform:
   - name: follicular_horn_plug
     type: categorical
+    description:
+    code:
+    transform:
   - name: perifollicular_parakeratosis
     type: categorical
+    description:
+    code:
+    transform:
   - name: inflammatory_monoluclear_inflitrate
     type: categorical
+    description:
+    code:
+    transform:
   - name: band-like_infiltrate
     type: categorical
+    description:
+    code:
+    transform:
   - name: Age
     type: categorical
+    description:
+    code:
+    transform:

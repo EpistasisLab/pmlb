@@ -1,44 +1,89 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: credit_a
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: A1
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: A2
     type: categorical
+    description:
+    code:
+    transform:
   - name: A3
     type: continuous
+    description:
+    code:
+    transform:
   - name: A4
     type: categorical
+    description:
+    code:
+    transform:
   - name: A5
     type: categorical
+    description:
+    code:
+    transform:
   - name: A6
     type: categorical
+    description:
+    code:
+    transform:
   - name: A7
     type: categorical
+    description:
+    code:
+    transform:
   - name: A8
     type: continuous
+    description:
+    code:
+    transform:
   - name: A9
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: A10
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: A11
     type: continuous
+    description:
+    code:
+    transform:
   - name: A12
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: A13
     type: categorical
+    description:
+    code:
+    transform:
   - name: A14
     type: categorical
+    description:
+    code:
+    transform:
   - name: A15
     type: continuous
+    description:
+    code:
+    transform:

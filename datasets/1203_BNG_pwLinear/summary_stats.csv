@@ -1,2 +1,0 @@
-,#instances,#features,#binary_features,#categorical_features,#continuous_features,Endpoint_type,#Classes,Imbalance_metric
-0,177147,10,0,0,10,continuous,176025.0,3.597248445322615e-08

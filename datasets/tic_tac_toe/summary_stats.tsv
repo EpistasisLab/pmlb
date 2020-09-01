@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+tic_tac_toe	958	9	0	9	0	categorical	2.0	0.09418107487327897	classification

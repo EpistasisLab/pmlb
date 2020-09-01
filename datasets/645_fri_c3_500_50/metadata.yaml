@@ -1,114 +1,264 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: 645_fri_c3_500_50
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
+keywords:
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: oz1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: oz2
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz3
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz4
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz5
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz6
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz7
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz8
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz9
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz10
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz11
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz12
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz13
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz14
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz15
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz16
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz17
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz18
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz19
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz20
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz21
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz22
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz23
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz24
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz25
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz26
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz27
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz28
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz29
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz30
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz31
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz32
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz33
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz34
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz35
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz36
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz37
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz38
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz39
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz40
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz41
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz42
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz43
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz44
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz45
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz46
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz47
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz48
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz49
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz50
     type: continuous
+    description:
+    code:
+    transform:

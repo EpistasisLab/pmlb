@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+wine_recognition	178	13	0	2	11	categorical	3.0	0.012529983587930811	classification

@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+1096_FacultySalaries	50	4	0	0	4	continuous	39.0	0.004063157894736838	regression

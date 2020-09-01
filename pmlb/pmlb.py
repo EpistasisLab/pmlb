@@ -117,7 +117,24 @@ def get_updated_datasets():
         path = pathlib.Path(path)
         if path.parts[0] != 'datasets':
             continue
-        if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
+        if path.name.endswith('.tsv.gz'):
+            changed_datasets.add(path.parts[-2])
+    changed_datasets &= set(dataset_names)
+    changed_datasets = sorted(changed_datasets)
+    print(f'changed datasets: {changed_datasets}')
+    return changed_datasets
+
+
+def get_updated_metadatas():
+    """Looks at commit and returns a list of datasets of which metadata were updated."""
+    cmd = 'git diff --name-only HEAD HEAD~1'
+    res = subprocess.check_output(cmd.split(), universal_newlines=True)
+    changed_datasets = set()
+    for path in res.splitlines():
+        path = pathlib.Path(path)
+        if path.parts[0] != 'datasets':
+            continue
+        if path.name == 'metadata.yaml':
             changed_datasets.add(path.parts[-2])
     changed_datasets &= set(dataset_names)
     changed_datasets = sorted(changed_datasets)
