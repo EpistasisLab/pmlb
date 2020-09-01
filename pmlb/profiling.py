@@ -42,7 +42,8 @@ def datasets_to_gen() -> list:
         return dataset_names
     if 'regenerate_profiles' in os.environ:
         return dataset_names
-    return get_updated_datasets()
+    updated_sets = get_updated_datasets()
+    return updated_sets['changed_datasets']
 
 
 if __name__ =='__main__':
