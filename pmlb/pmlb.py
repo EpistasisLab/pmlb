@@ -59,11 +59,10 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
         if return_X_y == True: A tuple of NumPy arrays containing (features, labels)
 
     """
-    if dataset_name not in dataset_names:
-        raise ValueError('Dataset not found in PMLB.')
-
 
     if local_cache_dir is None:
+        if dataset_name not in dataset_names:
+            raise ValueError('Dataset not found in PMLB.')
         dataset_url = get_dataset_url(GITHUB_URL,
                                         dataset_name, suffix)
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
@@ -76,6 +75,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
             dataset = pd.read_csv(dataset_path, sep='\t', compression='gzip')
         # Download the data to the local cache if it is not already there
         else:
+            if dataset_name not in dataset_names:
+                raise ValueError('Dataset not found in PMLB.')
             dataset_url = get_dataset_url(GITHUB_URL,
                                             dataset_name, suffix)
             dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
@@ -111,32 +112,24 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
 def get_updated_datasets():
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff --name-only HEAD HEAD~1'
-    res = subprocess.check_output(cmd.split(), universal_newlines=True)
+    res = subprocess.check_output(cmd.split(), universal_newlines=True).rstrip()
     changed_datasets = set()
+    changed_metadatas = set()
     for path in res.splitlines():
         path = pathlib.Path(path)
         if path.parts[0] != 'datasets':
             continue
         if path.name.endswith('.tsv.gz'):
             changed_datasets.add(path.parts[-2])
-    changed_datasets &= set(dataset_names)
-    changed_datasets = sorted(changed_datasets)
-    print(f'changed datasets: {changed_datasets}')
-    return changed_datasets
-
-
-def get_updated_metadatas():
-    """Looks at commit and returns a list of datasets of which metadata were updated."""
-    cmd = 'git diff --name-only HEAD HEAD~1'
-    res = subprocess.check_output(cmd.split(), universal_newlines=True)
-    changed_datasets = set()
-    for path in res.splitlines():
-        path = pathlib.Path(path)
-        if path.parts[0] != 'datasets':
-            continue
         if path.name == 'metadata.yaml':
-            changed_datasets.add(path.parts[-2])
-    changed_datasets &= set(dataset_names)
+            changed_metadatas.add(path.parts[-2])
+    # changed_metadatas &= set(dataset_names)
     changed_datasets = sorted(changed_datasets)
-    print(f'changed datasets: {changed_datasets}')
-    return changed_datasets
+    changed_metadatas = sorted(changed_metadatas)
+    print(
+        f'changed datasets: {changed_datasets}\n'
+        f'changed metadata: {changed_metadatas}'
+    )
+    return {'changed_datasets': changed_datasets,
+            'changed_metadatas': changed_metadatas}
+
