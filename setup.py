@@ -33,7 +33,7 @@ This project is hosted at https://github.com/EpistasisLab/penn-ml-benchmarks
                     'pyyaml>=5.3.1'
                     ],
     extras_require={
-        'dev':  ['nose', 'numpy' 'scipy', 'tabulate', 'parameterized',
+        'dev': ['nose', 'numpy', 'scipy', 'tabulate', 'parameterized',
         'matplotlib', 'seaborn', 'pandas-profiling'],
     },
     classifiers=[
