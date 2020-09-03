@@ -35,7 +35,7 @@ This project is hosted at https://github.com/EpistasisLab/penn-ml-benchmarks
     extras_require={
         'dev':  ['nose', 'numpy' 'scipy', 'tabulate', 'parameterized',
         'matplotlib', 'seaborn', 'pandas-profiling'],
-    }
+    },
     classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: Information Technology',
