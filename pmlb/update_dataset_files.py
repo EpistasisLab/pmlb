@@ -261,7 +261,7 @@ def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=Fals
 
     generate_summarystats(dataset_name, dataset_stats, local_dir)
 
-def write_readme(dataset):
+def write_readme(dataset, local_cache_dir='datasets/'):
     readme_template = '''\
 # {dataset}
 
@@ -271,7 +271,7 @@ def write_readme(dataset):
 '''
     """Writes a readme file for a dataset."""
     print(dataset)
-    path = pathlib.Path(f'datasets/{dataset}/README.md')
+    path = pathlib.Path(f'{local_cache_dir}{dataset}/README.md')
 
     if path.exists():
         print(f'WARNING: {path} exists. Overwriting...')
