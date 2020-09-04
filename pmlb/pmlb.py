@@ -109,7 +109,7 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
     return dataset_url
 
 
-def get_updated_datasets():
+def get_updated_datasets(local_cache_dir='datasets'):
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff --name-only HEAD HEAD~1'
     res = subprocess.check_output(cmd.split(), universal_newlines=True).rstrip()
@@ -123,7 +123,11 @@ def get_updated_datasets():
             changed_datasets.add(path.parts[-2])
         if path.name == 'metadata.yaml':
             changed_metadatas.add(path.parts[-2])
-    # changed_metadatas &= set(dataset_names)
+            
+    datasets_remain = [x.name for x in pathlib.Path(local_cache_dir).iterdir()]
+    changed_metadatas &= set(datasets_remain)
+    changed_datasets &= set(datasets_remain)
+
     changed_datasets = sorted(changed_datasets)
     changed_metadatas = sorted(changed_metadatas)
     print(
