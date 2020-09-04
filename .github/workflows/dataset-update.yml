@@ -1,0 +1,38 @@
+name: Update new dataset metadata
+
+on:
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        lfs: true
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        pip install ".[dev]"
+        sudo apt-get update
+        sudo apt-get install libssl-dev libcurl4-openssl-dev
+
+    - name: Update support files for new datasets
+      run: |
+        python -m pmlb.update_dataset_files
+    - name: Set deploy variables
+      run: |
+        BRANCH_REF=${{github.head_ref || github.ref}}
+        echo "::set-env name=BRANCH::${BRANCH_REF##*/}"
+        git config --local user.name 'github-actions[bot]'
+        git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+    - name: Push updates to active branch
+      run: |
+        git add --all
+        git commit --allow-empty --message "push updates ${GITHUB_SHA:7} on $(date --iso --utc)"
+        git branch --force $BRANCH
+        git checkout $BRANCH
+        git push origin $BRANCH
