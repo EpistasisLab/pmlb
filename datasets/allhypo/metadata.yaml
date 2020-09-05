@@ -1,72 +1,159 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: allhypo
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: age
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: sex
     type: categorical
+    description:
+    code:
+    transform:
   - name: on thyroxine
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: query on thyroxine
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: on antithyroid medication
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: sick
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: pregnant
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: thyroid surgery
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: I131 treatment
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: query hypothyroid
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: query hyperthyroid
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: lithium
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: goitre
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: tumor
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: hypopituitary
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: psych
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: TSH measured
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: TSH
     type: categorical
+    description:
+    code:
+    transform:
   - name: T3 measured
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: T3
     type: categorical
+    description:
+    code:
+    transform:
   - name: TT4 measured
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: TT4
     type: categorical
+    description:
+    code:
+    transform:
   - name: T4U measured
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: T4U
     type: categorical
+    description:
+    code:
+    transform:
   - name: FTI measured
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: FTI
     type: categorical
+    description:
+    code:
+    transform:
   - name: TBG measured
     type: categorical
+    description:
+    code:
+    transform:
   - name: TBG
     type: categorical
+    description:
+    code:
+    transform:
   - name: referral source
     type: categorical
+    description:
+    code:
+    transform:

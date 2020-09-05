@@ -1,86 +1,194 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: 294_satellite_image
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
+keywords:
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: attr1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: attr2
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr3
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr4
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr5
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr6
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr7
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr8
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr9
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr10
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr11
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr12
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr13
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr14
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr15
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr16
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr17
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr18
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr19
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr20
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr21
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr22
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr23
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr24
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr25
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr26
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr27
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr28
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr29
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr30
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr31
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr32
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr33
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr34
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr35
     type: continuous
+    description:
+    code:
+    transform:
   - name: attr36
     type: continuous
+    description:
+    code:
+    transform:

@@ -1,24 +1,39 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: 628_fri_c3_1000_5
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
+keywords:
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: oz1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: oz2
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz3
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz4
     type: continuous
+    description:
+    code:
+    transform:
   - name: oz5
     type: continuous
+    description:
+    code:
+    transform:

@@ -1,96 +1,219 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: kddcup
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Atr-0
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Atr-1
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-2
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-3
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-4
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-5
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-6
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Atr-7
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-8
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-9
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-10
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-11
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Atr-12
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-13
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Atr-14
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-15
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-16
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-17
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-18
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-19
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-20
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-21
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Atr-22
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-23
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-24
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-25
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-26
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-27
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-28
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-29
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-30
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-31
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-32
     type: categorical
+    description:
+    code:
+    transform:
   - name: Atr-33
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-34
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-35
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-36
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-37
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-38
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-39
     type: continuous
+    description:
+    code:
+    transform:
   - name: Atr-40
     type: continuous
+    description:
+    code:
+    transform:

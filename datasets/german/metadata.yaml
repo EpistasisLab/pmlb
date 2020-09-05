@@ -1,54 +1,114 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: german
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Status
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Duration
     type: continuous
+    description:
+    code:
+    transform:
   - name: Credit-history
     type: categorical
+    description:
+    code:
+    transform:
   - name: Purpose
     type: categorical
+    description:
+    code:
+    transform:
   - name: Credit
     type: continuous
+    description:
+    code:
+    transform:
   - name: Savings-account
     type: categorical
+    description:
+    code:
+    transform:
   - name: Employment
     type: categorical
+    description:
+    code:
+    transform:
   - name: Installment-rate
     type: continuous
+    description:
+    code:
+    transform:
   - name: Personal-status
     type: categorical
+    description:
+    code:
+    transform:
   - name: Debtors
     type: categorical
+    description:
+    code:
+    transform:
   - name: Residence-time
     type: continuous
+    description:
+    code:
+    transform:
   - name: Property
     type: categorical
+    description:
+    code:
+    transform:
   - name: Age
     type: continuous
+    description:
+    code:
+    transform:
   - name: Installments
     type: categorical
+    description:
+    code:
+    transform:
   - name: Housing
     type: categorical
+    description:
+    code:
+    transform:
   - name: Existing-credits
     type: continuous
+    description:
+    code:
+    transform:
   - name: Job
     type: categorical
+    description:
+    code:
+    transform:
   - name: Liable-people
     type: continuous
+    description:
+    code:
+    transform:
   - name: Telephone
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Foreign
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:

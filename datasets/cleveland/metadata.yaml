@@ -1,40 +1,79 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: cleveland
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: age
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: sex
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: cp
     type: categorical
+    description:
+    code:
+    transform:
   - name: trestbps
     type: continuous
+    description:
+    code:
+    transform:
   - name: chol
     type: continuous
+    description:
+    code:
+    transform:
   - name: fbs
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: restecg
     type: categorical
+    description:
+    code:
+    transform:
   - name: thalach
     type: continuous
+    description:
+    code:
+    transform:
   - name: exang
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: oldpeak
     type: continuous
+    description:
+    code:
+    transform:
   - name: slope
     type: categorical
+    description:
+    code:
+    transform:
   - name: ca
     type: categorical
+    description:
+    code:
+    transform:
   - name: thal
     type: categorical
+    description:
+    code:
+    transform:

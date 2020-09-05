@@ -1,54 +1,114 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: N0
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: N1
     type: categorical
+    description:
+    code:
+    transform:
   - name: N2
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: N3
     type: categorical
+    description:
+    code:
+    transform:
   - name: N4
     type: categorical
+    description:
+    code:
+    transform:
   - name: N5
     type: categorical
+    description:
+    code:
+    transform:
   - name: N6
     type: categorical
+    description:
+    code:
+    transform:
   - name: N7
     type: categorical
+    description:
+    code:
+    transform:
   - name: N8
     type: categorical
+    description:
+    code:
+    transform:
   - name: N9
     type: categorical
+    description:
+    code:
+    transform:
   - name: N10
     type: categorical
+    description:
+    code:
+    transform:
   - name: N11
     type: categorical
+    description:
+    code:
+    transform:
   - name: N12
     type: categorical
+    description:
+    code:
+    transform:
   - name: N13
     type: categorical
+    description:
+    code:
+    transform:
   - name: N14
     type: categorical
+    description:
+    code:
+    transform:
   - name: N15
     type: categorical
+    description:
+    code:
+    transform:
   - name: M0P0
     type: categorical
+    description:
+    code:
+    transform:
   - name: M0P1
     type: categorical
+    description:
+    code:
+    transform:
   - name: M1P0
     type: categorical
+    description:
+    code:
+    transform:
   - name: M1P1
     type: categorical
+    description:
+    code:
+    transform:

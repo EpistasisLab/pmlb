@@ -1,38 +1,74 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: 695_chatfield_4
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
+keywords:
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: col_1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: col_2
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_3
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_4
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_5
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_6
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_7
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_8
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_9
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_10
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_11
     type: continuous
+    description:
+    code:
+    transform:
   - name: col_12
     type: continuous
+    description:
+    code:
+    transform:

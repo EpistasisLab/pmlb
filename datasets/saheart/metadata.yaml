@@ -1,4 +1,4 @@
-#Reviewed by Trang Le
+# Reviewed by Trang Le
 dataset: saheart
 description: A retrospective sample of males in a heart-disease high-risk region of the Western Cape.
 source: >
@@ -11,13 +11,18 @@ publication: >
   South African Medical Journal 64: 430-436.
   pmid:6623218
 task: classification
+keywords:
+  - heart disease
+  - coronary artery
+  - alcohol
+  - smoking
 target:
   type: binary
   description: status of coronary heart disease (CHD)
   code: No = 0, CHD = 1
 features: # list of features in the dataset
   - name: Sbp
-    type: discrete
+    type: categorical
     description: systolic blood pressure
     code: null # optional, coding information, e.g., Control = 0, Case = 1
     transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
@@ -35,7 +40,7 @@ features: # list of features in the dataset
     description: family history of heart disease
     code: Absent = 0, Present = 1
   - name: Typea
-    type: discrete
+    type: categorical
     description: type-A behavior
   - name: Obesity
     type: continuous

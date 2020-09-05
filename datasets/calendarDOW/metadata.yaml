@@ -1,78 +1,174 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: calendarDOW
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Feature00
     type: categorical
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Feature01
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature02
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature03
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature04
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature05
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature06
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature07
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature08
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature09
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature10
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature11
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature12
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature13
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature14
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature15
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature16
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature17
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature18
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature19
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature20
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature21
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature22
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature23
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature24
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Feature25
-    type: categorical
+    type: binary
+    description:
+    code:
+    transform:
   - name: Feature26
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature27
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature28
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature29
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature30
     type: categorical
+    description:
+    code:
+    transform:
   - name: Feature31
     type: categorical
+    description:
+    code:
+    transform:

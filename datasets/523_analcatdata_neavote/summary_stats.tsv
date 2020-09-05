@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+523_analcatdata_neavote	100	2	0	0	2	continuous	8.0	0.13691428571428574	regression

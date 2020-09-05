@@ -1,102 +1,234 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: tokyo1
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: cpu_avg_user
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: cpu_avg_sys
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_avg_busy
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_avg_wait
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_avg_idle
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_avg_waste
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_max_user
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_max_sys
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_max_busy
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_max_wait
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_max_idle
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_max_waste
     type: continuous
+    description:
+    code:
+    transform:
   - name: cpu_frac_busy
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_iget
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_bread
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_bwrite
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_lread
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_lwrite
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_phread
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_phwrite
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_wcancel
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_namei
     type: continuous
+    description:
+    code:
+    transform:
   - name: io_dirblk
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_avg_active
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_max_active
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_frac_active
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_avg_read
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_avg_write
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_avg_total
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_max_read
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_max_write
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_max_total
     type: continuous
+    description:
+    code:
+    transform:
   - name: disk_frac_busy
     type: continuous
+    description:
+    code:
+    transform:
   - name: net_avg_read
     type: continuous
+    description:
+    code:
+    transform:
   - name: net_avg_write
     type: continuous
+    description:
+    code:
+    transform:
   - name: net_avg_total
     type: continuous
+    description:
+    code:
+    transform:
   - name: net_max_read
     type: continuous
+    description:
+    code:
+    transform:
   - name: net_max_write
     type: continuous
+    description:
+    code:
+    transform:
   - name: net_max_total
     type: continuous
+    description:
+    code:
+    transform:
   - name: net_frac_busy
     type: continuous
+    description:
+    code:
+    transform:
   - name: mem_swap
     type: continuous
+    description:
+    code:
+    transform:
   - name: mem_fault
     type: continuous
+    description:
+    code:
+    transform:
   - name: mem_tlbflush
     type: continuous
+    description:
+    code:
+    transform:
   - name: syscall_total
     type: continuous
+    description:
+    code:
+    transform:

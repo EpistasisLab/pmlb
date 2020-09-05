@@ -1,52 +1,109 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: segmentation
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
   type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: region-centroid-col
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: region-centroid-row
     type: continuous
+    description:
+    code:
+    transform:
   - name: region-pixel-count
     type: continuous
+    description:
+    code:
+    transform:
   - name: short-line-density-5
     type: continuous
+    description:
+    code:
+    transform:
   - name: short-line-density-2
     type: continuous
+    description:
+    code:
+    transform:
   - name: vedge-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: vedge-sd
     type: continuous
+    description:
+    code:
+    transform:
   - name: hedge-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: hedge-sd
     type: continuous
+    description:
+    code:
+    transform:
   - name: intensity-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: rawred-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: rawblue-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: rawgreen-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: exred-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: exblue-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: exgreen-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: value-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: saturatoin-mean
     type: continuous
+    description:
+    code:
+    transform:
   - name: hue-mean
     type: continuous
+    description:
+    code:
+    transform:

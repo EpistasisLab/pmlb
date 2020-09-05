@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+485_analcatdata_vehicle	48	4	0	0	4	continuous	47.0	0.00043402777777777754	regression

@@ -1,4 +1,3 @@
-# Generated automatically by pmlb/write_metadata.py
 # Reviewed by Natasha Ray
 dataset: 560_bodyfat
 description: >
@@ -11,6 +10,10 @@ publication: >
   Generalized body composition prediction equation for men using simple measurement techniques.
   Medicine & Science in Sports & Exercise. 1985 Apr 1;17(2):189.
 task: regression
+keywords:
+  - body fat
+  - weigh
+  - measure
 target:
   type: continuous
   description: Percent of body fat

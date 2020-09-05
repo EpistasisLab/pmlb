@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+solar_flare_1	315	12	7	5	0	categorical	5.0	0.03232552280171328	classification

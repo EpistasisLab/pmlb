@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+dermatology	366	34	1	33	0	categorical	6.0	0.04145838932186687	classification
