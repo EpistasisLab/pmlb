@@ -166,7 +166,6 @@ calendarDOW	399	32	2	30	0	categorical	5.0	0.014029434488476824	classification
 car	1728	6	0	6	0	categorical	4.0	0.3902883159007773	classification
 car_evaluation	1728	21	21	0	0	categorical	4.0	0.3902883159007773	classification
 cars	392	8	0	1	7	categorical	3.0	0.1919968242399	classification
-cars1	392	7	0	0	7	categorical	3.0	0.1919968242399	classification
 chess	3196	36	35	1	0	categorical	2.0	0.001974072722317166	classification
 churn	5000	20	2	2	16	categorical	2.0	0.5143758400000001	classification
 clean1	476	168	0	2	166	categorical	2.0	0.016965609773321087	classification
