@@ -137,3 +137,88 @@ def get_updated_datasets(local_cache_dir='datasets'):
     return {'changed_datasets': changed_datasets,
             'changed_metadatas': changed_metadatas}
 
+from sklearn.neighbors import NearestNeighbors
+from sklearn.preprocessing import StandardScaler
+from .update_dataset_files import generate_summarystats
+from pathlib import Path
+import numpy as np
+
+
+def nearest_datasets(X, y=None, **kwargs):
+    """
+    X: numpy array
+        an n_samples x n_features array of independent variables
+    y: numpy array or None (default: None)
+        a n_samples array of dependent variables
+    """
+    df = pd.DataFrame({**{'x_'+str(i):x for i,x in enumerate(X.transpose)}
+                       **{'target':y}})
+    return fetch_nearest_dataset_names(df, **kwargs)
+
+def fetch_nearest_dataset_names(df, n=1, 
+        dimensions=['n_instances', 'n_features'],
+        task=None):
+    """Returns names of most similar datasets to df, in order of similarity. 
+
+    Parameters
+    ----------
+    df: pandas Dataframe 
+        a dataframe of n_samples x n_features+1 with a target column labeled
+        'target'
+    n: int (default: 1)
+        the number of dataset names to return
+    dimensions: list of str or str (default: ['NumberOfInstances',
+    'NumberOfFeatures'])
+        a list of dataset characteristics to include in similarity calculation.
+        Dimensions must correspond to columns of datasets/all_summary_stats.csv.
+        If 'all', uses all numeric columns.
+    task: str or None (default: None)
+        specify classification or regression for summary stat generation. If 
+        None, we use classification unless the target column has more than 5 
+        unique values.
+
+    Returns
+    -------
+    dataset_names: an n-element list of dataset names in order of most similar 
+        to least similar.
+    """
+    # get summary stats for dataset
+    if task==None:
+        task = 'classification' if df['target'].nunique()<5 else 'regression'
+
+    # load pmlb summary stats
+    path = Path(__file__).parent / "all_summary_stats.tsv"
+    pmlb_stats = pd.read_csv(path, sep = '\t')
+    all_names = pmlb_stats['dataset'].values
+    # restrict to same task
+    pmlb_stats = pmlb_stats.loc[pmlb_stats.problem_type==task]
+    # restrict to floating point data in stats
+    pmlb_stats = pmlb_stats.apply(
+            lambda x: pd.to_numeric(x,errors='coerce')).dropna(axis=1,how='all')
+
+
+    if dimensions=='all':
+        dimensions = list(pmlb_stats.columns)
+    else:
+        pmlb_stats = pmlb_stats[dimensions]  
+        assert(all([d in pmlb_stats.columns for d in dimensions]))
+
+    dataset_stats = generate_summarystats(df, 'dataset', task)
+    dataset_stats = dataset_stats[dimensions]
+
+
+    ss = StandardScaler()
+    pmlb_stats_norm = ss.fit_transform(pmlb_stats) 
+    print('pmlb_stats_norm:',pmlb_stats_norm)
+    print('pmlb_stats std:',{k:pmlb_stats[k].std(ddof=1) for k in pmlb_stats.columns})
+    print('pmlb_stats mean:',{k:pmlb_stats[k].mean() for k in pmlb_stats.columns})
+    print('pmlb_stats norm var:',[np.std(k) for k in pmlb_stats_norm.transpose()])
+
+    # find nearest neighbors
+    nn = NearestNeighbors(n_neighbors=n, p=1).fit(pmlb_stats_norm)
+    ds = nn.kneighbors(ss.transform(dataset_stats), n_neighbors=n, 
+                                            return_distance=False)
+
+    dataset_names = all_names[ds.flatten()]
+
+    return dataset_names
