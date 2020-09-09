@@ -210,7 +210,8 @@ features:
     except IOError as err:
         print(err)
 
-def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None):
+def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None,
+                          update_all=False):
     """Generates summary stats for a given dataset in its summary_stats.csv
     file in a dataset local_cache_dir file.
     TODO: link dataset_desribe from PennAI to this for generating stats.
@@ -219,6 +220,8 @@ def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None):
     :param local_cache_dir: str (required)
         The directory on your local machine to store the data files.
         If None, then the local data cache will not be used.
+    :param update_all: bool
+        Whether new summary statistics should be written out to directory.
     """
     print('generating summary stats for', dataset_name)
 
@@ -238,9 +241,12 @@ def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None):
         'task':dataset_stats['yaml_task']
         }, index=[0])
 
-    assert (local_cache_dir != None)
-    stats_df.to_csv(pathlib.Path(f'{local_cache_dir}{dataset_name}/summary_stats.tsv'),
-                   index=False, sep='\t')
+    if update_all:
+        assert (local_cache_dir != None)
+        stats_df.to_csv(pathlib.Path(f'{local_cache_dir}{dataset_name}/summary_stats.tsv'),
+                    index=False, sep='\t')
+
+    return stats_df
 
 def generate_all_summaries(local_cache_dir='datasets/'):
     frames = []
@@ -248,18 +254,18 @@ def generate_all_summaries(local_cache_dir='datasets/'):
         frames.append(pd.read_csv(f, sep = '\t'))
     pd.concat(frames).to_csv('pmlb/all_summary_stats.tsv', index=False, sep='\t')
 
-def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, local_cache_dir=None):
+def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, local_cache_dir=None, update_all=False):
     df = fetch_data(dataset_name, local_cache_dir=local_cache_dir)
     dataset_stats = get_dataset_stats(df)
     if dataset_name not in datasets_with_metadata:
-        generate_metadata(df, dataset_name, dataset_stats, overwrite, local_dir)
+        generate_metadata(df, dataset_name, dataset_stats, overwrite, local_cache_dir)
     
     with open(pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')) as f:
         meta_dict = yaml.load(f, Loader=yaml.FullLoader)
 
     dataset_stats['yaml_task'] = meta_dict['task']
 
-    generate_summarystats(dataset_name, dataset_stats, local_dir)
+    generate_summarystats(dataset_name, dataset_stats, local_cache_dir, update_all)
 
 def write_readme(dataset, local_cache_dir='datasets/'):
     readme_template = '''\
@@ -303,7 +309,8 @@ if __name__ =='__main__':
         update_metadata_summary(
             dataset_name, datasets_with_metadata,
             overwrite=False,
-            local_cache_dir=local_dir)
+            local_cache_dir=local_dir,
+            update_all=True)
 
     for dataset_name in updated_metadatas:
         print(f'Updating summary stats for {dataset_name}...')
@@ -312,7 +319,8 @@ if __name__ =='__main__':
         update_metadata_summary(
             dataset_name, datasets_with_metadata,
             overwrite=False,
-            local_cache_dir=local_dir)
+            local_cache_dir=local_dir,
+            update_all=True)
 
     # update summary_stats from updated metadata
     generate_all_summaries(local_cache_dir=local_dir)
