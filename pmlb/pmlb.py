@@ -156,7 +156,7 @@ def fetch_nearest_dataset_names(X,y=None, **kwargs):
     return fetch_nearest_dataset_names(df, **kwargs)
 
 def fetch_nearest_dataset_names(df, n=1, 
-        dimensions=['#instances','#features'],
+        dimensions=['n_instances', 'n_features'],
         task=None):
     """Returns names of most similar datasets to df, in order of similarity. 
 
@@ -222,4 +222,3 @@ def fetch_nearest_dataset_names(df, n=1,
     dataset_names = all_names[ds.flatten()]
 
     return dataset_names
-
