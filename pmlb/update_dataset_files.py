@@ -93,6 +93,7 @@ def count_features_type(types, include_binary=False):
                 )
 
 def get_type(x, include_binary=False):
+    x.dropna(inplace=True)
     if x.dtype=='float64':
         return 'continuous'
     elif x.dtype=='int64':
