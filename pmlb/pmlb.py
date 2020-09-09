@@ -188,7 +188,7 @@ def fetch_nearest_dataset_names(df, n=1,
 
     # load pmlb summary stats
     path = Path(__file__).parent / "all_summary_stats.tsv"
-    pmlb_stats = pd.read_csv(path)
+    pmlb_stats = pd.read_csv(path, sep = '\t')
     all_names = pmlb_stats['dataset'].values
     # restrict to same task
     pmlb_stats = pmlb_stats.loc[pmlb_stats.problem_type==task]
