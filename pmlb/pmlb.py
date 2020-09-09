@@ -144,7 +144,7 @@ from pathlib import Path
 import numpy as np
 
 
-def fetch_nearest_dataset_names(X,y=None, **kwargs):
+def nearest_datasets(X, y=None, **kwargs):
     """
     X: numpy array
         an n_samples x n_features array of independent variables
