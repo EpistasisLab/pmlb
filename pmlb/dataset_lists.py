@@ -23,13 +23,10 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 import pathlib, pandas
-
-try: # used in repo
-    df_summary = pandas.read_csv('pmlb/all_summary_stats.tsv', sep='\t')
-except: # used in pypi pkg
-    import pkgutil
-    data = pkgutil.get_data('pmlb', 'all_summary_stats.tsv')
-    df_summary = pandas.read_csv(data , sep='\t')
+from io import StringIO
+import pkgutil
+data = pkgutil.get_data('pmlb', 'all_summary_stats.tsv')
+df_summary = pandas.read_csv(StringIO(data.decode("utf-8")) , sep='\t')
 regression_dataset_names = df_summary.query('task=="regression"')['dataset'].tolist()
 classification_dataset_names = df_summary.query('task=="classification"')['dataset'].tolist()
 dataset_names = regression_dataset_names + classification_dataset_names
