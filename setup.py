@@ -15,7 +15,7 @@ setup(
     author='Randal S. Olson, William La Cava, Trang Le, Weixuan Fu',
     author_email='rso@randalolson.com, lacava@upenn.edu, ttle@pennmedicine.upenn.edu, weixuanf@pennmedicine.upenn.edu',
     packages=find_packages(),
-    package_data={'pmlb': ['pmlb/*.tsv']},
+    package_data={'pmlb': ['*.tsv']},
     include_package_data=True,
     url='https://github.com/EpistasisLab/penn-ml-benchmarks',
     license='License :: OSI Approved :: MIT License',

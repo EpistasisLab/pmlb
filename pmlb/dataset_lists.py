@@ -24,7 +24,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 """
 import pathlib, pandas
 
-df_summary = pandas.read_csv('pmlb/all_summary_stats.tsv', sep='\t')
+try: # used in repo
+    df_summary = pandas.read_csv('pmlb/all_summary_stats.tsv', sep='\t')
+except: # used in pypi pkg
+    import pkgutil
+    data = pkgutil.get_data('pmlb', 'all_summary_stats.tsv')
+    df_summary = pandas.read_csv(data , sep='\t')
 regression_dataset_names = df_summary.query('task=="regression"')['dataset'].tolist()
 classification_dataset_names = df_summary.query('task=="classification"')['dataset'].tolist()
 dataset_names = regression_dataset_names + classification_dataset_names
