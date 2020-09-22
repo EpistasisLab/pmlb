@@ -1,24 +1,31 @@
-# Reviewed by [your name here]
+# Reviewed by Natasha Ray
 dataset: 192_vineyard
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  Data from a vineyard on a small island in Lake Erie.
+  Dataset from Smoothing Methods in Statistics (p. 146-147). Dead link: stat.cmu.edu/datasets.
+  The vineyard is divided into 52 rows, and the 52 observations in the data set correspond to the sum of the yields of the harvests in 
+  1989, 1990, and 1991 separated by row, as measured by the total number of lugs.
+  A lug is a basket that is used to carry the harvested grapes, which holds roughly 30 pounds of grapes). 
+  The row numbers are naturally ordered, with increasing row number reflecting movement from northwest to southeast.
+source: >
+  https://www.openml.org/data/get_csv/3629/dataset_2178_vineyard.arff
+  https://www.openml.org/d/192
+publication: >
+  Simonoff, J.S. (1996). Smoothing Methods in Statistics. New York: Springer-Verlag.
 task: regression
 keywords:
-  -
-  -
+  - wine
+  - vineyard
+  - crops
+  - grapes
+  - harvest
 target:
   type: continuous
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: Sum of the yields of the harvests in 1991 (lugs).
 features:
   - name: lugs_1989
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: Sum of the yields of the harvests in 1989 (lugs).
   - name: lugs_1990
     type: continuous
-    description:
-    code:
-    transform:
+    description: Sum of the yields of the harvests in 1990 (lugs).
