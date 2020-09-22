@@ -1,27 +1,23 @@
 # Reviewed by Natasha Ray
 dataset: 519_vinnie
-description: Data on the shooting of Vinnie Johnson 
-of the Detroit Pistons during the 1985-1986 through 1988-1989 seasons.
+description: Data on the shooting of Vinnie Johnson of the Detroit Pistons during the 1985-1986 through 1988-1989 seasons.
 source: the New York Times
-publication: The data are analyzed in the Carnegie Mellon Ph.D. Thesis of Kate Hsiao 
-and some results are cited in Example 2 of Kass, R.E. and Raftery, A.E. (1995), Bayes Factors, 
-J. Amer. Statist. Assoc.
+publication: >
+  The data are analyzed in the Carnegie Mellon Ph.D. Thesis of Kate Hsiao 
+  and some results are cited in Example 2 of Kass, R.E. and Raftery, A.E. (1995), Bayes Factors, 
+  J. Amer. Statist. Assoc.
 task: regression
 keywords:
   - basketball
   - detroit
-target: field_goals
+target:
   type: continuous
   description: Second column, indicates number of field goals made.
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: year
     type: continuous
-    description: indicates year, with 85 indicating 1985-1986, etc
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: year, with 85 indicating 1985-1986, etc.
   - name: field_goal_attempts
     type: continuous
-    description: third column, indicates number of field goal attempts.
-    code:
-    transform:
+    description: number of field goal attempts.
