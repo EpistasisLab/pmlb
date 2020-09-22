@@ -21,11 +21,11 @@ keywords:
   - harvest
 target:
   type: continuous
-  description: Sum of the yields of the harvests in 1991. Unit: lugs.
+  description: Sum of the yields of the harvests in 1991 (lugs).
 features:
   - name: lugs_1989
     type: continuous
-    description: Sum of the yields of the harvests in 1989. Unit: lugs.
+    description: Sum of the yields of the harvests in 1989 (lugs).
   - name: lugs_1990
     type: continuous
-    description: Sum of the yields of the harvests in 1990. Unit: lugs.
+    description: Sum of the yields of the harvests in 1990 (lugs).
