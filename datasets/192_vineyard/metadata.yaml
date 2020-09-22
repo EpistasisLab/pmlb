@@ -1,7 +1,9 @@
 # Reviewed by Natasha Ray
 dataset: 192_vineyard
-description: Refers to data from a vineyard on a small island in Lake Erie
-source: Dataset from Smoothing Methods in Statistics (ftp stat.cmu.edu/datasets)
+description: >
+  Refers to data from a vineyard on a small island in Lake Erie.
+  Dataset from Smoothing Methods in Statistics (ftp stat.cmu.edu/datasets).
+source: https://www.openml.org/data/get_csv/3629/dataset_2178_vineyard.arff
 publication: Simonoff, J.S. (1996). Smoothing Methods in Statistics. New York: Springer-Verlag.
 task: regression
 keywords:
