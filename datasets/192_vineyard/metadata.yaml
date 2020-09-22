@@ -1,8 +1,8 @@
-# Reviewed by [your name here]
+# Reviewed by Natasha Ray
 dataset: 192_vineyard
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: Refers to data from a vineyard on a small island in Lake Erie
+source: Dataset from Smoothing Methods in Statistics (ftp stat.cmu.edu/datasets)
+publication: Simonoff, J.S. (1996). Smoothing Methods in Statistics. New York: Springer-Verlag.
 task: regression
 keywords:
   -
@@ -14,7 +14,7 @@ target:
 features:
   - name: lugs_1989
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
+    description: lug is a basket used to carry harvested grapes, which holds roughly 30 pounds of grapes
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: lugs_1990
