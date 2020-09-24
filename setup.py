@@ -14,19 +14,21 @@ setup(
     name='pmlb',
     version=package_version,
     author='Randal S. Olson, William La Cava, Trang Le, Weixuan Fu',
-    author_email='rso@randalolson.com, lacava@upenn.edu, ttle@pennmedicine.upenn.edu, weixuanf@pennmedicine.upenn.edu',
+    author_email=('rso@randalolson.com, lacava@upenn.edu, '
+            'ttle@pennmedicine.upenn.edu, weixuanf@pennmedicine.upenn.edu'),
     packages=find_packages(),
     include_package_data=True,
     url='https://github.com/EpistasisLab/penn-ml-benchmarks',
     license='License :: OSI Approved :: MIT License',
-    description=('A Python wrapper for the Penn Machine Learning Benchmark data repository.'),
+    description=('A Python wrapper for the Penn Machine Learning Benchmark '
+        'data repository.'),
     long_description='''
 A Python wrapper for the Penn Machine Learning Benchmark data repository.
 
 Contact
 =============
 If you have any questions or comments about the Penn Machine Learning Benchmark, 
-please feel free to contact us via e-mail: rso@randalolson.com
+please feel free to contact us via e-mail: ttle@pennmedicine.upenn.edu
 
 This project is hosted at https://github.com/EpistasisLab/penn-ml-benchmarks
 ''',
