@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+503_wind	6574	14	0	0	14	continuous	779.0	0.0006476496698163652	regression

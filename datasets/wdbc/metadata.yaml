@@ -1,74 +1,164 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: wdbc
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: Radius1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Texture1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Perimeter1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Area1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Smoothness1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Compactness1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Concavity1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Concave_points1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Symmetry1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Fractal_dimension1
     type: continuous
+    description:
+    code:
+    transform:
   - name: Radius2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Texture2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Perimeter2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Area2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Smoothness2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Compactness2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Concavity2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Concave_points2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Symmetry2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Fractal_dimension2
     type: continuous
+    description:
+    code:
+    transform:
   - name: Radius3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Texture3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Perimeter3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Area3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Smoothness3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Compactness3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Concavity3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Concave_points3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Symmetry3
     type: continuous
+    description:
+    code:
+    transform:
   - name: Fractal_dimension3
     type: continuous
+    description:
+    code:
+    transform:

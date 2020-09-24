@@ -1,5 +1,4 @@
-#Generated automatically by pmlb/write_metadata.py
-#Reviewed by Daniel Goldberg
+# Reviewed by Daniel Goldberg
 dataset: adult
 description: Prediction of whether a person makes over $50K a year, based on 14 other features.
 source: >
@@ -9,6 +8,9 @@ publication: >
   Ron Kohavi, "Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid", 
   Proceedings of the Second International Conference on Knowledge Discovery and Data Mining, 1996
 task: classification
+keywords:
+  - income
+  - demographics
 target:
   type: binary
   description: If a given adult makes over $50K a year

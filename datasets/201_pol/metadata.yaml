@@ -1,110 +1,254 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: 201_pol
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
+keywords:
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: f1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: f2
     type: continuous
+    description:
+    code:
+    transform:
   - name: f3
     type: continuous
+    description:
+    code:
+    transform:
   - name: f4
     type: continuous
+    description:
+    code:
+    transform:
   - name: f5
     type: continuous
+    description:
+    code:
+    transform:
   - name: f6
     type: continuous
+    description:
+    code:
+    transform:
   - name: f7
     type: continuous
+    description:
+    code:
+    transform:
   - name: f8
     type: continuous
+    description:
+    code:
+    transform:
   - name: f9
     type: continuous
+    description:
+    code:
+    transform:
   - name: f10
     type: continuous
+    description:
+    code:
+    transform:
   - name: f11
     type: continuous
+    description:
+    code:
+    transform:
   - name: f12
     type: continuous
+    description:
+    code:
+    transform:
   - name: f13
     type: continuous
+    description:
+    code:
+    transform:
   - name: f14
     type: continuous
+    description:
+    code:
+    transform:
   - name: f15
     type: continuous
+    description:
+    code:
+    transform:
   - name: f16
     type: continuous
+    description:
+    code:
+    transform:
   - name: f17
     type: continuous
+    description:
+    code:
+    transform:
   - name: f18
     type: continuous
+    description:
+    code:
+    transform:
   - name: f19
     type: continuous
+    description:
+    code:
+    transform:
   - name: f20
     type: continuous
+    description:
+    code:
+    transform:
   - name: f21
     type: continuous
+    description:
+    code:
+    transform:
   - name: f22
     type: continuous
+    description:
+    code:
+    transform:
   - name: f23
     type: continuous
+    description:
+    code:
+    transform:
   - name: f24
     type: continuous
+    description:
+    code:
+    transform:
   - name: f25
     type: continuous
+    description:
+    code:
+    transform:
   - name: f26
     type: continuous
+    description:
+    code:
+    transform:
   - name: f27
     type: continuous
+    description:
+    code:
+    transform:
   - name: f28
     type: continuous
+    description:
+    code:
+    transform:
   - name: f29
     type: continuous
+    description:
+    code:
+    transform:
   - name: f30
     type: continuous
+    description:
+    code:
+    transform:
   - name: f31
     type: continuous
+    description:
+    code:
+    transform:
   - name: f32
     type: continuous
+    description:
+    code:
+    transform:
   - name: f33
     type: continuous
+    description:
+    code:
+    transform:
   - name: f34
     type: continuous
+    description:
+    code:
+    transform:
   - name: f35
     type: continuous
+    description:
+    code:
+    transform:
   - name: f36
     type: continuous
+    description:
+    code:
+    transform:
   - name: f37
     type: continuous
+    description:
+    code:
+    transform:
   - name: f38
     type: continuous
+    description:
+    code:
+    transform:
   - name: f39
     type: continuous
+    description:
+    code:
+    transform:
   - name: f40
     type: continuous
+    description:
+    code:
+    transform:
   - name: f41
     type: continuous
+    description:
+    code:
+    transform:
   - name: f42
     type: continuous
+    description:
+    code:
+    transform:
   - name: f43
     type: continuous
+    description:
+    code:
+    transform:
   - name: f44
     type: continuous
+    description:
+    code:
+    transform:
   - name: f45
     type: continuous
+    description:
+    code:
+    transform:
   - name: f46
     type: continuous
+    description:
+    code:
+    transform:
   - name: f47
     type: continuous
+    description:
+    code:
+    transform:
   - name: f48
     type: continuous
+    description:
+    code:
+    transform:

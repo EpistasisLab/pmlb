@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+banana	5300	2	0	0	2	continuous	2.0	0.010690779636881451	regression

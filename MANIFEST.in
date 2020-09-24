@@ -1,3 +1,3 @@
 include README.md LICENSE 
-include pmlb/all_summary_stats.csv
+include pmlb/all_summary_stats.tsv
 recursive-include pmlb *.py 

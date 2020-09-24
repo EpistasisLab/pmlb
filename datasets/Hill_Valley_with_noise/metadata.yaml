@@ -1,214 +1,514 @@
-#Generated automatically by pmlb/write_metadata.py
+# Reviewed by [your name here]
 dataset: Hill_Valley_with_noise
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: classification
+keywords:
+  -
+  -
 target:
-  type: binary
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
-features: # list of features in the dataset
+features:
   - name: X1
     type: continuous
-    description: null # optional but recommended, what the feature measures/indicates, unit
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: X2
     type: continuous
+    description:
+    code:
+    transform:
   - name: X3
     type: continuous
+    description:
+    code:
+    transform:
   - name: X4
     type: continuous
+    description:
+    code:
+    transform:
   - name: X5
     type: continuous
+    description:
+    code:
+    transform:
   - name: X6
     type: continuous
+    description:
+    code:
+    transform:
   - name: X7
     type: continuous
+    description:
+    code:
+    transform:
   - name: X8
     type: continuous
+    description:
+    code:
+    transform:
   - name: X9
     type: continuous
+    description:
+    code:
+    transform:
   - name: X10
     type: continuous
+    description:
+    code:
+    transform:
   - name: X11
     type: continuous
+    description:
+    code:
+    transform:
   - name: X12
     type: continuous
+    description:
+    code:
+    transform:
   - name: X13
     type: continuous
+    description:
+    code:
+    transform:
   - name: X14
     type: continuous
+    description:
+    code:
+    transform:
   - name: X15
     type: continuous
+    description:
+    code:
+    transform:
   - name: X16
     type: continuous
+    description:
+    code:
+    transform:
   - name: X17
     type: continuous
+    description:
+    code:
+    transform:
   - name: X18
     type: continuous
+    description:
+    code:
+    transform:
   - name: X19
     type: continuous
+    description:
+    code:
+    transform:
   - name: X20
     type: continuous
+    description:
+    code:
+    transform:
   - name: X21
     type: continuous
+    description:
+    code:
+    transform:
   - name: X22
     type: continuous
+    description:
+    code:
+    transform:
   - name: X23
     type: continuous
+    description:
+    code:
+    transform:
   - name: X24
     type: continuous
+    description:
+    code:
+    transform:
   - name: X25
     type: continuous
+    description:
+    code:
+    transform:
   - name: X26
     type: continuous
+    description:
+    code:
+    transform:
   - name: X27
     type: continuous
+    description:
+    code:
+    transform:
   - name: X28
     type: continuous
+    description:
+    code:
+    transform:
   - name: X29
     type: continuous
+    description:
+    code:
+    transform:
   - name: X30
     type: continuous
+    description:
+    code:
+    transform:
   - name: X31
     type: continuous
+    description:
+    code:
+    transform:
   - name: X32
     type: continuous
+    description:
+    code:
+    transform:
   - name: X33
     type: continuous
+    description:
+    code:
+    transform:
   - name: X34
     type: continuous
+    description:
+    code:
+    transform:
   - name: X35
     type: continuous
+    description:
+    code:
+    transform:
   - name: X36
     type: continuous
+    description:
+    code:
+    transform:
   - name: X37
     type: continuous
+    description:
+    code:
+    transform:
   - name: X38
     type: continuous
+    description:
+    code:
+    transform:
   - name: X39
     type: continuous
+    description:
+    code:
+    transform:
   - name: X40
     type: continuous
+    description:
+    code:
+    transform:
   - name: X41
     type: continuous
+    description:
+    code:
+    transform:
   - name: X42
     type: continuous
+    description:
+    code:
+    transform:
   - name: X43
     type: continuous
+    description:
+    code:
+    transform:
   - name: X44
     type: continuous
+    description:
+    code:
+    transform:
   - name: X45
     type: continuous
+    description:
+    code:
+    transform:
   - name: X46
     type: continuous
+    description:
+    code:
+    transform:
   - name: X47
     type: continuous
+    description:
+    code:
+    transform:
   - name: X48
     type: continuous
+    description:
+    code:
+    transform:
   - name: X49
     type: continuous
+    description:
+    code:
+    transform:
   - name: X50
     type: continuous
+    description:
+    code:
+    transform:
   - name: X51
     type: continuous
+    description:
+    code:
+    transform:
   - name: X52
     type: continuous
+    description:
+    code:
+    transform:
   - name: X53
     type: continuous
+    description:
+    code:
+    transform:
   - name: X54
     type: continuous
+    description:
+    code:
+    transform:
   - name: X55
     type: continuous
+    description:
+    code:
+    transform:
   - name: X56
     type: continuous
+    description:
+    code:
+    transform:
   - name: X57
     type: continuous
+    description:
+    code:
+    transform:
   - name: X58
     type: continuous
+    description:
+    code:
+    transform:
   - name: X59
     type: continuous
+    description:
+    code:
+    transform:
   - name: X60
     type: continuous
+    description:
+    code:
+    transform:
   - name: X61
     type: continuous
+    description:
+    code:
+    transform:
   - name: X62
     type: continuous
+    description:
+    code:
+    transform:
   - name: X63
     type: continuous
+    description:
+    code:
+    transform:
   - name: X64
     type: continuous
+    description:
+    code:
+    transform:
   - name: X65
     type: continuous
+    description:
+    code:
+    transform:
   - name: X66
     type: continuous
+    description:
+    code:
+    transform:
   - name: X67
     type: continuous
+    description:
+    code:
+    transform:
   - name: X68
     type: continuous
+    description:
+    code:
+    transform:
   - name: X69
     type: continuous
+    description:
+    code:
+    transform:
   - name: X70
     type: continuous
+    description:
+    code:
+    transform:
   - name: X71
     type: continuous
+    description:
+    code:
+    transform:
   - name: X72
     type: continuous
+    description:
+    code:
+    transform:
   - name: X73
     type: continuous
+    description:
+    code:
+    transform:
   - name: X74
     type: continuous
+    description:
+    code:
+    transform:
   - name: X75
     type: continuous
+    description:
+    code:
+    transform:
   - name: X76
     type: continuous
+    description:
+    code:
+    transform:
   - name: X77
     type: continuous
+    description:
+    code:
+    transform:
   - name: X78
     type: continuous
+    description:
+    code:
+    transform:
   - name: X79
     type: continuous
+    description:
+    code:
+    transform:
   - name: X80
     type: continuous
+    description:
+    code:
+    transform:
   - name: X81
     type: continuous
+    description:
+    code:
+    transform:
   - name: X82
     type: continuous
+    description:
+    code:
+    transform:
   - name: X83
     type: continuous
+    description:
+    code:
+    transform:
   - name: X84
     type: continuous
+    description:
+    code:
+    transform:
   - name: X85
     type: continuous
+    description:
+    code:
+    transform:
   - name: X86
     type: continuous
+    description:
+    code:
+    transform:
   - name: X87
     type: continuous
+    description:
+    code:
+    transform:
   - name: X88
     type: continuous
+    description:
+    code:
+    transform:
   - name: X89
     type: continuous
+    description:
+    code:
+    transform:
   - name: X90
     type: continuous
+    description:
+    code:
+    transform:
   - name: X91
     type: continuous
+    description:
+    code:
+    transform:
   - name: X92
     type: continuous
+    description:
+    code:
+    transform:
   - name: X93
     type: continuous
+    description:
+    code:
+    transform:
   - name: X94
     type: continuous
+    description:
+    code:
+    transform:
   - name: X95
     type: continuous
+    description:
+    code:
+    transform:
   - name: X96
     type: continuous
+    description:
+    code:
+    transform:
   - name: X97
     type: continuous
+    description:
+    code:
+    transform:
   - name: X98
     type: continuous
+    description:
+    code:
+    transform:
   - name: X99
     type: continuous
+    description:
+    code:
+    transform:
   - name: X100
     type: continuous
+    description:
+    code:
+    transform:

@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+505_tecator	240	124	0	0	124	continuous	157.0	0.002151219729344721	regression

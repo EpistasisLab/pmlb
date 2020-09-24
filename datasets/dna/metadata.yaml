@@ -1,4 +1,3 @@
-#Generated automatically by pmlb/write_metadata.py
 # Reviewed by Praneel Chakraborty
 dataset: dna
 description: >
@@ -9,6 +8,10 @@ description: >
 source: https://www.openml.org/d/40670
 publication: None.
 task: classification
+keywords:
+  - genetics
+  - genomics
+  - sequences
 target:
   type: categorical
   description: Exon/intron boundary type

@@ -16,6 +16,10 @@ publication: >
   Also found in: Hand, D.J., et al. (1994) 
   A Handbook of Small Data Sets, London: Chapman & Hall, 101-103. 
 task: regression
+keywords:
+  - crime
+  - demographics
+  - government
 target:
   type: continuous
   description: The number of families per 1000 earning below 1/2 the median income

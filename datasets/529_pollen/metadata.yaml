@@ -11,6 +11,10 @@ source: >
   http://stat-computing.org/dataexpo/1986.html
 publication: None.
 task: regression
+keywords:
+  - synthetic
+  - simulation
+  - geometry
 target:
   type: continuous
   description: grain density

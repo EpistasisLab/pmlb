@@ -59,11 +59,10 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
         if return_X_y == True: A tuple of NumPy arrays containing (features, labels)
 
     """
-    if dataset_name not in dataset_names:
-        raise ValueError('Dataset not found in PMLB.')
-
 
     if local_cache_dir is None:
+        if dataset_name not in dataset_names:
+            raise ValueError('Dataset not found in PMLB.')
         dataset_url = get_dataset_url(GITHUB_URL,
                                         dataset_name, suffix)
         dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
@@ -76,6 +75,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
             dataset = pd.read_csv(dataset_path, sep='\t', compression='gzip')
         # Download the data to the local cache if it is not already there
         else:
+            if dataset_name not in dataset_names:
+                raise ValueError('Dataset not found in PMLB.')
             dataset_url = get_dataset_url(GITHUB_URL,
                                             dataset_name, suffix)
             dataset = pd.read_csv(dataset_url, sep='\t', compression='gzip')
@@ -108,30 +109,42 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
     return dataset_url
 
 
-def get_updated_datasets():
+def get_updated_datasets(local_cache_dir='datasets'):
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff --name-only HEAD HEAD~1'
-    res = subprocess.check_output(cmd.split(), universal_newlines=True)
+    res = subprocess.check_output(cmd.split(), universal_newlines=True).rstrip()
     changed_datasets = set()
+    changed_metadatas = set()
     for path in res.splitlines():
         path = pathlib.Path(path)
         if path.parts[0] != 'datasets':
             continue
-        if path.name == 'metadata.yaml' or path.name.endswith('.tsv.gz'):
+        if path.name.endswith('.tsv.gz'):
             changed_datasets.add(path.parts[-2])
-    changed_datasets &= set(dataset_names)
+        if path.name == 'metadata.yaml':
+            changed_metadatas.add(path.parts[-2])
+            
+    datasets_remain = [x.name for x in pathlib.Path(local_cache_dir).iterdir()]
+    changed_metadatas &= set(datasets_remain)
+    changed_datasets &= set(datasets_remain)
+
     changed_datasets = sorted(changed_datasets)
-    print(f'changed datasets: {changed_datasets}')
-    return changed_datasets
+    changed_metadatas = sorted(changed_metadatas)
+    print(
+        f'changed datasets: {changed_datasets}\n'
+        f'changed metadata: {changed_metadatas}'
+    )
+    return {'changed_datasets': changed_datasets,
+            'changed_metadatas': changed_metadatas}
 
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import StandardScaler
-from pmlb.write_metadata import generate_summarystats
+from .update_dataset_files import generate_summarystats
 from pathlib import Path
 import numpy as np
 
 
-def fetch_nearest_dataset_names(X,y=None, **kwargs):
+def nearest_datasets(X, y=None, **kwargs):
     """
     X: numpy array
         an n_samples x n_features array of independent variables
@@ -143,7 +156,7 @@ def fetch_nearest_dataset_names(X,y=None, **kwargs):
     return fetch_nearest_dataset_names(df, **kwargs)
 
 def fetch_nearest_dataset_names(df, n=1, 
-        dimensions=['#instances','#features'],
+        dimensions=['n_instances', 'n_features'],
         task=None):
     """Returns names of most similar datasets to df, in order of similarity. 
 
@@ -174,8 +187,8 @@ def fetch_nearest_dataset_names(df, n=1,
         task = 'classification' if df['target'].nunique()<5 else 'regression'
 
     # load pmlb summary stats
-    path = Path(__file__).parent / "all_summary_stats.csv"
-    pmlb_stats = pd.read_csv(path)
+    path = Path(__file__).parent / "all_summary_stats.tsv"
+    pmlb_stats = pd.read_csv(path, sep = '\t')
     all_names = pmlb_stats['dataset'].values
     # restrict to same task
     pmlb_stats = pmlb_stats.loc[pmlb_stats.problem_type==task]

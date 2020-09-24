@@ -1,4 +1,4 @@
-#Reviewed by Trang Le
+# Reviewed by Trang Le
 dataset: waveform_40
 description: >
   Generated 3 classes of waves.
@@ -14,8 +14,13 @@ publication: >
   Wadsworth International, pp 49-55, 169.
   doi:10.1201/9781315139470
 task: classification
+keywords:
+  - simulation
+  - synthetic
+  - physics
+  - wave
 target:
-  type: nominal
+  type: categorical
   description: One of 3 classes of wave.
   code: None.
 features: # list of features in the dataset

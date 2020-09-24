@@ -7,6 +7,5 @@ def test_nearest_dataset_is_itself():
 
     for test_dataset in ['vote', 'analcatdata_aids', 'car']:
         df = fetch_data(test_dataset, local_cache_dir='../datasets')
-        assert(fetch_nearest_dataset_names(df) == test_dataset)
-
+        assert(nearest_datasets(df) == test_dataset)
 

@@ -1,5 +1,4 @@
-#Generated automatically by pmlb/write_metadata.py
-#Reviewed by Daniel Goldberg and Trang Le
+# Reviewed by Daniel Goldberg and Trang Le
 dataset: poker
 description: >
   List of possible poker hands (combinations of five playing cards from a standard deck with significance 
@@ -13,6 +12,10 @@ publication: >
   2002;1(1):296-300.
   https://www.researchgate.net/publication/255579999_Evolutionary_Data_Mining_With_Automatic_Rule_Generalization
 task: classification
+keywords:
+  - game
+  - poker
+  - card
 target:
   type: ordinal
   description: Type of poker hand
