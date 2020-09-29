@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-519_vinnie	380	2	0	0	2	continuous	16.0	0.030145891043397963	regression
+519_vinnie	380	2	0	2	0	categorical	16.0	0.030145891043397963	regression
