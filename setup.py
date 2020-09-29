@@ -4,7 +4,8 @@ from setuptools import setup, find_packages
 
 def calculate_version():
     initpy = open('pmlb/_version.py').read().split('\n')
-    version = list(filter(lambda x: '__version__' in x, initpy))[0].split('\'')[1]
+    version = list(filter(
+        lambda x: '__version__' in x, initpy))[0].split('\'')[1]
     return version
 
 package_version = calculate_version()
@@ -13,26 +14,30 @@ setup(
     name='pmlb',
     version=package_version,
     author='Randal S. Olson, William La Cava, Trang Le, Weixuan Fu',
-    author_email='rso@randalolson.com, lacava@upenn.edu, ttle@pennmedicine.upenn.edu, weixuanf@pennmedicine.upenn.edu',
+    author_email=('rso@randalolson.com, lacava@upenn.edu, '
+            'ttle@pennmedicine.upenn.edu, weixuanf@pennmedicine.upenn.edu'),
     packages=find_packages(),
     package_data={'pmlb': ['*.tsv']},
     include_package_data=True,
     url='https://github.com/EpistasisLab/penn-ml-benchmarks',
     license='License :: OSI Approved :: MIT License',
-    description=('A Python wrapper for the Penn Machine Learning Benchmark data repository.'),
+    description=('A Python wrapper for the Penn Machine Learning Benchmark '
+        'data repository.'),
     long_description='''
 A Python wrapper for the Penn Machine Learning Benchmark data repository.
 
 Contact
 =============
-If you have any questions or comments about the Penn Machine Learning Benchmark, please feel free to contact us via e-mail: rso@randalolson.com
+If you have any questions or comments about the Penn Machine Learning Benchmark, 
+please feel free to contact us via e-mail: ttle@pennmedicine.upenn.edu
 
 This project is hosted at https://github.com/EpistasisLab/penn-ml-benchmarks
 ''',
     zip_safe=True,
     install_requires=['pandas>=1.0.5',
                     'requests>=2.24.0',
-                    'pyyaml>=5.3.1'
+                    'pyyaml>=5.3.1',
+                    'scikit-learn>=0.19.0'
                     ],
     extras_require={
         'dev': ['nose', 'numpy', 'scipy', 'tabulate', 'parameterized',
