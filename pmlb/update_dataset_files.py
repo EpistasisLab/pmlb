@@ -255,9 +255,9 @@ def generate_all_summaries(local_cache_dir='datasets/'):
         frames.append(pd.read_csv(f, sep = '\t'))
     pd.concat(frames).to_csv('pmlb/all_summary_stats.tsv', index=False, sep='\t')
 
-def update_metadata_summary(dataset_name, datasets_with_metadata, 
-        overwrite=False, local_cache_dir=None, update_all=False):
-    df = fetch_data(dataset_name, local_cache_dir=local_cache_dir)
+def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, 
+                            local_cache_dir=None, update_all=False):
+    df = fetch_data(dataset_name, local_cache_dir=local_cache_dir, dropna=False)
     dataset_stats = get_dataset_stats(df)
     if dataset_name not in datasets_with_metadata:
         generate_metadata(df, dataset_name, dataset_stats, overwrite, local_cache_dir)
