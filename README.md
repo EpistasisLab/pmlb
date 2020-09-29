@@ -31,6 +31,12 @@ All data sets are stored in a common format:
 
 ![Dataset_Sizes](datasets/dataset_sizes.svg)
 
+The [complete table](pmlb/all_summary_stats.tsv) of dataset characteristics is also available for download.
+Please note, in our documentation, a feature is considered:
+* "binary" if it is of type integer and has 2 unique values (equivalent to pandas profiling's "boolean")
+* "categorical" if it is of type integer and has *more than* 2 unique values (equivalent to pandas profiling's "categorical")
+* "continuous" if it is of type float (equivalent to pandas profiling's "numeric").
+
 ## Python wrapper
 
 For easy access to the benchmark data sets, we have provided a Python wrapper named `pmlb`. The wrapper can be installed on Python via `pip`:

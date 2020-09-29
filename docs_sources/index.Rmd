@@ -119,6 +119,13 @@ DT::datatable(
 )
 ```
 
+The [complete table](../pmlb/all_summary_stats.tsv) of dataset characteristics is also available for download.
+Please note, in our documentation, a feature is considered:
+* "binary" if it is of type integer and has 2 unique values (equivalent to pandas profiling's "boolean")
+* "categorical" if it is of type integer and has *more than* 2 unique values (equivalent to pandas profiling's "categorical")
+* "continuous" if it is of type float (equivalent to pandas profiling's "numeric").
+
+
 ## Dataset format
 
 All datasets are stored in a common format:
