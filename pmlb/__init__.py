@@ -25,4 +25,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 from ._version import __version__
 from .pmlb import fetch_data, dataset_names, get_updated_datasets
-from .dataset_lists import classification_dataset_names, regression_dataset_names, datasets_with_metadata
+from .pmlb import nearest_datasets
+from .dataset_lists import (classification_dataset_names, 
+        regression_dataset_names, datasets_with_metadata)

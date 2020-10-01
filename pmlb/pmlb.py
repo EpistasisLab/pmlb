@@ -25,7 +25,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import pandas as pd
 import os
-from .dataset_lists import classification_dataset_names, regression_dataset_names
+from .dataset_lists import (classification_dataset_names, 
+        regression_dataset_names)
 import requests
 import warnings
 import subprocess
@@ -45,7 +46,8 @@ def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True
     dataset_name: str
         The name of the data set to load from PMLB.
     return_X_y: bool (default: False)
-        Whether to return the data in scikit-learn format, with the features and labels stored in separate NumPy arrays.
+        Whether to return the data in scikit-learn format, with the features 
+        and labels stored in separate NumPy arrays.
     local_cache_dir: str (default: None)
         The directory on your local machine to store the data files.
         If None, then the local data cache will not be used.
@@ -137,3 +139,99 @@ def get_updated_datasets(local_cache_dir='datasets'):
     return {'changed_datasets': changed_datasets,
             'changed_metadatas': changed_metadatas}
 
+from sklearn.neighbors import NearestNeighbors
+from sklearn.preprocessing import StandardScaler
+from .update_dataset_files import generate_summarystats, get_dataset_stats
+from pathlib import Path
+import numpy as np
+
+
+def nearest_datasets(X, y=None, task='classification', n=1, 
+        dimensions=['n_instances', 'n_features']):
+    """
+    X: numpy array or pandas DataFrame
+        an n_samples x n_features array of independent variables
+    y: numpy array or None (default: None)
+        a n_samples array of dependent variables
+    task: 'regression' or 'classification' (default: 'classification')
+        specify the task.
+    n: int (default: 1)
+        the number of dataset names to return
+    dimensions: list of str or str (default: ['NumberOfInstances',
+    'NumberOfFeatures'])
+        a list of dataset characteristics to include in similarity calculation.
+        Dimensions must correspond to columns of datasets/all_summary_stats.csv.
+        If 'all', uses all numeric columns.
+    """
+    if isinstance(X, np.ndarray):
+        if y == None:
+            ValueError('the target (y) must be specified if a np array '
+                    'is passed.')
+        df = pd.DataFrame({**{'x_'+str(i):x for i,x in enumerate(X.transpose)}
+                           **{'target':y}})
+    elif isinstance(X, pd.DataFrame):
+        df = X
+        
+    return fetch_nearest_dataset_names(df, task, n, dimensions)
+
+def fetch_nearest_dataset_names(df, task, n, dimensions):
+    """Returns names of most similar datasets to df, in order of similarity. 
+
+    Parameters
+    ----------
+    df: pandas Dataframe 
+        a dataframe of n_samples x n_features+1 with a target column labeled
+        'target'
+    task: str 
+        specify classification or regression for summary stat generation. 
+    n: int (default: 1)
+        the number of dataset names to return
+    dimensions: list of str or str (default: ['NumberOfInstances',
+    'NumberOfFeatures'])
+        a list of dataset characteristics to include in similarity calculation.
+        Dimensions must correspond to columns of datasets/all_summary_stats.csv.
+        If 'all', uses all numeric columns.
+
+    Returns
+    -------
+    dataset_names: an n-element list of dataset names in order of most similar 
+        to least similar.
+    """
+
+    # load pmlb summary stats
+    path = Path(__file__).parent / "all_summary_stats.tsv"
+    pmlb_stats = pd.read_csv(path, sep = '\t')
+    # restrict to same task
+    pmlb_stats = pmlb_stats.loc[pmlb_stats.task==task]
+    all_names = pmlb_stats['dataset'].values
+    # restrict to floating point data in stats
+    pmlb_stats = pmlb_stats.apply(
+            lambda x: pd.to_numeric(x,errors='coerce')).dropna(axis=1,how='all')
+
+
+    if dimensions=='all':
+        dimensions = list(pmlb_stats.columns)
+    else:
+        pmlb_stats = pmlb_stats[dimensions]  
+        assert(all([d in pmlb_stats.columns for d in dimensions]))
+
+    dataset_stats_tmp = get_dataset_stats(df)
+    dataset_stats_tmp['yaml_task'] = task
+    dataset_stats = generate_summarystats('dataset', dataset_stats_tmp, 
+            update_all=False)
+    dataset_stats = dataset_stats[dimensions]
+
+
+    # #categorical and #continuous features columns
+    ss = StandardScaler()
+    pmlb_stats_norm = ss.fit_transform(pmlb_stats) 
+
+    # find nearest neighbors
+    nn = NearestNeighbors(n_neighbors=n).fit(pmlb_stats_norm)
+    distances, ds = nn.kneighbors(ss.transform(dataset_stats), n_neighbors=n, 
+                                            return_distance=True)
+    # print([(name, dist) for name, dist in zip(all_names[ds.flatten()],
+    #     distances.flatten())])
+    dataset_names = all_names[ds.flatten()]
+
+    return dataset_names
