@@ -11,7 +11,7 @@
 
 
 
-<title>Contribution guide</title>
+<title>Python interface</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -220,6 +223,7 @@ h6 {
 }
 </style>
 
+<link rel="stylesheet" href="custom.css" type="text/css" />
 
 
 
@@ -400,6 +404,75 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
 
 </head>
 
@@ -407,6 +480,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -464,145 +547,125 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Contribution guide</h1>
+<h1 class="title toc-ignore">Python interface</h1>
 
 </div>
 
 
-<div id="section" class="section level1 tabset">
-<h1></h1>
-<div id="introduction" class="section level2">
-<h2>Introduction</h2>
-<div id="thank-you" class="section level3">
-<h3>Thank you</h3>
-<p>for contributing to PMLB!</p>
-<p>We want this to be the easiest resource to use for benchmarking machine learning algorithms on many datasets. This is a community effort, and we rely on help from users like you.</p>
-</div>
-<div id="why-you-should-read-this" class="section level3">
-<h3>Why you should read this</h3>
-<p>Making a really easy-to-use benchmark resource also means being diligent about how contributions are made. Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, we will reciprocate that respect in addressing your issue, assessing changes and helping you finalize your pull requests.</p>
-</div>
-<div id="ground-rules" class="section level3">
-<h3>Ground rules</h3>
-<p>Please be kind. We will, too.</p>
-</div>
-<div id="responsibilities" class="section level3">
-<h3>Responsibilities</h3>
-<p>The main contribution our project needs at the moment is to identify the source of datasets and annotate the datasets that currently don’t have metadata information. Please see the <em>Dataset annotation</em> tab for more detail. We would also consider dataset contributions that meet the format specifications of PMLB. We’re also open to other ideas including improving documentation, writing tutorials, etc.</p>
+<p>Python package PMLB provides the following user-facing functions and variables. For installation instructions or a high-level overview of how to use PMLB, see <a href="./install.html">Install</a> or <a href="./using.html">Using PMLB</a>.</p>
+<div id="functions" class="section level2">
+<h2>Functions</h2>
+<div id="docstring-output" class="section level3">
+<h3><code>fetch_data</code></h3>
+<p><em>function</em> <code>pmlb.fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
+<p>Download a dataset from PMLB, (optionally) store it locally, and return the dataset.</p>
+<p>You must be connected to the internet if you are fetching a dataset that is not cached locally.</p>
+<p><strong>Parameters:</strong></p>
 <ul>
-<li>For source identification and annotation of existing datasets, make sure your pull request follows our source guidelines in the <em>Dataset annotation</em> tab.</li>
-<li>For new datasets, please make sure your pull request follows our new dataset guidelines under the <em>Getting started</em> tab.</li>
-<li>Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.</li>
-<li>Be welcoming to newcomers and encourage new contributors from all backgrounds. See the <a href="https://www.python.org/psf/codeofconduct/">Python Community Code of Conduct</a> as an example.</li>
+<li><strong>dataset_name : str</strong> Name of the dataset to fetch. A list of available datasets can be found in the documentation or via <code>pmlb.get_updated_datasets</code>.</li>
+<li><strong>return_X_y : bool, default=False</strong> Specify the format of the data returned to the user. If <code>False</code>, the data are returned as a <code>pandas.DataFrame</code>, of size (n_samples, n_features+1), where the last column is <code>target</code> - the true target value of the data point. If <code>True</code>, the data are returned as a tuple (of length 2), where the first element is a <code>numpy.ndarray</code> of size (n_samples, n_features), and the second element is a <code>numpy.ndarray</code> of size (n_samples,), corresponding to the feature matrix (usually denoted <code>X</code>) and the list of target values (usually denoted <code>y</code>), respectively.</li>
+<li><strong>local_cache_dir : str, default=None</strong> The directory on your local machine in which to store the data files. If <code>None</code>, no local data cache will be used.</li>
+<li><strong>dropna : bool, default=True</strong> If <code>True</code>, <code>pmlb</code> will drop <code>NA</code>s from the exported dataset.</li>
 </ul>
-</div>
-</div>
-<div id="getting-started" class="section level2">
-<h2>Getting started</h2>
-<div id="your-first-contribution" class="section level3">
-<h3>Your first contribution</h3>
-<p>If you haven’t contributed to open source code before, check out these friendly tutorials:</p>
+<p><strong>Returns:</strong></p>
 <ul>
-<li><p><a href="http://makeapullrequest.com/" class="uri">http://makeapullrequest.com/</a></p></li>
-<li><p><a href="http://www.firsttimersonly.com/" class="uri">http://www.firsttimersonly.com/</a></p></li>
-<li><p><a href="https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github">How to contribute to an open source project on GitHub</a>.</p></li>
+<li><strong>dataset : pandas.DataFrame or (array-like, array-like)</strong> If <code>return_X_y == False</code>, a <code>pandas.DataFrame</code> containing the fetched dataset. If <code>return_X_y == True</code>, a 2-tuple of <code>numpy.ndarray</code>s containing the feature matrix <code>X</code> and the target array <code>y</code>, respectively.</li>
 </ul>
-<p>Those guides should tell you everything you need to start out!</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
+<span id="cb1-2"><a href="#cb1-2"></a></span>
+<span id="cb1-3"><a href="#cb1-3"></a>In [<span class="dv">2</span>]: X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>In [<span class="dv">3</span>]: X</span>
+<span id="cb1-6"><a href="#cb1-6"></a>Out[<span class="dv">3</span>]: </span>
+<span id="cb1-7"><a href="#cb1-7"></a>array([[<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">7</span>, ..., <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">6</span>],</span>
+<span id="cb1-8"><a href="#cb1-8"></a>       [<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">9</span>, ..., <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>],</span>
+<span id="cb1-9"><a href="#cb1-9"></a>       [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">8</span>, ..., <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>],</span>
+<span id="cb1-10"><a href="#cb1-10"></a>       ...,</span>
+<span id="cb1-11"><a href="#cb1-11"></a>       [<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">8</span>, ..., <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">0</span>],</span>
+<span id="cb1-12"><a href="#cb1-12"></a>       [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">8</span>, ..., <span class="dv">7</span>, <span class="dv">3</span>, <span class="dv">0</span>],</span>
+<span id="cb1-13"><a href="#cb1-13"></a>       [<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">0</span>, ..., <span class="dv">7</span>, <span class="dv">4</span>, <span class="dv">6</span>]], dtype<span class="op">=</span>int64)</span>
+<span id="cb1-14"><a href="#cb1-14"></a></span>
+<span id="cb1-15"><a href="#cb1-15"></a>In [<span class="dv">4</span>]: y</span>
+<span id="cb1-16"><a href="#cb1-16"></a>Out[<span class="dv">4</span>]: array([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, ..., <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>], dtype<span class="op">=</span>int64)</span></code></pre></div>
 </div>
-<div id="how-to-submit-a-contribution" class="section level3">
-<h3>How to submit a contribution</h3>
-<ol style="list-style-type: decimal">
-<li>Create your own fork of this repository</li>
-<li>Make the changes in your fork</li>
-<li>If you think the project would benefit from these changes:
+<div id="docstring-output" class="section level3">
+<h3><code>get_updated_datasets</code></h3>
+<p><em>function</em> <code>pmlb.get_updated_datasets()</code></p>
+<p>Looks at most recent commit and returns a list of datasets that were updated since the previous commit.</p>
+<p>This function is mainly used for generating profiling reports of the datasets.</p>
+<p><strong>Returns:</strong></p>
 <ul>
-<li>Make sure you have followed the guidelines above.</li>
-<li>Submit a pull request.</li>
-</ul></li>
-</ol>
-</div>
-<div id="how-to-report-a-bug" class="section level3">
-<h3>How to report a bug</h3>
-<p>When filing an issue, please make sure to answer these five questions:</p>
-<ol style="list-style-type: decimal">
-<li>What version of PMLB are you using?</li>
-<li>What operating system and processor architecture are you using?</li>
-<li>What did you do?</li>
-<li>What did you expect to see?</li>
-<li>What did you see instead?</li>
-</ol>
-</div>
-<div id="contributing-a-new-dataset" class="section level3">
-<h3>Contributing a new dataset</h3>
-<p>New datasets should follow these guidelines:</p>
-<ul>
-<li>Each sample/observation forms a row of the dataset.</li>
-<li>Each feature/variable forms a column of the dataset.</li>
-<li>The dependent variable/outcome/target should be labelled <code>'target'</code>.</li>
-<li>If the task is classification, the dependent variable must be encoded with numeric, contiguous labels in <code>[0, 1, .. k]</code>, where there are <code>k</code> classes in the data.</li>
-<li>Column headers are feature/variable names and <code>'target'</code>.</li>
-<li>Any <code>'sample_id'</code> or <code>'row_id'</code> column should be <em>excluded</em>.</li>
-<li>The data should be tab-delimited and in <code>.tsv.gz</code> format.</li>
-<li>The dataset should be in the correct folder; i.e., for a classification dataset, <code>penn-ml-benchmarks/datasets/classification/your_dataset/</code></li>
-<li>A metadata.yaml file must be provided with all required fields filled in. Please follow the <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/metadata_template.yaml">template guidelines.</a></li>
-<li>The dataset should not exceed 50 MB.</li>
+<li><strong>changed_datasets : set</strong> Set of datasets that have been changed since the previous Git commit.</li>
 </ul>
-<p>Note that any pull requests for new dataset contributions will not be accepted if these guidelines are not met.</p>
-<p>Relevant issues: <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/issues/13">#13</a>, <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/issues/22">#22</a>.</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> get_updated_datasets</span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>In [<span class="dv">2</span>]: get_updated_datasets()</span>
+<span id="cb2-4"><a href="#cb2-4"></a>changed datasets: []</span>
+<span id="cb2-5"><a href="#cb2-5"></a>Out[<span class="dv">2</span>]: []</span></code></pre></div>
 </div>
 </div>
-<div id="dataset-annotation" class="section level2">
-<h2>Dataset annotation</h2>
-<ol style="list-style-type: decimal">
-<li><p>Verify the source for the dataset.</p>
-<ul>
-<li>Often the place to start is an internet search of the dataset name. Most datasets can be found in <a href="https://www.openml.org/">OpenML</a>, <a href="http://archive.ics.uci.edu/ml/index.php">the UC Irvine ML repository</a>, or <a href="https://kaggle.com">Kaggle</a>.</li>
-<li>Follow the <em>How to verify source</em> tab to verify that the PMLB dataset actually came from the source you found.</li>
-</ul></li>
-<li><p>Update the information on the dataset’s metadata.yaml file. Refer to the <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/metadata_template.yaml">metadata template file</a> or <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/datasets/wine_quality_red/metadata.yaml">wine_quality_red</a> as an example.</p></li>
-<li><p>Issue a pull request for your changes. In the pull request, document how you verified the source of the dataset, for example, by performing a checksum on the data. Include any information to help us independently check that what you have added is accurate.</p></li>
-</ol>
+<div id="variables" class="section level2">
+<h2>Variables</h2>
+<p>These variables are used to list the datasets that are currently available in PMLB.</p>
+<div id="docstring-output" class="section level3">
+<h3><code>dataset_names</code></h3>
+<p><em>variable</em> <code>pmlb.dataset_names</code></p>
+<p>A list of all datasets included in PMLB.</p>
+<p>The contents of this variable are equal to the union of <code>pmlb.classification_dataset_names</code> and <code>pmlb.regression_dataset_names</code>.</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>In [<span class="dv">2</span>]: dataset_names</span>
+<span id="cb3-4"><a href="#cb3-4"></a>Out[<span class="dv">2</span>]: </span>
+<span id="cb3-5"><a href="#cb3-5"></a>[<span class="st">&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;</span>,</span>
+<span id="cb3-6"><a href="#cb3-6"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;</span>,</span>
+<span id="cb3-7"><a href="#cb3-7"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;</span>,</span>
+<span id="cb3-8"><a href="#cb3-8"></a> <span class="st">&#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;</span>,</span>
+<span id="cb3-9"><a href="#cb3-9"></a>...</span>
+<span id="cb3-10"><a href="#cb3-10"></a> <span class="st">&#39;712_chscase_geyser1&#39;</span>]</span></code></pre></div>
 </div>
-<div id="how-to-verify-source" class="section level2">
-<h2>How to verify source</h2>
-<p>There are a few ways we can check whether a PMLB dataframe (<code>pmlb_df</code>) agrees with its source (<code>source_df</code>), provided that we have checked their shapes (by printing <code>pmlb_df.shape</code> and <code>pmlb_df.shape</code>) and changed the column name of the dependent variable to <code>target</code>. For example, if the dependent variable in the source dataset is <code>class</code>, you can use <code>df_source = df_source.rename(columns={'class': 'target'})</code>.</p>
-<ul>
-<li>If the two dataframes are exactly the same, the following line of code does not return anything ✔️:</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>pd.testing.assert_frame_equal(df_source, df_pmlb)</span></code></pre></div>
-<ul>
-<li>If it gives error, the column names may be different. If we have good reasons to ignore column names, we can check if the values contained in the 2 dataframes are the same with</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="im">from</span> pandas.util <span class="im">import</span> hash_pandas_object</span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="im">import</span> hashlib</span>
-<span id="cb2-3"><a href="#cb2-3"></a></span>
-<span id="cb2-4"><a href="#cb2-4"></a>rowhashes_pmlb <span class="op">=</span> hash_pandas_object(df_pmlb, index <span class="op">=</span> <span class="va">False</span>).values</span>
-<span id="cb2-5"><a href="#cb2-5"></a>hash_pmlb <span class="op">=</span> hashlib.sha256(rowhashes_pmlb).hexdigest()</span>
-<span id="cb2-6"><a href="#cb2-6"></a>rowhashes_source <span class="op">=</span> hash_pandas_object(df_source, index <span class="op">=</span> <span class="va">False</span>).values</span>
-<span id="cb2-7"><a href="#cb2-7"></a>hash_source <span class="op">=</span> hashlib.sha256(rowhashes_source).hexdigest()</span>
-<span id="cb2-8"><a href="#cb2-8"></a></span>
-<span id="cb2-9"><a href="#cb2-9"></a><span class="co"># verify hashes match</span></span>
-<span id="cb2-10"><a href="#cb2-10"></a><span class="bu">print</span>(hash_pmlb <span class="op">==</span> hash_source)</span></code></pre></div>
-<p>or</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>(df_source.values <span class="op">==</span> df_pmlb.values).<span class="bu">all</span>()</span></code></pre></div>
-<p>If we still get <code>False</code>, it is possible that the rows have been permuted. To check if they are:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a><span class="bu">set</span>(df_pmlb.itertuples(index<span class="op">=</span><span class="va">False</span>)) <span class="op">==</span> <span class="bu">set</span>(df_source.itertuples(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div>
-<p>or, if row hashes have been computed,</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="bu">set</span>(rowhashes_source) <span class="op">==</span> <span class="bu">set</span>(rowhashes_pmlb)</span></code></pre></div>
-<p>or “subtracting” the two datasets row by row</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>df_source.merge(df_pmlb, indicator<span class="op">=</span><span class="va">True</span>, how<span class="op">=</span><span class="st">&#39;left&#39;</span>).loc[<span class="kw">lambda</span> x: x[<span class="st">&#39;_merge&#39;</span>]<span class="op">!=</span><span class="st">&#39;both&#39;</span>]</span>
-<span id="cb6-2"><a href="#cb6-2"></a>df_pmlb.merge(df_source, indicator<span class="op">=</span><span class="va">True</span>, how<span class="op">=</span><span class="st">&#39;left&#39;</span>).loc[<span class="kw">lambda</span> x: x[<span class="st">&#39;_merge&#39;</span>]<span class="op">!=</span><span class="st">&#39;both&#39;</span>]</span></code></pre></div>
-<p>This code will print the rows that are in one dataframe but not the other and can help you see the difference a bit better.</p>
-<p>If the two dataframes have floats that are almost equal to each other, we can use <code>numpy</code>’s <code>isclose</code> to check if they are element-wise equal within a tolerance:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">from</span> numpy <span class="im">import</span> isclose</span>
-<span id="cb7-2"><a href="#cb7-2"></a></span>
-<span id="cb7-3"><a href="#cb7-3"></a>isclose(df_source.values, df_pmlb.values).<span class="bu">all</span>()</span></code></pre></div>
-<p>We have been using <a href="https://colab.research.google.com/">Google Colab notebooks</a> to share our checks, but other methods are also welcomed. Here are a few existing notebooks for reference: <a href="https://colab.research.google.com/drive/1N48BWz6IdeyIDUM3ROhd1wUPjhhL-Vz4#scrollTo=yxujo7a_gjMV">wine-quality-red</a>, <a href="https://colab.research.google.com/drive/1z_aFLydv2xMjDWwYIGGbW5N8_XFraysT">wine-quality-white</a>, <a href="https://colab.research.google.com/drive/1DyB2oqenINVmJzFLkwjPKYv0iAb5Mz02#scrollTo=5QZDL8Yffx62">waveform-mushroom-saheart</a>, <a href="https://colab.research.google.com/drive/1gB7r_CN8LrWG3nOqCS3AXJ7enj_Ssavk?usp=sharing#scrollTo=ioB2C8bb_WGa">irish</a>, <a href="https://colab.research.google.com/drive/1s2J0v2Ubzj0-CxzgQnxdmAAVoK33a1AY#scrollTo=-gBzhYeQMi3t">adult</a>.</p>
+<div id="docstring-output" class="section level3">
+<h3><code>classification_dataset_names</code></h3>
+<p><em>variable</em> <code>pmlb.classification_dataset_names</code></p>
+<p>A list of all classification datasets included in PMLB.</p>
+<p>Classification datasets are datasets where the target value for each data point is discrete (rather than continuous).</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
+<span id="cb4-2"><a href="#cb4-2"></a></span>
+<span id="cb4-3"><a href="#cb4-3"></a>In [<span class="dv">2</span>]: classification_dataset_names</span>
+<span id="cb4-4"><a href="#cb4-4"></a>Out[<span class="dv">2</span>]: </span>
+<span id="cb4-5"><a href="#cb4-5"></a>[<span class="st">&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;</span>,</span>
+<span id="cb4-6"><a href="#cb4-6"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;</span>,</span>
+<span id="cb4-7"><a href="#cb4-7"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;</span>,</span>
+<span id="cb4-8"><a href="#cb4-8"></a> <span class="st">&#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;</span>,</span>
+<span id="cb4-9"><a href="#cb4-9"></a>...</span>
+<span id="cb4-10"><a href="#cb4-10"></a> <span class="st">&#39;yeast&#39;</span>]</span></code></pre></div>
+</div>
+<div id="docstring-output" class="section level3">
+<h3><code>regression_dataset_names</code></h3>
+<p><em>variable</em> <code>pmlb.regression_dataset_names</code></p>
+<p>A list of all regression datasets included in PMLB.</p>
+<p>Regression datasets are datasets where the target value for each data point is continuous (rather than discrete).</p>
+<p><strong>Example:</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>In [<span class="dv">2</span>]: regression_dataset_names</span>
+<span id="cb5-4"><a href="#cb5-4"></a>Out[<span class="dv">2</span>]: </span>
+<span id="cb5-5"><a href="#cb5-5"></a>[<span class="st">&#39;1027_ESL&#39;</span>,</span>
+<span id="cb5-6"><a href="#cb5-6"></a> <span class="st">&#39;1028_SWD&#39;</span>,</span>
+<span id="cb5-7"><a href="#cb5-7"></a> <span class="st">&#39;1029_LEV&#39;</span>,</span>
+<span id="cb5-8"><a href="#cb5-8"></a> <span class="st">&#39;1030_ERA&#39;</span>,</span>
+<span id="cb5-9"><a href="#cb5-9"></a>...</span>
+<span id="cb5-10"><a href="#cb5-10"></a> <span class="st">&#39;712_chscase_geyser1&#39;</span>]</span></code></pre></div>
 </div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -635,6 +698,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
