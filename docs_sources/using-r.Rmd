@@ -1,0 +1,105 @@
+---
+title: "Using pmlbr"
+output:
+  html_document:
+    toc: false
+---
+
+## Install pmlbr
+
+The [**pmlbr** package](https://github.com/EpistasisLab/pmlb) :package: provides the following user-facing functions and variables in the R environment.
+
+The package works for any recent version of R.
+
+You can install the released version of **pmlbr** from CRAN with:
+```{r, eval=FALSE}
+install.packages('pmlbr')
+```
+
+Or the development version from GitHub with remotes:
+
+```{r, eval=FALSE}
+# install.packages('remotes') # uncomment to install remotes
+library(remotes)
+remotes::install_github("EpistasisLab/pmlbr")
+```
+
+## Usage
+
+The core function of this package is `fetch_data` that allows us to download data from the PMLB repository.
+For example:
+``` {r}
+library(pmlbr)
+
+# Download features and labels for penguins dataset in single data frame
+penguins <- fetch_data('penguins')
+str(penguins)
+
+# Download features and labels for penguins dataset in separate data structures
+penguins <- fetch_data('penguins', return_X_y=TRUE)
+head(penguins$x) # data frame
+head(penguins$y) # vector
+```
+
+Let's check other available datasets and their summary statistics:
+
+``` {r}
+# Dataset names
+head(classification_dataset_names, 9)
+head(regression_dataset_names, 9)
+
+# Dataset summaries
+head(summary_stats)
+```
+
+Selecting a subset of datasets that satisfy certain conditions is straight forward with `dplyr`.
+For example, if we need datasets with fewer than 100 observations for a classification task: 
+```{r warning=FALSE, message=FALSE}
+library(dplyr)
+summary_stats %>% 
+  filter(n_instances < 100, task == 'classification') %>% 
+  pull(dataset)
+```
+
+
+### Dataset format
+
+All data sets are stored in a common format:
+
+* First row is the column names
+* Each following row corresponds to an individual observation
+* The target column is named `target`
+* All columns are tab (`\t`) separated
+* All files are compressed with `gzip` to conserve space
+
+This R library includes summaries of the classification and regression data sets but does **not**
+store any of the PMLB data sets.  The data sets can be downloaded using the `fetch_data` function which
+is similar to the corresponding PMLB python function.  
+
+Further info:
+``` {r}
+?fetch_data
+?summary_stats
+```
+
+
+### Citing
+
+If you use PMLB in a scientific publication, please consider citing the following paper:
+
+Randal S. Olson, William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore (2017).
+[PMLB: a large benchmark suite for machine learning evaluation and comparison](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4).
+BioData Mining 10, page 36.
+
+
+## Roadmap
+
+* Add tests
+* Submit library to CRAN
+
+
+## Contributing
+
+Pull requests are welcome.  For major changes, please open an issue first to discuss what you would like to change.
+
+Integration of other data repositories are particularly welcome.
