@@ -1,0 +1,113 @@
+---
+title: "R interface"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    css: custom.css
+---
+
+pmlbr :package: provides the following user-facing functions and variables in the R environment.
+For installation instructions or a high-level overview of how to use PMLB, please see [Using pmlbr](./using-r.html).
+
+## Functions
+
+### `fetch_data` {#docstring-output}
+
+*function* `pmlb.fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)`
+
+Download a dataset from PMLB, (optionally) store it locally, and return the dataset.
+
+You must be connected to the internet if you are fetching a dataset that is not cached locally.
+
+**Parameters:**
+
+- **dataset_name : str**
+  Name of the dataset to fetch from PMLB. A list of available datasets can be found in the documentation.
+- **return_X_y : bool, default=FALSE**
+  Specify the format of the data returned to the user. If `FALSE`, the data are returned as a dataframe of size `(n_samples, n_features+1)`, where the last column is `target` - the true target value of the data point. If `TRUE`, the data are returned as a list of length 2, where the first element is a dataframe of size `(n_samples, n_features)` corresponding to the feature matrix (usually denoted `X`), and the second element is a numeric vector of length `n_samples` corresponding to the list of target values (usually denoted `y`), respectively.
+- **local_cache_dir : str, default=None**
+  The directory on your local machine in which to store the data files, defaults to NA, indicating cache will not be used.
+- **dropna : bool, default=TRUE**
+  If `TRUE`, `NA`s will be automatically dropped from the exported dataset.
+
+**Returns:**
+
+- **dataset : dataframe**
+  If `return_X_y == FALSE`, fetched dataset as a dataframe of size `(n_samples, n_features+1)`, where the last column is `target`. If `return_X_y == TRUE`, a list of length 2 containing the feature matrix `X` and the target array `y`, respectively.
+
+**Example:**
+
+```{r}
+library(pmlbr)
+
+# Download features and labels for penguins dataset in single data frame
+penguins <- fetch_data('penguins')
+str(penguins)
+```
+
+## Data objects
+
+These objects contain details on datasets currently available in PMLB. 
+
+### `dataset_names` {#docstring-output}
+
+A list of all datasets included in PMLB.
+
+The contents of this vector are the union of `classification_dataset_names` and `regression_dataset_names`.
+
+**Example:**
+
+```{r}
+data(pmlb)
+head(dataset_names, 9)
+```
+
+### `classification_dataset_names` {#docstring-output}
+
+A list of all *classification* datasets included in PMLB.
+
+Classification datasets are datasets where the target values (dependent variable/outcome) are discrete.
+
+**Example:**
+
+```{r}
+head(classification_dataset_names, 9)
+```
+
+### `regression_dataset_names` {#docstring-output}
+
+A list of all *regression* datasets included in PMLB.
+
+regression datasets are datasets where the target values (dependent variable/outcome) are continuous.
+
+**Example:**
+
+```{r}
+head(regression_dataset_names, 9)
+```
+
+### `summary_stats` {#docstring-output}
+
+Summary statistics for the all datasets.
+
+A data frame with 10 variables:
+
+- *dataset*: Dataset name
+- *n_instances*: Number of data observations (equal to number of rows)
+- *n_features*: Total number of features (number of columns - 1)
+- *n_binary_features*: Number of binary features
+- *n_categorical_features*: Number of categorical features
+- *n_continuous_features*: Number of continuous features
+- *n_classes*: Number of classes in target variable
+- *endpoint_type*: Value type of endpoint/target (can be binary, categorical or continuous)
+- *imbalance*: Imbalance measure, where zero means that the dataset is perfectly balanced and the higher the value, the more imbalanced the dataset
+- *task*: Type of problem/task. Can be classification or regression.
+
+**Example:**
+
+```{r}
+head(summary_stats)
+```

@@ -1,5 +1,5 @@
 ---
-title: "API Reference"
+title: "Python interface"
 output:
   html_document:
     toc: true
@@ -9,7 +9,7 @@ output:
     css: custom.css
 ---
 
-PMLB provides the following user-facing functions and variables. For installation instructions or a high-level overview of how to use PMLB, see [Install](./install.html) or [Using PMLB](./using.html).
+Python package PMLB provides the following user-facing functions and variables. For installation instructions or a high-level overview of how to use PMLB, see [Install](./install.html) or [Using PMLB](./using.html).
 
 ## Functions
 
