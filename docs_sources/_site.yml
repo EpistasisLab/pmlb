@@ -17,10 +17,14 @@ navbar:
       href: index.html
     - text: Install
       href: install.html
-    - text: User Guide
-      href: using.html
-    - text: API
-      href: reference.html
+    - text: Python interface
+      href: using-python.html
+    - text: Python reference
+      href: python-ref.html
+    - text: R interface
+      href: using-r.html
+    - text: Python reference
+      href: python-ref.html      
     - text: Contributing
       href: contributing.html
   right:
