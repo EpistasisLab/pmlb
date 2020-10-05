@@ -1,7 +1,9 @@
 # Reviewed by Natasha Ray
 dataset: 519_vinnie
 description: Data on the shooting of Vinnie Johnson of the Detroit Pistons during the 1985-1986 through 1988-1989 seasons.
-source: the New York Times
+source: >
+  https://www.openml.org/data/get_csv/52631/vinnie.arff,
+  https://www.openml.org/d/519
 publication: >
   The data are analyzed in the Carnegie Mellon Ph.D. Thesis of Kate Hsiao 
   and some results are cited in Example 2 of Kass, R.E. and Raftery, A.E. (1995), Bayes Factors, 
@@ -12,12 +14,11 @@ keywords:
   - detroit
 target:
   type: continuous
-  description: Second column, indicates number of field goals made.
-  code: None yet. See our contributing guide to help us add one.
+  description: number of field goals made
 features:
   - name: year
-    type: continuous
+    type: categorical
     description: year, with 85 indicating 1985-1986, etc.
   - name: field_goal_attempts
     type: continuous
-    description: number of field goal attempts.
+    description: number of field goal attempts
