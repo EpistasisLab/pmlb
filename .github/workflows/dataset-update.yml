@@ -35,6 +35,9 @@ jobs:
     - name: Push updates to active branch
       run: |
         git add --all
-        git commit --allow-empty --message "push updates ${GITHUB_SHA:7} on $(date --iso --utc)"
+        WORKFLOW_URL="https://github.com/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+        git commit \
+          --message "update dataset files" \
+          --message "Created by ${WORKFLOW_URL}\nfrom ${GITHUB_SHA::7} on $(date --iso --utc)"
         git checkout $BRANCH
         git push origin $BRANCH
