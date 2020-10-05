@@ -3,12 +3,12 @@ dataset: texture
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
-task: regression
+task: classification
 keywords:
   -
   -
 target:
-  type: continuous
+  type: categorical
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features:

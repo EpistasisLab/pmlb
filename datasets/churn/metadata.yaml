@@ -23,7 +23,7 @@ features:
     code:
     transform:
   - name: area code
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -108,7 +108,7 @@ features:
     code:
     transform:
   - name: number customer service calls
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

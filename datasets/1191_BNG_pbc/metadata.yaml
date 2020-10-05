@@ -13,12 +13,12 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: D
-    type: continuous
+    type: binary
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Z1
-    type: continuous
+    type: binary
     description:
     code:
     transform:
@@ -28,27 +28,27 @@ features:
     code:
     transform:
   - name: Z3
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: Z4
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: Z5
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: Z6
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: Z7
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -98,7 +98,7 @@ features:
     code:
     transform:
   - name: Z17
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

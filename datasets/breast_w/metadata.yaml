@@ -13,27 +13,27 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: Clump_Thickness
-    type: continuous
+    type: categorical
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Cell_Size_Uniformity
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Cell_Shape_Uniformity
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Marginal_Adhesion
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Single_Epi_Cell_Size
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -43,17 +43,17 @@ features:
     code:
     transform:
   - name: Bland_Chromatin
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Normal_Nucleoli
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Mitoses
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

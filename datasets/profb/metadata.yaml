@@ -43,7 +43,7 @@ features:
     code:
     transform:
   - name: Year
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

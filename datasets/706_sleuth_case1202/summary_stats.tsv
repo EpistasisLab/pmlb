@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-706_sleuth_case1202	93	6	0	0	6	continuous	79.0	0.0015831087631295727	regression
+706_sleuth_case1202	93	6	1	1	4	continuous	79.0	0.0015831087631295727	regression

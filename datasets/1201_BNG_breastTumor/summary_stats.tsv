@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-1201_BNG_breastTumor	116640	9	4	2	3	continuous	92234.0	0.04249664755588218	regression
+1201_BNG_breastTumor	116640	9	4	3	2	continuous	92234.0	0.04249664755588218	regression

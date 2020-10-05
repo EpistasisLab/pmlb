@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-soybean	675	35	1	34	0	continuous	18.0	0.03626782861292664	classification
+soybean	675	35	1	34	0	categorical	18.0	0.03626782861292664	classification

@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-flare	1066	10	4	4	2	categorical	2.0	0.43367043426531815	classification
+flare	1066	10	4	6	0	categorical	2.0	0.43367043426531815	classification

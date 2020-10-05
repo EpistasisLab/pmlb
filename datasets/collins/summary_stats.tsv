@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-collins	485	23	0	1	22	continuous	13.0	0.0219810819428207	regression
+collins	485	23	0	1	22	categorical	13.0	0.0219810819428207	classification
