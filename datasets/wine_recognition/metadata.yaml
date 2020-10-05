@@ -33,7 +33,7 @@ features:
     code:
     transform:
   - name: 5
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -73,7 +73,7 @@ features:
     code:
     transform:
   - name: 13
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

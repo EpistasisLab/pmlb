@@ -48,7 +48,7 @@ features:
     code:
     transform:
   - name: brand
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

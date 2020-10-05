@@ -33,12 +33,12 @@ features:
     code:
     transform:
   - name: Favorite_Name
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Underdog_name
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

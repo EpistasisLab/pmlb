@@ -178,7 +178,7 @@ features:
     code:
     transform:
   - name: Age
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

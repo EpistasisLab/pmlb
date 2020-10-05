@@ -43,7 +43,7 @@ features:
     code:
     transform:
   - name: Bare Nuclei
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
