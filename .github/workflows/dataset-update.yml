@@ -1,7 +1,10 @@
 name: Update new dataset metadata
 
 on:
-  pull_request:
+  push:
+    branches-ignore:
+      - master
+      - gh-pages
 jobs:
   build:
     runs-on: ubuntu-latest
