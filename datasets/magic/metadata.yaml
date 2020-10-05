@@ -1,64 +1,65 @@
-# Reviewed by [your name here]
+# Reviewed by John Gregg
 dataset: magic
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: particle shower measurements used to classify which type of radiation caused the particle shower. 
+source: https://archive.ics.uci.edu/ml/datasets/magic+gamma+telescope
+publication: Bock, R.K., Chilingarian, A., Gaug, M., Hakl, F., Hengstebeck, T., Jirina, M., Klaschka, J., Kotrc, E., Savicky, P., Towers, S., Vaicilius, A., Wittek W. (2004). Methods for multidimensional event classification: a case study using images from a Cherenkov gamma-ray telescope. Nucl.Instr.Meth. A, 516, pp. 511-528.
 task: classification
 keywords:
-  -
-  -
+  - astrophysics
+  - Experimental physics 
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: particle burst type (gamma (signal) or hadron (background))
+  code: gamma = 0, hadron = 1
 features:
+
   - name: FLength
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: major axis of ellipse [mm]
+    code: None
+    transform: None
   - name: FWidth
     type: continuous
-    description:
-    code:
-    transform:
+    description: minor axis of ellipse [mm]
+    code: None
+    transform: None
   - name: FSize
     type: continuous
-    description:
-    code:
-    transform:
+    description: 10-log of sum of content of all pixels [in #phot]
+    code: None
+    transform: None
   - name: FConc
     type: continuous
-    description:
-    code:
-    transform:
+    description: ratio of sum of two highest pixels over fSize  [ratio]
+    code: None
+    transform: None
   - name: FConc1
     type: continuous
-    description:
-    code:
-    transform:
+    description: ratio of highest pixel over fSize  [ratio]
+    code: None
+    transform: None
   - name: FAsym
     type: continuous
-    description:
-    code:
-    transform:
+    description: distance from highest pixel to center, projected onto major axis [mm]
+    code: None
+    transform: None
   - name: FM3Long
     type: continuous
-    description:
-    code:
-    transform:
+    description: 3rd root of third moment along major axis  [mm] 
+    code: None
+    transform: None
   - name: FM3Trans
     type: continuous
-    description:
-    code:
-    transform:
+    description: 3rd root of third moment along minor axis  [mm]
+    code: None
+    transform: None
   - name: FAlpha
     type: continuous
-    description:
-    code:
-    transform:
+    description: angle of major axis with vector to origin [deg]
+    code: None
+    transform: None
   - name: FDist
     type: continuous
-    description:
-    code:
-    transform:
+    description: distance from origin to center of ellipse [mm]
+    code: None
+    transform: None
