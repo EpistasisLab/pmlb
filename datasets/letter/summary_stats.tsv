@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-letter	20000	16	0	0	16	categorical	26.0	3.490919999999997e-05	classification
+letter	20000	16	0	0	16	continuous	26.0	3.490919999999997e-05	regression

@@ -18,12 +18,12 @@ features:
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: wage increase first year
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: wage increase second year
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -53,7 +53,7 @@ features:
     code:
     transform:
   - name: shift differential
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

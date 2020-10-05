@@ -97,6 +97,8 @@ def get_type(x, include_binary=False):
     if x.dtype=='float64':
         return 'continuous'
     elif x.dtype=='int64':
+        if x.nunique() > 10:
+            return 'continuous'
         if include_binary:
             if x.nunique() == 2:
                 return 'binary'
@@ -167,7 +169,7 @@ features:
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
 '''
-    
+
     none_yet = ('None yet. See our contributing guide to help us add one.')
     header_to_print = '# Reviewed by [your name here]'
     assert (local_cache_dir != None)
@@ -205,7 +207,7 @@ features:
         task=dataset_stats['task'],
         all_features=all_features
     )
-    
+
     try:
         meta_path.write_text(metadata)
     except IOError as err:
@@ -255,13 +257,13 @@ def generate_all_summaries(local_cache_dir='datasets/'):
         frames.append(pd.read_csv(f, sep = '\t'))
     pd.concat(frames).to_csv('pmlb/all_summary_stats.tsv', index=False, sep='\t')
 
-def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, 
+def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False,
                             local_cache_dir=None, update_all=False):
     df = fetch_data(dataset_name, local_cache_dir=local_cache_dir, dropna=False)
     dataset_stats = get_dataset_stats(df)
     if dataset_name not in datasets_with_metadata:
         generate_metadata(df, dataset_name, dataset_stats, overwrite, local_cache_dir)
-    
+
     with open(pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')) as f:
         meta_dict = yaml.load(f, Loader=yaml.FullLoader)
 
@@ -295,8 +297,9 @@ if __name__ =='__main__':
     #     print(d, '...')
     #     update_metadata_summary(
     #         d, datasets_with_metadata,
-    #         overwrite=overwrite,
-    #         local_cache_dir=local_dir)
+    #         overwrite=True,
+    #         local_cache_dir=local_dir,
+    #         update_all=True)
 
     # which datasets have changed for this commit
     updated_sets = get_updated_datasets()

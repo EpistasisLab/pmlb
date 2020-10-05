@@ -3,12 +3,12 @@ dataset: letter
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
-task: classification
+task: regression
 keywords:
   -
   -
 target:
-  type: categorical
+  type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features:

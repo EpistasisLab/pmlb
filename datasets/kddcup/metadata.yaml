@@ -3,17 +3,17 @@ dataset: kddcup
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
-task: classification
+task: regression
 keywords:
   -
   -
 target:
-  type: categorical
+  type: continuous
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: Atr-0
-    type: categorical
+    type: continuous
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
@@ -23,22 +23,22 @@ features:
     code:
     transform:
   - name: Atr-2
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Atr-3
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Atr-4
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Atr-5
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -58,7 +58,7 @@ features:
     code:
     transform:
   - name: Atr-9
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -73,7 +73,7 @@ features:
     code:
     transform:
   - name: Atr-12
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -88,12 +88,12 @@ features:
     code:
     transform:
   - name: Atr-15
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Atr-16
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -123,12 +123,12 @@ features:
     code:
     transform:
   - name: Atr-22
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Atr-23
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -168,12 +168,12 @@ features:
     code:
     transform:
   - name: Atr-31
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Atr-32
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
