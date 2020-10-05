@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-profb	672	9	1	3	5	categorical	2.0	0.1111111111111111	classification
+profb	672	9	1	1	7	categorical	2.0	0.1111111111111111	classification

@@ -297,8 +297,9 @@ if __name__ =='__main__':
     #     print(d, '...')
     #     update_metadata_summary(
     #         d, datasets_with_metadata,
-    #         overwrite=overwrite,
-    #         local_cache_dir=local_dir)
+    #         overwrite=True,
+    #         local_cache_dir=local_dir,
+    #         update_all=True)
 
     # which datasets have changed for this commit
     updated_sets = get_updated_datasets()

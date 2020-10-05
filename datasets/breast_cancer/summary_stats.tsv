@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-breast_cancer	286	9	2	7	0	categorical	2.0	0.1645068218494792	classification
+breast_cancer	286	9	2	6	1	categorical	2.0	0.1645068218494792	classification
