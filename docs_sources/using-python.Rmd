@@ -1,8 +1,7 @@
 ---
-title: "Using PMLB"
+title: "Using PMLB Python interface"
 ---
 
-## Python interface
 ```{r setup, include=FALSE}
 library(reticulate)
 
@@ -13,8 +12,7 @@ reticulate::py_install("pmlb", pip = TRUE)
 
 ```
 
-
-## Python
+## Install
 
 Most users should install PMLB from the Python Package Index (PyPI) using `pip`:
 

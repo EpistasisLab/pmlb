@@ -5,9 +5,9 @@ output:
     toc: false
 ---
 
-## Install pmlbr
+## Install
 
-The [**pmlbr** package](https://github.com/EpistasisLab/pmlb) :package: provides the following user-facing functions and variables in the R environment.
+The [**pmlbr** package](https://github.com/EpistasisLab/pmlb) provides the following user-facing functions and variables in the R environment.
 
 The package works for any recent version of R.
 
@@ -37,8 +37,8 @@ str(penguins)
 
 # Download features and labels for penguins dataset in separate data structures
 penguins <- fetch_data('penguins', return_X_y=TRUE)
-head(penguins$x) # data frame
-head(penguins$y) # vector
+head(penguins$x) # feature data frame
+head(penguins$y) # target vector
 ```
 
 Let's check other available datasets and their summary statistics:
@@ -61,45 +61,8 @@ summary_stats %>%
   pull(dataset)
 ```
 
-
-### Dataset format
-
-All data sets are stored in a common format:
-
-* First row is the column names
-* Each following row corresponds to an individual observation
-* The target column is named `target`
-* All columns are tab (`\t`) separated
-* All files are compressed with `gzip` to conserve space
-
-This R library includes summaries of the classification and regression data sets but does **not**
-store any of the PMLB data sets.  The data sets can be downloaded using the `fetch_data` function which
-is similar to the corresponding PMLB python function.  
-
 Further info:
 ``` {r}
 ?fetch_data
 ?summary_stats
 ```
-
-
-### Citing
-
-If you use PMLB in a scientific publication, please consider citing the following paper:
-
-Randal S. Olson, William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore (2017).
-[PMLB: a large benchmark suite for machine learning evaluation and comparison](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4).
-BioData Mining 10, page 36.
-
-
-## Roadmap
-
-* Add tests
-* Submit library to CRAN
-
-
-## Contributing
-
-Pull requests are welcome.  For major changes, please open an issue first to discuss what you would like to change.
-
-Integration of other data repositories are particularly welcome.
