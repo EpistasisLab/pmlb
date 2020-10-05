@@ -18,12 +18,12 @@ features:
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: sex
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: chest
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -38,12 +38,12 @@ features:
     code:
     transform:
   - name: fasting_blood_sugar
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: resting_electrocardiographic_results
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -53,7 +53,7 @@ features:
     code:
     transform:
   - name: exercise_induced_angina
-    type: continuous
+    type: binary
     description:
     code:
     transform:
@@ -63,17 +63,17 @@ features:
     code:
     transform:
   - name: slope
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: number_of_major_vessels
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: thal
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

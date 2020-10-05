@@ -13,12 +13,12 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: normalized-losses
-    type: categorical
+    type: continuous
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: make
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -98,12 +98,12 @@ features:
     code:
     transform:
   - name: bore
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: stroke
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -113,12 +113,12 @@ features:
     code:
     transform:
   - name: horsepower
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: peak-rpm
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -133,7 +133,7 @@ features:
     code:
     transform:
   - name: price
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

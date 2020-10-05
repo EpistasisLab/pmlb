@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-1193_BNG_lowbwt	31104	9	0	0	9	continuous	31056.0	4.953942627906179e-08	regression
+1193_BNG_lowbwt	31104	9	4	3	2	continuous	31056.0	4.953942627906179e-08	regression

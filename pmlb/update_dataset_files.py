@@ -92,7 +92,19 @@ def count_features_type(types, include_binary=False):
                 types.count('continuous')
                 )
 
-def get_type(x, include_binary=False):
+def get_feature_type(x, include_binary=False):
+    x.dropna(inplace=True)
+    if not check_if_all_integers(x):
+        return 'continuous'
+    else:
+        if x.nunique() > 10:
+            return 'continuous'
+        if include_binary:
+            if x.nunique() == 2:
+                return 'binary'
+        return 'categorical'
+
+def get_target_type(x, include_binary=False):
     x.dropna(inplace=True)
     if x.dtype=='float64':
         return 'continuous'
@@ -104,11 +116,16 @@ def get_type(x, include_binary=False):
     else:
         raise ValueError("Error getting type")
 
+
+def check_if_all_integers(x):
+    "check a pandas.Series is made of all integers."
+    return all(float(i).is_integer() for i in x.unique())
+
 def get_dataset_stats(df):
     feat_names = [col for col in df.columns if col!=TARGET_NAME]
-    types = [get_type(df[col], include_binary=True) for col in feat_names]
+    types = [get_feature_type(df[col], include_binary=True) for col in feat_names]
     feat = count_features_type(types, include_binary=True)
-    endpoint = get_type(df[TARGET_NAME])
+    endpoint = get_target_type(df[TARGET_NAME])
     mse = compute_imbalance(df[TARGET_NAME].tolist())
     task = 'regression' if endpoint == 'continuous' else 'classification'
 
@@ -167,7 +184,7 @@ features:
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
 '''
-    
+
     none_yet = ('None yet. See our contributing guide to help us add one.')
     header_to_print = '# Reviewed by [your name here]'
     assert (local_cache_dir != None)
@@ -205,7 +222,7 @@ features:
         task=dataset_stats['task'],
         all_features=all_features
     )
-    
+
     try:
         meta_path.write_text(metadata)
     except IOError as err:
@@ -255,13 +272,13 @@ def generate_all_summaries(local_cache_dir='datasets/'):
         frames.append(pd.read_csv(f, sep = '\t'))
     pd.concat(frames).to_csv('pmlb/all_summary_stats.tsv', index=False, sep='\t')
 
-def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, 
+def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False,
                             local_cache_dir=None, update_all=False):
     df = fetch_data(dataset_name, local_cache_dir=local_cache_dir, dropna=False)
     dataset_stats = get_dataset_stats(df)
     if dataset_name not in datasets_with_metadata:
         generate_metadata(df, dataset_name, dataset_stats, overwrite, local_cache_dir)
-    
+
     with open(pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')) as f:
         meta_dict = yaml.load(f, Loader=yaml.FullLoader)
 
@@ -295,8 +312,9 @@ if __name__ =='__main__':
     #     print(d, '...')
     #     update_metadata_summary(
     #         d, datasets_with_metadata,
-    #         overwrite=overwrite,
-    #         local_cache_dir=local_dir)
+    #         overwrite=True,
+    #         local_cache_dir=local_dir,
+    #         update_all=True)
 
     # which datasets have changed for this commit
     updated_sets = get_updated_datasets()

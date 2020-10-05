@@ -13,52 +13,52 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: In1
-    type: continuous
+    type: categorical
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: In2
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: In3
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: In4
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: In5
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: In6
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: In7
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: In8
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: In9
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: In10
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

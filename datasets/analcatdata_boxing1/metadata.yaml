@@ -23,7 +23,7 @@ features:
     code:
     transform:
   - name: Round
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

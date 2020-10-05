@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-1196_BNG_pharynx	1000000	10	0	0	10	continuous	984191.0	1.5983077236953228e-08	regression
+1196_BNG_pharynx	1000000	10	3	6	1	continuous	984191.0	1.5983077236953228e-08	regression

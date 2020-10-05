@@ -23,7 +23,7 @@ features:
     code:
     transform:
   - name: fsex
-    type: continuous
+    type: binary
     description:
     code:
     transform:
@@ -38,7 +38,7 @@ features:
     code:
     transform:
   - name: educ
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
