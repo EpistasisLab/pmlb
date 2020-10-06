@@ -2,7 +2,11 @@
 dataset: magic
 description: particle shower measurements used to classify which type of radiation caused the particle shower. 
 source: https://archive.ics.uci.edu/ml/datasets/magic+gamma+telescope
-publication: Bock, R.K., Chilingarian, A., Gaug, M., Hakl, F., Hengstebeck, T., Jirina, M., Klaschka, J., Kotrc, E., Savicky, P., Towers, S., Vaicilius, A., Wittek W. (2004). Methods for multidimensional event classification: a case study using images from a Cherenkov gamma-ray telescope. Nucl.Instr.Meth. A, 516, pp. 511-528.
+publication: >
+  Bock, R.K., Chilingarian, A., Gaug, M., Hakl, F., Hengstebeck, T., Jirina, M., 
+  Klaschka, J., Kotrc, E., Savicky, P., Towers, S., Vaicilius, A., Wittek W. (2004). 
+  'Methods for multidimensional event classification: a case study using images from a Cherenkov gamma-ray telescope.'
+  Nucl.Instr.Meth. A, 516, pp. 511-528.
 task: classification
 keywords:
   - astrophysics
