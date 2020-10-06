@@ -1,29 +1,32 @@
-# Reviewed by [your name here]
+# Reviewed by John Gregg
 dataset: lupus
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: A small dataset meant to compare the time from getting lupus to diagnosis against the time from diagnosis to death. 
+source: https://www.openml.org/d/472
+publication: >
+  Abrahamowicz M, MacKenzie T, Esdaile JM. 
+  'Time-dependent hazard ratio: modeling and hypothesis testing with application in lupus nephritis.'
+  'J Am Stat Assoc 1996;91:1432–9.'
 task: classification
 keywords:
-  -
-  -
+  - survival analysis
+  - medical
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: alive or dead
+  code: 0 = alive, 1 = dead
 features:
   - name: TIME
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: time from getting lupus to diagnosis (biopsy)
+    code: Numeric. Units are not specified by the paper. 
+    transform: None
   - name: DURATION
     type: continuous
-    description:
-    code:
-    transform:
+    description: from diagnosis (biopsy) to death
+    code: Figure 2 in the paper implies, but does not state explicitly, that the units are in years.
+    transform: None
   - name: LOG(1+DURATION)
     type: continuous
-    description:
-    code:
-    transform:
+    description: logarithm of (1 + DURATION)
+    code: unitless
+    transform: None
