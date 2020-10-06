@@ -13,7 +13,7 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: LOW
-    type: continuous
+    type: binary
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
@@ -28,32 +28,32 @@ features:
     code:
     transform:
   - name: RACE
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: SMOKE
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: PTL
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: HT
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: UI
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: FTV
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

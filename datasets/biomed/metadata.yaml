@@ -38,7 +38,7 @@ features:
     code:
     transform:
   - name: m2
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -48,7 +48,7 @@ features:
     code:
     transform:
   - name: m4
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

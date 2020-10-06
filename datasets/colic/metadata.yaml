@@ -23,17 +23,17 @@ features:
     code:
     transform:
   - name: rectal_temperature
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: pulse
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: respiratory_rate
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -83,7 +83,7 @@ features:
     code:
     transform:
   - name: nasogastric_reflux_PH
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -98,12 +98,12 @@ features:
     code:
     transform:
   - name: packed_cell_volume
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: total_protein
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -113,7 +113,7 @@ features:
     code:
     transform:
   - name: abdomcentesis_total_protein
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

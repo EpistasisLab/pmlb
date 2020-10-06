@@ -28,12 +28,12 @@ features:
     code:
     transform:
   - name: trestbps
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: chol
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -48,7 +48,7 @@ features:
     code:
     transform:
   - name: thalach
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

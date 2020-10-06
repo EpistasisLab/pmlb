@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-breast_w	699	9	0	1	8	categorical	2.0	0.09637516091862275	classification
+breast_w	699	9	0	8	1	categorical	2.0	0.09637516091862275	classification

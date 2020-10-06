@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-215_2dplanes	40768	10	0	0	10	continuous	40368.0	2.419008481400585e-07	regression
+215_2dplanes	40768	10	1	9	0	continuous	40368.0	2.419008481400585e-07	regression

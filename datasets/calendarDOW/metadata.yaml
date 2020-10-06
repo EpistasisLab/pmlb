@@ -13,12 +13,12 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: Feature00
-    type: categorical
+    type: continuous
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Feature01
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -33,7 +33,7 @@ features:
     code:
     transform:
   - name: Feature04
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -43,12 +43,12 @@ features:
     code:
     transform:
   - name: Feature06
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Feature07
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -73,12 +73,12 @@ features:
     code:
     transform:
   - name: Feature12
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Feature13
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -103,12 +103,12 @@ features:
     code:
     transform:
   - name: Feature18
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: Feature19
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -118,7 +118,7 @@ features:
     code:
     transform:
   - name: Feature21
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -128,7 +128,7 @@ features:
     code:
     transform:
   - name: Feature23
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -163,7 +163,7 @@ features:
     code:
     transform:
   - name: Feature30
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

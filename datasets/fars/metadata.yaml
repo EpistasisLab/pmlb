@@ -13,12 +13,12 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: CASE_STATE
-    type: categorical
+    type: continuous
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: AGE
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -33,17 +33,17 @@ features:
     code:
     transform:
   - name: SEATING_POSITION
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: RESTRAINT_SYSTEM-USE
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: AIR_BAG_AVAILABILITY/DEPLOYMENT
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -63,7 +63,7 @@ features:
     code:
     transform:
   - name: NON_MOTORIST_LOCATION
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -83,7 +83,7 @@ features:
     code:
     transform:
   - name: ALCOHOL_TEST_RESULT
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -103,7 +103,7 @@ features:
     code:
     transform:
   - name: DRUG_TEST_RESULTS_(1_of_3)
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -113,7 +113,7 @@ features:
     code:
     transform:
   - name: DRUG_TEST_RESULTS_(2_of_3)
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -123,7 +123,7 @@ features:
     code:
     transform:
   - name: DRUG_TEST_RESULTS_(3_of_3)
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -138,22 +138,22 @@ features:
     code:
     transform:
   - name: RELATED_FACTOR_(1)-PERSON_LEVEL
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: RELATED_FACTOR_(2)-PERSON_LEVEL
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: RELATED_FACTOR_(3)-PERSON_LEVEL
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: RACE
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
