@@ -2,7 +2,10 @@
 dataset: lupus
 description: A small dataset meant to compare the time from getting lupus to diagnosis against the time from diagnosis to death. 
 source: https://www.openml.org/d/472
-publication: Abrahamowicz M, MacKenzie T, Esdaile JM. Time-dependent hazard ratio: modeling and hypothesis testing with application in lupus nephritis. J Am Stat Assoc 1996;91:1432–9.
+publication: >
+  Abrahamowicz M, MacKenzie T, Esdaile JM. 
+  'Time-dependent hazard ratio: modeling and hypothesis testing with application in lupus nephritis.'
+  'J Am Stat Assoc 1996;91:1432–9.'
 task: classification
 keywords:
   - survival analysis
