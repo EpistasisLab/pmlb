@@ -34,6 +34,15 @@ import warnings
 import subprocess
 import pathlib
 
+from sklearn.neighbors import NearestNeighbors
+from sklearn.preprocessing import StandardScaler
+from .support_funcs import (
+    generate_summarystats, 
+    get_dataset_stats,
+    last_commit_message
+)
+import numpy as np
+
 GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
 suffix = '.tsv.gz'
 
@@ -111,13 +120,6 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
         raise ValueError('Dataset not found in PMLB.')
     return dataset_url
 
-def last_commit_message() -> str:
-    """
-    Get commit message from last commit, excluding merge commits
-    """
-    command = "git log --no-merges -1 --pretty=%B".split()
-    message = subprocess.check_output(command, universal_newlines=True)
-    return message
 
 def get_updated_datasets(local_cache_dir='datasets'):
     """Looks at commit and returns a list of datasets that were updated."""
@@ -146,13 +148,6 @@ def get_updated_datasets(local_cache_dir='datasets'):
     )
     return {'changed_datasets': changed_datasets,
             'changed_metadatas': changed_metadatas}
-
-from sklearn.neighbors import NearestNeighbors
-from sklearn.preprocessing import StandardScaler
-from .update_dataset_files import generate_summarystats, get_dataset_stats
-from pathlib import Path
-import numpy as np
-
 
 def nearest_datasets(X, y=None, task='classification', n=1, 
         dimensions=['n_instances', 'n_features']):
@@ -207,7 +202,7 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     """
 
     # load pmlb summary stats
-    path = Path(__file__).parent / "all_summary_stats.tsv"
+    path = pathlib.Path(__file__).parent / "all_summary_stats.tsv"
     pmlb_stats = pd.read_csv(path, sep = '\t')
     # restrict to same task
     pmlb_stats = pmlb_stats.loc[pmlb_stats.task==task]
