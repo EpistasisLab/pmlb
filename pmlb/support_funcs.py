@@ -3,6 +3,12 @@ import pathlib
 import subprocess
 from collections import Counter
 
+TARGET_NAME = 'target'
+# these are words that yaml doesn't like you to use
+protected_feature_names = ['y','Y','yes','Yes','YES','n','N','no','No','NO',
+                           'true','True','TRUE','false','False','FALSE',
+                           'on','On','ON','off','Off','OFF']
+                           
 def get_type(x, include_binary=False):
     x.dropna(inplace=True)
     if x.dtype=='float64':

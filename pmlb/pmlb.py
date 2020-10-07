@@ -120,7 +120,6 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
         raise ValueError('Dataset not found in PMLB.')
     return dataset_url
 
-
 def get_updated_datasets(local_cache_dir='datasets'):
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff --name-only HEAD HEAD~1'

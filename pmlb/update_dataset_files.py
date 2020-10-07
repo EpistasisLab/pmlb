@@ -48,13 +48,6 @@ formatter = logging.Formatter('%(module)s: %(levelname)s: %(message)s')
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
-TARGET_NAME = 'target'
-
-# these are words that yaml doesn't like you to use
-protected_feature_names = ['y','Y','yes','Yes','YES','n','N','no','No','NO',
-                           'true','True','TRUE','false','False','FALSE',
-                           'on','On','ON','off','Off','OFF']
-
 def update_metadata_summary(dataset_name, reviewed_datasets, overwrite=True, 
                             local_cache_dir=None, write_summary=False):
     df = fetch_data(dataset_name, local_cache_dir=local_cache_dir, dropna=False)
