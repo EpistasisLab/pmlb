@@ -31,7 +31,7 @@ import pathlib
 import yaml
 import pandas as pd
 from collections import Counter
-from .pmlb import fetch_data, get_updated_datasets, get_reviewed_datasets
+from pmlb import fetch_data, get_updated_datasets, get_reviewed_datasets
 from .dataset_lists import dataset_names
 import logging
 logger = logging.getLogger(__name__)
