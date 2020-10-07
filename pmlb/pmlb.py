@@ -25,14 +25,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import pandas as pd
 import os
-from .dataset_lists import (classification_dataset_names, 
-        regression_dataset_names)
+from .dataset_lists import (
+    dataset_names,
+    classification_dataset_names, 
+    regression_dataset_names)
 import requests
 import warnings
 import subprocess
 import pathlib
 
-dataset_names = classification_dataset_names + regression_dataset_names
 GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
 suffix = '.tsv.gz'
 
@@ -110,6 +111,13 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
         raise ValueError('Dataset not found in PMLB.')
     return dataset_url
 
+def last_commit_message() -> str:
+    """
+    Get commit message from last commit, excluding merge commits
+    """
+    command = "git log --no-merges -1 --pretty=%B".split()
+    message = subprocess.check_output(command, universal_newlines=True)
+    return message
 
 def get_updated_datasets(local_cache_dir='datasets'):
     """Looks at commit and returns a list of datasets that were updated."""
@@ -208,7 +216,6 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     pmlb_stats = pmlb_stats.apply(
             lambda x: pd.to_numeric(x,errors='coerce')).dropna(axis=1,how='all')
 
-
     if dimensions=='all':
         dimensions = list(pmlb_stats.columns)
     else:
@@ -235,3 +242,24 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     dataset_names = all_names[ds.flatten()]
 
     return dataset_names
+
+def get_reviewed_datasets(dataset_names, local_cache_dir = 'datasets/'):
+    reviewed_datasets = []
+
+    for dataset_name in dataset_names:
+        if local_cache_dir != None:
+            meta_path = pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')
+            if meta_path.exists():
+                with open(meta_path, 'r') as f:
+                    header = f.readline()
+        else:
+            meta_url = '{GITHUB_URL}/{DATASET_NAME}/metadata.yaml'.format(
+                GITHUB_URL=GITHUB_URL,
+                DATASET_NAME=dataset_name
+            )
+            header = requests.get(meta_url).text.splitlines()[0] + '\n'
+
+        if header != '# Reviewed by [your name here]\n':
+            reviewed_datasets.append(dataset_name)
+            
+    return sorted(reviewed_datasets)

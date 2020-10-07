@@ -31,8 +31,8 @@ import pathlib
 import yaml
 import pandas as pd
 from collections import Counter
-from .pmlb import fetch_data, dataset_names, get_updated_datasets
-from .dataset_lists import datasets_with_metadata
+from .pmlb import fetch_data, get_updated_datasets, get_reviewed_datasets
+from .dataset_lists import dataset_names
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -126,7 +126,7 @@ def get_dataset_stats(df):
 
 def generate_metadata(df, dataset_name, dataset_stats, overwrite_existing=True,
                          local_cache_dir=None):
-    """Generates desription for a given dataset in its metadata.yaml file in a
+    """Generates description for a given dataset in its metadata.yaml file in a
     dataset local_cache_dir file.
 
     :param dataset_name: str
@@ -212,16 +212,15 @@ features:
         print(err)
 
 def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None,
-                          update_all=False):
+                          write_summary=False):
     """Generates summary stats for a given dataset in its summary_stats.csv
     file in a dataset local_cache_dir file.
-    TODO: link dataset_desribe from PennAI to this for generating stats.
     :param dataset_name: str
         The name of the data set to load from PMLB.
     :param local_cache_dir: str (required)
         The directory on your local machine to store the data files.
         If None, then the local data cache will not be used.
-    :param update_all: bool
+    :param write_summary: bool
         Whether new summary statistics should be written out to directory.
     """
     print('generating summary stats for', dataset_name)
@@ -242,7 +241,7 @@ def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None,
         'task':dataset_stats['yaml_task']
         }, index=[0])
 
-    if update_all:
+    if write_summary:
         assert (local_cache_dir != None)
         stats_df.to_csv(pathlib.Path(f'{local_cache_dir}{dataset_name}'
             '/summary_stats.tsv'), index=False, sep='\t')
@@ -255,11 +254,11 @@ def generate_all_summaries(local_cache_dir='datasets/'):
         frames.append(pd.read_csv(f, sep = '\t'))
     pd.concat(frames).to_csv('pmlb/all_summary_stats.tsv', index=False, sep='\t')
 
-def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=False, 
-                            local_cache_dir=None, update_all=False):
+def update_metadata_summary(dataset_name, reviewed_datasets, overwrite=True, 
+                            local_cache_dir=None, write_summary=False):
     df = fetch_data(dataset_name, local_cache_dir=local_cache_dir, dropna=False)
     dataset_stats = get_dataset_stats(df)
-    if dataset_name not in datasets_with_metadata:
+    if dataset_name not in reviewed_datasets:
         generate_metadata(df, dataset_name, dataset_stats, overwrite, local_cache_dir)
     
     with open(pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')) as f:
@@ -267,7 +266,7 @@ def update_metadata_summary(dataset_name, datasets_with_metadata, overwrite=Fals
 
     dataset_stats['yaml_task'] = meta_dict['task']
 
-    generate_summarystats(dataset_name, dataset_stats, local_cache_dir, update_all)
+    generate_summarystats(dataset_name, dataset_stats, local_cache_dir, write_summary)
 
 def write_readme(dataset, local_cache_dir='datasets/'):
     readme_template = '''\
@@ -286,6 +285,24 @@ def write_readme(dataset, local_cache_dir='datasets/'):
     readme = readme_template.format(dataset=dataset)
     path.write_text(readme)
 
+def datasets_to_update() -> list:
+    """
+    Return datasets to regenerate profiles for 
+    """
+    if '[update_all_datasets]' in last_commit_message():
+        print('"update_all_datasets=true" >> $GITHUB_ENV')
+        return {
+            'changed_datasets': dataset_names,
+            'changed_metadatas': dataset_names
+        }
+    if 'update_all_datasets' in os.environ:
+        return {
+            'changed_datasets': dataset_names,
+            'changed_metadatas': dataset_names
+        }
+    updated_sets = get_updated_datasets()
+    return updated_sets
+
 if __name__ =='__main__':
     # assuming this is run from the repo root directory
     local_dir = 'datasets/'
@@ -294,14 +311,15 @@ if __name__ =='__main__':
     # for d in dataset_names:
     #     print(d, '...')
     #     update_metadata_summary(
-    #         d, datasets_with_metadata,
+    #         d, reviewed_datasets,
     #         overwrite=overwrite,
     #         local_cache_dir=local_dir)
 
     # which datasets have changed for this commit
-    updated_sets = get_updated_datasets()
+    updated_sets = datasets_to_update()
     updated_datasets = updated_sets['changed_datasets']
     updated_metadatas = updated_sets['changed_metadatas']
+    reviewed_datasets = get_reviewed_datasets(dataset_names)
 
     for dataset_name in updated_datasets:
         print(f'Adding readme, metadata and summary stats for {dataset_name}...')
@@ -309,20 +327,19 @@ if __name__ =='__main__':
         write_readme(dataset_name)
         # add metadata and summary_stats
         update_metadata_summary(
-            dataset_name, datasets_with_metadata,
-            overwrite=False,
+            dataset_name, reviewed_datasets,
+            overwrite=True,
             local_cache_dir=local_dir,
-            update_all=True)
+            write_summary=True)
 
     for dataset_name in updated_metadatas:
         print(f'Updating summary stats for {dataset_name}...')
-        datasets_with_metadata.append(dataset_name)
         # update summary_stats from updated metadata
         update_metadata_summary(
-            dataset_name, datasets_with_metadata,
-            overwrite=False,
+            dataset_name, reviewed_datasets,
+            overwrite=True,
             local_cache_dir=local_dir,
-            update_all=True)
+            write_summary=True)
 
     # update summary_stats from updated metadata
     generate_all_summaries(local_cache_dir=local_dir)
