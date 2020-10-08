@@ -8,8 +8,20 @@ TARGET_NAME = 'target'
 protected_feature_names = ['y','Y','yes','Yes','YES','n','N','no','No','NO',
                            'true','True','TRUE','false','False','FALSE',
                            'on','On','ON','off','Off','OFF']
-                           
-def get_type(x, include_binary=False):
+
+def get_feature_type(x, include_binary=False):
+    x.dropna(inplace=True)
+    if not check_if_all_integers(x):
+        return 'continuous'
+    else:
+        if x.nunique() > 10:
+            return 'continuous'
+        if include_binary:
+            if x.nunique() == 2:
+                return 'binary'
+        return 'categorical'
+
+def get_target_type(x, include_binary=False):
     x.dropna(inplace=True)
     if x.dtype=='float64':
         return 'continuous'
@@ -21,6 +33,10 @@ def get_type(x, include_binary=False):
     else:
         raise ValueError("Error getting type")
 
+def check_if_all_integers(x):
+    "check a pandas.Series is made of all integers."
+    return all(float(i).is_integer() for i in x.unique())
+    
 def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None,
                           write_summary=False):
     """Generates summary stats for a given dataset in its summary_stats.csv
@@ -60,9 +76,9 @@ def generate_summarystats(dataset_name, dataset_stats, local_cache_dir=None,
 
 def get_dataset_stats(df):
     feat_names = [col for col in df.columns if col!=TARGET_NAME]
-    types = [get_type(df[col], include_binary=True) for col in feat_names]
+    types = [get_feature_type(df[col], include_binary=True) for col in feat_names]
     feat = count_features_type(types, include_binary=True)
-    endpoint = get_type(df[TARGET_NAME])
+    endpoint = get_target_type(df[TARGET_NAME])
     mse = compute_imbalance(df[TARGET_NAME].tolist())
     task = 'regression' if endpoint == 'continuous' else 'classification'
 
