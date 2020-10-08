@@ -54,7 +54,7 @@ def update_metadata_summary(dataset_name, reviewed_datasets, overwrite=True,
     dataset_stats = get_dataset_stats(df)
     if dataset_name not in reviewed_datasets:
         generate_metadata(df, dataset_name, dataset_stats, overwrite, local_cache_dir)
-    
+
     with open(pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')) as f:
         meta_dict = yaml.load(f, Loader=yaml.FullLoader)
 
