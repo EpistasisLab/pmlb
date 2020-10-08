@@ -258,7 +258,7 @@ def get_reviewed_datasets(dataset_names, local_cache_dir = 'datasets/'):
             
     return sorted(reviewed_datasets)
 
-def filter_datasets(obs_min = None, obs_max = None, feat_min = None, feat_max = None, class_min = None, class_max = None, endpt = None, max_imbalance = None, task = None):
+def select_datasets(obs_min = None, obs_max = None, feat_min = None, feat_max = None, class_min = None, class_max = None, endpt = None, max_imbalance = None, task = None):
      """Filters existing datasets by given parameters, and returns a list of their names.
      
      Parameters
@@ -289,7 +289,8 @@ def filter_datasets(obs_min = None, obs_max = None, feat_min = None, feat_max = 
      
      """
 
-     tempdf = pd.read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/master/datasets/all_summary_stats.csv')
+    path = pathlib.Path(__file__).parent / "all_summary_stats.tsv"
+    tempdf = pd.read_csv(path, sep = '\t')
      if obs_min is not None:
          tempdf = tempdf.loc[tempdf['#instances'] >= obs_min]
      if obs_max is not None:
@@ -309,4 +310,3 @@ def filter_datasets(obs_min = None, obs_max = None, feat_min = None, feat_max = 
      if task is not None:
          tempdf = tempdf.loc[tempdf['problem_type'] == task]
      return list(tempdf['dataset'].values)
-
