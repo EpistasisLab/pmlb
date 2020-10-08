@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-1199_BNG_echoMonths	17496	9	0	0	9	continuous	17489.0	2.2859749722006477e-08	regression
+1199_BNG_echoMonths	17496	9	3	0	6	continuous	17489.0	2.2859749722006477e-08	regression

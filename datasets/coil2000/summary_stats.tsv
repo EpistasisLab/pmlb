@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-coil2000	9822	85	5	80	0	categorical	2.0	0.7755902757953309	classification
+coil2000	9822	85	5	79	1	categorical	2.0	0.7755902757953309	classification

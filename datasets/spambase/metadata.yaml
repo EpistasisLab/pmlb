@@ -288,12 +288,12 @@ features:
     code:
     transform:
   - name: 55
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 56
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

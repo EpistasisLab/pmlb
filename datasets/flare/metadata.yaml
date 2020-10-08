@@ -33,12 +33,12 @@ features:
     code:
     transform:
   - name: Evolution
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Previous 24 hour code
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

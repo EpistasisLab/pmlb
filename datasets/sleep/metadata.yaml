@@ -28,7 +28,7 @@ features:
     code:
     transform:
   - name: V3
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

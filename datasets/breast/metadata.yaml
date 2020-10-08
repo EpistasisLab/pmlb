@@ -18,47 +18,47 @@ features:
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: Clump Thickness
-    type: continuous
-    description:
-    code:
-    transform:
-  - name: Uniformity of Cell Size
-    type: continuous
-    description:
-    code:
-    transform:
-  - name: Uniformity of Cell Shape
-    type: continuous
-    description:
-    code:
-    transform:
-  - name: Marginal Adhesion
-    type: continuous
-    description:
-    code:
-    transform:
-  - name: Single Epithelial Cell Size
-    type: continuous
-    description:
-    code:
-    transform:
-  - name: Bare Nuclei
     type: categorical
     description:
     code:
     transform:
-  - name: Bland Chromatin
+  - name: Uniformity of Cell Size
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Uniformity of Cell Shape
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Marginal Adhesion
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Single Epithelial Cell Size
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Bare Nuclei
     type: continuous
+    description:
+    code:
+    transform:
+  - name: Bland Chromatin
+    type: categorical
     description:
     code:
     transform:
   - name: Normal Nucleoli
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Mitoses
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

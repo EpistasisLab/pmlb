@@ -18,57 +18,57 @@ features:
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: gain_ratio_1
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_2
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_3
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_4
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_5
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_6
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_7
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_8
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_9
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_10
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: gain_ratio_11
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

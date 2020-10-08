@@ -33,7 +33,7 @@ features:
     code:
     transform:
   - name: A5
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

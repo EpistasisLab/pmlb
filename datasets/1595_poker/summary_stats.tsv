@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-1595_poker	1025010	10	0	0	10	continuous	10.0	0.36937358387217545	regression
+1595_poker	1025010	10	0	5	5	continuous	10.0	0.36937358387217545	regression
