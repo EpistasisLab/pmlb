@@ -13,52 +13,52 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: x1
-    type: continuous
+    type: binary
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: x2
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x3
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x4
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x5
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x6
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x7
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x8
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x9
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: x10
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

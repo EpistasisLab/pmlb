@@ -16,17 +16,17 @@ target:
   code: the characters 0-9 are represented by 0-9 respectively
 features:
   - name: att1
-    type: continuous
+    type: categorical
     description: one of six 6 morphological features of images 
     code: None
     transform: None
   - name: att2
-    type: continuous
+    type: categorical
     description: one of six 6 morphological features of images
     code: None
     transform: None
   - name: att3
-    type: continuous
+    type: categorical
     description: one of six 6 morphological features of images
     code: None
     transform: None

@@ -1,94 +1,96 @@
-# Reviewed by [your name here]
+# Reviewed by John Gregg
 dataset: letter
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: Features include 16 statistics that describe intentionally warped images of typed capital letters. The images are not included.
+source: https://archive.ics.uci.edu/ml/datasets/letter+recognition
+publication: P. W. Frey and D. J. Slate. "Letter Recognition Using Holland-style Adaptive Classifiers". (Machine Learning Vol 6 #2 March 91)
 task: classification
 keywords:
-  -
-  -
+  - engineered features
+  - alphabet
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: the identity of the letter 
+  code: A-Z = 1-26 respectively 
 features:
   - name: x-box
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: The horizontal position, counting pixels from the left edge of the image, of the center 
+                 of the smallest rectangular box that can be drawn with all "on" pixels inside the box.
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: y-box
     type: continuous
-    description:
-    code:
-    transform:
+    description: The vertical position, counting pixels from the bottom, of the above box.
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: width
     type: continuous
-    description:
-    code:
-    transform:
+    description: width of box
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: high
     type: continuous
-    description:
-    code:
-    transform:
+    description: height of box
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: onpix
     type: continuous
-    description:
-    code:
-    transform:
+    description: total # on pixels
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: x-bar
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean x of on pixels in box
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: y-bar
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean y of on pixels in box
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: x2bar
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean x variance
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: y2bar
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean y variance
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: xybar
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean x y correlation
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: x2ybr
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean of x * x * y 
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: xy2br
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean of x * y * y
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: x-ege
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean edge count left to right
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: xegvy
     type: continuous
-    description:
-    code:
-    transform:
+    description: correlation of x-ege with y
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: y-ege
     type: continuous
-    description:
-    code:
-    transform:
+    description: mean count of edges (an "on" pixel immediately to the right of 
+                 either an "off" pixel or the image boundary) bottom to top
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]
   - name: yegvx
     type: continuous
-    description:
-    code:
-    transform:
+    description: correlation of y-ege with x
+    code: None
+    transform: all features were normalized to integers in the range of [0,15]

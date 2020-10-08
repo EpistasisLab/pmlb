@@ -13,22 +13,22 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: f1
-    type: continuous
+    type: categorical
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: f2
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f3
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f4
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -58,17 +58,17 @@ features:
     code:
     transform:
   - name: f10
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f11
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f12
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -178,77 +178,77 @@ features:
     code:
     transform:
   - name: f34
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f35
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f36
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f37
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f38
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f39
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f40
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f41
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f42
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f43
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f44
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f45
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f46
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f47
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: f48
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

@@ -188,77 +188,77 @@ features:
     code:
     transform:
   - name: 36
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 37
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 38
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 39
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 40
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 41
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 42
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 43
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 44
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 45
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 46
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 47
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 48
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 49
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 50
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -318,102 +318,102 @@ features:
     code:
     transform:
   - name: 62
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 63
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 64
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 65
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 66
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 67
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 68
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 69
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 70
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 71
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 72
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 73
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 74
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 75
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 76
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 77
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 78
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 79
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 80
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 81
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -453,112 +453,112 @@ features:
     code:
     transform:
   - name: 89
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 90
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 91
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 92
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 93
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 94
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 95
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 96
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 97
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 98
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 99
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 100
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 101
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 102
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 103
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 104
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 105
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 106
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 107
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 108
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 109
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 110
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -588,122 +588,122 @@ features:
     code:
     transform:
   - name: 116
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 117
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 118
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 119
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 120
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 121
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 122
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 123
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 124
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 125
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 126
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 127
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 128
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 129
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 130
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 131
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 132
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 133
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 134
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 135
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 136
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 137
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 138
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 139
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -723,127 +723,127 @@ features:
     code:
     transform:
   - name: 143
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 144
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 145
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 146
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 147
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 148
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 149
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 150
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 151
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 152
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 153
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 154
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 155
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 156
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 157
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 158
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 159
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 160
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 161
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 162
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 163
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 164
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 165
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 166
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 167
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -863,132 +863,132 @@ features:
     code:
     transform:
   - name: 171
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 172
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 173
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 174
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 175
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 176
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 177
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 178
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 179
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 180
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 181
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 182
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 183
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 184
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 185
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 186
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 187
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 188
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 189
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 190
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 191
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 192
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 193
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 194
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 195
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 196
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -998,137 +998,137 @@ features:
     code:
     transform:
   - name: 198
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 199
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 200
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 201
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 202
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 203
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 204
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 205
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 206
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 207
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 208
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 209
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 210
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 211
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 212
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 213
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 214
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 215
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 216
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 217
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 218
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 219
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 220
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 221
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 222
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 223
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 224
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -1138,137 +1138,137 @@ features:
     code:
     transform:
   - name: 226
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 227
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 228
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 229
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 230
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 231
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 232
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 233
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 234
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 235
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 236
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 237
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 238
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 239
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 240
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 241
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 242
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 243
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 244
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 245
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 246
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 247
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 248
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 249
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 250
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 251
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 252
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -1278,137 +1278,137 @@ features:
     code:
     transform:
   - name: 254
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 255
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 256
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 257
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 258
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 259
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 260
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 261
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 262
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 263
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 264
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 265
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 266
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 267
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 268
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 269
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 270
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 271
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 272
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 273
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 274
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 275
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 276
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 277
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 278
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 279
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 280
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -1418,137 +1418,137 @@ features:
     code:
     transform:
   - name: 282
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 283
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 284
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 285
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 286
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 287
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 288
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 289
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 290
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 291
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 292
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 293
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 294
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 295
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 296
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 297
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 298
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 299
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 300
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 301
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 302
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 303
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 304
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 305
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 306
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 307
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 308
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -1558,137 +1558,137 @@ features:
     code:
     transform:
   - name: 310
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 311
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 312
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 313
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 314
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 315
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 316
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 317
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 318
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 319
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 320
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 321
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 322
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 323
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 324
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 325
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 326
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 327
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 328
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 329
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 330
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 331
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 332
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 333
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 334
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 335
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 336
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -1698,132 +1698,132 @@ features:
     code:
     transform:
   - name: 338
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 339
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 340
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 341
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 342
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 343
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 344
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 345
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 346
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 347
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 348
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 349
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 350
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 351
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 352
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 353
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 354
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 355
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 356
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 357
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 358
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 359
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 360
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 361
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 362
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 363
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -1838,132 +1838,132 @@ features:
     code:
     transform:
   - name: 366
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 367
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 368
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 369
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 370
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 371
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 372
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 373
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 374
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 375
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 376
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 377
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 378
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 379
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 380
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 381
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 382
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 383
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 384
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 385
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 386
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 387
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 388
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 389
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 390
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 391
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -1983,127 +1983,127 @@ features:
     code:
     transform:
   - name: 395
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 396
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 397
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 398
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 399
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 400
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 401
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 402
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 403
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 404
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 405
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 406
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 407
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 408
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 409
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 410
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 411
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 412
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 413
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 414
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 415
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 416
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 417
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 418
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 419
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -2123,127 +2123,127 @@ features:
     code:
     transform:
   - name: 423
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 424
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 425
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 426
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 427
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 428
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 429
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 430
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 431
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 432
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 433
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 434
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 435
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 436
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 437
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 438
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 439
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 440
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 441
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 442
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 443
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 444
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 445
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 446
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 447
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -2263,132 +2263,132 @@ features:
     code:
     transform:
   - name: 451
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 452
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 453
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 454
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 455
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 456
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 457
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 458
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 459
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 460
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 461
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 462
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 463
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 464
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 465
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 466
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 467
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 468
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 469
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 470
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 471
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 472
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 473
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 474
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 475
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 476
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -2403,132 +2403,132 @@ features:
     code:
     transform:
   - name: 479
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 480
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 481
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 482
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 483
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 484
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 485
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 486
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 487
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 488
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 489
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 490
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 491
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 492
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 493
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 494
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 495
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 496
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 497
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 498
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 499
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 500
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 501
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 502
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 503
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 504
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -2543,127 +2543,127 @@ features:
     code:
     transform:
   - name: 507
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 508
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 509
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 510
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 511
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 512
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 513
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 514
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 515
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 516
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 517
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 518
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 519
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 520
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 521
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 522
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 523
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 524
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 525
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 526
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 527
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 528
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 529
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 530
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 531
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -2678,132 +2678,132 @@ features:
     code:
     transform:
   - name: 534
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 535
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 536
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 537
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 538
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 539
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 540
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 541
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 542
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 543
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 544
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 545
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 546
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 547
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 548
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 549
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 550
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 551
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 552
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 553
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 554
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 555
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 556
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 557
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 558
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 559
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -2818,132 +2818,132 @@ features:
     code:
     transform:
   - name: 562
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 563
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 564
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 565
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 566
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 567
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 568
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 569
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 570
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 571
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 572
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 573
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 574
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 575
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 576
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 577
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 578
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 579
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 580
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 581
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 582
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 583
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 584
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 585
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 586
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 587
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -2963,127 +2963,127 @@ features:
     code:
     transform:
   - name: 591
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 592
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 593
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 594
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 595
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 596
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 597
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 598
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 599
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 600
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 601
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 602
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 603
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 604
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 605
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 606
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 607
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 608
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 609
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 610
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 611
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 612
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 613
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 614
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 615
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -3103,127 +3103,127 @@ features:
     code:
     transform:
   - name: 619
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 620
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 621
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 622
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 623
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 624
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 625
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 626
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 627
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 628
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 629
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 630
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 631
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 632
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 633
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 634
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 635
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 636
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 637
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 638
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 639
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 640
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 641
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 642
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 643
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -3243,122 +3243,122 @@ features:
     code:
     transform:
   - name: 647
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 648
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 649
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 650
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 651
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 652
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 653
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 654
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 655
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 656
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 657
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 658
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 659
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 660
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 661
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 662
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 663
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 664
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 665
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 666
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 667
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 668
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 669
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 670
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -3383,122 +3383,122 @@ features:
     code:
     transform:
   - name: 675
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 676
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 677
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 678
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 679
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 680
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 681
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 682
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 683
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 684
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 685
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 686
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 687
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 688
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 689
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 690
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 691
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 692
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 693
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 694
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 695
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 696
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 697
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 698
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -3528,112 +3528,112 @@ features:
     code:
     transform:
   - name: 704
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 705
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 706
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 707
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 708
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 709
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 710
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 711
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 712
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 713
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 714
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 715
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 716
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 717
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 718
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 719
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 720
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 721
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 722
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 723
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 724
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 725
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -3673,102 +3673,102 @@ features:
     code:
     transform:
   - name: 733
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 734
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 735
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 736
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 737
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 738
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 739
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 740
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 741
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 742
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 743
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 744
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 745
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 746
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 747
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 748
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 749
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 750
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 751
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 752
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -3823,82 +3823,82 @@ features:
     code:
     transform:
   - name: 763
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 764
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 765
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 766
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 767
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 768
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 769
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 770
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 771
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 772
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 773
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 774
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 775
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 776
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 777
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: 778
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

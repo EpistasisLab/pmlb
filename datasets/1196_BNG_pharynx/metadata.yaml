@@ -13,22 +13,22 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: Inst
-    type: continuous
+    type: categorical
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: sex
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: Treatment
-    type: continuous
+    type: binary
     description:
     code:
     transform:
   - name: Grade
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -38,27 +38,27 @@ features:
     code:
     transform:
   - name: Condition
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Site
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: T
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: "N"
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
   - name: Status
-    type: continuous
+    type: binary
     description:
     code:
     transform:

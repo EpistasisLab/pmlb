@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-poker	1025010	10	0	10	0	categorical	10.0	0.3693735838721754	classification
+poker	1025010	10	0	5	5	categorical	10.0	0.3693735838721754	classification

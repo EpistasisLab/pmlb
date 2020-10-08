@@ -23,7 +23,7 @@ features:
     code:
     transform:
   - name: also
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -93,7 +93,7 @@ features:
     code:
     transform:
   - name: even
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -283,7 +283,7 @@ features:
     code:
     transform:
   - name: things
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

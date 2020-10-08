@@ -23,7 +23,7 @@ features:
     code:
     transform:
   - name: region-pixel-count
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

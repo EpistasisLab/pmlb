@@ -118,7 +118,7 @@ features:
     code:
     transform:
   - name: io_namei
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -208,7 +208,7 @@ features:
     code:
     transform:
   - name: net_frac_busy
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

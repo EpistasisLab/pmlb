@@ -78,27 +78,27 @@ features:
     code:
     transform:
   - name: BILIRUBIN
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: ALK PHOSPHATE
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: SGOT
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: ALBUMIN
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
   - name: PROTIME
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

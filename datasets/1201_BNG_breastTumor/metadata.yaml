@@ -33,7 +33,7 @@ features:
     code:
     transform:
   - name: deg-malig
-    type: continuous
+    type: categorical
     description:
     code:
     transform:

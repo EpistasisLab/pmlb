@@ -48,7 +48,7 @@ features:
     code:
     transform:
   - name: installment_commitment
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -63,7 +63,7 @@ features:
     code:
     transform:
   - name: residence_since
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -88,7 +88,7 @@ features:
     code:
     transform:
   - name: existing_credits
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -98,7 +98,7 @@ features:
     code:
     transform:
   - name: num_dependents
-    type: continuous
+    type: binary
     description:
     code:
     transform:

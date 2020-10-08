@@ -13,7 +13,7 @@ target:
   code: None yet. See our contributing guide to help us add one.
 features:
   - name: age
-    type: categorical
+    type: continuous
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
@@ -98,7 +98,7 @@ features:
     code:
     transform:
   - name: TSH
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -108,7 +108,7 @@ features:
     code:
     transform:
   - name: T3
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -118,7 +118,7 @@ features:
     code:
     transform:
   - name: TT4
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -128,7 +128,7 @@ features:
     code:
     transform:
   - name: T4U
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
@@ -138,7 +138,7 @@ features:
     code:
     transform:
   - name: FTI
-    type: categorical
+    type: continuous
     description:
     code:
     transform:

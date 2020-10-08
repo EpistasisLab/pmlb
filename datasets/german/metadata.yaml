@@ -48,7 +48,7 @@ features:
     code:
     transform:
   - name: Installment-rate
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -63,7 +63,7 @@ features:
     code:
     transform:
   - name: Residence-time
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -88,7 +88,7 @@ features:
     code:
     transform:
   - name: Existing-credits
-    type: continuous
+    type: categorical
     description:
     code:
     transform:
@@ -98,7 +98,7 @@ features:
     code:
     transform:
   - name: Liable-people
-    type: continuous
+    type: binary
     description:
     code:
     transform:

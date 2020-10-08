@@ -23,7 +23,7 @@ features:
     code:
     transform:
   - name: tumor-size
-    type: categorical
+    type: continuous
     description:
     code:
     transform:
