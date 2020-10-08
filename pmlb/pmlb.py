@@ -257,3 +257,56 @@ def get_reviewed_datasets(dataset_names, local_cache_dir = 'datasets/'):
             reviewed_datasets.append(dataset_name)
             
     return sorted(reviewed_datasets)
+
+def filter_datasets(obs_min = None, obs_max = None, feat_min = None, feat_max = None, class_min = None, class_max = None, endpt = None, max_imbalance = None, task = None):
+     """Filters existing datasets by given parameters, and returns a list of their names.
+     
+     Parameters
+     ----------
+     obs_min: int (default: None)
+         The minimum acceptable number of observations/instances in the dataset
+     obs_Max: int (default: None)
+         The maximum acceptable number of observations/instances in the dataset
+     feat_min: int (default: None)
+         The minimum acceptable number of features in the dataset
+     feat_max: int (default: None)
+         The maximum acceptable number of features in the dataset
+     class_min: int (default: None)
+         The minimum acceptable number of classes in the dataset
+     class_max: int (default: None)
+         The maximum acceptable number of classes in the dataset
+     max_imbalance: float (default: None)
+         Maximum acceptable imbalance value for the dataset
+     endpt: str (default: None)
+         Whether the dataset endpoint type should be discrete, continuous, categorical, or binary
+     task: str (default: None)
+         Whether the dataset is suited for classification or regression problems
+     Returns
+     ----------
+     list (str): 
+         list of names of datasets within filters. Will return an empty list if no datasets match.
+         
+     
+     """
+
+     tempdf = pd.read_csv('https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/master/datasets/all_summary_stats.csv')
+     if obs_min is not None:
+         tempdf = tempdf.loc[tempdf['#instances'] >= obs_min]
+     if obs_max is not None:
+         tempdf = tempdf.loc[tempdf['#instances'] <= obs_max]
+     if feat_Min is not None:
+         tempdf = tempdf.loc[tempdf['#features'] >= feat_min]
+     if feat_Max is not None:
+         tempdf = tempdf.loc[tempdf['#features'] <= feat_max]
+     if class_min is not None:
+         tempdf = tempdf.loc[tempdf['#Classes'] >= class_min]
+     if class_max is not None:
+         tempdf = tempdf.loc[tempdf['#Classes'] <= class_max]
+     if max_imbalance is not None:
+         tempdf = tempdf.loc[tempdf['Imbalance_metric'] < max_imbalance]
+     if endpt is not None:
+         tempdf = tempdf.loc[tempdf['Endpoint_type'] == endpt]
+     if task is not None:
+         tempdf = tempdf.loc[tempdf['problem_type'] == task]
+     return list(tempdf['dataset'].values)
+
