@@ -291,22 +291,22 @@ def select_datasets(obs_min = None, obs_max = None, feat_min = None, feat_max = 
 
     path = pathlib.Path(__file__).parent / "all_summary_stats.tsv"
     tempdf = pd.read_csv(path, sep = '\t')
-     if obs_min is not None:
-         tempdf = tempdf.loc[tempdf['#instances'] >= obs_min]
-     if obs_max is not None:
-         tempdf = tempdf.loc[tempdf['#instances'] <= obs_max]
-     if feat_Min is not None:
-         tempdf = tempdf.loc[tempdf['#features'] >= feat_min]
-     if feat_Max is not None:
-         tempdf = tempdf.loc[tempdf['#features'] <= feat_max]
-     if class_min is not None:
-         tempdf = tempdf.loc[tempdf['#Classes'] >= class_min]
-     if class_max is not None:
-         tempdf = tempdf.loc[tempdf['#Classes'] <= class_max]
-     if max_imbalance is not None:
-         tempdf = tempdf.loc[tempdf['Imbalance_metric'] < max_imbalance]
-     if endpt is not None:
-         tempdf = tempdf.loc[tempdf['Endpoint_type'] == endpt]
-     if task is not None:
-         tempdf = tempdf.loc[tempdf['problem_type'] == task]
-     return list(tempdf['dataset'].values)
+    if obs_min is not None:
+        tempdf = tempdf.loc[tempdf['n_instances'] >= obs_min]
+    if obs_max is not None:
+        tempdf = tempdf.loc[tempdf['n_instances'] <= obs_max]
+    if feat_min is not None:
+        tempdf = tempdf.loc[tempdf['n_features'] >= feat_min]
+    if feat_max is not None:
+        tempdf = tempdf.loc[tempdf['n_features'] <= feat_max]
+    if class_min is not None:
+        tempdf = tempdf.loc[tempdf['n_classes'] >= class_min]
+    if class_max is not None:
+        tempdf = tempdf.loc[tempdf['n_classes'] <= class_max]
+    if max_imbalance is not None:
+        tempdf = tempdf.loc[tempdf['imbalance'] < max_imbalance]
+    if endpt is not None:
+        tempdf = tempdf.loc[tempdf['endpoint_type'] == endpt]
+    if task is not None:
+        tempdf = tempdf.loc[tempdf['task'] == task]
+    return list(tempdf['dataset'].values)
