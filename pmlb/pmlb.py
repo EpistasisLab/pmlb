@@ -219,7 +219,7 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     dataset_stats_tmp = get_dataset_stats(df)
     dataset_stats_tmp['yaml_task'] = task
     dataset_stats = generate_summarystats('dataset', dataset_stats_tmp, 
-            update_all=False)
+            write_summary=False)
     dataset_stats = dataset_stats[dimensions]
 
 
