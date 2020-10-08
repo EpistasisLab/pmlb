@@ -1,22 +1,27 @@
-# Reviewed by [your name here]
+# Reviewed by John Gregg
 dataset: mfeat_pixel
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  240 pixel averages in 2 x 3 windows of images of characters 0-9.
+  Each feature below is one of 240 pixel averages in 2 x 3 windows of an image.
+source: https://archive.ics.uci.edu/ml/datasets/Multiple+Features
+publication: >
+  M. van Breukelen, R.P.W. Duin, D.M.J. Tax, J.E. den Hartog
+  'Handwritten digit recognition by combined classifiers'
+  'Kybernetika, vol. 34, no. 4, 1998, 381-386.'
 task: classification
 keywords:
-  -
-  -
+  - character recognition
+  - feature engineering
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: the characters 0-9
+  code: the characters 0-9 are represented by 0-9 respectively
 features:
   - name: attribute_0
     type: categorical
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: 
+    code: 
+    transform:
   - name: attribute_1
     type: categorical
     description:

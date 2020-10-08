@@ -1,104 +1,109 @@
-# Reviewed by [your name here]
+# Reviewed by John Gregg
 dataset: lymphography
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: used to predict correct diagnosis from categorical anatomical features
+source: https://archive.ics.uci.edu/ml/datasets/Lymphography
+publication: >
+  Cestnik, G., Konenenko, I, & Bratko, I 
+  'A Knowledge-Elicitation Tool for Sophisticated Users'
+  'In I.Bratko & N.Lavrac (Eds.) Progress in Machine Learning, 31-45, Sigma Press.'
 task: classification
 keywords:
-  -
-  -
+  - biomedical 
+  - cancer
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: outcome (normal find, metastases, malign lymph, fibrosis)
+  code: All dataset values have been entered as numeric values corresponding to 
+        their index in the list of possible categories given in their descriptions.
+        example for target (normal find = 1, metastases = 2, malign lymph = 3, fibrosis = 4)
 features:
   - name: Lymphatics
     type: categorical
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: normal, arched, deformed, displaced
+    code: target code description
+    transform: None
   - name: Block_of_affere
     type: binary
-    description:
-    code:
-    transform:
+    description: block of affere (no, yes)
+    code: refer to target code description
+    transform: None
   - name: Bl_of_lymph_c
     type: binary
-    description:
-    code:
-    transform:
+    description: bl. of lymph. c (no, yes)
+    code: refer to target code description
+    transform: None
   - name: Bl_of_lymph_s
     type: binary
-    description:
-    code:
-    transform:
+    description: bl. of lymph. s (no, yes)
+    code: refer to target code description
+    transform: None
   - name: By_pass
     type: binary
-    description:
-    code:
-    transform:
+    description: by pass (no, yes)
+    code: refer to target code description
+    transform: None
   - name: Extravasates
     type: binary
-    description:
-    code:
-    transform:
+    description: extravasates (no, yes)
+    code: refer to target code description
+    transform: None
   - name: Regeneration_of
     type: binary
-    description:
-    code:
-    transform:
+    description: regeneration of (no, yes)
+    code: refer to target code description
+    transform: None
   - name: Early_uptake_in
     type: binary
-    description:
-    code:
-    transform:
+    description: early uptake in (no, yes)
+    code: refer to target code description
+    transform: None
   - name: Lym_nodes_dimin
     type: categorical
-    description:
-    code:
-    transform:
+    description: lym.nodes dimin (0-3)
+    code: refer to target code description
+    transform: None
   - name: Lym_nodes_enlar
     type: categorical
-    description:
-    code:
-    transform:
+    description: lym.nodes enlar (1-4)
+    code: refer to target code description
+    transform: None
   - name: Changes_in_lym
     type: categorical
-    description:
-    code:
-    transform:
+    description: changes in lym. (bean, oval, round)
+    code: refer to target code description
+    transform: None
   - name: Defect_in_node
     type: categorical
-    description:
-    code:
-    transform:
+    description: defect in node (no, lacunar, lac. marginal, lac. central)
+    code: refer to target code description
+    transform: None
   - name: Changes_in_node
     type: categorical
-    description:
-    code:
-    transform:
+    description: changes in node (no, lacunar, lac. margin, lac. central)
+    code: refer to target code description
+    transform: None
   - name: Changes_in_stru
     type: categorical
-    description:
-    code:
-    transform:
+    description: changes in stru (no, grainy, drop-like, coarse, diluted, reticular, stripped, faint)
+    code: refer to target code description
+    transform: None
   - name: Special_forms
     type: categorical
-    description:
-    code:
-    transform:
+    description: special forms (no, chalices, vesicles)
+    code: refer to target code description
+    transform: None
   - name: Dislocation_of
     type: binary
-    description:
-    code:
-    transform:
+    description: dislocation of (no, yes)
+    code: refer to target code description
+    transform: None
   - name: Exclusion_of_no
     type: binary
-    description:
-    code:
-    transform:
+    description: exclusion of no (no, yes)
+    code: refer to target code description
+    transform: None
   - name: No_of_nodes_in
     type: categorical
-    description:
-    code:
-    transform:
+    description:  no. of nodes in (0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, >=70)
+    code: refer to target code description
+    transform: None
