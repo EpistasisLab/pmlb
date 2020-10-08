@@ -36,7 +36,7 @@ from .pmlb import fetch_data, get_updated_datasets, get_reviewed_datasets
 from .support_funcs import (
     generate_summarystats, get_dataset_stats,
     generate_all_summaries, write_readme,
-    last_commit_message
+    last_commit_message, generate_metadata
 )
 from .dataset_lists import dataset_names
 
