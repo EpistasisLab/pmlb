@@ -259,35 +259,35 @@ def get_reviewed_datasets(dataset_names, local_cache_dir = 'datasets/'):
     return sorted(reviewed_datasets)
 
 def select_datasets(obs_min = None, obs_max = None, feat_min = None, feat_max = None, class_min = None, class_max = None, endpt = None, max_imbalance = None, task = None):
-     """Filters existing datasets by given parameters, and returns a list of their names.
-     
-     Parameters
-     ----------
-     obs_min: int (default: None)
-         The minimum acceptable number of observations/instances in the dataset
-     obs_Max: int (default: None)
-         The maximum acceptable number of observations/instances in the dataset
-     feat_min: int (default: None)
-         The minimum acceptable number of features in the dataset
-     feat_max: int (default: None)
-         The maximum acceptable number of features in the dataset
-     class_min: int (default: None)
-         The minimum acceptable number of classes in the dataset
-     class_max: int (default: None)
-         The maximum acceptable number of classes in the dataset
-     max_imbalance: float (default: None)
-         Maximum acceptable imbalance value for the dataset
-     endpt: str (default: None)
-         Whether the dataset endpoint type should be discrete, continuous, categorical, or binary
-     task: str (default: None)
-         Whether the dataset is suited for classification or regression problems
-     Returns
-     ----------
-     list (str): 
-         list of names of datasets within filters. Will return an empty list if no datasets match.
-         
-     
-     """
+    """Filters existing datasets by given parameters, and returns a list of their names.
+
+    Parameters
+    ----------
+    obs_min: int (default: None)
+        The minimum acceptable number of observations/instances in the dataset
+    obs_Max: int (default: None)
+        The maximum acceptable number of observations/instances in the dataset
+    feat_min: int (default: None)
+        The minimum acceptable number of features in the dataset
+    feat_max: int (default: None)
+        The maximum acceptable number of features in the dataset
+    class_min: int (default: None)
+        The minimum acceptable number of classes in the dataset
+    class_max: int (default: None)
+        The maximum acceptable number of classes in the dataset
+    max_imbalance: float (default: None)
+        Maximum acceptable imbalance value for the dataset
+    endpt: str (default: None)
+        Whether the dataset endpoint type should be discrete, continuous, categorical, or binary
+    task: str (default: None)
+        Whether the dataset is suited for classification or regression problems
+    Returns
+    ----------
+    list (str): 
+        list of names of datasets within filters. Will return an empty list if no datasets match.
+
+
+    """
 
     path = pathlib.Path(__file__).parent / "all_summary_stats.tsv"
     tempdf = pd.read_csv(path, sep = '\t')
