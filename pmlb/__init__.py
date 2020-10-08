@@ -28,7 +28,8 @@ from .pmlb import (
     fetch_data, 
     get_updated_datasets, 
     nearest_datasets,
-    get_reviewed_datasets
+    get_reviewed_datasets,
+    select_datasets
 )
 from .dataset_lists import (
     dataset_names,
