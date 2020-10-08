@@ -241,7 +241,7 @@ page_blocks	5473	10	0	0	10	categorical	5.0	0.7627104291422278	classification
 parity5	32	5	5	0	0	categorical	2.0	0.0	classification
 parity5+5	1124	10	10	0	0	categorical	2.0	7.915299958207265e-05	classification
 pendigits	10992	16	0	0	16	categorical	10.0	0.0001780697519917151	classification
-penguins	333	7	0	2	5	categorical	3.0	0.04244785325866406	classification
+penguins	344	7	0	2	5	categorical	3.0	0.04637641968631693	classification
 phoneme	5404	5	0	0	5	categorical	2.0	0.1705916225117124	classification
 pima	768	8	0	0	8	categorical	2.0	0.09125434027777776	classification
 poker	1025010	10	0	10	0	categorical	10.0	0.3693735838721754	classification
