@@ -25,14 +25,24 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import pandas as pd
 import os
-from .dataset_lists import (classification_dataset_names, 
-        regression_dataset_names)
+from .dataset_lists import (
+    dataset_names,
+    classification_dataset_names, 
+    regression_dataset_names)
 import requests
 import warnings
 import subprocess
 import pathlib
 
-dataset_names = classification_dataset_names + regression_dataset_names
+from sklearn.neighbors import NearestNeighbors
+from sklearn.preprocessing import StandardScaler
+from .support_funcs import (
+    generate_summarystats, 
+    get_dataset_stats,
+    last_commit_message
+)
+import numpy as np
+
 GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
 suffix = '.tsv.gz'
 
@@ -110,7 +120,6 @@ def get_dataset_url(GITHUB_URL, dataset_name, suffix):
         raise ValueError('Dataset not found in PMLB.')
     return dataset_url
 
-
 def get_updated_datasets(local_cache_dir='datasets'):
     """Looks at commit and returns a list of datasets that were updated."""
     cmd = 'git diff --name-only HEAD HEAD~1'
@@ -138,13 +147,6 @@ def get_updated_datasets(local_cache_dir='datasets'):
     )
     return {'changed_datasets': changed_datasets,
             'changed_metadatas': changed_metadatas}
-
-from sklearn.neighbors import NearestNeighbors
-from sklearn.preprocessing import StandardScaler
-from .update_dataset_files import generate_summarystats, get_dataset_stats
-from pathlib import Path
-import numpy as np
-
 
 def nearest_datasets(X, y=None, task='classification', n=1, 
         dimensions=['n_instances', 'n_features']):
@@ -199,7 +201,7 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     """
 
     # load pmlb summary stats
-    path = Path(__file__).parent / "all_summary_stats.tsv"
+    path = pathlib.Path(__file__).parent / "all_summary_stats.tsv"
     pmlb_stats = pd.read_csv(path, sep = '\t')
     # restrict to same task
     pmlb_stats = pmlb_stats.loc[pmlb_stats.task==task]
@@ -207,7 +209,6 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     # restrict to floating point data in stats
     pmlb_stats = pmlb_stats.apply(
             lambda x: pd.to_numeric(x,errors='coerce')).dropna(axis=1,how='all')
-
 
     if dimensions=='all':
         dimensions = list(pmlb_stats.columns)
@@ -218,7 +219,7 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     dataset_stats_tmp = get_dataset_stats(df)
     dataset_stats_tmp['yaml_task'] = task
     dataset_stats = generate_summarystats('dataset', dataset_stats_tmp, 
-            update_all=False)
+            write_summary=False)
     dataset_stats = dataset_stats[dimensions]
 
 
@@ -235,3 +236,24 @@ def fetch_nearest_dataset_names(df, task, n, dimensions):
     dataset_names = all_names[ds.flatten()]
 
     return dataset_names
+
+def get_reviewed_datasets(dataset_names, local_cache_dir = 'datasets/'):
+    reviewed_datasets = []
+
+    for dataset_name in dataset_names:
+        if local_cache_dir != None:
+            meta_path = pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')
+            if meta_path.exists():
+                with open(meta_path, 'r') as f:
+                    header = f.readline()
+        else:
+            meta_url = '{GITHUB_URL}/{DATASET_NAME}/metadata.yaml'.format(
+                GITHUB_URL=GITHUB_URL,
+                DATASET_NAME=dataset_name
+            )
+            header = requests.get(meta_url).text.splitlines()[0] + '\n'
+
+        if header != '# Reviewed by [your name here]\n':
+            reviewed_datasets.append(dataset_name)
+            
+    return sorted(reviewed_datasets)

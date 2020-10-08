@@ -31,23 +31,7 @@ regression_dataset_names = df_summary.query('task=="regression"')['dataset'].tol
 classification_dataset_names = df_summary.query('task=="classification"')['dataset'].tolist()
 dataset_names = regression_dataset_names + classification_dataset_names
 
-def get_datasets_with_metadata(dataset_names, local_cache_dir = 'datasets/'):
-    assert (local_cache_dir != None)
-    datasets_with_metadata = []
-
-    for dataset_name in dataset_names:
-        meta_path = pathlib.Path(f'{local_cache_dir}{dataset_name}/metadata.yaml')
-        if meta_path.exists():
-            with open(meta_path, 'r') as f:
-                header = f.readline()
-            if header != '# Reviewed by [your name here]\n':
-                datasets_with_metadata.append(dataset_name)
-
-    return sorted(datasets_with_metadata)
-
-datasets_with_metadata = get_datasets_with_metadata(dataset_names)
-
-# datasets_with_metadata = [
+# reviewed_datasets = [
 #     'molecular_biology_promoters',
 #     'car',
 #     'connect_4',
