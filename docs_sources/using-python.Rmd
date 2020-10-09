@@ -28,6 +28,7 @@ $ cd penn-ml-benchamrks/
 $ pip install .
 ```
 
+## Usage
 
 ``` {python}
 from pmlb import fetch_data
@@ -51,9 +52,9 @@ For example:
 from pmlb import fetch_data
 
 # Returns NumPy arrays
-mushroom_X, mushroom_y = fetch_data('mushroom', return_X_y=True, local_cache_dir='../datasets')
-mushroom_X.shape
-mushroom_y.shape
+mush_X, mush_y = fetch_data('mushroom', return_X_y=True, local_cache_dir='../datasets')
+mush_X.shape
+mush_y.shape
 ```
 
 You can also list the available datasets as follows:
@@ -71,7 +72,7 @@ print(
 )
 ```
 
-## Example usage
+## Example benchmarking
 
 PMLB is designed to make it easy to benchmark machine learning algorithms against each other. Below is a Python code snippet showing the a sample comparison of two classification algorithms on the first 40 PMLB datasets.
 

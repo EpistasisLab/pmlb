@@ -9,14 +9,14 @@ output:
     css: custom.css
 ---
 
-pmlbr :package: provides the following user-facing functions and variables in the R environment.
-For installation instructions or a high-level overview of how to use PMLB, please see [Using pmlbr](./using-r.html).
+[**pmlbr**](https://github.com/EpistasisLab/pmlb) provides the following user-facing functions and variables in the R environment.
+For installation instructions or a high-level overview of how to use PMLB, please see [R interface](./using-r.html).
 
 ## Functions
 
 ### `fetch_data` {#docstring-output}
 
-*function* `pmlb.fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)`
+*function* `fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)`
 
 Download a dataset from PMLB, (optionally) store it locally, and return the dataset.
 
@@ -48,6 +48,62 @@ penguins <- fetch_data('penguins')
 str(penguins)
 ```
 
+### `nearest_datasets` {#docstring-output}
+*function* 
+```{r eval=FALSE}
+nearest_datasets(
+  x,
+  y = NULL,
+  n_neighbors = 5,
+  dimensions = c("n_instances", "n_features"),
+  task = c("classification", "regression"),
+  target_name = "target",
+...)
+```
+
+Select nearest datasets given dataset name or dataframe `x`.
+
+**Parameters:**
+
+- **x : str or dataframe**	
+  Character string of dataset name from PMLB, 
+  or data.frame of `n_samples` x `n_features` (or `n_features+1` with a target column)
+
+- **y : numeric vector**
+  Target column. Required when `x` does not contain the target column.
+
+- **n_neighbors : integer**
+  Number of dataset names to return as neighbors.
+
+- **dimensions : character vector**
+  Dataset characteristics to include in similarity calculation.
+  Dimensions must correspond to numeric columns of 
+  [all_summary_stats.tsv](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/master/pmlb/all_summary_stats.tsv).
+  If 'all' (default), uses all numeric columns.
+
+- **target_name : str**
+  Character string specifying column of target/dependent variable.
+
+- **task : str**
+  Character string specifying classification or regression for summary stat generation.
+
+- **...**
+  Further arguments passed to each S3 method.
+
+**Returns:**
+- **dataset : character vector**
+  Names of most similar datasets to `x`, most similar dataset first.
+
+- **dataset : dataframe**
+  If `return_X_y == FALSE`, fetched dataset as a dataframe of size `(n_samples, n_features+1)`, where the last column is `target`. If `return_X_y == TRUE`, a list of length 2 containing the feature matrix `X` and the target array `y`, respectively.
+
+**Examples:**
+
+```{r}
+nearest_datasets('penguins')
+nearest_datasets(fetch_data('penguins'))
+```
+
 ## Data objects
 
 These objects contain details on datasets currently available in PMLB. 
@@ -61,7 +117,6 @@ The contents of this vector are the union of `classification_dataset_names` and 
 **Example:**
 
 ```{r}
-data(pmlb)
 head(dataset_names, 9)
 ```
 

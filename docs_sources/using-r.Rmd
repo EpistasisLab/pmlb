@@ -1,8 +1,5 @@
 ---
 title: "Using pmlbr"
-output:
-  html_document:
-    toc: false
 ---
 
 ## Install
@@ -26,6 +23,7 @@ remotes::install_github("EpistasisLab/pmlbr")
 
 ## Usage
 
+### Fetch data
 The core function of this package is `fetch_data` that allows us to download data from the PMLB repository.
 For example:
 ``` {r}
@@ -41,6 +39,8 @@ head(penguins$x) # feature data frame
 head(penguins$y) # target vector
 ```
 
+### Dataset characteristic
+
 Let's check other available datasets and their summary statistics:
 
 ``` {r}
@@ -52,7 +52,7 @@ head(regression_dataset_names, 9)
 head(summary_stats)
 ```
 
-Selecting a subset of datasets that satisfy certain conditions is straight forward with `dplyr`.
+Selecting a subset of datasets based on characteristics that satisfy certain conditions is straight forward with `dplyr`.
 For example, if we need datasets with fewer than 100 observations for a classification task: 
 ```{r warning=FALSE, message=FALSE}
 library(dplyr)
@@ -61,8 +61,16 @@ summary_stats %>%
   pull(dataset)
 ```
 
-Further info:
+### Find nearest datasets
+
+You can also find datasets that are most similar to your own or one of the PMLB datasets, for example:
+
+```{r}
+nearest_datasets('penguins')
+```
+
+## Further information
 ``` {r}
 ?fetch_data
-?summary_stats
+?nearest_datasets
 ```

@@ -8,6 +8,15 @@ output:
       collapsed: false
     css: custom.css
 ---
+```{r setup, include=FALSE}
+library(reticulate)
+
+knitr::knit_engines$set(python = reticulate::eng_python)
+knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
+reticulate::py_install(c("matplotlib", "scikit-learn", "seaborn"))
+reticulate::py_install("pmlb", pip = TRUE)
+
+```
 
 Python package PMLB provides the following user-facing functions and variables. For installation instructions or a high-level overview of how to use PMLB, see [Install](./install.html) or [Using PMLB](./using.html).
 
@@ -39,47 +48,34 @@ You must be connected to the internet if you are fetching a dataset that is not 
 
 **Example:**
 
-```{python, eval=FALSE}
-In [1]: from pmlb import fetch_data
+```{python}
+from pmlb import fetch_data
 
-In [2]: X, y = fetch_data('mushroom', return_X_y=True)
-
-In [3]: X
-Out[3]: 
-array([[2, 0, 7, ..., 1, 4, 6],
-       [0, 3, 9, ..., 0, 2, 0],
-       [2, 3, 8, ..., 0, 3, 0],
-       ...,
-       [2, 0, 8, ..., 7, 2, 0],
-       [2, 3, 8, ..., 7, 3, 0],
-       [3, 2, 0, ..., 7, 4, 6]], dtype=int64)
-
-In [4]: y
-Out[4]: array([0, 0, 0, ..., 0, 0, 1], dtype=int64)
+X, y = fetch_data('mushroom', return_X_y=True)
+X
+y
 ```
 
-### `get_updated_datasets` {#docstring-output}
+<!-- ### `get_updated_datasets` {#docstring-output} -->
 
-*function* `pmlb.get_updated_datasets()`
+<!-- *function* `pmlb.get_updated_datasets()` -->
 
-Looks at most recent commit and returns a list of datasets that were updated since the previous commit.
+<!-- Looks at most recent commit and returns a list of datasets that were updated since the previous commit. -->
 
-This function is mainly used for generating profiling reports of the datasets.
+<!-- This function is mainly used for generating profiling reports of the datasets. -->
 
-**Returns:**
+<!-- **Returns:** -->
 
-- **changed_datasets : set**
-  Set of datasets that have been changed since the previous Git commit.
+<!-- - **changed_datasets : set** -->
+<!--   Set of datasets that have been changed since the previous Git commit. -->
 
-**Example:**
+<!-- **Example:** -->
 
-```{python, eval=FALSE}
-In [1]: from pmlb import get_updated_datasets
+<!-- ```{python} -->
+<!-- from pmlb import get_updated_datasets -->
 
-In [2]: get_updated_datasets()
-changed datasets: []
-Out[2]: []
-```
+<!-- get_updated_datasets() -->
+<!-- ``` -->
 
 ## Variables
 
@@ -95,17 +91,10 @@ The contents of this variable are equal to the union of `pmlb.classification_dat
 
 **Example:**
 
-```{python, eval=FALSE}
-In [1]: from pmlb import dataset_names
+```{python}
+from pmlb import dataset_names
 
-In [2]: dataset_names
-Out[2]: 
-['GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1',
- 'GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1',
- 'GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1',
- 'GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1',
-...
- '712_chscase_geyser1']
+dataset_names[:10]
 ```
 
 ### `classification_dataset_names` {#docstring-output}
@@ -118,17 +107,10 @@ Classification datasets are datasets where the target value for each data point 
 
 **Example:**
 
-```{python, eval=FALSE}
-In [1]: from pmlb import classification_dataset_names
+```{python}
+from pmlb import classification_dataset_names
 
-In [2]: classification_dataset_names
-Out[2]: 
-['GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1',
- 'GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1',
- 'GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1',
- 'GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1',
-...
- 'yeast']
+classification_dataset_names[:10]
 ```
 
 ### `regression_dataset_names` {#docstring-output}
@@ -141,15 +123,8 @@ Regression datasets are datasets where the target value for each data point is c
 
 **Example:**
 
-```{python, eval=FALSE}
-In [1]: from pmlb import regression_dataset_names
+```{python}
+from pmlb import regression_dataset_names
 
-In [2]: regression_dataset_names
-Out[2]: 
-['1027_ESL',
- '1028_SWD',
- '1029_LEV',
- '1030_ERA',
-...
- '712_chscase_geyser1']
+regression_dataset_names[:10]
 ```
