@@ -56,27 +56,6 @@ X
 y
 ```
 
-<!-- ### `get_updated_datasets` {#docstring-output} -->
-
-<!-- *function* `pmlb.get_updated_datasets()` -->
-
-<!-- Looks at most recent commit and returns a list of datasets that were updated since the previous commit. -->
-
-<!-- This function is mainly used for generating profiling reports of the datasets. -->
-
-<!-- **Returns:** -->
-
-<!-- - **changed_datasets : set** -->
-<!--   Set of datasets that have been changed since the previous Git commit. -->
-
-<!-- **Example:** -->
-
-<!-- ```{python} -->
-<!-- from pmlb import get_updated_datasets -->
-
-<!-- get_updated_datasets() -->
-<!-- ``` -->
-
 ## Variables
 
 These variables are used to list the datasets that are currently available in PMLB. 
