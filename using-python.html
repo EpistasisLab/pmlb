@@ -28,7 +28,7 @@
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Penn Machine Learning Benchmarks">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/EpistasisLab/penn-ml-benchmarks/db5c0806394943160890f70b4ee790ccd4d848fb/card.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/EpistasisLab/pmlb/db5c0806394943160890f70b4ee790ccd4d848fb/card.png">
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -523,7 +523,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/">
+  <a href="https://github.com/EpistasisLab/pmlb/">
     <span class="fa fa-github"></span>
      
   </a>
@@ -546,8 +546,8 @@ div.tocify {
 <h2>Install</h2>
 <p>Most users should install PMLB from the Python Package Index (PyPI) using <code>pip</code>:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a>$ <span class="ex">pip</span> install pmlb</span></code></pre></div>
-<p>For access to new features or datasets that are not yet merged into an official release, you can instead install from <a href="https://github.com/EpistasisLab/penn-ml-benchmarks">the GitHub sources</a>:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a>$ <span class="fu">git</span> clone https://github.com/EpistasisLab/penn-ml-benchmarks</span>
+<p>For access to new features or datasets that are not yet merged into an official release, you can instead install from <a href="https://github.com/EpistasisLab/pmlb">the GitHub sources</a>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a>$ <span class="fu">git</span> clone https://github.com/EpistasisLab/pmlb</span>
 <span id="cb2-2"><a href="#cb2-2"></a>$ <span class="bu">cd</span> penn-ml-benchamrks/</span>
 <span id="cb2-3"><a href="#cb2-3"></a>$ <span class="ex">pip</span> install .</span></code></pre></div>
 </div>
@@ -605,13 +605,13 @@ div.tocify {
 <span id="cb11-4"><a href="#cb11-4"></a>rand_datasets <span class="op">=</span> random.choices(dataset_names, k<span class="op">=</span><span class="dv">7</span>)</span>
 <span id="cb11-5"><a href="#cb11-5"></a><span class="bu">print</span>(<span class="st">&#39;7 arbitrary datasets from PMLB:</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;</span><span class="ch">\n</span><span class="st"> &#39;</span>.join(rand_datasets))</span></code></pre></div>
 <pre><code>## 7 arbitrary datasets from PMLB:
-##  586_fri_c3_1000_25
-##  haberman
-##  molecular_biology_promoters
-##  626_fri_c2_500_50
-##  monk3
-##  monk1
-##  haberman</code></pre>
+##  665_sleuth_case2002
+##  analcatdata_cyyoung9302
+##  537_houses
+##  561_cpu
+##  pima
+##  605_fri_c2_250_25
+##  saheart</code></pre>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="bu">print</span>(</span>
 <span id="cb13-2"><a href="#cb13-2"></a>    <span class="ss">f&#39;PMLB has </span><span class="sc">{</span><span class="bu">len</span>(classification_dataset_names)<span class="sc">}</span><span class="ss"> classification datasets &#39;</span></span>
 <span id="cb13-3"><a href="#cb13-3"></a>    <span class="ss">f&#39;and </span><span class="sc">{</span><span class="bu">len</span>(regression_dataset_names)<span class="sc">}</span><span class="ss"> regression datasets.&#39;</span></span>
@@ -651,7 +651,7 @@ div.tocify {
 <div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Visualize the result:</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>sb.boxplot(data<span class="op">=</span>[logit_test_scores, gnb_test_scores], notch<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb16-3"><a href="#cb16-3"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;LogisticRegression&#39;</span>, <span class="st">&#39;GaussianNB&#39;</span>])</span></code></pre></div>
-<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7f79780348d0&gt;, &lt;matplotlib.axis.XTick object at 0x7f7978034160&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
+<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7f21c42827f0&gt;, &lt;matplotlib.axis.XTick object at 0x7f21c4282940&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>plt.ylabel(<span class="st">&#39;Test Accuracy&#39;</span>)</span></code></pre></div>
 <p><img src="using-python_files/figure-html/unnamed-chunk-7-1.png" /><!-- --></p>
 </div>
