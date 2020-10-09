@@ -79,13 +79,13 @@ New datasets should follow these guidelines:
  - Column headers are feature/variable names and `'target'`.
  - Any `'sample_id'` or `'row_id'` column should be *excluded*.
  - The data should be tab-delimited and in `.tsv.gz` format.
- - The `.tsv.gz` dataset file should be in the correct folder; i.e., under `penn-ml-benchmarks/datasets/your_dataset/`
+ - The `.tsv.gz` dataset file should be in the correct folder; i.e., under `pmlb/datasets/your_dataset/`
  - A `metadata.yaml` file will be automatically generated in the same folder, pushed back to your branch, and a reviewer will ask you to manually review this file (e.g., add description, link to source, etc.) in your pull request.
 
 Please let us know if you have any question along the way.
 We appreciate your contribution, and we want to help make your workflow as simple as possible!
 
-Relevant issues: [#13](https://github.com/EpistasisLab/penn-ml-benchmarks/issues/13), [#22](https://github.com/EpistasisLab/penn-ml-benchmarks/issues/22).
+Relevant issues: [#13](https://github.com/EpistasisLab/pmlb/issues/13), [#22](https://github.com/EpistasisLab/pmlb/issues/22).
 
 
 ## Existing dataset annotation
@@ -96,7 +96,7 @@ Relevant issues: [#13](https://github.com/EpistasisLab/penn-ml-benchmarks/issues
     - Follow the *How to verify source* subsection below to verify that the PMLB dataset actually came from the source you found.
 
 2. Update the information on the dataset's metadata.yaml file.
-Refer to the [metadata template file](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/metadata_template.yaml) or [wine_quality_red](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/datasets/wine_quality_red/metadata.yaml) as an example.
+Refer to the [metadata template file](https://github.com/EpistasisLab/pmlb/blob/812e6973611c583c2f537693f582acc4feb69ff5/metadata_template.yaml) or [wine_quality_red](https://github.com/EpistasisLab/pmlb/blob/812e6973611c583c2f537693f582acc4feb69ff5/datasets/wine_quality_red/metadata.yaml) as an example.
 
 3. Issue a pull request for your changes.
 

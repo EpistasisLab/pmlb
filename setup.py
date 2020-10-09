@@ -19,7 +19,7 @@ setup(
     packages=find_packages(),
     package_data={'pmlb': ['*.tsv']},
     include_package_data=True,
-    url='https://github.com/EpistasisLab/penn-ml-benchmarks',
+    url='https://github.com/EpistasisLab/pmlb',
     license='License :: OSI Approved :: MIT License',
     description=('A Python wrapper for the Penn Machine Learning Benchmark '
         'data repository.'),
@@ -31,7 +31,7 @@ Contact
 If you have any questions or comments about the Penn Machine Learning Benchmark, 
 please feel free to contact us via e-mail: ttle@pennmedicine.upenn.edu
 
-This project is hosted at https://github.com/EpistasisLab/penn-ml-benchmarks
+This project is hosted at https://github.com/EpistasisLab/pmlb
 ''',
     zip_safe=True,
     install_requires=['pandas>=1.0.5',

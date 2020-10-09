@@ -96,7 +96,7 @@ test*.ipynb
 r-scripts/
 .DS_Store
 .Rhistory
-penn-ml-benchmarks.Rproj
+pmlb.Rproj
 datasets/.DS_Store
 
 # assembled documentation files

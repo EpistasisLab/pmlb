@@ -6,7 +6,7 @@ from nose.tools import assert_raises
 from tempfile import mkdtemp
 from shutil import rmtree
 from os import path
-GITHUB_URL = ("https://github.com/EpistasisLab/penn-ml-benchmarks/"
+GITHUB_URL = ("https://github.com/EpistasisLab/pmlb/"
 "raw/master/datasets")
 suffix = '.tsv.gz'
 
@@ -59,7 +59,7 @@ def test_get_dataset_url_1():
     dataset_name = 'mushroom'
     dataset_url = get_dataset_url(GITHUB_URL,
                                     dataset_name, suffix)
-    expected_url = ("https://github.com/EpistasisLab/penn-ml-benchmarks"
+    expected_url = ("https://github.com/EpistasisLab/pmlb"
     "/raw/master/datasets/mushroom/mushroom.tsv.gz")
 
     assert dataset_url == expected_url

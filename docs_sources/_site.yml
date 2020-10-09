@@ -12,7 +12,7 @@ output:
     number_sections: false
 navbar:
   title: Penn Machine Learning Benchmarks
-  left: 
+  left:
     - icon: fa-home
       href: index.html
     - text: Python interface
@@ -22,12 +22,12 @@ navbar:
     - text: R interface
       href: using-r.html
     - text: R reference
-      href: r-ref.html      
+      href: r-ref.html
     - text: Contributing
       href: contributing.html
   right:
     - icon: fa-github
-      href: https://github.com/EpistasisLab/penn-ml-benchmarks/
+      href: https://github.com/EpistasisLab/pmlb/
 
 
 
