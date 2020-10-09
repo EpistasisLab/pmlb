@@ -3,7 +3,7 @@
 This repository contains the code and data for a large, curated set of benchmark datasets for evaluating and comparing supervised machine learning algorithms.
 These data sets cover a broad range of applications, and include binary/multi-class classification problems and regression problems, as well as combinations of categorical, ordinal, and continuous features.
 
-Please go to our [home page](https://epistasislab.github.io/penn-ml-benchmarks/) to interactively browse the datasets, vignette, and contribution guide!
+Please go to our [home page](https://epistasislab.github.io/pmlb/) to interactively browse the datasets, vignette, and contribution guide!
 
 ## Breaking changes in PMLB 1.0
 

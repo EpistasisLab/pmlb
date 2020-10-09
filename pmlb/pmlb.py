@@ -43,7 +43,7 @@ from .support_funcs import (
 )
 import numpy as np
 
-GITHUB_URL = 'https://github.com/EpistasisLab/penn-ml-benchmarks/raw/master/datasets'
+GITHUB_URL = 'https://github.com/EpistasisLab/pmlb/raw/master/datasets'
 suffix = '.tsv.gz'
 
 def fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True):

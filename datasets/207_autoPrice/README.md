@@ -1,6 +1,6 @@
 # 207_autoPrice
 
-[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/207_autoPrice.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/pmlb/profile/207_autoPrice.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.tsv)
 

@@ -233,7 +233,7 @@ def write_readme(dataset, local_cache_dir='datasets/'):
     readme_template = '''\
 # {dataset}
 
-[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/{dataset}.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/pmlb/profile/{dataset}.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.tsv)
 

@@ -78,7 +78,7 @@ Select nearest datasets given dataset name or dataframe `x`.
 - **dimensions : character vector**
   Dataset characteristics to include in similarity calculation.
   Dimensions must correspond to numeric columns of 
-  [all_summary_stats.tsv](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/master/pmlb/all_summary_stats.tsv).
+  [all_summary_stats.tsv](https://github.com/EpistasisLab/pmlb/blob/master/pmlb/all_summary_stats.tsv).
   If 'all' (default), uses all numeric columns.
 
 - **target_name : str**

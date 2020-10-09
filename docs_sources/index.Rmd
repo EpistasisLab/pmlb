@@ -26,10 +26,10 @@ library(htmlwidgets)
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.width=8.5}
 sum_stats <- readr::read_tsv('../pmlb/all_summary_stats.tsv') %>% 
   mutate(urls = paste0(
-    'https://epistasislab.github.io/penn-ml-benchmarks/profile/',
+    'https://epistasislab.github.io/pmlb/profile/',
     dataset,
     '.html'),
-    Metadata = paste0('https://github.com/EpistasisLab/penn-ml-benchmarks/tree/master/datasets/', dataset, '/metadata.yaml'))
+    Metadata = paste0('https://github.com/EpistasisLab/pmlb/tree/master/datasets/', dataset, '/metadata.yaml'))
 
 ply_dat <- sum_stats %>% 
   add_count(task) %>% 
@@ -119,7 +119,7 @@ DT::datatable(
 )
 ```
 
-The [complete table](https://github.com/EpistasisLab/penn-ml-benchmarks/blob/master/pmlb/all_summary_stats.tsv) of dataset characteristics is also available for download.
+The [complete table](https://github.com/EpistasisLab/pmlb/blob/master/pmlb/all_summary_stats.tsv) of dataset characteristics is also available for download.
 Please note, in our documentation, a feature is considered:
 
 * "binary" if it is of type integer and has 2 unique values (equivalent to pandas profiling's "boolean")
