@@ -569,38 +569,19 @@ div.tocify {
 <li><strong>dataset : pandas.DataFrame or (array-like, array-like)</strong> If <code>return_X_y == False</code>, a <code>pandas.DataFrame</code> containing the fetched dataset. If <code>return_X_y == True</code>, a 2-tuple of <code>numpy.ndarray</code>s containing the feature matrix <code>X</code> and the target array <code>y</code>, respectively.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
 <span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>In [<span class="dv">2</span>]: X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-4"><a href="#cb1-4"></a></span>
-<span id="cb1-5"><a href="#cb1-5"></a>In [<span class="dv">3</span>]: X</span>
-<span id="cb1-6"><a href="#cb1-6"></a>Out[<span class="dv">3</span>]: </span>
-<span id="cb1-7"><a href="#cb1-7"></a>array([[<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">7</span>, ..., <span class="dv">1</span>, <span class="dv">4</span>, <span class="dv">6</span>],</span>
-<span id="cb1-8"><a href="#cb1-8"></a>       [<span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">9</span>, ..., <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>],</span>
-<span id="cb1-9"><a href="#cb1-9"></a>       [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">8</span>, ..., <span class="dv">0</span>, <span class="dv">3</span>, <span class="dv">0</span>],</span>
-<span id="cb1-10"><a href="#cb1-10"></a>       ...,</span>
-<span id="cb1-11"><a href="#cb1-11"></a>       [<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">8</span>, ..., <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">0</span>],</span>
-<span id="cb1-12"><a href="#cb1-12"></a>       [<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">8</span>, ..., <span class="dv">7</span>, <span class="dv">3</span>, <span class="dv">0</span>],</span>
-<span id="cb1-13"><a href="#cb1-13"></a>       [<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">0</span>, ..., <span class="dv">7</span>, <span class="dv">4</span>, <span class="dv">6</span>]], dtype<span class="op">=</span>int64)</span>
-<span id="cb1-14"><a href="#cb1-14"></a></span>
-<span id="cb1-15"><a href="#cb1-15"></a>In [<span class="dv">4</span>]: y</span>
-<span id="cb1-16"><a href="#cb1-16"></a>Out[<span class="dv">4</span>]: array([<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, ..., <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>], dtype<span class="op">=</span>int64)</span></code></pre></div>
-</div>
-<div id="docstring-output" class="section level3">
-<h3><code>get_updated_datasets</code></h3>
-<p><em>function</em> <code>pmlb.get_updated_datasets()</code></p>
-<p>Looks at most recent commit and returns a list of datasets that were updated since the previous commit.</p>
-<p>This function is mainly used for generating profiling reports of the datasets.</p>
-<p><strong>Returns:</strong></p>
-<ul>
-<li><strong>changed_datasets : set</strong> Set of datasets that have been changed since the previous Git commit.</li>
-</ul>
-<p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> get_updated_datasets</span>
-<span id="cb2-2"><a href="#cb2-2"></a></span>
-<span id="cb2-3"><a href="#cb2-3"></a>In [<span class="dv">2</span>]: get_updated_datasets()</span>
-<span id="cb2-4"><a href="#cb2-4"></a>changed datasets: []</span>
-<span id="cb2-5"><a href="#cb2-5"></a>Out[<span class="dv">2</span>]: []</span></code></pre></div>
+<span id="cb1-3"><a href="#cb1-3"></a>X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>X</span></code></pre></div>
+<pre><code>## array([[2, 0, 7, ..., 1, 4, 6],
+##        [0, 3, 9, ..., 0, 2, 0],
+##        [2, 3, 8, ..., 0, 3, 0],
+##        ...,
+##        [2, 0, 8, ..., 7, 2, 0],
+##        [2, 3, 8, ..., 7, 3, 0],
+##        [3, 2, 0, ..., 7, 4, 6]])</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>y</span></code></pre></div>
+<pre><code>## array([0, 0, 0, ..., 0, 0, 1])</code></pre>
 </div>
 </div>
 <div id="variables" class="section level2">
@@ -612,16 +593,10 @@ div.tocify {
 <p>A list of all datasets included in PMLB.</p>
 <p>The contents of this variable are equal to the union of <code>pmlb.classification_dataset_names</code> and <code>pmlb.regression_dataset_names</code>.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
-<span id="cb3-2"><a href="#cb3-2"></a></span>
-<span id="cb3-3"><a href="#cb3-3"></a>In [<span class="dv">2</span>]: dataset_names</span>
-<span id="cb3-4"><a href="#cb3-4"></a>Out[<span class="dv">2</span>]: </span>
-<span id="cb3-5"><a href="#cb3-5"></a>[<span class="st">&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;</span>,</span>
-<span id="cb3-6"><a href="#cb3-6"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;</span>,</span>
-<span id="cb3-7"><a href="#cb3-7"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;</span>,</span>
-<span id="cb3-8"><a href="#cb3-8"></a> <span class="st">&#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;</span>,</span>
-<span id="cb3-9"><a href="#cb3-9"></a>...</span>
-<span id="cb3-10"><a href="#cb3-10"></a> <span class="st">&#39;712_chscase_geyser1&#39;</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a>dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<pre><code>## [&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001&#39;, &#39;Hill_Valley_with_noise&#39;, &#39;Hill_Valley_without_noise&#39;, &#39;adult&#39;, &#39;agaricus_lepiota&#39;]</code></pre>
 </div>
 <div id="docstring-output" class="section level3">
 <h3><code>classification_dataset_names</code></h3>
@@ -629,16 +604,10 @@ div.tocify {
 <p>A list of all classification datasets included in PMLB.</p>
 <p>Classification datasets are datasets where the target value for each data point is discrete (rather than continuous).</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
-<span id="cb4-2"><a href="#cb4-2"></a></span>
-<span id="cb4-3"><a href="#cb4-3"></a>In [<span class="dv">2</span>]: classification_dataset_names</span>
-<span id="cb4-4"><a href="#cb4-4"></a>Out[<span class="dv">2</span>]: </span>
-<span id="cb4-5"><a href="#cb4-5"></a>[<span class="st">&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;</span>,</span>
-<span id="cb4-6"><a href="#cb4-6"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;</span>,</span>
-<span id="cb4-7"><a href="#cb4-7"></a> <span class="st">&#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;</span>,</span>
-<span id="cb4-8"><a href="#cb4-8"></a> <span class="st">&#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;</span>,</span>
-<span id="cb4-9"><a href="#cb4-9"></a>...</span>
-<span id="cb4-10"><a href="#cb4-10"></a> <span class="st">&#39;yeast&#39;</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
+<span id="cb7-2"><a href="#cb7-2"></a></span>
+<span id="cb7-3"><a href="#cb7-3"></a>classification_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<pre><code>## [&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001&#39;, &#39;Hill_Valley_with_noise&#39;, &#39;Hill_Valley_without_noise&#39;, &#39;adult&#39;, &#39;agaricus_lepiota&#39;]</code></pre>
 </div>
 <div id="docstring-output" class="section level3">
 <h3><code>regression_dataset_names</code></h3>
@@ -646,16 +615,10 @@ div.tocify {
 <p>A list of all regression datasets included in PMLB.</p>
 <p>Regression datasets are datasets where the target value for each data point is continuous (rather than discrete).</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>In [<span class="dv">1</span>]: <span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
-<span id="cb5-2"><a href="#cb5-2"></a></span>
-<span id="cb5-3"><a href="#cb5-3"></a>In [<span class="dv">2</span>]: regression_dataset_names</span>
-<span id="cb5-4"><a href="#cb5-4"></a>Out[<span class="dv">2</span>]: </span>
-<span id="cb5-5"><a href="#cb5-5"></a>[<span class="st">&#39;1027_ESL&#39;</span>,</span>
-<span id="cb5-6"><a href="#cb5-6"></a> <span class="st">&#39;1028_SWD&#39;</span>,</span>
-<span id="cb5-7"><a href="#cb5-7"></a> <span class="st">&#39;1029_LEV&#39;</span>,</span>
-<span id="cb5-8"><a href="#cb5-8"></a> <span class="st">&#39;1030_ERA&#39;</span>,</span>
-<span id="cb5-9"><a href="#cb5-9"></a>...</span>
-<span id="cb5-10"><a href="#cb5-10"></a> <span class="st">&#39;712_chscase_geyser1&#39;</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
+<span id="cb9-2"><a href="#cb9-2"></a></span>
+<span id="cb9-3"><a href="#cb9-3"></a>regression_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<pre><code>## [&#39;1027_ESL&#39;, &#39;1028_SWD&#39;, &#39;1029_LEV&#39;, &#39;1030_ERA&#39;, &#39;1089_USCrime&#39;, &#39;1096_FacultySalaries&#39;, &#39;1191_BNG_pbc&#39;, &#39;1193_BNG_lowbwt&#39;, &#39;1196_BNG_pharynx&#39;, &#39;1199_BNG_echoMonths&#39;]</code></pre>
 </div>
 </div>
 

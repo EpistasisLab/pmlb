@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -400,6 +403,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -407,6 +473,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -479,6 +555,8 @@ $(document).ready(function () {
 </div>
 <div id="usage" class="section level2">
 <h2>Usage</h2>
+<div id="fetch-data" class="section level3">
+<h3>Fetch data</h3>
 <p>The core function of this package is <code>fetch_data</code> that allows us to download data from the PMLB repository. For example:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">library</span>(pmlbr)</span>
 <span id="cb3-2"><a href="#cb3-2"></a></span>
@@ -508,6 +586,9 @@ $(document).ready(function () {
 ## 6      2           39.3          20.6               190        3650   1 2007</code></pre>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">head</span>(penguins<span class="op">$</span>y) <span class="co"># target vector</span></span></code></pre></div>
 <pre><code>## [1] 0 0 0 0 0 0</code></pre>
+</div>
+<div id="dataset-characteristic" class="section level3">
+<h3>Dataset characteristic</h3>
 <p>Let’s check other available datasets and their summary statistics:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Dataset names</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a><span class="kw">head</span>(classification_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
@@ -541,7 +622,7 @@ $(document).ready(function () {
 ## 4 0.031251250 regression
 ## 5 0.002970111 regression
 ## 6 0.004063158 regression</code></pre>
-<p>Selecting a subset of datasets that satisfy certain conditions is straight forward with <code>dplyr</code>. For example, if we need datasets with fewer than 100 observations for a classification task:</p>
+<p>Selecting a subset of datasets based on characteristics that satisfy certain conditions is straight forward with <code>dplyr</code>. For example, if we need datasets with fewer than 100 observations for a classification task:</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="kw">library</span>(dplyr)</span>
 <span id="cb15-2"><a href="#cb15-2"></a>summary_stats <span class="op">%&gt;%</span><span class="st"> </span></span>
 <span id="cb15-3"><a href="#cb15-3"></a><span class="st">  </span><span class="kw">filter</span>(n_instances <span class="op">&lt;</span><span class="st"> </span><span class="dv">100</span>, task <span class="op">==</span><span class="st"> &#39;classification&#39;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
@@ -553,13 +634,25 @@ $(document).ready(function () {
 ##  [9] &quot;confidence&quot;                 &quot;labor&quot;                     
 ## [11] &quot;lupus&quot;                      &quot;parity5&quot;                   
 ## [13] &quot;postoperative_patient_data&quot;</code></pre>
-<p>Further info:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>?fetch_data</span>
-<span id="cb17-2"><a href="#cb17-2"></a>?summary_stats</span></code></pre></div>
+</div>
+<div id="find-nearest-datasets" class="section level3">
+<h3>Find nearest datasets</h3>
+<p>You can also find datasets that are most similar to your own or one of the PMLB datasets, for example:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="kw">nearest_datasets</span>(<span class="st">&#39;penguins&#39;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;penguins&quot;      &quot;ecoli&quot;         &quot;schizo&quot;        &quot;bupa&quot;         
+## [5] &quot;solar_flare_1&quot;</code></pre>
+</div>
+</div>
+<div id="further-information" class="section level2">
+<h2>Further information</h2>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>?fetch_data</span>
+<span id="cb19-2"><a href="#cb19-2"></a>?nearest_datasets</span></code></pre></div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -592,6 +685,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

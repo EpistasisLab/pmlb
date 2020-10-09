@@ -485,10 +485,10 @@ $(document).ready(function () {
 </div>
 <div id="responsibilities" class="section level3">
 <h3>Responsibilities</h3>
-<p>The main contribution our project needs at the moment is to identify the source of datasets and annotate the datasets that currently don’t have metadata information. Please see the <em>Dataset annotation</em> tab for more detail. We would also consider dataset contributions that meet the format specifications of PMLB. We’re also open to other ideas including improving documentation, writing tutorials, etc.</p>
+<p>The main contribution our project needs at the moment is to identify the source of datasets and annotate the datasets that currently don’t have metadata information. Please see the <em>Existing dataset annotation</em> tab for more detail. We would also consider dataset addition that meet the format specifications of PMLB. We’re also open to other ideas including improving documentation, writing tutorials, etc.</p>
 <ul>
-<li>For source identification and annotation of existing datasets, make sure your pull request follows our source guidelines in the <em>Dataset annotation</em> tab.</li>
-<li>For new datasets, please make sure your pull request follows our new dataset guidelines under the <em>Getting started</em> tab.</li>
+<li>For source identification and annotation of existing datasets, make sure your pull request follows our source guidelines in the <em>Existing dataset annotation</em> tab.</li>
+<li>For new datasets, please make sure your pull request follows our new dataset guidelines under the <em>Add new dataset</em> tab.</li>
 <li>Create issues for any major changes and enhancements that you wish to make. Discuss things transparently and get community feedback.</li>
 <li>Be welcoming to newcomers and encourage new contributors from all backgrounds. See the <a href="https://www.python.org/psf/codeofconduct/">Python Community Code of Conduct</a> as an example.</li>
 </ul>
@@ -510,7 +510,7 @@ $(document).ready(function () {
 <h3>How to submit a contribution</h3>
 <ol style="list-style-type: decimal">
 <li>Create your own fork of this repository</li>
-<li>Make the changes in your fork</li>
+<li>Make the changes in your fork on a branch that is NOT master or main branch.</li>
 <li>If you think the project would benefit from these changes:
 <ul>
 <li>Make sure you have followed the guidelines above.</li>
@@ -541,11 +541,10 @@ $(document).ready(function () {
 <li>Column headers are feature/variable names and <code>'target'</code>.</li>
 <li>Any <code>'sample_id'</code> or <code>'row_id'</code> column should be <em>excluded</em>.</li>
 <li>The data should be tab-delimited and in <code>.tsv.gz</code> format.</li>
-<li>The dataset should be in the correct folder; i.e., for a classification dataset, <code>penn-ml-benchmarks/datasets/classification/your_dataset/</code></li>
-<li>A metadata.yaml file must be provided with all required fields filled in. Please follow the <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/metadata_template.yaml">template guidelines.</a></li>
-<li>The dataset should not exceed 50 MB.</li>
+<li>The <code>.tsv.gz</code> dataset file should be in the correct folder; i.e., under <code>penn-ml-benchmarks/datasets/your_dataset/</code></li>
+<li>A <code>metadata.yaml</code> file will be automatically generated in the same folder, pushed back to your branch, and a reviewer will ask you to manually review this file (e.g., add description, link to source, etc.) in your pull request.</li>
 </ul>
-<p>Note that any pull requests for new dataset contributions will not be accepted if these guidelines are not met.</p>
+<p>Please let us know if you have any question along the way. We appreciate your contribution, and we want to help make your workflow as simple as possible!</p>
 <p>Relevant issues: <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/issues/13">#13</a>, <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/issues/22">#22</a>.</p>
 </div>
 <div id="existing-dataset-annotation" class="section level2">
@@ -554,14 +553,13 @@ $(document).ready(function () {
 <li><p>Verify the source for the dataset.</p>
 <ul>
 <li>Often the place to start is an internet search of the dataset name. Most datasets can be found in <a href="https://www.openml.org/">OpenML</a>, <a href="http://archive.ics.uci.edu/ml/index.php">the UC Irvine ML repository</a>, or <a href="https://kaggle.com">Kaggle</a>.</li>
-<li>Follow the <em>How to verify source</em> tab to verify that the PMLB dataset actually came from the source you found.</li>
+<li>Follow the <em>How to verify source</em> subsection below to verify that the PMLB dataset actually came from the source you found.</li>
 </ul></li>
 <li><p>Update the information on the dataset’s metadata.yaml file. Refer to the <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/metadata_template.yaml">metadata template file</a> or <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/blob/812e6973611c583c2f537693f582acc4feb69ff5/datasets/wine_quality_red/metadata.yaml">wine_quality_red</a> as an example.</p></li>
-<li><p>Issue a pull request for your changes. In the pull request, document how you verified the source of the dataset, for example, by performing a checksum on the data. Include any information to help us independently check that what you have added is accurate.</p></li>
+<li><p>Issue a pull request for your changes.</p></li>
 </ol>
-</div>
-<div id="how-to-verify-source" class="section level2">
-<h2>How to verify source</h2>
+<div id="how-to-verify-source" class="section level3">
+<h3>How to verify source</h3>
 <p>There are a few ways we can check whether a PMLB dataframe (<code>pmlb_df</code>) agrees with its source (<code>source_df</code>), provided that we have checked their shapes (by printing <code>pmlb_df.shape</code> and <code>pmlb_df.shape</code>) and changed the column name of the dependent variable to <code>target</code>. For example, if the dependent variable in the source dataset is <code>class</code>, you can use <code>df_source = df_source.rename(columns={'class': 'target'})</code>.</p>
 <ul>
 <li>If the two dataframes are exactly the same, the following line of code does not return anything ✔️:</li>
@@ -580,28 +578,29 @@ $(document).ready(function () {
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">from</span> numpy <span class="im">import</span> isclose</span>
 <span id="cb5-2"><a href="#cb5-2"></a></span>
 <span id="cb5-3"><a href="#cb5-3"></a>isclose(df_source.values, df_pmlb.values).<span class="bu">all</span>()</span></code></pre></div>
-<p>We have been using <a href="https://colab.research.google.com/">Google Colab notebooks</a> to share our checks, but other methods are also welcomed. If you do use it, please share a publicly accessible link to your Google Colab notebook in the pull request when you submit one. Here are a few existing notebooks for reference: <a href="https://colab.research.google.com/drive/1N48BWz6IdeyIDUM3ROhd1wUPjhhL-Vz4#scrollTo=yxujo7a_gjMV">wine-quality-red</a>, <a href="https://colab.research.google.com/drive/1z_aFLydv2xMjDWwYIGGbW5N8_XFraysT">wine-quality-white</a>, <a href="https://colab.research.google.com/drive/1DyB2oqenINVmJzFLkwjPKYv0iAb5Mz02#scrollTo=5QZDL8Yffx62">waveform-mushroom-saheart</a>, <a href="https://colab.research.google.com/drive/1gB7r_CN8LrWG3nOqCS3AXJ7enj_Ssavk?usp=sharing#scrollTo=ioB2C8bb_WGa">irish</a>, <a href="https://colab.research.google.com/drive/1s2J0v2Ubzj0-CxzgQnxdmAAVoK33a1AY#scrollTo=-gBzhYeQMi3t">adult</a>.</p>
+<p>We have been using <a href="https://colab.research.google.com/">Google Colab notebooks</a> to share our checks, but other methods are also welcomed. If you do use Google Colab, please add your notebook to our shared folder <a href="http://tiny.cc/pmlb-colabs" class="uri">http://tiny.cc/pmlb-colabs</a> and/or share a publicly accessible link to your notebook in the pull request when you submit one. For example notebooks, you can visit the shared <a href="http://tiny.cc/pmlb-colabs">Drive folder</a>.</p>
+</div>
 </div>
 <div id="working-with-github-actions" class="section level2">
 <h2>Working with GitHub Actions</h2>
-<p>Please submit your contribution in a PR from a branch of your fork (<strong>NOT</strong> master branch) and with <em>only 1</em> commit if possible. Here’s why:</p>
+<p>Please submit your contribution in a PR from a branch of your fork (<strong>NOT</strong> master branch) and, if possible, with <em>only 1</em> commit. Nonetheless, we can help you fix it if this is not the case.</p>
 <ul>
 <li>If you contributed metadata:
 <ul>
-<li>Let’s assume that the inferred “task” is incorrect and you fixed this. <code>get_updated_metadatas()</code> picks up this new dataset by checking the diff of the latest commit. GitHub Actions (GA) regenerates <code>summary_stats.tsv</code>, updates <code>classification_dataset_names</code> and <code>regression_dataset_names</code>, and adds the dataset name to <code>dataset_with_metadata</code> (which contains the names of datasets with customized metadata files). GA then pushes back these changes to your branch as long as it’s not master.</li>
+<li>Let’s assume that the inferred “task” is incorrect and you fixed this. <code>get_updated_metadatas()</code> picks up this new dataset by checking the diff of the latest commit. A GitHub Action (GA) regenerates <code>summary_stats.tsv</code>, updates <code>classification_dataset_names</code> and <code>regression_dataset_names</code>, and adds the dataset name to <code>dataset_with_metadata</code> (which contains the names of datasets with customized metadata files). GA then pushes back these changes to your branch as long as it’s not master.</li>
 <li>If your PR resulted in a failed build, your <code>metadata.yaml</code> may be invalid. Please use <a href="http://yamllint.com" class="uri">http://yamllint.com</a> to verify. A common problem that invalidate a <code>.yaml</code> file is the use of colon <code>:</code> without quotes (in a publication title for example).</li>
 </ul></li>
 <li>If you contributed a new dataset:
 <ul>
 <li><code>get_updated_datasets()</code> picks up this new dataset by checking the diff of the latest commit. GA autogenerates <code>metadata.yaml</code>, <code>readme.md</code>, <code>summary_stats.tsv</code>, <code>all_summary_stats.tsv</code>, pandas profiling, and updates <code>dataset_names</code> (and <code>classification_dataset_names</code> and <code>regression_dataset_names</code>).</li>
 <li>A reviewer asks you to manually update the <code>metadata.yaml</code>.</li>
-<li>GA adds the dataset name to <code>dataset_with_metadata</code>, which contains the names of datasets with customized metadata files, and push back these changes to your branch as long as it’s not master.</li>
+<li>GA adds the dataset name to <code>dataset_with_metadata</code>, which contains the names of datasets with customized metadata files, and push back these changes to your branch as long as it’s not master branch or main branch.</li>
 </ul></li>
 <li>If you wished to regenerate all the pandas profiling reports:
 <ul>
 <li>Please include <code>[regenerate_profiles]</code> in the commit message.</li>
 </ul></li>
-<li>If you wished to regenerate/update supporting files for all datasets including :
+<li>If you wished to regenerate/update supporting files for all datasets:
 <ul>
 <li>Please include <code>[update_all_datasets]</code> in the commit message.</li>
 </ul></li>

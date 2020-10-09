@@ -549,12 +549,12 @@ div.tocify {
 </div>
 
 
-<p>pmlbr :package: provides the following user-facing functions and variables in the R environment. For installation instructions or a high-level overview of how to use PMLB, please see <a href="./using-r.html">Using pmlbr</a>.</p>
+<p><a href="https://github.com/EpistasisLab/pmlb"><strong>pmlbr</strong></a> provides the following user-facing functions and variables in the R environment. For installation instructions or a high-level overview of how to use PMLB, please see <a href="./using-r.html">R interface</a>.</p>
 <div id="functions" class="section level2">
 <h2>Functions</h2>
 <div id="docstring-output" class="section level3">
 <h3><code>fetch_data</code></h3>
-<p><em>function</em> <code>pmlb.fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
+<p><em>function</em> <code>fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
 <p>Download a dataset from PMLB, (optionally) store it locally, and return the dataset.</p>
 <p>You must be connected to the internet if you are fetching a dataset that is not cached locally.</p>
 <p><strong>Parameters:</strong></p>
@@ -586,6 +586,41 @@ div.tocify {
 ##  - attr(*, &quot;na.action&quot;)= &#39;omit&#39; Named int [1:11] 4 9 10 11 12 48 179 219 257 269 ...
 ##   ..- attr(*, &quot;names&quot;)= chr [1:11] &quot;4&quot; &quot;9&quot; &quot;10&quot; &quot;11&quot; ...</code></pre>
 </div>
+<div id="docstring-output" class="section level3">
+<h3><code>nearest_datasets</code></h3>
+<p><em>function</em></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">nearest_datasets</span>(</span>
+<span id="cb3-2"><a href="#cb3-2"></a>  x,</span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="dt">y =</span> <span class="ot">NULL</span>,</span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="dt">n_neighbors =</span> <span class="dv">5</span>,</span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="dt">dimensions =</span> <span class="kw">c</span>(<span class="st">&quot;n_instances&quot;</span>, <span class="st">&quot;n_features&quot;</span>),</span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="dt">task =</span> <span class="kw">c</span>(<span class="st">&quot;classification&quot;</span>, <span class="st">&quot;regression&quot;</span>),</span>
+<span id="cb3-7"><a href="#cb3-7"></a>  <span class="dt">target_name =</span> <span class="st">&quot;target&quot;</span>,</span>
+<span id="cb3-8"><a href="#cb3-8"></a>...)</span></code></pre></div>
+<p>Select nearest datasets given dataset name or dataframe <code>x</code>.</p>
+<p><strong>Parameters:</strong></p>
+<ul>
+<li><p><strong>x : str or dataframe</strong><br />
+Character string of dataset name from PMLB, or data.frame of <code>n_samples</code> x <code>n_features</code> (or <code>n_features+1</code> with a target column)</p></li>
+<li><p><strong>y : numeric vector</strong> Target column. Required when <code>x</code> does not contain the target column.</p></li>
+<li><p><strong>n_neighbors : integer</strong> Number of dataset names to return as neighbors.</p></li>
+<li><p><strong>dimensions : character vector</strong> Dataset characteristics to include in similarity calculation. Dimensions must correspond to numeric columns of <a href="https://github.com/EpistasisLab/penn-ml-benchmarks/blob/master/pmlb/all_summary_stats.tsv">all_summary_stats.tsv</a>. If ‘all’ (default), uses all numeric columns.</p></li>
+<li><p><strong>target_name : str</strong> Character string specifying column of target/dependent variable.</p></li>
+<li><p><strong>task : str</strong> Character string specifying classification or regression for summary stat generation.</p></li>
+<li><p><strong>…</strong> Further arguments passed to each S3 method.</p></li>
+</ul>
+<p><strong>Returns:</strong> - <strong>dataset : character vector</strong> Names of most similar datasets to <code>x</code>, most similar dataset first.</p>
+<ul>
+<li><strong>dataset : dataframe</strong> If <code>return_X_y == FALSE</code>, fetched dataset as a dataframe of size <code>(n_samples, n_features+1)</code>, where the last column is <code>target</code>. If <code>return_X_y == TRUE</code>, a list of length 2 containing the feature matrix <code>X</code> and the target array <code>y</code>, respectively.</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">nearest_datasets</span>(<span class="st">&#39;penguins&#39;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;penguins&quot;      &quot;ecoli&quot;         &quot;schizo&quot;        &quot;bupa&quot;         
+## [5] &quot;solar_flare_1&quot;</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">nearest_datasets</span>(<span class="kw">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>))</span></code></pre></div>
+<pre><code>## [1] &quot;penguins&quot;      &quot;ecoli&quot;         &quot;schizo&quot;        &quot;bupa&quot;         
+## [5] &quot;solar_flare_1&quot;</code></pre>
+</div>
 </div>
 <div id="data-objects" class="section level2">
 <h2>Data objects</h2>
@@ -595,9 +630,7 @@ div.tocify {
 <p>A list of all datasets included in PMLB.</p>
 <p>The contents of this vector are the union of <code>classification_dataset_names</code> and <code>regression_dataset_names</code>.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">data</span>(pmlb)</span></code></pre></div>
-<pre><code>## Warning in data(pmlb): data set &#39;pmlb&#39; not found</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">head</span>(dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">head</span>(dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1027_ESL&quot;             &quot;1028_SWD&quot;             &quot;1029_LEV&quot;            
 ## [4] &quot;1030_ERA&quot;             &quot;1089_USCrime&quot;         &quot;1096_FacultySalaries&quot;
 ## [7] &quot;1191_BNG_pbc&quot;         &quot;1193_BNG_lowbwt&quot;      &quot;1196_BNG_pharynx&quot;</code></pre>
@@ -607,7 +640,7 @@ div.tocify {
 <p>A list of all <em>classification</em> datasets included in PMLB.</p>
 <p>Classification datasets are datasets where the target values (dependent variable/outcome) are discrete.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">head</span>(classification_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">head</span>(classification_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;                  &quot;agaricus_lepiota&quot;       &quot;allbp&quot;                 
 ## [4] &quot;allhyper&quot;               &quot;allhypo&quot;                &quot;allrep&quot;                
 ## [7] &quot;analcatdata_aids&quot;       &quot;analcatdata_asbestos&quot;   &quot;analcatdata_authorship&quot;</code></pre>
@@ -617,7 +650,7 @@ div.tocify {
 <p>A list of all <em>regression</em> datasets included in PMLB.</p>
 <p>regression datasets are datasets where the target values (dependent variable/outcome) are continuous.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">head</span>(regression_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="kw">head</span>(regression_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1027_ESL&quot;             &quot;1028_SWD&quot;             &quot;1029_LEV&quot;            
 ## [4] &quot;1030_ERA&quot;             &quot;1089_USCrime&quot;         &quot;1096_FacultySalaries&quot;
 ## [7] &quot;1191_BNG_pbc&quot;         &quot;1193_BNG_lowbwt&quot;      &quot;1196_BNG_pharynx&quot;</code></pre>
@@ -639,7 +672,7 @@ div.tocify {
 <li><em>task</em>: Type of problem/task. Can be classification or regression.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">head</span>(summary_stats)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">head</span>(summary_stats)</span></code></pre></div>
 <pre><code>##                dataset n_instances n_features n_binary_features
 ## 1             1027_ESL         488          4                 0
 ## 2             1028_SWD        1000         10                 0
