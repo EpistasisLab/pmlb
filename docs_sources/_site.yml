@@ -7,7 +7,7 @@ output:
     theme: flatly
     toc: true
     toc_float: true
-    toc_depth: 2
+    toc_depth: 3
     highlight: tango
     number_sections: false
 navbar:

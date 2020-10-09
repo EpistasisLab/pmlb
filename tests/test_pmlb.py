@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-from pmlb import fetch_data, get_updated_datasets
-from pmlb.pmlb import get_dataset_url
+from pmlb import fetch_data
+from pmlb.pmlb import get_dataset_url, get_updated_datasets
 from nose.tools import assert_raises
 from tempfile import mkdtemp
 from shutil import rmtree

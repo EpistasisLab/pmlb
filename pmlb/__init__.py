@@ -5,6 +5,7 @@ PMLB was primarily developed at the University of Pennsylvania by:
     - Randal S. Olson (rso@randalolson.com)
     - William La Cava (lacava@upenn.edu)
     - Weixuan Fu (weixuanf@upenn.edu)
+    - Trang Le (ttle@pennmedicine.upenn.edu)
     - and many more generous open source contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software
@@ -25,8 +26,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 from ._version import __version__
 from .pmlb import (
-    fetch_data, 
-    get_updated_datasets, 
+    fetch_data,
     nearest_datasets,
     get_reviewed_datasets,
     select_datasets
