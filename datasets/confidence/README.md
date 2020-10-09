@@ -1,6 +1,6 @@
 # confidence
 
-[**Pandas Profiling Report**](https://epistasislab.github.io/penn-ml-benchmarks/profile/confidence.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/pmlb/profile/confidence.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.tsv)
 
