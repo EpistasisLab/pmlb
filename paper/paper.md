@@ -135,4 +135,7 @@ Alternatively, all reports can be viewed on the repository's [gh-pages](https://
 We have significantly reduced the size of the PMLB source repository by using [Git Large File Storage (LFS)](https://git-lfs.github.com/) to efficiently track changes in large database source files [@PerezRiverol2016].
 Users who would like to interact with the entire repository (including the complete database sources) locally can do so by either [installing Git LFS](https://git-lfs.github.com/) and cloning the PMLB repository, or by downloading a ZIP archive of [the repository](https://github.com/EpistasisLab/pmlb) from GitHub in a web browser.
 
+# Acknowledgements
+This work was supported by the National Institute of Health grant numbers LM012926, LM010098 and AI116794.
+
 # References
