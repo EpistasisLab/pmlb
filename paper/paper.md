@@ -103,7 +103,7 @@ To select datasets with numerical values for specific metadata characteristics (
 For example, if the user wants to view all classification datasets with 80 to 100 observations, they would select `classification` at the bottom of the `Task` column, and type `80 ... 100` at the bottom of the `n_observations` column.
 The `CSV` button allows the user to download the table's contents with any active filters applied.
 
-![Dataset summary statistics table, with advanced searching, filtering, and sorting features.\label{fig:home-tab}](pmlb-home-tab.png)
+![Dataset summary statistics table with advanced searching, filtering, and sorting features.\label{fig:home-tab}](pmlb-home-tab.png)
 
 On the website, we have also published a concise [contribution guide](https://epistasislab.github.io/pmlb/contributing.html) with step-by-step instructions on how to add new datasets, submit edits for existing datasets, or improve the provided Python or R code.
 When a new dataset is added, summary statistics (e.g., number of observations, number of classes, etc.) are automatically computed, a profiling report is generated (see below), a corresponding metadata template is added to the dataset folder, and PMLB's list of available dataset names is updated.
