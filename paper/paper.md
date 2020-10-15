@@ -23,13 +23,13 @@ authors:
     affiliation: 3
   - name: Praneel Chakraborty
     orcid: 0000-0001-9586-0721
-    affiliations: "4, 5"
+    affiliation: "4, 5"
   - name: Natasha L. Ray
     orcid: 0000-0001-6883-4624
     affiliation: 6
   - name: Daniel Himmelstein
     orcid: 0000-0002-3012-7446
-    affiliations: "7, 8"
+    affiliation: "7, 8"
   - name: Weixuan Fu
     orcid: 0000-0002-6434-5468
     affiliation: 9
@@ -39,7 +39,7 @@ authors:
 affiliations:
  - name: Department of Biostatistics, Epidemiology and Informatics, University of Pennsylvania, Philadelphia, PA 19104
    index: 1
- - name: Institution Name
+ - name: Center of Excellence in Environmental Toxicology, University of Pennsylvania, Philadelphia, PA 19104
    index: 2
  - name: Department of Computer Science & Engineering, Washington University in St. Louis, St. Louis, MO 63130
    index: 3
