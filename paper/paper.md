@@ -15,7 +15,7 @@ authors:
   - name: Joseph D. Romano
     orcid: 0000-0002-7999-4399
     affiliation: "1, 2"
-  - name: John T. Greg
+  - name: John T. Gregg
     orcid: 0000-0002-2619-3440
     affiliation: 1
   - name: Daniel J. Goldberg
