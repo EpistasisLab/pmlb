@@ -6,7 +6,7 @@ tags:
   - rstats
   - benchmark
 authors:
-  - name: Trang T. Le
+  - name: Trang T. Le^[corresponding author]
     orcid: 0000-0003-3737-6565
     affiliation: 1
   - name: William La Cava
