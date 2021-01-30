@@ -140,9 +140,25 @@ All datasets are stored in a common format:
 
 ## Citing PMLB
 
-If you use PMLB in a scientific publication, please consider citing the following paper:
+If you use PMLB in a scientific publication, please consider citing one of the following papers:
 
-Randal S. Olson, William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore (2017). [PMLB: a large benchmark suite for machine learning evaluation and comparison](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4). *BioData Mining* **10**, page 36.
+Le, Trang T., William La Cava, Joseph D. Romano, John T. Gregg, Daniel J. Goldberg, Praneel Chakraborty, Natasha L. Ray, Daniel Himmelstein, Weixuan Fu, and Jason H. Moore.
+[PMLB v1. 0: an open source dataset collection for benchmarking machine learning methods](https://arxiv.org/abs/2012.00058).
+_arXiv preprint arXiv:2012.00058_ (2020).
+
+```bibtex
+@article{le2020pmlb,
+  title={PMLB v1. 0: an open source dataset collection for benchmarking machine learning methods},
+  author={Le, Trang T and La Cava, William and Romano, Joseph D and Gregg, John T and Goldberg, Daniel J and Chakraborty, Praneel and Ray, Natasha L and Himmelstein, Daniel and Fu, Weixuan and Moore, Jason H},
+  journal={arXiv preprint arXiv:2012.00058},
+  year={2020}
+}
+```
+
+Olson, Randal S., William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore.
+[PMLB: a large benchmark suite for machine learning evaluation and comparison](https://biodatamining.biomedcentral.com/articles/10.1186/s13040-017-0154-4).
+BioData mining 10, no. 1 (2017): 1-13.
+*BioData Mining* **10**, page 36.
 
 BibTeX entry:
 
