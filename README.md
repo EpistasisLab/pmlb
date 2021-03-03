@@ -125,7 +125,7 @@ plt.ylabel('Test Accuracy')
 
 ## Contributing
 
-See our [Contributing Guide](docs_sources/contributing.Rmd). 
+See our [Contributing Guide](https://epistasislab.github.io/pmlb/contributing.html). 
 We're looking for help with documentation, and also appreciate new dataset and functionality contributions.
 
 ## Citing PMLB
