@@ -123,6 +123,11 @@ plt.xticks([0, 1], ['LogisticRegression', 'GaussianNB'])
 plt.ylabel('Test Accuracy')
 ```
 
+## Contributing
+
+See our [Contributing Guide](docs_sources/contributing.Rmd). 
+We're looking for help with documentation, and also appreciate new dataset and functionality contributions.
+
 ## Citing PMLB
 
 If you use PMLB in a scientific publication, please consider citing the following paper:
