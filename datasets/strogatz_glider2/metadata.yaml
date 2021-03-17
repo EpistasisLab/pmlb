@@ -20,7 +20,7 @@ keywords:
   - symbolic regression
 target:
   type: continuous
-  description: rate of change of x
+  description: rate of change of y
   code:  
 features:
   - name: x
