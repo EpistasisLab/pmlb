@@ -1,0 +1,31 @@
+# Reviewed by William La Cava
+dataset: strogatz_bacres1
+description: |
+    This is one state of a 2-state dynamic model for bacterial respiration. 
+    It is adapted from Steven Strogatz's book "Chaos and Nonlinear Dynamics".  
+    Each strogatz ODE system can exhibit chaotic and/or nonlinear behavior. 
+    For the purposes of modeling, these systems are simulated using initial conditions within stable basins of attraction. 
+    The systems are simulated using simulink and matlab. 
+source: https://github.com/lacava/ode-strogatz 
+publication: | 
+    It has been used as a benchmark dataset in the following publications: 
+    La Cava, W., Danai, K., Spector, L., (2016). "Inference of Compact Nonlinear Dynamic Models by Epigenetic Local Search." Engineering Applications of Artificial Intelligence. doi:10.1016/j.engappai.2016.07.004
+    Schmidt, M.D. (2011) Machine Science: Automated Modeling of Deterministic and Stochastic Dynamical Systems. PhD Thesis.  
+    The original problems are from: 
+    Strogatz, S. (2014) Nonlinear dynamics and chaos: with applications to physics, biology, chemistry, and engineering. Westview press. 
+task: regression
+keywords:
+  - differential equations
+  - physics
+  - symbolic regression
+target:
+  type: continuous
+  description: rate of change of x
+  code:  
+features:
+  - name: x
+    type: continuous
+    description: state x
+  - name: "y"
+    type: continuous
+    description: state y
