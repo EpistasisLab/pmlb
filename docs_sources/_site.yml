@@ -26,7 +26,7 @@ navbar:
     - text: Contributing
       href: contributing.html
   right:
-    - icon: fa-github
+    - icon: fa-github fa-lg fab
       href: https://github.com/EpistasisLab/pmlb/
 
 
