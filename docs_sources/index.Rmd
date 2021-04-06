@@ -147,11 +147,11 @@ Le, Trang T., William La Cava, Joseph D. Romano, John T. Gregg, Daniel J. Goldbe
 _arXiv preprint arXiv:2012.00058_ (2020).
 
 ```bibtex
-@article{le2020pmlb,
-  title={PMLB v1. 0: an open source dataset collection for benchmarking machine learning methods},
-  author={Le, Trang T and La Cava, William and Romano, Joseph D and Gregg, John T and Goldberg, Daniel J and Chakraborty, Praneel and Ray, Natasha L and Himmelstein, Daniel and Fu, Weixuan and Moore, Jason H},
-  journal={arXiv preprint arXiv:2012.00058},
-  year={2020}
+@article{romano2021pmlb,
+  title={PMLB v1.0: an open source dataset collection for benchmarking machine learning methods},
+  author={Romano, Joseph D and Le, Trang T and La Cava, William and Gregg, John T and Goldberg, Daniel J and Chakraborty, Praneel and Ray, Natasha L and Himmelstein, Daniel and Fu, Weixuan and Moore, Jason H},
+  journal={arXiv preprint arXiv:2012.00058v2},
+  year={2021}
 }
 ```
 
@@ -171,8 +171,8 @@ BibTeX entry:
     month="Dec",
     day="11",
     volume="10",
-    number="1",
-    pages="36",
+    number="36",
+    pages="1--13",
     issn="1756-0381",
     doi="10.1186/s13040-017-0154-4",
     url="https://doi.org/10.1186/s13040-017-0154-4"
