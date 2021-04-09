@@ -2,6 +2,10 @@
 dataset: strogatz_vdp2
 description: |
     This is one state of a 2-state dynamic model of a Van der Pol oscillator. 
+    
+    $\dot{x} = 10 \cdot  \left(y - \frac{1}{3} \cdot (x^3-x) \right)$
+    $ \dot{y} = -\frac{1}{10} \cdot x$
+
     It is adapted from Steven Strogatz's book "Chaos and Nonlinear Dynamics".  
     Each strogatz ODE system can exhibit chaotic and/or nonlinear behavior. 
     For the purposes of modeling, these systems are simulated using initial conditions within stable basins of attraction. 
