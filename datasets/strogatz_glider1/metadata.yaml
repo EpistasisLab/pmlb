@@ -3,7 +3,7 @@ dataset: strogatz_glider1
 description: |
     This is one state of a 2-state dynamic model for a glider. 
     
-    $\dot{v} = - 0.05 \cdot  v^2 - sin (\theta)$
+    $\dot{v} = - 0.05 \cdot  v^2 - \sin (\theta)$
     $ \dot{\theta} = v - \cos (\theta)/v$
 
     It is adapted from Steven Strogatz's book "Chaos and Nonlinear Dynamics".  
