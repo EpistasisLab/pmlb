@@ -19,7 +19,7 @@ jobs:
         python-version: 3.8
     - name: Install dependencies
       run: |
-        pip install ".[dev]"
+        pip install ".[dev]" --no-cache-dir
         sudo apt-get update
         sudo apt-get install libssl-dev libcurl4-openssl-dev
 
