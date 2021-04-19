@@ -20,8 +20,13 @@ jobs:
         with:
           path: .git/lfs
           key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
+      - name: See which files are different
+        run: |
+          git lfs ls-files -n ${github.ref} ${github.head_ref} > new_files
+          tr '\n' ',' < new_files > comma_new_files
+          echo "different files: " $(<comma_new_files)
       - name: Git LFS Pull
-        run: git lfs pull
+        run: git lfs pull --include=$(<comma_new_files)
       - name: Set up Python 3.8
         uses: actions/setup-python@v1
         with:
