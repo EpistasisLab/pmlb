@@ -9,10 +9,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
       with:
         fetch-depth: 0
-        lfs: true
+        # lfs: true
+
+	- name: Create LFS file list
+	  run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+
+	- name: Restore LFS cache
+	  uses: actions/cache@v2
+	  id: lfs-cache
+	  with:
+		path: .git/lfs
+		key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
+
+	- name: Git LFS Pull
+	  run: git lfs pull
+ 
     - name: Set up Python 3.8
       uses: actions/setup-python@v1
       with:
@@ -26,12 +41,14 @@ jobs:
     - name: Update support files for new datasets
       run: |
         python -m pmlb.update_dataset_files
+
     - name: Set deploy variables
       run: |
         BRANCH_REF=${{github.head_ref || github.ref}}
         echo "BRANCH=${BRANCH_REF##*/}" >> $GITHUB_ENV
         git config --local user.name 'github-actions[bot]'
         git config --local user.email 'github-actions[bot]@users.noreply.github.com'
+
     - name: Push updates to active branch
       run: |
         if git diff --quiet ; then
