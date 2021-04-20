@@ -1,10 +1,10 @@
 name: Update new dataset metadata
 
 on:
-  push:
-    branches-ignore:
-      - master
-      - gh-pages
+  # push:
+  #   branches-ignore:
+  #     - master
+  #     - gh-pages
   pull_request:
     branches:
       - master
