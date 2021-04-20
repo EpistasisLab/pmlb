@@ -22,10 +22,11 @@ jobs:
           key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
       - name: See which files are different
         env:
-          BASE_REF: ${{ github['base_ref'] }}
+          BASE_REF: ${{ github.base_ref }}
           BRANCH_REF: ${{github.head_ref || github.ref}}
         run: |
           # BASE_REF=${{ github.base_ref }}
+          env
           echo "BRANCH_REF: $BRANCH_REF"
           echo "BASE_REF: $BASE_REF"
           git lfs ls-files -n $BASE_REF $BRANCH_REF > new_files
