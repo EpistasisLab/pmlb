@@ -22,13 +22,17 @@ jobs:
           key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
       - name: See which files are different
         run: |
-          echo "ref: ${{ github.ref}}"
-          echo "head ref: ${{ github.head_ref}}"
-          echo "base ref: ${{ github.base_ref}}"
-          echo "ref: $github.ref"
-          echo "head ref: $github.head_ref"
-          echo "base ref: $github.base_ref"
-          git lfs ls-files -n ${{ github.base_ref }} ${{ github.head_ref }} > new_files
+          # echo "ref: ${{ github.ref}}"
+          # echo "head ref: ${{ github.head_ref}}"
+          # echo "base ref: ${{ github.base_ref}}"
+          # echo "ref: $github.ref"
+          # echo "head ref: $github.head_ref"
+          # echo "base ref: $github.base_ref"
+          BRANCH_REF=${{github.head_ref || github.ref}}
+          BASE_REF=${{ github.base_ref }}
+          echo "BRANCH_REF: $BRANCH_REF"
+          echo "BASE_REF: $BRANCH_REF"
+          git lfs ls-files -n $BASE_REF $BRANCH_REF > new_files
           tr '\n' ',' < new_files > comma_new_files
           echo "different files: " $(<comma_new_files)
       - name: Git LFS Pull
