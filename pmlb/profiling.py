@@ -9,6 +9,7 @@ from .pmlb import (
     fetch_data, get_updated_datasets, last_commit_message
 )
 from .dataset_lists import dataset_names
+from .update_dataset_files import download_datasets
 
 def make_profiling(dataset, write_dir, dat_dir='datasets/'):
     print(f'Processing {dataset}')
@@ -48,6 +49,8 @@ if __name__ =='__main__':
     write_dir.mkdir(exist_ok=True)
 
     datasets = datasets_to_gen()
+
+    download_datasets(datasets)
 
     for dataset in datasets:
         write_path = write_dir.joinpath(dataset + '.html')

@@ -31,6 +31,7 @@ import pathlib
 import yaml
 import os
 import logging
+import subprocess
 
 from .pmlb import fetch_data, get_updated_datasets, get_reviewed_datasets
 from .support_funcs import (
@@ -80,6 +81,15 @@ def datasets_to_update() -> list:
     updated_sets = get_updated_datasets()
     return updated_sets
 
+def download_datasets(updated_datasets):
+    # fetch the updated_sets from git lfs
+    if len(updated_datasets) > 0:
+        res = subprocess.check_output(
+              'git lfs pull --include={}'.format(
+                  ','.join([us+'.tsv.gz' for us in updated_datasets]))
+                  )
+        subprocess.check_output('git lfs ls-files')
+
 if __name__ =='__main__':
     # assuming this is run from the repo root directory
     local_dir = 'datasets/'
@@ -89,6 +99,8 @@ if __name__ =='__main__':
     updated_datasets = updated_sets['changed_datasets']
     updated_metadatas = updated_sets['changed_metadatas']
     reviewed_datasets = get_reviewed_datasets(dataset_names)
+
+    download_datasets(updated_datasets)
 
     for dataset_name in updated_datasets:
         print(f'Adding readme, metadata and summary stats for {dataset_name}...')
