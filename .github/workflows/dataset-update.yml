@@ -21,24 +21,20 @@ jobs:
           path: .git/lfs
           key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
       - name: See which files are different
+        env:
+          BASE_REF: ${{ github['base_ref'] }}
+          BRANCH_REF: ${{github.head_ref || github.ref}}
         run: |
-          # echo "ref: ${{ github.ref}}"
-          # echo "head ref: ${{ github.head_ref}}"
-          # echo "base ref: ${{ github.base_ref}}"
-          # echo "ref: $github.ref"
-          # echo "head ref: $github.head_ref"
-          # echo "base ref: $github.base_ref"
-          BRANCH_REF=${{github.head_ref || github.ref}}
-          BASE_REF=${{ github.base_ref }}
+          # BASE_REF=${{ github.base_ref }}
           echo "BRANCH_REF: $BRANCH_REF"
           echo "BASE_REF: $BASE_REF"
-          echo "GITHUB_BASE_REF: $GITHUB_BASE_REF"
-          echo "env GITHUB_BASE_REF: ${{ env.GITHUB_BASE_REF }}"
-          git lfs ls-files -n refs/heads/master $BRANCH_REF > new_files
+          git lfs ls-files -n $BASE_REF $BRANCH_REF > new_files
           tr '\n' ',' < new_files > comma_new_files
           echo "different files: " $(<comma_new_files)
       - name: Git LFS Pull
-        run: git lfs pull --include=$(<comma_new_files)
+        run: |
+          git lfs pull --include=$(<comma_new_files)
+          git lfs ls-files
       - name: Set up Python 3.8
         uses: actions/setup-python@v1
         with:
