@@ -86,7 +86,7 @@ def download_datasets(updated_datasets):
     if len(updated_datasets) > 0:
         res = subprocess.check_output(
               'git lfs pull --include={}'.format(
-                  ','.join([us+'.tsv.gz' for us in updated_datasets]))
+                  ','.join(['datasets/' + us+'.tsv.gz' for us in updated_datasets]))
                   )
         subprocess.check_output('git lfs ls-files')
 
