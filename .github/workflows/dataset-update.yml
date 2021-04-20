@@ -26,10 +26,10 @@ jobs:
       - name: See which files are different
         env:
           BASE_REF: ${{ github.base_ref }}
-          BRANCH_REF: ${{github.head_ref || github.ref}}
+          BRANCH_REF: ${{ github.sha }}
         run: |
           # BASE_REF=${{ github.base_ref }}
-          env
+          env | sort 
           echo "BRANCH_REF: $BRANCH_REF"
           echo "BASE_REF: $BASE_REF"
           git lfs ls-files -n $BASE_REF $BRANCH_REF > new_files
