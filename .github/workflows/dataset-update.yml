@@ -5,6 +5,9 @@ on:
     branches-ignore:
       - master
       - gh-pages
+  pull_request:
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
