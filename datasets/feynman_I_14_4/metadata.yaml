@@ -9,13 +9,15 @@ description: |
     
     k_spring in [1.0,5.0]
     x in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
 source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
-publication: AI Feynman: a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
 task: regression
 keywords: 
   - symbolic regression 
   - physics 
-target:
+target: 
   type: continuous
   description: U, Energy, m^2 * s^(-2) * kg^1 
 features: # list of features in the dataset

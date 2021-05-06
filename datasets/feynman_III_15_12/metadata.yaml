@@ -11,7 +11,7 @@ description: |
     k in [1.0,5.0]
     d in [1.0,5.0]
 source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
-publication: AI Feynman: a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+publication: AI Feynman- a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
 task: regression
 keywords: 
   - symbolic regression 
