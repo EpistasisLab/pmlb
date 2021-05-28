@@ -2,7 +2,7 @@
 dataset: adult
 description: Prediction of whether a person makes over $50K a year, based on 14 other features.
 source: >
-  http://mlr.cs.umass.edu/ml/datasets/Adult
+  https://archive.ics.uci.edu/ml/datasets/adult
   https://www.openml.org/d/1590
 publication: >
   Ron Kohavi, "Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid", 
