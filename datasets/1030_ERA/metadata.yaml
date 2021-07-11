@@ -1,12 +1,29 @@
 # Reviewed by [your name here]
 dataset: 1030_ERA
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
+description: |
+    Employee Rejection / Acceptance
+    The ERA data set was originally gathered during an academic decision-making experiment aiming at determining which are the most important qualities of candidates for a certain type of jobs. 
+    Unlike the ESL data set which was collected from expert recruiters, this data set was collected during a MBA academic course.
+    The input in the data set are features of a candidates such as past experience, verbal skills, etc., and the output is the subjective judgment of a decision-maker to which degree he or she tends to accept the applicant to the job or to reject him altogether (the lowest score means total tendency to reject an applicant and vice versa).
+source: |
+    Donor: Arie Ben David
+        MIS, Dept. of Technology Management
+        Holon Academic Inst. of Technology
+        52 Golomb St.
+        Holon 58102
+        Israel
+        abendav@hait.ac.il
+    Owner: Yoav Ganzah
+        Business Administration School
+        Tel Aviv Univerity
+        Ramat Aviv 69978
+        Israel
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 keywords:
-  -
-  -
+  - real-world
+  - human-subjects
+  - employment
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.

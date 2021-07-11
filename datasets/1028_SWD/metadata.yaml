@@ -1,12 +1,28 @@
 # Reviewed by [your name here]
 dataset: 1028_SWD
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
+description: |
+    Social Workers Decisions
+    The SWD data set contains real-world assessments of qualified social workers regarding the risk facing children if they stayed with their families at home.  
+    This evaluation of risk assessment is often presented to judicial courts to help decide what is in the best interest of an alleged abused or neglected child.
+source: |
+    Donor: Arie Ben David
+           MIS, Dept. of Technology Management
+           Holon Academic Inst. of Technology
+           52 Golomb St.
+           Holon 58102
+           Israel
+           abendav@hait.ac.il
+    Owner: Yoav Ganzah
+           Business Administration School
+           Tel Aviv Univerity
+           Ramat Aviv 69978
+           Israel
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 keywords:
-  -
-  -
+  - real-world
+  - human-subjects
+  - law
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.

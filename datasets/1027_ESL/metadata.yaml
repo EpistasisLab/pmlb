@@ -1,12 +1,29 @@
 # Reviewed by [your name here]
+#
 dataset: 1027_ESL
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
+description: |
+    The ESL data set contains 488 profiles of applicants for certain industrial jobs.  
+    Expert psychologists of a recruiting company, based upon psychometric test results and interviews with the candidates, determined the values of the input attributes. 
+    The output is the an overall score corresponding to the degree of fitness of the candidate to this type of job.
+source: |
+    Donor: Arie Ben David
+        MIS, Dept. of Technology Management
+        Holon Academic Inst. of Technology
+        52 Golomb St.
+        Holon 58102
+        Israel
+        abendav@hait.ac.il
+    Owner: Yoav Ganzah
+        Business Administration School
+        Tel Aviv Univerity
+        Ramat Aviv 69978
+        Israel
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 keywords:
-  -
-  -
+  - real-world
+  - human-subjects
+  - employment
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.

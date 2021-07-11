@@ -19,6 +19,7 @@ keywords:
   - crime
   - demographics
   - government
+  - real-world
 target:
   type: continuous
   description: The number of families per 1000 earning below 1/2 the median income
