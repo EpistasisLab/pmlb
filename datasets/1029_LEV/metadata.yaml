@@ -1,29 +1,12 @@
 # Reviewed by [your name here]
 dataset: 1029_LEV
-description: 
-    Lecturers Evaluation
-    The LEV data set contains examples of anonymous lecturer evaluations, taken at the end of MBA courses. 
-    Before receiving the final grades, students were asked to score their lecturers according to four attributes such as oral skills and contribution to their professional/general knowledge. 
-    The single output was a total evaluation of the lecturer’s performance.
-source: |
-    Donor: Arie Ben David
-        MIS, Dept. of Technology Management
-        Holon Academic Inst. of Technology
-        52 Golomb St.
-        Holon 58102
-        Israel
-        abendav@hait.ac.il
-    Owner: Yoav Ganzah
-        Business Administration School
-        Tel Aviv Univerity
-        Ramat Aviv 69978
-        Israel
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
 task: regression
 keywords:
-  - real-world
-  - human-subjects
-  - academics
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.

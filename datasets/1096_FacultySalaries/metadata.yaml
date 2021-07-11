@@ -1,19 +1,12 @@
 # Reviewed by [your name here]
 dataset: 1096_FacultySalaries
-description: 
-    Professor's Pay
-    A faculty salary study was done at The Ohio State University to compare faculty salaries there with those at other universities. 
-    Data were collected from the Association of American Universities. 
-    The overall average salary for OSU was obtained by computing the weighted average of salaries at each faculty level with the weights being the proportion of faculty members in each rank. 
-    The overall average salary for each of the other 49 universities was created using the same weights OSU used.
-    Note that the "Big Ten" has 11 schools in it (since Penn State joined the original 10 schools).
-source: http://www.stat.wvu.edu/SRS/Modules/Datasets/faculty.html
-publication: "Faculty Compensation and Benefits Committee." (1993, April).  Ohio State University
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
 task: regression
 keywords:
-  - real-world
-  - human-subjects
-  - employment
+  -
+  -
 target:
   type: continuous
   description: None yet. See our contributing guide to help us add one.
