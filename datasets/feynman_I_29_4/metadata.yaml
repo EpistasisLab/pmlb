@@ -1,29 +1,24 @@
-# Created by William La Cava (@lacava)
+# Reviewed by [your name here]
 dataset: feynman_I_29_4
-description: |
-    A synthetic physics model from the Feynman Lectures on Physics.         
-    This is the version of the model with units.
-    Formula and simulated variable ranges given below. 
-    
-    k = omega/c
-    
-    omega in [1.0,10.0]
-    c in [1.0,10.0]
-    
-    Note the original data has been down-sampled to 100,000 rows (see source). 
-source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
-publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
 task: regression
-keywords: 
-  - symbolic regression 
-  - physics 
-target: 
+keywords:
+  -
+  -
+target:
   type: continuous
-  description: k, Wave number, m^(-1) 
-features: # list of features in the dataset
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
   - name: omega
     type: continuous
-    description: Frequency, s^(-1)
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
   - name: c
     type: continuous
-    description: Velocity, m^1 * s^(-1)
+    description:
+    code:
+    transform:
