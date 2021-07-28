@@ -1,0 +1,29 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_I_25_13
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    Volt = q/C
+    
+    q in [1.0,5.0]
+    C in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: Volt, Voltage, V^1 
+features: # list of features in the dataset
+  - name: q
+    type: continuous
+    description: Charge, m^2 * s^(-2) * kg^1 * V^(-1)
+  - name: C
+    type: continuous
+    description: Capacitance, m^2 * s^(-2) * kg^1 * V^(-2)

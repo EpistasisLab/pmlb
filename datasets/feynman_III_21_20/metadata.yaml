@@ -1,0 +1,37 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_III_21_20
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    j = -rho_c_0*q*A_vec/m
+    
+    rho_c_0 in [1.0,5.0]
+    q in [1.0,5.0]
+    A_vec in [1.0,5.0]
+    m in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: j, Current density, s^(-3) * kg^1 * V^(-1) 
+features: # list of features in the dataset
+  - name: rho_c_0
+    type: continuous
+    description: Volume charge density, m^(-1) * s^(-2) * kg^1 * V^(-1)
+  - name: q
+    type: continuous
+    description: Charge, m^2 * s^(-2) * kg^1 * V^(-1)
+  - name: A_vec
+    type: continuous
+    description: Vector potential, m^(-1) * s^1 * V^1
+  - name: m
+    type: continuous
+    description: Mass, kg^1

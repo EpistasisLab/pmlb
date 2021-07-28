@@ -1,0 +1,41 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_II_11_20
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    Pol = n_rho*p_d**2*Ef/(3*kb*T)
+    
+    n_rho in [1.0,5.0]
+    p_d in [1.0,5.0]
+    Ef in [1.0,5.0]
+    kb in [1.0,5.0]
+    T in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: Pol, Polarization, s^(-2) * kg^1 * V^(-1) 
+features: # list of features in the dataset
+  - name: n_rho
+    type: continuous
+    description: Inverse volume, m^(-3)
+  - name: p_d
+    type: continuous
+    description: Electric dipole moment, m^3 * s^(-2) * kg^1 * V^(-1)
+  - name: Ef
+    type: continuous
+    description: Electric field, m^(-1) * V^1
+  - name: kb
+    type: continuous
+    description: Boltzmann constant, m^2 * s^(-2) * kg^1 * T^(-1)
+  - name: T
+    type: continuous
+    description: Temperature, T^1

@@ -1,0 +1,37 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_test_11
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    I = I_0*(sin(alpha/2)*sin(n*delta/2)/(alpha/2*sin(delta/2)))**2
+    
+    I_0 in [1.0,3.0]
+    alpha in [1.0,3.0]
+    delta in [1.0,3.0]
+    n in [1.0,2.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: I, Current Intensity, m^2 * s^(-3) * kg^1 * V^(-1) 
+features: # list of features in the dataset
+  - name: I_0
+    type: continuous
+    description: Current Intensity, m^2 * s^(-3) * kg^1 * V^(-1)
+  - name: alpha
+    type: continuous
+    description: Dimensionless
+  - name: delta
+    type: continuous
+    description: Dimensionless
+  - name: n
+    type: continuous
+    description: Dimensionless

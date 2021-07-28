@@ -1,0 +1,45 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_test_2
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    k = m*k_G/L**2*(1+sqrt(1+2*E_n*L**2/(m*k_G**2))*cos(theta1-theta2))
+    
+    m in [1.0,3.0]
+    k_G in [1.0,3.0]
+    L in [1.0,3.0]
+    E_n in [1.0,3.0]
+    theta1 in [0.0,6.0]
+    theta2 in [0.0,6.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: k, Wave number, m^(-1) 
+features: # list of features in the dataset
+  - name: m
+    type: continuous
+    description: Mass, kg^1
+  - name: k_G
+    type: continuous
+    description: Gravitational coupling (Gm1m2), m^3 * s^(-2) * kg^1
+  - name: L
+    type: continuous
+    description: Angular momentum, m^2 * s^(-1) * kg^1
+  - name: E_n
+    type: continuous
+    description: Energy, m^2 * s^(-2) * kg^1
+  - name: theta1
+    type: continuous
+    description: Dimensionless
+  - name: theta2
+    type: continuous
+    description: Dimensionless

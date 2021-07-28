@@ -1,0 +1,33 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_I_18_12
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    tau = r*F*sin(theta)
+    
+    r in [1.0,5.0]
+    F in [1.0,5.0]
+    theta in [0.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: tau, Torque, m^2 * s^(-2) * kg^1 
+features: # list of features in the dataset
+  - name: r
+    type: continuous
+    description: Length, m^1
+  - name: F
+    type: continuous
+    description: Force, m^1 * s^(-2) * kg^1
+  - name: theta
+    type: continuous
+    description: Dimensionless

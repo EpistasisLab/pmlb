@@ -1,0 +1,33 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_I_30_3
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    Int = Int_0*sin(n*theta/2)**2/sin(theta/2)**2
+    
+    Int_0 in [1.0,5.0]
+    theta in [1.0,5.0]
+    n in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: Int, Light intensity, s^(-3) * kg^1 
+features: # list of features in the dataset
+  - name: Int_0
+    type: continuous
+    description: Light intensity, s^(-3) * kg^1
+  - name: theta
+    type: continuous
+    description: Dimensionless
+  - name: n
+    type: continuous
+    description: Dimensionless

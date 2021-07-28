@@ -1,0 +1,41 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_I_41_16
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    L_rad = h/(2*pi)*omega**3/(pi**2*c**2*(exp((h/(2*pi))*omega/(kb*T))-1))
+    
+    omega in [1.0,5.0]
+    T in [1.0,5.0]
+    h in [1.0,5.0]
+    kb in [1.0,5.0]
+    c in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: L_rad, Spectral radiance, s^(-2) * kg^1 
+features: # list of features in the dataset
+  - name: omega
+    type: continuous
+    description: Frequency, s^(-1)
+  - name: T
+    type: continuous
+    description: Temperature, T^1
+  - name: h
+    type: continuous
+    description: Angular momentum, m^2 * s^(-1) * kg^1
+  - name: kb
+    type: continuous
+    description: Boltzmann constant, m^2 * s^(-2) * kg^1 * T^(-1)
+  - name: c
+    type: continuous
+    description: Velocity, m^1 * s^(-1)

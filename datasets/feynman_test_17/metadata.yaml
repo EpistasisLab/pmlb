@@ -1,0 +1,45 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_test_17
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    E_n = 1/(2*m)*(p**2+m**2*omega**2*x**2*(1+alpha*x/y))
+    
+    m in [1.0,5.0]
+    omega in [1.0,5.0]
+    p in [1.0,5.0]
+    y in [1.0,5.0]
+    x in [1.0,5.0]
+    alpha in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: E_n, Energy, m^2 * s^(-2) * kg^1 
+features: # list of features in the dataset
+  - name: m
+    type: continuous
+    description: Mass, kg^1
+  - name: omega
+    type: continuous
+    description: Frequency, s^(-1)
+  - name: p
+    type: continuous
+    description: Momentum, m^1 * s^(-1) * kg^1
+  - name: y
+    type: continuous
+    description: Length, m^1
+  - name: x
+    type: continuous
+    description: Length, m^1
+  - name: alpha
+    type: continuous
+    description: Dimensionless
