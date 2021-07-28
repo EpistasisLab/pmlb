@@ -1,0 +1,57 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_I_9_18
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    F = G*m1*m2/((x2-x1)**2+(y2-y1)**2+(z2-z1)**2)
+    
+    m1 in [1.0,2.0]
+    m2 in [1.0,2.0]
+    G in [1.0,2.0]
+    x1 in [3.0,4.0]
+    x2 in [1.0,2.0]
+    y1 in [3.0,4.0]
+    y2 in [1.0,2.0]
+    z1 in [3.0,4.0]
+    z2 in [1.0,2.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: F, Force, m^1 * s^(-2) * kg^1 
+features: # list of features in the dataset
+  - name: m1
+    type: continuous
+    description: Mass, kg^1
+  - name: m2
+    type: continuous
+    description: Mass, kg^1
+  - name: G
+    type: continuous
+    description: Newton's constant, m^3 * s^(-2) * kg^(-1)
+  - name: x1
+    type: continuous
+    description: Length, m^1
+  - name: x2
+    type: continuous
+    description: Length, m^1
+  - name: y1
+    type: continuous
+    description: Length, m^1
+  - name: y2
+    type: continuous
+    description: Length, m^1
+  - name: z1
+    type: continuous
+    description: Length, m^1
+  - name: z2
+    type: continuous
+    description: Length, m^1

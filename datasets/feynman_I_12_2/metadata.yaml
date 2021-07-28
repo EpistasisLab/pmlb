@@ -1,0 +1,37 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_I_12_2
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    F = q1*q2*r/(4*pi*epsilon*r**3)
+    
+    q1 in [1.0,5.0]
+    q2 in [1.0,5.0]
+    epsilon in [1.0,5.0]
+    r in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: F, Force, m^1 * s^(-2) * kg^1 
+features: # list of features in the dataset
+  - name: q1
+    type: continuous
+    description: Charge, m^2 * s^(-2) * kg^1 * V^(-1)
+  - name: q2
+    type: continuous
+    description: Charge, m^2 * s^(-2) * kg^1 * V^(-1)
+  - name: epsilon
+    type: continuous
+    description: Electric permitivity, m^1 * s^(-2) * kg^1 * V^(-2)
+  - name: r
+    type: continuous
+    description: Length, m^1
