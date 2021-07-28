@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+feynman_I_12_5	100000	2	0	0	2	continuous	100000.0	0.0	regression
