@@ -1,0 +1,44 @@
+# Reviewed by [your name here]
+dataset: feynman_I_32_17
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+keywords:
+  -
+  -
+target:
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: epsilon
+    type: continuous
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: c
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: Ef
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: r
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: omega
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: omega_0
+    type: continuous
+    description:
+    code:
+    transform:
