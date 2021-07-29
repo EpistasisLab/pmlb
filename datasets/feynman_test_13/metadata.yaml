@@ -1,0 +1,41 @@
+# Created by William La Cava (@lacava)
+dataset: feynman_test_13
+description: |
+    A synthetic physics model from the Feynman Lectures on Physics.         
+    This is the version of the model with units.
+    Formula and simulated variable ranges given below. 
+    
+    Volt = 1/(4*pi*epsilon)*q/sqrt(r**2+d**2-2*r*d*cos(alpha))
+    
+    q in [1.0,5.0]
+    r in [1.0,3.0]
+    d in [4.0,6.0]
+    alpha in [0.0,6.0]
+    epsilon in [1.0,5.0]
+    
+    Note the original data has been down-sampled to 100,000 rows (see source). 
+source: Feynman Symbolic Regression Database https://space.mit.edu/home/tegmark/aifeynman.html 
+publication: AI Feynman - a Physics-Inspired Method for Symbolic Regression, Udrescu & Tegmark (2019), arXiv:1905.11481 
+task: regression
+keywords: 
+  - symbolic regression 
+  - physics 
+target: 
+  type: continuous
+  description: Volt, Voltage, V^1 
+features: # list of features in the dataset
+  - name: q
+    type: continuous
+    description: Charge, m^2 * s^(-2) * kg^1 * V^(-1)
+  - name: r
+    type: continuous
+    description: Length, m^1
+  - name: d
+    type: continuous
+    description: Length, m^1
+  - name: alpha
+    type: continuous
+    description: Dimensionless
+  - name: epsilon
+    type: continuous
+    description: Electric permitivity, m^1 * s^(-2) * kg^1 * V^(-2)
