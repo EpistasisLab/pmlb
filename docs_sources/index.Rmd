@@ -142,8 +142,8 @@ All datasets are stored in a common format:
 
 If you use PMLB in a scientific publication, please consider citing one of the following papers:
 
-Le, Trang T., William La Cava, Joseph D. Romano, John T. Gregg, Daniel J. Goldberg, Praneel Chakraborty, Natasha L. Ray, Daniel Himmelstein, Weixuan Fu, and Jason H. Moore.
-[PMLB v1. 0: an open source dataset collection for benchmarking machine learning methods](https://arxiv.org/abs/2012.00058).
+Joseph D. Romano, Le, Trang T., William La Cava, John T. Gregg, Daniel J. Goldberg, Praneel Chakraborty, Natasha L. Ray, Daniel Himmelstein, Weixuan Fu, and Jason H. Moore.
+[PMLB v1.0: an open source dataset collection for benchmarking machine learning methods](https://arxiv.org/abs/2012.00058).
 _arXiv preprint arXiv:2012.00058_ (2020).
 
 ```bibtex
