@@ -510,13 +510,13 @@ div.tocify {
 <span id="cb11-4"><a href="#cb11-4"></a>rand_datasets <span class="op">=</span> random.choices(dataset_names, k<span class="op">=</span><span class="dv">7</span>)</span>
 <span id="cb11-5"><a href="#cb11-5"></a><span class="bu">print</span>(<span class="st">&#39;7 arbitrary datasets from PMLB:</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;</span><span class="ch">\n</span><span class="st"> &#39;</span>.join(rand_datasets))</span></code></pre></div>
 <pre><code>## 7 arbitrary datasets from PMLB:
-##  analcatdata_boxing2
-##  626_fri_c2_500_50
-##  GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1
-##  buggyCrx
-##  yeast
-##  594_fri_c2_100_5
-##  645_fri_c3_500_50</code></pre>
+##  mfeat_zernike
+##  appendicitis
+##  215_2dplanes
+##  613_fri_c3_250_5
+##  599_fri_c2_1000_5
+##  ionosphere
+##  230_machine_cpu</code></pre>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="bu">print</span>(</span>
 <span id="cb13-2"><a href="#cb13-2"></a>    <span class="ss">f&#39;PMLB has </span><span class="sc">{</span><span class="bu">len</span>(classification_dataset_names)<span class="sc">}</span><span class="ss"> classification datasets &#39;</span></span>
 <span id="cb13-3"><a href="#cb13-3"></a>    <span class="ss">f&#39;and </span><span class="sc">{</span><span class="bu">len</span>(regression_dataset_names)<span class="sc">}</span><span class="ss"> regression datasets.&#39;</span></span>
@@ -555,9 +555,9 @@ div.tocify {
 <span id="cb15-27"><a href="#cb15-27"></a>    gnb_test_scores.append(gnb.score(test_X, test_y))</span></code></pre></div>
 <div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Visualize the result:</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>sb.boxplot(data<span class="op">=</span>[logit_test_scores, gnb_test_scores], notch<span class="op">=</span><span class="va">True</span>)</span></code></pre></div>
-<pre><code>## &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7fb0805edda0&gt;</code></pre>
+<pre><code>## &lt;matplotlib.axes._subplots.AxesSubplot object at 0x7f0ee1681b00&gt;</code></pre>
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;LogisticRegression&#39;</span>, <span class="st">&#39;GaussianNB&#39;</span>])</span></code></pre></div>
-<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7fb08053f908&gt;, &lt;matplotlib.axis.XTick object at 0x7fb08053f828&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(0, 0, &#39;GaussianNB&#39;)])</code></pre>
+<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7f0ee08dda20&gt;, &lt;matplotlib.axis.XTick object at 0x7f0ee08dd390&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(0, 0, &#39;GaussianNB&#39;)])</code></pre>
 <div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a>plt.ylabel(<span class="st">&#39;Test Accuracy&#39;</span>)</span></code></pre></div>
 <p><img src="python-ref_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 </div>
