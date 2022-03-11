@@ -3,8 +3,7 @@ dataset: strogatz_shearflow1
 description: |
     This is one state of a 2-state dynamic model for shear flow. 
     
-    $\dot{\theta} = \cot (\phi) \cdot \cos(\theta)$
-    $ \dot{\phi} = \left(\cos ^2 (\phi) + 0.1 \cdot  \sin^2 (\phi)\right) \cdot \sin(\theta)$
+    x' = cot(y) * cos(x)
 
     It is adapted from Steven Strogatz's book "Chaos and Nonlinear Dynamics".  
     Each strogatz ODE system can exhibit chaotic and/or nonlinear behavior. 

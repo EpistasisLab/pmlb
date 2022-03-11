@@ -3,8 +3,7 @@ dataset: strogatz_predprey1
 description: |
     This is one state of a 2-state dynamic model for predator-prey populations. 
 
-    $\dot{x} = x  \cdot \left( 4 - x - \frac{y}{1+x} \right)$
-    $\dot{y} = y \cdot \left( \frac{x}{1+x} - 0.075 \cdot y \right)$
+    x' = x  * ( 4 - x - (y)/(1+x) )
 
     It is adapted from Steven Strogatz's book "Chaos and Nonlinear Dynamics".  
     Each strogatz ODE system can exhibit chaotic and/or nonlinear behavior. 
