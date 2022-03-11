@@ -3,8 +3,7 @@ dataset: strogatz_lv1
 description: |
     This is one state of a 2-state dynamic model of Lotka-Volterra dynamics. 
 
-    $\dot{x} = 3  \cdot x - 2  \cdot x \cdot y - x^2$
-    $ \dot{y} = 2 \cdot y - x \cdot y - y^2$
+    x' = 3  * x - 2  * x * y - x**2
 
     It is adapted from Steven Strogatz's book "Chaos and Nonlinear Dynamics".  
     Each strogatz ODE system can exhibit chaotic and/or nonlinear behavior. 

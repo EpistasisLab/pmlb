@@ -3,8 +3,7 @@ dataset: strogatz_barmag2
 description: |
     This is one state of a 2-state dynamic model for bar magnets. 
 
-    $\dot{\theta} = 0.5 \cdot \sin (\theta - \phi) - \sin (\theta)$
-    $\dot{\phi} = 0.5 \cdot \sin (\phi - \theta) - \sin (\phi)$
+    y' = 0.5 * sin(y - x) - sin(y)
 
     It is adapted from Steven Strogatz's book "Chaos and Nonlinear Dynamics".  
     Each strogatz ODE system can exhibit chaotic and/or nonlinear behavior. 
