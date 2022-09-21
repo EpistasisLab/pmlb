@@ -42,7 +42,7 @@ jobs:
         pip install ".[dev]"
         sudo apt-get update
         sudo apt-get install libssl-dev libcurl4-openssl-dev
-        sudo apt-get install libstdc++6
+        sudo apt-get install g++-11 -y
     - name: Test with nose
       run: |
         nosetests -s -v
