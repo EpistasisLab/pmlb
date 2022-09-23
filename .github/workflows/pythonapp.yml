@@ -62,9 +62,11 @@ jobs:
         reticulate::install_miniconda()
         reticulate::py_config()
         reticulate::py_discover_config()
-        reticulate::conda_install("libgcc")
       shell: Rscript {0}
-      
+
+    - name: Install gcc
+      run: conda install libgcc
+
     - name: Build site
       run: |
         Rscript -e 'print(reticulate::py_discover_config())'
