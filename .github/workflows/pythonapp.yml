@@ -65,7 +65,7 @@ jobs:
       shell: Rscript {0}
 
     - name: Install gcc
-      run: conda install libgcc
+      run: conda install libgcc=5.2.0
 
     - name: Build site
       run: |
