@@ -41,7 +41,7 @@ jobs:
       run: |
         pip install ".[dev]"
         sudo apt-get update
-        sudo apt-get install libssl-dev libcurl4-openssl-dev build-essential
+        sudo apt-get install libssl-dev libcurl4-openssl-dev
     - name: Test with nose
       run: |
         nosetests -s -v
@@ -62,8 +62,9 @@ jobs:
         reticulate::install_miniconda()
         reticulate::py_config()
         reticulate::py_discover_config()
+        reticulate::conda_install("libgcc")
       shell: Rscript {0}
-
+      
     - name: Build site
       run: |
         Rscript -e 'print(reticulate::py_discover_config())'
