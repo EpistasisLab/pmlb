@@ -65,7 +65,12 @@ jobs:
       shell: Rscript {0}
 
     - name: Install gcc
-      run: conda install libgcc=5.2.0
+      run: |
+        conda install libgcc
+        which gcc
+        locate libstdc++.so.6
+        export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/local/lib64:/usr/lib64:/usr/bin
+        # strings /root/anaconda3/lib/libstdc++.so.6.0.26 | grep GLIBC
 
     - name: Build site
       run: |
