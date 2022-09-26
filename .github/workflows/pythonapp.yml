@@ -66,9 +66,8 @@ jobs:
 
     - name: Install gcc
       run: |
-        conda install libgcc
-        which gcc
-        locate libstdc++.so.6
+        conda install -c conda-forge libstdcxx-ng
+        find / -name "libstdc++.so*"
         export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/local/lib64:/usr/lib64:/usr/bin
         # strings /root/anaconda3/lib/libstdc++.so.6.0.26 | grep GLIBC
 
