@@ -22,10 +22,8 @@ target:
   code: No = 0, CHD = 1
 features: # list of features in the dataset
   - name: Sbp
-    type: categorical
+    type: continuous
     description: systolic blood pressure
-    code: null # optional, coding information, e.g., Control = 0, Case = 1
-    transform: ~ # optional, any transformation performed on the feature, e.g., log scaled
   - name: Tobacco
     type: continuous
     description: cumulative tobacco (kg)
@@ -40,7 +38,7 @@ features: # list of features in the dataset
     description: family history of heart disease
     code: Absent = 0, Present = 1
   - name: Typea
-    type: categorical
+    type: continuous
     description: type-A behavior
   - name: Obesity
     type: continuous
@@ -49,5 +47,5 @@ features: # list of features in the dataset
     type: continuous
     description: current alcohol consumption
   - name: Age
-    type: categorical
+    type: continuous
     description: age at onset
