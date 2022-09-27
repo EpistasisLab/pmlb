@@ -75,12 +75,8 @@ jobs:
 
         rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6
         rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so
-        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-9.3.0-hd4cf53a_17/lib/libstdc++.so.6
-        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-9.3.0-hd4cf53a_17/lib/libstdc++.so
-        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-9.3.0-hd4cf53a_17/lib/libstdc++.so.6.0.28
-        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so.6
-        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so.6.0.29
-        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so
+        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-9.3.0-hd4cf53a_17/lib/libstdc++.so*
+        rm /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so*
 
         cp /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /home/runner/.local/share/r-miniconda/lib/
         cp /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /home/runner/.local/share/r-miniconda/envs/r-reticulate/lib/
