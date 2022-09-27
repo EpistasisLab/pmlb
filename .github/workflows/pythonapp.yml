@@ -87,7 +87,7 @@ jobs:
         ln -s /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-9.3.0-hd4cf53a_17/lib/libstdc++.so.6.0.30 /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-9.3.0-hd4cf53a_17/lib/libstdc++.so.6
         ln -s /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so.6.0.30 /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-11.2.0-h1234567_1/lib/libstdc++.so.6
         ln -s /home/runner/.local/share/r-miniconda/envs/r-reticulate/lib/python3.8/site-packages/libstdc++.so.6.0.30 /home/runner/.local/share/r-miniconda/envs/r-reticulate/lib/python3.8/site-packages/libstdc++.so.6
-        ln -s /home/runner/.local/share/r-miniconda/envs/r-reticulate/lib/python3.8/site-packages/libstdc++.so.6.0.30 /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+        sudo ln -s /home/runner/.local/share/r-miniconda/envs/r-reticulate/lib/python3.8/site-packages/libstdc++.so.6.0.30 /usr/lib/x86_64-linux-gnu/libstdc++.so.6
 
         # export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/usr/local/lib64:/usr/lib64:/usr/bin
         # strings /root/anaconda3/lib/libstdc++.so.6.0.26 | grep GLIBC
