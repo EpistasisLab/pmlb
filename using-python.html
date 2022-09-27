@@ -130,13 +130,20 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   for (var i = 0; i < sheets.length; i++) {
     if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
     try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
+    var j = 0;
+    while (j < rules.length) {
       var rule = rules[j];
       // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
       var style = rule.style.cssText;
       // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
       // replace div.sourceCode by a pre.sourceCode rule
       sheets[i].deleteRule(j);
       sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
@@ -231,11 +238,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -514,13 +525,13 @@ div.tocify {
 <span id="cb11-4"><a href="#cb11-4"></a>rand_datasets <span class="op">=</span> random.choices(dataset_names, k<span class="op">=</span><span class="dv">7</span>)</span>
 <span id="cb11-5"><a href="#cb11-5"></a><span class="bu">print</span>(<span class="st">&#39;7 arbitrary datasets from PMLB:</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;</span><span class="ch">\n</span><span class="st"> &#39;</span>.join(rand_datasets))</span></code></pre></div>
 <pre><code>## 7 arbitrary datasets from PMLB:
-##  threeOf9
-##  678_visualizing_environmental
-##  allhyper
-##  haberman
-##  letter
-##  heart_statlog
-##  599_fri_c2_1000_5</code></pre>
+##  557_analcatdata_apnea1
+##  biomed
+##  cleve
+##  GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1
+##  1029_LEV
+##  spect
+##  1201_BNG_breastTumor</code></pre>
 <div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1"></a><span class="bu">print</span>(</span>
 <span id="cb13-2"><a href="#cb13-2"></a>    <span class="ss">f&#39;PMLB has </span><span class="sc">{</span><span class="bu">len</span>(classification_dataset_names)<span class="sc">}</span><span class="ss"> classification datasets &#39;</span></span>
 <span id="cb13-3"><a href="#cb13-3"></a>    <span class="ss">f&#39;and </span><span class="sc">{</span><span class="bu">len</span>(regression_dataset_names)<span class="sc">}</span><span class="ss"> regression datasets.&#39;</span></span>
@@ -557,10 +568,11 @@ div.tocify {
 <span id="cb15-25"><a href="#cb15-25"></a>    <span class="co"># Log the performance score on the test set</span></span>
 <span id="cb15-26"><a href="#cb15-26"></a>    logit_test_scores.append(logit.score(test_X, test_y))</span>
 <span id="cb15-27"><a href="#cb15-27"></a>    gnb_test_scores.append(gnb.score(test_X, test_y))</span></code></pre></div>
+<style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GaussianNB()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">GaussianNB</label><div class="sk-toggleable__content"><pre>GaussianNB()</pre></div></div></div></div></div>
 <div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Visualize the result:</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>sb.boxplot(data<span class="op">=</span>[logit_test_scores, gnb_test_scores], notch<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb16-3"><a href="#cb16-3"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;LogisticRegression&#39;</span>, <span class="st">&#39;GaussianNB&#39;</span>])</span></code></pre></div>
-<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7f75c1b31130&gt;, &lt;matplotlib.axis.XTick object at 0x7f75c1b31340&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(0, 0, &#39;GaussianNB&#39;)])</code></pre>
+<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7fc76c6a1e20&gt;, &lt;matplotlib.axis.XTick object at 0x7fc76c6a1d30&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(0, 0, &#39;GaussianNB&#39;)])</code></pre>
 <div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>plt.ylabel(<span class="st">&#39;Test Accuracy&#39;</span>)</span></code></pre></div>
 <p><img src="using-python_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 </div>
