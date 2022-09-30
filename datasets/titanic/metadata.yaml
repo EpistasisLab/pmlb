@@ -1,29 +1,53 @@
 # Reviewed by [your name here]
 dataset: titanic
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
-task: regression
+description: On the 10th of April 1912, the largest passenger liner of its time left
+  Southampton on its maiden voyage to New York. This destination was never reached,
+  as the Titanic struck an iceberg while crossing the Atlantic Ocean. Many people
+  did not survive this disaster. The dataset contains characteristics of most of the
+  passengers and crew on board the Titanic, as well as a survival indicator. Name
+  and ticket number columns were dropped from the original dataset.
+source: https://www.kaggle.com/datasets/aliaamiri/titanic-passengers-and-crew-complete-list
+publication: ~
+task: classification
 keywords:
-  -
-  -
+- history
+- transport safety
 target:
-  type: continuous
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: Indicator for surviving the Titanic disaster.
+  code: 0 = no, 1 = yes
 features:
-  - name: Class
-    type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
-  - name: Age
-    type: continuous
-    description:
-    code:
-    transform:
-  - name: Sex
-    type: continuous
-    description:
-    code:
-    transform:
+- name: gender
+  type: binary
+  description: Gender of the passenger or crew member.
+  code: 0 = male, 1 = female
+- name: age
+  type: continuous
+  description: Age in years of the passengers and crew members.
+- name: class
+  type: categorical
+  description: Travel class of passengers and assignment of the crew members.
+  code: 0 = 3rd, 1 = 2nd, 2 = 1st, 3 = engineering crew, 4 = victualling crew, 5 =
+    restaurant staff, 6 = deck crew
+- name: embarked
+  type: categorical
+  description: Place of embarkation.
+  code: 0 = S, 1 = C, 2 = B, 3 = Q
+- name: country
+  type: categorical
+  description: Country of origin of the passengers and crew members. Countries with
+    fewer than 20 entries are grouped into "other".
+  code: 0 = England, 1 = United States, 2 = Ireland, 3 = Sweden, 4 = Lebanon, 5 =
+    Finland, 6 = Scotland, 7 = Canada, 8 = Norway, 9 = France, 10 = Belgium, 11 =
+    Northern Ireland, 12 = Wales, 13 = other
+- name: fare
+  type: continuous
+  description: Ticket price. 0 for crew members.
+- name: sibsp
+  type: continuous
+  description: Number of siblings or spouses aboard. For crew members where this value
+    was missing, a value of 0 is inferred.
+- name: parch
+  type: continuous
+  description: Number of parents or children aboard. For crew members where this value
+    was missing, a value of 0 is inferred.
