@@ -1,24 +1,24 @@
 # Reviewed by [your name here]
 dataset: banana
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
-task: regression
+description: This is an artificial dataset where instances belong to several clusters
+  with a banana shape.
+source: KEEL-dataset repository
+publication: 'Alcalá-Fdez J, Fernández A, Luengo J, Derrac J, García S, Sanchez L,
+  et al. KEEL Data-Mining Software Tool: Data Set Repository, Integration of Algorithms
+  and Experimental Analysis Framework. J Multiple Valued Log Soft Comput. 2011;17:
+  255–287.'
+task: classification
 keywords:
-  -
-  -
+  - artificial
+  - clustering
 target:
-  type: continuous
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  type: binary
+  description: Indicator for instance class.
+  code: 0 = banana_1, 1 = banana_2
 features:
   - name: At1
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: First attribute.
   - name: At2
     type: continuous
-    description:
-    code:
-    transform:
+    description: Second attribute.
