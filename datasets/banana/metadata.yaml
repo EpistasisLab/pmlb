@@ -9,16 +9,16 @@ publication: 'Alcalá-Fdez J, Fernández A, Luengo J, Derrac J, García S, Sanch
   255–287.'
 task: classification
 keywords:
-- artificial
-- clustering
+  - artificial
+  - clustering
 target:
   type: binary
   description: Indicator for instance class.
   code: 0 = banana_1, 1 = banana_2
 features:
-- name: At1
-  type: continuous
-  description: First attribute.
-- name: At2
-  type: continuous
-  description: Second attribute.
+  - name: At1
+    type: continuous
+    description: First attribute.
+  - name: At2
+    type: continuous
+    description: Second attribute.
