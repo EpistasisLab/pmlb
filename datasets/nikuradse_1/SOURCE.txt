@@ -5,8 +5,12 @@ Rohren", VDI-Forschungsheft 361, Beilage zu "Forschung auf dem Gebiete
 des Ingenierswesens" Ausgabe B Band 4, July/August 1933).
 Tables 2 to 8.
 
-The input variable is log of Reynolds number (column
-log Re). The target variable is log of 100 times resistance factor
+
+The two input variables are
+ - relative roughness (column r/k)
+ - log of Reynolds number (column log Re).
+
+The target variable is log of 100 times resistance factor
 (column log(100 lambda)).  Figure 9 in the original Nikuradse paper
 shows additional points for Re < 10^3.8 but they are not contained in
 the tables.
@@ -17,8 +21,8 @@ Another separate version of the data has been used in [2].
 
 
 [1] Bayesian Machine Scientist to Compare Data Collapses for the
-    Nikuradse Dataset Ignasi Reichardt, Jordi Pallarès, Marta
-    Sales-Pardo, and Roger Guimerà Phys. Rev. Lett. 124, 084503 -
+    Nikuradse Dataset Ignasi Reichardt, Jordi PallarÃ¨s, Marta
+    Sales-Pardo, and Roger GuimerÃ  Phys. Rev. Lett. 124, 084503 -
     Published 27 February 2020
     https://doi.org/10.1103/PhysRevLett.124.084503
 
