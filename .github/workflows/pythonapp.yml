@@ -50,8 +50,8 @@ jobs:
       run: |
         python -m pmlb.profiling
 
-    - uses: r-lib/actions/setup-r@v1
-    - uses: r-lib/actions/setup-pandoc@v1
+    - uses: r-lib/actions/setup-r@v2
+    - uses: r-lib/actions/setup-pandoc@v2
     - name: Install R packages
       run: Rscript -e 'install.packages(c("rmarkdown", "plotly", "dplyr", "htmlwidgets", "htmltools", "jsonlite", "readr", "DT", "remotes", "pmlbr"))'
 
@@ -63,12 +63,6 @@ jobs:
         reticulate::py_config()
         reticulate::py_discover_config()
       shell: Rscript {0}
-
-    - name: Install gcc
-      run: |
-        conda install -c conda-forge libstdcxx-ng
-        sudo rm /usr/lib/x86_64-linux-gnu/libstdc++.so.6
-        sudo ln -s /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /usr/lib/x86_64-linux-gnu/libstdc++.so.6
 
     - name: Build site
       run: |
