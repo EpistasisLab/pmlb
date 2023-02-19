@@ -154,7 +154,7 @@ australian	690	14	4	3	7	categorical	2.0	0.0121319050619617	classification
 auto	202	25	3	6	16	categorical	5.0	0.0453754533869228	classification
 backache	180	32	22	4	6	categorical	2.0	0.521604938271605	classification
 balance_scale	625	4	0	4	0	categorical	3.0	0.14622976	classification
-banana	5300	2	0	0	2	continuous	2.0	0.0106907796368814	regression
+banana	5300	2	0	0	2	binary	2.0	0.0106907796368815	classification
 biomed	209	8	0	1	7	categorical	2.0	0.079691399006433	classification
 breast	699	10	0	8	2	categorical	2.0	0.0963751609186227	classification
 breast_cancer	286	9	2	6	1	categorical	2.0	0.1645068218494792	classification
@@ -402,7 +402,7 @@ tae	151	5	2	0	3	categorical	3.0	0.0003070040787684	classification
 texture	5500	40	0	0	40	categorical	11.0	0.0	classification
 threeOf9	512	9	9	0	0	categorical	2.0	0.00494384765625	classification
 tic_tac_toe	958	9	0	9	0	categorical	2.0	0.0941810748732789	classification
-titanic	2201	3	0	0	3	continuous	2.0	0.1252664674125861	regression
+titanic	2207	8	1	3	4	binary	2.0	0.126512852276882	classification
 tokyo1	959	44	0	2	42	categorical	2.0	0.0775149209345414	classification
 twonorm	7400	20	0	0	20	categorical	2.0	6.57414170927761e-07	classification
 vehicle	846	18	0	0	18	categorical	4.0	0.0004266124179609	classification
