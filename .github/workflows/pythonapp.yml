@@ -69,7 +69,7 @@ jobs:
         conda install -c conda-forge libstdcxx-ng
         sudo rm /usr/lib/x86_64-linux-gnu/libstdc++.so.6
         sudo ln -s /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /usr/lib/x86_64-linux-gnu/libstdc++.so.6
-        sudo ln -s /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /opt/R/4.2.2/lib/R/bin/exec/R/libstdc++.so.6
+        sudo cp /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /opt/R/4.2.2/lib/R/bin/exec/R/
 
     - name: Build site
       run: |
