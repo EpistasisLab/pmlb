@@ -13,6 +13,7 @@
 
 <title>R interface</title>
 
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <meta name="twitter:card" content="summary">
@@ -59,19 +59,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -91,7 +91,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -276,8 +276,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -285,16 +285,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -469,31 +462,59 @@ div.tocify {
 </div>
 
 
-<p><a href="https://github.com/EpistasisLab/pmlb"><strong>pmlbr</strong></a> provides the following user-facing functions and variables in the R environment. For installation instructions or a high-level overview of how to use PMLB, please see <a href="./using-r.html">R interface</a>.</p>
+<p><a
+href="https://github.com/EpistasisLab/pmlb"><strong>pmlbr</strong></a>
+provides the following user-facing functions and variables in the R
+environment. For installation instructions or a high-level overview of
+how to use PMLB, please see <a href="./using-r.html">R
+interface</a>.</p>
 <div id="functions" class="section level2">
 <h2>Functions</h2>
 <div id="docstring-output" class="section level3">
 <h3><code>fetch_data</code></h3>
-<p><em>function</em> <code>fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
-<p>Download a dataset from PMLB, (optionally) store it locally, and return the dataset.</p>
-<p>You must be connected to the internet if you are fetching a dataset that is not cached locally.</p>
+<p><em>function</em>
+<code>fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
+<p>Download a dataset from PMLB, (optionally) store it locally, and
+return the dataset.</p>
+<p>You must be connected to the internet if you are fetching a dataset
+that is not cached locally.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><strong>dataset_name : str</strong> Name of the dataset to fetch from PMLB. A list of available datasets can be found in the documentation.</li>
-<li><strong>return_X_y : bool, default=FALSE</strong> Specify the format of the data returned to the user. If <code>FALSE</code>, the data are returned as a dataframe of size <code>(n_samples, n_features+1)</code>, where the last column is <code>target</code> - the true target value of the data point. If <code>TRUE</code>, the data are returned as a list of length 2, where the first element is a dataframe of size <code>(n_samples, n_features)</code> corresponding to the feature matrix (usually denoted <code>X</code>), and the second element is a numeric vector of length <code>n_samples</code> corresponding to the list of target values (usually denoted <code>y</code>), respectively.</li>
-<li><strong>local_cache_dir : str, default=None</strong> The directory on your local machine in which to store the data files, defaults to NA, indicating cache will not be used.</li>
-<li><strong>dropna : bool, default=TRUE</strong> If <code>TRUE</code>, <code>NA</code>s will be automatically dropped from the exported dataset.</li>
+<li><strong>dataset_name : str</strong> Name of the dataset to fetch
+from PMLB. A list of available datasets can be found in the
+documentation.</li>
+<li><strong>return_X_y : bool, default=FALSE</strong> Specify the format
+of the data returned to the user. If <code>FALSE</code>, the data are
+returned as a dataframe of size <code>(n_samples, n_features+1)</code>,
+where the last column is <code>target</code> - the true target value of
+the data point. If <code>TRUE</code>, the data are returned as a list of
+length 2, where the first element is a dataframe of size
+<code>(n_samples, n_features)</code> corresponding to the feature matrix
+(usually denoted <code>X</code>), and the second element is a numeric
+vector of length <code>n_samples</code> corresponding to the list of
+target values (usually denoted <code>y</code>), respectively.</li>
+<li><strong>local_cache_dir : str, default=None</strong> The directory
+on your local machine in which to store the data files, defaults to NA,
+indicating cache will not be used.</li>
+<li><strong>dropna : bool, default=TRUE</strong> If <code>TRUE</code>,
+<code>NA</code>s will be automatically dropped from the exported
+dataset.</li>
 </ul>
 <p><strong>Returns:</strong></p>
 <ul>
-<li><strong>dataset : dataframe</strong> If <code>return_X_y == FALSE</code>, fetched dataset as a dataframe of size <code>(n_samples, n_features+1)</code>, where the last column is <code>target</code>. If <code>return_X_y == TRUE</code>, a list of length 2 containing the feature matrix <code>X</code> and the target array <code>y</code>, respectively.</li>
+<li><strong>dataset : dataframe</strong> If
+<code>return_X_y == FALSE</code>, fetched dataset as a dataframe of size
+<code>(n_samples, n_features+1)</code>, where the last column is
+<code>target</code>. If <code>return_X_y == TRUE</code>, a list of
+length 2 containing the feature matrix <code>X</code> and the target
+array <code>y</code>, respectively.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(pmlbr)</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># Download features and labels for penguins dataset in single data frame</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a>penguins &lt;-<span class="st"> </span><span class="kw">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>)</span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="kw">str</span>(penguins)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pmlbr)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Download features and labels for penguins dataset in single data frame</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>penguins <span class="ot">&lt;-</span> <span class="fu">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(penguins)</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    333 obs. of  8 variables:
 ##  $ island           : int  2 2 2 2 2 2 2 2 2 2 ...
 ##  $ bill_length_mm   : num  39.1 39.5 40.3 36.7 39.3 38.9 39.2 41.1 38.6 34.6 ...
@@ -509,48 +530,70 @@ div.tocify {
 <div id="docstring-output" class="section level3">
 <h3><code>nearest_datasets</code></h3>
 <p><em>function</em></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">nearest_datasets</span>(</span>
-<span id="cb3-2"><a href="#cb3-2"></a>  x,</span>
-<span id="cb3-3"><a href="#cb3-3"></a>  <span class="dt">y =</span> <span class="ot">NULL</span>,</span>
-<span id="cb3-4"><a href="#cb3-4"></a>  <span class="dt">n_neighbors =</span> <span class="dv">5</span>,</span>
-<span id="cb3-5"><a href="#cb3-5"></a>  <span class="dt">dimensions =</span> <span class="kw">c</span>(<span class="st">&quot;n_instances&quot;</span>, <span class="st">&quot;n_features&quot;</span>),</span>
-<span id="cb3-6"><a href="#cb3-6"></a>  <span class="dt">task =</span> <span class="kw">c</span>(<span class="st">&quot;classification&quot;</span>, <span class="st">&quot;regression&quot;</span>),</span>
-<span id="cb3-7"><a href="#cb3-7"></a>  <span class="dt">target_name =</span> <span class="st">&quot;target&quot;</span>,</span>
-<span id="cb3-8"><a href="#cb3-8"></a>...)</span></code></pre></div>
-<p>Select nearest datasets given dataset name or dataframe <code>x</code>.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nearest_datasets</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  x,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">n_neighbors =</span> <span class="dv">5</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">dimensions =</span> <span class="fu">c</span>(<span class="st">&quot;n_instances&quot;</span>, <span class="st">&quot;n_features&quot;</span>),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">task =</span> <span class="fu">c</span>(<span class="st">&quot;classification&quot;</span>, <span class="st">&quot;regression&quot;</span>),</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">target_name =</span> <span class="st">&quot;target&quot;</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>...)</span></code></pre></div>
+<p>Select nearest datasets given dataset name or dataframe
+<code>x</code>.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><p><strong>x : str or dataframe</strong><br />
-Character string of dataset name from PMLB, or data.frame of <code>n_samples</code> x <code>n_features</code> (or <code>n_features+1</code> with a target column)</p></li>
-<li><p><strong>y : numeric vector</strong> Target column. Required when <code>x</code> does not contain the target column.</p></li>
-<li><p><strong>n_neighbors : integer</strong> Number of dataset names to return as neighbors.</p></li>
-<li><p><strong>dimensions : character vector</strong> Dataset characteristics to include in similarity calculation. Dimensions must correspond to numeric columns of <a href="https://github.com/EpistasisLab/pmlb/blob/master/pmlb/all_summary_stats.tsv">all_summary_stats.tsv</a>. If ‘all’ (default), uses all numeric columns.</p></li>
-<li><p><strong>target_name : str</strong> Character string specifying column of target/dependent variable.</p></li>
-<li><p><strong>task : str</strong> Character string specifying classification or regression for summary stat generation.</p></li>
-<li><p><strong>…</strong> Further arguments passed to each S3 method.</p></li>
+Character string of dataset name from PMLB, or data.frame of
+<code>n_samples</code> x <code>n_features</code> (or
+<code>n_features+1</code> with a target column)</p></li>
+<li><p><strong>y : numeric vector</strong> Target column. Required when
+<code>x</code> does not contain the target column.</p></li>
+<li><p><strong>n_neighbors : integer</strong> Number of dataset names to
+return as neighbors.</p></li>
+<li><p><strong>dimensions : character vector</strong> Dataset
+characteristics to include in similarity calculation. Dimensions must
+correspond to numeric columns of <a
+href="https://github.com/EpistasisLab/pmlb/blob/master/pmlb/all_summary_stats.tsv">all_summary_stats.tsv</a>.
+If ‘all’ (default), uses all numeric columns.</p></li>
+<li><p><strong>target_name : str</strong> Character string specifying
+column of target/dependent variable.</p></li>
+<li><p><strong>task : str</strong> Character string specifying
+classification or regression for summary stat generation.</p></li>
+<li><p><strong>…</strong> Further arguments passed to each S3
+method.</p></li>
 </ul>
-<p><strong>Returns:</strong> - <strong>dataset : character vector</strong> Names of most similar datasets to <code>x</code>, most similar dataset first.</p>
+<p><strong>Returns:</strong> - <strong>dataset : character
+vector</strong> Names of most similar datasets to <code>x</code>, most
+similar dataset first.</p>
 <ul>
-<li><strong>dataset : dataframe</strong> If <code>return_X_y == FALSE</code>, fetched dataset as a dataframe of size <code>(n_samples, n_features+1)</code>, where the last column is <code>target</code>. If <code>return_X_y == TRUE</code>, a list of length 2 containing the feature matrix <code>X</code> and the target array <code>y</code>, respectively.</li>
+<li><strong>dataset : dataframe</strong> If
+<code>return_X_y == FALSE</code>, fetched dataset as a dataframe of size
+<code>(n_samples, n_features+1)</code>, where the last column is
+<code>target</code>. If <code>return_X_y == TRUE</code>, a list of
+length 2 containing the feature matrix <code>X</code> and the target
+array <code>y</code>, respectively.</li>
 </ul>
 <p><strong>Examples:</strong></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">nearest_datasets</span>(<span class="st">&#39;penguins&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nearest_datasets</span>(<span class="st">&#39;penguins&#39;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;penguins&quot;      &quot;ecoli&quot;         &quot;schizo&quot;        &quot;bupa&quot;         
 ## [5] &quot;solar_flare_1&quot;</code></pre>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">nearest_datasets</span>(<span class="kw">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nearest_datasets</span>(<span class="fu">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>))</span></code></pre></div>
 <pre><code>## [1] &quot;penguins&quot;      &quot;ecoli&quot;         &quot;schizo&quot;        &quot;bupa&quot;         
 ## [5] &quot;solar_flare_1&quot;</code></pre>
 </div>
 </div>
 <div id="data-objects" class="section level2">
 <h2>Data objects</h2>
-<p>These objects contain details on datasets currently available in PMLB.</p>
+<p>These objects contain details on datasets currently available in
+PMLB.</p>
 <div id="docstring-output" class="section level3">
 <h3><code>dataset_names</code></h3>
 <p>A list of all datasets included in PMLB.</p>
-<p>The contents of this vector are the union of <code>classification_dataset_names</code> and <code>regression_dataset_names</code>.</p>
+<p>The contents of this vector are the union of
+<code>classification_dataset_names</code> and
+<code>regression_dataset_names</code>.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="kw">head</span>(dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1027_ESL&quot;             &quot;1028_SWD&quot;             &quot;1029_LEV&quot;            
 ## [4] &quot;1030_ERA&quot;             &quot;1089_USCrime&quot;         &quot;1096_FacultySalaries&quot;
 ## [7] &quot;1191_BNG_pbc&quot;         &quot;1193_BNG_lowbwt&quot;      &quot;1196_BNG_pharynx&quot;</code></pre>
@@ -558,9 +601,10 @@ Character string of dataset name from PMLB, or data.frame of <code>n_samples</co
 <div id="docstring-output" class="section level3">
 <h3><code>classification_dataset_names</code></h3>
 <p>A list of all <em>classification</em> datasets included in PMLB.</p>
-<p>Classification datasets are datasets where the target values (dependent variable/outcome) are discrete.</p>
+<p>Classification datasets are datasets where the target values
+(dependent variable/outcome) are discrete.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="kw">head</span>(classification_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(classification_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;                  &quot;agaricus_lepiota&quot;       &quot;allbp&quot;                 
 ## [4] &quot;allhyper&quot;               &quot;allhypo&quot;                &quot;allrep&quot;                
 ## [7] &quot;analcatdata_aids&quot;       &quot;analcatdata_asbestos&quot;   &quot;analcatdata_authorship&quot;</code></pre>
@@ -568,9 +612,10 @@ Character string of dataset name from PMLB, or data.frame of <code>n_samples</co
 <div id="docstring-output" class="section level3">
 <h3><code>regression_dataset_names</code></h3>
 <p>A list of all <em>regression</em> datasets included in PMLB.</p>
-<p>regression datasets are datasets where the target values (dependent variable/outcome) are continuous.</p>
+<p>regression datasets are datasets where the target values (dependent
+variable/outcome) are continuous.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="kw">head</span>(regression_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(regression_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1027_ESL&quot;             &quot;1028_SWD&quot;             &quot;1029_LEV&quot;            
 ## [4] &quot;1030_ERA&quot;             &quot;1089_USCrime&quot;         &quot;1096_FacultySalaries&quot;
 ## [7] &quot;1191_BNG_pbc&quot;         &quot;1193_BNG_lowbwt&quot;      &quot;1196_BNG_pharynx&quot;</code></pre>
@@ -581,18 +626,24 @@ Character string of dataset name from PMLB, or data.frame of <code>n_samples</co
 <p>A data frame with 10 variables:</p>
 <ul>
 <li><em>dataset</em>: Dataset name</li>
-<li><em>n_instances</em>: Number of data observations (equal to number of rows)</li>
-<li><em>n_features</em>: Total number of features (number of columns - 1)</li>
+<li><em>n_instances</em>: Number of data observations (equal to number
+of rows)</li>
+<li><em>n_features</em>: Total number of features (number of columns -
+1)</li>
 <li><em>n_binary_features</em>: Number of binary features</li>
 <li><em>n_categorical_features</em>: Number of categorical features</li>
 <li><em>n_continuous_features</em>: Number of continuous features</li>
 <li><em>n_classes</em>: Number of classes in target variable</li>
-<li><em>endpoint_type</em>: Value type of endpoint/target (can be binary, categorical or continuous)</li>
-<li><em>imbalance</em>: Imbalance measure, where zero means that the dataset is perfectly balanced and the higher the value, the more imbalanced the dataset</li>
-<li><em>task</em>: Type of problem/task. Can be classification or regression.</li>
+<li><em>endpoint_type</em>: Value type of endpoint/target (can be
+binary, categorical or continuous)</li>
+<li><em>imbalance</em>: Imbalance measure, where zero means that the
+dataset is perfectly balanced and the higher the value, the more
+imbalanced the dataset</li>
+<li><em>task</em>: Type of problem/task. Can be classification or
+regression.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">head</span>(summary_stats)</span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(summary_stats)</span></code></pre></div>
 <pre><code>##                dataset n_instances n_features n_binary_features
 ## 1             1027_ESL         488          4                 0
 ## 2             1028_SWD        1000         10                 0

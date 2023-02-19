@@ -13,6 +13,7 @@
 
 <title>Python interface</title>
 
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <meta name="twitter:card" content="summary">
@@ -59,19 +59,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -91,7 +91,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -276,8 +276,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -285,16 +285,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -469,30 +462,58 @@ div.tocify {
 </div>
 
 
-<p>Python package PMLB provides the following user-facing functions and variables. For installation instructions or a high-level overview of how to use PMLB, see <a href="./install.html">Install</a> or <a href="./using.html">Using PMLB</a>.</p>
+<p>Python package PMLB provides the following user-facing functions and
+variables. For installation instructions or a high-level overview of how
+to use PMLB, see <a href="./install.html">Install</a> or <a
+href="./using.html">Using PMLB</a>.</p>
 <div id="functions" class="section level2">
 <h2>Functions</h2>
 <div id="docstring-output" class="section level3">
 <h3><code>fetch_data</code></h3>
-<p><em>function</em> <code>pmlb.fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
-<p>Download a dataset from PMLB, (optionally) store it locally, and return the dataset.</p>
-<p>You must be connected to the internet if you are fetching a dataset that is not cached locally.</p>
+<p><em>function</em>
+<code>pmlb.fetch_data(dataset_name, return_X_y=False, local_cache_dir=None, dropna=True)</code></p>
+<p>Download a dataset from PMLB, (optionally) store it locally, and
+return the dataset.</p>
+<p>You must be connected to the internet if you are fetching a dataset
+that is not cached locally.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
-<li><strong>dataset_name : str</strong> Name of the dataset to fetch. A list of available datasets can be found in the documentation or via <code>pmlb.get_updated_datasets</code>.</li>
-<li><strong>return_X_y : bool, default=False</strong> Specify the format of the data returned to the user. If <code>False</code>, the data are returned as a <code>pandas.DataFrame</code>, of size (n_samples, n_features+1), where the last column is <code>target</code> - the true target value of the data point. If <code>True</code>, the data are returned as a tuple (of length 2), where the first element is a <code>numpy.ndarray</code> of size (n_samples, n_features), and the second element is a <code>numpy.ndarray</code> of size (n_samples,), corresponding to the feature matrix (usually denoted <code>X</code>) and the list of target values (usually denoted <code>y</code>), respectively.</li>
-<li><strong>local_cache_dir : str, default=None</strong> The directory on your local machine in which to store the data files. If <code>None</code>, no local data cache will be used.</li>
-<li><strong>dropna : bool, default=True</strong> If <code>True</code>, <code>pmlb</code> will drop <code>NA</code>s from the exported dataset.</li>
+<li><strong>dataset_name : str</strong> Name of the dataset to fetch. A
+list of available datasets can be found in the documentation or via
+<code>pmlb.get_updated_datasets</code>.</li>
+<li><strong>return_X_y : bool, default=False</strong> Specify the format
+of the data returned to the user. If <code>False</code>, the data are
+returned as a <code>pandas.DataFrame</code>, of size (n_samples,
+n_features+1), where the last column is <code>target</code> - the true
+target value of the data point. If <code>True</code>, the data are
+returned as a tuple (of length 2), where the first element is a
+<code>numpy.ndarray</code> of size (n_samples, n_features), and the
+second element is a <code>numpy.ndarray</code> of size (n_samples,),
+corresponding to the feature matrix (usually denoted <code>X</code>) and
+the list of target values (usually denoted <code>y</code>),
+respectively.</li>
+<li><strong>local_cache_dir : str, default=None</strong> The directory
+on your local machine in which to store the data files. If
+<code>None</code>, no local data cache will be used.</li>
+<li><strong>dropna : bool, default=True</strong> If <code>True</code>,
+<code>pmlb</code> will drop <code>NA</code>s from the exported
+dataset.</li>
 </ul>
 <p><strong>Returns:</strong></p>
 <ul>
-<li><strong>dataset : pandas.DataFrame or (array-like, array-like)</strong> If <code>return_X_y == False</code>, a <code>pandas.DataFrame</code> containing the fetched dataset. If <code>return_X_y == True</code>, a 2-tuple of <code>numpy.ndarray</code>s containing the feature matrix <code>X</code> and the target array <code>y</code>, respectively.</li>
+<li><strong>dataset : pandas.DataFrame or (array-like,
+array-like)</strong> If <code>return_X_y == False</code>, a
+<code>pandas.DataFrame</code> containing the fetched dataset. If
+<code>return_X_y == True</code>, a 2-tuple of
+<code>numpy.ndarray</code>s containing the feature matrix <code>X</code>
+and the target array <code>y</code>, respectively.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
-<span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-4"><a href="#cb1-4"></a>X</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>X</span></code></pre></div>
 <pre><code>## array([[2, 0, 7, ..., 1, 4, 6],
 ##        [0, 3, 9, ..., 0, 2, 0],
 ##        [2, 3, 8, ..., 0, 3, 0],
@@ -500,44 +521,53 @@ div.tocify {
 ##        [2, 0, 8, ..., 7, 2, 0],
 ##        [2, 3, 8, ..., 7, 3, 0],
 ##        [3, 2, 0, ..., 7, 4, 6]])</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>y</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>y</span></code></pre></div>
 <pre><code>## array([0, 0, 0, ..., 0, 0, 1])</code></pre>
 </div>
 </div>
 <div id="variables" class="section level2">
 <h2>Variables</h2>
-<p>These variables are used to list the datasets that are currently available in PMLB.</p>
+<p>These variables are used to list the datasets that are currently
+available in PMLB.</p>
 <div id="docstring-output" class="section level3">
 <h3><code>dataset_names</code></h3>
 <p><em>variable</em> <code>pmlb.dataset_names</code></p>
 <p>A list of all datasets included in PMLB.</p>
-<p>The contents of this variable are equal to the union of <code>pmlb.classification_dataset_names</code> and <code>pmlb.regression_dataset_names</code>.</p>
+<p>The contents of this variable are equal to the union of
+<code>pmlb.classification_dataset_names</code> and
+<code>pmlb.regression_dataset_names</code>.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
-<span id="cb5-2"><a href="#cb5-2"></a></span>
-<span id="cb5-3"><a href="#cb5-3"></a>dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
 <pre><code>## [&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001&#39;, &#39;Hill_Valley_with_noise&#39;, &#39;Hill_Valley_without_noise&#39;, &#39;adult&#39;, &#39;agaricus_lepiota&#39;]</code></pre>
 </div>
 <div id="docstring-output" class="section level3">
 <h3><code>classification_dataset_names</code></h3>
 <p><em>variable</em> <code>pmlb.classification_dataset_names</code></p>
 <p>A list of all classification datasets included in PMLB.</p>
-<p>Classification datasets are datasets where the target value for each data point is discrete (rather than continuous).</p>
+<p>Classification datasets are datasets where the target value for each
+data point is discrete (rather than continuous).</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
-<span id="cb7-2"><a href="#cb7-2"></a></span>
-<span id="cb7-3"><a href="#cb7-3"></a>classification_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>classification_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
 <pre><code>## [&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001&#39;, &#39;Hill_Valley_with_noise&#39;, &#39;Hill_Valley_without_noise&#39;, &#39;adult&#39;, &#39;agaricus_lepiota&#39;]</code></pre>
 </div>
 <div id="docstring-output" class="section level3">
 <h3><code>regression_dataset_names</code></h3>
 <p><em>variable</em> <code>pmlb.regression_dataset_names</code></p>
 <p>A list of all regression datasets included in PMLB.</p>
-<p>Regression datasets are datasets where the target value for each data point is continuous (rather than discrete).</p>
+<p>Regression datasets are datasets where the target value for each data
+point is continuous (rather than discrete).</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
-<span id="cb9-2"><a href="#cb9-2"></a></span>
-<span id="cb9-3"><a href="#cb9-3"></a>regression_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>regression_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
 <pre><code>## [&#39;1027_ESL&#39;, &#39;1028_SWD&#39;, &#39;1029_LEV&#39;, &#39;1030_ERA&#39;, &#39;1089_USCrime&#39;, &#39;1096_FacultySalaries&#39;, &#39;1191_BNG_pbc&#39;, &#39;1193_BNG_lowbwt&#39;, &#39;1196_BNG_pharynx&#39;, &#39;1199_BNG_echoMonths&#39;]</code></pre>
 </div>
 </div>

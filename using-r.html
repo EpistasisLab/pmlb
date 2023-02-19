@@ -13,6 +13,7 @@
 
 <title>Using pmlbr</title>
 
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <meta name="twitter:card" content="summary">
@@ -59,19 +59,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -91,7 +91,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -275,8 +275,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -284,16 +284,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -464,25 +457,30 @@ div.tocify {
 
 <div id="install" class="section level2">
 <h2>Install</h2>
-<p>The <a href="https://github.com/EpistasisLab/pmlb"><strong>pmlbr</strong> package</a> provides the following user-facing functions and variables in the R environment.</p>
+<p>The <a
+href="https://github.com/EpistasisLab/pmlb"><strong>pmlbr</strong>
+package</a> provides the following user-facing functions and variables
+in the R environment.</p>
 <p>The package works for any recent version of R.</p>
-<p>You can install the released version of <strong>pmlbr</strong> from CRAN with:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">install.packages</span>(<span class="st">&#39;pmlbr&#39;</span>)</span></code></pre></div>
+<p>You can install the released version of <strong>pmlbr</strong> from
+CRAN with:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&#39;pmlbr&#39;</span>)</span></code></pre></div>
 <p>Or the development version from GitHub with remotes:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># install.packages(&#39;remotes&#39;) # uncomment to install remotes</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">library</span>(remotes)</span>
-<span id="cb2-3"><a href="#cb2-3"></a>remotes<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;EpistasisLab/pmlbr&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages(&#39;remotes&#39;) # uncomment to install remotes</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(remotes)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;EpistasisLab/pmlbr&quot;</span>)</span></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2>Usage</h2>
 <div id="fetch-data" class="section level3">
 <h3>Fetch data</h3>
-<p>The core function of this package is <code>fetch_data</code> that allows us to download data from the PMLB repository. For example:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">library</span>(pmlbr)</span>
-<span id="cb3-2"><a href="#cb3-2"></a></span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="co"># Download features and labels for penguins dataset in single data frame</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a>penguins &lt;-<span class="st"> </span><span class="kw">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>)</span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="kw">str</span>(penguins)</span></code></pre></div>
+<p>The core function of this package is <code>fetch_data</code> that
+allows us to download data from the PMLB repository. For example:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(pmlbr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Download features and labels for penguins dataset in single data frame</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>penguins <span class="ot">&lt;-</span> <span class="fu">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(penguins)</span></code></pre></div>
 <pre><code>## &#39;data.frame&#39;:    333 obs. of  8 variables:
 ##  $ island           : int  2 2 2 2 2 2 2 2 2 2 ...
 ##  $ bill_length_mm   : num  39.1 39.5 40.3 36.7 39.3 38.9 39.2 41.1 38.6 34.6 ...
@@ -494,9 +492,9 @@ div.tocify {
 ##  $ target           : int  0 0 0 0 0 0 0 0 0 0 ...
 ##  - attr(*, &quot;na.action&quot;)= &#39;omit&#39; Named int [1:11] 4 9 10 11 12 48 179 219 257 269 ...
 ##   ..- attr(*, &quot;names&quot;)= chr [1:11] &quot;4&quot; &quot;9&quot; &quot;10&quot; &quot;11&quot; ...</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Download features and labels for penguins dataset in separate data structures</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>penguins &lt;-<span class="st"> </span><span class="kw">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>, <span class="dt">return_X_y=</span><span class="ot">TRUE</span>)</span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">head</span>(penguins<span class="op">$</span>x) <span class="co"># feature data frame</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Download features and labels for penguins dataset in separate data structures</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>penguins <span class="ot">&lt;-</span> <span class="fu">fetch_data</span>(<span class="st">&#39;penguins&#39;</span>, <span class="at">return_X_y=</span><span class="cn">TRUE</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(penguins<span class="sc">$</span>x) <span class="co"># feature data frame</span></span></code></pre></div>
 <pre><code>##   island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g sex year
 ## 1      2           39.1          18.7               181        3750   1 2007
 ## 2      2           39.5          17.4               186        3800   0 2007
@@ -504,23 +502,24 @@ div.tocify {
 ## 4      2             NA            NA                NA          NA  NA 2007
 ## 5      2           36.7          19.3               193        3450   0 2007
 ## 6      2           39.3          20.6               190        3650   1 2007</code></pre>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">head</span>(penguins<span class="op">$</span>y) <span class="co"># target vector</span></span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(penguins<span class="sc">$</span>y) <span class="co"># target vector</span></span></code></pre></div>
 <pre><code>## [1] 0 0 0 0 0 0</code></pre>
 </div>
 <div id="dataset-characteristic" class="section level3">
 <h3>Dataset characteristic</h3>
-<p>Let’s check other available datasets and their summary statistics:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="co"># Dataset names</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a><span class="kw">head</span>(classification_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<p>Let’s check other available datasets and their summary
+statistics:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dataset names</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(classification_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;adult&quot;                  &quot;agaricus_lepiota&quot;       &quot;allbp&quot;                 
 ## [4] &quot;allhyper&quot;               &quot;allhypo&quot;                &quot;allrep&quot;                
 ## [7] &quot;analcatdata_aids&quot;       &quot;analcatdata_asbestos&quot;   &quot;analcatdata_authorship&quot;</code></pre>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">head</span>(regression_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(regression_dataset_names, <span class="dv">9</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;1027_ESL&quot;             &quot;1028_SWD&quot;             &quot;1029_LEV&quot;            
 ## [4] &quot;1030_ERA&quot;             &quot;1089_USCrime&quot;         &quot;1096_FacultySalaries&quot;
 ## [7] &quot;1191_BNG_pbc&quot;         &quot;1193_BNG_lowbwt&quot;      &quot;1196_BNG_pharynx&quot;</code></pre>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="co"># Dataset summaries</span></span>
-<span id="cb13-2"><a href="#cb13-2"></a><span class="kw">head</span>(summary_stats)</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dataset summaries</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(summary_stats)</span></code></pre></div>
 <pre><code>##                dataset n_instances n_features n_binary_features
 ## 1             1027_ESL         488          4                 0
 ## 2             1028_SWD        1000         10                 0
@@ -542,11 +541,14 @@ div.tocify {
 ## 4 0.031251250 regression
 ## 5 0.002970111 regression
 ## 6 0.004063158 regression</code></pre>
-<p>Selecting a subset of datasets based on characteristics that satisfy certain conditions is straight forward with <code>dplyr</code>. For example, if we need datasets with fewer than 100 observations for a classification task:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="kw">library</span>(dplyr)</span>
-<span id="cb15-2"><a href="#cb15-2"></a>summary_stats <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb15-3"><a href="#cb15-3"></a><span class="st">  </span><span class="kw">filter</span>(n_instances <span class="op">&lt;</span><span class="st"> </span><span class="dv">100</span>, task <span class="op">==</span><span class="st"> &#39;classification&#39;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
-<span id="cb15-4"><a href="#cb15-4"></a><span class="st">  </span><span class="kw">pull</span>(dataset)</span></code></pre></div>
+<p>Selecting a subset of datasets based on characteristics that satisfy
+certain conditions is straight forward with <code>dplyr</code>. For
+example, if we need datasets with fewer than 100 observations for a
+classification task:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>summary_stats <span class="sc">%&gt;%</span> </span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(n_instances <span class="sc">&lt;</span> <span class="dv">100</span>, task <span class="sc">==</span> <span class="st">&#39;classification&#39;</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(dataset)</span></code></pre></div>
 <pre><code>##  [1] &quot;analcatdata_aids&quot;           &quot;analcatdata_asbestos&quot;      
 ##  [3] &quot;analcatdata_bankruptcy&quot;     &quot;analcatdata_cyyoung8092&quot;   
 ##  [5] &quot;analcatdata_cyyoung9302&quot;    &quot;analcatdata_fraud&quot;         
@@ -557,16 +559,17 @@ div.tocify {
 </div>
 <div id="find-nearest-datasets" class="section level3">
 <h3>Find nearest datasets</h3>
-<p>You can also find datasets that are most similar to your own or one of the PMLB datasets, for example:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="kw">nearest_datasets</span>(<span class="st">&#39;penguins&#39;</span>)</span></code></pre></div>
+<p>You can also find datasets that are most similar to your own or one
+of the PMLB datasets, for example:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">nearest_datasets</span>(<span class="st">&#39;penguins&#39;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;penguins&quot;      &quot;ecoli&quot;         &quot;schizo&quot;        &quot;bupa&quot;         
 ## [5] &quot;solar_flare_1&quot;</code></pre>
 </div>
 </div>
 <div id="further-information" class="section level2">
 <h2>Further information</h2>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>?fetch_data</span>
-<span id="cb19-2"><a href="#cb19-2"></a>?nearest_datasets</span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>?fetch_data</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>?nearest_datasets</span></code></pre></div>
 </div>
 
 
