@@ -1,31 +1,31 @@
 name: Update new dataset metadata
 
 on:
-  push:
-    branches-ignore:
-      - master
-      - gh-pages
+  pull_request:
+    types: [opened, reopened]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Create LFS file list
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
       - name: Restore LFS cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: lfs-cache
         with:
           path: .git/lfs
           key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
       - name: Git LFS Pull
         run: git lfs pull
-      - name: Set up Python 3.8
-        uses: actions/setup-python@v1
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
       - name: Install dependencies
         run: |
           pip install ".[dev]"
