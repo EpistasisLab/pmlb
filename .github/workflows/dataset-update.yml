@@ -1,8 +1,7 @@
 name: Update new dataset metadata
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  pull_request
 
 jobs:
   build:
