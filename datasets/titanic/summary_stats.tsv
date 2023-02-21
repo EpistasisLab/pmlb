@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-titanic	2207	8	1	3	4	binary	2	0.126512852276882	classification
+titanic	2207	8	1	4	3	categorical	2.0	0.12651285227688236	classification
