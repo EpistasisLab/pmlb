@@ -1,4 +1,4 @@
-# Reviewed by [your name here]
+# Reviewed by Alex Zwanenburg
 dataset: banana
 description: This is an artificial dataset where instances belong to several clusters
   with a banana shape.
