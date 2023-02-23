@@ -1,24 +1,27 @@
-# Reviewed by [your name here]
+# Reviewed by Gabriel Kronberger
 dataset: nikuradse_1
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: > 
+  Predict the resistance for fluid flow in rough pipes based on the Nikuradse dataset.
+source: > 
+  J. Nikuradse: Laws of Flow in Rough Pipes, Technical Memorandum 1292, National Advisory Committee for Aeronautics, 1950, (Translation of "Strömungsgesetze in rauhen Rohren", VDI-Forschungsheft 361, Beilage zu "Forschung auf dem Gebiete des Ingenierswesens" Ausgabe B Band 4, July/August 1933). Tables 2 to 8 and Figure 9.
+publication: >
+  Ignasi Reichardt, Jordi Pallarès, Marta Sales-Pardo, and Roger Guimerà: Bayesian Machine Scientist to Compare Data Collapses for the Nikuradse Dataset.  Phys. Rev. Lett. 124, 084503 - Published 27 February 2020 https://doi.org/10.1103/PhysRevLett.124.084503
 task: regression
 keywords:
-  -
-  -
+  - Physics
+  - Flow
 target:
   type: continuous
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: log of 100x resistance factor (log(100 lambda))
+  code: null
 features:
   - name: r_k
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: relative roughness (r/k), r is the radius of the pipe, k is the average projection of roughness.
+    code: null
+    transform: ~
   - name: log_Re
     type: continuous
-    description:
-    code:
-    transform:
+    description: log of Reynolds number (log Re).
+    code: null
+    transform: ~
