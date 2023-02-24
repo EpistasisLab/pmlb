@@ -354,6 +354,8 @@ movement_libras	360	90	0	0	90	categorical	15.0	0.0	classification
 mushroom	8124	22	5	16	1	categorical	2.0	0.0012918910021209	classification
 mux6	128	6	6	0	0	categorical	2.0	0.0	classification
 new_thyroid	215	5	0	0	5	categorical	3.0	0.2990805840995132	classification
+nikuradse_1	362	2	0	0	2	continuous	186.0	0.0049368192404119	regression
+nikuradse_2	362	1	0	0	1	continuous	80.0	0.0204005302692805	regression
 nursery	12958	8	1	7	0	categorical	4.0	0.0900899366400157	classification
 optdigits	5620	64	3	10	51	categorical	10.0	1.4704868366802722e-05	classification
 page_blocks	5473	10	0	0	10	categorical	5.0	0.7627104291422278	classification
