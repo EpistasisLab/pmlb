@@ -1,0 +1,105 @@
+dataset: auto_insurance_price
+description: This dataset comes from a 1985 auto imports dataset, which was combined
+  with car insurance data. The original dataset can be used to predict several targets.
+  Here we use the dataset to predict the price of each car. Other datasets that are
+  based on the same data are auto_insurance_losses and auto_insurance_symboling. Compared
+  to the original dataset, the symboling column was dropped, because these are not
+  causally related to the target. In addition 4 instances with missing target values
+  were removed.
+source: https://archive-beta.ics.uci.edu/ml/datasets/automobile
+publication: Dua D, Graff C. UCI Machine Learning Repository. University of California,
+  Irvine, School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+license: CC BY 4.0
+task: regression
+keywords:
+  - financial
+  - vehicle
+target:
+  type: continuous
+  description: Market price of the car in US dollars.
+features:
+  - name: make
+    type: categorical
+    description: Car brand.
+    code: 0 = alfa-romero, 1 = audi, 2 = bmw, 3 = chevrolet, 4 = dodge, 5 = honda,
+      6 = isuzu, 7 = jaguar, 8 = mazda, 9 = mercedes-benz, 10 = mercury, 11 = mitsubishi,
+      12 = nissan, 13 = peugot, 14 = plymouth, 15 = porsche, 16 = renault, 17 = saab,
+      18 = subaru, 19 = toyota, 20 = volkswagen, 21 = volvo
+  - name: fuel_type
+    type: binary
+    description: Fuel type.
+    code: 0 = diesel, 1 = gasoline
+  - name: aspiration
+    type: binary
+    description: Type of engine aspiration.
+    code: 0 = standard, 1 = turbo
+  - name: number_of_doors
+    type: binary
+    description: Number of passenger doors.
+    code: 0 = four, 1 = two
+  - name: body_style
+    type: categorical
+    description: Style of car body.
+    code: 0 = hardtop, 1 = wagon, 2 = sedan, 3 = hatchback, 4 = convertible
+  - name: drive_wheels
+    type: categorical
+    description: Drive wheel configuration.
+    code: 0 = four-wheel drive, 1 = front-wheel drive, 2 = rear-wheel drive
+  - name: engine_location
+    type: binary
+    description: Engine location.
+    code: 0 = front, 1 = rear
+  - name: wheel_base
+    type: continuous
+    description: Wheel base in inches.
+  - name: length
+    type: continuous
+    description: Length of the car in inches.
+  - name: width
+    type: continuous
+    description: Width of the car in inches.
+  - name: height
+    type: continuous
+    description: Height of the car in inches.
+  - name: curb_weight
+    type: continuous
+    description: Weight of the vehicle including standard equipment and consumables
+      such as fuel and oil in lbs.
+  - name: engine_type
+    type: categorical
+    description: Type of engine.
+    code: 0 = dohc, 1 = l, 2 = ohc, 3 = ohcf, 4 = ohcv, 5 = rotor
+  - name: number_of_cylinders
+    type: ordinal
+    description: Number of engine cylinders.
+    code: 0 = two, 1 = three, 2 = four, 3 = five, 4 = six, 5 = eight, 6 = twelve
+  - name: engine_size
+    type: continuous
+    description: Engine displacement in cubic inches.
+  - name: fuel_system
+    type: categorical
+    description: Fuel delivery system.
+    code: 0 = 1bbl, 1 = 2bbl, 2 = 4bbl, 3 = idi, 4 = mfi, 5 = mpfi, 6 = spdi, 7 =
+      spfi
+  - name: bore
+    type: continuous
+    description: Engine cylinder bore size in inches.
+  - name: stroke
+    type: continuous
+    description: Engine piston stroke length in inches.
+  - name: compression_ratio
+    type: continuous
+    description: Ratio between maximum and minimum volume of the combustion chamber
+      during its cycle.
+  - name: horsepower
+    type: continuous
+    description: Engine power output in horsepower units.
+  - name: peak_rpm
+    type: continuous
+    description: Peak engine rotation speed in revolutions per minute.
+  - name: city_mpg
+    type: continuous
+    description: Fuel efficiency in typical urban settings, in miles per gallon.
+  - name: highway_mpg
+    type: continuous
+    description: Fuel efficiency in typical highway settings, in miles per gallon.
