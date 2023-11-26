@@ -1,0 +1,176 @@
+dataset: breast_cancer_wisconsin_diagnostic
+description: A fine needle aspiration can be obtained to substantiate findings of
+  suspected breast cancer. The aspirate is then cytologically examined under a microscope,
+  and scored by a physician. These findings form the features in the dataset. The
+  presence or absence of breast cancer is subsequently established by biopsy for patients
+  where a malignancy is suspected, and re-examination after several months to a year
+  for likely benign findings. A biopsy is optional for likely benign cases as well.
+  The underlying patient dataset (but not actual dataset) is used for breast_cancer_wisconsin_original,
+  breast_cancer_wisconsin_diagnostic (current) and breast_cancer_wisconsin_prognostic
+  datasets. In the current dataset, the fine needle aspirate images were digitised,
+  and the nuclei were segmented. Each segmentation was then used to compute ten features.
+  The mean, standard error and worst (average of three largest) values for each patient
+  are used to predict malignancy of suspected breast cancer. The features are detailed
+  in Street, Wohlberg and Mangasarian (1993).
+source: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)
+publication:
+  - Dua D, Graff C. UCI Machine Learning Repository. University of California, Irvine,
+    School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+  - 'Street WN, Wolberg WH, Mangasarian OL. Nuclear feature extraction for breast
+    tumor diagnosis. In: Biomedical image processing and biomedical visualization,
+    1993:861-870. SPIE.'
+  - "Wolberg WH, Street WN, Mangasarian OL.\tMachine learning techniques to diagnose
+    breast cancer from fine-needle aspirates. Cancer Letters, 1994: 163-171."
+  - "Wolberg WH, Street WN, Mangasarian OL.\tImage analysis and machine learning applied
+    to breast cancer diagnosis and prognosis. Analytical and Quantitative Cytology
+    and Histology, 1995:77-87."
+license: CC BY 4.0
+task: classification
+keywords:
+  - medicine
+  - cancer
+  - health
+target:
+  type: binary
+  description: Benign or malignant finding, established after further investigations,
+    e.g. through biopsy or re-examination after a few months.
+  code: 0 = benign, 1 = malignant
+features:
+  - name: radius_mean
+    type: continuous
+    description: Average radius of nucleus, computed as the mean length of radial
+      lines from the center to the perimeter. Mean over all nuclei.
+  - name: texture_mean
+    type: continuous
+    description: Textural roughness of the nucleus, measured as standard deviation
+      of image intensity values within each contour. Mean over all nuclei.
+  - name: perimeter_mean
+    type: continuous
+    description: Perimeter length. Mean over all nuclei.
+  - name: area_mean
+    type: continuous
+    description: Area enclosed by the perimeter. Mean over all nuclei.
+  - name: smoothness_mean
+    type: continuous
+    description: Smoothness of the perimeter, computed by comparing the difference
+      between each radial line and the mean length of its neighbours. Mean over all
+      nuclei.
+  - name: compactness_mean
+    type: continuous
+    description: Compactness, expressed as the square of the perimeter length divided
+      by the enclosed area. Mean over all nuclei.
+  - name: concavity_mean
+    type: continuous
+    description: Chords (straight line elements of fixed length) are drawn on the
+      perimeter, and sections of the perimeter that lie inside the chords are considered
+      concave. This features measures the average depth of all concavities in each
+      segmentation. Mean over all nuclei.
+  - name: n_concave_mean
+    type: continuous
+    description: Chords (straight line elements of fixed length) are drawn on the
+      perimeter, and sections of the perimeter that lie inside the chords are considered
+      concave. This features measures the number of concavities in each segmentation.
+      Mean over all nuclei.
+  - name: symmetry_mean
+    type: continuous
+    description: Symmetry along the major axis, measured by comparing length of line
+      segments between the major axis and the perimeter. These line segments are moreover
+      perpendicular to the major axis.For symmetrical nuclei, the two line segments
+      that intersect the major axis at the same position will have a very similar
+      length.Mean over all nuclei.
+  - name: fractal_dimension_mean
+    type: continuous
+    description: Fractal dimension measured using a coastline approximation, Mean
+      over all nuclei.
+  - name: radius_se
+    type: continuous
+    description: Average radius of nucleus, computed as the mean length of radial
+      lines from the center to the perimeter. Standard error over all nuclei.
+  - name: texture_se
+    type: continuous
+    description: Textural roughness of the nucleus, measured as standard deviation
+      of image intensity values within each contour. standard error over all nuclei.
+  - name: perimeter_se
+    type: continuous
+    description: Perimeter length. Standard error over all nuclei.
+  - name: area_se
+    type: continuous
+    description: Area enclosed by the perimeter. Standard error over all nuclei.
+  - name: smoothness_se
+    type: continuous
+    description: Smoothness of the perimeter, computed by comparing the difference
+      between each radial line and the mean length of its neighbours. Standard error
+      over all nuclei.
+  - name: compactness_se
+    type: continuous
+    description: Compactness, expressed as the square of the perimeter length divided
+      by the enclosed area. Standard error over all nuclei.
+  - name: concavity_se
+    type: continuous
+    description: Chords (straight line elements of fixed length) are drawn on the
+      perimeter, and sections of the perimeter that lie inside the chords are considered
+      concave. This features measures the average depth of all concavities in each
+      segmentation. Standard error over all nuclei.
+  - name: n_concave_se
+    type: continuous
+    description: Chords (straight line elements of fixed length) are drawn on the
+      perimeter, and sections of the perimeter that lie inside the chords are considered
+      concave. This features measures the number of concavities in each segmentation.
+      Standard error over all nuclei.
+  - name: symmetry_se
+    type: continuous
+    description: Symmetry along the major axis, measured by comparing length of line
+      segments between the major axis and the perimeter. These line segments are moreover
+      perpendicular to the major axis.For symmetrical nuclei, the two line segments
+      that intersect the major axis at the same position will have a very similar
+      length.Standard error over all nuclei.
+  - name: fractal_dimension_se
+    type: continuous
+    description: Fractal dimension measured using a coastline approximation. Standard
+      error over all nuclei.
+  - name: radius_worst
+    type: continuous
+    description: Average radius of nucleus, computed as the mean length of radial
+      lines from the center to the perimeter. Average of three largest values.
+  - name: texture_worst
+    type: continuous
+    description: Textural roughness of the nucleus, measured as standard deviation
+      of image intensity values within each contour. Average of three largest values.
+  - name: perimeter_worst
+    type: continuous
+    description: Perimeter length. Average of three largest values.
+  - name: area_worst
+    type: continuous
+    description: Area enclosed by the perimeter. Average of three largest values.
+  - name: smoothness_worst
+    type: continuous
+    description: Smoothness of the perimeter, computed by comparing the difference
+      between each radial line and the mean length of its neighbours. Average of three
+      largest values.
+  - name: compactness_worst
+    type: continuous
+    description: Compactness, expressed as the square of the perimeter length divided
+      by the enclosed area. Average of three largest values.
+  - name: concavity_worst
+    type: continuous
+    description: Chords (straight line elements of fixed length) are drawn on the
+      perimeter, and sections of the perimeter that lie inside the chords are considered
+      concave. This features measures the average depth of all concavities in each
+      segmentation. Average of three largest values.
+  - name: n_concave_worst
+    type: continuous
+    description: Chords (straight line elements of fixed length) are drawn on the
+      perimeter, and sections of the perimeter that lie inside the chords are considered
+      concave. This features measures the number of concavities in each segmentation.
+      Average of three largest values.
+  - name: symmetry_worst
+    type: continuous
+    description: Symmetry along the major axis, measured by comparing length of line
+      segments between the major axis and the perimeter. These line segments are moreover
+      perpendicular to the major axis.For symmetrical nuclei, the two line segments
+      that intersect the major axis at the same position will have a very similar
+      length.Average of three largest values.
+  - name: fractal_dimension_worst
+    type: continuous
+    description: Fractal dimension measured using a coastline approximation. Average
+      of three largest values.
