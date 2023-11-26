@@ -1,5 +1,5 @@
 # Reviewed by [your name here]
-dataset: solar_flare_1
+dataset: flare
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
@@ -12,12 +12,17 @@ target:
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features:
-  - name: largest_spot_size
+  - name: class code
     type: categorical
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
-  - name: spot_distribution
+  - name: largest spot code
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: spot dist code
     type: categorical
     description:
     code:
@@ -32,8 +37,8 @@ features:
     description:
     code:
     transform:
-  - name: Previous_24_hour_flare_activity_code
-    type: binary
+  - name: Previous 24 hour code
+    type: categorical
     description:
     code:
     transform:
@@ -42,7 +47,7 @@ features:
     description:
     code:
     transform:
-  - name: Did_region_become_historically_complex
+  - name: become complex
     type: binary
     description:
     code:
@@ -52,23 +57,9 @@ features:
     description:
     code:
     transform:
-  - name: Area_of_the_largest_spot
-    type: binary
-    description:
-    code:
-    transform:
-  - name: C-class_flares_production_by_this_region
+  - name: Area of the largest spot
     type: categorical
     description:
     code:
     transform:
-  - name: M-class_flares_production_by_this_region
-    type: categorical
-    description:
-    code:
-    transform:
-  - name: X-class_flares_production_by_this_region
-    type: binary
-    description:
-    code:
-    transform:
+deprecated: true
