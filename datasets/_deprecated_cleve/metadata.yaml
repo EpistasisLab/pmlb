@@ -1,5 +1,5 @@
 # Reviewed by [your name here]
-dataset: cleveland
+dataset: cleve
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
@@ -12,68 +12,69 @@ target:
   description: None yet. See our contributing guide to help us add one.
   code: None yet. See our contributing guide to help us add one.
 features:
-  - name: age
+  - name: Age
     type: continuous
     description: # optional but recommended, what the feature measures/indicates, unit
     code: # optional, coding information, e.g., Control = 0, Case = 1
     transform: # optional, any transformation performed on the feature, e.g., log scaled
-  - name: sex
+  - name: Sex
     type: binary
     description:
     code:
     transform:
-  - name: cp
+  - name: Chest pain type
     type: categorical
     description:
     code:
     transform:
-  - name: trestbps
+  - name: Trestbps
     type: continuous
     description:
     code:
     transform:
-  - name: chol
+  - name: Cholesterol
     type: continuous
     description:
     code:
     transform:
-  - name: fbs
+  - name: Fasting blood sugar &lt; 120
     type: binary
     description:
     code:
     transform:
-  - name: restecg
+  - name: Resting ecg
     type: categorical
     description:
     code:
     transform:
-  - name: thalach
+  - name: Max heart rate
     type: continuous
     description:
     code:
     transform:
-  - name: exang
+  - name: Exercise induced angina
     type: binary
     description:
     code:
     transform:
-  - name: oldpeak
+  - name: Oldpeak
     type: continuous
     description:
     code:
     transform:
-  - name: slope
+  - name: Slope
     type: categorical
     description:
     code:
     transform:
-  - name: ca
+  - name: Number of vessels colored
     type: categorical
     description:
     code:
     transform:
-  - name: thal
+  - name: Thal
     type: categorical
     description:
     code:
     transform:
+deprecated: true
