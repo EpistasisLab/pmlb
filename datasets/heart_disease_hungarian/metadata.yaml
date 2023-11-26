@@ -1,0 +1,104 @@
+dataset: heart_disease_hungarian
+description: The diagnosis of heart disease relies upon a combination of clinical
+  signs and test results. For a long time, invasive coronary angiography has been
+  a gold standard for diagnosing heart disease. However, angiography is relatively
+  complicated, costly and not without risk to the patient. Each instance represents
+  a patient with suspected heart disease that underwent clinical tests and angiography.
+  The task is to predict the presence or absence of heart disease based on clinical
+  signs and test results. This dataset comes from a well-known collection of heart
+  disease datasets. Of these datasets the Cleveland dataset (from the Cleveland Clinic
+  Foundation) is the most well-known and complete. The current dataset, from the Hungarian
+  Institute of Cardiology in Budapest, has more missing values, notably for the exercise_st_depression,
+  exercise_st_slope, fluoroscopy_vessels and thallium_stress_test features. The other
+  datasets can be found under heart_disease_cleveland, heart_disease_zurich, and heart_disease_va_long_beach.
+source:
+  - https://archive-beta.ics.uci.edu/ml/datasets/heart+disease
+  - A. Janosi, Hungarian Institute of Cardiology, Budapest, Hungary
+publication: Dua D, Graff C. UCI Machine Learning Repository. University of California,
+  Irvine, School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+license: CC BY 4.0
+task: classification
+keywords:
+  - medicine
+  - cardiology
+  - health
+target:
+  type: binary
+  description: Presence or absence of coronary heart disease, in particular coronary
+    insufficiency, as indicated by angiographic measurements of the arterial diameter
+    of major vessels. A decrease in diameter of >50% in any major vessel is used to
+    indicate the presence of heart disease.
+  code: 0 = absent, 1 = present
+features:
+  - name: age
+    type: continuous
+    description: Age of the patient in years.
+  - name: gender
+    type: binary
+    description: Gender of the patient.
+    code: 0 = female, 1 = male
+  - name: chest_pain_type
+    type: categorical
+    description: Type of chest pain reported by the patient. Chest pain be caused
+      by insufficient blood flow to the cardiac muscle, in which case it is called
+      angina.
+    code: 0 = typical angina, 1 = atypical angina, 2 = non-anginal pain, 3 = asymptomatic
+  - name: resting_blood_pressure
+    type: continuous
+    description: Blood pressure measured upon admission, without exercise, in mmHg.
+      Given the value range, most if not all measurements are systolic blood pressure.
+  - name: serum_cholesterol
+    type: continuous
+    description: Cholesterol concentration in blood serum. High levels of cholesterol
+      may lead to fatty deposits in the blood vessels. These in turn increase risk
+      at coronary heart disease, heart attacks and stroke. Measured in mg/dl.
+  - name: high_fasting_blood_sugar
+    type: binary
+    description: Blood glucose levels after fasting in mg/dl. Blood glucose levels
+      of over 120 mg/dl are indicated as high.
+    code: 0 = no, 1 = yes
+  - name: resting_ecg_results
+    type: categorical
+    description: An electrocardiogram (ECG) records electric activity of the heart
+      as it beats. Several heart conditions noticeably affect cardiac electric activity
+      that can be observed by recording an ECG.
+    code: 0 = normal, 1 = ST-T wave abnormality, 2 = probable or definite left ventricular
+      hypertrophy
+  - name: maximum_exercise_heart_rate
+    type: continuous
+    description: Maximum heart rate observed during exercise. Exercise tests are used
+      to assess cardiac capacity (or lack thereof) under strain.
+  - name: exercise_induced_angina
+    type: binary
+    description: Angina is a chest pain caused by reduced flow of blood to the heart
+      muscle, i.e. ischemia. This can be more noticeable when exercising.
+    code: 0 = no, 1 = yes
+  - name: exercise_st_depression
+    type: continuous
+    description: The ST-segment of the electrocardiogram (ECG) relates to repolarisation
+      of the ventricles. Cardiac injury or coronary insufficiency (which we are trying
+      to predict) are common causes for depression of the ST-segment. Exercise can
+      produce or further enhance this depression, and provide evidence for coronary
+      insufficiency.
+  - name: exercise_st_slope
+    type: categorical
+    description: Though a depression of the ST-segment in electrocardiograms (ECG)
+      is usually a sign that something is wrong, it is not always indicative of coronary
+      insufficiency. The shape of the ST-segment slope can further help eliminate
+      potential causes.
+    code: 0 = upsloping, 1 = flat, 2 = downsloping
+  - name: fluoroscopy_vessels
+    type: continuous
+    description: Fluoroscopy uses X-ray imaging to provide real-time moving images,
+      in this case of the heart and surrounding major vessels. This allows for detecting
+      flow abnormalities, e.g. reduced flow. The number of major blood vessels with
+      substantially reduced flow is measured.
+  - name: thallium_stress_test
+    type: categorical
+    description: Perfusion of the heart muscle (myocardium) can be imaged using radionuclides.
+      At the time the data were recorded myocardial perfusion was studied using Thallium-201
+      based compounds. Perfusion defects - local decreases in blood flow to the myocardium
+      - are assessed using this imaging. This can lead to finding no defects, a reversible
+      defect (where the defect is visible during the stress test, but not at rest)
+      or a fixed defect (defect is present during rest and the stress test).
+    code: 0 = normal, 1 = fixed defect, 2 = reversible defect

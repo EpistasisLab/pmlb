@@ -1,0 +1,91 @@
+dataset: solar_flare
+description: Solar flares are large eruptions on the surface of the sun. Though the
+  mechanisms are not fully understood, flares typically occur in regions with complex
+  magnetic field line arrangements such as those around sunspots. Minor sun flares
+  are relatively common and their high-energy radiation and particle streams have
+  little to no effect on Earth. Extreme sun flares are more rare, but considerably
+  more disruptive to communications. This dataset consist of descriptions of regions
+  with sunspots recorded in 1978, together with the number of flares originating from
+  these reasons. Note that we here focus on predicting C-class flares, as M- and X-class
+  flares are considerably more rare, and the number of instances would make it impossible
+  to predict such flares.
+source:
+  - https://archive.ics.uci.edu/ml/datasets/solar+flare
+  - Gary Bradshaw, University of Colorado Boulder
+publication: Dua D, Graff C. UCI Machine Learning Repository. University of California,
+  Irvine, School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+license: CC BY 4.0
+task: regression
+keywords:
+  - astronomy
+target:
+  type: continuous
+  description: Number of minor C-class solar flares detected.
+features:
+  - name: sunspot_group_configuration
+    type: categorical
+    description: In this dataset groups of sunspots are categorised according to the
+      modified Zürich system The configuration of sunspots increases in complexity
+      and size from A to G. Class A is a unipolar group without any penumbras, and
+      usually the initial or final stage of a group of sunspots. Class B is bipolar
+      group without any penumbras. Class D-F are bipolar groups of increasing sizes
+      and complexity. Finally class H is a unipolar group with penumbra.
+    code: 0 = B, 1 = C, 2 = D, 3 = E, 4 = F, 5 = G, 6 = H
+  - name: sunspot_largest_spot
+    type: categorical
+    description: Classification of the penumbra of the largest spot. The penumbra
+      is the region around the central dark region. For group configurations A and
+      B, there is no penumbra (X). R indicates a rudamentary penumbra. S, A, H, K
+      classes categorizes size and shape of the penumbra, with S and A being small,
+      H and K being large S and H being symmetric, and A and K being asymmetric.
+    code: 0 = X, 1 = R, 2 = S, 3 = A, 4 = H, 5 = K
+  - name: sunspot_distribution
+    type: categorical
+    description: Classifies the distribution of spots. In the modified Zürich system
+      this classification is based on the outermost prominent spots. These also called
+      leading and following spots, based on their position with regard to the sun's
+      rotation vector. For group configurations A and H, distribution is not defined
+      (X). Open (O) means that there are few, if any, spots between leading and following
+      spots. Intermediate (I) indicates that are numerous spots between leading and
+      following spots, but these lack fully formed penumbra.Compact (C) indicates
+      that are numerous spots between the leading and following spots, with at least
+      one other mature spot.
+    code: 0 = X, 1 = O, 2 = I, 3 = C
+  - name: sunspot_activity
+    type: binary
+    description: Assessment of activity of a sunspot group.
+    code: 0 = reduced, 1 = unchanged
+  - name: sunspot_evolution
+    type: categorical
+    description: Assessment of the evolution of a sunspot group. Decay means that
+      the sunspot group is becoming less pronounced. A growing sunspot region, on
+      the other hand, becomes more pronounced, with more and larger sunspots and penumbra.
+    code: 0 = decay, 1 = stable, 2 = growth
+  - name: recent_flare_activity
+    type: categorical
+    description: Indicator of flares observed in the sunspot region in the past 24
+      hours.
+    code: 0 = up to C-class flares, 1 = one M-class flare, 2 = more than one M-class
+      flare or X-class flare
+  - name: historically_complex_region
+    type: binary
+    description: Indicator of historical complexity of the sunspot group. The original
+      description does not define when a sunspot group is considered to be complex,
+      and what time period is considered. It may be assumed that complexity is assessed
+      for the duration that the sunspot group existed up to the current observation.
+    code: 0 = yes, 1 = no
+  - name: historically_complex_region_recent
+    type: binary
+    description: Indicator of a sunspot region becoming complex within the current
+      orbital rotation. Depending on the latitude of the group, this is a timeframe
+      between roughly 25 (equator) and 38 days (polar region).
+    code: 0 = yes, 1 = no
+  - name: region_area
+    type: binary
+    description: Area of the sunspot group. It is not clear what cutoff is being used.
+    code: 0 = small, 1 = large
+  - name: largest_spot_area
+    type: binary
+    description: Area of the largest spot. In this dataset all largest spots are smaller
+      than 5 degrees (diameter).
+    code: 0 = up to 5 degrees, 1 = over 5 degrees

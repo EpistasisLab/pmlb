@@ -1,0 +1,106 @@
+dataset: congressional_voting_records
+description: This dataset contains the voting behaviour of each of the 435 members
+  of the 98th Congress of the U.S. House of Representatives on a items for voting.
+  The aim is to identify the political affiliation of the representative based on
+  voting behaviour. Note that there are multiple types of vote possible, which were
+  aggregated to for, against, and unknown. The latter consists of present votes (similar
+  to abstention), as well as absence of vote. The voting records were originally selected
+  from the Congressional Quarterly Almanac. The exact items of legislation to which
+  they correspond are currently unknown.
+source:
+  - https://archive.ics.uci.edu/ml/datasets/congressional+voting+records
+  - 'Congressional Quarterly Almanac, 98th Congress, 2nd session 1984, Volume XL:
+    Congressional Quarterly Inc. Washington, D.C., 1985'
+publication: Dua D, Graff C. UCI Machine Learning Repository. University of California,
+  Irvine, School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+license: CC BY 4.0
+task: classification
+keywords:
+  - politics
+target:
+  type: binary
+  description: Political affiliation of the members of Congress. The U.S.A. has a
+    de facto two-party system. The vast majority of representatives are therefore
+    affiliated with one major political party, i.e. the Democratic party and the Republican
+    party.
+  code: 0 = democrat, 1 = republican
+features:
+  - name: handicapped_infants
+    type: categorical
+    description: Voting on legislation concerning handicapped infants.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: water_project_cost_sharing
+    type: categorical
+    description: Voting on legislation concerning cost-sharing for water projects.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: adoption_of_the_budget_resolution
+    type: categorical
+    description: Voting on a budget resolution for the Federal government.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: physician_fee_freeze
+    type: categorical
+    description: Voting on legislation concerning fee freezes for physicians.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: el_salvador_aid
+    type: categorical
+    description: Voting on providing aid to El Salvador, which was in a state of civil
+      war at the time.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: religious_groups_in_schools
+    type: categorical
+    description: Voting on legislation concerning religious groups in schools
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: anti_satellite_test_ban
+    type: categorical
+    description: Voting on a ban on testing anti-satellite measures.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: aid_to_nicaraguan_contras
+    type: categorical
+    description: Voting on providing aid to the Contras in Nicaragua. The Contras
+      were paramilitary groups that were actively opposing the Marxist Junta in power
+      in Nicaragua following the Nicaraguan Revolution in 1979. The U.S. government
+      openly and covertly supported these groups. In 1984 the Congress banned assistance
+      by any U.S. government agency. Not that this stopped the U.S. government from
+      doing so anyway.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: mx_missile
+    type: categorical
+    description: Voting on legislation related to the MX (later LGM-118 Peacekeeper)
+      missile.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: immigration
+    type: categorical
+    description: Voting on legislation related to immigration
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: synfuels_corporation_cutback
+    type: categorical
+    description: Voting on legislation concerning a cut in funding for the U.S. Synthetic
+      Fuels Corporation, which was founded a few years earlier to develop synthetic
+      fuels.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: education_spending
+    type: categorical
+    description: Voting on legislation concerning spending on the education budget.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: superfund_right_to_sue
+    type: categorical
+    description: Voting on legislation that would give the Superfund program, established
+      by the Comprehensive Environmental Response, Compensation and Liability Act,
+      the right to sue polluters.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: crime
+    type: categorical
+    description: Voting on crime-related legislation, possibly the Comprehensive Crime
+      Control Act, which was the first comprehensive revision of the U.S. criminal
+      code.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: duty_free_exports
+    type: categorical
+    description: Voting on legislation related to duty-free exports.
+    code: 0 = for, 1 = against, 2 = unknown
+  - name: export_administation_act_south_africa
+    type: categorical
+    description: Voting on legislation related to the Export Administration Act, likely
+      voting on the Senate amendment to the amendment of the Export Administration
+      Act (H.R. 4230) which included certain export controls converning South Africa.
+    code: 0 = for, 1 = against, 2 = unknown

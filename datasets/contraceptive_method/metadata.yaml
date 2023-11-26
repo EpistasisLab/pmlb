@@ -1,0 +1,61 @@
+dataset: contraceptive_method
+description: 'This dataset is a subset of the 1987 National Indonesia Contraceptive
+  Prevalence Survey. Each sample is corresponds to a respondent: a married woman who
+  was not (known to be) pregnant. The task is to predict the current contraceptive
+  method choice (no use, long-term methods, or short-term methods) of the respondent
+  based on demographic and socio-economic characteristics.'
+source:
+  - https://archive-beta.ics.uci.edu/ml/datasets/contraceptive+method+choice
+  - https://microdata.worldbank.org/index.php/catalog/1398
+publication:
+  - Dua D, Graff C. UCI Machine Learning Repository. University of California, Irvine,
+    School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+  - Lim TS, Loh WY, Shih YS. A comparison of prediction accuracy, complexity, and
+    training time of thirty-three old and new classification algorithms. Machine learning.
+    2000;40(3):203-28.
+license: CC BY 4.0
+task: classification
+keywords:
+  - demographics
+  - society
+target:
+  type: categorical
+  description: Type of contraceptive method used by the respondent.
+  code: 0 = not_used, 1 = long_term, 2 = short_term
+features:
+  - name: age
+    type: continuous
+    description: Age of the respondent in years.
+  - name: education
+    type: ordinal
+    description: Level of education of the respondent.
+    code: 0 = none, 1 = primary, 2 = secondary, 3 = higher
+  - name: education_husband
+    type: ordinal
+    description: Level of education of the husband of the respondent.
+    code: 0 = none, 1 = primary, 2 = secondary, 3 = higher
+  - name: number_of_children
+    type: continuous
+    description: Number of children born to the respondent.
+  - name: religion
+    type: binary
+    description: Religion reported by the respondent. This was simplified by Lim et
+      al. to islam and other.
+    code: 0 = other, 1 = islam
+  - name: occupation
+    type: binary
+    description: Whether the respondent is currently working.
+    code: 0 = yes, 1 = no
+  - name: occupation_husband
+    type: categorical
+    description: Occupation of the husband of the respondent. The meaning of the levels
+      is unclear.
+    code: 0 = 1, 1 = 2, 2 = 3, 3 = 4
+  - name: standard_of_living
+    type: ordinal
+    description: Standard-of-living of the respondent's household.
+    code: 0 = low, 1 = below_average, 2 = above_average, 3 = high
+  - name: media_exposure
+    type: binary
+    description: Media exposure of the respondent.
+    code: 0 = high, 1 = low

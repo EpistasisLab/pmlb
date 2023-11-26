@@ -1,0 +1,73 @@
+dataset: credit_approval_australia
+description: This dataset contains data concerning credit card applications in a large
+  bank. Sadly, the exact meaning of the features is unknown.
+source: https://archive.ics.uci.edu/ml/datasets/Credit+Approval
+publication:
+  - Dua D, Graff C. UCI Machine Learning Repository. University of California, Irvine,
+    School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+  - Quinlan JR. Simplifying decision trees. International journal of man-machine studies.
+    1987;27:221-34.
+license: CC BY 4.0
+task: classification
+keywords:
+  - financial
+target:
+  type: binary
+  description: Approval or denial of credit card applications.
+  code: 0 = approved, 1 = denied
+features:
+  - name: attribute_1
+    type: binary
+    description: Unknown meaning.
+    code: 0 = a, 1 = b
+  - name: attribute_2
+    type: continuous
+    description: Unknown meaning.
+  - name: attribute_3
+    type: continuous
+    description: Unknown meaning.
+  - name: attribute_4
+    type: categorical
+    description: Unknown meaning.
+    code: 0 = l, 1 = u, 2 = y
+  - name: attribute_5
+    type: categorical
+    description: Unknown meaning.
+    code: 0 = g, 1 = gg, 2 = p
+  - name: attribute_6
+    type: categorical
+    description: Unknown meaning.
+    code: 0 = aa, 1 = c, 2 = cc, 3 = d, 4 = e, 5 = ff, 6 = i, 7 = j, 8 = k, 9 = m,
+      10 = q, 11 = r, 12 = w, 13 = x
+  - name: attribute_7
+    type: categorical
+    description: Unknown meaning.
+    code: 0 = bb, 1 = dd, 2 = ff, 3 = h, 4 = j, 5 = n, 6 = o, 7 = v, 8 = z
+  - name: attribute_8
+    type: continuous
+    description: Unknown meaning.
+  - name: attribute_9
+    type: binary
+    description: Unknown meaning.
+    code: 0 = f, 1 = t
+  - name: attribute_10
+    type: binary
+    description: Unknown meaning.
+    code: 0 = f, 1 = t
+  - name: attribute_11
+    type: continuous
+    description: Unknown meaning.
+  - name: attribute_12
+    type: binary
+    description: Unknown meaning.
+    code: 0 = f, 1 = t
+  - name: attribute_13
+    type: categorical
+    description: Unknown meaning.
+    code: 0 = g, 1 = p, 2 = s
+  - name: attribute_14
+    type: continuous
+    description: Unknown meaning.
+  - name: attribute_15
+    type: continuous
+    description: Unknown meaning.

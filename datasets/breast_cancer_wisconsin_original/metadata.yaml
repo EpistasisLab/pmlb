@@ -1,0 +1,76 @@
+dataset: breast_cancer_wisconsin_original
+description: A fine needle aspiration can be obtained to substantiate findings of
+  suspected breast cancer. The aspirate is then cytologically examined under a microscope,
+  and scored by a physician. These findings form the features in the dataset. The
+  presence or absence of breast cancer is subsequently established by biopsy for patients
+  where a malignancy is suspected, and re-examination after several months to a year
+  for likely benign findings. A biopsy is optional for likely benign cases as well.
+  The underlying patient dataset (but not actual dataset) is used for breast_cancer_wisconsin_original
+  (current), breast_cancer_wisconsin_diagnostic and breast_cancer_wisconsin_prognostic
+  datasets. Here we aim to predict malignancy of suspected breast cancer based on
+  the cytological assessment.
+source: https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Original)
+publication:
+  - Dua D, Graff C. UCI Machine Learning Repository. University of California, Irvine,
+    School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+  - Wolberg WH, Mangasarian OL. Multisurface method of pattern separation for medical
+    diagnosis applied to breast cytology. Proceedings of the national academy of sciences.
+    1990;87:9193-6.
+  - 'Wolberg WH, Mangasarian O, Coleman TF, Li Y. Pattern recognition via linear programming:
+    Theory and application to medical diagnosis. Large-Scale Numerical Optimization,
+    SIAM Publications. 1990:22-30.'
+license: CC BY 4.0
+task: classification
+keywords:
+  - medicine
+  - cancer
+  - health
+  - cytology
+target:
+  type: binary
+  description: Benign or malignant finding, established after further investigations,
+    e.g. through biopsy or re-examination after a few months.
+  code: 0 = benign, 1 = malignant
+features:
+  - name: clump_thickness
+    type: continuous
+    description: The extent to which epithelial cell clumps in the fine needle aspirate
+      were mono- or multilayered.
+  - name: cell_size_uniformity
+    type: continuous
+    description: The degree to which epithelial cells are similarly sized.
+  - name: cell_shape_uniformity
+    type: continuous
+    description: The degree to which epithelial cells have a similar shape.
+  - name: marginal_adhesion
+    type: continuous
+    description: The degree of cohesion of the cells surrounding the epithelial clumps.
+  - name: epithelial_cell_size
+    type: continuous
+    description: A measure of the diameter of the largest epithelial cells compared
+      to that of red blood cells.The latter have a relatively constant diameter across
+      patients.
+  - name: bare_nuclei
+    type: continuous
+    description: The proportion of nuclei of epithelial cells that were not surrounded
+      by substantial cytoplasma.
+  - name: bland_chromatin
+    type: continuous
+    description: Chromatin is a complex of DNA and supporting protein. Chromatin is
+      typically loosely coiled when the cell is not undergoing cell division, allowing
+      for more tight packing of DNA, and regulating gene expression. This feature
+      scores the degree to which it appears bland under the microscope, i.e. how homogenous
+      it appears to be.
+  - name: normal_nucleoli
+    type: continuous
+    description: The nucleolus is the part of the cell nucleus where ribosomes are
+      produced and assembled. Ribosomes are the primary protein factories of cells,
+      which create protein from amino acids based on genetic templates copied from
+      the DNA. This feature scores the degree to which the nucleoli have an abnormal
+      appearance.
+  - name: mitoses
+    type: continuous
+    description: Mitosis is the process of cell replication, where one cell is divided
+      into two daughter cells. More precisely, its the part of the cell cycle where
+      already replicated chromosomal material is separated into two new nuclei. This
+      feature scores the number of cells undergoing mitosis.

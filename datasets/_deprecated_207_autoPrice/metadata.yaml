@@ -1,0 +1,90 @@
+# Reviewed by [your name here]
+dataset: 207_autoPrice
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: regression
+keywords:
+  -
+  -
+target:
+  type: continuous
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: symboling
+    type: categorical
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: normalized-losses
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: wheel-base
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: length
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: width
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: height
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: curb-weight
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: engine-size
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: bore
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: stroke
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: compression-ratio
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: horsepower
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: peak-rpm
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: city-mpg
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: highway-mpg
+    type: continuous
+    description:
+    code:
+    transform:
+deprecated: true

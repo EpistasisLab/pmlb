@@ -1,0 +1,120 @@
+dataset: credit_approval_germany
+description: Banks are exposed to a financial risk when offering credit to a customer.
+  The customer may not be able to or unwilling to repay the credit in full. Hence,
+  banks have to judge how risky a credit application is. This dataset contains (mock?)
+  data for credit applications. The objective is to assess the credit risk of each
+  applicant. Note that this dataset is several decades old, and is likely outdated.
+source:
+  - https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)
+  - Prof. Hans Hofmann, Institut für Statistik und Ökonometrie, Universität Hamburg
+publication: Dua D, Graff C. UCI Machine Learning Repository. University of California,
+  Irvine, School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+license: CC BY 4.0
+task: classification
+keywords:
+  - financial
+target:
+  type: binary
+  description: Approval or denial of credit applications. Applications are denied
+    when the risk is considered too high.
+  code: 0 = approved, 1 = denied
+features:
+  - name: credit_height
+    type: continuous
+    description: Amount of money requested as a loan, in DM.
+  - name: credit_duration
+    type: continuous
+    description: Duration of the loan in months. Most loans have to be repaid in monthly
+      installments.
+  - name: purpose
+    type: categorical
+    description: Purpose of the loan.
+    code: 0 = new car, 1 = used car, 2 = furniture or equipment, 3 = radio or television,
+      4 = domestic appliance, 5 = repairs, 6 = education, 7 = retraining, 8 = business,
+      9 = other
+  - name: credit_guarantee
+    type: categorical
+    description: Is another entity involved as a co-applicant or guarantor or the
+      loan. These may be liable in case the main applicant cannot fulfil their payment
+      obligations. Presence of a co-applicant or guarantor usually decrease the financial
+      risk for the bank.
+    code: 0 = none, 1 = co-applicant, 2 = guarantor
+  - name: rate_fraction_income
+    type: ordinal
+    description: Monthly payment rate as fraction of disposable income. This was likely
+      discretised into 4 categories, but their meaning is not known.
+    code: 0 = 1, 1 = 2, 2 = 3, 3 = 4
+  - name: credit_history
+    type: categorical
+    description: Credit history of the applicant.
+    code: 0 = no previous credits, 1 = all credits duly paid off, 2 = existing credits
+      duly paid, 3 = payment delays, 4 = credits elsewhere
+  - name: existing_credits_at_bank
+    type: ordinal
+    description: Number of existing credits at the bank taken by the application.
+      This was likely discretised into 4 categories, but their meaning is not known.
+    code: 0 = 1, 1 = 2, 2 = 3, 3 = 4
+  - name: other_credits
+    type: categorical
+    description: If, and where other loans are being repaid by the applications.
+    code: 0 = bank, 1 = store, 2 = none
+  - name: age
+    type: continuous
+    description: Age of the applicant, in years.
+  - name: personal_status
+    type: categorical
+    description: Gender and marital status of the applicant.
+    code: 0 = male, divorced or separated, 1 = female, any, 2 = male, single, 3 =
+      male, married or widowed
+  - name: dependents
+    type: binary
+    description: Number of people that (financially) depend on the applicant for the
+      well-being. This is likely a binarised value, but its not clear what each category
+      means.
+    code: 0 = 1, 1 = 2
+  - name: employment_type
+    type: ordinal
+    description: The type of employment the applicant has.
+    code: 0 = umeployed or unskilled non-resident, 1 = unskilled, 2 = skilled, 3 =
+      highly qualified or self-employed
+  - name: employment_length
+    type: ordinal
+    description: The length of employment of the applicant. Longer employment may
+      correlate with a more stable job, and less risk.
+    code: 0 = unemployed, 1 = less than one year, 2 = between one and four years,
+      3 = between 4 and 7 years, 4 = seven years or more
+  - name: foreign_worker
+    type: binary
+    description: Whether the applicant is foreign or native (German).
+    code: 0 = foreign, 1 = native
+  - name: housing_status
+    type: categorical
+    description: Whether the housing accomodation is owned, rented or freely offered
+      to the applicant.
+    code: 0 = rent, 1 = own, 2 = for free
+  - name: residence_duration
+    type: ordinal
+    description: How long the applicant has been living in their current residence.
+      This was likely discretised into 4 categories, but their meaning is not known.
+    code: 0 = 1, 1 = 2, 2 = 3, 3 = 4
+  - name: checking_account_status
+    type: categorical
+    description: Balance and monthly income to the applicant's checking account at
+      the bank, if any.
+    code: 0 = negative balance, 1 = below 200 DM per month, 2 = over 200 DM per month,
+      3 = no checking account
+  - name: savings_account_status
+    type: categorical
+    description: Balance of the applicant's savings account at the bank, if any.
+    code: 0 = less than 100 DM, 1 = between 100 and 500 DM, 2 = between 500 and 1000
+      DM, 3 = over 1000 DM, 4 = no savings account
+  - name: assets
+    type: categorical
+    description: Valuable assets held by the applicant that can help secure their
+      loan by serving as collateral.
+    code: 0 = real estate, 1 = building savings agreement or life insurance, 2 = car
+      or other, 3 = none, or unknown
+  - name: telephone
+    type: binary
+    description: Whether the applicant has their own telephone (land-line).
+    code: 0 = no, 1 = yes

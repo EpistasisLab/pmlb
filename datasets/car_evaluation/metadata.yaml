@@ -1,119 +1,46 @@
-# Reviewed by [your name here]
 dataset: car_evaluation
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: Synthetic dataset for modelling car desireability.
+source: https://archive.ics.uci.edu/ml/datasets/car+evaluation
+publication:
+  - Dua D, Graff C. UCI Machine Learning Repository. University of California, Irvine,
+    School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+  - Bohanec M., and Rajkovic V. Knowledge acquisition and explanation for multi-attribute
+    decision making. In 8th Intl Workshop on Expert Systems and their Applications,
+    Avignon, France. pages 59-78, 1988.
+  - Zupan B., Bohanec M., Bratko I. and Demsar J. Machine learning by function decomposition.
+    In ICML. pages 421-429, 1997
+license: CC BY 4.0
 task: classification
 keywords:
-  -
-  -
+  - artificial
+  - hierarchical
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: Acceptance of the car as a whole, which balances aspects of price,
+    costs, safety and comfort.
+  code: 0 = unacceptable, 1 = acceptable, 2 = good, 3 = very good
 features:
-  - name: buying_price_vhigh
-    type: binary
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
-  - name: buying_price_high
-    type: binary
-    description:
-    code:
-    transform:
-  - name: buying_price_med
-    type: binary
-    description:
-    code:
-    transform:
-  - name: buying_price_low
-    type: binary
-    description:
-    code:
-    transform:
-  - name: maintenance_price_vhigh
-    type: binary
-    description:
-    code:
-    transform:
-  - name: maintenance_price_high
-    type: binary
-    description:
-    code:
-    transform:
-  - name: maintenance_price_med
-    type: binary
-    description:
-    code:
-    transform:
-  - name: maintenance_price_low
-    type: binary
-    description:
-    code:
-    transform:
-  - name: doors_2
-    type: binary
-    description:
-    code:
-    transform:
-  - name: doors_3
-    type: binary
-    description:
-    code:
-    transform:
-  - name: doors_4
-    type: binary
-    description:
-    code:
-    transform:
-  - name: doors_5more
-    type: binary
-    description:
-    code:
-    transform:
-  - name: persons_2
-    type: binary
-    description:
-    code:
-    transform:
-  - name: persons_4
-    type: binary
-    description:
-    code:
-    transform:
-  - name: persons_more
-    type: binary
-    description:
-    code:
-    transform:
-  - name: luggage_boot_size_small
-    type: binary
-    description:
-    code:
-    transform:
-  - name: luggage_boot_size_med
-    type: binary
-    description:
-    code:
-    transform:
-  - name: luggage_boot_size_big
-    type: binary
-    description:
-    code:
-    transform:
-  - name: safety_low
-    type: binary
-    description:
-    code:
-    transform:
-  - name: safety_med
-    type: binary
-    description:
-    code:
-    transform:
-  - name: safety_high
-    type: binary
-    description:
-    code:
-    transform:
+  - name: buying_price
+    type: ordinal
+    description: Cost of buying the car.
+    code: 0 = low, 1 = medium, 2 = high, 3 = very high
+  - name: maintenance_costs
+    type: ordinal
+    description: Cost of car maintenance.
+    code: 0 = low, 1 = medium, 2 = high, 3 = very high
+  - name: doors
+    type: ordinal
+    description: Number of doors of the car.
+    code: 0 = 2, 1 = 3, 2 = 4, 3 = 5 or more
+  - name: seats
+    type: ordinal
+    description: Number of seats in the car.
+    code: 0 = 2, 1 = 4, 2 = more
+  - name: luggage_boot
+    type: ordinal
+    description: Size of the luggage boot.
+    code: 0 = small, 1 = medium, 2 = large
+  - name: safety
+    type: ordinal
+    description: Safety of the car.
+    code: 0 = low, 1 = medium, 2 = high
