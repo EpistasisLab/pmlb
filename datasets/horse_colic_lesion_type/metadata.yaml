@@ -1,0 +1,148 @@
+dataset: horse_colic_lesion_type
+description: 'Horses may experience abdominal pain (colic) for various reasons. Some
+  of these reasons are life-threatening and require surgery, whereas others are related
+  to problems that are inconvenient, but harmless. Wikipedia has a thorough introduction,
+  which can be perused for additional information: https://en.wikipedia.org/wiki/Horse_colic
+  The data underlying this dataset is used in several tasks, notably to predict whether
+  surgery is actually necessary (horse_colic_surgery), to prognosticate the outcome
+  (horse_colic_outcome), and to predict the type of lesion (horse_colic_lesion_type)
+  that is causing the problem. Compared to the full dataset, the received_surgery
+  feature was removed, because of its relationship to the target.'
+source:
+  - https://archive-beta.ics.uci.edu/dataset/47/horse+colic
+  - M. McLeish and M. Cecile, Department of Computer Science, University of Guelph,
+    Ontario, Canada
+publication: Dua D, Graff C. UCI Machine Learning Repository. University of California,
+  Irvine, School of Information and Computer Sciences; 2019. http://archive.ics.uci.edu/ml
+license: CC BY 4.0
+task: classification
+keywords:
+  - medicine
+  - veterinary
+target:
+  type: categorical
+  description: Colic is a symptom of a range of conditions ranging from innocuous
+    to life-threatening. Some conditions, but not all, require surgery. Here we attempt
+    to predict the type of lesion responsible for the colic, if any. Simple obstructions
+    are physical obstructions of the intestine. Since the upper gastrointestinal tract
+    produces a large amount of fluid, that is re-adsorbed in the lower part of the
+    tract. Obstruction of the intestine prevents full re-adsorbtion, and causes both
+    fluid build-up in the intestinal tract and as a decreased blood plasma volume
+    that leads to a circulatory issues. Strangulating obstructions are also physical
+    obstructions, but blood supply is immediately affected. Inflammation anywhere
+    along the gastrointestinal tract may stop bowel movements, which like simple obstructions
+    can cause fluid to accumulate.
+  code: 0 = none, 1 = simple, 2 = strangulation, 3 = inflammation, 4 = other
+features:
+  - name: age_category
+    type: binary
+    description: Indicator for age category of the horse. Here young horses are horses
+      less than 6 months old. This could be a misspecification in the original dataset,
+      as horses reach adulthood at 5-6 years of age. All horses in the current dataset
+      are marked as adult.
+    code: 0 = adult, 1 = young
+  - name: rectal_temperature
+    type: continuous
+    description: Rectal temperature measurement in degrees celsius. Normal temperatures
+      are between 37.2 and 38.5 degrees. A higher temperature may indicate inflammation,
+      whereas a lower temperature may indicate late shock.
+  - name: heart_rate
+    type: continuous
+    description: Heart rate in beats per minute. Normal heart rates for adult horses
+      are between 30-40 bpm, with athletic horses having heart rates as low as 20
+      bpm.
+  - name: respiratory_rate
+    type: continuous
+    description: Respiratory rate in breaths per minute. At rest a horse draws 8-10
+      breaths per minute, but this may vary greatly.
+  - name: extremity_temperature
+    type: categorical
+    description: Subjective interpretation of temperature in the extremities of the
+      horse, as an indicator of peripheral circulation.
+    code: 0 = normal, 1 = warm, 2 = cool, 3 = cold
+  - name: peripheral_pulse
+    type: ordinal
+    description: Another subjective interpretation of peripheral circulation. A weak
+      or absent pulse may indicate poor perfusion.
+    code: 0 = increased, 1 = normal, 2 = reduced, 3 = absent
+  - name: mucous_membrane_appearance
+    type: categorical
+    description: The colour of mucous membranes provides an indication of peripheral
+      circulation. Normally, mucous membranes, such as those of the gums, are pink.
+      Deviations from this colour may indicate circulatory compromise (cyanotic) or
+      septicaemia (blood poisoning, bright red).
+    code: 0 = normal, 1 = bright pink, 2 = pale pink, 3 = pale cyanotic, 4 = bright
+      red, 5 = dark cyanotic
+  - name: capillary_refill_time
+    type: binary
+    description: When a tissue is pressed, blood is displaced. After releasing the
+      pressure, blood flows back within a few seconds, which is called the capillary
+      refill time. This can be observed by watching colour return .to the tissue.
+      The longer the capillary refill time, the more peripheral circulation is impacted.
+    code: 0 = < 3 seconds, 1 = > 3 seconds
+  - name: pain
+    type: categorical
+    description: A subjective assessment of the horse's behaviour and pain level.
+    code: 0 = normal, 1 = depressed, 2 = intermittent mild pain, 3 = intermittent
+      severe pain, 4 = continuous severe pain
+  - name: peristalsis
+    type: ordinal
+    description: Evaluation of the level of bowel movement of the horse. A noticeable
+      decrease in activity may indicate a distended gut or blood poisoning.
+    code: 0 = hypermotile, 1 = normal, 2 = hypomotile, 3 = absent
+  - name: abdominal_distension
+    type: ordinal
+    description: Abdominal distension is directly related to the amount of pain experienced
+      by the horse. Severe abdominal distension usually requires surgery to relieve
+      the pressure.
+    code: 0 = none, 1 = slight, 2 = moderate, 3 = severe
+  - name: nasogastric_tube_stomach_gas
+    type: ordinal
+    description: Horses cannot (normally) vomit or regurgitate. A nasogastric tube
+      allows for siphoning off gas trapped in the stomach. The amount of gas can be
+      assessed.
+    code: 0 = none, 1 = slight, 2 = significant
+  - name: nasogastric_tube_reflux_volume
+    type: ordinal
+    description: Horses cannot (normally) vomit or regurgitate. Aside from siphoning
+      off gas, if any, nasogastric tubes can be used to remove excess fluid. In healthy
+      horses, the amount of fluid drawn off this way is less than a liter. An intestinal
+      obstruction may cause fluid to back up.
+    code: 0 = none, 1 = < 1 liter, 2 = > 1 liter
+  - name: nasogastric_tube_reflux_ph
+    type: continuous
+    description: The acidity of fluid drawn using the nasogastric tube can be measured.
+      Normal acidity for gastric fluids in horses is 3-4. Acidity is measured on the
+      pH scale.
+  - name: rectal_feces_presence
+    type: ordinal
+    description: Rectal examination can establish the absence of feces, which is a
+      likely indicator for an obstruction on the intestines.
+    code: 0 = increased, 1 = normal, 2 = decreased, 3 = absent
+  - name: rectal_examination
+    type: categorical
+    description: The main aim of a rectal examination is to identify abnormalities
+      in the intestines, such as a distended small intestine.
+    code: 0 = normal, 1 = other, 2 = firm feces in large intestine, 3 = distended
+      small intestine, 4 = distended large intestine
+  - name: red_blood_cell_count
+    type: continuous
+    description: The number of blood cells per volume. The normal range is 30 to 50.
+      An elevated level of blood cells may indicate a compromised circulation or dehydration.
+  - name: blood_protein
+    type: continuous
+    description: The level of protein in the horse's blood, in grams per deciliter.
+      The normal range is 6.0 to 7.5 grams per deciliter. High blood protein levels
+      may indicate dehydration.
+  - name: abdominocentesis_appearance
+    type: categorical
+    description: Abdominocentesis (belly tap) can be used to assess the peritoneal
+      fluid. This fluid should normally be clear in appearance. A cloudy appearance
+      is likely caused by an increased number of cells or protein, whereas a serosanguinous
+      (reddish) appearance indicates the presence of red blood cells and blood serum.
+    code: 0 = clear, 1 = cloudy, 2 = serosanguinous
+  - name: abdominocentesis_protein
+    type: continuous
+    description: The level of protein in the peritoneal fluid can be measured. High
+      protein levels is indicative of a compromised peritoneum. The value is measured
+      in grams per deciliter.
