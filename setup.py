@@ -41,7 +41,7 @@ This project is hosted at https://github.com/EpistasisLab/pmlb
                     ],
     extras_require={
         'dev': ['nose', 'numpy', 'scipy', 'tabulate', 'parameterized',
-        'matplotlib', 'seaborn', 'pandas-profiling'],
+        'matplotlib', 'seaborn', 'ydata-profiling'],
     },
     classifiers=[
         'Intended Audience :: Developers',
