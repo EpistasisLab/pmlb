@@ -310,6 +310,10 @@ feynman_test_6	100000	7	0	0	7	continuous	100000.0	0.0	regression
 feynman_test_7	100000	5	0	0	5	continuous	100000.0	0.0	regression
 feynman_test_8	100000	4	0	0	4	continuous	100000.0	0.0	regression
 feynman_test_9	100000	5	0	0	5	continuous	100000.0	0.0	regression
+first_principles_ideal_gas	30	3	0	0	3	continuous	30.0	0.0	regression
+first_principles_rydberg	50	2	0	2	0	continuous	50.0	0.0	regression
+first_principles_schechter	27	1	0	0	1	continuous	27.0	0.0	regression
+first_principles_supernovae_zg	243	1	0	0	1	continuous	243.0	0.0	regression
 flags	178	43	36	5	2	categorical	5.0	0.04391806590077	classification
 flare	1066	10	4	6	0	categorical	2.0	0.4336704342653181	classification
 german	1000	20	3	14	3	categorical	2.0	0.1599999999999999	classification
