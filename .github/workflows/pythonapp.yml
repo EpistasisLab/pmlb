@@ -67,8 +67,8 @@ jobs:
     - name: Install gcc
       run: |
         conda install -c conda-forge libstdcxx-ng
-        sudo rm /usr/lib/x86_64-linux-gnu/libstdc++.so.6
-        sudo ln -s /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+        sudo mv /root/anaconda3/envs/live/lib/libstdc++.so.6 /root/anaconda3/envs/live/lib/old_libstdc++.so.6
+        sudo ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /root/anaconda3/envs/live/lib/libstdc++.so.6
 
     - name: Build site
       run: |
