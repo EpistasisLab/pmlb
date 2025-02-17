@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
         # lfs: true
@@ -33,10 +33,10 @@ jobs:
     - name: Git LFS Pull
       run: git lfs pull
 
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v1
+    - name: Set up Python 3.13
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.8
+        python-version: 3.13
     - name: Install dependencies
       run: |
         pip install ".[dev]"
