@@ -41,7 +41,7 @@ jobs:
       run: |
         pip install ".[dev]"
         sudo apt-get update
-        sudo apt-get install libssl-dev libcurl4-openssl-dev libjpeg-dev
+        sudo apt-get install libssl-dev libcurl4-openssl-dev
     - name: Test with nose
       run: |
         nosetests -s -v
@@ -63,6 +63,12 @@ jobs:
         reticulate::py_config()
         reticulate::py_discover_config()
       shell: Rscript {0}
+
+    - name: Install gcc
+      run: |
+        conda install -c conda-forge libstdcxx-ng
+        sudo rm /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+        sudo ln -s /home/runner/.local/share/r-miniconda/pkgs/libstdcxx-ng-12.1.0-ha89aaad_16/lib/libstdc++.so.6.0.30 /usr/lib/x86_64-linux-gnu/libstdc++.so.6
 
     - name: Build site
       run: |
