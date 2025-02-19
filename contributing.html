@@ -13,7 +13,7 @@
 
 <title>Contribution guide</title>
 
-<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -30,8 +30,8 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Penn Machine Learning Benchmarks">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/EpistasisLab/pmlb/db5c0806394943160890f70b4ee790ccd4d848fb/card.png">
@@ -57,7 +57,7 @@
 </style>
 <style type="text/css" data-origin="pandoc">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -92,11 +92,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
+code span.at { color: #204a87; } /* Attribute */
 code span.bn { color: #0000cf; } /* BaseN */
 code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
+code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #8f5902; font-style: italic; } /* Comment */
 code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
 code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
@@ -105,14 +105,14 @@ code span.dv { color: #0000cf; } /* DecVal */
 code span.er { color: #a40000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
+code span.fu { color: #204a87; font-weight: bold; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
 code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
 code span.ot { color: #8f5902; } /* Other */
 code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
+code span.sc { color: #ce5c00; font-weight: bold; } /* SpecialChar */
 code span.ss { color: #4e9a06; } /* SpecialString */
 code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
@@ -537,31 +537,31 @@ example, if the dependent variable in the source dataset is
 code does not return anything ✔️:</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pd.testing.assert_frame_equal(df_source, df_pmlb)</span></code></pre></div>
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>pd.testing.assert_frame_equal(df_source, df_pmlb)</span></code></pre></div>
 <ul>
 <li>If it gives error, the column names may be different. If we have
 good reasons to ignore column names, we can check if the values
 contained in the 2 dataframes are the same with</li>
 </ul>
 <div class="sourceCode" id="cb2"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>(df_source.values <span class="op">==</span> df_pmlb.values).<span class="bu">all</span>()</span></code></pre></div>
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>(df_source.values <span class="op">==</span> df_pmlb.values).<span class="bu">all</span>()</span></code></pre></div>
 <p>If we still get <code>False</code>, it is possible that the rows have
 been permuted. To check if they are:</p>
 <div class="sourceCode" id="cb3"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span>(df_pmlb.itertuples(index<span class="op">=</span><span class="va">False</span>)) <span class="op">==</span> <span class="bu">set</span>(df_source.itertuples(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div>
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="bu">set</span>(df_pmlb.itertuples(index<span class="op">=</span><span class="va">False</span>)) <span class="op">==</span> <span class="bu">set</span>(df_source.itertuples(index<span class="op">=</span><span class="va">False</span>))</span></code></pre></div>
 <p>or “subtracting” the two datasets row by row (these two lines will
 print the rows that are in one dataframe but not the other and can help
 you see the difference a bit better):</p>
 <div class="sourceCode" id="cb4"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_source.merge(df_pmlb, indicator<span class="op">=</span><span class="va">True</span>, how<span class="op">=</span><span class="st">&#39;left&#39;</span>).loc[<span class="kw">lambda</span> x: x[<span class="st">&#39;_merge&#39;</span>]<span class="op">!=</span><span class="st">&#39;both&#39;</span>]</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>df_pmlb.merge(df_source, indicator<span class="op">=</span><span class="va">True</span>, how<span class="op">=</span><span class="st">&#39;left&#39;</span>).loc[<span class="kw">lambda</span> x: x[<span class="st">&#39;_merge&#39;</span>]<span class="op">!=</span><span class="st">&#39;both&#39;</span>]</span></code></pre></div>
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>df_source.merge(df_pmlb, indicator<span class="op">=</span><span class="va">True</span>, how<span class="op">=</span><span class="st">&#39;left&#39;</span>).loc[<span class="kw">lambda</span> x: x[<span class="st">&#39;_merge&#39;</span>]<span class="op">!=</span><span class="st">&#39;both&#39;</span>]</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>df_pmlb.merge(df_source, indicator<span class="op">=</span><span class="va">True</span>, how<span class="op">=</span><span class="st">&#39;left&#39;</span>).loc[<span class="kw">lambda</span> x: x[<span class="st">&#39;_merge&#39;</span>]<span class="op">!=</span><span class="st">&#39;both&#39;</span>]</span></code></pre></div>
 <p>If the two dataframes have floats that are almost equal to each
 other, we can use <code>numpy</code>’s <code>isclose</code> to check if
 they are element-wise equal within a tolerance:</p>
 <div class="sourceCode" id="cb5"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> isclose</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>isclose(df_source.values, df_pmlb.values).<span class="bu">all</span>()</span></code></pre></div>
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> isclose</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>isclose(df_source.values, df_pmlb.values).<span class="bu">all</span>()</span></code></pre></div>
 <p>We have been using <a
 href="https://colab.research.google.com/">Google Colab notebooks</a> to
 share our checks, but other methods are also welcomed. If you do use
