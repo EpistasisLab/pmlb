@@ -55,8 +55,11 @@ jobs:
     - name: Install R packages
       run: |
         install.packages(c("rmarkdown", "plotly", "dplyr", "htmlwidgets", "htmltools", "jsonlite", "readr", "DT", "remotes"))
+        Sys.setenv(GITHUB_PAT = Sys.getenv("GH_PAT"))
         remotes::install_github("EpistasisLab/pmlbr")
       shell: Rscript {0}
+      env:
+        GH_PAT: ${{ secrets.GH_PAT }}
 
     - name: Set up reticulate
       run: |
