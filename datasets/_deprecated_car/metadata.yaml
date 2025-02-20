@@ -1,8 +1,14 @@
-# Reviewed by [your name here]
+# Reviewed by Praneel Chakraborty
 dataset: _deprecated_car
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: >
+  dataset for car evaluation based on six factors;
+  factors considered are buying price, maintenance price, # doors, # people carriable, size of boot, and estimated safety
+source: https://www.openml.org/d/40975
+publication: >
+  M. Bohanec, V. Rajkovic. Expert system for decision making. Sistemica 1(1), pp. 145-157, 1990.
+  M. Bohanec and V. Rajkovic
+  Knowledge acquisition and explanation for multi-attribute decision making. 
+  In 8th Intl Workshop on Expert Systems and their Applications, Avignon, France. 1988.
 task: classification
 keywords:
   -
