@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	n_classes	imbalance	task
+breast_cancer_wisconsin_prognostic	198	32	0	0	32	1		survival

@@ -1,0 +1,95 @@
+# Reviewed by [your name here]
+dataset: house_votes_84
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+keywords:
+  -
+  -
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: handicapped-infants
+    type: categorical
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: water-project-cost-sharing
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: adoption-of-the-budget-resolution
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: physician-fee-freeze
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: el-salvador-adi
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: religious-groups-in-schools
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: anti-satellite-test-ban
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: aid-to-nicaraguan-contras
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: mx-missile
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: immigration
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: synfuels-corporation-cutback
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: education-spending
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: superfund-right-to-sue
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: crime
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: duty-free-exports
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: export-administration-act-south-africa
+    type: categorical
+    description:
+    code:
+    transform:
+deprecated: true

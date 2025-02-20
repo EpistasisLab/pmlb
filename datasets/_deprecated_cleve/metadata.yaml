@@ -1,0 +1,80 @@
+# Reviewed by [your name here]
+dataset: cleve
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+keywords:
+  -
+  -
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: Age
+    type: continuous
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Sex
+    type: binary
+    description:
+    code:
+    transform:
+  - name: Chest pain type
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Trestbps
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: Cholesterol
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: Fasting blood sugar &lt; 120
+    type: binary
+    description:
+    code:
+    transform:
+  - name: Resting ecg
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Max heart rate
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: Exercise induced angina
+    type: binary
+    description:
+    code:
+    transform:
+  - name: Oldpeak
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: Slope
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Number of vessels colored
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Thal
+    type: categorical
+    description:
+    code:
+    transform:
+deprecated: true

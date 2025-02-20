@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-car_evaluation	1728	6	0	6	0	categorical	4	0.390288315900777	classification
+auto_insurance_losses	164	24	3	7	14	continuous	51	0.00844289113622844	regression
