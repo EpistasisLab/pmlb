@@ -1,0 +1,23 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_kepler
+description: |
+  The Keppler dataset is based on the Kepler's third law of planetary motion. The features are the semi-major axis (a) and the period (P) of a planet's orbit, given by the equation:
+
+  P^2 = k a^3
+
+  Each row corresponds to a planet in the following order: Mercury, Venus, Earth, Mars, Jupiter, Saturn, and it is based on the data used by Kepler in 1618.
+
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: Period in days
+features:
+  - name: a
+    type: continuous
+    description: semi-major axis, AU

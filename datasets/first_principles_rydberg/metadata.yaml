@@ -1,0 +1,24 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_rydberg
+description: |
+  The Rydberg formula is a model for the energy levels of an electron in a hydrogen atom.
+  
+  Data was synthetically generated using the Rydberg formula, with a range of parameters using the scripts in the publication repository.
+
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: wavelength, m
+features:
+  - name: n_1
+    type: categorical
+    description: principal quantum number
+  - name: n_2
+    type: categorical
+    description: principal wuantum number after the transition

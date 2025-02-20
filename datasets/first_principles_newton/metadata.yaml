@@ -1,0 +1,27 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_newton
+description: |
+  The Newton's law of gravitation is a model for the gravitational force between two bodies, given their masses and distance.
+  
+  Data was synthetically generated using the Newton's law of gravitation, with a range of parameters using the scripts in the publication repository.
+
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: x-component of force
+features:
+  - name: r
+    type: continuous
+    description: distance in m
+  - name: m1
+    type: continuous
+    description: mass of first object, kg
+  - name: m2
+    type: continuous
+    description: mass of second object, kg

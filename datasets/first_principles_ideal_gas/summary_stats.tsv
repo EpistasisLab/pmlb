@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+first_principles_ideal_gas	30	3	0	0	3	continuous	30.0	0.0	regression

@@ -1,0 +1,21 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_schechter
+description: |
+  The Schechter function is a model for the density of galaxies, given it's luminosity.
+
+  Data was synthetically generated using the Schechter function, with a range of parameters using the scripts in the publication repository.
+
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: number density
+features:
+  - name: L
+    type: continuous
+    description: luminosity 
