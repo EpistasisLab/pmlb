@@ -534,13 +534,13 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a h
 <span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>rand_datasets <span class="op">=</span> random.choices(dataset_names, k<span class="op">=</span><span class="dv">7</span>)</span>
 <span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;7 arbitrary datasets from PMLB:</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;</span><span class="ch">\n</span><span class="st"> &#39;</span>.join(rand_datasets))</span></code></pre></div>
 <pre><code>## 7 arbitrary datasets from PMLB:
-##  595_fri_c0_1000_10
-##  635_fri_c0_250_10
-##  602_fri_c3_250_10
-##  monk1
-##  analcatdata_germangss
-##  658_fri_c3_250_25
-##  621_fri_c0_100_10</code></pre>
+##  712_chscase_geyser1
+##  waveform_40
+##  666_rmftsa_ladata
+##  satimage
+##  xd6
+##  574_house_16H
+##  coil2000</code></pre>
 <div class="sourceCode" id="cb13"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="bu">print</span>(</span>
 <span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>    <span class="ss">f&#39;PMLB has </span><span class="sc">{</span><span class="bu">len</span>(classification_dataset_names)<span class="sc">}</span><span class="ss"> classification datasets &#39;</span></span>
@@ -1002,7 +1002,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="co"># Visualize the result:</span></span>
 <span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>sb.boxplot(data<span class="op">=</span>[logit_test_scores, gnb_test_scores], notch<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;LogisticRegression&#39;</span>, <span class="st">&#39;GaussianNB&#39;</span>])</span></code></pre></div>
-<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7f16a7ac6680&gt;, &lt;matplotlib.axis.XTick object at 0x7f16add324d0&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
+<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7f6a50b4bfa0&gt;, &lt;matplotlib.axis.XTick object at 0x7f6a56da4f70&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
 <div class="sourceCode" id="cb18"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Test Accuracy&#39;</span>)</span></code></pre></div>
 <p><img src="using-python_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
