@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-solar_flare_2	1066	12	4	8	0	categorical	6.0	0.057334145285456294	classification
+_deprecated_solar_flare_2	1066	12	4	8	0	categorical	6.0	0.057334145285456294	classification

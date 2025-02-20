@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-wdbc	569	30	0	0	30	categorical	2.0	0.06493987849061501	classification
+_deprecated_wdbc	569	30	0	0	30	categorical	2.0	0.06493987849061501	classification

@@ -1,6 +1,6 @@
-# solar_flare_2
+# _deprecated_solar_flare_2
 
-[**Pandas Profiling Report**](https://epistasislab.github.io/pmlb/profile/solar_flare_2.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/pmlb/profile/_deprecated_solar_flare_2.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.tsv)
 

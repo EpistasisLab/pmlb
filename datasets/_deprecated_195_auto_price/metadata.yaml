@@ -1,5 +1,5 @@
 # Reviewed by [your name here]
-dataset: 195_auto_price
+dataset: _deprecated_195_auto_price
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
@@ -87,4 +87,3 @@ features:
     description:
     code:
     transform:
-deprecated: true

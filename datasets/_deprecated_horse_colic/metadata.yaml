@@ -1,5 +1,5 @@
 # Reviewed by [your name here]
-dataset: horse_colic
+dataset: _deprecated_horse_colic
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
@@ -122,4 +122,3 @@ features:
     description:
     code:
     transform:
-deprecated: true
