@@ -1,5 +1,5 @@
 # Created by Guilherme Aldeia (@galdeia)
-dataset: first_principles_supernovae_zr
+dataset: first_principles_supernovae_zg
 description: |
     A real-world dataset containing the normalized flux of a supernova explosion from ZTF Data Release 17. The original publication has data for 6 different events, and here we include data from only one of them (`real_data/supernovae/examples/example1.csv`). 
 source: publication repository https://github.com/erusseil/MvSR-analysis
