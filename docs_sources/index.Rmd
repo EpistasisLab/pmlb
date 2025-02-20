@@ -12,7 +12,7 @@ These datasets cover a broad range of applications including binary/multi-class 
 In the interactive  [plotly](https://plotly.com/) chart below, each dot represents a dataset colored based on its associated task (classification vs. regression).
 In log scale, the *x* and *y* axis shows the number of observations and features respectively.
 Please click on the legend to hide/show the groups of datasets.
-Click on each dot to access the dataset's [pandas-profiling](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/) report.
+Click on each dot to access the dataset's [ydata-profiling](https://docs.profiling.ydata.ai/latest/) report.
 
 *Note*: If a dataset has more than 20 features, we randomly chose 20 to be displayed in its profiling report. Therefore, please disregard the `Number of variables` in the corresponding report and, instead, use the correct `n_features` in the chart and table below.
 
@@ -84,7 +84,7 @@ ply
 
 Browse, sort, filter and search the complete table of summary statistics below.
 
-* Click on the dataset's name to access its [pandas-profiling](https://pandas-profiling.github.io/pandas-profiling/docs/master/rtd/) report.
+* Click on the dataset's name to access its [ydata-profiling](https://docs.profiling.ydata.ai/latest/) report.
 
 * Click on the GitHub Octocat <i class="fab fa-github"></i> to access its metadata.
 

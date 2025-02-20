@@ -122,10 +122,10 @@ API reference guides that detail all user-facing functions and variables in PMLB
 
 ## Pandas profiling reports 
 
-For each dataset, we use [`pandas-profiling`](https://pandas-profiling.github.io/pandas-profiling/) to generate summary statistic reports.
-In addition to the descriptive statistics provided by the commonly-used `pandas.describe` (Python) [@McKinney2010] or `skimr::skim` (R) functions, `pandas-profiling` gives a more extensive exploration of the dataset, including correlation structure within the dataset and flagging of duplicate samples.
+For each dataset, we use [`ydata-profiling`](https://docs.profiling.ydata.ai/latest/) to generate summary statistic reports.
+In addition to the descriptive statistics provided by the commonly-used `pandas.describe` (Python) [@McKinney2010] or `skimr::skim` (R) functions, `ydata-profiling` gives a more extensive exploration of the dataset, including correlation structure within the dataset and flagging of duplicate samples.
 Browsing a report allows users and contributors to easily assess dataset quality and make any necessary changes.
-For example, if a feature is flagged by `pandas-profiling` as having a single value replicated in all samples, it is likely that this feature is uninformative for ML analysis and should be removed from the dataset.
+For example, if a feature is flagged by `ydata-profiling` as having a single value replicated in all samples, it is likely that this feature is uninformative for ML analysis and should be removed from the dataset.
 
 The profiling reports can be accessed by clicking on the dataset name in the interactive data table or the data point in the interactive chart on the PMLB website.
 Alternatively, all reports can be viewed on the repository's [gh-pages](https://github.com/EpistasisLab/pmlb/tree/gh-pages/profile) branch, or generated manually by users on their local computing resources.
