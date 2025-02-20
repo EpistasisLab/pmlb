@@ -1,0 +1,21 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_tully_fisher
+description: |
+  The Tully-Fisher relation is an empirical correlation between the luminosity of a spiral galaxy and its rotational velocity, named after astronomers Richard Tully and J. Richard Fisher, who first proposed it in 1977, based on physical principles.
+  The data was extracted from Fig. 5(a) of Tully and Fisher publication.
+
+  The original relation is: L \propto \Delta V(0)^{2.5}
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: luminosity 
+features:
+  - name: DV
+    type: continuous
+    description: rotational velocity

@@ -1,0 +1,27 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_ideal_gas
+description: |
+  The ideal dass law is a model for the pressure of an ideal gas, given it's temperature and volume.
+
+  Data was generated using the ideal gas law, with a range of parameters using the scripts in the publication repository.
+
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: pressure
+features:
+  - name: "n"
+    type: continuous
+    description: number density
+  - name: T
+    type: continuous
+    description: temperature
+  - name: V
+    type: continuous
+    description: volume

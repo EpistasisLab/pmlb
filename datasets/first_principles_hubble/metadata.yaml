@@ -1,0 +1,19 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_hubble
+description: |
+  The Hubble constant is a measure of the rate of expansion of the universe, measured as v = H_0 D, where v is the velocity of a galaxy, D is its distance from us, and H_0 is the Hubble constant (73.3 (km/s)/Mpc). 
+
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: velocity, in km/s
+features:
+  - name: D
+    type: continuous
+    description: distance of a galaxy from us (in million parsecs, Mpc)

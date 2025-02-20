@@ -1,0 +1,21 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_leavitt
+description: |
+  The Leavitt dataset models the relationship between the luminosity of a star and its period. The dataset is based on the Leavitt Law.
+
+  The data was taken from 1912 paper by Leavitt. y-axis is magnitude at maxima and minima. x-axis is logarithm of period in days.
+  
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: Magnitude
+features:
+  - name: logP
+    type: continuous
+    description: Logarithm of period in days
