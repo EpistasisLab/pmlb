@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
         # lfs: true
@@ -33,15 +33,15 @@ jobs:
     - name: Git LFS Pull
       run: git lfs pull
 
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v1
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v5
       with:
-        python-version: 3.8
+        python-version: 3.9
     - name: Install dependencies
       run: |
         pip install ".[dev]"
         sudo apt-get update
-        sudo apt-get install libssl-dev libcurl4-openssl-dev
+        sudo apt-get install libssl-dev libcurl4-openssl-dev libpng-dev
     - name: Test with nose
       run: |
         nosetests -s -v
@@ -53,7 +53,13 @@ jobs:
     - uses: r-lib/actions/setup-r@v2
     - uses: r-lib/actions/setup-pandoc@v2
     - name: Install R packages
-      run: Rscript -e 'install.packages(c("rmarkdown", "plotly", "dplyr", "htmlwidgets", "htmltools", "jsonlite", "readr", "DT", "remotes", "pmlbr"))'
+      env:
+        GITHUB_PAT: ${{ secrets.GH_PAT }}
+      shell: Rscript {0}
+      run: |
+        install.packages(c("rmarkdown", "plotly", "dplyr", "htmlwidgets", "htmltools", "jsonlite", "readr", "DT", "remotes"))
+        remotes::install_github("EpistasisLab/pmlbr")
+
 
     - name: Set up reticulate
       run: |
