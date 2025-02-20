@@ -193,7 +193,6 @@ biomed	209	8	0	1	7	categorical	2.0	0.079691399006433	classification
 breast_cancer	286	9	2	6	1	categorical	2.0	0.1645068218494792	classification
 breast_cancer_wisconsin_diagnostic	569	30	0	0	30	binary	2.0	0.064939878490615	classification
 breast_cancer_wisconsin_original	699	9	0	0	9	binary	2.0	0.0963751609186227	classification
-breast_cancer_wisconsin_prognostic	198	32	0	0	32		1.0		survival
 bupa	345	5	0	0	5	categorical	2.0	0.0004116782188615	classification
 calendarDOW	399	32	2	18	12	categorical	5.0	0.0140294344884768	classification
 car_evaluation	1728	6	0	6	0	categorical	4.0	0.390288315900777	classification
