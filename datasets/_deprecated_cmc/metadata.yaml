@@ -1,5 +1,5 @@
-# Reviewed by [your name here]
-dataset: cmc
+# Reviewed by Alex Zwanenburg
+dataset: _deprecated_cmc
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
 publication: None yet. See our contributing guide to help us add one.
@@ -57,3 +57,4 @@ features:
     description:
     code:
     transform:
+deprecated: true
