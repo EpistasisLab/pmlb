@@ -1,6 +1,6 @@
-# credit_g
+# _deprecated_credit_g
 
-[**Pandas Profiling Report**](https://epistasislab.github.io/pmlb/profile/credit_g.html)
+[**Pandas Profiling Report**](https://epistasislab.github.io/pmlb/profile/_deprecated_credit_g.html)
 
 [Metadata](metadata.yaml) | [Summary Statistics](summary_stats.tsv)
 

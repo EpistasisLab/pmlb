@@ -1,4 +1,4 @@
-# Reviewed by Alex Zwanenburg
+# Reviewed by [your name here]
 dataset: _deprecated_breast
 description: None yet. See our contributing guide to help us add one.
 source: None yet. See our contributing guide to help us add one.
@@ -62,4 +62,3 @@ features:
     description:
     code:
     transform:
-deprecated: true
