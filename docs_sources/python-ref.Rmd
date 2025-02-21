@@ -8,13 +8,21 @@ output:
       collapsed: false
     css: custom.css
 ---
+
+```{r message=FALSE}
+message("Current working directory: ", getwd())
+message("Contents of working directory: ", paste(dir(getwd()), collapse = ", "))
+```
+
 ```{r setup, include=FALSE}
 library(reticulate)
 
 knitr::knit_engines$set(python = reticulate::eng_python)
 knitr::opts_knit$set(progress = TRUE, verbose = TRUE, highlight = TRUE)
 reticulate::py_install(c("matplotlib", "scikit-learn", "seaborn"))
-reticulate::py_install("pmlb", pip = TRUE)
+# reticulate::py_install("pmlb", pip = TRUE)
+config <- reticulate::py_config()
+system2(config$python, c("-m", "pip", "install", "--quiet", shQuote("../")))
 
 ```
 
