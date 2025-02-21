@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+auto_insurance_price	201	23	4	6	13	continuous	186	0.000343181229792947	regression

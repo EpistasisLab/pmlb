@@ -3,7 +3,7 @@ import os
 import subprocess
 
 import pandas as pd
-from ydata_profiling import ProfileReport  # Updated import
+from ydata_profiling import ProfileReport
 
 from .pmlb import (
     fetch_data, get_updated_datasets, last_commit_message

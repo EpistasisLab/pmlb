@@ -1,0 +1,2 @@
+dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
+credit_approval_australia	690	15	4	5	6	binary	2	0.0121319050619618	classification

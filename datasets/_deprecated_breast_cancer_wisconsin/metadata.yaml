@@ -1,0 +1,164 @@
+# Reviewed by [your name here]
+dataset: _deprecated_breast_cancer_wisconsin
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+keywords:
+  -
+  -
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: 2
+    type: continuous
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: 3
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 4
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 5
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 6
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 7
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 8
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 9
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 10
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 11
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 12
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 13
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 14
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 15
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 16
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 17
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 18
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 19
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 20
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 21
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 22
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 23
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 24
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 25
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 26
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 27
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 28
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 29
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 30
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: 31
+    type: continuous
+    description:
+    code:
+    transform:

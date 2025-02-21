@@ -1,2 +1,0 @@
-dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-diabetes	768	8	0	0	8	categorical	2.0	0.09125434027777776	classification

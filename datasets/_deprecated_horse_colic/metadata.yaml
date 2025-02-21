@@ -1,0 +1,124 @@
+# Reviewed by [your name here]
+dataset: _deprecated_horse_colic
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+keywords:
+  -
+  -
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: surgery
+    type: categorical
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Age
+    type: binary
+    description:
+    code:
+    transform:
+  - name: rectal temperature
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: pulse
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: respiratory rate
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: temperature of extremities
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: peripheral pulse
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: mucous membranes
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: capillary refill time
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: pain
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: peristalsis
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: abdominal distension
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: nasogastric tube
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: nasogastric reflux
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: nasogastric reflux PH
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: rectal examination
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: abdomen
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: packed cell volume
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: total protein
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: abdominocentesis appearance
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: abdomcentesis total protein
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: outcome
+    type: categorical
+    description:
+    code:
+    transform:

@@ -89,6 +89,7 @@ if __name__ =='__main__':
     updated_datasets = updated_sets['changed_datasets']
     updated_metadatas = updated_sets['changed_metadatas']
     reviewed_datasets = get_reviewed_datasets(dataset_names)
+    generate_all_summaries(local_cache_dir=local_dir)
 
     for dataset_name in updated_datasets:
         print(f'Adding readme, metadata and summary stats for {dataset_name}...')

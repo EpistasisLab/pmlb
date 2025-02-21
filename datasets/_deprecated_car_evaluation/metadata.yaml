@@ -1,0 +1,119 @@
+# Reviewed by [your name here]
+dataset: _deprecated_car_evaluation
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+keywords:
+  -
+  -
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: buying_price_vhigh
+    type: binary
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: buying_price_high
+    type: binary
+    description:
+    code:
+    transform:
+  - name: buying_price_med
+    type: binary
+    description:
+    code:
+    transform:
+  - name: buying_price_low
+    type: binary
+    description:
+    code:
+    transform:
+  - name: maintenance_price_vhigh
+    type: binary
+    description:
+    code:
+    transform:
+  - name: maintenance_price_high
+    type: binary
+    description:
+    code:
+    transform:
+  - name: maintenance_price_med
+    type: binary
+    description:
+    code:
+    transform:
+  - name: maintenance_price_low
+    type: binary
+    description:
+    code:
+    transform:
+  - name: doors_2
+    type: binary
+    description:
+    code:
+    transform:
+  - name: doors_3
+    type: binary
+    description:
+    code:
+    transform:
+  - name: doors_4
+    type: binary
+    description:
+    code:
+    transform:
+  - name: doors_5more
+    type: binary
+    description:
+    code:
+    transform:
+  - name: persons_2
+    type: binary
+    description:
+    code:
+    transform:
+  - name: persons_4
+    type: binary
+    description:
+    code:
+    transform:
+  - name: persons_more
+    type: binary
+    description:
+    code:
+    transform:
+  - name: luggage_boot_size_small
+    type: binary
+    description:
+    code:
+    transform:
+  - name: luggage_boot_size_med
+    type: binary
+    description:
+    code:
+    transform:
+  - name: luggage_boot_size_big
+    type: binary
+    description:
+    code:
+    transform:
+  - name: safety_low
+    type: binary
+    description:
+    code:
+    transform:
+  - name: safety_med
+    type: binary
+    description:
+    code:
+    transform:
+  - name: safety_high
+    type: binary
+    description:
+    code:
+    transform:

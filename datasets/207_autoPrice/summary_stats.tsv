@@ -1,2 +1,0 @@
-dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-207_autoPrice	159	15	0	1	14	continuous	145.0	0.0005037819354895438	regression

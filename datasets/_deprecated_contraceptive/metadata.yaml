@@ -1,0 +1,59 @@
+# Reviewed by [your name here]
+dataset: _deprecated_contraceptive
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+keywords:
+  -
+  -
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: Wife_age
+    type: continuous
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: Wife_education
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Husband_education
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Children
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: Wife_religion
+    type: binary
+    description:
+    code:
+    transform:
+  - name: Wife_working
+    type: binary
+    description:
+    code:
+    transform:
+  - name: Husband_occupation
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Standard-of-living
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: Media_exposure
+    type: binary
+    description:
+    code:
+    transform:

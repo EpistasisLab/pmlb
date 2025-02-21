@@ -1,0 +1,114 @@
+# Reviewed by [your name here]
+dataset: _deprecated_credit_g
+description: None yet. See our contributing guide to help us add one.
+source: None yet. See our contributing guide to help us add one.
+publication: None yet. See our contributing guide to help us add one.
+task: classification
+keywords:
+  -
+  -
+target:
+  type: categorical
+  description: None yet. See our contributing guide to help us add one.
+  code: None yet. See our contributing guide to help us add one.
+features:
+  - name: checking_status
+    type: categorical
+    description: # optional but recommended, what the feature measures/indicates, unit
+    code: # optional, coding information, e.g., Control = 0, Case = 1
+    transform: # optional, any transformation performed on the feature, e.g., log scaled
+  - name: duration
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: credit_history
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: purpose
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: credit_amount
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: savings_status
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: employment
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: installment_commitment
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: personal_status
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: other_parties
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: residence_since
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: property_magnitude
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: age
+    type: continuous
+    description:
+    code:
+    transform:
+  - name: other_payment_plans
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: housing
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: existing_credits
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: job
+    type: categorical
+    description:
+    code:
+    transform:
+  - name: num_dependents
+    type: binary
+    description:
+    code:
+    transform:
+  - name: own_telephone
+    type: binary
+    description:
+    code:
+    transform:
+  - name: foreign_worker
+    type: binary
+    description:
+    code:
+    transform:
