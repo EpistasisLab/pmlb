@@ -462,6 +462,8 @@ div.tocify {
 </div>
 
 
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">message</span>(<span class="st">&quot;Current working directory: &quot;</span>, <span class="fu">getwd</span>())</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">message</span>(<span class="st">&quot;Contents of working directory: &quot;</span>, <span class="fu">paste</span>(<span class="fu">dir</span>(<span class="fu">getwd</span>()), <span class="at">collapse =</span> <span class="st">&quot;, &quot;</span>))</span></code></pre></div>
 <p>Python package PMLB provides the following user-facing functions and
 variables. For installation instructions or a high-level overview of how
 to use PMLB, see <a href="./install.html">Install</a> or <a
@@ -509,11 +511,11 @@ array-like)</strong> If <code>return_X_y == False</code>, a
 and the target array <code>y</code>, respectively.</li>
 </ul>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>X</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>X, y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>X</span></code></pre></div>
 <pre><code>## array([[2, 0, 7, ..., 1, 4, 6],
 ##        [0, 3, 9, ..., 0, 2, 0],
 ##        [2, 3, 8, ..., 0, 3, 0],
@@ -521,8 +523,8 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a hr
 ##        [2, 0, 8, ..., 7, 2, 0],
 ##        [2, 3, 8, ..., 7, 3, 0],
 ##        [3, 2, 0, ..., 7, 4, 6]], shape=(8124, 22))</code></pre>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>y</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>y</span></code></pre></div>
 <pre><code>## array([0, 0, 0, ..., 0, 0, 1], shape=(8124,))</code></pre>
 </div>
 </div>
@@ -538,11 +540,11 @@ available in PMLB.</p>
 <code>pmlb.classification_dataset_names</code> and
 <code>pmlb.regression_dataset_names</code>.</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
-<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
-<pre><code>## [&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001&#39;, &#39;Hill_Valley_with_noise&#39;, &#39;Hill_Valley_without_noise&#39;, &#39;adult&#39;, &#39;agaricus_lepiota&#39;]</code></pre>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> dataset_names</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<pre><code>## [&#39;1027_ESL&#39;, &#39;1028_SWD&#39;, &#39;1029_LEV&#39;, &#39;1030_ERA&#39;, &#39;1089_USCrime&#39;, &#39;1096_FacultySalaries&#39;, &#39;1191_BNG_pbc&#39;, &#39;1193_BNG_lowbwt&#39;, &#39;1196_BNG_pharynx&#39;, &#39;1199_BNG_echoMonths&#39;]</code></pre>
 </div>
 <div id="docstring-output" class="section level3">
 <h3><code>classification_dataset_names</code></h3>
@@ -551,11 +553,11 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a hr
 <p>Classification datasets are datasets where the target value for each
 data point is discrete (rather than continuous).</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb7"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>classification_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
-<pre><code>## [&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001&#39;, &#39;Hill_Valley_with_noise&#39;, &#39;Hill_Valley_without_noise&#39;, &#39;adult&#39;, &#39;agaricus_lepiota&#39;]</code></pre>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> classification_dataset_names</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>classification_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<pre><code>## [&#39;GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.1H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_2_Way_20atts_0.4H_EDM_1_1&#39;, &#39;GAMETES_Epistasis_3_Way_20atts_0.2H_EDM_1_1&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_50_EDM_2_001&#39;, &#39;GAMETES_Heterogeneity_20atts_1600_Het_0.4_0.2_75_EDM_2_001&#39;, &#39;Hill_Valley_with_noise&#39;, &#39;Hill_Valley_without_noise&#39;, &#39;_deprecated_australian&#39;, &#39;_deprecated_auto&#39;]</code></pre>
 </div>
 <div id="docstring-output" class="section level3">
 <h3><code>regression_dataset_names</code></h3>
@@ -564,10 +566,10 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a hr
 <p>Regression datasets are datasets where the target value for each data
 point is continuous (rather than discrete).</p>
 <p><strong>Example:</strong></p>
-<div class="sourceCode" id="cb9"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>regression_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> regression_dataset_names</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>regression_dataset_names[:<span class="dv">10</span>]</span></code></pre></div>
 <pre><code>## [&#39;1027_ESL&#39;, &#39;1028_SWD&#39;, &#39;1029_LEV&#39;, &#39;1030_ERA&#39;, &#39;1089_USCrime&#39;, &#39;1096_FacultySalaries&#39;, &#39;1191_BNG_pbc&#39;, &#39;1193_BNG_lowbwt&#39;, &#39;1196_BNG_pharynx&#39;, &#39;1199_BNG_echoMonths&#39;]</code></pre>
 </div>
 </div>

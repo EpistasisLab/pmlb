@@ -455,28 +455,30 @@ div.tocify {
 </div>
 
 
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">message</span>(<span class="st">&quot;Current working directory: &quot;</span>, <span class="fu">getwd</span>())</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">message</span>(<span class="st">&quot;Contents of working directory: &quot;</span>, <span class="fu">paste</span>(<span class="fu">dir</span>(<span class="fu">getwd</span>()), <span class="at">collapse =</span> <span class="st">&quot;, &quot;</span>))</span></code></pre></div>
 <div id="install" class="section level2">
 <h2>Install</h2>
 <p>Most users should install PMLB from the Python Package Index (PyPI)
 using <code>pip</code>:</p>
-<div class="sourceCode" id="cb1"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="ex">$</span> pip install pmlb</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> pip install pmlb</span></code></pre></div>
 <p>For access to new features or datasets that are not yet merged into
 an official release, you can instead install from <a
 href="https://github.com/EpistasisLab/pmlb">the GitHub sources</a>:</p>
-<div class="sourceCode" id="cb2"><pre
-class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/EpistasisLab/pmlb</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="ex">$</span> cd penn-ml-benchamrks/</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="ex">$</span> pip install .</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/EpistasisLab/pmlb</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="ex">$</span> cd penn-ml-benchamrks/</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="ex">$</span> pip install .</span></code></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2>Usage</h2>
-<div class="sourceCode" id="cb3"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="co"># Returns a pandas DataFrame</span></span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>mushroom <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>mushroom.describe().transpose()</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="co"># Returns a pandas DataFrame</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>mushroom <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a>mushroom.describe().transpose()</span></code></pre></div>
 <pre><code>##                            count      mean       std  min  25%  50%  75%   max
 ## cap-shape                 8124.0  2.491876  0.901287  0.0  2.0  2.0  3.0   5.0
 ## cap-surface               8124.0  1.742984  1.179629  0.0  0.0  2.0  3.0   3.0
@@ -501,8 +503,8 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a hr
 ## population                8124.0  3.644018  1.252082  0.0  3.0  4.0  4.0   5.0
 ## habitat                   8124.0  3.221073  2.530692  0.0  0.0  3.0  6.0   6.0
 ## target                    8124.0  0.482029  0.499708  0.0  0.0  0.0  1.0   1.0</code></pre>
-<div class="sourceCode" id="cb5"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>mushroom.shape</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>mushroom.shape</span></code></pre></div>
 <pre><code>## (8124, 23)</code></pre>
 <p>The <code>fetch_data</code> function has two additional
 parameters:</p>
@@ -516,37 +518,37 @@ over the web again. By default, the wrapper does not use a local cache
 directory.</p></li>
 </ul>
 <p>For example:</p>
-<div class="sourceCode" id="cb7"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
-<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="co"># Returns NumPy arrays</span></span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>mush_X, mush_y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>, local_cache_dir<span class="op">=</span><span class="st">&#39;../datasets&#39;</span>)</span>
-<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a>mush_X.shape</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="co"># Returns NumPy arrays</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>mush_X, mush_y <span class="op">=</span> fetch_data(<span class="st">&#39;mushroom&#39;</span>, return_X_y<span class="op">=</span><span class="va">True</span>, local_cache_dir<span class="op">=</span><span class="st">&#39;../datasets&#39;</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>mush_X.shape</span></code></pre></div>
 <pre><code>## (8124, 22)</code></pre>
-<div class="sourceCode" id="cb9"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>mush_y.shape</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>mush_y.shape</span></code></pre></div>
 <pre><code>## (8124,)</code></pre>
 <p>You can also list the available datasets as follows:</p>
-<div class="sourceCode" id="cb11"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="im">import</span> random</span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> dataset_names, classification_dataset_names, regression_dataset_names</span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>rand_datasets <span class="op">=</span> random.choices(dataset_names, k<span class="op">=</span><span class="dv">7</span>)</span>
-<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;7 arbitrary datasets from PMLB:</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;</span><span class="ch">\n</span><span class="st"> &#39;</span>.join(rand_datasets))</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="im">import</span> random</span>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> dataset_names, classification_dataset_names, regression_dataset_names</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>rand_datasets <span class="op">=</span> random.choices(dataset_names, k<span class="op">=</span><span class="dv">7</span>)</span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;7 arbitrary datasets from PMLB:</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;</span><span class="ch">\n</span><span class="st"> &#39;</span>.join(rand_datasets))</span></code></pre></div>
 <pre><code>## 7 arbitrary datasets from PMLB:
-##  712_chscase_geyser1
-##  waveform_40
-##  666_rmftsa_ladata
-##  satimage
-##  xd6
-##  574_house_16H
-##  coil2000</code></pre>
-<div class="sourceCode" id="cb13"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="bu">print</span>(</span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>    <span class="ss">f&#39;PMLB has </span><span class="sc">{</span><span class="bu">len</span>(classification_dataset_names)<span class="sc">}</span><span class="ss"> classification datasets &#39;</span></span>
-<span id="cb13-3"><a href="#cb13-3" tabindex="-1"></a>    <span class="ss">f&#39;and </span><span class="sc">{</span><span class="bu">len</span>(regression_dataset_names)<span class="sc">}</span><span class="ss"> regression datasets.&#39;</span></span>
-<span id="cb13-4"><a href="#cb13-4" tabindex="-1"></a>)</span></code></pre></div>
-<pre><code>## PMLB has 162 classification datasets and 122 regression datasets.</code></pre>
+##  monk3
+##  GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1
+##  feynman_II_15_5
+##  dermatology
+##  650_fri_c0_500_50
+##  analcatdata_fraud
+##  feynman_I_12_2</code></pre>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="bu">print</span>(</span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>    <span class="ss">f&#39;PMLB has </span><span class="sc">{</span><span class="bu">len</span>(classification_dataset_names)<span class="sc">}</span><span class="ss"> classification datasets &#39;</span></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>    <span class="ss">f&#39;and </span><span class="sc">{</span><span class="bu">len</span>(regression_dataset_names)<span class="sc">}</span><span class="ss"> regression datasets.&#39;</span></span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>)</span></code></pre></div>
+<pre><code>## PMLB has 179 classification datasets and 258 regression datasets.</code></pre>
 </div>
 <div id="example-benchmarking" class="section level2">
 <h2>Example benchmarking</h2>
@@ -554,34 +556,38 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a h
 algorithms against each other. Below is a Python code snippet showing
 the a sample comparison of two classification algorithms on the first 40
 PMLB datasets.</p>
-<div class="sourceCode" id="cb15"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
-<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
-<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a></span>
-<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sb</span>
-<span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a></span>
-<span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data, classification_dataset_names</span>
-<span id="cb15-9"><a href="#cb15-9" tabindex="-1"></a></span>
-<span id="cb15-10"><a href="#cb15-10" tabindex="-1"></a>logit_test_scores <span class="op">=</span> []</span>
-<span id="cb15-11"><a href="#cb15-11" tabindex="-1"></a>gnb_test_scores <span class="op">=</span> []</span>
-<span id="cb15-12"><a href="#cb15-12" tabindex="-1"></a></span>
-<span id="cb15-13"><a href="#cb15-13" tabindex="-1"></a><span class="cf">for</span> classification_dataset <span class="kw">in</span> classification_dataset_names[:<span class="dv">40</span>]:</span>
-<span id="cb15-14"><a href="#cb15-14" tabindex="-1"></a>    <span class="co"># Read in the datasets and split them into training/testing</span></span>
-<span id="cb15-15"><a href="#cb15-15" tabindex="-1"></a>    X, y <span class="op">=</span> fetch_data(classification_dataset, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb15-16"><a href="#cb15-16" tabindex="-1"></a>    train_X, test_X, train_y, test_y <span class="op">=</span> train_test_split(X, y)</span>
-<span id="cb15-17"><a href="#cb15-17" tabindex="-1"></a></span>
-<span id="cb15-18"><a href="#cb15-18" tabindex="-1"></a>    <span class="co"># Fit two sklearn algorithms:</span></span>
-<span id="cb15-19"><a href="#cb15-19" tabindex="-1"></a>    <span class="co"># Logistic regression and Gaussian Naive Bayes</span></span>
-<span id="cb15-20"><a href="#cb15-20" tabindex="-1"></a>    logit <span class="op">=</span> LogisticRegression()</span>
-<span id="cb15-21"><a href="#cb15-21" tabindex="-1"></a>    gnb <span class="op">=</span> GaussianNB()</span>
-<span id="cb15-22"><a href="#cb15-22" tabindex="-1"></a>    logit.fit(train_X, train_y)</span>
-<span id="cb15-23"><a href="#cb15-23" tabindex="-1"></a>    gnb.fit(train_X, train_y)</span>
-<span id="cb15-24"><a href="#cb15-24" tabindex="-1"></a></span>
-<span id="cb15-25"><a href="#cb15-25" tabindex="-1"></a>    <span class="co"># Log the performance score on the test set</span></span>
-<span id="cb15-26"><a href="#cb15-26" tabindex="-1"></a>    logit_test_scores.append(logit.score(test_X, test_y))</span>
-<span id="cb15-27"><a href="#cb15-27" tabindex="-1"></a>    gnb_test_scores.append(gnb.score(test_X, test_y))</span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LogisticRegression</span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="im">from</span> sklearn.naive_bayes <span class="im">import</span> GaussianNB</span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sb</span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a></span>
+<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a><span class="im">from</span> pmlb <span class="im">import</span> fetch_data, classification_dataset_names</span>
+<span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a></span>
+<span id="cb16-10"><a href="#cb16-10" tabindex="-1"></a>logit_test_scores <span class="op">=</span> []</span>
+<span id="cb16-11"><a href="#cb16-11" tabindex="-1"></a>gnb_test_scores <span class="op">=</span> []</span>
+<span id="cb16-12"><a href="#cb16-12" tabindex="-1"></a></span>
+<span id="cb16-13"><a href="#cb16-13" tabindex="-1"></a>classification_dataset_names <span class="op">=</span> [</span>
+<span id="cb16-14"><a href="#cb16-14" tabindex="-1"></a>    name <span class="cf">for</span> name <span class="kw">in</span> classification_dataset_names <span class="cf">if</span> <span class="kw">not</span> name.startswith(<span class="st">&quot;_deprecated_&quot;</span>)</span>
+<span id="cb16-15"><a href="#cb16-15" tabindex="-1"></a>]</span>
+<span id="cb16-16"><a href="#cb16-16" tabindex="-1"></a></span>
+<span id="cb16-17"><a href="#cb16-17" tabindex="-1"></a><span class="cf">for</span> classification_dataset <span class="kw">in</span> classification_dataset_names[:<span class="dv">40</span>]:</span>
+<span id="cb16-18"><a href="#cb16-18" tabindex="-1"></a>    <span class="co"># Read in the datasets and split them into training/testing</span></span>
+<span id="cb16-19"><a href="#cb16-19" tabindex="-1"></a>    X, y <span class="op">=</span> fetch_data(classification_dataset, return_X_y<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb16-20"><a href="#cb16-20" tabindex="-1"></a>    train_X, test_X, train_y, test_y <span class="op">=</span> train_test_split(X, y)</span>
+<span id="cb16-21"><a href="#cb16-21" tabindex="-1"></a></span>
+<span id="cb16-22"><a href="#cb16-22" tabindex="-1"></a>    <span class="co"># Fit two sklearn algorithms:</span></span>
+<span id="cb16-23"><a href="#cb16-23" tabindex="-1"></a>    <span class="co"># Logistic regression and Gaussian Naive Bayes</span></span>
+<span id="cb16-24"><a href="#cb16-24" tabindex="-1"></a>    logit <span class="op">=</span> LogisticRegression()</span>
+<span id="cb16-25"><a href="#cb16-25" tabindex="-1"></a>    gnb <span class="op">=</span> GaussianNB()</span>
+<span id="cb16-26"><a href="#cb16-26" tabindex="-1"></a>    logit.fit(train_X, train_y)</span>
+<span id="cb16-27"><a href="#cb16-27" tabindex="-1"></a>    gnb.fit(train_X, train_y)</span>
+<span id="cb16-28"><a href="#cb16-28" tabindex="-1"></a></span>
+<span id="cb16-29"><a href="#cb16-29" tabindex="-1"></a>    <span class="co"># Log the performance score on the test set</span></span>
+<span id="cb16-30"><a href="#cb16-30" tabindex="-1"></a>    logit_test_scores.append(logit.score(test_X, test_y))</span>
+<span id="cb16-31"><a href="#cb16-31" tabindex="-1"></a>    gnb_test_scores.append(gnb.score(test_X, test_y))</span></code></pre></div>
 <style>#sk-container-id-1 {
   /* Definition of color scheme common for light and dark mode */
   --sklearn-color-text: #000;
@@ -998,14 +1004,14 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
   background-color: var(--sklearn-color-fitted-level-3);
 }
 </style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>GaussianNB()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator fitted sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label fitted sk-toggleable__label-arrow"><div><div>GaussianNB</div></div><div><a class="sk-estimator-doc-link fitted" rel="noreferrer" target="_blank" href="https://scikit-learn.org/1.6/modules/generated/sklearn.naive_bayes.GaussianNB.html">?<span>Documentation for GaussianNB</span></a><span class="sk-estimator-doc-link fitted">i<span>Fitted</span></span></div></label><div class="sk-toggleable__content fitted"><pre>GaussianNB()</pre></div> </div></div></div></div>
-<div class="sourceCode" id="cb16"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="co"># Visualize the result:</span></span>
-<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a>sb.boxplot(data<span class="op">=</span>[logit_test_scores, gnb_test_scores], notch<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;LogisticRegression&#39;</span>, <span class="st">&#39;GaussianNB&#39;</span>])</span></code></pre></div>
-<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7f6a50b4bfa0&gt;, &lt;matplotlib.axis.XTick object at 0x7f6a56da4f70&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
-<div class="sourceCode" id="cb18"><pre
-class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Test Accuracy&#39;</span>)</span></code></pre></div>
-<p><img src="using-python_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="co"># Visualize the result:</span></span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>sb.boxplot(data<span class="op">=</span>[logit_test_scores, gnb_test_scores], notch<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;LogisticRegression&#39;</span>, <span class="st">&#39;GaussianNB&#39;</span>])</span></code></pre></div>
+<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7febec3652a0&gt;, &lt;matplotlib.axis.XTick object at 0x7febec30c8e0&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Test Accuracy&#39;</span>)</span></code></pre></div>
+<p><img src="using-python_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
 </div>
 
 
