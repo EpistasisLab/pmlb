@@ -1,2 +1,2 @@
 dataset	n_instances	n_features	n_binary_features	n_categorical_features	n_continuous_features	endpoint_type	n_classes	imbalance	task
-heart_disease_cleveland	303	13	3	4	6	binary	2	0.00680761145421473	classification
+heart_disease_cleveland	303	13	3	5	5	categorical	2.0	0.006807611454214728	classification
