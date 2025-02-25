@@ -536,19 +536,19 @@ class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a h
 <span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a>rand_datasets <span class="op">=</span> random.choices(dataset_names, k<span class="op">=</span><span class="dv">7</span>)</span>
 <span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;7 arbitrary datasets from PMLB:</span><span class="ch">\n</span><span class="st">&#39;</span>, <span class="st">&#39;</span><span class="ch">\n</span><span class="st"> &#39;</span>.join(rand_datasets))</span></code></pre></div>
 <pre><code>## 7 arbitrary datasets from PMLB:
-##  monk3
-##  GAMETES_Epistasis_2_Way_1000atts_0.4H_EDM_1_EDM_1_1
-##  feynman_II_15_5
-##  dermatology
-##  650_fri_c0_500_50
-##  analcatdata_fraud
-##  feynman_I_12_2</code></pre>
+##  feynman_II_3_24
+##  608_fri_c3_1000_10
+##  tic_tac_toe
+##  analcatdata_cyyoung9302
+##  1096_FacultySalaries
+##  first_principles_rydberg
+##  626_fri_c2_500_50</code></pre>
 <div class="sourceCode" id="cb14"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="bu">print</span>(</span>
 <span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a>    <span class="ss">f&#39;PMLB has </span><span class="sc">{</span><span class="bu">len</span>(classification_dataset_names)<span class="sc">}</span><span class="ss"> classification datasets &#39;</span></span>
 <span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>    <span class="ss">f&#39;and </span><span class="sc">{</span><span class="bu">len</span>(regression_dataset_names)<span class="sc">}</span><span class="ss"> regression datasets.&#39;</span></span>
 <span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>)</span></code></pre></div>
-<pre><code>## PMLB has 179 classification datasets and 258 regression datasets.</code></pre>
+<pre><code>## PMLB has 179 classification datasets and 271 regression datasets.</code></pre>
 </div>
 <div id="example-benchmarking" class="section level2">
 <h2>Example benchmarking</h2>
@@ -1008,7 +1008,7 @@ div.sk-label-container:hover .sk-estimator-doc-link.fitted:hover,
 class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="co"># Visualize the result:</span></span>
 <span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>sb.boxplot(data<span class="op">=</span>[logit_test_scores, gnb_test_scores], notch<span class="op">=</span><span class="va">True</span>)</span>
 <span id="cb17-3"><a href="#cb17-3" tabindex="-1"></a>plt.xticks([<span class="dv">0</span>, <span class="dv">1</span>], [<span class="st">&#39;LogisticRegression&#39;</span>, <span class="st">&#39;GaussianNB&#39;</span>])</span></code></pre></div>
-<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7febec3652a0&gt;, &lt;matplotlib.axis.XTick object at 0x7febec30c8e0&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
+<pre><code>## ([&lt;matplotlib.axis.XTick object at 0x7fa188d79850&gt;, &lt;matplotlib.axis.XTick object at 0x7fa189713090&gt;], [Text(0, 0, &#39;LogisticRegression&#39;), Text(1, 0, &#39;GaussianNB&#39;)])</code></pre>
 <div class="sourceCode" id="cb19"><pre
 class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Test Accuracy&#39;</span>)</span></code></pre></div>
 <p><img src="using-python_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
