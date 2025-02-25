@@ -1,0 +1,18 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_supernovae_zg
+description: |
+    A real-world dataset containing the normalized flux of a supernova explosion from ZTF Data Release 17. The original publication has data for 6 different events, and here we include data from only one of them (`real_data/supernovae/examples/example1.csv`). 
+source: publication repository https://github.com/erusseil/MvSR-analysis
+publication: Etienne Russeil, Fabricio Olivetti de Franca, Konstantin Malanchev, Bogdan Burlacu, Emille Ishida, Marion Leroux, Clément Michelin, Guillaume Moinard, and Emmanuel Gangler. 2024. Multiview Symbolic Regression. In Proceedings of the Genetic and Evolutionary Computation Conference (GECCO '24). Association for Computing Machinery, New York, NY, USA, 961-970. https://doi.org/10.1145/3638529.3654087
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: Normalized radiation flux over time
+features:
+  - name: Xaxis0
+    type: continuous
+    description: Days after observed peak

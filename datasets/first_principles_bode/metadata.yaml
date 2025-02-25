@@ -1,0 +1,25 @@
+# Created by Guilherme Aldeia (@galdeia)
+dataset: first_principles_bode
+description: |
+  The Bode's law is a model for the distance of planets from the sun, given their order in the solar system.
+
+  The governing equation is given by:
+  
+  a = 0.4 + 0.3 (2^n)
+
+  Data was taken from bonnet Contemplating Nature 1764, and planets Neptuno and Pluto are skipped.
+
+source: publication repository https://github.com/MilesCranmer/PySR
+publication: Interpretable machine learning for science with PySR and SymbolicRegression, CRANMER, Miles, arXiv preprint arXiv:2305.01582, 2023.
+task: regression
+keywords:
+  - symbolic regression
+  - physics
+  - first principles
+target:
+  type: continuous
+  description: semi-major axis, AU
+features:
+  - name: "n"
+    type: categorical
+    description: planet index
