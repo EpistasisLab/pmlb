@@ -1,34 +1,27 @@
-# Reviewed by [your name here]
 dataset: iris
-description: None yet. See our contributing guide to help us add one.
-source: None yet. See our contributing guide to help us add one.
-publication: None yet. See our contributing guide to help us add one.
+description: 'Fisher iris measurements: 150 flowers, four sepal/petal measurements
+  in centimetres, and three species. Values and encoded targets were verified against
+  the UCI iris.data release.'
+source: https://archive.ics.uci.edu/dataset/53/iris
+publication: https://doi.org/10.1111/j.1469-1809.1936.tb02137.x
 task: classification
 keywords:
-  -
-  -
+  - botany
+  - classification
 target:
   type: categorical
-  description: None yet. See our contributing guide to help us add one.
-  code: None yet. See our contributing guide to help us add one.
+  description: Iris species
+  code: 0 = Iris-setosa; 1 = Iris-versicolor; 2 = Iris-virginica
 features:
   - name: sepal-length
     type: continuous
-    description: # optional but recommended, what the feature measures/indicates, unit
-    code: # optional, coding information, e.g., Control = 0, Case = 1
-    transform: # optional, any transformation performed on the feature, e.g., log scaled
+    description: sepal length in centimetres
   - name: sepal-width
     type: continuous
-    description:
-    code:
-    transform:
+    description: sepal width in centimetres
   - name: petal-length
     type: continuous
-    description:
-    code:
-    transform:
+    description: petal length in centimetres
   - name: petal-width
     type: continuous
-    description:
-    code:
-    transform:
+    description: petal width in centimetres
